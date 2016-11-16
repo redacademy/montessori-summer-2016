@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+ .menu-menu-1-container{
+     padding-top: 40px;
+     width: 70%;
+    float:right;
+   
+   
+}
+
+ .menu-menu-1-container{
+    ul{
+        li{ display: inline-block;
+            a{
+              text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+   color:black;
+    font-size: 18px;
+    border-top: 4px solid transparent;
+    list-style:none;    
+   padding: 15px 0px;
+    margin: 0px 5px;
+}
+}}}
+  .menu-menu-1-container ul .active {
+      a{
+        
+ border-top: 4px solid #57B79F;;
+    color:#57B79F;
+    cursor: pointer;
+      }
+  }
+
+ .menu-menu-1-container
+{
+    ul
+    { li
+    { a:hover{
+     border-top: 4px solid #57B79F;;
+    color:#57B79F;
+    cursor: pointer;
+    }}}
+}

@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* Background*/
+.site-footer{
+    height:150px;
+    background-color:#125A50;
+    color:#D3E0DE;
+}
+.footer-blocks {
+  display: flex;
+  align-content: space-between;
+  
+}
+/*block Items*/
+.footer-block-item2{
+
+align-self: flex-end;
+    padding-top:40px;
+    width: 300px;;
+    p{
+  a{
+      color:#D3E0DE;
+     text-decoration: none; 
+  }
+}
+}
+/* copy rights*/
+
+
+.footer-block-item3{
+    justify-content: flex-start;
+    width:500px;
+    height: 40px;
+  text-align: left;
+  text-transform:capitalize;
+}
