@@ -1,6 +1,6 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Montesorri 
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
