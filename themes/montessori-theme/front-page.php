@@ -17,9 +17,12 @@ get_header(); ?>
 
 <!-- this is for the welcoming  -->
   <section class="home-wrapper">
-    <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
-      <p><?php echo CFS()->get('banner_paragraph') ?></p>
-      <button class="red-btn" type="button" name="button">Our Society Role</button>
+    <div class="container-wrapper">
+      <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
+        <p><?php echo CFS()->get('banner_paragraph') ?></p>
+
+        <button class="red-btn" type="button" name="button">Our Society Role</button>
+    </div>
   </section>
 <!-- this is for the quick links -->
     <section>

@@ -1,1 +1,23 @@
 //front page
+section
+.home-wrapper{
+  width: 481px;
+  height: 355px;
+  background-color: rgba(0,0,0,0.74);
+      h2{
+      width: 466.66px;
+      height: 42px;
+      // font-family: Asap;
+      font-size: 36px;
+      line-height: 42px;
+      color: #FFFFFF;
+    }
+    p{
+      width: 449.57px;
+      height: 160px;
+      // font-family: "Noto Sans";
+      font-size: 20px;
+      line-height: 40px;
+      color: #FFFFFF;
+    }
+}

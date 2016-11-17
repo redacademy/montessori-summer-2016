@@ -29,6 +29,31 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+					<?php if ( is_page_template( 'about.php' )):?>
+							<h4>yousef<h4>
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'about',
+							'menu_id' => 'about',
+							'menu_class'=> 'secondary'
+						) );
+						?>
+
+					<?php endif; ?>
+
+					<?php if ( is_page_template( 'montessori-page.php' )):?>
+							<h4>yousef<h4>
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'montessori',
+							'menu_id' => 'montessori',
+							'menu_class'=> 'secondary'
+						) );
+						?>
+
+					<?php endif; ?>
+
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
