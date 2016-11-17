@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  * Template Name: About Page
- * @package RED_Starter_Theme
+ * @package montessori_Theme
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
 
 			<?php endwhile; // End of the loop. ?>
 
