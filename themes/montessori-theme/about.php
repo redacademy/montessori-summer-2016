@@ -2,7 +2,22 @@
 /**
  * The template for displaying the footer.
  * Template Name: about
- * @package RED_Starter_Theme
+ * @package Montessori_Theme
  */
 get_header();
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php get_footer();?>

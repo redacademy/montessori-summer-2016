@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Montessori_Theme
  */
 
 ?><!DOCTYPE html>
@@ -22,16 +22,17 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<!-- <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
-				</div><!-- .site-branding -->
+				 <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				</div>
+
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 					<?php if ( is_page_template( 'about.php' )):?>
-							<h4>yousef<h4>
+							<h4><h4>
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'about',
@@ -43,7 +44,7 @@
 					<?php endif; ?>
 
 					<?php if ( is_page_template( 'montessori-page.php' )):?>
-							<h4>yousef<h4>
+							<h4><h4>
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'montessori',
