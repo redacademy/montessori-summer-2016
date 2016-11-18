@@ -573,6 +573,12 @@ object {
 .gallery-caption {
   display: block; }
 
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen; }
+  .menu-menu-1-container {
+    display: none; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
