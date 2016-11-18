@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Montessori_Theme
  */
 
 ?><!DOCTYPE html>
@@ -10,7 +10,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
@@ -22,16 +22,26 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-					<!-- <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
-				</div><!-- .site-branding -->
+				 <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				</div>
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+
+<div class="main-navigation-container	">
+				<section class="montessori-logo">
+		<img src="<?php bloginfo('template_directory'); ?>/images/logo/montessori-logo" alt="montessori logo"/>
+	</section>
+<h3>
+	 <?php ?>
+</h3>
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
+</div>
 					<?php if ( is_page_template( 'about.php' )):?>
-							<h4>yousef<h4>
+							<h4><h4>
+
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'about',
@@ -43,7 +53,11 @@
 					<?php endif; ?>
 
 					<?php if ( is_page_template( 'montessori-page.php' )):?>
-							<h4>yousef<h4>
+
+
+
+							<h4><h4>
+
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'montessori',
