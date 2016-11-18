@@ -54,10 +54,6 @@
 
 					<?php if ( is_page_template( 'montessori-page.php' )):?>
 
-
-
-							<h4><h4>
-
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'montessori',
