@@ -579,6 +579,23 @@ object {
   .menu-menu-1-container {
     display: none; } }
 
+.montessori-logo {
+  width: 20rem;
+  height: 5rem; }
+  .montessori-logo img {
+    height: 100%;
+    width: 100%; }
+
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-navigation {
+  width: 70%; }
+
+div .menu-menu-1-container {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/

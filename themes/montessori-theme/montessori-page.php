@@ -7,8 +7,8 @@
  get_header();
 
 ?>
-<div class="container">
-<section class="our-history">
+<div class="container2">
+<section id="history" class="our-history">
 
   		<?php while ( have_posts() ) : the_post(); ?>
 <div class="history">
