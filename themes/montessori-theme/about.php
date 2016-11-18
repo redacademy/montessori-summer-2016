@@ -7,21 +7,19 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
+		<section class="">
 		<main id="main" class="site-main" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-							<?php endif; ?>
-				</div>
-				<section class="">
-					<?php the_title( '<h1 class="">', '</h1>' ); ?>
-						<?php the_content(); ?>
-							<p class="">
-								<?php echo CFS()->get('description'); ?>
-							</p>
-				</section>
-				<?php endwhile; // End of the loop. ?>
+<?php echo '<h1 class="price">'.CFS()->get( 'Our History' ).'</h1>'; ?>
+<?php echo '<p class="price">'.CFS()->get( 'paragraph1' ).'</p>'; ?>
+<?php echo '<div class="price">'.CFS()->get( 'describtion1' ).'</div>'; ?>
+<section>
+	<section class="">
+	<main id="main" class="site-main" role="main">
+<?php echo '<h1 class="price">'.CFS()->get( 'our_role' ).'</h1>'; ?>
+<?php echo '<p class="price">'.CFS()->get( 'paragraph2' ).'</p>'; ?>
+<?php echo '<div class="cfsborder">'.CFS()->get( 'describtion2' ).'</div>'; ?>
+<section>
+
 		</main>
 		<!-- #main -->
 	</div>
