@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+# flip member Img
+--------------------------------------------------------------*/
+.flip-container {
+	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+  background: #aff1d3;
+  border-radius:50%;
+ 
+}
+
+	.flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+	height: 200px;
+}
+
+.flipper {
+  position: relative;
+	-webkit-transition: 1.9s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 1.9s;
+	-moz-transform-style: preserve-3d;
+
+	transition: 1.9s;
+	transform-style: preserve-3d;
+
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+}
+
+.front {
+  background-size:cover;
+  border-radius:50%;
+  overflow:hidden;
+}
+
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+}
+
+.back p {
+  position: absolute;
+	padding: 0 20px;
+  font-family: arial;
+  line-height: 2em;
+  bottom: 230px;
+  text-align: center;
+}
+
+
+
+// <div class="flip-container">
+//   <div class="flipper">
+//     <div class="front">
+//     </div>
+//     <div class="back">
+//       <p> //////</p>
+//     </div>
+//   </div>
+// </div>
+/*--------------------------------------------------------------
+# flip member Img
+--------------------------------------------------------------*/

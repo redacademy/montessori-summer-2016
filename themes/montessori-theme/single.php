@@ -3,6 +3,7 @@
  * The template for displaying all single posts.
  *
  * @package montessori_Theme
+
  */
 
 get_header(); ?>

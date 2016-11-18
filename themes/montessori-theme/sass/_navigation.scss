@@ -2,131 +2,58 @@
 # Navigation
 --------------------------------------------------------------*/
 
-/* Links */
 
-/*a {
-	color: $color__link;
+.menu-menu-1-container{
+		padding-top: 40px;
+		width: 70%;
+	 float:right;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
-}*/
+}
 
-/* Menus */
-/*
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
-}*/
-
-/* Small menu. */
-/*.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}*/
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
+.menu-menu-1-container{
+	 ul{
+			 li{ display: inline-block;
+					 a{
+						 text-transform: uppercase;
+	 font-weight: 400;
+	 text-decoration: none;
+	color:black;
+	 font-size: 18px;
+	 border-top: 4px solid transparent;
+	 list-style:none;
+	padding: 15px 0px;
+	 margin: 0px 5px;
+}
+}}}
+#primary-menu li.current-menu-item {
+	a{
+		border-top: 4px solid #57B79F;
+		color:#57B79F;
+		cursor: pointer;
 	}
 }
 
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 $base__space-unit;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+.menu-menu-1-container
+{
+	 ul
+	 { li
+	 { a:hover{
+		border-top: 4px solid #57B79F;;
+	 color:#57B79F;
+	 cursor: pointer;
+	 }}}
 }
+/****** sub menu *****/
+.secondary{
+ background-color:#248E6A;
+ li{
+		 display: inline-block;
+		 padding:10px 5px 10px 5px;
+	 a{
+
+ text-decoration: none;
+ color:white;
+}
+ }
+}
+/* end sub menu*/

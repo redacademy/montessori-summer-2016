@@ -2,7 +2,11 @@
 /**
  * Template part for displaying single posts.
  *
+<<<<<<< HEAD
  * @package montessori_Theme
+=======
+ * @package Montessori_Theme
+>>>>>>> d47e8ff1f2ad0ba21f083a78de23017f6f2358ad
  */
 
 ?>
@@ -31,6 +35,10 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+<<<<<<< HEAD
 		<?php montessori_entry_footer(); ?>
+=======
+		<?php Montessori_entry_footer(); ?>
+>>>>>>> d47e8ff1f2ad0ba21f083a78de23017f6f2358ad
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

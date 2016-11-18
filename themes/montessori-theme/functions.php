@@ -1,10 +1,10 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Montesorri
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package montessori_Theme
+
+ * @package Montessori_Theme
  */
 
 if ( ! function_exists( 'montessori_setup' ) ) :
@@ -24,7 +24,12 @@ function montessori_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'about' => esc_html( 'about secondary Menu' ),
+		'montessori' => esc_html( 'motessori Menu' ),
+
 	) );
+
+
 
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
