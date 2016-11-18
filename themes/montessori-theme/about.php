@@ -7,18 +7,14 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
+		 <?php while ( have_posts() ) : the_post(); ?>
 		<section class="">
 		<main id="main" class="site-main" role="main">
-<?php echo '<h1 class="">'.CFS()->get( 'Our History' ).'</h1>'; ?>
-<?php echo '<p class="">'.CFS()->get( 'paragraph1' ).'</p>'; ?>
-<?php echo '<div class="">'.CFS()->get( 'describtion1' ).'</div>'; ?>
-<section>
-	<section class="">
-	<main id="main" class="site-main" role="main">
-<?php echo '<h1 class="">'.CFS()->get( 'our_role' ).'</h1>'; ?>
-<?php echo '<p class="">'.CFS()->get( 'paragraph2' ).'</p>'; ?>
-<?php echo '<div class="cfsborder">'.CFS()->get( 'describtion2' ).'</div>'; ?>
-<section>
+<?php echo '<h1 class="">'.CFS()->get( 'title' ).'</h1>'; ?>
+<?php echo '<p class="">'.CFS()->get( 'paragraph' ).'</p>'; ?>
+<?php echo '<div class="">'.CFS()->get( 'describtion' ).'</div>'; ?>
+     <section>
+		<?php endwhile; // End of the loop. ?>
 
 		</main>
 		<!-- #main -->
