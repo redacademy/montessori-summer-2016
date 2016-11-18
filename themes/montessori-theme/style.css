@@ -424,7 +424,7 @@ textarea {
     padding: 15px 0px;
     margin: 0px 5px; }
 
-.current-menu-item a {
+#primary-menu li.current-menu-item a {
   border-top: 4px solid #57B79F;
   color: #57B79F;
   cursor: pointer; }
