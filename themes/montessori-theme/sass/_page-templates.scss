@@ -3,3 +3,26 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+// special CFS div
+
+ // <div class="cfsBorder">
+ // <div class="cfscontainer"> here will be text area <div>
+ // <div>
+
+.cfsBorder{
+ width:40%;
+ overflow:scroll;
+text-align: justify;
+ height: 200px;
+ border-left: 5px solid #D93B57 ;
+padding-left: 15px;
+padding-right: 10px;
+
+}
+
+.cfscontainer{
+ width: 80px;
+ padding: 10px;
+ overflow:visible;
+  height: auto;
+}

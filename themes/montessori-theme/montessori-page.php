@@ -8,6 +8,23 @@
 
 ?>
 <div class="container">
+<section class="our-history">
+
+  		<?php while ( have_posts() ) : the_post(); ?>
+<div class="history">
+  			<h3><?php echo CFS()->get( 'our_history_title' ); ?></h3>
+      </div>
+      <div class="cfsBorder">
+  			<p><?php echo CFS()->get( 'our_history_description' ); ?></p>
+      </div>
+  			<h3><?php echo CFS()->get( 'our_history_content' ); ?></h3>
+
+
+
+  		<?php endwhile; // End of the loop. ?>
+
+
+</section>
 
 </div>
 
