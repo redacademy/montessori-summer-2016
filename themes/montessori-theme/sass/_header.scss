@@ -12,9 +12,17 @@ div .menu-primary-menu-container{
 .montessori-logo{
 	width:15rem;
 	height: 5rem;
- img{
+   img{
+     position: relative;
 	height: 100%;
 	width: 100%;
+
+  a{
+    bottom:-20px;
+    cursor: pointer;
+    position: absolute;
+    color:transparent;
+  }
 }
 }
 }
