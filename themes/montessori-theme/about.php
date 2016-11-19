@@ -10,9 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 	  <main id="main" class="site-main" role="main">
 
-
-
-					<?php
+	<?php
 		$fields = CFS()->get( 'content_group' );
      foreach ( $fields as $field ) {
  echo '<h2 class="">'.$field['content_group_title'].'</h2>';
