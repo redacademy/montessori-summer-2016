@@ -1,28 +1,27 @@
-// Structure
+/********* Montessori Site Structure **********/
 
-$base__space-unit: 1.5em;
+$base_space_unit: 1.5em;
+
+///Screen Size///
+
+$desktop_width: 90rem; //1440px
+$tablet_width:48rem; //768px
+$mobile_width:30rem; //480px
+//Layout//
+$base_spacing_normal: 1rem;
+$base_spacing_large: 2.5rem;
+$base_spacing_large: 4rem;
 
 /// Colors ///
 
-$color__background-body: #fff;
-$color__text-main: #404040;
-
-$color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
-
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
-
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-
+$color_background_body:#fff;
+$color_text_main:#404040;
+$color_mobile_clicked_green:#125A50;
+$color_text-screen:#21759b;
 
 /********* Colours **********/
 
-//Montessori Brand Colours
+//Montessori Brand Colours//
 
 $color_btn_orange: #F76072 ;
 $color_btn_hover_pink: #CB203E ;
@@ -31,23 +30,26 @@ $color_btn_hover_green: #248E6A ;
 $color_text_green: #4FC8A1 ;
 $color_bar_pink: #D93B57 ;
 $color_footer_green: #125A50 ;
-$white: white;
+$black:#000000;
+$white: #fff;
+
 
 // Typography ///
-
-$font__main: sans-serif;
-$font__line-height-body: 1.5;
-
+$font_title: 'Asap';
+$font_footer: 'PT Sans';
+$font_header: 'Raleway', sans-serif;
+$font_body: 'Noto Sans';
+$font_main: 'Noto Sans';
 ///Font Sizing ///
-
 // mobile sizes ///
-$h1_size: 2.5rem;
-$h2_size: 2rem;
-$h3_size: 1.5rem;
-$font_body_size: 1.5rem;
+$h1_size_mob: 2.5rem;
+$h2_size_mob: 2rem;
+$h3_size_mob: 1.5rem;
+$font_body_size_mob: 1.5rem;
 
 /// desktop sizes ////
 $h1_size_desktop: 5rem;
 $h2_size_desktop: 3rem;
 $h3_size_desktop: 2.5rem;
 $font_body_size_desktop: 2rem;
+$font_line-height-body: 1.5;
