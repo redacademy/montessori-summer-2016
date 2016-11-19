@@ -1,23 +1,27 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: about
+ * Template Name: ABOUT
  * @package montessori_Theme
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
-		 <?php while ( have_posts() ) : the_post(); ?>
-		<section class="">
-		<main id="main" class="site-main" role="main">
-<?php echo '<h1 class="">'.CFS()->get( 'title' ).'</h1>'; ?>
-<?php echo '<p class="">'.CFS()->get( 'paragraph' ).'</p>'; ?>
-<?php echo '<div class="">'.CFS()->get( 'describtion' ).'</div>'; ?>
-     <section>
-		<?php endwhile; // End of the loop. ?>
 
-		</main>
-		<!-- #main -->
+	<div id="primary" class="content-area">
+	  <main id="main" class="site-main" role="main">
+
+
+
+					<?php
+		$fields = CFS()->get( 'content_group' );
+     foreach ( $fields as $field ) {
+ echo '<h2 class="">'.$field['content_group_title'].'</h2>';
+ echo '<p class="">'.$field['content_group_paragragh'].'</p>';
+ echo '<div class="">'.$field['content_group_description'].'</div>';
+
+}
+?>
+		</main><!-- #main -->
 	</div>
 	<!-- #primary -->
 	<?php get_footer(); ?>
