@@ -2,7 +2,11 @@
 /**
  * Template part for displaying a message that posts cannot be found.
  *
+<<<<<<< HEAD
+ * @package montessori_Theme
+=======
  * @package Montessori_Theme
+>>>>>>> d47e8ff1f2ad0ba21f083a78de23017f6f2358ad
  */
 
 ?>

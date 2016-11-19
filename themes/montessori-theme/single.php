@@ -2,7 +2,8 @@
 /**
  * The template for displaying all single posts.
  *
- * @package Montessori_Theme
+ * @package montessori_Theme
+
  */
 
 get_header(); ?>

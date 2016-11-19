@@ -1,24 +1,27 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for displaying all pages.
  * Template Name: about
-
- * @package Montessori_Theme
+ * @package montessori_Theme
  */
-get_header();
-?>
 
+get_header(); ?>
+	<div id="primary" class="content-area">
+		<section class="">
+		<main id="main" class="site-main" role="main">
+<?php echo '<h1 class="">'.CFS()->get( 'Our History' ).'</h1>'; ?>
+<?php echo '<p class="">'.CFS()->get( 'paragraph1' ).'</p>'; ?>
+<?php echo '<div class="">'.CFS()->get( 'describtion1' ).'</div>'; ?>
+<section>
+	<section class="">
+	<main id="main" class="site-main" role="main">
+<?php echo '<h1 class="">'.CFS()->get( 'our_role' ).'</h1>'; ?>
+<?php echo '<p class="">'.CFS()->get( 'paragraph2' ).'</p>'; ?>
+<?php echo '<div class="cfsborder">'.CFS()->get( 'describtion2' ).'</div>'; ?>
+<section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<?php get_footer();?>
+		</main>
+		<!-- #main -->
+	</div>
+	<!-- #primary -->
+	<?php get_footer(); ?>

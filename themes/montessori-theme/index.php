@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package Montessori_Theme
+ * @package montessori_Theme
  */
 
 get_header(); ?>
