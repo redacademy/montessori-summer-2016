@@ -26,7 +26,9 @@ function montessori_setup() {
 		'primary' => esc_html( 'Primary Menu' ),
 		'about' => esc_html( 'about secondary Menu' ),
 		'montessori' => esc_html( 'motessori Menu' ),
-
+    'program' => esc_html( 'program Menu' ),
+		'get involved' => esc_html( 'get involved Menu' ),
+		'contact' => esc_html( 'contact Menu' ),
 	) );
 
 
