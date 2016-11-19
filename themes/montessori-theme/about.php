@@ -13,12 +13,19 @@ get_header(); ?>
 	<?php
 		$fields = CFS()->get( 'content_group' );
      foreach ( $fields as $field ) {
- echo '<h2 class="">'.$field['content_group_title'].'</h2>';
+ echo '<h1 class="">'.$field['content_group_title'].'</h1>';
  echo '<p class="">'.$field['content_group_paragragh'].'</p>';
  echo '<div class="">'.$field['content_group_description'].'</div>';
 
 }
 ?>
+
+<div class="newsLetter">
+	 <?php echo '<h2>'.CFS()->get( 'newsletter_title' ).'</h2>'; ?>
+	 <?php echo '<h2>'.CFS()->get( 'date' ).'</h2>'; ?>
+	 <?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
+</div>
+
 		</main><!-- #main -->
 	</div>
 	<!-- #primary -->
