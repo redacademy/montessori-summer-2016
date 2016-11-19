@@ -14,7 +14,7 @@
 			</ul>
 					</div>
 				<div class="footer-block-item2">
-<p><i class="fa fa-facebook" aria-hidden="true"></i><a href="">Follow us</a>
+<p><i class="fa fa-facebook" aria-hidden="true"></i><a href="">Follow us </a>
 <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a> </p>
     	</div>
 				<div class="footer-block-item3">

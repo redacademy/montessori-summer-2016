@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package Montessori_Theme
+ * @package montessori_Theme
  */
 
 get_header(); ?>
