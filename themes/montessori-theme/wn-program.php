@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: about
+ * Template Name: wn-program
  * @package montessori_Theme
  */
 
@@ -12,9 +12,7 @@ get_header(); ?>
 
 	<?php
 		$fields = CFS()->get( 'content_group' );
-		$i=0;
-     foreach ( $fields as $field ) {$i++;
-			 if ($i > 1) { echo '<div class="border">'.$i.'</div>';}
+     foreach ( $fields as $field ) {
  echo '<h1 class="">'.$field['content_group_title'].'</h1>';
  echo '<p class="">'.$field['content_group_paragragh'].'</p>';
  echo '<div class="">'.$field['content_group_description'].'</div>';
