@@ -1,5 +1,6 @@
-
+@media screen and (max-width: $desktop_width) {
 .main-navigation-container{
+  font-family: $font_footer_header;
 	display: flex;
 }
 .main-navigation{
@@ -16,7 +17,8 @@ div .menu-primary-menu-container{
 	width: 100%;
 }
 }
-@media screen and (max-width: 769px) {
+}
+@media screen and (max-width: $mobile_width) {
     body {
         background-color: lightgreen;
     }

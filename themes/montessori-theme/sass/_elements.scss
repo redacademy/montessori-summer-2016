@@ -12,7 +12,8 @@ html {
 }
 
 body {
-	background: $color_background-body;
+	background: $white;
+  font-family: $font_body;
 }
 
 blockquote, q {
@@ -49,14 +50,6 @@ li > ol {
 	margin-left: 0;
 	margin-bottom: 0;
 	list-style-type: none;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0;
 }
 
 img {

@@ -279,7 +279,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff; }
+  background: #fff;
+  font-family: "Noto Sans"; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -307,12 +308,6 @@ li > ol {
   margin-left: 0;
   margin-bottom: 0;
   list-style-type: none; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0; }
 
 img {
   height: auto;
@@ -423,6 +418,7 @@ textarea {
 
 .menu-about-container,
 .menu-montessori-container {
+  font-family: "PT Sans";
   text-align: right;
   width: 1200px;
   padding: 10px 20 10px 10; }
@@ -586,24 +582,23 @@ object {
   overflow: visible;
   height: auto; }
 
-.main-navigation-container {
-  display: -ms-flexbox;
-  display: flex; }
-
-.main-navigation {
-  width: 100%; }
-
-div .menu-primary-menu-container {
-  width: 100%; }
-
-.montessori-logo {
-  width: 15rem;
-  height: 5rem; }
-  .montessori-logo img {
-    height: 100%;
+@media screen and (max-width: 90rem) {
+  .main-navigation-container {
+    font-family: "PT Sans";
+    display: -ms-flexbox;
+    display: flex; }
+  .main-navigation {
     width: 100%; }
+  div .menu-primary-menu-container {
+    width: 100%; }
+  .montessori-logo {
+    width: 15rem;
+    height: 5rem; }
+    .montessori-logo img {
+      height: 100%;
+      width: 100%; } }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 30rem) {
   body {
     background-color: lightgreen; }
   .menu-primary-menu-container {
@@ -631,6 +626,7 @@ div .menu-primary-menu-container {
 --------------------------------------------------------------*/
 /* Background*/
 .site-footer {
+  font-family: "PT Sans";
   overflow: hidden;
   font-size: 0.8rem;
   width: 480px;
