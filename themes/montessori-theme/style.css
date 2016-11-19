@@ -596,19 +596,20 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.menu-menu-1-container {
+/*primary-menu*/
+.menu-primary-menu-container {
   padding-top: 40px;
   width: 70%;
   float: right; }
 
-.menu-menu-1-container ul li {
+.menu-primary-menu-container ul li {
   display: inline-block; }
-  .menu-menu-1-container ul li a {
+  .menu-primary-menu-container ul li a {
     text-transform: uppercase;
     font-weight: 400;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 1rem;
     border-top: 4px solid transparent;
     list-style: none;
     padding: 15px 0px;
@@ -619,7 +620,16 @@ textarea {
   color: #57B79F;
   cursor: pointer; }
 
-.menu-menu-1-container ul li a:hover {
+#primary-menu {
+  width: 1000px; }
+
+.menu-about-container,
+.menu-montessori-container {
+  text-align: right;
+  width: 1200px;
+  padding: 10px 20 10px 10; }
+
+.menu-primary-menu-container ul li a:hover {
   border-top: 4px solid #57B79F;
   color: #57B79F;
   cursor: pointer; }
@@ -763,29 +773,6 @@ object {
 .gallery-caption {
   display: block; }
 
-@media screen and (max-width: 480px) {
-  body {
-    background-color: lightgreen; }
-  .menu-menu-1-container {
-    display: none; } }
-
-.montessori-logo {
-  width: 20rem;
-  height: 5rem; }
-  .montessori-logo img {
-    height: 100%;
-    width: 100%; }
-
-.main-navigation-container {
-  display: -ms-flexbox;
-  display: flex; }
-
-.main-navigation {
-  width: 70%; }
-
-div .menu-menu-1-container {
-  width: 100%; }
-
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -805,45 +792,46 @@ div .menu-menu-1-container {
   overflow: visible;
   height: auto; }
 
-.menu-menu-1-container {
-  padding-top: 40px;
-  width: 70%;
-  float: right; }
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex; }
 
-.menu-menu-1-container ul li {
-  display: inline-block; }
-  .menu-menu-1-container ul li a {
-    text-transform: uppercase;
-    font-weight: 400;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    border-top: 4px solid transparent;
-    list-style: none;
-    padding: 15px 0px;
-    margin: 0px 5px; }
+.main-navigation {
+  width: 100%; }
 
-.current-menu-item a {
-  border-top: 4px solid #57B79F;
-  color: #57B79F;
-  cursor: pointer; }
+div .menu-primary-menu-container {
+  width: 100%; }
 
-.menu-menu-1-container ul li a:hover {
-  border-top: 4px solid #57B79F;
-  color: #57B79F;
-  cursor: pointer; }
+.montessori-logo {
+  width: 15rem;
+  height: 5rem; }
+  .montessori-logo img {
+    height: 100%;
+    width: 100%; }
 
-/****** sub menu *****/
-.secondary {
-  background-color: #248E6A; }
-  .secondary li {
-    display: inline-block;
-    padding: 10px 5px 10px 5px; }
-    .secondary li a {
-      text-decoration: none;
-      color: white; }
+@media screen and (max-width: 769px) {
+  body {
+    background-color: lightgreen; }
+  .menu-primary-menu-container {
+    display: none; } }
 
-/* end sub menu*/
+.montessori-logo {
+  width: 10rem;
+  height: 2rem; }
+  .montessori-logo img {
+    height: 100%;
+    width: 100%; }
+
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-navigation {
+  width: 70%; }
+
+div .menu-primary-menu-container {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -915,185 +903,51 @@ div .menu-menu-1-container {
     line-height: 1.5px;
     display: block; }
 
-body {
-  width: 428px;
-  height: auto;
-  padding: 0;
-  margin: 0; }
+/*--------------------------------------------------------------
+# flip member Img
+--------------------------------------------------------------*/
+.flip-container {
+  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+  background: #aff1d3;
+  border-radius: 50%; }
 
-.site-main .home-wrapper {
-  width: 428px;
-  height: 555px;
-  background-color: rgba(0, 0, 0, 0.74); }
-  .site-main .home-wrapper h2 {
-    width: 100%;
-    height: 42px;
-    font-family: 'Asap';
-    font-size: 36px;
-    line-height: 42px;
-    color: #fff;
-    margin-top: 0;
-    margin-left: 30px;
-    padding-top: 17px;
-    box-sizing: border-box;
-    width: 119.23px;
-    height: 74px;
-    border-bottom: 4px solid #fff; }
-  .site-main .home-wrapper p {
-    height: 160px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 40px;
-    color: #fff;
-    margin: 30px; }
-  .site-main .home-wrapper .red-btn {
-    width: 200px;
-    height: 41.88px;
-    background-color: #F76072;
-    border-color: #F76072;
-    border-radius: 3px;
-    color: #fff;
-    margin-left: 118px;
-    box-shadow: none;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: .8px; }
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg); }
 
-.links-wrapper h2 {
-  padding-left: 38px;
-  width: 852px;
-  height: 42px;
-  font-family: "Asap";
-  font-size: 36px;
-  line-height: 42px;
-  color: #000000; }
+.flip-container, .front, .back {
+  width: 200px;
+  height: 200px; }
 
-.links-wrapper p {
-  width: 377px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  line-height: 40px;
-  color: #000000;
-  margin: 40px; }
+.flipper {
+  position: relative;
+  -webkit-transition: 1.9s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1.9s;
+  -moz-transform-style: preserve-3d;
+  transition: 1.9s;
+  transform-style: preserve-3d; }
 
-.links-wrapper .green-btn {
-  width: 320px;
-  height: 67px;
-  background-color: #4FC8A1;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  border-color: #4FC8A1;
-  margin-left: 60px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: .8px; }
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
-.links-wrapper .red-btn {
-  width: 320px;
-  height: 67px;
-  background-color: #F76072;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  border-color: #F76072;
-  margin-left: 60px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: .8px; }
+.front {
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden; }
 
-.support-wrapper .information h2 {
-  width: 377px;
-  height: 42px;
-  font-family: 'Asap';
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
-  margin: 35px; }
+.back {
+  transform: rotateY(180deg); }
 
-.support-wrapper .information img {
-  width: 287px;
-  height: 470px; }
-
-.support-wrapper .information p {
-  width: 377px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  line-height: 46px;
-  color: #000;
-  margin: 40px; }
-  .support-wrapper .information p .content {
-    width: 325.37px;
-    font-family: "Noto Sans";
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 42px;
-    color: #000; }
-  .support-wrapper .information p .img-text {
-    width: 377px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 46px;
-    color: #000;
-    margin: 45px; }
-
-.support-wrapper .information .red-btn {
-  width: 185px;
-  height: 47px;
-  background-color: #F76072;
-  border-color: #F76072;
-  border-radius: 6px;
-  color: #fff;
-  margin-left: 20px;
-  box-shadow: none;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: .8px; }
-
-.support-wrapper .information .green-btn {
-  width: 185px;
-  height: 47px;
-  background-color: #4FC8A1;
-  border-color: #4FC8A1;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  margin-left: 15px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: .8px; }
-
-.features-wrapper .features h2 {
-  width: 322px;
-  height: 42px;
-  font-family: 'Asap';
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
-  margin-left: 30px; }
+.back p {
+  position: absolute;
+  padding: 0 20px;
+  font-family: arial;
+  line-height: 2em;
+  bottom: 230px;
+  text-align: center; }
 
 /*--------------------------------------------------------------
-# Montessori
+# flip member Img
 --------------------------------------------------------------*/
-.container {
-  width: 400px;
-  margin: auto; }
