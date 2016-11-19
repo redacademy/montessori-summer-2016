@@ -270,6 +270,7 @@ big {
 
 html {
   box-sizing: border-box;
+  font-family: "Noto Sans";
   font-size: 16px;
   font-size: 1rem; }
 
@@ -626,26 +627,32 @@ div .menu-primary-menu-container {
 --------------------------------------------------------------*/
 /* Background*/
 .site-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   font-family: "PT Sans";
   overflow: hidden;
   font-size: 0.8rem;
   width: 480px;
   height: 150px;
   background-color: #125A50;
-  color: #D3E0DE; }
+  color: #fff; }
 
 /*block Items*/
 .footer-block-item1 {
   position: relative;
-  width: 100%;
-  padding: 20px 0 30px 0;
-  height: 10px;
-  padding-top: 20px; }
+  width: 90%;
+  padding: 10px 0 30px 0;
+  height: 30px;
+  margin-top: -10px; }
   .footer-block-item1 ul {
-    margin-left: 0px;
+    margin-left: 30px;
     padding-left: 0px; }
     .footer-block-item1 ul li {
-      font-size: 1rem;
+      font-size: 1.1rem;
       padding: 0px 10px 0px 10px;
       display: inline-block; }
       .footer-block-item1 ul li a {
@@ -661,15 +668,16 @@ div .menu-primary-menu-container {
 
 .footer-block-item2 {
   padding-top: 0px;
-  padding-left: 25px;
-  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
   width: 90%;
   text-align: center; }
   .footer-block-item2 p {
-    padding: 5px; }
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
     .footer-block-item2 p i {
       display: inline-block;
-      margin: auto;
+      margin: 0px;
       padding: 4px;
       margin-right: 5px;
       width: 22px;
@@ -677,6 +685,7 @@ div .menu-primary-menu-container {
       border: solid 1px #fff;
       border-radius: 50%; }
   .footer-block-item2 a {
+    font-size: 0.8rem;
     margin-right: 10px;
     color: #D3E0DE;
     text-decoration: none; }
@@ -684,13 +693,12 @@ div .menu-primary-menu-container {
 /* copy rights*/
 .footer-block-item3 {
   padding-top: 5px;
-  position: relative;
   width: 90%;
   height: 20px;
   text-align: center;
   text-transform: capitalize; }
   .footer-block-item3 p {
-    line-height: 1.5px;
+    height: 30px;
     display: block; }
 
 /*--------------------------------------------------------------
