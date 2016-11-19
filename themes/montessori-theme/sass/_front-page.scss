@@ -1,13 +1,9 @@
 //front page
-body{
-  width: 428px;
-  height: auto;
-  padding: 0;
-  margin: 0
-}
+
+// @media screen and (max-width: 480px) {
 .site-main{
   .home-wrapper{
-    width: 428px;
+    width: 470px;
     height: 555px;
     background-color: rgba(0,0,0,0.74);
       h2{
@@ -135,8 +131,8 @@ body{
       color: #000;
       margin: 40px;
 
-      .content{
-        width: 325.37px;
+      .info{
+        width: 470px;
         // height: 294px;
         font-family: "Noto Sans";
         font-size: 26px;
@@ -145,7 +141,7 @@ body{
         color: #000;
       }
       .img-text {
-        width: 377px;
+        width: 470px;
         font-family: "Noto Sans";
         font-size: 20px;
         line-height: 46px;
@@ -153,6 +149,7 @@ body{
         margin: 45px;
       }
     } //p
+    a{
     .red-btn{
       width: 185px;
       height: 47px;
@@ -167,6 +164,7 @@ body{
       font-weight: 300;
       text-shadow: none;
       letter-spacing: .8px;
+      text-decoration: none;
     }
     .green-btn{
       width: 185px;
@@ -185,14 +183,16 @@ body{
       font-weight: 300;
       text-shadow: none;
       letter-spacing: .8px;
+      text-decoration: none;
     }
+  }
   }
 }
 
 .features-wrapper{
   .features{
     h2{
-      width: 322px;
+      width: 470px;
       height: 42px;
       font-family: 'Asap';
       font-size: 36px;
@@ -201,4 +201,9 @@ body{
       margin-left: 30px;
     }
   }
+}
+// }
+
+a {
+  text-decoration: none;
 }

@@ -24,29 +24,62 @@ get_header(); ?>
 <!-- this is for the quick links -->
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
-        <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
+
+        <article class="">
+          <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
           <p><?php echo CFS()->get('contents') ?></p>
-        <button class="green-btn" type="button" name="button">NW Program</button>
+        </article>
+
+        <article class="">
+          <button class="green-btn" type="button" name="button">NW Program</button>
           <p><?php echo CFS()->get('nw_text') ?></p>
-        <button class="red-btn" type="button" name="button">Get involved</button>
+        </article>
+
+        <article class="">
+          <button class="red-btn" type="button" name="button">Get involved</button>
           <p><?php echo CFS()->get('get_text') ?></p>
+        </article>
+
     </section>
 
-    <!-- we need your support -->
+    <!-- we need your support section -->
 
     <section class="support-wrapper container">
       <div class="information">
-        <p class="content"> <?php echo CFS()->get('info_paragraph'); ?></p>
-        <button class="red-btn" type="button" name="button">Support Now</button>
-        <button class="green-btn" type="button" name="button">How $ is Spent</button>
+        <p class="info"> <?php echo CFS()->get('info_paragraph'); ?></p>
+        	<a class="red-btn" href="<?php the_permalink(); ?>">Support Now</a>
+          <a class="green-btn" href="<?php the_permalink(); ?>">How $ is Spent</a>
       </div>
     </section>
 
     <section class="features-wrapper container">
-      <div class="features">
-        <h2> <?php echo CFS()->get('featured_title'); ?></h2>
+      <div class="front-page-posts">
+        <ul class="post container">
+        	<?php
+        	$args = array(
+      			'post_type' => 'post',
+      			'posts_per_page' => 3,
+      		  'order'=> 'DESC',); // returns an array of posts
 
+          	$postslist = get_posts( $args );
+          	foreach ( $postslist as $post ) :
+          	setup_postdata( $post ); ?>
+          	<li >
+          			<div class="information-journal">
+                  <?php the_title(); ?>
+        				<!-- <?php the_title( sprintf( '<p><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?> -->
+          			<a class="btn" href="<?php the_permalink(); ?>">Read More</a>
+          			</div>
+          	</li>
+          <?php
+          endforeach;
+          wp_reset_postdata();
+          ?>
+        </ul>
       </div>
     </section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+  <?php get_footer(); ?>
