@@ -605,6 +605,9 @@ object {
         position: absolute;
         color: transparent; } }
 
+.active {
+  background-color: #4FC8A1; }
+
 @media screen and (max-width: 30rem) {
   body {
     background-color: lightgreen; }
@@ -706,6 +709,13 @@ div .menu-primary-menu-container {
   .footer-block-item3 p {
     height: 30px;
     display: block; }
+
+/*the links in the footer */
+.footer-block-item1 li a:hover {
+  color: #248E6A; }
+
+.footer-block-item2 a:hover {
+  color: #248E6A; }
 
 /*--------------------------------------------------------------
 # flip member Img

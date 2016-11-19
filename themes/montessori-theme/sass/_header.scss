@@ -26,7 +26,10 @@ div .menu-primary-menu-container{
 }
 }
 }
+.active{
 
+    background-color:$color_btn_green;
+}
 @media screen and (max-width: $mobile_width) {
     body {
         background-color: lightgreen;

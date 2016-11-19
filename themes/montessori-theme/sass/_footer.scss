@@ -85,3 +85,13 @@ i{
     display:block;
   }
 }
+/*the links in the footer */
+
+.footer-block-item1 li{
+  a:hover{
+  color: $color_btn_hover_green;
+  }
+}
+.footer-block-item2 a:hover{
+    color: $color_btn_hover_green;
+}
