@@ -2,7 +2,7 @@
 
 $base__space-unit: 1.5em;
 
-// Colors
+/// Colors ///
 
 $color__background-body: #fff;
 $color__text-main: #404040;
@@ -19,10 +19,35 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
-// Typography
+
+/********* Colours **********/
+
+//Montessori Brand Colours
+
+$color_btn_orange: #F76072 ;
+$color_btn_hover_pink: #CB203E ;
+$color_btn_green: #4FC8A1 ;
+$color_btn_hover_green: #248E6A ;
+$color_text_green: #4FC8A1 ;
+$color_bar_pink: #D93B57 ;
+$color_footer_green: #125A50 ;
+$white: white;
+
+// Typography ///
 
 $font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+
+///Font Sizing ///
+
+// mobile sizes ///
+$h1_size: 2.5rem;
+$h2_size: 2rem;
+$h3_size: 1.5rem;
+$font_body_size: 1.5rem;
+
+/// desktop sizes ////
+$h1_size_desktop: 5rem;
+$h2_size_desktop: 3rem;
+$h3_size_desktop: 2.5rem;
+$font_body_size_desktop: 2rem;

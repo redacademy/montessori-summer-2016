@@ -1,20 +1,18 @@
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+
 
 html {
- box-sizing:border-box;
+	box-sizing: border-box;
 	@include font-size(1);
 }
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after {
 	box-sizing: inherit;
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $color_background-body;
 }
 
 blockquote, q {
@@ -27,18 +25,18 @@ blockquote, q {
 }
 
 hr {
-	background-color: $color__background-hr;
+	background-color: #ffffff;
 	border: 0;
 	height: 1px;
-	margin-bottom: $base__space-unit;
+	margin-bottom: 1.5rem;
 }
 
 ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
+	margin: 0;
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {
@@ -48,7 +46,9 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: $base__space-unit;
+	margin-left: 0;
+	margin-bottom: 0;
+	list-style-type: none;
 }
 
 dt {
@@ -56,15 +56,21 @@ dt {
 }
 
 dd {
-	margin: 0 $base__space-unit $base__space-unit;
+	margin: 0;
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+  height: auto;
+  max-width: 100%;
 }
 
 table {
-	margin: 0 0 $base__space-unit;
+	margin: 0;
 	width: 100%;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
 }
