@@ -45,6 +45,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 /********* Montessori Site Structure **********/
 /********* Colours **********/
+/*--------------------------------------------------------------
+# Mixin
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -281,7 +287,8 @@ html {
 
 body {
   background: #fff;
-  font-family: "Noto Sans"; }
+  font-family: "Noto Sans";
+  box-sizing: border-box; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -391,55 +398,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /*primary-menu*/
-.menu-primary-menu-container {
-  padding-top: 40px;
-  width: 70%;
-  float: right; }
-
-.menu-primary-menu-container ul li {
-  display: inline-block; }
-  .menu-primary-menu-container ul li a {
-    text-transform: uppercase;
-    font-weight: 400;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    border-top: 4px solid transparent;
-    list-style: none;
-    padding: 15px 0px;
-    margin: 0px 5px; }
-
-#primary-menu li.current-menu-item a {
-  border-top: 4px solid #57B79F;
-  color: #57B79F;
-  cursor: pointer; }
-
-#primary-menu {
-  width: 1000px; }
-
-.menu-about-container,
-.menu-montessori-container {
-  font-family: "PT Sans";
-  text-align: right;
-  width: 1200px;
-  padding: 10px 20 10px 10; }
-
-.menu-primary-menu-container ul li a:hover {
-  border-top: 4px solid #57B79F;
-  color: #57B79F;
-  cursor: pointer; }
-
-/****** sub menu *****/
-.secondary {
-  background-color: #248E6A; }
-  .secondary li {
-    display: inline-block;
-    padding: 10px 5px 10px 5px; }
-    .secondary li a {
-      text-decoration: none;
-      color: white; }
-
-/* end sub menu*/
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -569,12 +527,12 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .cfsBorder {
-  width: 40%;
+  width: 60%;
   overflow: scroll;
   text-align: justify;
-  height: 200px;
+  height: 150px;
   border-left: 5px solid #D93B57;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-right: 10px; }
 
 .cfscontainer {
@@ -583,53 +541,217 @@ object {
   overflow: visible;
   height: auto; }
 
-@media screen and (max-width: 90rem) {
-  .main-navigation-container {
-    font-family: "PT Sans";
-    display: -ms-flexbox;
-    display: flex; }
-  .main-navigation {
-    width: 100%; }
-  div .menu-primary-menu-container {
-    width: 100%; }
-  .montessori-logo {
-    width: 15rem;
-    height: 5rem; }
-    .montessori-logo img {
-      position: relative;
-      height: 100%;
-      width: 100%; }
-      .montessori-logo img a {
-        bottom: -20px;
-        cursor: pointer;
-        position: absolute;
-        color: transparent; } }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+@media screen and (max-width: $desktop_width) {
+	.secondary{
+ background-color:#248E6A;
+ li{
+		 display: inline-block;
+		 padding:20px;
+	 a{
+		 font-size: $font_body_size_mob;
+ text-decoration: none;
+ color:white;
+}
+ }
+}
+	#site-content{
+		height: 100%;
+	}
+.main-navigation-container{
+  font-family: $font_footer_header;
+  height: 30rem;
+	display: flex;
+  justify-content: space-between;
+}
+.main-navigation{
+	width: 100%;
+}
+div .menu-primary-menu-container{
+	width: 100%;
+}
+.montessori-logo{
+  margin:30px 0 20px 30px;
+	width:30rem;
+	height: 20rem;
+  min-width: 15rem;
+   img{
+     position: relative;
+	height: 100%;
+	width: 100%;
+  a{
+    bottom:-20px;
+    cursor: pointer;
+    position: absolute;
+    color:transparent;
+  }
+}
+}
 
-.active {
-  background-color: #4FC8A1; }
+.active{
+    background-color:$color_btn_green;
+}
 
-@media screen and (max-width: 30rem) {
-  body {
-    background-color: lightgreen; }
-  .menu-primary-menu-container {
-    display: none; } }
+.secondary{
+ background-color:#248E6A;
+ li{
+		 display: inline-block;
+		 padding:20px;
+	 a{
+		 font-size: $font_body_size_mob;
+ text-decoration: none;
+ color:white;
+}
+ }
+}
+}
 
-.montessori-logo {
-  width: 10rem;
-  height: 2rem; }
-  .montessori-logo img {
-    height: 100%;
-    width: 100%; }
+@media screen and (max-width: $tablet_width) {
+	  body {
+			max-width: $tablet_width;
+        background-color: lightgreen;
+    }
+		.menu-primary-menu-container{
+			display: none;
+	}
+
+
+.montessori-logo{
+	width:10rem;
+	height: 5rem;
+	margin: 0px;
+ img{
+	height: 100%;
+	width: 100%;
+}
+}
+.secondary{
+	width: 70%;
+ background-color:#248E6A;
+ li{
+		 display: inline-block;
+		 padding:10px;
+	 a{
+		 font-size: 0.7rem;
+ text-decoration: none;
+ color:white;
+}
+ }
+}
+}
+
+
+*/
+.menu-primary-menu-container {
+  display: none; }
+  @media (min-width: 73.13rem) {
+    .menu-primary-menu-container {
+      display: inline-block;
+      width: 70%; }
+      .menu-primary-menu-container ul li {
+        display: inline-block; }
+        .menu-primary-menu-container ul li a:hover {
+          border-top: 6px solid #57B79F;
+          color: #57B79F;
+          cursor: pointer; } }
 
 .main-navigation-container {
+  font-family: "PT Sans";
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: 4rem; }
+  @media (min-width: 73.13rem) {
+    .main-navigation-container {
+      height: 30rem; } }
 
 .main-navigation {
   width: 70%; }
 
 div .menu-primary-menu-container {
   width: 100%; }
+  @media (min-width: 73.13rem) {
+    div .menu-primary-menu-container {
+      padding: 40px 0 40px 0;
+      margin: 0; }
+      div .menu-primary-menu-container ul li {
+        display: inline-block; }
+        div .menu-primary-menu-container ul li a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #000000;
+          font-size: 1.3rem;
+          border-top: 6px solid transparent;
+          list-style: none;
+          padding: 15px 0px;
+          margin: 0px 5px; } }
+
+.secondary {
+  background-color: #248E6A; }
+  .secondary li {
+    display: inline-block;
+    padding: 10px; }
+    .secondary li a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white; }
+
+.main-navigation-container {
+  height: 10rem; }
+  @media (min-width: 73.13rem) {
+    .main-navigation-container {
+      height: 15rem; } }
+
+.responsive-menu-button {
+  display: block;
+  margin-top: 60px !important; }
+
+.montessori-logo {
+  margin-top: -25px;
+  margin-left: 20px; }
+
+#primary-menu li.current-menu-item a {
+  border-top: 6px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+@media (min-width: 73.13rem) {
+  .menu-about-container,
+  .menu-montessori-container {
+    font-family: "PT Sans";
+    text-align: right;
+    width: 73.13rem;
+    padding: 10px 20 10px 10; } }
+
+.active {
+  background-color: #4FC8A1; }
+
+.montessori-logo {
+  margin: 20px 0 20px 30px;
+  width: 12rem;
+  height: 5rem; }
+  @media (min-width: 73.13rem) {
+    .montessori-logo {
+      margin: 70px 0 20px 30px;
+      width: 17rem;
+      height: 8rem; } }
+  .montessori-logo img {
+    position: relative;
+    height: 100%;
+    width: 100%; }
+    .montessori-logo img a {
+      bottom: -20px;
+      cursor: pointer;
+      position: absolute;
+      color: transparent; }
 
 /*--------------------------------------------------------------
 # Footer
