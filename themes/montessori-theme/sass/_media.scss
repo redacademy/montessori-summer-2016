@@ -22,7 +22,7 @@ object {
 /* Captions */
 
 .wp-caption {
-	margin-bottom: $base__space-unit;
+	margin-bottom:$base_spacing_normal;
 	max-width: 100%;
 
 	img[class*="wp-image-"] {
@@ -41,7 +41,7 @@ object {
 /* Galleries*/
 
 .gallery {
-	margin-bottom: $base__space-unit;
+	margin-bottom: $base_spacing_normal;
 }
 
 .gallery-item {
