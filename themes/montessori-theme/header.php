@@ -23,7 +23,7 @@
 
 					<div class="site-branding">
 						<div class="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo/montessori-logo.SVG" alt="montessori logo"/>	
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo/montessori-logo.SVG" alt="montessori logo"/>
 									</a>
 </div>
 	</section>
