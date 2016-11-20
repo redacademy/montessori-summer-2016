@@ -34,7 +34,7 @@
 </div>
 
 <nav>
-					<?php if ( is_page_template( 'about.php' )):?>
+					<?php if ( is_page_template( 'about.php' ) ) :?>
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'about',

@@ -117,3 +117,7 @@ text-align: right;
 	width:100%;
 	@include flex(center,space-between);
 }
+
+.site-header{
+border-bottom: solid 3px$black;
+}

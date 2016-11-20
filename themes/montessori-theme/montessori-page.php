@@ -98,23 +98,23 @@
                       $philosophy_post = get_posts($args);
                       ?>
                       <?php foreach($philosophy_post as $post) : setup_postdata( $post); ?>
-                        <div class="">
+                        <div class="philosophy-all-content">
                           <!-- <a href="#<?php the_title();?>" class="">
                             <img src="<?php echo get_template_directory_uri() ."/assets/icons/icon-".$post->post_name.".svg"?>">
                           </a> -->
-
+                
                           <h1><?php the_title();?></h1>
                         </div>
-                        <div id="<?php the_title();?>" class="philosophy">
+                        <div id="<?php the_title();?>" class="philosophy-title">
                         </div>
                         <div>
                             <?php if ( has_post_thumbnail() ) : ?>
                             </div>
-                            <div>
-                                <?php the_post_thumbnail( 'original' ); ?>
+                            <div class="thumbnail-content" >
+                                <?php the_post_thumbnail( 'small' ); ?>
                               </div>
                             <?php endif; ?>
-<div>
+                                  <div class="philosophy-content" >
                             <p><?php the_content(); ?></p>
 
                         </div>
