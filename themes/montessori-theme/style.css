@@ -599,6 +599,8 @@ object {
   padding-right: 2rem;
   margin-top: 20px;
   background-color: #248E6A; }
+  .secondary .active {
+    background-color: #4FC8A1; }
   .secondary li {
     display: inline-block;
     padding: 10px; }
@@ -622,9 +624,6 @@ object {
     text-align: right;
     width: 60rem;
     padding: 10px 20 10px 10; } }
-
-.active {
-  background-color: #4FC8A1; }
 
 .montessori-logo {
   padding: 0;
@@ -657,8 +656,16 @@ object {
       justify-content: space-between; }
 
 .site-header {
+  z-index: 999;
+  min-width: 27.5rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
   border-bottom: solid 3px #000000; }
 
+/*.secondary {
+width: 100%;
+  .div > & {background: red; }}*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
