@@ -1,216 +1,208 @@
 //front page
-
-
-  body{
-  width: 480px;
-  height: auto;
-  padding: 0;
-  margin: 0 ;
-
+// @media screen and (max-width: 480px) {
+.site-main {
+    .home-wrapper {
+        width: 470px;
+        height: 555px;
+        background-color: rgba(0,0,0,0.74);
+        h2 {
+            width: 100%;
+            height: 42px;
+            font-family: 'Asap';
+            font-size: 36px;
+            line-height: 42px;
+            color: #fff;
+            margin-top: 0;
+            margin-left: 30px;
+            padding-top: 17px;
+            box-sizing: border-box;
+            width: 119.23px;
+            height: 74px;
+            border-bottom: 4px solid #fff;
+        }
+        p {
+            height: 160px;
+            font-family: "Noto Sans";
+            font-size: 20px;
+            line-height: 40px;
+            color: #fff;
+            margin: 30px;
+        }
+        .red-btn {
+            width: 200px;
+            height: 41.88px;
+            background-color: #F76072;
+            border-color: #F76072;
+            border-radius: 3px;
+            color: #fff;
+            margin-left: 118px;
+            box-shadow: none;
+            font-family: "Noto Sans";
+            font-size: 20px;
+            font-weight: 300;
+            text-shadow: none;
+            letter-spacing: 0.8px;
+        }
+    }
 }
-.site-main{
-  .home-wrapper{
-    width: 480px;
-    height: 555px;
-    background-color: rgba(0,0,0,0.74);
-      h2{
-        width: 100%;
+//this is for the quick links
+
+.links-wrapper {
+    h2 {
+        padding-left: 38px;
+        width: 852px;
         height: 42px;
-        font-family: 'Asap';
+        font-family: "Asap";
         font-size: 36px;
         line-height: 42px;
-        color: #fff;
-        margin-top: 0;
-        margin-left: 30px;
-        padding-top: 17px;
-        box-sizing: border-box;
-        width: 119.23px;
-        height: 74px;
-        border-bottom: 4px solid #fff;
-      }
-
-    p{
-      height: 160px;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      line-height: 40px;
-      color: #fff;
-      margin: 30px;
+        color: #000000;
     }
-    .red-btn{
-      width: 200px;
-      height: 41.88px;
-      background-color: #F76072;
-      border-color: #F76072;
-      border-radius: 3px;
-      color: #fff;
-      margin-left: 118px;
-      box-shadow: none;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      font-weight: 300;
-      text-shadow: none;
-      letter-spacing: .8px;
-    }
-  }
-}
-
-.links-wrapper{
-
-  h2{
-    padding-left: 38px;
-    width: 852px;
-    height: 42px;
-    font-family: "Asap";
-    font-size: 36px;
-    line-height: 42px;
-    color: #000000;
-  }
-  p{
-    width: 377px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 40px;
-    color: #000000;
-    margin: 40px;
-  }
-
-  .green-btn{
-    width: 320px;
-    height: 67px;
-    background-color: #4FC8A1;
-    border-radius: 6px;
-    font-family: "Noto Sans";
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    border-color: #4FC8A1;
-    margin-left: 60px;
-    box-shadow: none;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: .8px;
-  }
-  .red-btn{
-    width: 320px;
-    height: 67px;
-    background-color: #F76072;
-    border-radius: 6px;
-    font-family: "Noto Sans";
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    border-color: #F76072;
-    margin-left: 60px;
-    box-shadow: none;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: .8px;
-  }
-
-}
-
-.support-wrapper {
-
-  .information{
-    h2{
-      width: 377px;
-      height: 42px;
-      font-family: 'Asap';
-      font-size: 36px;
-      line-height: 42px;
-      color: #000;
-      margin: 35px;
-    }
-    img {
-      width: 287px;
-      height: 470px;
-    }
-    p{
-      width: 377px;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      line-height: 46px;
-      color: #000;
-      margin: 40px;
-
-      .info{
-        width: 470px;
-        // height: 294px;
-        font-family: "Noto Sans";
-        font-size: 26px;
-        font-weight: bold;
-        line-height: 42px;
-        color: #000;
-      }
-      .img-text {
-        width: 470px;
+    article{
+    p {
+        width: 377px;
         font-family: "Noto Sans";
         font-size: 20px;
-        line-height: 46px;
-        color: #000;
-        margin: 45px;
-      }
-    } //p
-    a{
-    .red-btn{
-      width: 185px;
-      height: 47px;
-      background-color: #F76072;
-      border-color: #F76072;
-      border-radius: 6px;
-      color: #fff;
-      margin-left: 20px;
-      box-shadow: none;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      font-weight: 300;
-      text-shadow: none;
-      letter-spacing: .8px;
-      text-decoration: none;
-    }
-    .green-btn{
-      width: 185px;
-      height: 47px;
-      background-color: #4FC8A1;
-      border-color: #4FC8A1;
-      border-radius: 6px;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      line-height: 30px;
-      color: #fff;
-      margin-left: 15px;
-      box-shadow: none;
-      font-weight: 300;
-      text-shadow: none;
-      letter-spacing: .8px;
-      text-decoration: none;
+        line-height: 40px;
+        color: #000000;
+        margin: 40px;
     }
   }
+  a{
+    .green-btn {
+        width: 320px;
+        height: 67px;
+        background-color: #4FC8A1;
+        border-radius: 6px;
+        font-family: "Noto Sans";
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        border-color: #4FC8A1;
+        margin-left: 60px;
+        box-shadow: none;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+    }
+    .red-btn {
+        width: 320px;
+        height: 67px;
+        background-color: #F76072;
+        border-radius: 6px;
+        font-family: "Noto Sans";
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        border-color: #F76072;
+        margin-left: 60px;
+        box-shadow: none;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+    }
   }
 }
 
-.features-wrapper{
-  .features{
-    h2{
-      width: 470px;
-      height: 42px;
-      font-family: 'Asap';
-      font-size: 36px;
-      line-height: 42px;
-      color: #000;
-      margin-left: 30px;
+// this is for the support section
+
+.support-wrapper {
+    .information {
+        h2 {
+            width: 377px;
+            height: 42px;
+            font-family: 'Asap';
+            font-size: 36px;
+            line-height: 42px;
+            color: #000;
+            margin: 35px;
+        }
+        img {
+            width: 287px;
+            height: 470px;
+        }
+        p {
+            width: 377px;
+            font-family: "Noto Sans";
+            font-size: 20px;
+            line-height: 46px;
+            color: #000;
+            margin: 40px;
+            .info {
+                width: 470px;
+                // height: 294px;
+                font-family: "Noto Sans";
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 42px;
+                color: #000;
+            }
+            .img-text {
+                width: 470px;
+                font-family: "Noto Sans";
+                font-size: 20px;
+                line-height: 46px;
+                color: #000;
+                margin: 45px;
+            }
+        }//p
+
+        a {
+            .red-btn {
+                width: 185px;
+                height: 47px;
+                background-color: #F76072;
+                border-color: #F76072;
+                border-radius: 6px;
+                color: #fff;
+                margin-left: 20px;
+                box-shadow: none;
+                font-family: "Noto Sans";
+                font-size: 20px;
+                font-weight: 300;
+                text-shadow: none;
+                letter-spacing: 0.8px;
+                text-decoration: none;
+            }
+            .green-btn {
+                width: 185px;
+                height: 47px;
+                background-color: #4FC8A1;
+                border-color: #4FC8A1;
+                border-radius: 6px;
+                font-family: "Noto Sans";
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                margin-left: 15px;
+                box-shadow: none;
+                font-weight: 300;
+                text-shadow: none;
+                letter-spacing: 0.8px;
+                text-decoration: none;
+            }
+        }
     }
-  }
+}
+.features-wrapper {
+    .features {
+        h2 {
+            width: 470px;
+            height: 42px;
+            font-family: 'Asap';
+            font-size: 36px;
+            line-height: 42px;
+            color: #000;
+            margin-left: 30px;
+        }
+    }
 }
 // }
-
 a {
-  text-decoration: none;
+    text-decoration: none;
 }

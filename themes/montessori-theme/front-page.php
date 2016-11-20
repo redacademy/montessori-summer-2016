@@ -17,29 +17,29 @@ get_header(); ?>
     <div class="container-wrapper">
       <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
         <p><?php echo CFS()->get('banner_paragraph') ?></p>
-
-        <button class="red-btn" type="button" name="button">Our Society Role</button>
+        <a class="red-btn" href="<?php the_permalink(); ?>">Our Society Role</a>
     </div>
   </section>
+
 <!-- this is for the quick links -->
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
 
-        <article class="">
-          <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
-          <p><?php echo CFS()->get('contents') ?></p>
+        <article class="benifits">
+          <a class="green-btn" href="<?php the_permalink(); ?>">Benefits of Montessori</a>
+          <p><?php echo CFS()->get('contents'); ?></p>
         </article>
 
-        <article class="">
-          <button class="green-btn" type="button" name="button">NW Program</button>
-          <p><?php echo CFS()->get('nw_text') ?></p>
+        <article class="nw-program">
+          <a class="green-btn" href="<?php the_permalink(); ?>">NW Program</a>
+          <p><?php echo CFS()->get('nw_text'); ?></p>
         </article>
 
-        <article class="">
-          <button class="red-btn" type="button" name="button">Get involved</button>
-          <p><?php echo CFS()->get('get_text') ?></p>
+        <article class="involved">
+          <a class="red-btn" href="<?php the_permalink(); ?>">Get involved</a>
+          <p><?php echo CFS()->get('get_text'); ?></p>
         </article>
-
+        
     </section>
 
     <!-- we need your support section -->
@@ -53,30 +53,7 @@ get_header(); ?>
     </section>
 
     <section class="features-wrapper container">
-      <div class="front-page-posts">
-        <ul class="post container">
-        	<?php
-        	$args = array(
-      			'post_type' => 'post',
-      			'posts_per_page' => 3,
-      		  'order'=> 'DESC',); // returns an array of posts
 
-          	$postslist = get_posts( $args );
-          	foreach ( $postslist as $post ) :
-          	setup_postdata( $post ); ?>
-          	<li >
-          			<div class="information-journal">
-                  <?php the_title(); ?>
-        				<!-- <?php the_title( sprintf( '<p><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?> -->
-          			<a class="btn" href="<?php the_permalink(); ?>">Read More</a>
-          			</div>
-          	</li>
-          <?php
-          endforeach;
-          wp_reset_postdata();
-          ?>
-        </ul>
-      </div>
     </section>
 
 		</main><!-- #main -->
