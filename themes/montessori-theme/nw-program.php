@@ -12,39 +12,35 @@ get_header(); ?>
 
 
 
+		   <?php echo'<p>'.CFS()->get( 'title' ).'</p>'; ?>
 
-<?php
-		$fields = CFS()->get( 'list_of_preschools' );
 		
+
+		 
+
+	<?php
+     $fields = CFS()->get( 'list_of_preschools' );
+
      foreach ( $fields as $field ) {
 		
- echo '<span class"lstSchool" >'.$field['school_name'].'<p>';
- echo '</span>'.$field['adrees'].'</p>';
+       echo '<p class"lstSchool">'.$field['school_name'].'</p>';
+       echo '</p>'.$field['adrees'].'</p>';
 
-}
+        }
 
-?>
+        ?>
 
  <?php echo '<p>'.CFS()->get( 'abstract' ).'</p>'; ?>
 
-
-
- 	  <?php
+ 
 
 
 
-		$fields = CFS()->get( 'guids' );
-		
-     foreach ( $fields as $field ) {
-		
- echo '<p class="">'.$field['instructions'].'</p>';
-
-}
-?>
+ 	  
 
 
 
 		</main><!-- #main -->
-	</div>
+	
 	<!-- #primary -->
 	<?php get_footer(); ?>

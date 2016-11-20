@@ -21,7 +21,14 @@ get_header(); ?>
 
 }
 ?>
+ <button class="toggle"> <?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>  </button>
+
+ <div class="target">
+
 <?php get_sidebar(); ?>
+
+</div>
+
 
 <div class="newsLetter">
 	 <?php echo '<h2>'.CFS()->get( 'newsletter_title' ).'</h2>'; ?>
