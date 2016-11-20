@@ -1,11 +1,42 @@
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-.thumbnail-content{
-    width: 100px;
-    height: 100px;
-    img{
-    width: 100%;
-    height: 100%;
-}}
 
+
+
+
+ .philosophy-thumbnails a{
+    height: 800px;
+    @include flex(center,space-between);
+    align-self: left;
+    position:relative;
+    img{
+    width: 200px;
+    height: 200px;
+}}
+.main-history{
+
+   border-bottom: 2px solid #2EB688;
+}
+ul .philosophy-titles a{
+    cursor: pointer;
+    position:absolute;
+    color:green;
+    width: 50%;
+}
+
+.philosophy-content p{
+    position: absolute;
+   
+}
+.philosophy-thumbnails,
+ul li .philosophy-content p,
+ul li .philosophy-titles a{
+    width: 50%;
+}
+.philosophy-thumbnails a:hover{
+    img{
+   visibility: hidden;
+    
+
+}}
