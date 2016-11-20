@@ -10,8 +10,9 @@
 
         <main id="main" class="site-main" role="main">
 
-          <section id="history" class="history-section container">
-                            <ul class="main-history">
+          <section id="history" class="history-section mobile-container">
+
+                            <div class="main-history">
                               <?php
                                 $args = array(
                                   'post_type' => 'history',
@@ -36,20 +37,18 @@
                                           <?php the_post_thumbnail( 'original' ); ?>
                                         </div>
                                       <?php endif; ?>
-          <div>
+                                   <div>
                                       <p><?php the_content(); ?></p>
 
                                   </div>
-                                </li>
-                              <?php endforeach; wp_reset_postdata(); ?>
-                            </ul>
-                          </div>
 
-          <h1>yousef2</h1>
+                              <?php endforeach; wp_reset_postdata(); ?>
+
+                          </div>
 
           </section>
 
-<section id="materials" class="materials-section container">
+<section id="materials" class="materials-section mobile-container">
                   <ul class="main-materials">
                     <?php
                       $args = array(
@@ -83,8 +82,6 @@
                     <?php endforeach; wp_reset_postdata(); ?>
                   </ul>
                 </div>
-
-<h1>yousef2</h1>
 
 </section>
 
