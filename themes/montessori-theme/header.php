@@ -21,13 +21,19 @@
 <div class="main-navigation-container	">
 				<section class="montessori-logo">
 		<img src="<?php bloginfo('template_directory'); ?>/images/logo/montessori-logo.SVG" alt="montessori logo"/>
+
+
+					<div class="site-branding">
+						<div class="logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo/montessori-logo.SVG" alt="montessori logo"/>
+									</a>
+</div>
+
 	</section>
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
 </div>
 					<?php if ( is_page_template( 'about.php' )):?>
-
 
 						<?php
 						wp_nav_menu( array(
@@ -36,9 +42,7 @@
 							'menu_class'=> 'secondary'
 						) );
 						?>
-
 					<?php endif; ?>
-
 					<?php if ( is_page_template( 'montessori-page.php' )):?>
 
 						<?php
@@ -48,10 +52,9 @@
 							'menu_class'=> 'secondary'
 						) );
 						?>
-
 					<?php endif; ?>
-
+				</div>
+			</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
-
 			<div id="content" class="site-content">

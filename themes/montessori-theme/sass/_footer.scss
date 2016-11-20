@@ -2,28 +2,31 @@
 # Footer
 --------------------------------------------------------------*/
 /* Background*/
+
 .site-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font_footer_header;
   overflow: hidden;
   font-size: 0.8rem;
   width: 480px;
     height:150px;
-    background-color:#125A50;
-    color:#D3E0DE;
+    background-color:$color_footer_green;
+    color:$white;
 }
-
 /*block Items*/
 .footer-block-item1{
   position: relative;
-  width: 100%;
-  padding: 20px 0 30px 0;
-
-height: 10px;
-  padding-top: 20px;
+  width: 90%;
+  padding: 10px 0 30px 0;
+height: 30px;
+  margin-top:-10px;
   ul{
-  margin-left: 0px;
+  margin-left: 30px;
   padding-left: 0px;
     li{
-      font-size: 1rem;
+      font-size: 1.1rem;
     padding: 0px 10px 0px 10px;
       display: inline-block;
       a{
@@ -34,33 +37,36 @@ height: 10px;
   }
 }
 .boarder1{
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
+  border-left: solid 1px $white;
+  border-right: solid 1px $white;
 }
 .boarder2{
-  border-right: solid 1px #fff;
+  border-right: solid 1px $white;
 }
 .footer-block-item2{
   padding-top: 0px;
-  padding-left: 25px;
-  position: relative;
+  padding-left: 20px;
+  padding-bottom: 0px;
+
   width: 90%;
 text-align: center;
 p{
-padding: 5px;
+margin-bottom: 0px;
+padding-bottom: 0px;
 
 i{
   display: inline-block;
-  margin: auto;
+  margin: 0px;
   padding: 4px;
   margin-right: 5px;
   width: 22px;
   color: #fff;
-  border: solid 1px #fff;
+  border: solid 1px $white;
   border-radius: 50%;
 }
 }
   a{
+    font-size: 0.8rem;
     margin-right: 10px;
       color:#D3E0DE;
      text-decoration: none;
@@ -68,16 +74,24 @@ i{
 }
 /* copy rights*/
 
-
 .footer-block-item3{
   padding-top: 5px;
-  position: relative;
     width:90%;
     height: 20px;
   text-align: center;
   text-transform:capitalize;
   p{
-    line-height: 1.5px;
+  height: 30px;
     display:block;
   }
+}
+/*the links in the footer */
+
+.footer-block-item1 li{
+  a:hover{
+  color: $color_btn_hover_green;
+  }
+}
+.footer-block-item2 a:hover{
+    color: $color_btn_hover_green;
 }

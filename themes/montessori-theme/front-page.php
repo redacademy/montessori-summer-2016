@@ -17,10 +17,10 @@ get_header(); ?>
     <div class="container-wrapper">
       <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
         <p><?php echo CFS()->get('banner_paragraph') ?></p>
-
-        <button class="red-btn" type="button" name="button">Our Society Role</button>
+        <a class="red-btn" href="<?php the_permalink(); ?>">Our Society Role</a>
     </div>
   </section>
+
 <!-- this is for the quick links -->
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
@@ -40,6 +40,21 @@ get_header(); ?>
           <p><?php echo CFS()->get('get_text') ?></p>
         </article>
 
+       <article class="benifits">
+          <a class="green-btn" href="<?php the_permalink(); ?>">Benefits of Montessori</a>
+          <p><?php echo CFS()->get('contents'); ?></p>
+        </article>
+
+        <article class="nw-program">
+          <a class="green-btn" href="<?php the_permalink(); ?>">NW Program</a>
+          <p><?php echo CFS()->get('nw_text'); ?></p>
+        </article>
+
+        <article class="involved">
+          <a class="red-btn" href="<?php the_permalink(); ?>">Get involved</a>
+          <p><?php echo CFS()->get('get_text'); ?></p>
+        </article>
+        
     </section>
 
     <!-- we need your support section -->
@@ -53,6 +68,7 @@ get_header(); ?>
     </section>
 
     <section class="features-wrapper container">
+
       <div class="front-page-posts">
         <ul class="post container">
         	<?php
@@ -77,6 +93,7 @@ get_header(); ?>
           ?>
         </ul>
       </div>
+
     </section>
 
 		</main><!-- #main -->
