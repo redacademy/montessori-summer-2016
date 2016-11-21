@@ -4,39 +4,43 @@
 
 
 
-
- .philosophy-thumbnails a{
-    height: 800px;
-    @include flex(center,space-between);
-    align-self: left;
-    position:relative;
+.main-materials{
+     padding: 0px;
+     @include flex(flex-start,space-between);
+    flex-wrap: wrap;
+    }
+ .philosophy-thumbnails {
+     
+     overflow: hidden;
+    height: 640px;
     img{
     width: 200px;
     height: 200px;
+   
 }}
-.main-history{
+.main-history,
+.philosophy-section{
 
    border-bottom: 2px solid #2EB688;
 }
-ul .philosophy-titles a{
+.philosophy-titles a{
+    width: 200px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
     cursor: pointer;
     position:absolute;
     color:green;
-    width: 50%;
+   
+}
+.philosophy-titles a:hover{
+    
 }
 
 .philosophy-content p{
-    position: absolute;
-   
-}
-.philosophy-thumbnails,
-ul li .philosophy-content p,
-ul li .philosophy-titles a{
     width: 50%;
+    visibility: hidden;
+    position: absolute;
+  
 }
-.philosophy-thumbnails a:hover{
-    img{
-   visibility: hidden;
-    
 
-}}

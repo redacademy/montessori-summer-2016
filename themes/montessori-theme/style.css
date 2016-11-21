@@ -808,37 +808,38 @@ width: 100%;
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-.philosophy-thumbnails a {
-  height: 800px;
+.main-materials {
+  padding: 0px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-item-align: left;
-      align-self: left;
-  position: relative; }
-  .philosophy-thumbnails a img {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.philosophy-thumbnails {
+  overflow: hidden;
+  height: 640px; }
+  .philosophy-thumbnails img {
     width: 200px;
     height: 200px; }
 
-.main-history {
+.main-history,
+.philosophy-section {
   border-bottom: 2px solid #2EB688; }
 
-ul .philosophy-titles a {
+.philosophy-titles a {
+  width: 200px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1rem;
   cursor: pointer;
   position: absolute;
-  color: green;
-  width: 50%; }
+  color: green; }
 
 .philosophy-content p {
+  width: 50%;
+  visibility: hidden;
   position: absolute; }
-
-.philosophy-thumbnails,
-ul li .philosophy-content p,
-ul li .philosophy-titles a {
-  width: 50%; }
-
-.philosophy-thumbnails a:hover img {
-  visibility: hidden; }
