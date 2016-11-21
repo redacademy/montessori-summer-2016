@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *Template Name: front-page
- * @package RED_Starter_Theme
+ * @package Montessori_Theme
  */
 
 get_header(); ?>
@@ -54,7 +54,7 @@ get_header(); ?>
           <a class="red-btn" href="<?php the_permalink(); ?>">Get involved</a>
           <p><?php echo CFS()->get('get_text'); ?></p>
         </article>
-        
+
     </section>
 
     <!-- we need your support section -->
@@ -67,6 +67,7 @@ get_header(); ?>
       </div>
     </section>
 
+    <h2> <?php echo CFS()->get('featured_title'); ?></h2>
     <section class="features-wrapper container">
 
       <div class="front-page-posts">
@@ -94,6 +95,17 @@ get_header(); ?>
         </ul>
       </div>
 
+      <!-- <div class="features"> -->
+        <div class="features-flipper">
+          <p class="front">
+            <?php echo CFS()->get('features_front'); ?>
+          </p>
+          <p class="features-back">
+            <?php echo CFS()->get('features_back'); ?> <br>
+            <a class="green-btn" href="<?php the_permalink(); ?>">Read More</a>
+          </p>
+        </div>
+    <!-- </div> -->
     </section>
 
 		</main><!-- #main -->
