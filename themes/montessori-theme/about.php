@@ -21,6 +21,10 @@ get_header(); ?>
 
 }
 ?>
+
+
+
+
  <button class="toggle"> <?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>  </button>
 
  <div class="target">
@@ -28,6 +32,8 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 
 </div>
+
+</section>
 
 
 <div class="newsLetter">

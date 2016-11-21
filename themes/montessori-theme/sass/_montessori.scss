@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container{
   width:100%;
   margin:0 auto;
@@ -13,9 +14,49 @@
 .thumbnail-content{
     width: 100px;
     height: 100px;
+=======
+
+
+
+.main-materials{
+     padding: 0px;
+     @include flex(flex-start,space-between);
+    flex-wrap: wrap;
+    }
+ .philosophy-thumbnails {
+     
+     overflow: hidden;
+    height: 640px;
+>>>>>>> c8fd267318f5cf768ce91a495f995e07e602bdee
     img{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
+   
 }}
+.main-history,
+.philosophy-section{
+
+   border-bottom: 2px solid #2EB688;
+}
+.philosophy-titles a{
+    width: 200px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position:absolute;
+    color:green;
+   
+}
+.philosophy-titles a:hover{
+    
+}
+
+.philosophy-content p{
+    width: 50%;
+    visibility: hidden;
+    position: absolute;
+  
+}
 
 >>>>>>> 7e8fe8f67bb4c6a75007da25f6054d237716ae31

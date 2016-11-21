@@ -5,14 +5,14 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Add your custom post types here...
-// Register Custom Post Type
+
+// Register Custom School 
 function school_post_type() {
 
 	$labels = array(
 		'name'                  => 'Schools',
 		'singular_name'         => 'School',
-		'menu_name'             => 'School',
+		'menu_name'             => 'Schools',
 		'name_admin_bar'        => 'School',
 		'archives'              => 'Schools Archives',
 		'parent_item_colon'     => 'Parent School:',
@@ -40,14 +40,14 @@ function school_post_type() {
 		'label'                 => 'School',
 		'description'           => 'montesori school',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-book-alt',
+		'menu_position'         => 3,
+		'menu_icon'             => 'dashicons-admin-home',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
