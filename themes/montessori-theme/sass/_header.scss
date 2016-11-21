@@ -2,150 +2,44 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
-/*
-@media screen and (max-width: $desktop_width) {
-	.secondary{
- background-color:#248E6A;
- li{
-		 display: inline-block;
-		 padding:20px;
-	 a{
-		 font-size: $font_body_size_mob;
- text-decoration: none;
- color:white;
-}
- }
-}
-	#site-content{
-		height: 100%;
-	}
-.main-navigation-container{
-  font-family: $font_footer_header;
-  height: 30rem;
-	display: flex;
-  justify-content: space-between;
-}
-.main-navigation{
-	width: 100%;
-}
-div .menu-primary-menu-container{
-	width: 100%;
-}
-.montessori-logo{
-  margin:30px 0 20px 30px;
-	width:30rem;
-	height: 20rem;
-  min-width: 15rem;
-   img{
-     position: relative;
-	height: 100%;
-	width: 100%;
-  a{
-    bottom:-20px;
-    cursor: pointer;
-    position: absolute;
-    color:transparent;
-  }
-}
-}
-
-.active{
-    background-color:$color_btn_green;
-}
-
-.secondary{
- background-color:#248E6A;
- li{
-		 display: inline-block;
-		 padding:20px;
-	 a{
-		 font-size: $font_body_size_mob;
- text-decoration: none;
- color:white;
-}
- }
-}
-}
-
-@media screen and (max-width: $tablet_width) {
-	  body {
-			max-width: $tablet_width;
-        background-color: lightgreen;
-    }
-		.menu-primary-menu-container{
+.menu-primary-menu-container{
 			display: none;
-	}
-
-
-.montessori-logo{
-	width:10rem;
-	height: 5rem;
-	margin: 0px;
- img{
-	height: 100%;
-	width: 100%;
-}
-}
-.secondary{
-	width: 70%;
- background-color:#248E6A;
- li{
-		 display: inline-block;
-		 padding:10px;
-	 a{
-		 font-size: 0.7rem;
- text-decoration: none;
- color:white;
-}
- }
-}
-}
-
-
-*/
-
-	 
-      
-    
-		.menu-primary-menu-container{
-			display: none;
-			@include desktop{
-				display: inline-block;
-				width: 70%;
-	 ul{ 
-		 li{ 
+	 ul{
+		 li{
 			 display: inline-block;
 			 a:hover{
 		border-top: 6px solid #57B79F;
 	 color:#57B79F;
 	 cursor: pointer;
 	 }}}
-		}}
-	
+		}
+
 .main-navigation-container{
+  width: 100%;
+  background-color: $white;
 	font-family: $font_footer_header;
-	@include flex(center,space-between,row);
-  height: 4rem;
+	@include flex(center,space-between);
+  height: 5rem;
 	@include desktop{
-		height: 30rem;
+    display:inline-block;
+		height: 8rem;
+		padding:0 15px 0 15px;
 	}
 }
 .main-navigation{
-	width: 70%;
-}
-div .menu-primary-menu-container{
+	
 	width: 100%;
+}
+ .menu-primary-menu-container{
 @include desktop{
-	padding: 40px 0 40px 0;
-	margin: 0;
-
+	display: inline-block;
 	 ul{
-			 li{ display: inline-block;
+			 li{ display: inline;
 					 a{
 	 text-transform: uppercase;
 	 text-decoration: none;
 	color:$black;
+	color: #231F20;
 	 font-size: 1.3rem;
 	 border-top: 6px solid transparent;
 	 list-style:none;
@@ -155,8 +49,24 @@ div .menu-primary-menu-container{
 }
 }}
 }
-.secondary{
+div .secondary{
+	 text-align: right;
+	 width: 100%;
+	 font-family: $font_footer_header;
+max-height: 100px;
+	 @include desktop{
+		  white-space: nowrap;
+	overflow: hidden;
+	padding:5px 20 10px 10;
+		 width: 100%;
+	 }
+	text-align: right;
+	padding-right: 2rem;
+	margin-top: 20px;
  background-color:#248E6A;
+ & .active{
+    background-color:$color_btn_green;
+}
  li{
 		 display: inline-block;
 		 padding:10px;
@@ -167,52 +77,39 @@ div .menu-primary-menu-container{
 }
  }
 }
-
-.main-navigation-container {
-	height: 10rem ;
-	@include desktop{height: 15rem;
-	}
-}
 .responsive-menu-button {
-	display: block;
-	margin-top: 60px !important;
-}
-.montessori-logo{
-	margin-top: -25px;
-	margin-left: 20px;
+	margin-top: 3rem !important;
 }
 #primary-menu li.current-menu-item {
-	a{			
+	a{
 		border-top: 6px solid #57B79F;
 		color:#57B79F;
 		cursor: pointer;
 	}
 }
-
+ nav div .secondary{
+	
 @include desktop{
-	.menu-about-container,
-.menu-montessori-container
-{
-	font-family: $font_footer_header;
-text-align: right;
-	width: $desktop_width;
-	padding:10px 20 10px 10;
+   
 }
-}
-.active{
-    background-color:$color_btn_green;
+
 }
 .montessori-logo{
-  margin:20px 0 20px 30px;
-	width:12rem;
-	height: 5rem;	
+	padding: 0;
+	margin-left: 20px;
+  margin:10px 0 20px 30px;
+	width:14rem;
+	height: 7rem;
 	@include desktop{
-		margin:70px 0 20px 30px;
-			width:17rem;
+		margin:0;
+		padding: 30px 0 30px 10px;
+
+			width:20rem;
+			min-width: 12rem;
 	height: 8rem;
 	}
    img{
-     position: relative;
+    position: relative;
 	height: 100%;
 	width: 100%;
   a{
@@ -223,3 +120,26 @@ text-align: right;
   }
 }
 }
+.main-menu-wrapper{
+	width:100%;
+	height: 80px;
+	@include flex(center,space-between);
+	@include desktop{
+		 white-space: nowrap;
+	overflow: hidden;
+	}
+}
+
+.site-header{
+	z-index: 999;
+	min-width: $mobile-width;
+	width: 100%;
+	background:rgba($white,0.7);
+	position: fixed;
+border-bottom: solid 2px$black;
+}
+
+
+/*.secondary {
+width: 100%;
+  .div > & {background: red; }}*/

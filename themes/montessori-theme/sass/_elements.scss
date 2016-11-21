@@ -5,7 +5,10 @@ html {
   font-family: $font_body;
 	@include font-size(1);
 }
-
+.mobile-container{
+	width:$mobile_width;
+	margin: 0 auto;
+}
 *,
 *:before,
 *:after {
