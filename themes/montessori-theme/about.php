@@ -6,22 +6,41 @@
  */
 
 get_header(); ?>
-	<div id="primary" class="content-area">
-		<section class="">
-		<main id="main" class="site-main" role="main">
-<?php echo '<h1 class="">'.CFS()->get( 'Our History' ).'</h1>'; ?>
-<?php echo '<p class="">'.CFS()->get( 'paragraph1' ).'</p>'; ?>
-<?php echo '<div class="">'.CFS()->get( 'describtion1' ).'</div>'; ?>
-<section>
-	<section class="">
-	<main id="main" class="site-main" role="main">
-<?php echo '<h1 class="">'.CFS()->get( 'our_role' ).'</h1>'; ?>
-<?php echo '<p class="">'.CFS()->get( 'paragraph2' ).'</p>'; ?>
-<?php echo '<div class="cfsborder">'.CFS()->get( 'describtion2' ).'</div>'; ?>
-<section>
 
-		</main>
-		<!-- #main -->
+	<div id="primary" class="content-area">
+	  <main id="main" class="site-main" role="main">
+
+	<?php
+		$fields = CFS()->get( 'content_group' );
+
+     foreach ( $fields as $field ) {
+
+ echo '<h1 class="">'.$field['content_group_title'].'</h1>';
+ echo '<p class="">'.$field['content_group_paragragh'].'</p>';
+ echo '<div class="">'.$field['content_group_description'].'</div>';
+
+}
+?>
+
+
+ <button class="toggle"> <?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>  </button>
+
+ <div class="target">
+
+<?php get_sidebar(); ?>
+
+</div>
+
+</section>
+
+
+<div class="newsLetter">
+	 <?php echo '<h2>'.CFS()->get( 'newsletter_title' ).'</h2>'; ?>
+	 <?php echo '<h2>'.CFS()->get( 'date' ).'</h2>'; ?>
+	 <?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
+</div>
+
+		</main><!-- #main -->
 	</div>
 	<!-- #primary -->
 	<?php get_footer(); ?>

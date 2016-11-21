@@ -19,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
- TABLE OF CONTENTS:
+TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
 # Embedded Fonts
@@ -48,6 +48,33 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
+.site-main .involved-wrapper {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.site-main h1 a {
+  text-decoration: none;
+  padding: 20px 36px 19px 19px;
+  width: 120px;
+  height: 200px;
+  font-size: 20px;
+  font-family: Asap;
+  color: #000;
+  background-color: #4FC8A1;
+  font-family: "Noto Sans";
+  font-size: px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  margin-left: 15px;
+  box-shadow: none;
+  font-weight: 300;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+  display: block; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -403,6 +430,53 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /*primary-menu*/
+.menu-primary-menu-container {
+  padding-top: 40px;
+  width: 70%;
+  float: right; }
+
+.menu-primary-menu-container ul li {
+  display: inline-block; }
+  .menu-primary-menu-container ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border-top: 4px solid transparent;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0px 5px; }
+
+#primary-menu li.current-menu-item a {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+#primary-menu {
+  width: 1000px; }
+
+.menu-about-container,
+.menu-montessori-container {
+  text-align: right;
+  width: 1200px;
+  padding: 10px 20 10px 10; }
+
+.menu-primary-menu-container ul li a:hover {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+/****** sub menu *****/
+.secondary {
+  background-color: #248E6A; }
+  .secondary li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px; }
+    .secondary li a {
+      text-decoration: none;
+      color: white; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -546,9 +620,46 @@ object {
   overflow: visible;
   height: auto; }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-navigation {
+  width: 100%; }
+
+div .menu-primary-menu-container {
+  width: 100%; }
+
+.montessori-logo {
+  width: 15rem;
+  height: 5rem; }
+  .montessori-logo img {
+    height: 100%;
+    width: 100%; }
+
+@media screen and (max-width: 769px) {
+  body {
+    background-color: lightgreen; }
+  .menu-primary-menu-container {
+    display: none; } }
+
+.montessori-logo {
+  width: 10rem;
+  height: 2rem; }
+  .montessori-logo img {
+    height: 100%;
+    width: 100%; }
+
+.main-navigation-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-navigation {
+  width: 70%; }
+
+div .menu-primary-menu-container {
+  width: 100%; }
+
 .menu-primary-menu-container {
   display: none; }
   .menu-primary-menu-container ul li {
@@ -672,9 +783,6 @@ div .secondary {
   position: fixed;
   border-bottom: solid 2px #000000; }
 
-/*.secondary {
-width: 100%;
-  .div > & {background: red; }}*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -761,51 +869,6 @@ width: 100%;
 .footer-block-item2 a:hover {
   color: #248E6A; }
 
-/*--------------------------------------------------------------
-# flip member Img
---------------------------------------------------------------*/
-.flip-container {
-  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-  background: #aff1d3;
-  border-radius: 50%; }
-
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg); }
-
-.flip-container, .front, .back {
-  width: 200px;
-  height: 200px; }
-
-.flipper {
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d; }
-
-.front, .back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.front {
-  background-size: cover;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.back {
-  transform: rotateY(180deg); }
-
-.back p {
-  position: absolute;
-  padding: 0 20px;
-  font-family: arial;
-  line-height: 2em;
-  bottom: 230px;
-  text-align: center; }
-
 .site-main .home-wrapper {
   width: 480px;
   height: 555px;
@@ -846,128 +909,125 @@ width: 100%;
     text-shadow: none;
     letter-spacing: 0.8px; }
 
-.links-wrapper h2 {
-  padding-left: 38px;
-  width: 852px;
-  height: 42px;
-  font-family: "Asap";
-  font-size: 36px;
-  line-height: 42px;
-  color: #000000; }
-
-.links-wrapper article p {
-  width: 377px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  line-height: 40px;
-  color: #000000;
-  margin: 40px; }
-
-.links-wrapper a .green-btn {
-  width: 320px;
-  height: 67px;
-  background-color: #4FC8A1;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  border-color: #4FC8A1;
-  margin-left: 60px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px; }
-
-.links-wrapper a .red-btn {
-  width: 320px;
-  height: 67px;
-  background-color: #F76072;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  border-color: #F76072;
-  margin-left: 60px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px; }
-
-.support-wrapper .information h2 {
-  width: 377px;
-  height: 42px;
-  font-family: 'Asap';
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
-  margin: 35px; }
-
-.support-wrapper .information img {
-  width: 287px;
-  height: 470px; }
-
-.support-wrapper .information p {
-  width: 377px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  line-height: 46px;
-  color: #000;
-  margin: 40px; }
-  .support-wrapper .information p .info {
-    width: 470px;
-    font-family: "Noto Sans";
-    font-size: 26px;
-    font-weight: bold;
+.links-wrapper {
+  width: 480px; }
+  .links-wrapper h2 {
+    padding-left: 38px;
+    width: 852px;
+    height: 42px;
+    font-family: "Asap";
+    font-size: 36px;
     line-height: 42px;
-    color: #000; }
-  .support-wrapper .information p .img-text {
-    width: 470px;
+    color: #000000; }
+  .links-wrapper article p {
+    width: 377px;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    margin: 40px; }
+  .links-wrapper a .green-btn {
+    width: 320px;
+    height: 67px;
+    background-color: #4FC8A1;
+    border-radius: 6px;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-color: #4FC8A1;
+    margin-left: 60px;
+    box-shadow: none;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px; }
+  .links-wrapper a .red-btn {
+    width: 320px;
+    height: 67px;
+    background-color: #F76072;
+    border-radius: 6px;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-color: #F76072;
+    margin-left: 60px;
+    box-shadow: none;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px; }
+
+.support-wrapper {
+  width: 480px; }
+  .support-wrapper .information h2 {
+    width: 377px;
+    height: 42px;
+    font-family: 'Asap';
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin: 35px; }
+  .support-wrapper .information img {
+    width: 287px;
+    height: 470px; }
+  .support-wrapper .information p {
+    width: 377px;
     font-family: "Noto Sans";
     font-size: 20px;
     line-height: 46px;
     color: #000;
-    margin: 45px; }
-
-.support-wrapper .information a .red-btn {
-  width: 185px;
-  height: 47px;
-  background-color: #F76072;
-  border-color: #F76072;
-  border-radius: 6px;
-  color: #fff;
-  margin-left: 20px;
-  box-shadow: none;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none; }
-
-.support-wrapper .information a .green-btn {
-  width: 185px;
-  height: 47px;
-  background-color: #4FC8A1;
-  border-color: #4FC8A1;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  margin-left: 15px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none; }
+    margin: 40px; }
+    .support-wrapper .information p .info {
+      width: 470px;
+      font-family: "Noto Sans";
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 42px;
+      color: #000; }
+    .support-wrapper .information p .img-text {
+      width: 470px;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      line-height: 46px;
+      color: #000;
+      margin: 45px; }
+  .support-wrapper .information a .red-btn {
+    width: 185px;
+    height: 47px;
+    background-color: #F76072;
+    border-color: #F76072;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 20px;
+    box-shadow: none;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px;
+    text-decoration: none; }
+  .support-wrapper .information a .green-btn {
+    width: 185px;
+    height: 47px;
+    background-color: #4FC8A1;
+    border-color: #4FC8A1;
+    border-radius: 6px;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 15px;
+    box-shadow: none;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px;
+    text-decoration: none; }
 
 /****************************************************/
 .features-wrapper {
@@ -975,11 +1035,13 @@ width: 100%;
   background: #aff1d3;
   width: 200px; }
 
-.features-wrapper:hover .features-flipper,
-.features-wrapper.hover .features-flipper {
+.features-wrapper.hover .features-flipper,
+.features-wrapper:hover .features-flipper {
   transform: rotateY(180deg); }
 
-.features-wrapper, .front, .freatures-back {
+.features-wrapper,
+.freatures-back,
+.front {
   box-sizing: border-box;
   height: 139.76px;
   width: 480.27px; }
@@ -1000,7 +1062,8 @@ width: 100%;
   -ms-flex-direction: row;
       flex-direction: row; }
 
-.front, .features-back {
+.features-back,
+.front {
   text-align: center;
   overflow: hidden;
   /*   line-height: 1.5em; */
@@ -1009,9 +1072,8 @@ width: 100%;
   backface-visibility: hidden; }
 
 .front {
-  width: 424px;
-  /* height: 70px; */
-  font-family: Asap;
+  width: 450px;
+  font-family: 'Asap';
   font-size: 24px;
   text-align: center;
   color: #000000; }
@@ -1035,14 +1097,19 @@ width: 100%;
   text-decoration: none; }
 
 /***************************************************/
-.features-wrapper .features h2 {
-  width: 470px;
-  height: 42px;
-  font-family: 'Asap';
-  font-size: 36px;
-  line-height: 42px;
-  color: #000;
-  margin-left: 30px; }
+.all-features {
+  width: 480px; }
+  .all-features .features h2 {
+    height: 42px;
+    font-family: 'Asap';
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin-left: 30px; }
+    .all-features .features h2 .container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 480px; }
 
 a {
   text-decoration: none; }
@@ -1077,19 +1144,19 @@ ul .history-thumbnail img {
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-
+     
      overflow: hidden;
     height: 640px;
     img{
-
+       
     width: 200px;
     height: 200px;
-
+   
 }}
 
 .philosophy-titles { width: 200px;
 a{
-
+   
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -1099,7 +1166,7 @@ a{
 }
 }
 .philosophy-titles a:hover{
-
+    
 }
 
 .philosophy-content p{
@@ -1144,4 +1211,53 @@ ul .each-philosophy {
       flex-wrap: wrap; }
 
 /*Start Resources Section  */
-/* End Resources Section */
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*primary-menu*/
+.menu-primary-menu-container {
+  padding-top: 40px;
+  width: 70%;
+  float: right; }
+
+.menu-primary-menu-container ul li {
+  display: inline-block; }
+  .menu-primary-menu-container ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border-top: 4px solid transparent;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0px 5px; }
+
+#primary-menu li.current-menu-item a {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+#primary-menu {
+  width: 1000px; }
+
+.menu-about-container,
+.menu-montessori-container {
+  text-align: right;
+  width: 1200px;
+  padding: 10px 20 10px 10; }
+
+.menu-primary-menu-container ul li a:hover {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+/****** sub menu *****/
+.secondary {
+  background-color: #248E6A; }
+  .secondary li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px; }
+    .secondary li a {
+      text-decoration: none;
+      color: white; }
