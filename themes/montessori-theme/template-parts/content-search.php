@@ -2,11 +2,11 @@
 /**
  * Template part for displaying results in search pages.
  *
-
+<<<<<<< HEAD
  * @package montessori_Theme
-
+=======
  * @package Montessori_Theme
-
+>>>>>>> d47e8ff1f2ad0ba21f083a78de23017f6f2358ad
  */
 
 ?>
@@ -17,11 +17,11 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-
+<<<<<<< HEAD
 			<?php montessori_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php montessori_posted_by(); ?>
-
+=======
 			<?php Montessori_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php Montessori_posted_by(); ?>
-
+>>>>>>> d47e8ff1f2ad0ba21f083a78de23017f6f2358ad
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

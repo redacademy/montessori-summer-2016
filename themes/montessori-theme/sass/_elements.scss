@@ -19,6 +19,7 @@ body {
 	background: $white;
   font-family: $font_body;
 	box-sizing: border-box;
+	line-height: $font_body_size_mob;
 }
 
 blockquote, q {
