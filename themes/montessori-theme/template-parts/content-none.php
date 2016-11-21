@@ -5,7 +5,6 @@
 
  * @package montessori_Theme
 
- * @package Montessori_Theme
  */
 
 ?>

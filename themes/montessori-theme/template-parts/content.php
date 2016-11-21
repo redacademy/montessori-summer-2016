@@ -2,12 +2,8 @@
 /**
  * Template part for displaying posts.
  *
-
  * @package montessori_Theme
-
- * @package Montessori_Theme
-
- */
+*/
 
 ?>
 

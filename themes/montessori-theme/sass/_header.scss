@@ -68,7 +68,7 @@ div .menu-primary-menu-container{
 	}
 }
 .main-navigation{
-	
+
 	width: 100%;
 }
  .menu-primary-menu-container{
@@ -86,6 +86,7 @@ div .menu-primary-menu-container{
 	 list-style:none;
 	padding: 15px 0px;
 	 margin: 0px 5px;
+}
 }
 }
 }
@@ -129,9 +130,9 @@ max-height: 100px;
 	}
 }
  nav div .secondary{
-	
+
 @include desktop{
-   
+
 }
 
 }
@@ -180,8 +181,3 @@ max-height: 100px;
 	position: fixed;
 border-bottom: solid 2px$black;
 }
-
-
-/*.secondary {
-width: 100%;
-  .div > & {background: red; }}*/

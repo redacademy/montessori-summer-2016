@@ -19,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
 # Embedded Fonts
@@ -292,7 +292,8 @@ html {
 body {
   background: #fff;
   font-family: "Noto Sans";
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  line-height: 2; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -402,7 +403,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /*primary-menu*/
-<<<<<<< HEAD
 .menu-primary-menu-container {
   padding-top: 40px;
   width: 70%;
@@ -450,9 +450,6 @@ textarea {
       text-decoration: none;
       color: white; }
 
-/* end sub menu*/
-=======
->>>>>>> 0a98825f4a638395d995fc5562e9ac2ec7cc105e
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -596,7 +593,6 @@ object {
   overflow: visible;
   height: auto; }
 
-<<<<<<< HEAD
 .main-navigation-container {
   display: -ms-flexbox;
   display: flex; }
@@ -637,10 +633,6 @@ div .menu-primary-menu-container {
 div .menu-primary-menu-container {
   width: 100%; }
 
-=======
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 .menu-primary-menu-container {
   display: none; }
   .menu-primary-menu-container ul li {
@@ -707,7 +699,7 @@ div .secondary {
     display: inline-block;
     padding: 10px; }
     div .secondary li a {
-      font-size: 1.5rem;
+      font-size: 2;
       text-decoration: none;
       color: white; }
 
@@ -742,9 +734,6 @@ div .secondary {
       position: absolute;
       color: transparent; }
 
-<<<<<<< HEAD
->>>>>>> 0a98825f4a638395d995fc5562e9ac2ec7cc105e
-=======
 .main-menu-wrapper {
   width: 100%;
   height: 80px;
@@ -767,10 +756,6 @@ div .secondary {
   position: fixed;
   border-bottom: solid 2px #000000; }
 
-/*.secondary {
-width: 100%;
-  .div > & {background: red; }}*/
->>>>>>> 7e8fe8f67bb4c6a75007da25f6054d237716ae31
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -850,109 +835,12 @@ width: 100%;
     height: 30px;
     display: block; }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# flip member Img
---------------------------------------------------------------*/
-.flip-container {
-  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-  background: #aff1d3;
-  border-radius: 50%; }
-
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg); }
-
-.flip-container, .front, .back {
-  width: 200px;
-  height: 200px; }
-
-.flipper {
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d; }
-
-.front, .back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.front {
-  background-size: cover;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.back {
-  transform: rotateY(180deg); }
-
-.back p {
-  position: absolute;
-  padding: 0 20px;
-  font-family: arial;
-  line-height: 2em;
-  bottom: 230px;
-  text-align: center; }
-=======
 /*the links in the footer */
 .footer-block-item1 li a:hover {
   color: #248E6A; }
 
 .footer-block-item2 a:hover {
   color: #248E6A; }
->>>>>>> 0a98825f4a638395d995fc5562e9ac2ec7cc105e
-
-/*--------------------------------------------------------------
-# flip member Img
---------------------------------------------------------------*/
-<<<<<<< HEAD
-=======
-.flip-container {
-  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-  background: #aff1d3;
-  border-radius: 50%; }
-
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg); }
-
-.flip-container, .front, .back {
-  width: 200px;
-  height: 200px; }
-
-.flipper {
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d; }
-
-.front, .back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.front {
-  background-size: cover;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.back {
-  transform: rotateY(180deg); }
-
-.back p {
-  position: absolute;
-  padding: 0 20px;
-  font-family: arial;
-  line-height: 2em;
-  bottom: 230px;
-  text-align: center; }
-<<<<<<< HEAD
->>>>>>> 0a98825f4a638395d995fc5562e9ac2ec7cc105e
-=======
 
 .site-main .home-wrapper {
   width: 480px;
@@ -1123,11 +1011,13 @@ width: 100%;
   background: #aff1d3;
   width: 200px; }
 
-.features-wrapper:hover .features-flipper,
-.features-wrapper.hover .features-flipper {
+.features-wrapper.hover .features-flipper,
+.features-wrapper:hover .features-flipper {
   transform: rotateY(180deg); }
 
-.features-wrapper, .front, .freatures-back {
+.features-wrapper,
+.freatures-back,
+.front {
   box-sizing: border-box;
   height: 139.76px;
   width: 480.27px; }
@@ -1148,7 +1038,8 @@ width: 100%;
   -ms-flex-direction: row;
       flex-direction: row; }
 
-.front, .features-back {
+.features-back,
+.front {
   text-align: center;
   overflow: hidden;
   /*   line-height: 1.5em; */
@@ -1207,39 +1098,138 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-.main-materials {
-  padding: 0px;
+.main-history,
+.main-materials,
+.philosophy-section {
+  padding-bottom: 60px;
+  border-bottom: 2px solid #2EB688; }
+
+ul .history-thumbnail img {
+  float: left;
+  width: 227px;
+  height: 244px; }
+
+/*
+.main-materials{
+     padding: 0px;
+     @include flex(flex-start,space-between);
+    flex-wrap: wrap;
+    }
+ .philosophy-thumbnails {
+
+     overflow: hidden;
+    height: 640px;
+    img{
+
+    width: 200px;
+    height: 200px;
+
+}}
+
+.philosophy-titles { width: 200px;
+a{
+
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position:absolute;
+    color:green;
+}
+}
+.philosophy-titles a:hover{
+
+}
+
+.philosophy-content p{
+    width: 200px;
+    */
+/*position: absolute;*/
+ul .each-philosophy {
+  width: 200px; }
+  ul .each-philosophy .philosophy-thumbnail {
+    height: 200px; }
+  ul .each-philosophy div h2 {
+    font-family: "Asap";
+    display: inline-block;
+    font-size: 1rem;
+    width: 200px;
+    height: 33px;
+    position: absolute;
+    z-index: 3;
+    color: green;
+    text-align: center; }
+  ul .each-philosophy img {
+    margin-top: 13px;
+    z-index: 1;
+    position: relative; }
+  ul .each-philosophy p {
+    font-family: "Noto Sans";
+    position: absolute;
+    z-index: 3;
+    display: none;
+    width: 200px; }
+
+.main-philosophy {
+  width: 440px;
+  padding: 10px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.philosophy-thumbnails {
-  overflow: hidden;
-  height: 640px; }
-  .philosophy-thumbnails img {
-    width: 200px;
-    height: 200px; }
+/*Start Resources Section  */
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*primary-menu*/
+.menu-primary-menu-container {
+  padding-top: 40px;
+  width: 70%;
+  float: right; }
 
-.main-history,
-.philosophy-section {
-  border-bottom: 2px solid #2EB688; }
+.menu-primary-menu-container ul li {
+  display: inline-block; }
+  .menu-primary-menu-container ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border-top: 4px solid transparent;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0px 5px; }
 
-.philosophy-titles a {
-  width: 200px;
-  text-align: left;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  position: absolute;
-  color: green; }
+#primary-menu li.current-menu-item a {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
 
-.philosophy-content p {
-  width: 50%;
-  visibility: hidden;
-  position: absolute; }
->>>>>>> c8fd267318f5cf768ce91a495f995e07e602bdee
+#primary-menu {
+  width: 1000px; }
+
+.menu-about-container,
+.menu-montessori-container {
+  text-align: right;
+  width: 1200px;
+  padding: 10px 20 10px 10; }
+
+.menu-primary-menu-container ul li a:hover {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+/****** sub menu *****/
+.secondary {
+  background-color: #248E6A; }
+  .secondary li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px; }
+    .secondary li a {
+      text-decoration: none;
+      color: white; }

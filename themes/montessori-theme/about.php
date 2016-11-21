@@ -12,17 +12,15 @@ get_header(); ?>
 
 	<?php
 		$fields = CFS()->get( 'content_group' );
-		
+
      foreach ( $fields as $field ) {
-		
+
  echo '<h1 class="">'.$field['content_group_title'].'</h1>';
  echo '<p class="">'.$field['content_group_paragragh'].'</p>';
  echo '<div class="">'.$field['content_group_description'].'</div>';
 
 }
 ?>
-
-
 
 
  <button class="toggle"> <?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>  </button>

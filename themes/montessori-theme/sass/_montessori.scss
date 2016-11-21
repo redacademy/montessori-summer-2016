@@ -1,62 +1,114 @@
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.container{
-  width:100%;
-  margin:0 auto;
+
+.main-history,
+.main-materials,
+.philosophy-section{
+padding-bottom: 60px;
+   border-bottom: 2px solid #2EB688;
 }
-=======
->>>>>>> 0a98825f4a638395d995fc5562e9ac2ec7cc105e
-=======
-.thumbnail-content{
-    width: 100px;
-    height: 100px;
-=======
 
 
 
+/////*Start History Section**/////
+
+ul .history-thumbnail{
+    img{
+        float:left;
+        width:227px;
+        height:244px;
+    }
+}
+
+
+/*
 .main-materials{
      padding: 0px;
      @include flex(flex-start,space-between);
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-     
+
      overflow: hidden;
     height: 640px;
->>>>>>> c8fd267318f5cf768ce91a495f995e07e602bdee
     img{
+
     width: 200px;
     height: 200px;
-   
-}}
-.main-history,
-.philosophy-section{
 
-   border-bottom: 2px solid #2EB688;
-}
-.philosophy-titles a{
-    width: 200px;
+}}
+
+.philosophy-titles { width: 200px;
+a{
+
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
     position:absolute;
     color:green;
-   
+}
 }
 .philosophy-titles a:hover{
-    
+
 }
 
 .philosophy-content p{
-    width: 50%;
-    visibility: hidden;
-    position: absolute;
-  
-}
+    width: 200px;
+    */
+    /*position: absolute;*/
 
->>>>>>> 7e8fe8f67bb4c6a75007da25f6054d237716ae31
+
+
+///**** start philosophy section ***///
+
+
+
+ul .each-philosophy{
+
+width:200px;
+
+
+    & .philosophy-thumbnail{
+
+
+        height: 200px;
+    }
+    div h2{
+        font-family: $font_title;
+        display: inline-block;
+        font-size: 1rem;
+        width: 200px;
+        height: 33px;
+        position: absolute;
+        z-index: 3;
+      color:green;
+
+      text-align: center;
+    }
+     img{
+       margin-top: 13px;
+        z-index: 1;
+       position: relative;
+    }
+     p{
+         font-family: $font_body;
+        position: absolute;
+        z-index: 3;
+        display:none;
+        width:200px;
+    }
+}
+.main-philosophy{
+    width:440px;
+   padding: 10px;
+      @include flex(center,space-between);
+    flex-wrap: wrap;
+}
+//****** end philosophy section  ******//
+
+////////Start Materials Section /////
+
+
+/*Start Resources Section  */
