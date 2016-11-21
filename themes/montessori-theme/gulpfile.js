@@ -62,8 +62,6 @@ gulp.task('browser-sync', function() {
       './**/*.php',
    ];
 
-   
-
     gulp.watch(files).on('change', browserSync.reload);
 });
 
