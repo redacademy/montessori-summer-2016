@@ -19,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+ TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
 # Embedded Fonts
@@ -1077,19 +1077,19 @@ ul .history-thumbnail img {
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-     
+
      overflow: hidden;
     height: 640px;
     img{
-       
+
     width: 200px;
     height: 200px;
-   
+
 }}
 
 .philosophy-titles { width: 200px;
 a{
-   
+
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -1099,7 +1099,7 @@ a{
 }
 }
 .philosophy-titles a:hover{
-    
+
 }
 
 .philosophy-content p{
