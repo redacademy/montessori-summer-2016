@@ -8,12 +8,13 @@
 
 ?>
 
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main mobile-container  " role="main">
 
-          <section id="history" class="history-section mobile-container">
+<!-- Our History Section  -->
+          <section id="history" class="history-section ">
 
                             <ul class="main-history">
-                          <?php 
+                          <?php
                                 $args = array(
                                   'post_type' => 'history',
                                   'numberposts' => -1,
@@ -25,9 +26,9 @@
                                   <li class="history-title">
                                     <h1><?php the_title();?></h1>
                                  </li>
-                                  
+
                                       <?php if ( has_post_thumbnail() ) : ?>
-                                   
+
                                       <li class="history-thumbnail">
                                           <?php the_post_thumbnail( 'original' ); ?>
                                         </li>
@@ -43,46 +44,47 @@
 
           </section>
 
+<!-- Philosophy Section  -->
 
-<section id="philosophys" class="philosophy-section mobile-container">
-                  <h1 id="philosophy" >philosophy</h1>
-                  <ul class="main-materials">
-                    
+<section id="philosophys" class="philosophy-section  mobile-container">
 
-                    <?php
-                      $args = array(
-                        'post_type' => 'philosophy',
-                        'numberposts' => 6,
-                        'order' => 'ASC',
-                        );
-                      $philosophy_post = get_posts($args);
-                      ?>
-                      <?php foreach($philosophy_post as $post) : setup_postdata( $post); ?>
-                           <div id="<?php the_title();?>" class="philosophy-titles">
-                          <a href="#"><?php the_title();?></a>
-                        </div>
-                        
-                            
-                                  <div class="philosophy-content" >
-                            <p><?php the_content(); ?></p>
 
-                      </div>
-                     <?php if ( has_post_thumbnail() ) : ?>
-                         
+          	<div class="title-philosophy">
+              <h1 id="philosophy" >philosophy</h1>
+						<ul class="main-philosophy  ">
+              <?php
+                $args = array(
+                  'post_type' => 'philosophy',
+                  'numberposts' => 6,
+                  'order' => 'ASC',
+                  );
+                $philosophy_post = get_posts($args);
+                ?>
+                <?php foreach($philosophy_post as $post) : setup_postdata( $post); ?>
+								<li class="each-philosophy">
 
-                           <div> <a  href="#" class="<?php the_title();?>  philosophy-thumbnails" >
-                                <?php the_post_thumbnail( 'small' ); ?>
-                             </a>
-                       </div>
-                            <?php endif; ?>
-                         
-             
-                     
-                    <?php endforeach; wp_reset_postdata(); ?>
-                  </ul>
-               
+									<div class="<?php the_title();?>  philosophy-thumbnails" >
+										<div>
+				<h2><?php the_title();?></h2>
+											<?php if ( has_post_thumbnail() ) : ?>
+												<div>
+													<?php the_post_thumbnail( 'original' ); ?>
+												</div>
+											<?php endif; ?>
 
-</section>
+										<?php the_content(); ?>
+
+										</div>
+									</div>
+								</li>
+							<?php endforeach; wp_reset_postdata(); ?>
+						</ul>
+					</div>
+				</section>
+
+
+<!-- Materials Section  -->
+
 
 <section id="materials" class="materials-section mobile-container">
                   <ul class="main-materials">
@@ -98,22 +100,27 @@
                         <li class="the_title();">
                            <h1><?php the_title();?></h1>
                         </li>
-              
+
                             <?php if ( has_post_thumbnail() ) : ?>
-                           
-                            <li class="materials-thmbnail">
+                              <div>
                                 <?php the_post_thumbnail( 'original' ); ?>
-                              </li>
+                              </div>
+
                             <?php endif; ?>
                             <li class="materials-content">
                             <p><?php the_content(); ?></p>
 
                         </li>
-                
+
                     <?php endforeach; wp_reset_postdata(); ?>
                   </ul>
-               
 
+
+</section>
+<!-- Resources Section  -->
+<section> 
+<div class="title-resources">
+              <h1 id="resources" >Resources</h1>
 </section>
 
 

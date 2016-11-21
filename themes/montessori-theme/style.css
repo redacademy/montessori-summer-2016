@@ -19,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+ TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
 # Embedded Fonts
@@ -292,7 +292,8 @@ html {
 body {
   background: #fff;
   font-family: "Noto Sans";
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  line-height: 2; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -614,7 +615,7 @@ div .secondary {
     display: inline-block;
     padding: 10px; }
     div .secondary li a {
-      font-size: 1.5rem;
+      font-size: 2;
       text-decoration: none;
       color: white; }
 
@@ -1062,38 +1063,89 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-.main-materials {
-  padding: 0px;
+.main-history,
+.main-materials,
+.philosophy-section {
+  padding-bottom: 60px;
+  border-bottom: 2px solid #2EB688; }
+
+ul .history-thumbnail img {
+  float: left;
+  width: 227px;
+  height: 244px; }
+
+/*
+.main-materials{
+     padding: 0px;
+     @include flex(flex-start,space-between);
+    flex-wrap: wrap;
+    }
+ .philosophy-thumbnails {
+
+     overflow: hidden;
+    height: 640px;
+    img{
+
+    width: 200px;
+    height: 200px;
+
+}}
+
+.philosophy-titles { width: 200px;
+a{
+
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position:absolute;
+    color:green;
+}
+}
+.philosophy-titles a:hover{
+
+}
+
+.philosophy-content p{
+    width: 200px;
+    */
+/*position: absolute;*/
+ul .each-philosophy {
+  width: 200px; }
+  ul .each-philosophy .philosophy-thumbnail {
+    height: 200px; }
+  ul .each-philosophy div h2 {
+    font-family: "Asap";
+    display: inline-block;
+    font-size: 1rem;
+    width: 200px;
+    height: 33px;
+    position: absolute;
+    z-index: 3;
+    color: green;
+    text-align: center; }
+  ul .each-philosophy img {
+    margin-top: 13px;
+    z-index: 1;
+    position: relative; }
+  ul .each-philosophy p {
+    font-family: "Noto Sans";
+    position: absolute;
+    z-index: 3;
+    display: none;
+    width: 200px; }
+
+.main-philosophy {
+  width: 440px;
+  padding: 10px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.philosophy-thumbnails {
-  overflow: hidden;
-  height: 640px; }
-  .philosophy-thumbnails img {
-    width: 200px;
-    height: 200px; }
-
-.main-history,
-.philosophy-section {
-  border-bottom: 2px solid #2EB688; }
-
-.philosophy-titles a {
-  width: 200px;
-  text-align: left;
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  position: absolute;
-  color: green; }
-
-.philosophy-content p {
-  width: 50%;
-  visibility: hidden;
-  position: absolute; }
+/*Start Resources Section  */
+/* End Resources Section */
