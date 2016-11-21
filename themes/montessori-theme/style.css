@@ -19,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
- TABLE OF CONTENTS:
+TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
 # Embedded Fonts
@@ -48,6 +48,33 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
+.site-main .involved-wrapper {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.site-main h1 a {
+  text-decoration: none;
+  padding-left: 19px;
+  padding-right: 36px;
+  padding-top: 25px;
+  padding-bottom: 19px;
+  width: 200px;
+  height: 120px;
+  font-size: 30px;
+  color: #000;
+  background-color: #4FC8A1;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 15px;
+  box-shadow: none;
+  font-weight: 300;
+  text-shadow: none;
+  letter-spacing: .8px;
+  display: block; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -1077,19 +1104,19 @@ ul .history-thumbnail img {
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-
+     
      overflow: hidden;
     height: 640px;
     img{
-
+       
     width: 200px;
     height: 200px;
-
+   
 }}
 
 .philosophy-titles { width: 200px;
 a{
-
+   
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -1099,7 +1126,7 @@ a{
 }
 }
 .philosophy-titles a:hover{
-
+    
 }
 
 .philosophy-content p{
