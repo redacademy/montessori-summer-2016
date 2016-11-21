@@ -64,7 +64,7 @@ gulp.task('browser-sync', function() {
 
 
     browserSync.init(files, {
-      proxy: 'http://localhost:8888/inhabitent/',
+      proxy: 'http://localhost:8888/montessori/',
     });
 
 
