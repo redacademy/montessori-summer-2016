@@ -26,6 +26,7 @@ if ( $query->have_posts() ) :  ?>
 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 </div>
 <?php the_content();?>
+
 <?php if (has_post_thumbnail( )): ?>
          		<?php the_post_thumbnail( 'Normal' ); ?>
 
