@@ -48,8 +48,8 @@ get_header(); ?>
     <section class="support-wrapper container">
       <div class="information">
         <p class="info"> <?php echo CFS()->get('info_paragraph'); ?></p>
-        	<a class="red-btn" href="<?php the_permalink(); ?>">Support Now</a>
-          <a class="green-btn" href="<?php the_permalink(); ?>">How $ is Spent</a>
+        	<a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>">Support Now</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">How $ is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
@@ -63,7 +63,7 @@ get_header(); ?>
           </p>
           <p class="features-back">
             <?php echo CFS()->get('features_back'); ?>
-            <a class="green-btn" href="<?php the_permalink(); ?>">Read More</a>
+            <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Read More</a>
           </p>
         </div>
       </section>
@@ -76,7 +76,7 @@ get_header(); ?>
               </p>
               <p class="features-back">
                 <?php echo CFS()->get('second_features_back'); ?>
-                <a class="green-btn" href="<?php the_permalink(); ?>">Read More</a>
+                <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Read More</a>
               </p>
             </div>
         </section>
@@ -88,11 +88,11 @@ get_header(); ?>
                   </p>
                   <p class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
-                    <a class="green-btn" href="<?php the_permalink(); ?>">Read More</a>
+                    <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Read More</a>
                   </p>
                 </div>
               </section>
-</section>
+      </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

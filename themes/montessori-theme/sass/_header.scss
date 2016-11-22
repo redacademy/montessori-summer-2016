@@ -27,7 +27,7 @@
 	}
 }
 .main-navigation{
-	
+
 	width: 100%;
 }
  .menu-primary-menu-container{
@@ -88,9 +88,9 @@ max-height: 100px;
 	}
 }
  nav div .secondary{
-	
+
 @include desktop{
-   
+
 }
 
 }
@@ -136,7 +136,12 @@ max-height: 100px;
 	width: 100%;
 	background:rgba($white,0.7);
 	position: fixed;
-border-bottom: solid 2px$black;
+	border-bottom: solid 2px$black;
+	top: 0px;
+}
+
+.site-content {
+  margin-top: 78px;
 }
 
 
