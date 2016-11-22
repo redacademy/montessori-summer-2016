@@ -4,5 +4,68 @@
 
 /*primary-menu*/
 
+.menu-primary-menu-container{
+		padding-top: 40px;
+		width: 70%;
+	 float:right;
+
+}
 
 
+
+.menu-primary-menu-container{
+	 ul{
+			 li{ display: inline-block;
+					 a{
+						 text-transform: uppercase;
+	 font-weight: 400;
+	 text-decoration: none;
+	color:black;
+	 font-size: 1rem;
+	 border-top: 4px solid transparent;
+	 list-style:none;
+	padding: 15px 0px;
+	 margin: 0px 5px;
+}
+}
+}}
+#primary-menu li.current-menu-item {
+	a{
+		border-top: 4px solid #57B79F;
+		color:#57B79F;
+		cursor: pointer;
+	}
+}
+#primary-menu{
+	width: 1000px;
+}
+.menu-about-container,
+.menu-montessori-container
+{
+text-align: right;
+	width: 1200px;
+	padding:10px 20 10px 10;
+}
+.menu-primary-menu-container
+{
+	 ul
+	 { li
+	 { a:hover{
+		border-top: 4px solid #57B79F;;
+	 color:#57B79F;
+	 cursor: pointer;
+	 }}}
+}
+/****** sub menu *****/
+.secondary{
+ background-color:#248E6A;
+ li{
+		 display: inline-block;
+		 padding:10px 5px 10px 5px;
+	 a{
+ text-decoration: none;
+ color:white;
+}
+ }
+}
+ //**end sub menu**//
