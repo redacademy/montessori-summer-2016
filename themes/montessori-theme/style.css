@@ -48,14 +48,17 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
-.site-main .involved-wrapper {
+site-main .involved-wrapper {
   width: 480px;
   margin-left: auto;
   margin-right: auto; }
 
-.site-main h1 a {
+site-main h1 a {
   text-decoration: none;
-  padding: 20px 36px 19px 19px;
+  padding-left: 19px;
+  padding-right: 36px;
+  padding-top: 20px;
+  padding-bottom: 19px;
   width: 120px;
   height: 200px;
   font-size: 20px;
@@ -72,7 +75,7 @@ TABLE OF CONTENTS:
   box-shadow: none;
   font-weight: 300;
   text-shadow: none;
-  letter-spacing: 0.8px;
+  letter-spacing: .8px;
   display: block; }
 
 /*--------------------------------------------------------------
@@ -357,11 +360,11 @@ table {
   margin: 0;
   width: 100%; }
 
-.container {
+/*.container{
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
-
+  width: 1120px;
+}*/
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -782,10 +785,10 @@ div .secondary {
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
   border-bottom: solid 2px #000000;
-  margin-top: 0px; }
+  top: 5px; }
 
 .site-content {
-  margin-top: 78px; }
+  padding-top: 87px; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -801,7 +804,7 @@ div .secondary {
   font-family: "PT Sans";
   overflow: hidden;
   font-size: 0.8rem;
-  width: 480px;
+  width: 27.5rem;
   height: 150px;
   background-color: #125A50;
   color: #fff; }
@@ -809,7 +812,7 @@ div .secondary {
 /*block Items*/
 .footer-block-item1 {
   position: relative;
-  width: 90%;
+  width: 100%;
   padding: 10px 0 30px 0;
   height: 30px;
   margin-top: -10px; }
@@ -835,7 +838,7 @@ div .secondary {
   padding-top: 0px;
   padding-left: 20px;
   padding-bottom: 0px;
-  width: 90%;
+  width: 100%;
   text-align: center; }
   .footer-block-item2 p {
     margin-bottom: 0px;
@@ -858,7 +861,7 @@ div .secondary {
 /* copy rights*/
 .footer-block-item3 {
   padding-top: 5px;
-  width: 90%;
+  width: 100%;
   height: 20px;
   text-align: center;
   text-transform: capitalize; }
@@ -868,9 +871,11 @@ div .secondary {
 
 /*the links in the footer */
 .footer-block-item1 li a:hover {
+  cursor: pointer;
   color: #248E6A; }
 
 .footer-block-item2 a:hover {
+  cursor: pointer;
   color: #248E6A; }
 
 .site-main .home-wrapper {
@@ -1033,7 +1038,6 @@ div .secondary {
     letter-spacing: 0.8px;
     text-decoration: none; }
 
-/****************************************************/
 .features-wrapper {
   /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
   background: #aff1d3;
@@ -1148,19 +1152,19 @@ ul .history-thumbnail img {
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-     
+
      overflow: hidden;
     height: 640px;
     img{
-       
+
     width: 200px;
     height: 200px;
-   
+
 }}
 
 .philosophy-titles { width: 200px;
 a{
-   
+
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -1170,7 +1174,7 @@ a{
 }
 }
 .philosophy-titles a:hover{
-    
+
 }
 
 .philosophy-content p{
@@ -1215,53 +1219,3 @@ ul .each-philosophy {
       flex-wrap: wrap; }
 
 /*Start Resources Section  */
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*primary-menu*/
-.menu-primary-menu-container {
-  padding-top: 40px;
-  width: 70%;
-  float: right; }
-
-.menu-primary-menu-container ul li {
-  display: inline-block; }
-  .menu-primary-menu-container ul li a {
-    text-transform: uppercase;
-    font-weight: 400;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    border-top: 4px solid transparent;
-    list-style: none;
-    padding: 15px 0px;
-    margin: 0px 5px; }
-
-#primary-menu li.current-menu-item a {
-  border-top: 4px solid #57B79F;
-  color: #57B79F;
-  cursor: pointer; }
-
-#primary-menu {
-  width: 1000px; }
-
-.menu-about-container,
-.menu-montessori-container {
-  text-align: right;
-  width: 1200px;
-  padding: 10px 20 10px 10; }
-
-.menu-primary-menu-container ul li a:hover {
-  border-top: 4px solid #57B79F;
-  color: #57B79F;
-  cursor: pointer; }
-
-/****** sub menu *****/
-.secondary {
-  background-color: #248E6A; }
-  .secondary li {
-    display: inline-block;
-    padding: 10px 5px 10px 5px; }
-    .secondary li a {
-      text-decoration: none;
-      color: white; }

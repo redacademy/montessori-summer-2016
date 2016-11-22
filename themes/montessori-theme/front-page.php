@@ -26,28 +26,7 @@ get_header(); ?>
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
 
-<<<<<<< HEAD
-        <article class="">
-          <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
-          <p><?php echo CFS()->get('contents') ?></p>
-        </article>
 
-        <article class="">
-          <button class="green-btn" type="button" name="button">NW Program</button>
-          <p><?php echo CFS()->get('nw_text') ?></p>
-        </article>
-
-        <article class="">
-          <button class="red-btn" type="button" name="button">Get involved</button>
-          <p><?php echo CFS()->get('get_text') ?></p>
-        </article>
-
-       <article class="benifits">
-          <a class="green-btn" href="<?php the_permalink(); ?>">Benefits of Montessori</a>
-=======
-        <article class="benifits">
-          <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
->>>>>>> 5efa72248a07118a06fe71c91376b1339ba84aaa
           <p><?php echo CFS()->get('contents'); ?></p>
         </article>
 
@@ -74,41 +53,9 @@ get_header(); ?>
     </section>
 <!-- this is for the features news  -->
     <section class="all-features container">
-      <h2> <?php echo CFS()->get('featured_title'); ?></h2>
 
-<<<<<<< HEAD
     <h2> <?php echo CFS()->get('featured_title'); ?></h2>
-    <section class="features-wrapper container">
-
-      <div class="front-page-posts">
-        <ul class="post container">
-        	<?php
-        	$args = array(
-      			'post_type' => 'post',
-      			'posts_per_page' => 3,
-      		  'order'=> 'DESC',); // returns an array of posts
-
-          	$postslist = get_posts( $args );
-          	foreach ( $postslist as $post ) :
-          	setup_postdata( $post ); ?>
-          	<li >
-          			<div class="information-journal">
-                  <?php the_title(); ?>
-        				<!-- <?php the_title( sprintf( '<p><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?> -->
-          			<a class="btn" href="<?php the_permalink(); ?>">Read More</a>
-          			</div>
-          	</li>
-          <?php
-          endforeach;
-          wp_reset_postdata();
-          ?>
-        </ul>
-      </div>
-
-      <!-- <div class="features"> -->
-=======
-      <section class="features-wrapper container">
->>>>>>> 5efa72248a07118a06fe71c91376b1339ba84aaa
+       <section class="features-wrapper container">
         <div class="features-flipper">
           <p class="front">
             <?php echo CFS()->get('features_front'); ?>
