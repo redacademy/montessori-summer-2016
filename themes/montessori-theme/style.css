@@ -48,7 +48,13 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 site-main .involved-wrapper {
+=======
+
+
+.site-main .involved-wrapper {
+>>>>>>> ba594fab94aad8e10fdf6ab116c8041c7dc41d70
   width: 480px;
   margin-left: auto;
   margin-right: auto; }
@@ -57,26 +63,33 @@ site-main h1 a {
   text-decoration: none;
   padding-left: 19px;
   padding-right: 36px;
+<<<<<<< HEAD
   padding-top: 20px;
   padding-bottom: 19px;
   width: 120px;
   height: 200px;
   font-size: 20px;
   font-family: Asap;
+=======
+  padding-top: 25px;
+  padding-bottom: 19px;
+  width: 200px;
+  height: 120px;
+  font-size: 30px;
+>>>>>>> ba594fab94aad8e10fdf6ab116c8041c7dc41d70
   color: #000;
   background-color: #4FC8A1;
   font-family: "Noto Sans";
-  font-size: px;
   font-weight: bold;
   text-align: center;
   line-height: 30px;
-  color: #000;
   margin-left: 15px;
   box-shadow: none;
   font-weight: 300;
   text-shadow: none;
   letter-spacing: .8px;
   display: block; }
+
 
 /*--------------------------------------------------------------
 # Normalize
@@ -785,11 +798,18 @@ div .secondary {
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
   border-bottom: solid 2px #000000;
+<<<<<<< HEAD
   top: 5px; }
+=======
+  top: 0px; }
+>>>>>>> ba594fab94aad8e10fdf6ab116c8041c7dc41d70
 
 .site-content {
   padding-top: 87px; }
 
+/*.secondary {
+width: 100%;
+  .div > & {background: red; }}*/
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -921,8 +941,8 @@ div .secondary {
 .links-wrapper {
   width: 480px; }
   .links-wrapper h2 {
-    padding-left: 38px;
-    width: 852px;
+    padding: 0px;
+    width: 480px;
     height: 42px;
     font-family: "Asap";
     font-size: 36px;
@@ -1038,6 +1058,10 @@ div .secondary {
     letter-spacing: 0.8px;
     text-decoration: none; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ba594fab94aad8e10fdf6ab116c8041c7dc41d70
 .features-wrapper {
   /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
   background: #aff1d3;
@@ -1105,6 +1129,8 @@ div .secondary {
   text-decoration: none; }
 
 /***************************************************/
+
+
 .all-features {
   width: 480px; }
   .all-features .features h2 {
@@ -1118,7 +1144,60 @@ div .secondary {
       margin-left: auto;
       margin-right: auto;
       width: 480px; }
+  .all-features .features-wrapper {
+    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+    background: #aff1d3;
+    width: 200px;
+    box-sizing: border-box;
+    height: 139.76px;
+    width: 480.27px; }
+    .all-features .features-wrapper .features-flipper {
+      position: relative;
+      -webkit-transition: 1.9s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1.9s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1.9s;
+      -o-transform-style: preserve-3d;
+      transition: 1.9s;
+      transform-style: preserve-3d;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .all-features .features-wrapper .features-flipper:hover {
+        transform: rotateY(180deg); }
+      .all-features .features-wrapper .features-flipper .front {
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        padding: 20px;
+        width: 450px;
+        font-family: 'Asap';
+        font-size: 24px;
+        text-align: center;
+        color: #000000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+      .all-features .features-wrapper .features-flipper .features-back {
+        width: 480px;
+        height: 170px;
+        border: 1px solid #248E6A;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        bottom: 1px;
+        background-color: #fff;
+        transform: rotateY(180deg); }
+  .all-features .green-btn {
+    color: #248E6A;
+    text-decoration: none; }
 
+/***************************************************/
 a {
   text-decoration: none; }
 
@@ -1219,3 +1298,89 @@ ul .each-philosophy {
       flex-wrap: wrap; }
 
 /*Start Resources Section  */
+<<<<<<< HEAD
+=======
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*primary-menu*/
+.menu-primary-menu-container {
+  padding-top: 40px;
+  width: 70%;
+  float: right; }
+
+.menu-primary-menu-container ul li {
+  display: inline-block; }
+  .menu-primary-menu-container ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border-top: 4px solid transparent;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0px 5px; }
+
+#primary-menu li.current-menu-item a {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+#primary-menu {
+  width: 1000px; }
+
+.menu-about-container,
+.menu-montessori-container {
+  text-align: right;
+  width: 1200px;
+  padding: 10px 20 10px 10; }
+
+.menu-primary-menu-container ul li a:hover {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+/****** sub menu *****/
+.secondary {
+  background-color: #248E6A; }
+  .secondary li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px; }
+    .secondary li a {
+      text-decoration: none;
+      color: white; }
+
+site-main .involved-wrapper {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+site-main .involved-title green-btn {
+  text-decoration: none;
+  padding-left: 19px;
+  padding-right: 36px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  width: 120px;
+  height: 220px;
+  font-size: 15px;
+  font-family: Asap;
+  color: #000;
+  background-color: #4FC8A1;
+  font-family: "Noto Sans";
+  font-size: px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  margin-left: 15px;
+  box-shadow: none;
+  font-weight: 300;
+  text-shadow: none;
+  display: block; }
+
+.text-post {
+  border-top: 5px solid #248e6a;
+  width: 100px; }
+>>>>>>> ba594fab94aad8e10fdf6ab116c8041c7dc41d70

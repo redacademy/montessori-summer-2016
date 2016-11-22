@@ -179,9 +179,18 @@ max-height: 100px;
 	width: 100%;
 	background:rgba($white,0.7);
 	position: fixed;
+
 border-bottom: solid 2px$black;
-top:5px;
+
+top: 0px;
 }
+
 .site-content{
 	padding-top:87px;
+
+	border-bottom: solid 2px$black;
+	top: 0px;
 }
+
+
+
