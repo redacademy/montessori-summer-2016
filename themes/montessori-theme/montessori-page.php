@@ -24,15 +24,16 @@
     
 <div class="history" > 
 <div><h1><?php echo $field['history_title'];?></h1>
-  <p>  <?php echo $field['history_content'];?></p>
+  
   <div>
 <?php
 $src = wp_get_attachment_image_src($field['history_img'], 'small');
 
 echo '<img src="'.$src[0].'" />';
 
-}
+
 ?>
+<p>  <?php echo $field['history_content'];}?></p>
  </div>
 
 
@@ -68,22 +69,45 @@ echo '<img src="'.$src[0].'" />';
 
 
 <section id="benefits" class="benefits-section mobile-container">
-                  <ul class="main-benefits">
+                  <!-- <ul class="main-benefits"> -->
+  
                    <h1>Benefits of Montessori</h1>
 <?php $fields = CFS()->get( 'benefits' );?>
-<?php foreach ( $fields as $field )  { ?>   
-<div class="benefits"> 
+<?php foreach ( $fields as $field )  { ?>
+    
+<div class="benefits" > 
 <div><h1><?php echo $field['benefits_title'];?></h1>
-  <p>  <?php echo $field['benefits_content'];?></p>
+  
   <div>
 <?php
 $src = wp_get_attachment_image_src($field['benefits_img'], 'small');
-echo '<img src="'.$src[0].'" />';
+
+echo '<img src="'.$src[0].'" />'; ?>
+<p>  <?php echo $field['benefits_content'];?></p>
+<?php
+}
+?>
+<!--  here is a deferent section -->
+
+<?php $fields = CFS()->get( 'benefits_details' );?>
+<?php foreach ( $fields as $field )  { ?>
+    
+<div class="benefits" > 
+
+  
+  
+ <p> <?php echo $field['benefits_parts'];?></p>
+<?php
 }
 ?>
 
+  
+  
+
  </div>
-   </ul>
+
+
+
 
 </section>
 
@@ -101,15 +125,18 @@ echo '<img src="'.$src[0].'" />';
     
 <div class="materials" > 
 <div><h1><?php echo $field['materials_title'];?></h1>
-  <p>  <?php echo $field['materials_content'];?></p>
+  
   <div>
 <?php
 $src = wp_get_attachment_image_src($field['materials_img'], 'small');
 
-echo '<img src="'.$src[0].'" />';
+echo '<img src="'.$src[0].'" />'; ?>
+<p>  <?php echo $field['materials_content'];?></p>
 
+<?php
 }
 ?>
+<p>  <?php echo $field['materials_content'];?></p>
 
  </div>
                   </ul>
