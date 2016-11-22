@@ -137,8 +137,11 @@ max-height: 100px;
 	background:rgba($white,0.7);
 	position: fixed;
 border-bottom: solid 2px$black;
+margin-top:0px;
 }
-
+.site-content{
+	margin-top:78px;
+}
 
 /*.secondary {
 width: 100%;
