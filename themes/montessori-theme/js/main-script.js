@@ -3,9 +3,7 @@
 jQuery(document).ready(function( $ ) {
 
 // --------------------------------------------------------------
-<<<<<<< HEAD
-//TO HOVER ACTIVE THE ACTIVE LINK :
-=======
+
 //  TO HOVER ACTIVE THE ACTIVE LINK :
 
 // ----------------------------------------------------------------
@@ -43,12 +41,10 @@ jQuery(document).ready(function( $ ) {
 
 //  HIDEN DIV FUNCTION:
 
-// HIDEN DIV FUNCTION:
-
 // ----------------------------------------------------------------
 
 $('.toggle').click(function() {
-    $('#target').toggle('slow');
+    $('.target').toggle('slow');
 });
 
 

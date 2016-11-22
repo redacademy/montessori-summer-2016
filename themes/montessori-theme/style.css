@@ -1193,6 +1193,74 @@ width:200px;
     flex-wrap: wrap;
 }*/
 /*Start Resources Section  */
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*primary-menu*/
+.menu-primary-menu-container {
+  padding-top: 40px;
+  width: 70%;
+  float: right; }
+
+.menu-primary-menu-container ul li {
+  display: inline-block; }
+  .menu-primary-menu-container ul li a {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    border-top: 4px solid transparent;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0px 5px; }
+
+#primary-menu li.current-menu-item a {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+#primary-menu {
+  width: 1000px; }
+
+.menu-about-container,
+.menu-montessori-container {
+  text-align: right;
+  width: 1200px;
+  padding: 10px 20 10px 10; }
+
+.menu-primary-menu-container ul li a:hover {
+  border-top: 4px solid #57B79F;
+  color: #57B79F;
+  cursor: pointer; }
+
+/****** sub menu *****/
+.secondary {
+  background-color: #248E6A; }
+  .secondary li {
+    display: inline-block;
+    padding: 10px 5px 10px 5px; }
+    .secondary li a {
+      text-decoration: none;
+      color: white; }
+
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+.site-content {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 20;
+  padding-right: 20; }
+
+.target {
+  background: #0099cc;
+  width: 300px;
+  height: 300px;
+  height: 160px;
+  padding: 5px;
+  display: none; }
+
 site-main .involved-wrapper {
   width: 480px;
   margin-left: auto;
