@@ -179,10 +179,24 @@ max-height: 100px;
 	width: 100%;
 	background:rgba($white,0.7);
 	position: fixed;
+
 border-bottom: solid 2px$black;
 top: 0px;
 }
 
 .site-content{
 	margin-top: 78px;
+
+	border-bottom: solid 2px$black;
+	top: 0px;
+
 }
+
+.site-content{
+	margin-top:78px;
+}
+
+
+/*.secondary {
+width: 100%;
+  .div > & {background: red; }}*/

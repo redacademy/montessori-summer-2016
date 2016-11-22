@@ -23,6 +23,7 @@ if ( $query->have_posts() ) :  ?>
 
 
 <section class="involved-wrapper container">
+<<<<<<< HEAD
   <div class="involved-title">
  <a class="green-btn" href="<?php the_permalink(); ?>">Montessori in the Middle school</a>
 <a class="green-btn" href="<?php the_permalink(); ?>">Intervew with the our Montisseri teachers</a>
@@ -34,6 +35,16 @@ if ( $query->have_posts() ) :  ?>
   <
          		<?php the_post_thumbnail( 'Normal' ); ?>
 </div>
+
+  <div class="green-btn">
+<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+</div>
+<?php the_content();?>
+
+<?php if (has_post_thumbnail( )): ?>
+         		<?php the_post_thumbnail( 'Normal' ); ?>
+
+
  <a class="moretag" href="<?php the_permalink(); ?>">Exprsee your Intrest</a>
           <?php endif ; ?>
     <?php endwhile;  ?>
@@ -44,9 +55,11 @@ if ( $query->have_posts() ) :  ?>
 
 
 
+</section>
 
    </main><!-- #main -->
  </div><!-- #primary -->
+
 
 
   <!-- This is for past events -->
@@ -64,6 +77,8 @@ if ( $query->have_posts() ) :  ?>
 
 
 
+
+  <!-- This is for support now-->
 
 
 

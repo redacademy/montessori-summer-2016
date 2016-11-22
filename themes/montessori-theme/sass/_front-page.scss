@@ -1,5 +1,6 @@
 //front page
-// @media screen and (max-width: 480px) {
+
+// media screen for mobile (max-width: 480px)
 .site-main {
     .home-wrapper {
         width: 480px;
@@ -49,8 +50,8 @@
 .links-wrapper {
     width: 480px;
     h2 {
-        padding-left: 38px;
-        width: 852px;
+        padding: 0px;
+        width: 480px;
         height: 42px;
         font-family: "Asap";
         font-size: 36px;
@@ -190,81 +191,7 @@
 }//support-wrapper
 
 // this is for the features fliper
-.features-wrapper {
-    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-    background: #aff1d3;
-    width: 200px;
-}
-.features-wrapper.hover .features-flipper,
-.features-wrapper:hover .features-flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-.features-wrapper,
-.freatures-back,
-.front {
-    box-sizing: border-box;
-    height: 139.76px;
-    width: 480.27px;
-}
-.features-flipper {
-    position: relative;
-    -webkit-transition: 1.9s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 1.9s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 1.9s;
-    -o-transform-style: preserve-3d;
-    transition: 1.9s;
-    transform-style: preserve-3d;
-    /*   display: flex; */
-    justify-content: space-around;
-    flex-direction: row;
-}
-.features-back,
-.front {
-    text-align: center;
-    overflow: hidden;
-    /*   line-height: 1.5em; */
-    padding: 20px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.front {
-    width: 450px;
-    font-family: 'Asap';
-    font-size: 24px;
-    text-align: center;
-    color: #000000;
-}
-.features-back {
-    overflow: hidden;
-    line-height: 1.5em;
-    padding: 20px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.features-back {
-    position: absolute;
-    bottom: 1px;
-    background-color: white;
-    border: 1px solid #248E6A;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-.green-btn {
-    color: #248E6A;
-    text-decoration: none;
-}
-/***************************************************/
+
 .all-features {
     width: 480px;
     .features {
@@ -282,8 +209,81 @@
             }
         }
     }
+
+
+.features-wrapper {
+    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+    background: #aff1d3;
+    width: 200px;
+    box-sizing: border-box;
+    height: 139.76px;
+    width: 480.27px;
+
+    .features-flipper {
+      position: relative;
+      -webkit-transition: 1.9s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1.9s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1.9s;
+      -o-transform-style: preserve-3d;
+      transition: 1.9s;
+      transform-style: preserve-3d;
+      justify-content: space-around;
+      flex-direction: row;
+
+      &:hover{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+      .front {
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+          padding: 20px;
+          width: 450px;
+          font-family: 'Asap';
+          font-size: 24px;
+          text-align: center;
+          color: #000000;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+      }
+
+      .features-back {
+          width: 480px;
+          height: 170px;
+          border: 1px solid #248E6A;
+          margin: 0;
+          text-align: center;
+          overflow: hidden;
+          padding: 0;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+          position: absolute;
+          bottom: 1px;
+          background-color: #fff;
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+      }
+    }
 }
-// }
+.green-btn {
+    color: #248E6A;
+    text-decoration: none;
+}
+}
+
+/***************************************************/
+
 a {
     text-decoration: none;
 }
