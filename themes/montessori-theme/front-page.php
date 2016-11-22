@@ -26,7 +26,7 @@ get_header(); ?>
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
 
-<<<<<<< HEAD
+
         <article class="">
           <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
           <p><?php echo CFS()->get('contents') ?></p>
@@ -44,10 +44,10 @@ get_header(); ?>
 
        <article class="benifits">
           <a class="green-btn" href="<?php the_permalink(); ?>">Benefits of Montessori</a>
-=======
+
         <article class="benifits">
           <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
->>>>>>> 5efa72248a07118a06fe71c91376b1339ba84aaa
+
           <p><?php echo CFS()->get('contents'); ?></p>
         </article>
 
@@ -76,7 +76,7 @@ get_header(); ?>
     <section class="all-features container">
       <h2> <?php echo CFS()->get('featured_title'); ?></h2>
 
-<<<<<<< HEAD
+
     <h2> <?php echo CFS()->get('featured_title'); ?></h2>
     <section class="features-wrapper container">
 
@@ -106,9 +106,9 @@ get_header(); ?>
       </div>
 
       <!-- <div class="features"> -->
-=======
+
       <section class="features-wrapper container">
->>>>>>> 5efa72248a07118a06fe71c91376b1339ba84aaa
+
         <div class="features-flipper">
           <p class="front">
             <?php echo CFS()->get('features_front'); ?>

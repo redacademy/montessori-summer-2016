@@ -3,21 +3,20 @@ site-main{
      width: 480px;
      margin-left: auto;
      margin-right: auto;
-     // flex-direction: row;
-     // display: inline-flex;
-     // justify-content: space-between;
+    //  flex-direction: row;
+    //  display: inline-flex;
+    //  justify-content: space-between;
    }
-
-   h1{
-     a{
+.involved-title{
+green-btn{
        text-decoration: none;
        padding-left:19px;
        padding-right:36px;
        padding-top: 20px;
        padding-bottom: 19px;
        width: 120px;
-       height: 200px;
-       font-size: 20px;
+       height: 220px;
+       font-size: 15px;
        font-family: Asap;
        color:#000;
        background-color: #4FC8A1 ;
@@ -31,9 +30,17 @@ site-main{
        box-shadow: none;
        font-weight: 300;
        text-shadow: none;
-       letter-spacing: .8px;
        display: block;
-
      }
+
+    }
  }
+
+
+ // This is for past events
+
+
+ .text-post{
+   border-top: 5px solid #248e6a;
+   width: 100px;
 }
