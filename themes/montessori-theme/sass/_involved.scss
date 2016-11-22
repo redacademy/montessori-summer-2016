@@ -1,34 +1,85 @@
-.site-main {
-    .involved-wrapper {
-        width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        // flex-direction: row;
-        // display: inline-flex;
-        // justify-content: space-between;
+
+site-main{
+   .involved-wrapper{
+     width: 480px;
+     margin-left: auto;
+     margin-right: auto;
+    
+   }
+.involved-title{
+green-btn{
+       text-decoration: none;
+       padding-left:19px;
+       padding-right:36px;
+       padding-top: 20px;
+       padding-bottom: 19px;
+       width: 120px;
+       height: 220px;
+       font-size: 15px;
+       font-family: Asap;
+       color:#000;
+       background-color: #4FC8A1 ;
+       font-family: "Noto Sans";
+       font-size: px;
+       font-weight: bold;
+       text-align: center;
+       line-height: 30px;
+       color: #000;
+       margin-left: 15px;
+       box-shadow: none;
+       font-weight: 300;
+       text-shadow: none;
+       display: block;
+     }
+
     }
-    h1 {
-        a {
-            text-decoration: none;
-            padding: 20px 36px 19px 19px;
-            width: 120px;
-            height: 200px;
-            font-size: 20px;
-            font-family: Asap;
-            color: #000;
-            background-color: #4FC8A1;
-            font-family: "Noto Sans";
-            font-size: px;
-            font-weight: bold;
-            text-align: center;
-            line-height: 30px;
-            color: #000;
-            margin-left: 15px;
-            box-shadow: none;
-            font-weight: 300;
-            text-shadow: none;
-            letter-spacing: 0.8px;
-            display: block;
-        }
+ }
+
+
+ // This is for past events
+
+
+ .text-post{
+   border-top: 5px solid #248e6a;
+   width: 100px;
+
+
+.site-main{
+    .involved-wrapper{
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+   
     }
+
+    h1{
+      a{
+        
+        text-decoration: none;
+        padding-left:19px;
+        padding-right:36px;
+        padding-top: 25px;
+        padding-bottom: 19px;
+        width: 200px;
+        height: 120px;
+        font-size: 30px;
+        color:#000;
+        background-color: #4FC8A1;
+        font-family: "Noto Sans";
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 15px;
+        box-shadow: none;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: .8px;
+        display: block;
+
+      }
+  }
+
 }
+
+ }
+

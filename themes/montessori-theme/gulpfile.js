@@ -63,10 +63,7 @@ gulp.task('browser-sync', function() {
    ];
 
 
-    browserSync.init(files, {
-      proxy: 'http://localhost:8888/montessori/',
-    });
-
+  
 
     gulp.watch(files).on('change', browserSync.reload);
 });

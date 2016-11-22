@@ -14,90 +14,136 @@
           <section id="history" class="history-section ">
 
                             <ul class="main-history">
-                          <?php
-                                $args = array(
-                                  'post_type' => 'history',
-                                  'numberposts' => -1,
-                                  'order' => 'ASC',
-                                  );
-                                $history_post = get_posts($args);
-                                ?>
-                                <?php foreach($history_post as $post) : setup_postdata( $post); ?>
-                                  <li class="history-title">
-                                    <h1><?php the_title();?></h1>
-                                 </li>
+                
 
-                                      <?php if ( has_post_thumbnail() ) : ?>
 
-                                      <li class="history-thumbnail">
-                                          <?php the_post_thumbnail( 'original' ); ?>
-                                        </li>
+        
 
-                                      <?php endif; ?>
-                                   </li class="history-thumbnail">
-                                      <p><?php the_content(); ?></p>
-                               <li>
+<?php $fields = CFS()->get( 'history' );?>
+<?php foreach ( $fields as $field )  { ?>
+    
+<div class="history" > 
+<div><h1><?php echo $field['history_title'];?></h1>
+  
+  <div>
+<?php
+$src = wp_get_attachment_image_src($field['history_img'], 'small');
 
-                              <?php endforeach; wp_reset_postdata(); ?>
+echo '<img src="'.$src[0].'" />';
 
-                          </ul>
 
+?>
+<p>  <?php echo $field['history_content'];}?></p>
+ </div>
+
+
+</ul>
+                   
           </section>
 
 <!-- Philosophy Section  -->
 
-<section id="philosophys" class="philosophy-section  mobile-container">
+<section id="philosophys" class="philosophys-section  mobile-container">
 
 
 
 <?php $fields = CFS()->get( 'philosophy' );?>
 <?php foreach ( $fields as $field )  { ?>
-<ul>
-    <h1><?php echo $field['philosophy_title'];?></h1>
-  <p>  <?php echo $field['philosophy_content'];}?></p>
-      <li><?php echo $field['philosophy_img'];}?></li>
+    
+<div class="philosophy" > 
+<div><h1><?php echo $field['philosophy_title'];?></h1>
+  <p>  <?php echo $field['philosophy_content'];?></p>
+  <div>
+<?php
+$src = wp_get_attachment_image_src($field['philosophy_img'], 'small');
 
-</ul>
+echo '<img src="'.$src[0].'" />';
+
+}
+?>
+ </div>
 
 				</section>
 
+<!-- Start our Benefits -->
 
-<!-- Materials Section  -->
+
+<section id="benefits" class="benefits-section mobile-container">
+                  <!-- <ul class="main-benefits"> -->
+  
+                   <h1>Benefits of Montessori</h1>
+<?php $fields = CFS()->get( 'benefits' );?>
+<?php foreach ( $fields as $field )  { ?>
+    
+<div class="benefits" > 
+<div><h1><?php echo $field['benefits_title'];?></h1>
+  
+  <div>
+<?php
+$src = wp_get_attachment_image_src($field['benefits_img'], 'small');
+
+echo '<img src="'.$src[0].'" />'; ?>
+<p>  <?php echo $field['benefits_content'];?></p>
+<?php
+}
+?>
+<!--  here is a deferent section -->
+
+<?php $fields = CFS()->get( 'benefits_details' );?>
+<?php foreach ( $fields as $field )  { ?>
+    
+<div class="benefits" > 
+
+  
+  
+ <p> <?php echo $field['benefits_parts'];?></p>
+<?php
+}
+?>
+
+  
+  
+
+ </div>
 
 
-<section id="materials" class="materials-section mobile-container">
-                  <ul class="main-materials">
-                    <?php
-                      $args = array(
-                        'post_type' => 'materials',
-                        'numberposts' => -1,
-                        'order' => 'ASC',
-                        );
-                      $material_post = get_posts($args);
-                      ?>
-                      <?php foreach($material_post as $post) : setup_postdata( $post); ?>
-                        <li class="the_title();">
-                           <h1><?php the_title();?></h1>
-                        </li>
-
-                            <?php if ( has_post_thumbnail() ) : ?>
-                              <div>
-                                <?php the_post_thumbnail( 'original' ); ?>
-                              </div>
-
-                            <?php endif; ?>
-                            <li class="materials-content">
-                            <p><?php the_content(); ?></p>
-
-                        </li>
-
-                    <?php endforeach; wp_reset_postdata(); ?>
-                  </ul>
 
 
 </section>
+
+
+<!-- End our Benefits -->
+
+
+<!-- Start Materials Section  -->
+
+<section id="materials" class="materials-section mobile-container">
+                  <ul class="main-materials">
+                   
+<?php $fields = CFS()->get( 'materials' );?>
+<?php foreach ( $fields as $field )  { ?>
+    
+<div class="materials" > 
+<div><h1><?php echo $field['materials_title'];?></h1>
+  
+  <div>
+<?php
+$src = wp_get_attachment_image_src($field['materials_img'], 'small');
+
+echo '<img src="'.$src[0].'" />'; ?>
+<p>  <?php echo $field['materials_content'];?></p>
+
+<?php
+}
+?>
+<p>  <?php echo $field['materials_content'];?></p>
+
+ </div>
+                  </ul>
+
+</section>
 <!-- Resources Section  -->
-<section>
+<section id= "resources">
 <div class="title-resources">
               <h1 id="resources" >Resources</h1>
 </section>

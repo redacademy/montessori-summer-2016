@@ -3,7 +3,11 @@
 jQuery(document).ready(function( $ ) {
 
 // --------------------------------------------------------------
-// >>> TO HOVER ACTIVE THE ACTIVE LINK :
+<<<<<<< HEAD
+//TO HOVER ACTIVE THE ACTIVE LINK :
+=======
+//  TO HOVER ACTIVE THE ACTIVE LINK :
+
 // ----------------------------------------------------------------
 
 
@@ -12,7 +16,11 @@ jQuery(document).ready(function( $ ) {
   });
 
 // --------------------------------------------------------------
-// >>> SMOOTH SCROL:
+
+//  SMOOTH SCROL:
+
+// SMOOTH SCROL:
+
 // ----------------------------------------------------------------
   $(document).ready(function(){
     $(function() {
@@ -32,7 +40,11 @@ jQuery(document).ready(function( $ ) {
   });
 
 // --------------------------------------------------------------
-// >>> HIDEN DIV FUNCTION:
+
+//  HIDEN DIV FUNCTION:
+
+// HIDEN DIV FUNCTION:
+
 // ----------------------------------------------------------------
 
 $('.toggle').click(function() {

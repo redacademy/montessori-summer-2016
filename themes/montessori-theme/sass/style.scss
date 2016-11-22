@@ -51,7 +51,6 @@ TABLE OF CONTENTS:
 @import "mixins";
 
 // CSS included in style.css.
-@import "involved";
 @import "normalize";
 @import "fonts";
 @import "typography";
@@ -68,4 +67,6 @@ TABLE OF CONTENTS:
 @import "front-page";
 @import "contact-form";
 @import "montessori";
-@import "navigation";
+
+@import "involved";
+
