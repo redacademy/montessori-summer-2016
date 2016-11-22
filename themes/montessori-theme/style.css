@@ -878,7 +878,7 @@ width: 100%;
 
 .site-main .home-wrapper {
   width: 480px;
-  height: 555px;
+  height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
   .site-main .home-wrapper h2 {
     width: 100%;
@@ -902,14 +902,11 @@ width: 100%;
     color: #fff;
     margin: 30px; }
   .site-main .home-wrapper .red-btn {
-    width: 200px;
-    height: 41.88px;
     background-color: #F76072;
-    border-color: #F76072;
-    border-radius: 3px;
+    border-radius: 6px;
     color: #fff;
-    margin-left: 118px;
-    box-shadow: none;
+    margin-left: 155px;
+    padding: 8px;
     font-family: "Noto Sans";
     font-size: 20px;
     font-weight: 300;
@@ -919,7 +916,7 @@ width: 100%;
 .links-wrapper {
   width: 480px; }
   .links-wrapper h2 {
-    padding: 0px;
+    padding: 0;
     width: 480px;
     height: 42px;
     font-family: "Asap";
@@ -933,9 +930,7 @@ width: 100%;
     line-height: 40px;
     color: #000000;
     margin: 40px; }
-  .links-wrapper a .green-btn {
-    width: 320px;
-    height: 67px;
+  .links-wrapper .benifits .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
     font-family: "Noto Sans";
@@ -944,16 +939,13 @@ width: 100%;
     text-align: center;
     line-height: 30px;
     color: #fff;
-    border-color: #4FC8A1;
-    margin-left: 60px;
-    box-shadow: none;
+    margin-left: 80px;
+    padding: 17px 20px;
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-  .links-wrapper a .red-btn {
-    width: 320px;
-    height: 67px;
-    background-color: #F76072;
+  .links-wrapper .nw-program .green-btn {
+    background-color: #4FC8A1;
     border-radius: 6px;
     font-family: "Noto Sans";
     font-size: 24px;
@@ -961,15 +953,26 @@ width: 100%;
     text-align: center;
     line-height: 30px;
     color: #fff;
-    border-color: #F76072;
-    margin-left: 60px;
-    box-shadow: none;
+    margin-left: 80px;
+    padding: 17px 70px;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px; }
+  .links-wrapper .involved .red-btn {
+    padding: 17px 70px;
+    background-color: #F76072;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 80px;
+    font-family: "Noto Sans";
+    font-size: 24px;
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
 
 .support-wrapper {
-  width: 480px; }
+  width: 480px;
+  height: auto; }
   .support-wrapper .information h2 {
     width: 377px;
     height: 42px;
@@ -1002,7 +1005,7 @@ width: 100%;
       line-height: 46px;
       color: #000;
       margin: 45px; }
-  .support-wrapper .information a .red-btn {
+  .support-wrapper .information .red-btn {
     width: 185px;
     height: 47px;
     background-color: #F76072;
@@ -1010,6 +1013,7 @@ width: 100%;
     border-radius: 6px;
     color: #fff;
     margin-left: 20px;
+    padding: 8px;
     box-shadow: none;
     font-family: "Noto Sans";
     font-size: 20px;
@@ -1017,9 +1021,7 @@ width: 100%;
     text-shadow: none;
     letter-spacing: 0.8px;
     text-decoration: none; }
-  .support-wrapper .information a .green-btn {
-    width: 185px;
-    height: 47px;
+  .support-wrapper .information .green-btn {
     background-color: #4FC8A1;
     border-color: #4FC8A1;
     border-radius: 6px;
@@ -1029,7 +1031,8 @@ width: 100%;
     text-align: center;
     line-height: 30px;
     color: #fff;
-    margin-left: 15px;
+    margin-left: 20px;
+    padding: 8px;
     box-shadow: none;
     font-weight: 300;
     text-shadow: none;
@@ -1038,14 +1041,14 @@ width: 100%;
 
 .all-features {
   width: 480px; }
-  .all-features .features h2 {
+  .all-features h2 {
     height: 42px;
     font-family: 'Asap';
     font-size: 36px;
-    line-height: 42px;
+    line-height: 0px;
     color: #000;
     margin-left: 30px; }
-    .all-features .features h2 .container {
+    .all-features h2 .container {
       margin-left: auto;
       margin-right: auto;
       width: 480px; }
