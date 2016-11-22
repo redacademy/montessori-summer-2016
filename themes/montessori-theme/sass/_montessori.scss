@@ -29,19 +29,19 @@ ul .history-thumbnail{
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-     
+
      overflow: hidden;
     height: 640px;
     img{
-       
+
     width: 200px;
     height: 200px;
-   
+
 }}
 
 .philosophy-titles { width: 200px;
 a{
-   
+
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -51,14 +51,14 @@ a{
 }
 }
 .philosophy-titles a:hover{
-    
+
 }
 
 .philosophy-content p{
     width: 200px;
     */
     /*position: absolute;*/
-  
+
 
 
 ///**** start philosophy section ***///
@@ -66,19 +66,19 @@ a{
 
 
 ul .each-philosophy{
-    
+
 width:200px;
 
-  
+
     & .philosophy-thumbnail{
-     
-       
+
+
         height: 200px;
     }
     div h2{
         font-family: $font_title;
         display: inline-block;
-        font-size: 1rem;    
+        font-size: 1rem;
         width: 200px;
         height: 33px;
         position: absolute;
@@ -104,7 +104,7 @@ width:200px;
     width:440px;
    padding: 10px;
       @include flex(center,space-between);
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 //****** end philosophy section  ******//
 
@@ -112,6 +112,3 @@ width:200px;
 
 
 /*Start Resources Section  */
-
-
-/* End Resources Section */
