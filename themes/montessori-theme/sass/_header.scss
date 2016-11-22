@@ -1,7 +1,48 @@
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+
+.main-navigation-container{
+	display: flex;
+}
+.main-navigation{
+	width: 100%;
+}
+div .menu-primary-menu-container{
+	width: 100%;
+}
+.montessori-logo{
+	width:15rem;
+	height: 5rem;
+ img{
+	height: 100%;
+	width: 100%;
+}
+}
+@media screen and (max-width: 769px) {
+    body {
+        background-color: lightgreen;
+    }
+		.menu-primary-menu-container{
+			display: none;
+		}
+}
+.montessori-logo{
+	width:10rem;
+	height: 2rem;
+ img{
+	height: 100%;
+	width: 100%;
+}
+}
+.main-navigation-container{
+	display: flex;
+}
+.main-navigation{
+	width: 70%;
+}
+div .menu-primary-menu-container{
+	width: 100%;
+}
+
 .menu-primary-menu-container{
 			display: none;
 	 ul{
@@ -27,7 +68,7 @@
 	}
 }
 .main-navigation{
-	
+
 	width: 100%;
 }
  .menu-primary-menu-container{
@@ -47,7 +88,8 @@
 	 margin: 0px 5px;
 }
 }
-}}
+}
+}
 }
 div .secondary{
 	 text-align: right;
@@ -88,9 +130,9 @@ max-height: 100px;
 	}
 }
  nav div .secondary{
-	
+
 @include desktop{
-   
+
 }
 
 }
@@ -120,6 +162,7 @@ max-height: 100px;
   }
 }
 }
+
 .main-menu-wrapper{
 	width:100%;
 	height: 80px;
@@ -136,7 +179,12 @@ max-height: 100px;
 	width: 100%;
 	background:rgba($white,0.7);
 	position: fixed;
-border-bottom: solid 2px$black;
+	border-bottom: solid 2px$black;
+	top: 0px;
+}
+
+.site-content{
+	margin-top:78px;
 }
 
 

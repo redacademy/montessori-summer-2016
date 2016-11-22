@@ -49,37 +49,16 @@
 <section id="philosophys" class="philosophy-section  mobile-container">
 
 
-          	<div class="title-philosophy">
-              <h1 id="philosophy" >philosophy</h1>
-						<ul class="main-philosophy  ">
-              <?php
-                $args = array(
-                  'post_type' => 'philosophy',
-                  'numberposts' => 6,
-                  'order' => 'ASC',
-                  );
-                $philosophy_post = get_posts($args);
-                ?>
-                <?php foreach($philosophy_post as $post) : setup_postdata( $post); ?>
-								<li class="each-philosophy">
 
-									<div class="<?php the_title();?>  philosophy-thumbnails" >
-										<div>
-				<h2><?php the_title();?></h2>
-											<?php if ( has_post_thumbnail() ) : ?>
-												<div>
-													<?php the_post_thumbnail( 'original' ); ?>
-												</div>
-											<?php endif; ?>
+<?php $fields = CFS()->get( 'philosophy' );?>
+<?php foreach ( $fields as $field )  { ?>
+<ul>
+    <h1><?php echo $field['philosophy_title'];?></h1>
+  <p>  <?php echo $field['philosophy_content'];}?></p>
+      <li><?php echo $field['philosophy_img'];}?></li>
 
-										<?php the_content(); ?>
+</ul>
 
-										</div>
-									</div>
-								</li>
-							<?php endforeach; wp_reset_postdata(); ?>
-						</ul>
-					</div>
 				</section>
 
 
@@ -118,7 +97,7 @@
 
 </section>
 <!-- Resources Section  -->
-<section> 
+<section>
 <div class="title-resources">
               <h1 id="resources" >Resources</h1>
 </section>
