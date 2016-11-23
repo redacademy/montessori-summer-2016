@@ -4,13 +4,17 @@
 /* Background*/
 
 .site-footer{
+  @include desktop{
+    width:100%;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: $font_footer_header;
   overflow: hidden;
   font-size: 0.8rem;
-  width: $mobile_width;
+  max-width: $mobile_width;
+  min-width: 380px;
     height:150px;
     background-color:$color_footer_green;
     color:$white;

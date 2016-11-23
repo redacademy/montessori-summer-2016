@@ -4,13 +4,10 @@
  *Template Name: front-page
  * @package Montessori_Theme
  */
-
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
       <div class="home container">
-
       <section class="home-wrapper container">
         <div class="home-img container">
           <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
@@ -22,65 +19,33 @@ get_header(); ?>
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/about/">Our Society Role</a>
         </div>
       </section>
-
 <!-- this is for the quick links -->
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
-
-        <article class="">
-          <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
-          <p><?php echo CFS()->get('contents') ?></p>
-        </article>
-
-        <article class="">
-          <button class="green-btn" type="button" name="button">NW Program</button>
-          <p><?php echo CFS()->get('nw_text') ?></p>
-        </article>
-
-        <article class="">
-          <button class="red-btn" type="button" name="button">Get involved</button>
-          <p><?php echo CFS()->get('get_text') ?></p>
-        </article>
-
-       <article class="benifits">
-          <a class="green-btn" href="<?php the_permalink(); ?>">Benefits of Montessori</a>
-
-
         <article class="benifits">
           <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
-
-
-        <article class="benifits">
-          <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
-
           <p><?php echo CFS()->get('contents'); ?></p>
         </article>
-
         <article class="nw-program">
           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">NW Program</a>
           <p><?php echo CFS()->get('nw_text'); ?></p>
         </article>
-
         <article class="involved">
           <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Get involved</a>
           <p><?php echo CFS()->get('get_text'); ?></p>
         </article>
-
     </section>
-
     <!-- we need your support section -->
-
     <section class="support-wrapper container">
-      <div class="information"> 
+      <div class="information">
         <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
         	<a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How $ is Spent</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How Money is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
     <section class="all-features container">
       <h2> <?php echo CFS()->get('featured_title'); ?></h2>
-
       <section class="features-wrapper container">
         <div class="features-flipper">
           <p class="front">
@@ -93,7 +58,6 @@ get_header(); ?>
         </div>
       </section>
 <!-- second flipper -->
-
         <section class="features-wrapper container">
             <div class="features-flipper">
               <p class="front">
@@ -119,7 +83,6 @@ get_header(); ?>
               </section>
       </section>
     </div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+        </main><!-- #main -->
+    </div><!-- #primary -->
   <?php get_footer(); ?>
