@@ -23,17 +23,14 @@ if ( $query->have_posts() ) :  ?>
 
 
 <section class="involved-wrapper container">
-<<<<<<< HEAD
-  <div class="involved-title">
- <a class="green-btn" href="<?php the_permalink(); ?>">Montessori in the Middle school</a>
-<a class="green-btn" href="<?php the_permalink(); ?>">Intervew with the our Montisseri teachers</a>
+    <div class="involved-title">
+    <a class="green-btn" href="<?php the_permalink(); ?>">Montessori in the Middle school</a>
+    <a class="green-btn" href="<?php the_permalink(); ?>">Intervew with the our Montisseri teachers</a>
 <a class="green-btn" href="<?php the_permalink(); ?>">Our next Board Meeting</a>
 
 <?php the_content();?>
 
 <?php if (has_post_thumbnail( )): ?>
-  <
-         		<?php the_post_thumbnail( 'Normal' ); ?>
 </div>
 
   <div class="green-btn">

@@ -5,9 +5,24 @@
         width: 480px;
         height: 585px;
         background-color: rgba(0,0,0,0.74);
+
+        // @include desktop{
+        //   width: 541.64px;
+        //   height: 555px;
+        //   background-color: rgba(0,0,0,0.74);
+        //   position: absolute;
+        // }
+        .home-img{
+        //   @include desktop{
+        //     background-color: rgba(0,0,0,0.74);
+        //     width: 1264px;
+        //     height: 555px;
+        //     z-index: -1;
+        //     position: relative;
+        //   }
+        }
+
         h2 {
-            width: 100%;
-            height: 42px;
             font-family: 'Asap';
             font-size: 36px;
             line-height: 42px;
@@ -19,6 +34,11 @@
             width: 119.23px;
             height: 74px;
             border-bottom: 4px solid #fff;
+
+            // @include desktop{
+            //   z-index: -1;
+            //   position: relative;
+            // }
         }
         p {
             height: 160px;
@@ -27,6 +47,14 @@
             line-height: 40px;
             color: #fff;
             margin: 30px;
+            // @include desktop{
+            //   height: auto;
+            //   display: block;
+            //   z-index: -1;
+            //   position: relative;
+            //   visibility: visible;
+            // }
+
         }
         .red-btn {
             background-color: #F76072;
@@ -39,12 +67,25 @@
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
-        }
-    }
+            // @include desktop{
+            //   z-index: -1;
+            //   position: relative;
+            //   visibility: visible;
+            // }
+
+          }
+        // }//welcome-wrapper
+    }//home
 }
 //this is for the quick links
 .links-wrapper {
     width: 480px;
+    // @include desktop{
+    //   flex-direction: row;
+    //   display: flex;
+    //   margin: 0;
+    //   padding: 80px 0;
+    // }
     h2 {
         padding: 0;
         width: 480px;
@@ -53,6 +94,12 @@
         font-size: 36px;
         line-height: 42px;
         color: #000000;
+        // @include desktop{
+        //   margin: auto;
+        //   display: flex;
+        //   width: 852px;
+        // }
+
     }
     article {
         p {
@@ -118,7 +165,9 @@
     width: 480px;
     height: auto;
     .information {
+      height: auto;
         h2 {
+            border-top: 2px solid #2EB688;
             width: 377px;
             height: 42px;
             font-family: 'Asap';
@@ -192,16 +241,19 @@
                 letter-spacing: 0.8px;
                 text-decoration: none;
             }
-    }
-    //information
-}
+    }//information
 
-//support-wrapper
+}//support-wrapper
+
 // this is for the features fliper
 
 .all-features {
-    width: 480px;
-        h2 {
+  margin-bottom: 30px;
+          h2 {
+            box-sizing: border-box;
+            width: 440px;
+            border-top: 2px solid #2EB688;
+            padding-top: 50px;
             height: 42px;
             font-family: 'Asap';
             font-size: 36px;
@@ -281,7 +333,12 @@
         text-decoration: none;
     }
 }
-/***************************************************/
 a {
     text-decoration: none;
 }
+
+body{
+  background-color: #ffffff;
+}
+
+/***************************************************/
