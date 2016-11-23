@@ -849,10 +849,27 @@ div .secondary {
   cursor: pointer;
   color: #248E6A; }
 
+@media (min-width: 48rem) {
+  .site-content {
+    margin: 58px 80px; } }
+
 .site-main .home-wrapper {
   width: 480px;
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
+  @media (min-width: 48rem) {
+    .site-main .home-wrapper {
+      width: 541.64px;
+      height: 555px;
+      background-color: rgba(0, 0, 0, 0.74);
+      position: relative; } }
+  @media (min-width: 48rem) {
+    .site-main .home-wrapper .home-img {
+      background-color: rgba(0, 0, 0, 0.74);
+      width: 1264px;
+      height: 555px;
+      z-index: -1;
+      position: absolute; } }
   .site-main .home-wrapper h2 {
     font-family: 'Asap';
     font-size: 36px;
@@ -865,6 +882,11 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
+    @media (min-width: 48rem) {
+      .site-main .home-wrapper h2 {
+        font-size: 46px;
+        padding-top: 70px;
+        line-height: 0; } }
   .site-main .home-wrapper p {
     height: 160px;
     font-family: "Noto Sans";
@@ -872,6 +894,13 @@ div .secondary {
     line-height: 40px;
     color: #fff;
     margin: 30px; }
+    @media (min-width: 48rem) {
+      .site-main .home-wrapper p {
+        width: 447px;
+        height: 230px;
+        font-family: "Noto Sans";
+        font-size: 24px;
+        line-height: 46px; } }
   .site-main .home-wrapper .red-btn {
     background-color: #F76072;
     border-radius: 6px;
@@ -883,9 +912,25 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
+    @media (min-width: 48rem) {
+      .site-main .home-wrapper .red-btn {
+        padding: 10px;
+        font-size: 24px;
+        display: block;
+        max-width: 320px;
+        margin: 90px 100px;
+        text-align: center; } }
 
 .links-wrapper {
   width: 480px; }
+  @media (min-width: 48rem) {
+    .links-wrapper {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 175px 0; } }
   .links-wrapper h2 {
     padding: 0;
     width: 480px;
