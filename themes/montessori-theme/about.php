@@ -63,14 +63,14 @@ get_header(); ?>
 			</section>
 
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
-			<section>
-				<div class="newsLetter">
+			<section class="newsLetter">
 					<h1>NewsLetter</h1>
 					<p>exciting time of the year! </p>
 					<?php echo '<h3>'.CFS()->get( 'date' ).'</h3>'; ?>
 						<?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
-				</div>
 			</section>
+			<!-- **********///////////////// newsLetter Section ///////////////********** -->
+
 		    </div>
 		<!-- #about-page -->
 		</main>

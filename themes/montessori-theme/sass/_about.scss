@@ -13,9 +13,10 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
 	align-items: center;
-	h2 {
+	background-color: green;
+	h1 {
 		font-family: $font_title;
-		font-size:$h2_size_mob;
+		font-size:$h1_size_mob;
 		font-weight: normal;
 		line-height: $basic_hline_height * 4.2;
 		text-align: left;
@@ -25,7 +26,13 @@
 }
 
 
-
+.target {
+	width: 100%;
+	height: auto;
+	height: 160px;
+	padding:$basic_pading;
+	display: none;
+}
 
 
 // 		.largImg {
@@ -41,14 +48,7 @@
 //         width: 45%;
 //         flex: 2 0 50%;
 //     }
-//
-//
-//
-//
-//
-//
-//
-// .flip-container {
+//// .flip-container {
 // 	display: flex;
 //   flex-wrap: wrap;
 // 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
@@ -124,11 +124,3 @@
 //     </div>
 //   </div>
 // </div>
-
-.target {
-	width: 100%;
-	height: auto;
-	height: 160px;
-	padding:$basic_pading;
-	display: none;
-}

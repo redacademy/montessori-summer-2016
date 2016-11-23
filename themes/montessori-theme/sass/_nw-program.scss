@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# NW Program Page
+--------------------------------------------------------------*/
+// General Setting
+* {
+	box-sizing: border-box;
+}
+
+// @media screen and (max-width: 480px) {
+.nw-program-wrapper {
+	max-width:$mobile_width;
+	margin: 0 auto;
+	padding-left: $basic_pading * 2;
+	padding-right: $basic_pading * 1.5;
+	align-items: center;
+	background-color: green;
+	h1 {
+		font-family: $font_title;
+		font-size:$h1_size_mob;
+		font-weight: normal;
+		line-height: $basic_hline_height * 4.2;
+		text-align: left;
+		color:$black;
+
+	}
+}
