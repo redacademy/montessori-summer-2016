@@ -18,9 +18,7 @@ div .menu-primary-menu-container{
 }
 }
 @media screen and (max-width: 769px) {
-    body {
-        background-color: lightgreen;
-    }
+   
 		.menu-primary-menu-container{
 			display: none;
 		}
@@ -129,13 +127,7 @@ max-height: 100px;
 		cursor: pointer;
 	}
 }
- nav div .secondary{
 
-@include desktop{
-
-}
-
-}
 .montessori-logo{
 	padding: 0;
 	margin-left: 20px;
