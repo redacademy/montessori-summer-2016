@@ -50,15 +50,6 @@ if ( $query-> have_posts() ) :  ?>
 <?php wp_reset_postdata(); ?>
 
 
-
-
-
-
-
-
-
-
-
 <!--This is for past Events  -->
 <div class="text-title">
 <h3>  <a class="text_post" href="<?php echo esc_url(the_permalink()); ?>">past Events </a> </h3>
