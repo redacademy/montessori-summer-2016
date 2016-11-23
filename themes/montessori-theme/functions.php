@@ -86,6 +86,14 @@ function montessori_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'montessori_minified_css', 10, 2 );
 
+function output_image($custom_field_slug, $size = 'medium'){
+	$img = CFS()->get($custom_field_slug);
+  $image_attributes = wp_get_attachment_image_src( $img , $size );
+  $src = $image_attributes[0]; ?>
+  <img src="<?php echo $src;?>" />
+<?php
+}
+
 /**
  * Enqueue scripts and styles.
  */
