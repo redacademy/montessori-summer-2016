@@ -39,8 +39,8 @@ get_header(); ?>
     <section class="support-wrapper container">
       <div class="information">
         <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
-            <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How $ is Spent</a>
+        	<a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How Money is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
