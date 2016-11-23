@@ -117,9 +117,12 @@ get_header(); ?>
  echo '<p class="">'.$field['instructions'].'</p>';
 }
    ?>
-	 <img class"enroll-img" src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
+	 <div class="enroll-img">
+	 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
+ </div>
 	 <button class="green-btn" type="button" name="button">Official School Board Website</button>
 </section>
+<!-- **********/////////////////*****************///////////////********** -->
 
 </div>
 <!-- #about-page -->

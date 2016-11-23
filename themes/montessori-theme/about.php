@@ -22,7 +22,8 @@ get_header(); ?>
 				echo '<p class="">'.$field['content_group_paragragh'].'</p>';
 				echo '<div class="">'.$field['content_group_description'].'</div>';
 			}
-			?> </section>
+			  ?>
+		</section>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
 			<section>
 				<!-- Custom Post Loop To Call Members List  -->
