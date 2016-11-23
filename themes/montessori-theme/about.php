@@ -20,7 +20,7 @@ get_header(); ?>
 
 				echo '<h1 class="">'.$field['content_group_title'].'</h1>';
 				echo '<p class="">'.$field['content_group_paragragh'].'</p>';
-				echo '<div class="">'.$field['content_group_description'].'</div>';
+			  echo '<div class="red-border-container">'.'<div class="left-red-border">'.$field['content_group_description'].'</div>'.'<div>';
 			}
 			  ?>
 		</section>
@@ -33,7 +33,7 @@ get_header(); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<!-- <h2><?php the_title(); ?></h2> -->
 						<div class="">
-							<?php the_post_thumbnail('thumnail');?>
+							<?php the_post_thumbnail('thumbnail');?>
 						</div>
 						<div class="back">
 							<p class="teacher_title">
@@ -55,7 +55,7 @@ get_header(); ?>
 			</section>
 			<!-- **********///////////////// Archive Section ///////////////********** -->
 
-			<section>
+			<section class="archive">
 			<label class="toggle">
 				<?php the_archive_title( '<h1>', '</h1>' ) ;?>
 				<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>

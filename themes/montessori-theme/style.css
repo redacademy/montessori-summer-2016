@@ -1280,9 +1280,7 @@ width:200px;
   box-sizing: border-box; }
 
 .about-wrapper {
-  max-width: 27.5rem;
-.site-content {
-  max-width: 1240px;
+  max-width: 30rem;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1297,12 +1295,29 @@ width:200px;
     text-align: left;
     color: #000000; }
 
-.target {
-  width: 100%;
+.archive {
+  margin-left: 0 auto; }
+  .archive .target {
+    background-color: grey;
+    width: 100%;
+    height: 10%;
+    height: 160px;
+    padding: 0.625rem;
+    display: none; }
+
+.left-red-border {
+  width: 80%;
+  height: 90px;
+  border-left: 5px solid #D93B57;
+  padding-left: 20px;
+  padding-right: 10px; }
+
+.red-border-container {
+  width: 30rem;
+  padding: 10px;
+  overflow: visible;
   height: auto;
-  height: 160px;
-  padding: 0.625rem;
-  display: none; }
+  margin-bottom: 70px; }
 
 site-main .involved-wrapper {
   width: 480px;
@@ -1329,55 +1344,6 @@ site-main .involved-title green-btn {
 
 .text-title h3 {
   border-top: 5px solid #248e6a;
-<<<<<<< HEAD
-  width: 100px; }
-  .text-post .site-main .involved-wrapper {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto; }
-  .text-post .site-main h1 a {
-    text-decoration: none;
-    padding-left: 19px;
-    padding-right: 36px;
-    padding-top: 25px;
-    padding-bottom: 19px;
-    width: 200px;
-    height: 120px;
-    font-size: 30px;
-    color: #000;
-    background-color: #4FC8A1;
-    font-family: "Noto Sans";
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 15px;
-    box-shadow: none;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: .8px;
-    display: block; }
-
-/*--------------------------------------------------------------
-# NW Program Page
---------------------------------------------------------------*/
-* {
-  box-sizing: border-box; }
-
-.nw-program-wrapper {
-  max-width: 27.5rem;
-  margin: 0 auto;
-  padding-left: 1.25rem;
-  padding-right: 0.9375rem;
-  -ms-flex-align: center;
-      align-items: center;
-  background-color: green; }
-  .nw-program-wrapper h1 {
-    font-family: "Asap";
-    font-size: 2.5rem;
-    font-weight: normal;
-    line-height: 2.625rem;
-    text-align: left;
-    color: #000000; }
   width: 150px;
   color: #000; }
 
@@ -1392,3 +1358,25 @@ site-main .involved-title green-btn {
 
 .site-main .a h2 {
   color: #000; }
+
+/*--------------------------------------------------------------
+# NW Program Page
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+.nw-program-wrapper {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 0.9375rem;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: green; }
+  .nw-program-wrapper h1 {
+    font-family: "Asap";
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 2.625rem;
+    text-align: left;
+    color: #000000; }
