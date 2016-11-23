@@ -20,8 +20,11 @@ get_header(); ?>
         </div>
       </section>
 <!-- this is for the quick links -->
+<div class="link-title">
+  <h2> <?php echo CFS()->get('links_title'); ?> </h2>
+</div>
+
     <section class="links-wrapper container">
-      <h2> <?php echo CFS()->get('links_title'); ?> </h2>
         <article class="benifits">
           <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
           <p><?php echo CFS()->get('contents'); ?></p>
@@ -39,8 +42,8 @@ get_header(); ?>
     <section class="support-wrapper container">
       <div class="information">
         <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
-        	<a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How Money is Spent</a>
+            <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How $ is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
