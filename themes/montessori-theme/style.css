@@ -852,27 +852,11 @@ div .secondary {
 
 .site-main .home-wrapper {
   width: 480px;
-  height: 585px; }
-  @media (min-width: 48rem) {
-    .site-main .home-wrapper {
-      width: 541.64px;
-      height: 555px;
-      background-color: rgba(0, 0, 0, 0.74);
-      position: absolute; } }
+  height: 585px;
+  background-color: rgba(0, 0, 0, 0.74); }
   .site-main .home-wrapper .home-img {
     width: 480px;
     height: 585px; }
-    @media (min-width: 48rem) {
-      .site-main .home-wrapper .home-img {
-        background-color: rgba(0, 0, 0, 0.74);
-        width: 1264px;
-        height: 555px;
-        z-index: -1;
-        position: relative; } }
-  @media (min-width: 48rem) {
-    .site-main .home-wrapper .welcome-wrapper {
-      z-index: -1;
-      position: relative; } }
   .site-main .home-wrapper .welcome-wrapper h2 {
     font-family: 'Asap';
     font-size: 36px;
@@ -885,10 +869,6 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-    @media (min-width: 48rem) {
-      .site-main .home-wrapper .welcome-wrapper h2 {
-        z-index: -1;
-        position: relative; } }
   .site-main .home-wrapper .welcome-wrapper p {
     height: 160px;
     font-family: "Noto Sans";
@@ -896,13 +876,6 @@ div .secondary {
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-    @media (min-width: 48rem) {
-      .site-main .home-wrapper .welcome-wrapper p {
-        height: auto;
-        display: block;
-        z-index: -1;
-        position: relative;
-        visibility: visible; } }
   .site-main .home-wrapper .welcome-wrapper .red-btn {
     background-color: #F76072;
     border-radius: 6px;
@@ -914,11 +887,6 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 48rem) {
-      .site-main .home-wrapper .welcome-wrapper .red-btn {
-        z-index: -1;
-        position: relative;
-        visibility: visible; } }
 
 .links-wrapper {
   width: 480px; }
@@ -1063,78 +1031,81 @@ div .secondary {
       letter-spacing: 0.8px;
       text-decoration: none; }
 
-.all-features h2 {
-  box-sizing: border-box;
-  width: 440px;
-  border-top: 2px solid #2EB688;
-  padding-top: 50px;
-  height: 42px;
-  font-family: 'Asap';
-  font-size: 36px;
-  line-height: 0px;
-  color: #000;
-  margin-left: 30px; }
-  .all-features h2 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px; }
-
-.all-features .features-wrapper {
-  /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-  background: #aff1d3;
-  width: 200px;
-  box-sizing: border-box;
-  height: 139.76px;
-  width: 480.27px; }
-  .all-features .features-wrapper .features-flipper {
-    position: relative;
-    -webkit-transition: 1.9s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 1.9s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 1.9s;
-    -o-transform-style: preserve-3d;
-    transition: 1.9s;
-    transform-style: preserve-3d;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-    .all-features .features-wrapper .features-flipper:hover {
-      transform: rotateY(180deg); }
-    .all-features .features-wrapper .features-flipper .front {
-      height: auto;
-      text-align: center;
-      overflow: hidden;
-      padding: 20px;
-      width: 450px;
-      font-family: 'Asap';
-      font-size: 24px;
-      text-align: center;
-      color: #000000;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
-    .all-features .features-wrapper .features-flipper .features-back {
-      width: 480px;
-      height: 170px;
-      border: 1px solid #248E6A;
-      margin: 0;
-      text-align: center;
-      overflow: hidden;
-      padding: 0;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      position: absolute;
-      bottom: 1px;
-      background-color: #fff;
-      transform: rotateY(180deg); }
-
-.all-features .green-btn {
-  color: #248E6A;
-  text-decoration: none; }
+.all-features {
+  margin-bottom: 30px; }
+  .all-features h2 {
+    box-sizing: border-box;
+    width: 440px;
+    border-top: 2px solid #2EB688;
+    padding-top: 50px;
+    height: 42px;
+    font-family: 'Asap';
+    font-size: 36px;
+    line-height: 0px;
+    color: #000;
+    margin-left: 30px; }
+    .all-features h2 .container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 480px; }
+  .all-features .features-wrapper {
+    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+    background: #aff1d3;
+    width: 200px;
+    box-sizing: border-box;
+    height: 139.76px;
+    width: 480.27px; }
+    .all-features .features-wrapper .features-flipper {
+      position: relative;
+      -webkit-transition: 1.9s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1.9s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1.9s;
+      -o-transform-style: preserve-3d;
+      transition: 1.9s;
+      transform-style: preserve-3d;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .all-features .features-wrapper .features-flipper:hover {
+        transform: rotateY(180deg); }
+      .all-features .features-wrapper .features-flipper .front {
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        padding: 20px;
+        width: 450px;
+        font-family: 'Asap';
+        font-size: 24px;
+        text-align: center;
+        color: #000000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+      .all-features .features-wrapper .features-flipper .features-back {
+        width: 480px;
+        height: 170px;
+        border: 1px solid #248E6A;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        bottom: 1px;
+        background-color: #fff;
+        transform: rotateY(180deg); }
+  .all-features .green-btn {
+    color: #248E6A;
+    text-decoration: none; }
 
 a {
   text-decoration: none; }
+
+body {
+  background-color: #ffffff; }
 
 /***************************************************/
 body {

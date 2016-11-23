@@ -4,28 +4,30 @@
     .home-wrapper {
         width: 480px;
         height: 585px;
-        @include desktop{
-          width: 541.64px;
-          height: 555px;
-          background-color: rgba(0,0,0,0.74);
-          position: absolute;
-        }
+        background-color: rgba(0,0,0,0.74);
+
+        // @include desktop{
+        //   width: 541.64px;
+        //   height: 555px;
+        //   background-color: rgba(0,0,0,0.74);
+        //   position: absolute;
+        // }
         .home-img{
           width: 480px;
           height: 585px;
-          @include desktop{
-            background-color: rgba(0,0,0,0.74);
-            width: 1264px;
-            height: 555px;
-            z-index: -1;
-            position: relative;
-          }
+          // @include desktop{
+          //   background-color: rgba(0,0,0,0.74);
+          //   width: 1264px;
+          //   height: 555px;
+          //   z-index: -1;
+          //   position: relative;
+          // }
         }
         .welcome-wrapper{
-          @include desktop{
-            z-index: -1;
-            position: relative;
-          }
+          // @include desktop{
+          //   z-index: -1;
+          //   position: relative;
+          // }
 
         h2 {
             font-family: 'Asap';
@@ -40,10 +42,10 @@
             height: 74px;
             border-bottom: 4px solid #fff;
 
-            @include desktop{
-              z-index: -1;
-              position: relative;
-            }
+            // @include desktop{
+            //   z-index: -1;
+            //   position: relative;
+            // }
         }
         p {
             height: 160px;
@@ -52,13 +54,13 @@
             line-height: 40px;
             color: #fff;
             margin: 30px;
-            @include desktop{
-              height: auto;
-              display: block;
-              z-index: -1;
-              position: relative;
-              visibility: visible;
-            }
+            // @include desktop{
+            //   height: auto;
+            //   display: block;
+            //   z-index: -1;
+            //   position: relative;
+            //   visibility: visible;
+            // }
 
         }
         .red-btn {
@@ -72,11 +74,11 @@
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
-            @include desktop{
-              z-index: -1;
-              position: relative;
-              visibility: visible;
-            }
+            // @include desktop{
+            //   z-index: -1;
+            //   position: relative;
+            //   visibility: visible;
+            // }
 
           }
         }
@@ -252,6 +254,7 @@
 
 // this is for the features fliper
 .all-features {
+  margin-bottom: 30px;
           h2 {
             box-sizing: border-box;
             width: 440px;
@@ -338,6 +341,10 @@
 }
 a {
     text-decoration: none;
+}
+
+body{
+  background-color: #ffffff;
 }
 
 /***************************************************/
