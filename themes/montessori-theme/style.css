@@ -48,36 +48,6 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
-
-
-.site-main .involved-wrapper {
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.site-main h1 a {
-  text-decoration: none;
-  padding-left: 19px;
-  padding-right: 36px;
-  padding-top: 25px;
-  padding-bottom: 19px;
-  width: 200px;
-  height: 120px;
-  font-size: 30px;
-  color: #000;
-  background-color: #4FC8A1;
-  font-family: "Noto Sans";
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  margin-left: 15px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: .8px;
-  display: block; }
-
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -788,6 +758,11 @@ div .secondary {
   top: 0px; }
 
 .site-content {
+  margin-top: 78px;
+  border-bottom: solid 2px #000000;
+  top: 0px; }
+
+.site-content {
   margin-top: 78px; }
 
 /*.secondary {
@@ -1039,76 +1014,6 @@ width: 100%;
     letter-spacing: 0.8px;
     text-decoration: none; }
 
-<<<<<<< HEAD
-.features-wrapper {
-  /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-  background: #aff1d3;
-  width: 200px; }
-
-.features-wrapper.hover .features-flipper,
-.features-wrapper:hover .features-flipper {
-  transform: rotateY(180deg); }
-
-.features-wrapper,
-.freatures-back,
-.front {
-  box-sizing: border-box;
-  height: 139.76px;
-  width: 480.27px; }
-
-.features-flipper {
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  -o-transition: 1.9s;
-  -o-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d;
-  /*   display: flex; */
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.features-back,
-.front {
-  text-align: center;
-  overflow: hidden;
-  /*   line-height: 1.5em; */
-  padding: 20px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.front {
-  width: 450px;
-  font-family: 'Asap';
-  font-size: 24px;
-  text-align: center;
-  color: #000000; }
-
-.features-back {
-  overflow: hidden;
-  line-height: 1.5em;
-  padding: 20px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.features-back {
-  position: absolute;
-  bottom: 1px;
-  background-color: white;
-  border: 1px solid #248E6A;
-  transform: rotateY(180deg); }
-
-.green-btn {
-  color: #248E6A;
-  text-decoration: none; }
-
-/***************************************************/
-
-
 .all-features {
   width: 480px; }
   .all-features .features h2 {
@@ -1356,6 +1261,14 @@ site-main .involved-title green-btn {
   text-shadow: none;
   display: block; }
 
-.text-post {
+.text-title h3 {
   border-top: 5px solid #248e6a;
-  width: 100px; }
+  width: 150px;
+  color: #000; }
+
+.text-shadow {
+  border-top: 5px solid #248e6a;
+  width: 300px; }
+
+.a h2 {
+  color: #000; }

@@ -41,82 +41,45 @@ green-btn{
  // This is for past events
 
 
- .text-post{
+ .text-title{
+    h3 {
    border-top: 5px solid #248e6a;
-   width: 100px;
-
-
-.site-main{
-    .involved-wrapper{
-      width: 480px;
-      margin-left: auto;
-      margin-right: auto;
-      // padding: 0;
-      // display: inline-flex;
-      // justify-content: space-between;
-    }
-
-    h1{
-      a{
-        // flex-direction: row;
-        // display: inline-flex;
-        // justify-content: space-between;
-        text-decoration: none;
-        padding-left:19px;
-        padding-right:36px;
-        padding-top: 25px;
-        padding-bottom: 19px;
-        width: 200px;
-        height: 120px;
-        font-size: 30px;
-        color:#000;
-        background-color: #4FC8A1;
-        font-family: "Noto Sans";
-        font-weight: bold;
-        text-align: center;
-        line-height: 30px;
-        margin-left: 15px;
-        box-shadow: none;
-        font-weight: 300;
-        text-shadow: none;
-        letter-spacing: .8px;
-        display: block;
-
-      }
-  }
+   width: 150px;
+   color:#000;
+ }
+ }
+.text-shadow{
+  border-top: 5px solid #248e6a;
+  width:300px;
 
 }
 
 
-
-// .wrapper{
-//   .green-btn {
-//       border-radius: 6px;
-//       width:200px;
-//       height: 120px;
-//       background-color: #4FC8A1  ;
-//       border-color: #4FC8A1  ;
-//      font-family: "Noto Sans";
-//      font-size: 20px;
-//      font-weight: bold;
-//      text-align: center;
-//      line-height: 30px;
-//      color: #000;
-//      margin-left: 15px;
-//      box-shadow: none;
-//      font-weight: 300;
-//      text-shadow: none;
-//      letter-spacing: .8px;
-//      display: block;
-//
-//    }
-//
+// .a h4 {
+//   width: 261px;
+// height: 47px;
+// background-color: #4FC8A1;
+// border-radius: 6px;
+//   // width: 216px;
+// // height: 30px;
+// font-family: "Noto Sans";
+// font-size: 20px;
+// font-weight: bold;
+// text-align: center;
+// line-height: 30px;
+// color: #FFFFFF;
 // }
-//
-//
-//  // this is for sidebar //
-// // .sidebar {
-// //   width : 27%;
-// //   float :left;
-// //
-// // }
+ // .entry-header {
+ //
+ //   img{
+ //     width: 300px;
+ //     height: 400px;
+ //     margin-left: 300px;
+ //   }
+ // }
+
+.a h2{
+  color: #000;
+  
+
+}
