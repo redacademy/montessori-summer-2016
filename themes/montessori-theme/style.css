@@ -854,10 +854,7 @@ div .secondary {
   width: 480px;
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
-  .site-main .home-wrapper .home-img {
-    width: 480px;
-    height: 585px; }
-  .site-main .home-wrapper .welcome-wrapper h2 {
+  .site-main .home-wrapper h2 {
     font-family: 'Asap';
     font-size: 36px;
     line-height: 42px;
@@ -869,14 +866,14 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-  .site-main .home-wrapper .welcome-wrapper p {
+  .site-main .home-wrapper p {
     height: 160px;
     font-family: "Noto Sans";
     font-size: 20px;
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-  .site-main .home-wrapper .welcome-wrapper .red-btn {
+  .site-main .home-wrapper .red-btn {
     background-color: #F76072;
     border-radius: 6px;
     color: #fff;
@@ -890,14 +887,6 @@ div .secondary {
 
 .links-wrapper {
   width: 480px; }
-  @media (min-width: 48rem) {
-    .links-wrapper {
-      -ms-flex-direction: row;
-          flex-direction: row;
-      display: -ms-flexbox;
-      display: flex;
-      margin: 0;
-      padding: 80px 0; } }
   .links-wrapper h2 {
     padding: 0;
     width: 480px;
@@ -906,12 +895,6 @@ div .secondary {
     font-size: 36px;
     line-height: 42px;
     color: #000000; }
-    @media (min-width: 48rem) {
-      .links-wrapper h2 {
-        margin: auto;
-        display: -ms-flexbox;
-        display: flex;
-        width: 852px; } }
   .links-wrapper article p {
     width: 377px;
     font-family: "Noto Sans";

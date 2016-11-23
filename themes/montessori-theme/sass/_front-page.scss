@@ -13,21 +13,14 @@
         //   position: absolute;
         // }
         .home-img{
-          width: 480px;
-          height: 585px;
-          // @include desktop{
-          //   background-color: rgba(0,0,0,0.74);
-          //   width: 1264px;
-          //   height: 555px;
-          //   z-index: -1;
-          //   position: relative;
-          // }
+        //   @include desktop{
+        //     background-color: rgba(0,0,0,0.74);
+        //     width: 1264px;
+        //     height: 555px;
+        //     z-index: -1;
+        //     position: relative;
+        //   }
         }
-        .welcome-wrapper{
-          // @include desktop{
-          //   z-index: -1;
-          //   position: relative;
-          // }
 
         h2 {
             font-family: 'Asap';
@@ -81,18 +74,18 @@
             // }
 
           }
-        }
-    }
+        // }//welcome-wrapper
+    }//home
 }
 //this is for the quick links
 .links-wrapper {
     width: 480px;
-    @include desktop{
-      flex-direction: row;
-      display: flex;
-      margin: 0;
-      padding: 80px 0;
-    }
+    // @include desktop{
+    //   flex-direction: row;
+    //   display: flex;
+    //   margin: 0;
+    //   padding: 80px 0;
+    // }
     h2 {
         padding: 0;
         width: 480px;
@@ -101,11 +94,11 @@
         font-size: 36px;
         line-height: 42px;
         color: #000000;
-        @include desktop{
-          margin: auto;
-          display: flex;
-          width: 852px;
-        }
+        // @include desktop{
+        //   margin: auto;
+        //   display: flex;
+        //   width: 852px;
+        // }
 
     }
     article {
