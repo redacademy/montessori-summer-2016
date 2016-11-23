@@ -9,14 +9,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-<!-- <div class="home container"> -->
+      <div class="home container">
 
       <section class="home-wrapper container">
-				<h2 class="site-title screen-reader-text">Montessori Society</h2>
-        <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
+        <div class="home-img container">
+          <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
+        </div> 
 <!-- this is for the welcoming title  -->
-        <div class="container-wrapper">
-          <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
+        <div class="welcome-wrapper container">
+            <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
             <p><?php echo CFS()->get('banner_paragraph') ?></p>
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/about/">Our Society Role</a>
         </div>
@@ -117,6 +118,7 @@ get_header(); ?>
                 </div>
               </section>
       </section>
+    </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
