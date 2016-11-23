@@ -29,7 +29,7 @@
                     </div><!-- .site-main-menu -->
 </div>
 <nav>
-                    <?php if ( is_page_template( 'about.php' ) ) :?>
+                    <?php if ( is_page_template( 'about.php' ) ||  is_page_template( 'front-page.php' )) :?>
                         <?php
                         wp_nav_menu( array(
                             'theme_location' => 'about',
@@ -38,7 +38,7 @@
                         ) );
                         ?>
                     <?php endif; ?>
-                    <?php if ( is_page_template( 'montessori-page.php' )):?>
+                    <?php if ( is_page_template( 'montessori-page.php' ) ):?>
                         <?php
                         wp_nav_menu( array(
                             'theme_location' => 'montessori',

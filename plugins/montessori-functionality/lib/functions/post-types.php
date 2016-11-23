@@ -6,14 +6,14 @@
  */
 
 
-// Register Custom Montessori Stuff
-function Montessory_Stuff() {
+// Register Custom Montessori Staff
+function Montessori_Staff() {
 
 	$labels = array(
-		'name'                  => _x( 'Montessori Stuff', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Stuff', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Montessori Stuff', 'text_domain' ),
-		'name_admin_bar'        => __( 'Add Stuff', 'text_domain' ),
+		'name'                  => _x( 'Montessori Staff', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Staff', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Montessori Staff', 'text_domain' ),
+		'name_admin_bar'        => __( 'Add Staff', 'text_domain' ),
 		'archives'              => __( 'content Archives', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent content:', 'text_domain' ),
 		'all_items'             => __( 'All contents', 'text_domain' ),
@@ -37,7 +37,7 @@ function Montessory_Stuff() {
 		'filter_items_list'     => __( 'Filter contents list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Stuff', 'text_domain' ),
+		'label'                 => __( 'Staff', 'text_domain' ),
 		'description'           => __( 'School Teachers and Members', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail',  ),
@@ -51,18 +51,18 @@ function Montessory_Stuff() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'Teacher', $args );
+	register_post_type( 'staff', $args );
 
 }
-add_action( 'init', 'Montessory_Stuff', 0 );
+add_action( 'init', 'Montessori_Staff', 0 );
 
 
-// Register Custom School 
+// Register Custom School
 function school_post_type() {
 
 	$labels = array(
@@ -107,7 +107,7 @@ function school_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -163,7 +163,7 @@ function history_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -217,7 +217,7 @@ function materials_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -272,7 +272,7 @@ function philosophy_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',

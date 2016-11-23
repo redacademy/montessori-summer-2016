@@ -27,8 +27,32 @@ get_header(); ?>
     <section class="links-wrapper container">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
 
+        <article class="">
+          <button class="green-btn" type="button" name="button">Benefits of Montessori</button>
+          <p><?php echo CFS()->get('contents') ?></p>
+        </article>
+
+        <article class="">
+          <button class="green-btn" type="button" name="button">NW Program</button>
+          <p><?php echo CFS()->get('nw_text') ?></p>
+        </article>
+
+        <article class="">
+          <button class="red-btn" type="button" name="button">Get involved</button>
+          <p><?php echo CFS()->get('get_text') ?></p>
+        </article>
+
+       <article class="benifits">
+          <a class="green-btn" href="<?php the_permalink(); ?>">Benefits of Montessori</a>
+
+
         <article class="benifits">
           <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
+
+
+        <article class="benifits">
+          <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
+
           <p><?php echo CFS()->get('contents'); ?></p>
         </article>
 

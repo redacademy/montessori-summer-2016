@@ -40,12 +40,10 @@ jQuery(document).ready(function( $ ) {
 // --------------------------------------------------------------
 
 
-// HIDEN DIV FUNCTION:
-
 // ----------------------------------------------------------------
 
 $('.toggle').click(function() {
-    $('#target').toggle('slow');
+    $('.target').toggle('slow');
 });
 
 
