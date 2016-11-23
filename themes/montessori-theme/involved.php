@@ -30,6 +30,10 @@ if ( $query-> have_posts() ) :  ?>
       <a class="green-btn" href="<?php the_permalink(); ?>">Intervew with the our Montisseri teachers</a>
       <a class="green-btn" href="<?php the_permalink(); ?>">Our next Board Meeting</a>
 
+<?php if (has_post_thumbnail( )): ?>
+</div>
+
+
 <?php the_content();?>
 
 
