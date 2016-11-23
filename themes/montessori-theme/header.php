@@ -22,14 +22,16 @@
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo/montessori-logo.svg" alt="montessori logo"/>
                     </a>
           </div><!-- .site-branding -->
+                 
                     <div class="site-main-menu">
                     <nav id="site-navigation" class="main-navigation" role="navigation">
                                     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                                    
                                 </nav>
                     </div><!-- .site-main-menu -->
 </div>
 <nav>
-                    <?php if ( is_page_template( 'about.php' ) ||  is_page_template( 'front-page.php' )) :?>
+                    <?php if ( is_page_template( 'about.php' )) :?>
                         <?php
                         wp_nav_menu( array(
                             'theme_location' => 'about',
