@@ -20,8 +20,11 @@ get_header(); ?>
         </div>
       </section>
 <!-- this is for the quick links -->
+<div class="link-title">
+  <h2> <?php echo CFS()->get('links_title'); ?> </h2>
+</div>
+
     <section class="links-wrapper container">
-      <h2> <?php echo CFS()->get('links_title'); ?> </h2>
         <article class="benifits">
           <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
           <p><?php echo CFS()->get('contents'); ?></p>
