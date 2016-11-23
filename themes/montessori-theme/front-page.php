@@ -14,7 +14,7 @@ get_header(); ?>
       <section class="home-wrapper container">
         <div class="home-img container">
           <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
-        </div> 
+        </div>
 <!-- this is for the welcoming title  -->
         <div class="welcome-wrapper container">
             <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
@@ -71,7 +71,7 @@ get_header(); ?>
     <!-- we need your support section -->
 
     <section class="support-wrapper container">
-      <div class="information">
+      <div class="information"> 
         <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
         	<a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How $ is Spent</a>
