@@ -15,21 +15,12 @@ div .menu-primary-menu-container {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 769px) {
-<<<<<<< HEAD
-   
+@include tablet{
 		.menu-primary-menu-container{
 			display: none;
 		}
-=======
-	body {
-		background-color: lightgreen;
-	}
-	.menu-primary-menu-container {
-		display: none;
-	}
->>>>>>> 66aaf33fb7cbc896fe231f6caa4bc5e7ae42f014
 }
+
 .montessori-logo {
 	width: 10rem;
 	height: 2rem;
@@ -134,15 +125,9 @@ div .secondary {
 		cursor: pointer;
 	}
 }
-<<<<<<< HEAD
 
 .montessori-logo{
-=======
-nav div .secondary {
-	@include desktop {}
-}
-.montessori-logo {
->>>>>>> 66aaf33fb7cbc896fe231f6caa4bc5e7ae42f014
+
 	padding: 0;
 	margin: 10px 0 20px 30px;
 	width: 14rem;

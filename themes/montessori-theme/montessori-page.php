@@ -80,7 +80,6 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 
 
 <section id="benefits-of-montessori" class="benefits-section mobile-container">
-                  <!-- <ul class="main-benefits"> -->
 
                    <h1>Benefits of Montessori</h1>
 <?php $fields = CFS()->get( 'benefits' );?>
@@ -107,19 +106,11 @@ echo '<img src="'.$src[0].'" />';} ?>
 
 <?php $fields = CFS()->get( 'benefits_details' );?>
 <?php foreach ( $fields as $field )  { ?>
-
-<div class="benefits" >
-
-
-
+<div class="benefits mobile-container">
  <p> <?php echo $field['benefits_parts'];?></p>
 <?php
 }
 ?>
-
-
-
-
  </div>
 
 
