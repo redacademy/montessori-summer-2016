@@ -1,15 +1,30 @@
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
-// @media screen and (max-width: 480px) {
+// General Setting
+* {
+	box-sizing: border-box;
+}
 
-// General layout
-		.site-content {
-			max-width: 480px;
-			margin: 0 auto;
-			padding-left: 20;
-			padding-right: 20;
-		}
+// @media screen and (max-width: 480px) {
+.about-wrapper {
+	max-width:$mobile_width;
+	margin: 0 auto;
+	padding-left: $basic_pading * 2;
+	padding-right: $basic_pading * 2;
+	align-items: center;
+	h2 {
+		font-family: $font_title;
+		font-size:$h2_size_mob;
+		font-weight: normal;
+		line-height: $basic_hline_height * 4.2;
+		text-align: left;
+		color:$black;
+
+	}
+}
+
+
 
 
 
@@ -111,10 +126,9 @@
 // </div>
 
 .target {
-  background:#0099cc;
-  width:300px;
-  height:300px;
-  height:160px;
-  padding:5px;
-  display:none;
+	width: 100%;
+	height: auto;
+	height: 160px;
+	padding:$basic_pading;
+	display: none;
 }
