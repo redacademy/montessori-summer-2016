@@ -778,10 +778,6 @@ div .secondary {
   cursor: pointer;
   color: #248E6A; }
 
-@media (min-width: 60rem) {
-  .site-content {
-    margin: 58px 80px; } }
-
 .site-main .home-wrapper {
   width: 480px;
   height: 585px;
@@ -850,6 +846,21 @@ div .secondary {
         margin: 90px 100px;
         text-align: center; } }
 
+.link-title h2 {
+  padding: 0;
+  width: 100%;
+  height: 42px;
+  font-family: "Asap";
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000; }
+  @media (min-width: 60rem) {
+    .link-title h2 {
+      margin: 15px;
+      padding: 21px 24px;
+      font-size: 48px;
+      font-family: 'Asap'; } }
+
 .links-wrapper {
   width: 480px; }
   @media (min-width: 60rem) {
@@ -858,23 +869,19 @@ div .secondary {
           flex-direction: row;
       display: -ms-flexbox;
       display: flex;
-      margin: 0;
-      padding: 175px 0; } }
-  .links-wrapper h2 {
-    padding: 0;
-    width: 480px;
-    height: 42px;
-    font-family: "Asap";
-    font-size: 36px;
-    line-height: 42px;
-    color: #000000; }
-  .links-wrapper article p {
+      margin: 20px -60px;
+      padding-top: 70px; } }
+  .links-wrapper p {
     width: 377px;
     font-family: "Noto Sans";
     font-size: 20px;
     line-height: 40px;
     color: #000000;
     margin: 40px; }
+    @media (min-width: 60rem) {
+      .links-wrapper p {
+        padding: 40px;
+        margin: 15px 40px; } }
   .links-wrapper .benifits .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
@@ -889,6 +896,12 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
+    @media (min-width: 60rem) {
+      .links-wrapper .benifits .green-btn {
+        display: block;
+        width: 319px;
+        height: 66px;
+        font-size: 26px; } }
   .links-wrapper .nw-program .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
@@ -903,6 +916,12 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
+    @media (min-width: 60rem) {
+      .links-wrapper .nw-program .green-btn {
+        display: block;
+        width: 319px;
+        height: 66px;
+        font-size: 26px; } }
   .links-wrapper .involved .red-btn {
     padding: 17px 70px;
     background-color: #F76072;
@@ -914,6 +933,13 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
+    @media (min-width: 60rem) {
+      .links-wrapper .involved .red-btn {
+        display: block;
+        width: 319px;
+        height: 66px;
+        font-size: 26px;
+        padding: 6px 85px; } }
 
 .support-wrapper {
   width: 480px;
@@ -1221,11 +1247,7 @@ padding-bottom: 60px;
 # About Page
 --------------------------------------------------------------*/
 .site-content {
-<<<<<<< HEAD
-  max-width: 1240;
-=======
   max-width: 1240px;
->>>>>>> 0d8cc9972925e013065dc68b5fd9164b57042d56
   margin: 0 auto;
   padding-left: 20;
   padding-right: 20; }
@@ -1259,39 +1281,21 @@ site-main .involved-title green-btn {
   font-size: px;
   font-weight: bold;
   text-align: center;
-  line-height: 30px;
-  color: #000;
-  margin-left: 15px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  display: block; }
+  line-height: 30px; }
 
-.text-post {
+.text-title h3 {
   border-top: 5px solid #248e6a;
-  width: 100px; }
-  .text-post .site-main .involved-wrapper {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto; }
-  .text-post .site-main h1 a {
-    text-decoration: none;
-    padding-left: 19px;
-    padding-right: 36px;
-    padding-top: 25px;
-    padding-bottom: 19px;
-    width: 200px;
-    height: 120px;
-    font-size: 30px;
-    color: #000;
-    background-color: #4FC8A1;
-    font-family: "Noto Sans";
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    margin-left: 15px;
-    box-shadow: none;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: .8px;
-    display: block; }
+  width: 150px;
+  color: #000; }
+
+.text-shadow {
+  border-top: 5px solid #248e6a;
+  width: 300px; }
+
+.site-main .involved-wrapper {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.site-main .a h2 {
+  color: #000; }
