@@ -1,13 +1,35 @@
 //front page
-// @media screen and (max-width: 480px) {
+// media screen for mobile (max-width: 480px)
 .site-main {
     .home-wrapper {
         width: 480px;
-        height: 555px;
+        height: 585px;
         background-color: rgba(0,0,0,0.74);
+
+        // @include desktop{
+        //   width: 541.64px;
+        //   height: 555px;
+        //   background-color: rgba(0,0,0,0.74);
+        //   position: absolute;
+        // }
+        .home-img{
+          width: 480px;
+          height: 585px;
+          // @include desktop{
+          //   background-color: rgba(0,0,0,0.74);
+          //   width: 1264px;
+          //   height: 555px;
+          //   z-index: -1;
+          //   position: relative;
+          // }
+        }
+        .welcome-wrapper{
+          // @include desktop{
+          //   z-index: -1;
+          //   position: relative;
+          // }
+
         h2 {
-            width: 100%;
-            height: 42px;
             font-family: 'Asap';
             font-size: 36px;
             line-height: 42px;
@@ -19,6 +41,11 @@
             width: 119.23px;
             height: 74px;
             border-bottom: 4px solid #fff;
+
+            // @include desktop{
+            //   z-index: -1;
+            //   position: relative;
+            // }
         }
         p {
             height: 160px;
@@ -27,35 +54,59 @@
             line-height: 40px;
             color: #fff;
             margin: 30px;
+            // @include desktop{
+            //   height: auto;
+            //   display: block;
+            //   z-index: -1;
+            //   position: relative;
+            //   visibility: visible;
+            // }
+
         }
         .red-btn {
-            width: 200px;
-            height: 41.88px;
             background-color: #F76072;
-            border-color: #F76072;
-            border-radius: 3px;
+            border-radius: 6px;
             color: #fff;
-            margin-left: 118px;
-            box-shadow: none;
+            margin-left: 155px;
+            padding: 8px;
             font-family: "Noto Sans";
             font-size: 20px;
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
+            // @include desktop{
+            //   z-index: -1;
+            //   position: relative;
+            //   visibility: visible;
+            // }
+
+          }
         }
     }
 }
 //this is for the quick links
 .links-wrapper {
     width: 480px;
+    @include desktop{
+      flex-direction: row;
+      display: flex;
+      margin: 0;
+      padding: 80px 0;
+    }
     h2 {
-        padding-left: 38px;
-        width: 852px;
+        padding: 0;
+        width: 480px;
         height: 42px;
         font-family: "Asap";
         font-size: 36px;
         line-height: 42px;
         color: #000000;
+        @include desktop{
+          margin: auto;
+          display: flex;
+          width: 852px;
+        }
+
     }
     article {
         p {
@@ -67,10 +118,25 @@
             margin: 40px;
         }
     }
-    a {
+    .benifits{
+      .green-btn {
+          background-color: #4FC8A1;
+          border-radius: 6px;
+          font-family: "Noto Sans";
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 30px;
+          color: #fff;
+          margin-left: 80px;
+          padding: 17px 20px;
+          font-weight: 300;
+          text-shadow: none;
+          letter-spacing: 0.8px;
+      }
+    }
+    .nw-program {
         .green-btn {
-            width: 320px;
-            height: 67px;
             background-color: #4FC8A1;
             border-radius: 6px;
             font-family: "Noto Sans";
@@ -79,27 +145,22 @@
             text-align: center;
             line-height: 30px;
             color: #fff;
-            border-color: #4FC8A1;
-            margin-left: 60px;
-            box-shadow: none;
+            margin-left: 80px;
+            padding: 17px 70px;
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
         }
+    }
+    .involved {
         .red-btn {
-            width: 320px;
-            height: 67px;
+            padding: 17px 70px;
             background-color: #F76072;
             border-radius: 6px;
+            color: #fff;
+            margin-left: 80px;
             font-family: "Noto Sans";
             font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            line-height: 30px;
-            color: #fff;
-            border-color: #F76072;
-            margin-left: 60px;
-            box-shadow: none;
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
@@ -109,8 +170,11 @@
 // this is for the support section
 .support-wrapper {
     width: 480px;
+    height: auto;
     .information {
+      height: auto;
         h2 {
+            border-top: 2px solid #2EB688;
             width: 377px;
             height: 42px;
             font-family: 'Asap';
@@ -149,7 +213,6 @@
             }
         }
         //p
-        a {
             .red-btn {
                 width: 185px;
                 height: 47px;
@@ -158,6 +221,7 @@
                 border-radius: 6px;
                 color: #fff;
                 margin-left: 20px;
+                padding: 8px;
                 box-shadow: none;
                 font-family: "Noto Sans";
                 font-size: 20px;
@@ -167,8 +231,6 @@
                 text-decoration: none;
             }
             .green-btn {
-                width: 185px;
-                height: 47px;
                 background-color: #4FC8A1;
                 border-color: #4FC8A1;
                 border-radius: 6px;
@@ -178,101 +240,31 @@
                 text-align: center;
                 line-height: 30px;
                 color: #fff;
-                margin-left: 15px;
+                margin-left: 20px;
+                padding: 8px;
                 box-shadow: none;
                 font-weight: 300;
                 text-shadow: none;
                 letter-spacing: 0.8px;
                 text-decoration: none;
             }
-        }//a
     }//information
+
 }//support-wrapper
 
 // this is for the features fliper
-.features-wrapper {
-    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-    background: #aff1d3;
-    width: 200px;
-}
-.features-wrapper.hover .features-flipper,
-.features-wrapper:hover .features-flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-.features-wrapper,
-.freatures-back,
-.front {
-    box-sizing: border-box;
-    height: 139.76px;
-    width: 480.27px;
-}
-.features-flipper {
-    position: relative;
-    -webkit-transition: 1.9s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transition: 1.9s;
-    -moz-transform-style: preserve-3d;
-    -o-transition: 1.9s;
-    -o-transform-style: preserve-3d;
-    transition: 1.9s;
-    transform-style: preserve-3d;
-    /*   display: flex; */
-    justify-content: space-around;
-    flex-direction: row;
-}
-.features-back,
-.front {
-    text-align: center;
-    overflow: hidden;
-    /*   line-height: 1.5em; */
-    padding: 20px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.front {
-    width: 450px;
-    font-family: 'Asap';
-    font-size: 24px;
-    text-align: center;
-    color: #000000;
-}
-.features-back {
-    overflow: hidden;
-    line-height: 1.5em;
-    padding: 20px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.features-back {
-    position: absolute;
-    bottom: 1px;
-    background-color: white;
-    border: 1px solid #248E6A;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-.green-btn {
-    color: #248E6A;
-    text-decoration: none;
-}
-/***************************************************/
+
 .all-features {
-    width: 480px;
-    .features {
-        h2 {
+  margin-bottom: 30px;
+          h2 {
+            box-sizing: border-box;
+            width: 440px;
+            border-top: 2px solid #2EB688;
+            padding-top: 50px;
             height: 42px;
             font-family: 'Asap';
             font-size: 36px;
-            line-height: 42px;
+            line-height: 0px;
             color: #000;
             margin-left: 30px;
             .container {
@@ -281,9 +273,79 @@
                 width: 480px;
             }
         }
+    .features-wrapper {
+        /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+        background: #aff1d3;
+        width: 200px;
+        box-sizing: border-box;
+        height: 139.76px;
+        width: 480.27px;
+        .features-flipper {
+            position: relative;
+            -webkit-transition: 1.9s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1.9s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1.9s;
+            -o-transform-style: preserve-3d;
+            transition: 1.9s;
+            transform-style: preserve-3d;
+            justify-content: space-around;
+            flex-direction: row;
+            &:hover {
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+            .front {
+                height: auto;
+                text-align: center;
+                overflow: hidden;
+                padding: 20px;
+                width: 450px;
+                font-family: 'Asap';
+                font-size: 24px;
+                text-align: center;
+                color: #000000;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            .features-back {
+                width: 480px;
+                height: 170px;
+                border: 1px solid #248E6A;
+                margin: 0;
+                text-align: center;
+                overflow: hidden;
+                padding: 0;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+                position: absolute;
+                bottom: 1px;
+                background-color: #fff;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    .green-btn {
+        color: #248E6A;
+        text-decoration: none;
     }
 }
-// }
 a {
     text-decoration: none;
 }
+
+body{
+  background-color: #ffffff;
+}
+
+/***************************************************/

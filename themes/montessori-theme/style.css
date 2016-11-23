@@ -48,33 +48,6 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
-.site-main .involved-wrapper {
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.site-main h1 a {
-  text-decoration: none;
-  padding: 20px 36px 19px 19px;
-  width: 120px;
-  height: 200px;
-  font-size: 20px;
-  font-family: Asap;
-  color: #000;
-  background-color: #4FC8A1;
-  font-family: "Noto Sans";
-  font-size: px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #000;
-  margin-left: 15px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  display: block; }
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -357,11 +330,11 @@ table {
   margin: 0;
   width: 100%; }
 
-.container {
+/*.container{
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
-
+  width: 1120px;
+}*/
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -684,7 +657,7 @@ div .menu-primary-menu-container {
     .main-navigation-container {
       display: inline-block;
       height: 8rem;
-      padding: 0 15px 0 15px; } }
+      padding: 0 15px; } }
 
 .main-navigation {
   width: 100%; }
@@ -702,8 +675,8 @@ div .menu-primary-menu-container {
         font-size: 1.3rem;
         border-top: 6px solid transparent;
         list-style: none;
-        padding: 15px 0px;
-        margin: 0px 5px; } }
+        padding: 15px 0;
+        margin: 0 5px; } }
 
 div .secondary {
   text-align: right;
@@ -731,7 +704,7 @@ div .secondary {
       color: white; }
 
 .responsive-menu-button {
-  margin-top: 3rem !important; }
+  margin-top: 0.5rem !important; }
 
 #primary-menu li.current-menu-item a {
   border-top: 6px solid #57B79F;
@@ -740,7 +713,6 @@ div .secondary {
 
 .montessori-logo {
   padding: 0;
-  margin-left: 20px;
   margin: 10px 0 20px 30px;
   width: 14rem;
   height: 7rem; }
@@ -782,10 +754,12 @@ div .secondary {
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
   border-bottom: solid 2px #000000;
-  margin-top: 0px; }
+  top: 0; }
 
 .site-content {
-  margin-top: 78px; }
+  padding-top: 87px;
+  border-bottom: solid 2px #000000;
+  top: 0; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -801,7 +775,7 @@ div .secondary {
   font-family: "PT Sans";
   overflow: hidden;
   font-size: 0.8rem;
-  width: 480px;
+  width: 27.5rem;
   height: 150px;
   background-color: #125A50;
   color: #fff; }
@@ -809,7 +783,7 @@ div .secondary {
 /*block Items*/
 .footer-block-item1 {
   position: relative;
-  width: 90%;
+  width: 100%;
   padding: 10px 0 30px 0;
   height: 30px;
   margin-top: -10px; }
@@ -835,7 +809,7 @@ div .secondary {
   padding-top: 0px;
   padding-left: 20px;
   padding-bottom: 0px;
-  width: 90%;
+  width: 100%;
   text-align: center; }
   .footer-block-item2 p {
     margin-bottom: 0px;
@@ -858,7 +832,7 @@ div .secondary {
 /* copy rights*/
 .footer-block-item3 {
   padding-top: 5px;
-  width: 90%;
+  width: 100%;
   height: 20px;
   text-align: center;
   text-transform: capitalize; }
@@ -868,18 +842,21 @@ div .secondary {
 
 /*the links in the footer */
 .footer-block-item1 li a:hover {
+  cursor: pointer;
   color: #248E6A; }
 
 .footer-block-item2 a:hover {
+  cursor: pointer;
   color: #248E6A; }
 
 .site-main .home-wrapper {
   width: 480px;
-  height: 555px;
+  height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
-  .site-main .home-wrapper h2 {
-    width: 100%;
-    height: 42px;
+  .site-main .home-wrapper .home-img {
+    width: 480px;
+    height: 585px; }
+  .site-main .home-wrapper .welcome-wrapper h2 {
     font-family: 'Asap';
     font-size: 36px;
     line-height: 42px;
@@ -891,22 +868,19 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-  .site-main .home-wrapper p {
+  .site-main .home-wrapper .welcome-wrapper p {
     height: 160px;
     font-family: "Noto Sans";
     font-size: 20px;
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-  .site-main .home-wrapper .red-btn {
-    width: 200px;
-    height: 41.88px;
+  .site-main .home-wrapper .welcome-wrapper .red-btn {
     background-color: #F76072;
-    border-color: #F76072;
-    border-radius: 3px;
+    border-radius: 6px;
     color: #fff;
-    margin-left: 118px;
-    box-shadow: none;
+    margin-left: 155px;
+    padding: 8px;
     font-family: "Noto Sans";
     font-size: 20px;
     font-weight: 300;
@@ -915,14 +889,28 @@ div .secondary {
 
 .links-wrapper {
   width: 480px; }
+  @media (min-width: 48rem) {
+    .links-wrapper {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 80px 0; } }
   .links-wrapper h2 {
-    padding-left: 38px;
-    width: 852px;
+    padding: 0;
+    width: 480px;
     height: 42px;
     font-family: "Asap";
     font-size: 36px;
     line-height: 42px;
     color: #000000; }
+    @media (min-width: 48rem) {
+      .links-wrapper h2 {
+        margin: auto;
+        display: -ms-flexbox;
+        display: flex;
+        width: 852px; } }
   .links-wrapper article p {
     width: 377px;
     font-family: "Noto Sans";
@@ -930,9 +918,7 @@ div .secondary {
     line-height: 40px;
     color: #000000;
     margin: 40px; }
-  .links-wrapper a .green-btn {
-    width: 320px;
-    height: 67px;
+  .links-wrapper .benifits .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
     font-family: "Noto Sans";
@@ -941,16 +927,13 @@ div .secondary {
     text-align: center;
     line-height: 30px;
     color: #fff;
-    border-color: #4FC8A1;
-    margin-left: 60px;
-    box-shadow: none;
+    margin-left: 80px;
+    padding: 17px 20px;
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-  .links-wrapper a .red-btn {
-    width: 320px;
-    height: 67px;
-    background-color: #F76072;
+  .links-wrapper .nw-program .green-btn {
+    background-color: #4FC8A1;
     border-radius: 6px;
     font-family: "Noto Sans";
     font-size: 24px;
@@ -958,166 +941,172 @@ div .secondary {
     text-align: center;
     line-height: 30px;
     color: #fff;
-    border-color: #F76072;
-    margin-left: 60px;
-    box-shadow: none;
+    margin-left: 80px;
+    padding: 17px 70px;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px; }
+  .links-wrapper .involved .red-btn {
+    padding: 17px 70px;
+    background-color: #F76072;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 80px;
+    font-family: "Noto Sans";
+    font-size: 24px;
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
 
 .support-wrapper {
-  width: 480px; }
-  .support-wrapper .information h2 {
-    width: 377px;
-    height: 42px;
-    font-family: 'Asap';
-    font-size: 36px;
-    line-height: 42px;
-    color: #000;
-    margin: 35px; }
-  .support-wrapper .information img {
-    width: 287px;
-    height: 470px; }
-  .support-wrapper .information p {
-    width: 377px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 46px;
-    color: #000;
-    margin: 40px; }
-    .support-wrapper .information p .info {
-      width: 470px;
-      font-family: "Noto Sans";
-      font-size: 26px;
-      font-weight: bold;
+  width: 480px;
+  height: auto; }
+  .support-wrapper .information {
+    height: auto; }
+    .support-wrapper .information h2 {
+      border-top: 2px solid #2EB688;
+      width: 377px;
+      height: 42px;
+      font-family: 'Asap';
+      font-size: 36px;
       line-height: 42px;
-      color: #000; }
-    .support-wrapper .information p .img-text {
-      width: 470px;
+      color: #000;
+      margin: 35px; }
+    .support-wrapper .information img {
+      width: 287px;
+      height: 470px; }
+    .support-wrapper .information p {
+      width: 377px;
       font-family: "Noto Sans";
       font-size: 20px;
       line-height: 46px;
       color: #000;
-      margin: 45px; }
-  .support-wrapper .information a .red-btn {
-    width: 185px;
-    height: 47px;
-    background-color: #F76072;
-    border-color: #F76072;
-    border-radius: 6px;
-    color: #fff;
-    margin-left: 20px;
-    box-shadow: none;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    text-decoration: none; }
-  .support-wrapper .information a .green-btn {
-    width: 185px;
-    height: 47px;
-    background-color: #4FC8A1;
-    border-color: #4FC8A1;
-    border-radius: 6px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    margin-left: 15px;
-    box-shadow: none;
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    text-decoration: none; }
+      margin: 40px; }
+      .support-wrapper .information p .info {
+        width: 470px;
+        font-family: "Noto Sans";
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 42px;
+        color: #000; }
+      .support-wrapper .information p .img-text {
+        width: 470px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 46px;
+        color: #000;
+        margin: 45px; }
+    .support-wrapper .information .red-btn {
+      width: 185px;
+      height: 47px;
+      background-color: #F76072;
+      border-color: #F76072;
+      border-radius: 6px;
+      color: #fff;
+      margin-left: 20px;
+      padding: 8px;
+      box-shadow: none;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px;
+      text-decoration: none; }
+    .support-wrapper .information .green-btn {
+      background-color: #4FC8A1;
+      border-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 20px;
+      padding: 8px;
+      box-shadow: none;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px;
+      text-decoration: none; }
 
-/****************************************************/
-.features-wrapper {
-  /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-  background: #aff1d3;
-  width: 200px; }
-
-.features-wrapper.hover .features-flipper,
-.features-wrapper:hover .features-flipper {
-  transform: rotateY(180deg); }
-
-.features-wrapper,
-.freatures-back,
-.front {
-  box-sizing: border-box;
-  height: 139.76px;
-  width: 480.27px; }
-
-.features-flipper {
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  -o-transition: 1.9s;
-  -o-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d;
-  /*   display: flex; */
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-
-.features-back,
-.front {
-  text-align: center;
-  overflow: hidden;
-  /*   line-height: 1.5em; */
-  padding: 20px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.front {
-  width: 450px;
-  font-family: 'Asap';
-  font-size: 24px;
-  text-align: center;
-  color: #000000; }
-
-.features-back {
-  overflow: hidden;
-  line-height: 1.5em;
-  padding: 20px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.features-back {
-  position: absolute;
-  bottom: 1px;
-  background-color: white;
-  border: 1px solid #248E6A;
-  transform: rotateY(180deg); }
-
-.green-btn {
-  color: #248E6A;
-  text-decoration: none; }
-
-/***************************************************/
 .all-features {
-  width: 480px; }
-  .all-features .features h2 {
+  margin-bottom: 30px; }
+  .all-features h2 {
+    box-sizing: border-box;
+    width: 440px;
+    border-top: 2px solid #2EB688;
+    padding-top: 50px;
     height: 42px;
     font-family: 'Asap';
     font-size: 36px;
-    line-height: 42px;
+    line-height: 0px;
     color: #000;
     margin-left: 30px; }
-    .all-features .features h2 .container {
+    .all-features h2 .container {
       margin-left: auto;
       margin-right: auto;
       width: 480px; }
+  .all-features .features-wrapper {
+    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+    background: #aff1d3;
+    width: 200px;
+    box-sizing: border-box;
+    height: 139.76px;
+    width: 480.27px; }
+    .all-features .features-wrapper .features-flipper {
+      position: relative;
+      -webkit-transition: 1.9s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1.9s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1.9s;
+      -o-transform-style: preserve-3d;
+      transition: 1.9s;
+      transform-style: preserve-3d;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .all-features .features-wrapper .features-flipper:hover {
+        transform: rotateY(180deg); }
+      .all-features .features-wrapper .features-flipper .front {
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        padding: 20px;
+        width: 450px;
+        font-family: 'Asap';
+        font-size: 24px;
+        text-align: center;
+        color: #000000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+      .all-features .features-wrapper .features-flipper .features-back {
+        width: 480px;
+        height: 170px;
+        border: 1px solid #248E6A;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        bottom: 1px;
+        background-color: #fff;
+        transform: rotateY(180deg); }
+  .all-features .green-btn {
+    color: #248E6A;
+    text-decoration: none; }
 
 a {
   text-decoration: none; }
 
+body {
+  background-color: #ffffff; }
+
+/***************************************************/
 body {
   padding: 0;
   margin: 0; }
@@ -1130,17 +1119,25 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-.main-history,
-.main-materials,
-.philosophy-section {
-  padding-bottom: 60px;
-  border-bottom: 2px solid #2EB688; }
-
-ul .history-thumbnail img {
+.main-history img {
   float: left;
   width: 227px;
   height: 244px; }
 
+.main-history p {
+  text-align: left; }
+
+/*.main-history,
+.main-materials,
+.philosophy-section{
+padding-bottom: 60px;
+   border-bottom: 2px solid #2EB688;
+}*/
+/*.history-thumbnail{
+    img{
+       
+    }
+}*/
 /*
 .main-materials{
      padding: 0px;
@@ -1148,19 +1145,19 @@ ul .history-thumbnail img {
     flex-wrap: wrap;
     }
  .philosophy-thumbnails {
-     
+
      overflow: hidden;
     height: 640px;
     img{
-       
+
     width: 200px;
     height: 200px;
-   
+
 }}
 
 .philosophy-titles { width: 200px;
 a{
-   
+
     text-align: left;
     text-decoration: none;
     font-size: 1rem;
@@ -1170,50 +1167,55 @@ a{
 }
 }
 .philosophy-titles a:hover{
-    
+
 }
 
 .philosophy-content p{
     width: 200px;
     */
 /*position: absolute;*/
-ul .each-philosophy {
-  width: 200px; }
-  ul .each-philosophy .philosophy-thumbnail {
-    height: 200px; }
-  ul .each-philosophy div h2 {
-    font-family: "Asap";
-    display: inline-block;
-    font-size: 1rem;
-    width: 200px;
-    height: 33px;
-    position: absolute;
-    z-index: 3;
-    color: green;
-    text-align: center; }
-  ul .each-philosophy img {
-    margin-top: 13px;
-    z-index: 1;
-    position: relative; }
-  ul .each-philosophy p {
-    font-family: "Noto Sans";
-    position: absolute;
-    z-index: 3;
-    display: none;
-    width: 200px; }
+/*
+ul .each-philosophy{
 
-.main-philosophy {
-  width: 440px;
-  padding: 10px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+width:200px;
 
+
+    & .philosophy-thumbnail{
+
+
+        height: 200px;
+    }
+    div h2{
+        font-family: $font_title;
+        display: inline-block;
+        font-size: 1rem;
+        width: 200px;
+        height: 33px;
+        position: absolute;
+        z-index: 3;
+      color:green;
+
+      text-align: center;
+    }
+     img{
+       margin-top: 13px;
+        z-index: 1;
+       position: relative;
+    }
+     p{
+         font-family: $font_body;
+        position: absolute;
+        z-index: 3;
+        display:none;
+        width:200px;
+    }
+}
+.main-philosophy{
+    width:440px;
+   padding: 10px;
+      @include flex(center,space-between);
+    flex-wrap: wrap;
+}*/
 /*Start Resources Section  */
 /*--------------------------------------------------------------
 # Navigation
@@ -1265,3 +1267,78 @@ ul .each-philosophy {
     .secondary li a {
       text-decoration: none;
       color: white; }
+
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+.site-content {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 20;
+  padding-right: 20; }
+
+.target {
+  background: #0099cc;
+  width: 300px;
+  height: 300px;
+  height: 160px;
+  padding: 5px;
+  display: none; }
+
+site-main .involved-wrapper {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+site-main .involved-title green-btn {
+  text-decoration: none;
+  padding-left: 19px;
+  padding-right: 36px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  width: 120px;
+  height: 220px;
+  font-size: 15px;
+  font-family: Asap;
+  color: #000;
+  background-color: #4FC8A1;
+  font-family: "Noto Sans";
+  font-size: px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  margin-left: 15px;
+  box-shadow: none;
+  font-weight: 300;
+  text-shadow: none;
+  display: block; }
+
+.text-post {
+  border-top: 5px solid #248e6a;
+  width: 100px; }
+  .text-post .site-main .involved-wrapper {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto; }
+  .text-post .site-main h1 a {
+    text-decoration: none;
+    padding-left: 19px;
+    padding-right: 36px;
+    padding-top: 25px;
+    padding-bottom: 19px;
+    width: 200px;
+    height: 120px;
+    font-size: 30px;
+    color: #000;
+    background-color: #4FC8A1;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 15px;
+    box-shadow: none;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: .8px;
+    display: block; }

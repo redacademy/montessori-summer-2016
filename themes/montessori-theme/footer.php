@@ -11,7 +11,7 @@
 					<div class="footer-block-item1 ">
 			<ul>
 
-				<li><a href="#"> Disclaimer</a></li><li class="boarder1" ><a href="#">About</a></li><li class="boarder2"><a href="#">Contact us</a></li><li><a href="#">Get involved</a></li>
+				
 
 				<li><a href="#">Disclaimer</a></li><li class="boarder1" ><a href="<?php echo get_page_link( get_page_by_title( about)->ID ); ?>">About</a></li><li class="boarder2"><a href="<?php echo get_page_link( get_page_by_title( contact)->ID ); ?>">Contact us</a></li><li><a href="<?php echo get_page_link( get_page_by_title( get-involved)->ID ); ?>">Get involved</a></li>
 

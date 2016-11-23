@@ -3,16 +3,22 @@
 jQuery(document).ready(function( $ ) {
 
 // --------------------------------------------------------------
-// >>> TO HOVER ACTIVE THE ACTIVE LINK :
+
+//  TO HOVER ACTIVE THE ACTIVE LINK :
+
 // ----------------------------------------------------------------
 
 
   $('.secondary li a').click(function(){
       $(this).parent().addClass('active').siblings().removeClass('active');
   });
-  
+
 // --------------------------------------------------------------
-// >>> SMOOTH SCROL:
+
+//  SMOOTH SCROL:
+
+// SMOOTH SCROL:
+
 // ----------------------------------------------------------------
   $(document).ready(function(){
     $(function() {
@@ -32,14 +38,13 @@ jQuery(document).ready(function( $ ) {
   });
 
 // --------------------------------------------------------------
-// >>> HIDEN DIV FUNCTION:
+
+
 // ----------------------------------------------------------------
 
 $('.toggle').click(function() {
-    $('#target').toggle('slow');
+    $('.target').toggle('slow');
 });
 
 
 });
-
-

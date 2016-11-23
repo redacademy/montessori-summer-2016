@@ -118,7 +118,7 @@ div .secondary {
 	}
 }
 .responsive-menu-button {
-	margin-top: 3rem !important;
+	margin-top: 0.5rem !important;
 }
 #primary-menu li.current-menu-item {
 	a {
@@ -170,8 +170,10 @@ nav div .secondary {
 	background: rgba($white,0.7);
 	position: fixed;
 	border-bottom: solid 2px$black;
-	margin-top: 0;
+	top: 0;
 }
 .site-content {
-	margin-top: 78px;
+	padding-top: 87px;
+	border-bottom: solid 2px$black;
+	top: 0;
 }

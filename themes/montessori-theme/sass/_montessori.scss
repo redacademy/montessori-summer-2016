@@ -1,25 +1,36 @@
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
+.main-history{
+ 
 
-.main-history,
+    img{
+   float:left;
+        width:227px;
+        height:244px;
+    }
+    p{
+        text-align: left;
+    }
+}
+
+
+/*.main-history,
 .main-materials,
 .philosophy-section{
 padding-bottom: 60px;
    border-bottom: 2px solid #2EB688;
-}
+}*/
 
 
 
 /////*Start History Section**/////
 
-ul .history-thumbnail{
+/*.history-thumbnail{
     img{
-        float:left;
-        width:227px;
-        height:244px;
+       
     }
-}
+}*/
 
 
 /*
@@ -64,7 +75,7 @@ a{
 ///**** start philosophy section ***///
 
 
-
+/*
 ul .each-philosophy{
 
 width:200px;
@@ -105,7 +116,7 @@ width:200px;
    padding: 10px;
       @include flex(center,space-between);
     flex-wrap: wrap;
-}
+}*/
 //****** end philosophy section  ******//
 
 ////////Start Materials Section /////
