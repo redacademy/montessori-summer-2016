@@ -30,17 +30,14 @@
               if( !empty($histor) ){
                 echo $histor; };
             ?></p>
-
  </div>
 </div>
     </section>
 
 <!-- Philosophy Section  -->
 
-<section id="philosophy" class="philosophys-section ">
-
-
- <div class="main-philosophy ">
+<section id="philosophy" class="philosophys-section">
+ <div class="main-philosophy">
  <div><h1>Philosophy</h1></div>
 
  <?php $fields = CFS()->get( 'philosophy' );?>
@@ -115,7 +112,6 @@ $src = wp_get_attachment_image_src($field['materials_img'], 'small');
 echo '<img src="'.$src[0].'" />'; ?>
 <p>  <?php echo $field['materials_content'];?></p>
 <?php } ?>
-<p>  <?php echo $field['materials_content'];?></p>
  </div>
 </div>
 </section>
