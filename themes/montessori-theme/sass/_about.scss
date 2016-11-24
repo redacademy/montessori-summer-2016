@@ -51,6 +51,7 @@
 .left-red-border {
 	width: 80%;
 	height: 90px;
+	overflow: visible;
 	border-left: 7px solid $color_bar_pink;
 	padding-left: 20px;
 	padding-right: 10px;
@@ -59,7 +60,7 @@
 .red-border-container {
 	width: $mobile_width;
 	padding: 10px;
-	overflow: visible;
+
 	height: auto;
 	margin-bottom: 70px;
 }

@@ -46,5 +46,19 @@ $('.toggle').click(function() {
     $('.target').toggle('slow');
 });
 
+// --------------------------------------------------------------
+// hover class for img
+
+// ----------------------------------------------------------------
+
+$('.switch').hover(function() {
+        $(this).find('.teacher-img').hide();
+        $(this).find('.teacher_vision').show();
+    }, function() {
+        $(this).find('teacher_vision').hide();
+        $(this).find('.teacher-img').show();
+});
+
+
 
 });

@@ -2,46 +2,76 @@
 # NW Program Page
 --------------------------------------------------------------*/
 // General Setting
+
 * {
 	box-sizing: border-box;
 }
-
 // @media screen and (max-width: 480px) {
 .nw-program-wrapper {
-	max-width:$mobile_width;
+	max-width: $mobile_width;
+	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
+
 	h1 {
 		font-family: $font_title;
-		font-size:$h1_size_mob;
+		font-size: $h1_size_mob;
 		font-weight: normal;
 		line-height: $basic_hline_height * 4.2;
 		text-align: left;
-		color:$black;
-
+		color: $black;
 	}
 }
+//Enrollment Section
+.green-btn {
+	width: 60%;
+	height: 47px;
+	margin-left: 5%;
+	padding: 17px 20px;
+	background-color: #4FC8A1;
+	border-radius: 6px;
+	font-family: "Noto Sans";
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	text-shadow: none;
+	letter-spacing: 0.8px;
+}
+.teacher-grid{
+	@include flex(center,space-around);
+	flex-wrap: wrap;
+	position: relative;
+
+.switch {
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
 
 
-.nw-program{
-	margin: auto;
-	.red-border-container{
-		width: $mobile_width;
-		padding: 10px;
-		overflow: visible;
-		height: auto;
-		margin-bottom: 70px;
-		.left-red-border{
-			width: 80%;
-			height: 90px;
-			border-left: 7px solid $color_bar_pink;
-			padding-left: 20px;
-			padding-right: 10px;
-
-		}
-
+	.teacher-img {
+		background-size: cover;
+		position: relative;
+		border-radius: 50%;
+		width: 125px;
+		height: 125px;
+		background: #aff1d3;
 	}
 
+	p {
+		border-radius: 50%;
+		top: 60px;
+		position: absolute;
+		width: 125px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 125px;
+		text-align: center;
+		display: none;
+	}
+}
 }

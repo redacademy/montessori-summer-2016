@@ -19,10 +19,18 @@ get_header(); ?>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
-			<div class=""><?php echo CFS()->get('main-reason'); ?> </div>
+		<div class=""><?php echo CFS()->get('main-reason'); ?> </div>
 </section>
 
-  <!-- **********////////////////////////Funding///////////////////////********** -->
+
+
+<!-- **********///////////Montessori Daily Schedule section/////////////********** -->
+
+
+             <!-- here will be the montessory schedula code-->
+
+
+<!-- **********////////////////////////Funding///////////////////////********** -->
 
 	<section class="funding">
 				<h1>Funding</h1>
@@ -61,29 +69,29 @@ get_header(); ?>
 
  <!-- **********///////////////// Teacher List Section ///////////////********** -->
 
- <section>
+ <section class="teacher-list">
+	 <div class="teacher-grid">
  <!-- Custom Post Loop To Call Teacher List  -->
  <?php
   query_posts(array( 'post_type' => 'staff','staff-category' => 'Teachers' ));
   ?>
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <div class="post">
-  <!-- Display the Title as a link to the Post's permalink. -->
-  <h2><?php the_title(); ?></h2>
-   <div class="entry">
-     <?php the_content(); ?>
-   </div>
-  </div> <!-- closes the first div box -->
-	<?php
-        the_post_thumbnail('small');
-?>
-	    <p class="teacher_title"><?php echo CFS()->get('teacher_vision'); ?></p>
+
+<div class="switch">
+
+	    <div class="teacher-img"><?php the_post_thumbnail('small'); ?></div>
+			<div class="teacher_vision">
+			<p ><?php echo CFS()->get('teacher_vision'); ?></p>
+					</div>
+
+		</div>
       <p class="teacher_name"><?php echo CFS()->get('teacher_name'); ?></p>
     	<p class="teacher_title"><?php echo CFS()->get('teacher_title'); ?></p>
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>
   <?php endif; ?>
 	<?php wp_reset_query(); ?>
+</div>
   </section>
 
  <!-- **********///////////////// Preschools List Section ///////////////********** -->
@@ -120,7 +128,7 @@ get_header(); ?>
 	 <div class="enroll-img">
 	 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
  </div>
-	 <button class="green-btn" type="button" name="button">Official School Board Website</button>
+ <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</a>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
 
