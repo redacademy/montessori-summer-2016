@@ -12,15 +12,15 @@ get_header(); ?>
 
 
 			<!-- **********///////////////// about NW School Section ///////////////********** -->
-			<section>
+			<section class="about-school">
 				<?php
 			$fields = CFS()->get( 'content_group' );
 
 			foreach ( $fields as $field ) {
 
-				echo '<h1 class="">'.$field['content_group_title'].'</h1>';
-				echo '<p class="">'.$field['content_group_paragragh'].'</p>';
-			  echo '<div class="red-border-container">'.'<div class="left-red-border">'.$field['content_group_description'].'</div>'.'<div>';
+				echo '<h1 >'.$field['content_group_title'].'</h1>';
+				echo '<div class="about-content">'.$field['content_group_paragragh'].'</div>';
+			  echo '<div class="red-border-container">'.$field['content_group_description'].'</div>';
 			}
 			  ?>
 		</section>
