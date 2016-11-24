@@ -42,7 +42,9 @@ get_header(); ?>
 				<h3 class="nw-program">How is the money spent?</h3>
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
-				<button class="green-btn" type="button" name="button">Donate Now</button>
+				<div class="funding-btn">
+				<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</a>
+			  </div>
 	</section>
 
 	<!-- **********/////////Custom Post Loop To Call School List/////////********** -->

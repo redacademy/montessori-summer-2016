@@ -1376,6 +1376,26 @@ site-main .involved-title green-btn {
           justify-content: center;
       margin-bottom: 50px; }
 
+.funding {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .funding .funding-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 50px; }
+    .funding .funding-img img {
+      width: 85%; }
+  .funding .funding-btn {
+    width: 40%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+
 .enroll {
   width: 100%; }
   .enroll .enroll-block {
@@ -1412,11 +1432,13 @@ site-main .involved-title green-btn {
   background: #aff1d3;
   border-radius: 50%; }
 
-.teacher-grid .flip-container:hover .flipper,
-.teacher-grid .flip-container.hover .flipper {
+.teacher-grid .flip-container.hover .flipper,
+.teacher-grid .flip-container:hover .flipper {
   transform: rotateY(180deg); }
 
-.teacher-grid .flip-container, .teacher-grid .front, .teacher-grid .back {
+.teacher-grid .back,
+.teacher-grid .flip-container,
+.teacher-grid .front {
   width: 125px;
   height: 125px; }
 
@@ -1434,7 +1456,8 @@ site-main .involved-title green-btn {
   transition: 1.9s;
   transform-style: preserve-3d; }
 
-.teacher-grid .front, .teacher-grid .back {
+.teacher-grid .back,
+.teacher-grid .front {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
