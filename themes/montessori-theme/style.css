@@ -1312,6 +1312,7 @@ body {
 
 site-main .involved-wrapper {
   width: 480px;
+  padding: 0 auto;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1376,23 +1377,6 @@ site-main .a green-btn {
   margin: 20px;
   -ms-flex-direction: row;
       flex-direction: row; }
-
-.text-title h3 {
-  border-top: 5px solid #248e6a;
-  width: 150px;
-  color: #000; }
-
-.text-shadow {
-  border-top: 5px solid #248e6a;
-  width: 300px; }
-
-.site-main .involved-wrapper {
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.site-main .a h2 {
-  color: #000; }
 
 /*--------------------------------------------------------------
 # NW Program Page

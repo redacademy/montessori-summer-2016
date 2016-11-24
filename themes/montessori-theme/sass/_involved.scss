@@ -2,6 +2,7 @@
 site-main{
    .involved-wrapper{
      width: 480px;
+     padding: 0 auto;
      margin-left: auto;
      margin-right: auto;
 
@@ -24,17 +25,7 @@ green-btn{
        font-weight: bold;
        text-align: center;
        line-height: 30px;
-<<<<<<< HEAD
        display:block;
-
-      //  margin-left: 15px;
-      //  box-shadow: none;
-      //  font-weight: 300;
-      //  text-shadow: none;
-      //  display: block;
-=======
-
->>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
      }
 
     }
@@ -43,40 +34,18 @@ green-btn{
 
 
 
-<<<<<<< HEAD
- .text-shadow{
-=======
- .text-title{
-    h3 {
-   border-top: 5px solid #248e6a;
-
-   width: 150px;
-   color:#000;
- }
- }
-
 .text-shadow{
-  border-top: 5px solid #248e6a;
-  width:300px;
-
-}
->>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
-
-border-top: 3px solid #248e6a;
-
-<<<<<<< HEAD
+   border-top: 3px solid #248e6a;
    width: 100%;
 }
-
-
-  .get_involved img {
+.get_involved img {
   float: left;
   width: 227px;
   height: 244px;
-  }
+}
 
-
-
+//
+//
 // .p{
 //   display: flex;
 //   text-align: center;
@@ -92,8 +61,8 @@ border-top: 3px solid #248e6a;
 //
 // }
 .involved {
-  .green-btn
-      padding: 0;
+  .green-btn{
+
       padding-left:19px;
       padding-right:25px;
       padding-top: 20px;
@@ -170,18 +139,3 @@ border-top: 3px solid #248e6a;
   //
   //     }
   // }
-=======
-.site-main{
-    .involved-wrapper{
-      width: 480px;
-      margin-left: auto;
-      margin-right: auto;
-
-    }
-.a h2{
-  color: #000;
-
-
-}
- }
->>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
