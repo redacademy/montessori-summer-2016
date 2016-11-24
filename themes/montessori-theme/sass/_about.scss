@@ -1,7 +1,31 @@
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+// General Setting
+
+* {
+	box-sizing: border-box;
+}
 // @media screen and (max-width: 480px) {
+.about-wrapper {
+	max-width: $mobile_width;
+	margin: 0 auto;
+	padding-left: $basic_pading * 2;
+	padding-right: $basic_pading * 2;
+	align-items: center;
+
+	h1 {
+		font-family: $font_title;
+		font-size: $h1_size_mob;
+		font-weight: normal;
+		line-height: $basic_hline_height * 4.2;
+		text-align: left;
+		color: $black;
+	}
+}
+
+.archive {
+	margin-left: 0 auto;
 
 // General layout
 		.site-content {
@@ -14,8 +38,31 @@
 			padding-right: 20;
 		}
 
+	.target {
+		background-color: grey;
+		width: 100%;
+		height: 10%;
+		height: 160px;
+		padding: $basic_pading;
+		display: none;
+	}
+}
 
+.left-red-border {
+	width: 80%;
+	height: 90px;
+	border-left: 7px solid $color_bar_pink;
+	padding-left: 20px;
+	padding-right: 10px;
+}
 
+.red-border-container {
+	width: $mobile_width;
+	padding: 10px;
+	overflow: visible;
+	height: auto;
+	margin-bottom: 70px;
+}
 // 		.largImg {
 //         width: 100%;
 //         height: 50vw;
@@ -29,14 +76,7 @@
 //         width: 45%;
 //         flex: 2 0 50%;
 //     }
-//
-//
-//
-//
-//
-//
-//
-// .flip-container {
+//// .flip-container {
 // 	display: flex;
 //   flex-wrap: wrap;
 // 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
@@ -112,12 +152,3 @@
 //     </div>
 //   </div>
 // </div>
-
-.target {
-  background:#0099cc;
-  width:300px;
-  height:300px;
-  height:160px;
-  padding:5px;
-  display:none;
-}

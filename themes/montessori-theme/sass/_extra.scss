@@ -1,15 +1,56 @@
-.red-border-container{
-        width: $mobile_width;
-        padding: 10px;
-        overflow: visible;
-        height: auto;
-        margin-bottom: 70px;
-        .left-red-border{
-            width: 80%;
-            height: 90px;
-            border-left: 7px solid $color_bar_pink;
-            padding-left: 20px;
-            padding-right: 10px;
 
-        }
+// special CFS div
+
+.left-red-border{
+ width:60%;
+text-align: justify;
+ height: 150px;
+ border-left: 5px solid $color_bar_pink ;
+padding-left: 20px;
+padding-right: 10px;
+
 }
+
+.red-border-container{
+ width: 80px;
+ padding: 10px;
+ overflow:visible;
+  height: auto;
+}
+
+  //  <div class="cfsBorder">
+  //  <div class="cfscontainer"> here will be text area <div>
+  //  <div>
+
+// .cfsBorder{
+//   width:10px;
+//   height: 90px;
+//   border-left: 3px solid #D93B57;
+//
+// }
+//
+// .cfscontainer{
+//   width: 80px;
+//   padding: 10px;
+//   overflow:visible;
+//    height: auto;
+// }
+
+
+// button
+
+// <button class="btn ">here will be the text</button>
+
+
+// button {
+//   width: 320px;
+//   height: 66px;
+//   overflow: hidden;
+// }
+//
+// .btn {
+//   padding: 20px 50px;
+//   background-color: $color_btn_green;
+//   color: $white;
+//   font-size: 20px;
+//   border: 0;
