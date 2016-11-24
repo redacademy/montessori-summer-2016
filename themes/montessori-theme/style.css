@@ -1097,6 +1097,8 @@ body {
     display: block; }
 
 .main-philosophy {
+  margin: 0 auto;
+  max-width: 650px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1108,91 +1110,115 @@ body {
   position: relative; }
   @media (min-width: 60rem) {
     .main-philosophy {
-      width: 900px; } }
-
-.philosophy-grid {
-  /*background-color:#AFF1D3;*/
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative; }
-  @media (min-width: 48rem) {
-    .philosophy-grid {
-      width: 27%;
-      -webkit-transition: 1.9s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transition: 1.9s;
-      -moz-transform-style: preserve-3d;
-      -o-transition: 1.9s;
-      -o-transform-style: preserve-3d;
-      transition: 1.9s;
-      transform-style: preserve-3d; }
-      .philosophy-grid:hover {
-        transform: rotateY(180deg); } }
-  .philosophy-grid .philosophy-img {
-    z-index: -1;
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-    padding: 20px;
+      max-width: 950px;
+      height: 640px; } }
+  .main-philosophy .philosophy-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     position: relative;
-    width: 100%;
-    height: 200px; }
-    @media (min-width: 60rem) {
-      .philosophy-grid .philosophy-img {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; } }
-    @media (min-width: 60rem) {
-      .philosophy-grid .philosophy-img img {
-        width: 367px;
-        height: 367px; } }
-  .philosophy-grid h2 {
-    z-index: 1;
-    text-align: center;
-    display: inline-block;
-    width: 95%;
-    color: #248E6A;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    padding-bottom: 0px;
-    font-size: 1rem;
-    height: auto;
-    overflow: hidden;
-    padding: 20px;
-    bottom: -18px;
-    position: absolute; }
-    @media (min-width: 60rem) {
-      .philosophy-grid h2 {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; } }
-  .philosophy-grid p {
-    text-align: left;
-    display: inline-block;
-    font-family: "Noto Sans";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1000000;
+    width: 200px;
     height: 200px;
-    width: 400px;
-    border-radius: 10px;
-    border: 1px solid #248E6A;
-    text-align: left;
-    overflow: hidden;
-    padding: 5px;
-    visibility: hidden; }
+    background-color: #AFF1D3;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative; }
     @media (min-width: 60rem) {
-      .philosophy-grid p {
-        visibility: visible;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        background-color: #fff;
-        transform: rotateY(180deg); } }
+      .main-philosophy .philosophy-grid {
+        width: 300px;
+        height: 300px;
+        background-color: #AFF1D3;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 1.9s;
+        -o-transform-style: preserve-3d;
+        transition: 1s;
+        transform-style: preserve-3d; }
+        .main-philosophy .philosophy-grid:hover {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: rotateY(180deg); } }
+    .main-philosophy .philosophy-grid .philosophy-img {
+      z-index: 2;
+      height: auto;
+      text-align: center;
+      overflow: hidden;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      height: 200px; }
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid .philosophy-img {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; } }
+      .main-philosophy .philosophy-grid .philosophy-img img {
+        position: absolute;
+        top: 46px;
+        right: 63px;
+        width: 70px;
+        height: 70px; }
+        @media (min-width: 60rem) {
+          .main-philosophy .philosophy-grid .philosophy-img img {
+            width: 100px;
+            height: 100px; } }
+    .main-philosophy .philosophy-grid h2 {
+      z-index: 1;
+      text-align: center;
+      display: inline-block;
+      width: 95%;
+      color: #248E6A;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      padding-bottom: 0px;
+      font-size: 1rem;
+      height: auto;
+      overflow: hidden;
+      padding: 20px;
+      bottom: -18px;
+      line-height: 1.2;
+      position: absolute; }
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid h2 {
+          font-size: 1.4rem;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; } }
+    .main-philosophy .philosophy-grid p {
+      text-align: left;
+      display: inline-block;
+      font-family: "Noto Sans";
+      position: absolute;
+      top: -17px;
+      overflow-y: scroll;
+      font-size: 1.3rem;
+      left: 0px;
+      z-index: 1000000;
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      border: 1px solid #248E6A;
+      text-align: left;
+      overflow: hidden;
+      padding: 5px;
+      visibility: hidden; }
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid p {
+          overflow: scroll;
+          font-size: 1.2rem;
+          visibility: visible;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          background-color: #fff;
+          transform: rotateY(180deg); } }
 
 /*
 .main-materials{
@@ -1206,19 +1232,19 @@ body {
 
 /*Start Resources Section  */
 .green-btn {
-  background-color: #4fc8a1;
+  background-color: #4FC8A1;
   border-radius: 6px;
-  font-family: Noto Sans;
-  font-size: 18px;
-  font-weight: 700;
+  font-family: "Noto Sans";
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  line-height: 14px;
+  line-height: 30px;
   color: #fff;
-  margin-left: -4px;
-  padding: 16px 42px;
+  margin-left: 80px;
+  padding: 17px 70px;
   font-weight: 300;
   text-shadow: none;
-  letter-spacing: .8px; }
+  letter-spacing: 0.8px; }
   @media (min-width: 60rem) {
     .green-btn {
       display: block;
