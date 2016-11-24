@@ -1311,8 +1311,7 @@ width:200px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   -ms-flex-align: center;
-      align-items: center;
-  background-color: green; }
+      align-items: center; }
   .about-wrapper h1 {
     font-family: "Asap";
     font-size: 2.5rem;
@@ -1334,7 +1333,7 @@ width:200px;
 .left-red-border {
   width: 80%;
   height: 90px;
-  border-left: 5px solid #D93B57;
+  border-left: 7px solid #D93B57;
   padding-left: 20px;
   padding-right: 10px; }
 
@@ -1397,8 +1396,7 @@ site-main .involved-title green-btn {
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center;
-  background-color: green; }
+      align-items: center; }
   .nw-program-wrapper h1 {
     font-family: "Asap";
     font-size: 2.5rem;
@@ -1406,3 +1404,18 @@ site-main .involved-title green-btn {
     line-height: 2.625rem;
     text-align: left;
     color: #000000; }
+
+.nw-program {
+  margin: auto; }
+  .nw-program .red-border-container {
+    width: 30rem;
+    padding: 10px;
+    overflow: visible;
+    height: auto;
+    margin-bottom: 70px; }
+    .nw-program .red-border-container .left-red-border {
+      width: 80%;
+      height: 90px;
+      border-left: 7px solid #D93B57;
+      padding-left: 20px;
+      padding-right: 10px; }

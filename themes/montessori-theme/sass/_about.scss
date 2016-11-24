@@ -13,7 +13,6 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
 	align-items: center;
-	background-color: green;
 
 	h1 {
 		font-family: $font_title;
@@ -41,7 +40,7 @@
 .left-red-border {
 	width: 80%;
 	height: 90px;
-	border-left: 5px solid $color_bar_pink;
+	border-left: 7px solid $color_bar_pink;
 	padding-left: 20px;
 	padding-right: 10px;
 }

@@ -13,7 +13,6 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	background-color: green;
 	h1 {
 		font-family: $font_title;
 		font-size:$h1_size_mob;
@@ -23,4 +22,26 @@
 		color:$black;
 
 	}
+}
+
+
+.nw-program{
+	margin: auto;
+	.red-border-container{
+		width: $mobile_width;
+		padding: 10px;
+		overflow: visible;
+		height: auto;
+		margin-bottom: 70px;
+		.left-red-border{
+			width: 80%;
+			height: 90px;
+			border-left: 7px solid $color_bar_pink;
+			padding-left: 20px;
+			padding-right: 10px;
+
+		}
+
+	}
+
 }
