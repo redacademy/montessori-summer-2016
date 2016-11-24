@@ -223,6 +223,20 @@ h2 {
               position: absolute;
               right: 35px;
             }
+            p {
+                width: 470px;
+                font-family: "Noto Sans";
+                font-size: 20px;
+                line-height: 46px;
+                color: #000;
+                margin: 45px;
+                @include desktop{
+                  float: right;
+                  position: absolute;
+                  right: 35px;
+                }
+            }
+
         }
         p {
             width: 377px;
@@ -246,14 +260,6 @@ h2 {
                 font-weight: bold;
                 line-height: 42px;
                 color: #000;
-            }
-            .img-text {
-                width: 470px;
-                font-family: "Noto Sans";
-                font-size: 20px;
-                line-height: 46px;
-                color: #000;
-                margin: 45px;
             }
         }
         //p

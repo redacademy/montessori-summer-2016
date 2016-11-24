@@ -41,12 +41,14 @@ get_header(); ?>
     <!-- we need your support section -->
     <section class="support-wrapper container">
       <div class="information">
+        <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
         <div class="support-img">
           <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" />
+          <p>Your monthly contribution costs only two Lattes a month.</p>
         </div>
-        <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
+
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How $ is Spent</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How Money is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->

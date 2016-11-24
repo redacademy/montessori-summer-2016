@@ -990,6 +990,18 @@ div .secondary {
           float: right;
           position: absolute;
           right: 35px; } }
+      .support-wrapper .information img p {
+        width: 470px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 46px;
+        color: #000;
+        margin: 45px; }
+        @media (min-width: 73rem) {
+          .support-wrapper .information img p {
+            float: right;
+            position: absolute;
+            right: 35px; } }
     .support-wrapper .information p {
       width: 377px;
       font-family: "Noto Sans";
@@ -1010,13 +1022,6 @@ div .secondary {
         font-weight: bold;
         line-height: 42px;
         color: #000; }
-      .support-wrapper .information p .img-text {
-        width: 470px;
-        font-family: "Noto Sans";
-        font-size: 20px;
-        line-height: 46px;
-        color: #000;
-        margin: 45px; }
     .support-wrapper .information .red-btn {
       width: 185px;
       height: 47px;
