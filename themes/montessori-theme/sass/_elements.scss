@@ -17,6 +17,7 @@ body {
   font-family: $font_body;
 	box-sizing: border-box;
 	line-height: $font_body_size_mob;
+	margin: 0 auto;
 }
 
 blockquote, q {
@@ -64,9 +65,3 @@ table {
 	margin: 0;
 	width: 100%;
 }
-
-/*.container{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-}*/

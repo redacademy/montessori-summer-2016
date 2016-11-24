@@ -1,6 +1,7 @@
 
 // special CFS div
 
+<<<<<<< HEAD
 // .left-red-border{
 //  width:60%;
 // text-align: justify;
@@ -55,5 +56,12 @@
 //   color: $white;
 //   font-size: 20px;
 //   border: 0;
+=======
 
+>>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
+
+.mob-container{
+  overflow-x: hidden;
+  max-width:$mobile_width;
+  margin: 0 auto;
 }
