@@ -15,11 +15,11 @@
   <div class="main-history ">
 
 <div class="history-title" >
-         <h3><?php
+         <h1><?php
               $history = CFS()->get('history_title');
               if( !empty($history) ){
                 echo $history; };
-            ?></h3>
+            ?></h1>
             </div>
             <div class= "history-img" >
            <?php output_image('history_img'); ?>
@@ -41,7 +41,7 @@
 
  
  <div class="main-philosophy ">
- <div class=""><h2>Philosophy</h2></div>
+ <div class=""><h1>Philosophy</h1></div>
 
  <?php $fields = CFS()->get( 'philosophy' );?>
 <?php foreach ( $fields as $field )  { ?>
@@ -109,7 +109,6 @@ $src = wp_get_attachment_image_src($field['materials_img'], 'small');
 echo '<img src="'.$src[0].'" />'; ?>
 <p>  <?php echo $field['materials_content'];?></p>
 <?php } ?>
-<p>  <?php echo $field['materials_content'];?></p>
  </div>
 </div>
 </section>

@@ -7,6 +7,7 @@
 	box-sizing: border-box;
 }
 // @media screen and (max-width: 480px) {
+
 .about-wrapper {
 	max-width: $mobile_width;
 	margin: 0 auto;
@@ -26,13 +27,12 @@
 
 .archive {
 	margin-left: 0 auto;
-
-// General layout
-		.site-content {
-			margin: 0 auto;
-			padding-left: 20;
-			padding-right: 20;
-		}
+	// General layout
+	.site-content {
+		margin: 0 auto;
+		padding-left: 20;
+		padding-right: 20;
+	}
 
 	.target {
 		background-color: grey;
@@ -56,7 +56,6 @@
 .red-border-container {
 	width: $mobile_width;
 	padding: 10px;
-
 	height: auto;
 	margin-bottom: 70px;
 }
@@ -73,7 +72,6 @@
 //         width: 45%;
 //         flex: 2 0 50%;
 //     }
-
 // <div class="flip-container">
 //   <div class="flipper">
 //     <div class="front">

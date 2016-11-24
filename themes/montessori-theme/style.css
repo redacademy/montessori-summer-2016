@@ -289,8 +289,10 @@ body {
   background: #fff;
   font-family: "Noto Sans";
   box-sizing: border-box;
-  line-height: 2;
+  line-height: 2.5rem;
   margin: 0 auto; }
+  body p, body li {
+    line-height: 2.5rem; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -546,8 +548,8 @@ div .menu-primary-menu-container {
   width: 100%;
   background-color: #fff;
   font-family: "PT Sans";
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
@@ -596,7 +598,7 @@ div .secondary {
     display: inline-block;
     padding: 10px; }
     div .secondary li a {
-      font-size: 2;
+      font-size: 1.3rem;
       text-decoration: none;
       color: white; }
 
@@ -633,8 +635,8 @@ div .secondary {
 .main-menu-wrapper {
   width: 100%;
   height: 80px;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
@@ -646,7 +648,7 @@ div .secondary {
 
 .site-header {
   z-index: 999;
-  min-width: 30rem;
+  min-width: 48rem;
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
@@ -1100,6 +1102,9 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
+body p, li {
+  font-size: 1.3rem; }
+
 .main-history {
   margin: 0 auto; }
   .main-history .history-img {
@@ -1118,8 +1123,8 @@ body {
   margin: 100px auto;
   max-width: 90%;
   height: auto;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: distribute;
@@ -1148,6 +1153,7 @@ body {
     background-color: #AFF1D3;
     margin-top: 20px;
     display: flex;
+    display: -ms-flexbox;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -1202,7 +1208,7 @@ body {
       color: #248E6A;
       -ms-flex-direction: row;
           flex-direction: row;
-      padding-bottom: 0px;
+      padding-bottom: 0;
       font-size: 1rem;
       height: auto;
       overflow: hidden;
@@ -1223,7 +1229,7 @@ body {
       top: -17px;
       overflow-y: scroll;
       font-size: 1.3rem;
-      left: 0px;
+      left: 0;
       z-index: 1000000;
       height: 300px;
       width: 300px;
@@ -1259,7 +1265,7 @@ body {
   padding: 13px 50px;
   font-weight: 300;
   text-shadow: none;
-  letter-spacing: .8px; }
+  letter-spacing: 0.8px; }
   @media (min-width: 60rem) {
     .green-btn {
       display: block;
@@ -1274,7 +1280,7 @@ body {
   box-sizing: border-box; }
 
 .about-wrapper {
-  max-width: 30rem;
+  max-width: 48rem;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1311,7 +1317,7 @@ body {
   padding-right: 10px; }
 
 .red-border-container {
-  width: 30rem;
+  width: 48rem;
   padding: 10px;
   height: auto;
   margin-bottom: 70px; }
@@ -1391,7 +1397,7 @@ site-main .a green-btn {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
-  max-width: 30rem;
+  max-width: 48rem;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
@@ -1514,7 +1520,7 @@ site-main .a green-btn {
 
 .mob-container {
   overflow-x: hidden;
-  max-width: 30rem;
+  max-width: 48rem;
   margin: 0px auto;
   padding: 40px 0;
   border-bottom: solid 2px #4FC8A1; }

@@ -7,8 +7,9 @@ $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
 $desktop_width:60rem; //960px
 $Tablet_width:48rem; //768px
-$mobile_width:30rem; //480px for Mobile Container
+$mobile_width:48rem; //480px for Mobile Container
 //Layout//
+$mobile_line_height:2.5rem;
 $base_spacing_normal: 1rem;
 $base_spacing_large: 2.5rem;
 $base_spacing_large: 4rem;
@@ -45,7 +46,8 @@ $font_main: 'Noto Sans';
 $h1_size_mob: 2.5rem;
 $h2_size_mob: 2rem;
 $h3_size_mob: 1.5rem;
-$font_body_size_mob: 2;
+$font_body_size_mob: 1.3rem;
+
 
 /// desktop sizes ////
 $h1_size_desktop: 5rem;

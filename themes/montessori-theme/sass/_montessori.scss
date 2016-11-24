@@ -2,187 +2,187 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
-.main-history{
+body p,li{
+  font-size: $font_body_size_mob;
+}
+.main-history {
+    margin: 0 auto;
 
+    .history-img {
+        float: left;
+        width: 190px;
+        height: 219px;
 
- margin: 0 auto;
-.history-img{
-   float:left;
-   width:190px;
-   height:219px;
-   img{
-     width: 100%;height: 100%;
-     
-   }
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    p{
-padding-top: 4px;
 
+    p {
+        padding-top: 4px;
         text-align: left;
         display: block;
     }
 }
-
 ////************philosophy Section ************/////
-
-.main-philosophy{
-      margin: 100px auto;
-  max-width:90%;
-  height: auto;
+.main-philosophy {
+    margin: 100px auto;
+    max-width: 90%;
+    height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
+    position: relative;
+    @include desktop {
+        max-width: 950px;
+        height: 640px;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    .philosophy-grid {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
         position: relative;
-        @include desktop{ max-width: 950px; height: 640px;
+        width: 200px;
+        height: 200px;
+        background-color: #AFF1D3;
+        margin-top: 20px;
+        @include flex(center,space-around);
+        flex-wrap: wrap;
+        position: relative;
+        @include desktop {
+            width: 300px;
+            height: 300px;
+            background-color: #AFF1D3;
+            -webkit-transition: 1.9s;
+            -webkit-transform-style: preserve-3d;
+            -moz-transition: 1.9s;
+            -moz-transform-style: preserve-3d;
+            -o-transition: 1.9s;
+            -o-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+
+            &:hover {
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
         }
-          div{width:100%;
-}
-.philosophy-grid{
-  display: -ms-flexbox;
-display: flex;
--ms-flex-align: center;
-align-items: center;
--ms-flex-pack: distribute;
-justify-content: space-around;
--ms-flex-wrap: wrap;
-flex-wrap: wrap;
-position: relative;
-width: 200px;
-height:200px;
-background-color: #AFF1D3;
-margin-top: 20px;
 
-     @include flex(center,space-around);
-     flex-wrap: wrap;
-         position: relative;
-           @include desktop{
-               width: 300px;
-               height: 300px;
-               background-color: #AFF1D3;
-             -webkit-transition: 1.9s;
-         -webkit-transform-style: preserve-3d;
-         -moz-transition: 1.9s;
-         -moz-transform-style: preserve-3d;
-         -o-transition: 1.9s;
-         -o-transform-style: preserve-3d;
-         transition: 1s;
-         transform-style: preserve-3d;
-         &:hover {
-           -webkit-backface-visibility: hidden;
-          -moz-backface-visibility: hidden;
-          -o-backface-visibility: hidden;
-          backface-visibility: hidden;
-             -webkit-transform: rotateY(180deg);
-             -moz-transform: rotateY(180deg);
-             -o-transform: rotateY(180deg);
-             transform: rotateY(180deg);
-         }
-       }
-    .philosophy-img {
-      z-index: 2;
-      height: auto;
-      text-align: center;
-      overflow: hidden;
-      padding: 20px;
-        @include desktop{
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
-      backface-visibility: hidden;}
-        position: relative;
-        width:100%;
-        height:200px;
-        img{position: absolute;;
-          top: 46px;
-           right: 63px;
-           width:70px;
-        height:70px;
-          @include desktop{
-            left: 78px;
-      top: 10px;
-      width: 137px;
-      height: 120px;
-      }
-    }}
-h2{ z-index: 1;
-     text-align: center;
-     display: inline-block;
-     width:95%;
-     color:#248E6A;
-     flex-direction: row;
-     padding-bottom: 0px;
-     font-size: 1rem;
-     height: auto;
-     overflow: hidden;
-     padding: 20px;
-     bottom: -18px;
-     line-height: 1.2;
-  @include desktop{
-    font-size: 1.4rem;
-      -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
-     -o-backface-visibility: hidden;
-     backface-visibility: hidden;}
-       position: absolute;
+        .philosophy-img {
+            z-index: 2;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+            padding: 20px;
+            @include desktop {
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            position: relative;
+            width: 100%;
+            height: 200px;
 
- }
-    p{
-        text-align: left;
-       display: inline-block;
-         font-family: $font_body;
-        position: absolute;
-        top:-17px;
-        overflow-y: scroll;
-        font-size: 1.3rem;
-        left: 0px;
-        z-index: 1000000;
-       height: 300px;
-        width:300px;
-        border-radius: 10px;
-        border: 1px solid #248E6A;
-        text-align: left;
-        overflow: hidden;
-        padding: 5px;
-        visibility: hidden;
-      @include desktop{
-        overflow: scroll;
-        font-size: 1.2rem;
-          visibility: visible;
-         -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -o-backface-visibility: hidden;
-        backface-visibility: hidden;
-        background-color: #fff;
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        -o-transform: rotateY(180deg);
-        transform: rotateY(180deg);
+            img {
+                position: absolute;
+                top: 46px;
+                right: 63px;
+                width: 70px;
+                height: 70px;
+                @include desktop {
+                    left: 78px;
+                    top: 10px;
+                    width: 137px;
+                    height: 120px;
+                }
+            }
+        }
 
+        h2 {
+            z-index: 1;
+            text-align: center;
+            display: inline-block;
+            width: 95%;
+            color: #248E6A;
+            flex-direction: row;
+            padding-bottom: 0;
+            font-size: 1rem;
+            height: auto;
+            overflow: hidden;
+            padding: 20px;
+            bottom: -18px;
+            line-height: 1.2;
+            @include desktop {
+                font-size: 1.4rem;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            position: absolute;
+        }
+
+        p {
+            text-align: left;
+            display: inline-block;
+            font-family: $font_body;
+            position: absolute;
+            top: -17px;
+            overflow-y: scroll;
+            font-size: 1.3rem;
+            left: 0;
+            z-index: 1000000;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid #248E6A;
+            text-align: left;
+            overflow: hidden;
+            padding: 5px;
+            visibility: hidden;
+            @include desktop {
+                overflow: scroll;
+                font-size: 1.2rem;
+                visibility: visible;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+                background-color: #fff;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+        }
     }
 }
-}}
 //////************Start philosophy Section ************//////
-
-
 //////************End philosophy Section ************//////
 ////////*******Start Materials Section******/////////
-
-
-
 ////////*******End Materials Section******/////////
-
-
-
 /////*Start Benefits Section**/////
-
-.benefits li{
-  list-style-type: circle;
+.benefits li {
+    list-style-type: circle;
 }
-
-
-
-
 /*Start Resources Section  */
-
 .green-btn {
     background-color: #4fc8a1;
     border-radius: 6px;
@@ -195,12 +195,11 @@ h2{ z-index: 1;
     padding: 13px 50px;
     font-weight: 300;
     text-shadow: none;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
     @include desktop {
-
-    display: block;
-    width: 331px;
-    height: 65px;
-    font-size: 16px;
-}
+        display: block;
+        width: 331px;
+        height: 65px;
+        font-size: 16px;
+    }
 }
