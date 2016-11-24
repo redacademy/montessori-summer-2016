@@ -11,8 +11,8 @@
         <main id="main" class="site-main " role="main">
 
 <!-- Our History Section  -->
-          <section id="history" class="history-section mobile-container">
-  <div class="main-history">
+          <section id="history" class="history-section mob-container">
+  <div class="main-history ">
 
 <div class="history-title" >
          <h3><?php
@@ -37,7 +37,7 @@
 
 <!-- Philosophy Section  -->
 
-<section id="philosophy" class="philosophys-section  mobile-container">
+<section id="philosophy" class="philosophys-section ">
 
  <h1>Philosophy</h1>
 
@@ -61,10 +61,10 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 <!-- Start our Benefits -->
 
 
-<section id="benefits-of-montessori" class="benefits-section mobile-container">
+<section id="benefits-of-montessori" class="benefits-section mob-container">
 
                    <h1>Benefits of Montessori</h1>
-      <div class="main-benefits red-border-container">
+      <div class="main-benefits mob-container">
 <?php $fields = CFS()->get( 'benefits' );?>
 <?php foreach ( $fields as $field )  { ?>
   <div class= "benefits-img" >
@@ -84,7 +84,7 @@ echo '<img src="'.$src[0].'" />';} ?>
 <ul>
 <?php $fields = CFS()->get( 'benefits_details' );?>
 <?php foreach ( $fields as $field )  { ?>
-<div class="benefits mobile-container">
+<div class="benefits">
 <li>  <?php echo $field['benefits_parts'];?></li>
 <?php
 }
@@ -99,10 +99,10 @@ echo '<img src="'.$src[0].'" />';} ?>
 
 <!-- Start Materials Section  -->
 
-<section id="materials" class="materials-section mobile-container">
+<section id="materials" class="materials-section mob-container">
 
-  <div class="main-materials red-border-container">
-                  <ul class="main-materials">
+  <div class="main-materials">
+                  <ul class="main-material ">
 <?php $fields = CFS()->get( 'materials' );?>
 <?php foreach ( $fields as $field )  { ?>
 <div class="materials" >
@@ -119,8 +119,8 @@ echo '<img src="'.$src[0].'" />'; ?>
 </div>
 </section>
 <!-- Resources Section  -->
-<section id= "resources" class="mobile-container">
-  <div class="main-resources red-border-container">
+<section id= "resources" class="container mob-container">
+  <div class="main-resources ">
 <div class="title-resources">
               <h1 id="resources" >Resources</h1>
 

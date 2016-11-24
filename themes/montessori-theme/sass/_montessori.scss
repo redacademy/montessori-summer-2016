@@ -91,8 +91,10 @@ margin-top: 20px;
            width:70px;
         height:70px;
           @include desktop{
-            width:100px;
-        height:100px;
+            left: 78px;
+      top: 10px;
+      width: 137px;
+      height: 120px;
       }
     }}
 h2{ z-index: 1;
@@ -162,13 +164,7 @@ h2{ z-index: 1;
 
 ////////*******End Materials Section******/////////
 
-/*
-.main-materials{
-     padding: 0px;
-     @include flex(flex-start,space-between);
-    flex-wrap: wrap;
-    }
-*/
+
 
 /////*Start Benefits Section**/////
 
@@ -182,19 +178,18 @@ h2{ z-index: 1;
 /*Start Resources Section  */
 
 .green-btn {
-    background-color: #4FC8A1;
+    background-color: #4fc8a1;
     border-radius: 6px;
-    font-family: "Noto Sans";
-    font-size: 24px;
-    font-weight: bold;
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
     line-height: 30px;
     color: #fff;
-    margin-left: 80px;
-    padding: 17px 70px;
+    padding: 13px 50px;
     font-weight: 300;
     text-shadow: none;
-    letter-spacing: 0.8px;
+    letter-spacing: .8px;
     @include desktop {
 
     display: block;

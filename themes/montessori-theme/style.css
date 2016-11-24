@@ -289,7 +289,8 @@ body {
   background: #fff;
   font-family: "Noto Sans";
   box-sizing: border-box;
-  line-height: 2; }
+  line-height: 2;
+  margin: 0 auto; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -326,11 +327,6 @@ table {
   margin: 0;
   width: 100%; }
 
-/*.container{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-}*/
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -437,12 +433,6 @@ textarea {
   display: inline;
   float: right;
   margin-left: 1rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -683,7 +673,6 @@ div .secondary {
   font-family: "PT Sans";
   overflow: hidden;
   font-size: 0.8rem;
-  max-width: 30rem;
   min-width: 380px;
   height: 150px;
   background-color: #125A50;
@@ -1169,8 +1158,10 @@ body {
         height: 70px; }
         @media (min-width: 60rem) {
           .main-philosophy .philosophy-grid .philosophy-img img {
-            width: 100px;
-            height: 100px; } }
+            left: 78px;
+            top: 10px;
+            width: 137px;
+            height: 120px; } }
     .main-philosophy .philosophy-grid h2 {
       z-index: 1;
       text-align: center;
@@ -1220,31 +1211,23 @@ body {
           background-color: #fff;
           transform: rotateY(180deg); } }
 
-/*
-.main-materials{
-     padding: 0px;
-     @include flex(flex-start,space-between);
-    flex-wrap: wrap;
-    }
-*/
 .benefits li {
   list-style-type: circle; }
 
 /*Start Resources Section  */
 .green-btn {
-  background-color: #4FC8A1;
+  background-color: #4fc8a1;
   border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: bold;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 700;
   text-align: center;
   line-height: 30px;
   color: #fff;
-  margin-left: 80px;
-  padding: 17px 70px;
+  padding: 13px 50px;
   font-weight: 300;
   text-shadow: none;
-  letter-spacing: 0.8px; }
+  letter-spacing: .8px; }
   @media (min-width: 60rem) {
     .green-btn {
       display: block;
@@ -1276,7 +1259,6 @@ body {
 .archive {
   margin-left: 0 auto; }
   .archive .site-content {
-    max-width: 1240px;
     margin: 0 auto;
     padding-left: 20;
     padding-right: 20; }
@@ -1377,3 +1359,8 @@ site-main .involved-title green-btn {
       border-left: 7px solid #D93B57;
       padding-left: 20px;
       padding-right: 10px; }
+
+.mob-container {
+  overflow-x: hidden;
+  max-width: 30rem;
+  margin: 0 auto; }
