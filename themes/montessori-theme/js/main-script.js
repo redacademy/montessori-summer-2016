@@ -51,13 +51,13 @@ $('.toggle').click(function() {
 
 // ----------------------------------------------------------------
 
-$('.switch').hover(function() {
-        $(this).find('.teacher-img').hide();
-        $(this).find('.teacher_vision').show();
-    }, function() {
-        $(this).find('teacher_vision').hide();
-        $(this).find('.teacher-img').show();
-});
+// $('.switch').hover(function() {
+//         $(this).find('.teacher-img').hide();
+//         $(this).find('.teacher_vision').show();
+//     }, function() {
+//         $(this).find('teacher_vision').hide();
+//         $(this).find('.teacher-img').show();
+// });
 
 
 

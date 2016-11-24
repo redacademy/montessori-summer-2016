@@ -1355,51 +1355,87 @@ site-main .involved-title green-btn {
     text-align: left;
     color: #000000; }
 
-.green-btn {
-  width: 60%;
-  height: 47px;
-  margin-left: 5%;
-  padding: 17px 20px;
-  background-color: #4FC8A1;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  text-shadow: none;
-  letter-spacing: 0.8px; }
+.enroll {
+  margin: 2px; }
+  .enroll .enroll-block {
+    width: 60%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 10px auto;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .enroll .enroll-block .green-btn {
+      height: 47px;
+      padding: 17px 20px;
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
 
-.teacher-grid {
+.teacher-grid .flip-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative; }
-  .teacher-grid .switch {
-    box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-    border-radius: 50%;
-    width: 125px;
-    height: 125px; }
-    .teacher-grid .switch .teacher-img {
-      background-size: cover;
-      position: relative;
-      border-radius: 50%;
-      width: 125px;
-      height: 125px;
-      background: #aff1d3; }
-    .teacher-grid .switch p {
-      border-radius: 50%;
-      top: 60px;
-      position: absolute;
-      width: 125px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 125px;
-      text-align: center;
-      display: none; }
+  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+  background: #aff1d3;
+  border-radius: 50%; }
+
+.teacher-grid .flip-container:hover .flipper,
+.teacher-grid .flip-container.hover .flipper {
+  transform: rotateY(180deg); }
+
+.teacher-grid .flip-container, .teacher-grid .front, .teacher-grid .back {
+  width: 125px;
+  height: 125px; }
+
+.teacher-grid .flipper {
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  position: relative;
+  -webkit-transition: 1.9s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1.9s;
+  -moz-transform-style: preserve-3d;
+  transition: 1.9s;
+  transform-style: preserve-3d; }
+
+.teacher-grid .front, .teacher-grid .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.teacher-grid .front {
+  position: absolute;
+  background-size: cover;
+  border-radius: 50%;
+  -ms-flex: 2;
+      flex: 2; }
+
+.teacher-grid .back {
+  transform: rotateY(180deg); }
+
+.teacher-grid .back {
+  border-radius: 50%;
+  position: absolute;
+  width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 125px;
+  text-align: center;
+  right: 3px; }
+
+.teacher-grid .teacher_det {
+  text-align: center; }
+  .teacher-grid .teacher_det p {
+    font-size: 50%; }

@@ -50,11 +50,13 @@ get_header(); ?>
 	<!-- **********/////////Custom Post Loop To Call School List/////////********** -->
 
 	<section class="school-list">
+
+		<h1>Schools & Teachers</h1>
 				<?php query_posts(array( 'post_type' => 'school', ));?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				 <div class="post">
-				 <!-- Display the Title as a link to the Post's permalink. -->
-				 <h1><?php the_title(); ?></h1>
+				 <!-- Display the Title  -->
+				 <h2><?php the_title(); ?></h2>
 				  <div class="entry">
 				    <?php the_content(); ?>
 				  </div>
@@ -71,22 +73,25 @@ get_header(); ?>
 
  <section class="teacher-list">
 	 <div class="teacher-grid">
+
+		 <h1>Teachers<h1>
  <!-- Custom Post Loop To Call Teacher List  -->
  <?php
   query_posts(array( 'post_type' => 'staff','staff-category' => 'Teachers' ));
   ?>
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="switch">
-
-	    <div class="teacher-img"><?php the_post_thumbnail('small'); ?></div>
-			<div class="teacher_vision">
-			<p ><?php echo CFS()->get('teacher_vision'); ?></p>
+<div class="flip-container">
+<div class="flipper">
+	      <div class="front"><?php the_post_thumbnail('small'); ?></div>
+			 <div class="back">
+			<div class="teacher_det"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
 					</div>
 
 		</div>
-      <p class="teacher_name"><?php echo CFS()->get('teacher_name'); ?></p>
-    	<p class="teacher_title"><?php echo CFS()->get('teacher_title'); ?></p>
+    <div class="teacher_det"><p><?php echo CFS()->get('teacher_name'); ?></p>
+    	<p><?php echo CFS()->get('teacher_title'); ?></p>
+			</div>
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>
   <?php endif; ?>
@@ -116,26 +121,34 @@ get_header(); ?>
  <!-- **********/////////////////Enrollment Section///////////////********** -->
 
 <section class="enroll">
+	<h1>How to Enroll Your Child</h1>
 	<div> <?php echo CFS()->get('enroll'); ?> </div>
+
+	<h3 >When can my child start? </h3>
 	<p> <?php echo CFS()->get('time-start'); ?> </p>
-  <h3 class="">How do I apply?</h3>
-  <?php
-		$fields = CFS()->get( 'guids' );
+
+  <h3 >How do I apply?</h3>
+
+  <?php $fields = CFS()->get( 'guids' );
      foreach ( $fields as $field ) {
  echo '<p class="">'.$field['instructions'].'</p>';
 }
    ?>
-	 <div class="enroll-img">
+	 <div class="enroll-block">
+		 <div class="enroll-img">
 	 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
- </div>
- <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</a>
+  </div>
+	<div class="enroll-btn">
+    <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</a>
+	</div>
+  </div>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
 
 </div>
 <!-- #about-page -->
+	<?php get_footer(); ?>
 </main>
 <!-- #main -->
 </div>
 <!-- #primary -->
-	<?php get_footer(); ?>

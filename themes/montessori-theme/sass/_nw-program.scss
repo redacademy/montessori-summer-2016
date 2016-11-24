@@ -25,53 +25,167 @@
 	}
 }
 //Enrollment Section
-.green-btn {
+.enroll{
+	margin: 2px;
+
+
+.enroll-block{
 	width: 60%;
-	height: 47px;
-	margin-left: 5%;
-	padding: 17px 20px;
-	background-color: #4FC8A1;
-	border-radius: 6px;
-	font-family: "Noto Sans";
-	font-size: 24px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 30px;
-	color: #fff;
-	text-shadow: none;
-	letter-spacing: 0.8px;
-}
-.teacher-grid{
-	@include flex(center,space-around);
-	flex-wrap: wrap;
-	position: relative;
-
-.switch {
-	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
-	border-radius: 50%;
-	width: 125px;
-	height: 125px;
-
-
-	.teacher-img {
-		background-size: cover;
-		position: relative;
-		border-radius: 50%;
-		width: 125px;
-		height: 125px;
-		background: #aff1d3;
-	}
-
-	p {
-		border-radius: 50%;
-		top: 60px;
-		position: absolute;
-		width: 125px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		height: 125px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 10px auto;
+	flex-direction: column;
+	.green-btn {
+		height: 47px;
+		padding: 17px 20px;
+		background-color: #4FC8A1;
+		border-radius: 6px;
+		font-family: "Noto Sans";
+		font-size: 15px;
+		font-weight: bold;
 		text-align: center;
-		display: none;
+		line-height: 30px;
+		color: #fff;
+		text-shadow: none;
+		letter-spacing: 0.8px;
 	}
+
 }
 }
+//teacher list Section
+.teacher-grid{
+
+	.flip-container {
+	display: flex;
+ 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+   background: #aff1d3;
+   border-radius:50%;
+
+ }
+
+ 	.flip-container:hover .flipper,
+   .flip-container.hover .flipper {
+ 		-webkit-transform: rotateY(180deg);
+ 		-moz-transform: rotateY(180deg);
+ 		transform: rotateY(180deg);
+ 	}
+
+ .flip-container, .front, .back {
+ 	width: 125px;
+ 	height: 125px;
+ }
+
+ .flipper {
+ 	flex: 1 0 auto;
+ 	display: flex;
+
+ 	 width: 50%;
+   position: relative;
+ 	-webkit-transition: 1.9s;
+ 	-webkit-transform-style: preserve-3d;
+
+ 	-moz-transition: 1.9s;
+ 	-moz-transform-style: preserve-3d;
+
+ 	transition: 1.9s;
+ 	transform-style: preserve-3d;
+
+ }
+
+ .front, .back {
+ 	-webkit-backface-visibility: hidden;
+ 	-moz-backface-visibility: hidden;
+ 	backface-visibility: hidden;
+
+ }
+
+ .front {
+ 	position: absolute;
+   background-size:cover;
+   border-radius:50%;
+	 flex: 2;
+
+ }
+
+
+ .back {
+ 	-webkit-transform: rotateY(180deg);
+ 	-moz-transform: rotateY(180deg);
+ 	transform: rotateY(180deg);
+
+ }
+
+ .back {
+ 		border-radius: 50%;
+ 		position: absolute;
+ 		width: 125px;
+ 		overflow: hidden;
+ 		text-overflow: ellipsis;
+ 		height: 125px;
+ 		text-align: center;
+   right:3px;
+ }
+.teacher_det{
+ 		 text-align: center;
+
+ 	 	p{
+ 	 		font-size: 50%;
+ 	 	}
+ }
+
+ }
+
+//Enrollment Section
+
+
+
+// .teacher-grid{
+// 	// @include flex(center,space-around);
+// 	// flex-wrap: wrap;
+// display: flex;
+//
+// 	// position: relative;
+//
+// .switch {
+// 	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+// 	border-radius: 50%;
+// 	width: 125px;
+// 	height: 125px;
+//
+//
+//
+//
+// 	.teacher-img {
+// 		background-size: cover;
+// 		position: relative;
+// 		border-radius: 50%;
+// 		width: 125px;
+// 		height: 125px;
+// 		background: #aff1d3;
+// 		flex: 2 0 50%;
+//
+// 	}
+//
+// 	p {
+		// border-radius: 50%;
+		// top: 60px;
+		// position: absolute;
+		// width: 125px;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// height: 125px;
+		// text-align: center;
+// 		display: none;
+// 	}
+//
+//
+//    }
+// 	 .teacher_name{
+// 		 text-align: center;
+//
+// 	 	p{
+// 	 		font-size: 50%;
+// 	 	}
+// }
+// }
