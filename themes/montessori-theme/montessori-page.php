@@ -15,11 +15,11 @@
   <div class="main-history ">
 
 <div class="history-title" >
-         <h3><?php
+         <h1><?php
               $history = CFS()->get('history_title');
               if( !empty($history) ){
                 echo $history; };
-            ?></h3>
+            ?></h1>
             </div>
             <div class= "history-img" >
            <?php output_image('history_img'); ?>
@@ -39,9 +39,10 @@
 
 <section id="philosophy" class="philosophys-section ">
 
- <h1>Philosophy</h1>
 
  <div class="main-philosophy ">
+ <div><h1>Philosophy</h1></div>
+
  <?php $fields = CFS()->get( 'philosophy' );?>
 <?php foreach ( $fields as $field )  { ?>
 <div class="philosophy-grid ">
@@ -63,8 +64,9 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 
 <section id="benefits-of-montessori" class="benefits-section mob-container">
 
-                   <h1>Benefits of Montessori</h1>
+
       <div class="main-benefits mob-container">
+        <h1>Benefits of Montessori</h1>
 <?php $fields = CFS()->get( 'benefits' );?>
 <?php foreach ( $fields as $field )  { ?>
   <div class= "benefits-img" >
@@ -102,7 +104,7 @@ echo '<img src="'.$src[0].'" />';} ?>
 <section id="materials" class="materials-section mob-container">
 
   <div class="main-materials">
-                  <ul class="main-material ">
+
 <?php $fields = CFS()->get( 'materials' );?>
 <?php foreach ( $fields as $field )  { ?>
 <div class="materials" >
@@ -115,7 +117,6 @@ echo '<img src="'.$src[0].'" />'; ?>
 <?php } ?>
 <p>  <?php echo $field['materials_content'];?></p>
  </div>
-    </ul>
 </div>
 </section>
 <!-- Resources Section  -->

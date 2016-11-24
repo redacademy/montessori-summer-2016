@@ -1,65 +1,43 @@
+/// this is for block qoutes to make the red bar left for
+.red-border-q{
+  width:87%;
+top: 10px;
+margin: 0 30px ;
+  padding-left: 25px;
+  display:inline-block;
+    position: relative;
+      font-size: 1.1rem;
+      font-weight: bold;
+    p{
+margin: 0;
+    }
+}
+.red-border-q ::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 5PX;
+    left: 0PX;
+    height: 100%;
+ border-left:solid 8px $border_left_red;
+}
 
-// // special CFS div
-// // .left-red-border{
-// //  width:60%;
-// // text-align: justify;
-// //  height: 150px;
-// //  border-left: 5px solid $color_bar_pink ;
-// //   overflow:visible;
-// // padding-left: 20px;
-// // padding-right: 10px;
-// //
-// // }
-// //
-// // .red-border-container{
-// //  width: 80px;
-// //  padding: 10px;
-// //
-// //   height: auto;
-// // }
-//
-//   //  <div class="cfsBorder">
-//   //  <div class="cfscontainer"> here will be text area <div>
-//   //  <div>
-//
-// // .cfsBorder{
-// //   width:10px;
-// //   height: 90px;
-// //   border-left: 3px solid #D93B57;
-// //
-// // }
-// //
-// // .cfscontainer{
-// //   width: 80px;
-// //   padding: 10px;
-// //   overflow:visible;
-// //    height: auto;
-// // }
-//
-//
-// // button
-//
-// // <button class="btn ">here will be the text</button>
-//
-//
-// // button {
-// //   width: 320px;
-// //   height: 66px;
-// //   overflow: hidden;
-// // }
-// //
-// // .btn {
-// //   padding: 20px 50px;
-// //   background-color: $color_btn_green;
-// //   color: $white;
-// //   font-size: 20px;
-// //   border: 0;
-// =======
-//
-//
+//   display: inline-block;
+// width: 90%;
+// height: 20%;
+// margin-left: 30px;
+// padding-left:15px;
+// border-left: 7px solid $border_left_red;
+// overflow:visible;
+// }
+.red-border-q {
+
+}
 
 .mob-container{
   overflow-x: hidden;
   max-width:$mobile_width;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 40px 0;
+  border-bottom: solid 2px $color_btn_green;
 }
