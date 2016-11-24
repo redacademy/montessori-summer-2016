@@ -117,7 +117,7 @@ h2 {
             color: #000000;
             margin: 40px;
             @include desktop{
-              padding: 40px;
+              padding: 30px 40px;
               margin: 15px 40px;
             }
         }
@@ -144,7 +144,7 @@ h2 {
           }
       }
     }
-    .nw-program {
+    .nw-program-page {
         .green-btn {
             background-color: #4FC8A1;
             border-radius: 6px;
@@ -204,10 +204,25 @@ h2 {
             line-height: 42px;
             color: #000;
             margin: 35px;
+            @include desktop{
+              width: 852px;
+              height: 55px;
+              font-family: "Asap";
+              font-size: 48px;
+              line-height: 55px;
+              margin: 0;
+              box-sizing: border-box;
+              width: 1283px;
+            }
         }
         img {
             width: 287px;
             height: 470px;
+            @include desktop{
+              float: right;
+              position: absolute;
+              right: 35px;
+            }
         }
         p {
             width: 377px;
@@ -216,6 +231,13 @@ h2 {
             line-height: 46px;
             color: #000;
             margin: 40px;
+            @include desktop{
+              width: 852px;
+              // height: 184px;
+              font-family: "Noto Sans";
+              font-size: 22px;
+              line-height: 46px;
+            }
             .info {
                 width: 470px;
                 // height: 294px;

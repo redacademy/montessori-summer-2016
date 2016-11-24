@@ -897,7 +897,7 @@ div .secondary {
     margin: 40px; }
     @media (min-width: 73rem) {
       .links-wrapper p {
-        padding: 40px;
+        padding: 30px 40px;
         margin: 15px 40px; } }
   .links-wrapper .benifits .green-btn {
     background-color: #4FC8A1;
@@ -919,7 +919,7 @@ div .secondary {
         width: 319px;
         height: 66px;
         font-size: 26px; } }
-  .links-wrapper .nw-program .green-btn {
+  .links-wrapper .nw-program-page .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
     font-family: "Noto Sans";
@@ -934,7 +934,7 @@ div .secondary {
     text-shadow: none;
     letter-spacing: 0.8px; }
     @media (min-width: 73rem) {
-      .links-wrapper .nw-program .green-btn {
+      .links-wrapper .nw-program-page .green-btn {
         display: block;
         width: 319px;
         height: 66px;
@@ -972,9 +972,24 @@ div .secondary {
       line-height: 42px;
       color: #000;
       margin: 35px; }
+      @media (min-width: 73rem) {
+        .support-wrapper .information h2 {
+          width: 852px;
+          height: 55px;
+          font-family: "Asap";
+          font-size: 48px;
+          line-height: 55px;
+          margin: 0;
+          box-sizing: border-box;
+          width: 1283px; } }
     .support-wrapper .information img {
       width: 287px;
       height: 470px; }
+      @media (min-width: 73rem) {
+        .support-wrapper .information img {
+          float: right;
+          position: absolute;
+          right: 35px; } }
     .support-wrapper .information p {
       width: 377px;
       font-family: "Noto Sans";
@@ -982,6 +997,12 @@ div .secondary {
       line-height: 46px;
       color: #000;
       margin: 40px; }
+      @media (min-width: 73rem) {
+        .support-wrapper .information p {
+          width: 852px;
+          font-family: "Noto Sans";
+          font-size: 22px;
+          line-height: 46px; } }
       .support-wrapper .information p .info {
         width: 470px;
         font-family: "Noto Sans";
