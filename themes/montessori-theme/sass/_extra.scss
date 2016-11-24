@@ -1,4 +1,4 @@
-/// this is for block qoutes to make the red bar left for
+/// this framework is for the block quotes to make the red bar left
 .red-border-q{
   width:87%;
 top: 10px;
@@ -21,19 +21,7 @@ margin: 0;
     height: 100%;
  border-left:solid 8px $border_left_red;
 }
-
-//   display: inline-block;
-// width: 90%;
-// height: 20%;
-// margin-left: 30px;
-// padding-left:15px;
-// border-left: 7px solid $border_left_red;
-// overflow:visible;
-// }
-.red-border-q {
-
-}
-
+////**mobile container we will change it when we finish the mobile first **///
 .mob-container{
   overflow-x: hidden;
   max-width:$mobile_width;
