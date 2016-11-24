@@ -3,15 +3,20 @@
 --------------------------------------------------------------*/
 /////*Start History Section**/////
 .main-history{
+
+
  margin: 0 auto;
 
     img{
    float:left;
-        width:227px;
-        height:244px;
+        width:190px;
+        height:190px;
     }
     p{
+padding-top: 4px;
+
         text-align: left;
+        display: block;
     }
 }
 
@@ -115,30 +120,15 @@ h2{ z-index: 1;
     }
 }
 }
-//////************philosophy Section ************//////
+//////************Start philosophy Section ************//////
 
+
+//////************End philosophy Section ************//////
 ////////*******Start Materials Section******/////////
 
 
 
 ////////*******End Materials Section******/////////
-/*.main-history,
-.main-materials,
-.philosophy-section{
-padding-bottom: 60px;
-   border-bottom: 2px solid #2EB688;
-}*/
-
-
-
-/////*Start History Section**/////
-
-/*.history-thumbnail{
-    img{
-
-    }
-}*/
-
 
 /*
 .main-materials{
@@ -146,20 +136,38 @@ padding-bottom: 60px;
      @include flex(flex-start,space-between);
     flex-wrap: wrap;
     }
- .philosophy-thumbnails {
+*/
 
-     overflow: hidden;
-    height: 640px;
-    img{
+/////*Start Benefits Section**/////
 
-    width: 200px;
-    height: 200px;
-
-}}
-
-
+.benefits li{
+  list-style-type: circle;
+}
 
 
 
 
 /*Start Resources Section  */
+
+.green-btn {
+  background-color: #4fc8a1;
+border-radius: 6px;
+font-family: Noto Sans;
+font-size: 18px;
+font-weight: 700;
+text-align: center;
+line-height: 14px;
+color: #fff;
+margin-left: -4px;
+padding: 16px 42px;
+font-weight: 300;
+text-shadow: none;
+letter-spacing: .8px;
+    @include desktop {
+
+    display: block;
+    width: 331px;
+    height: 65px;
+    font-size: 16px;
+}
+}
