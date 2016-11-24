@@ -1372,7 +1372,6 @@ site-main .involved-title green-btn {
     text-align: left;
     color: #000000; }
 
-<<<<<<< HEAD
 .enroll {
   margin: 2px; }
   .enroll .enroll-block {
@@ -1457,24 +1456,8 @@ site-main .involved-title green-btn {
   text-align: center; }
   .teacher-grid .teacher_det p {
     font-size: 50%; }
-=======
-.nw-program {
-  margin: auto; }
-  .nw-program .red-border-container {
-    width: 30rem;
-    padding: 10px;
-    overflow: visible;
-    height: auto;
-    margin-bottom: 70px; }
-    .nw-program .red-border-container .left-red-border {
-      width: 80%;
-      height: 90px;
-      border-left: 7px solid #D93B57;
-      padding-left: 20px;
-      padding-right: 10px; }
 
 .mob-container {
   overflow-x: hidden;
   max-width: 30rem;
   margin: 0 auto; }
->>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
