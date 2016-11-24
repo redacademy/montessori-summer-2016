@@ -14,14 +14,22 @@
           <section id="history" class="history-section ">
   <div class="main-history">
 
-<?php $fields = CFS()->get( 'history' );?>
-<?php foreach ( $fields as $field )  { ?>
+
 
   <div class= "history-img" >
-<?php
-$src = wp_get_attachment_image_src($field['history_img'], 'small');
+    <br>
+    <br>
+    <br>
+    <br>
 
-echo '<img src="'.$src[0].'" />';} ?>
+
+
+ <?php
+ output_image('history_img');
+ ?>
+
+
+
 </div>
 <div class="history-title" >
 
@@ -65,6 +73,9 @@ echo '<img src="'.$src[0].'" />';} ?>
 <div class= "philosophy-img" >
 
 <?php
+
+
+
 $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 <a href="#"> <?echo '<img src="'.$src[0].'" />';
 ?></a>
@@ -98,7 +109,6 @@ echo '<img src="'.$src[0].'" />';} ?>
               if( !empty($benefit) ){
                 echo $benefit; };
             ?>
-
  </div>
 </div>
 

@@ -27,6 +27,17 @@
 .archive {
 	margin-left: 0 auto;
 
+// General layout
+		.site-content {
+
+
+			max-width: 1240px;
+
+			margin: 0 auto;
+			padding-left: 20;
+			padding-right: 20;
+		}
+
 	.target {
 		background-color: grey;
 		width: 100%;

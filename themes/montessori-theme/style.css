@@ -522,21 +522,6 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.cfsBorder {
-  width: 60%;
-  text-align: justify;
-  height: 150px;
-  border-left: 5px solid #D93B57;
-  padding-left: 20px;
-  padding-right: 10px; }
-
-.cfscontainer {
-  width: 80px;
-  padding: 10px;
-  overflow: visible;
-  height: auto; }
-
 .main-navigation-container {
   display: -ms-flexbox;
   display: flex; }
@@ -595,7 +580,7 @@ div .menu-primary-menu-container {
   -ms-flex-pack: justify;
       justify-content: space-between;
   height: 5rem; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .main-navigation-container {
       display: inline-block;
       height: 8rem;
@@ -604,7 +589,7 @@ div .menu-primary-menu-container {
 .main-navigation {
   width: 100%; }
 
-@media (min-width: 73rem) {
+@media (min-width: 60rem) {
   .menu-primary-menu-container {
     display: inline-block; }
     .menu-primary-menu-container ul li {
@@ -629,7 +614,7 @@ div .secondary {
   padding-right: 2rem;
   margin-top: 20px;
   background-color: #248E6A; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     div .secondary {
       white-space: nowrap;
       overflow: hidden;
@@ -658,7 +643,7 @@ div .secondary {
   margin: 10px 0 20px 30px;
   width: 14rem;
   height: 7rem; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .montessori-logo {
       margin: 0;
       padding: 30px 0 30px 10px;
@@ -684,7 +669,7 @@ div .secondary {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .main-menu-wrapper {
       white-space: nowrap;
       overflow: hidden; } }
@@ -695,12 +680,10 @@ div .secondary {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
-  border-bottom: solid 2px #000000;
   top: 0; }
 
 .site-content {
   padding-top: 87px;
-  border-bottom: solid 2px #000000;
   top: 0; }
 
 /*--------------------------------------------------------------
@@ -722,7 +705,7 @@ div .secondary {
   height: 150px;
   background-color: #125A50;
   color: #fff; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .site-footer {
       width: 100%; } }
 
@@ -799,13 +782,13 @@ div .secondary {
   width: 480px;
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .site-main .home-wrapper {
       width: 541.64px;
       height: 555px;
       background-color: rgba(0, 0, 0, 0.74);
       position: relative; } }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .site-main .home-wrapper .home-img {
       background-color: rgba(0, 0, 0, 0.74);
       width: 1264px;
@@ -824,7 +807,7 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper h2 {
         font-size: 46px;
         padding-top: 70px;
@@ -836,7 +819,7 @@ div .secondary {
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper p {
         width: 447px;
         height: 230px;
@@ -854,7 +837,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper .red-btn {
         padding: 10px;
         font-size: 24px;
@@ -871,7 +854,7 @@ div .secondary {
   font-size: 36px;
   line-height: 42px;
   color: #000000; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .link-title h2 {
       margin: 15px;
       padding: 21px 24px;
@@ -880,7 +863,7 @@ div .secondary {
 
 .links-wrapper {
   width: 480px; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .links-wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
@@ -895,7 +878,7 @@ div .secondary {
     line-height: 40px;
     color: #000000;
     margin: 40px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .links-wrapper p {
         padding: 40px;
         margin: 15px 40px; } }
@@ -913,7 +896,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .links-wrapper .benifits .green-btn {
         display: block;
         width: 319px;
@@ -933,7 +916,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .links-wrapper .nw-program .green-btn {
         display: block;
         width: 319px;
@@ -950,7 +933,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .links-wrapper .involved .red-btn {
         display: block;
         width: 319px;
@@ -1138,10 +1121,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
+  @media (min-width: 60rem) {
+    .main-philosophy {
+      width: 900px; } }
 
 .philosophy-grid {
   /*background-color:#AFF1D3;*/
-  width: 48%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1151,8 +1136,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
-  @media (min-width: 73rem) {
+  @media (min-width: 48rem) {
     .philosophy-grid {
+      width: 27%;
       -webkit-transition: 1.9s;
       -webkit-transform-style: preserve-3d;
       -moz-transition: 1.9s;
@@ -1172,10 +1158,14 @@ body {
     position: relative;
     width: 100%;
     height: 200px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .philosophy-grid .philosophy-img {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; } }
+    @media (min-width: 60rem) {
+      .philosophy-grid .philosophy-img img {
+        width: 367px;
+        height: 367px; } }
   .philosophy-grid h2 {
     z-index: 1;
     text-align: center;
@@ -1189,8 +1179,9 @@ body {
     height: auto;
     overflow: hidden;
     padding: 20px;
+    bottom: -18px;
     position: absolute; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .philosophy-grid h2 {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; } }
@@ -1210,9 +1201,8 @@ body {
     overflow: hidden;
     padding: 5px;
     visibility: hidden; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .philosophy-grid p {
-        right: 500px;
         visibility: visible;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -1247,57 +1237,11 @@ padding-bottom: 60px;
 
 }}
 
-.philosophy-titles { width: 200px;
-a{
-
-    text-align: left;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    position:absolute;
-    color:green;
-}
-}
-.philosophy-titles a:hover{
-
-}
-
-.philosophy-content p{
-    width: 200px;
-    */
-/*position: absolute;*/
-/*
-ul .each-philosophy{
-
-width:200px;
 
 
-    & .philosophy-thumbnail{
 
 
-        height: 200px;
-    }
-    div h2{
-        font-family: $font_title;
-        display: inline-block;
-        font-size: 1rem;
-        width: 200px;
-        height: 33px;
-        position: absolute;
-        z-index: 3;
-      color:green;
 
-      text-align: center;
-    }
-     img{
-       margin-top: 13px;
-        z-index: 1;
-       position: relative;
-    }
-
-}
-.main-philosophy{
- }*/
 /*Start Resources Section  */
 /*--------------------------------------------------------------
 # About Page
@@ -1322,6 +1266,11 @@ width:200px;
 
 .archive {
   margin-left: 0 auto; }
+  .archive .site-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20;
+    padding-right: 20; }
   .archive .target {
     background-color: grey;
     width: 100%;
