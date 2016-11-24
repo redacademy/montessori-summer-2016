@@ -8,7 +8,8 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
+<section class="involved-wrapper ">
+<div class="main-what-new mob-container">
  <?php
 $args = array(
 
@@ -22,13 +23,13 @@ if ( $query-> have_posts() ) :  ?>
 
     <?php while ($query-> have_posts() )  : $query->the_post(); ?>
 
-<section class="involved-wrapper container">
+
 
   <div class="involved-title">
 
      
 
-
+<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 
 <?php the_content();?>
@@ -37,10 +38,12 @@ if ( $query-> have_posts() ) :  ?>
 <!-- <?php //if (has_post_thumbnail( )): ?> -->
 
 </div>
-    <div class="green-btn">
-        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    </div>
+
+
+
     <php the_content();?>
+
+
     <?php if (has_post_thumbnail()): ?>
     <?php the_post_thumbnail('Normal'); ?>
 

@@ -1,10 +1,5 @@
 //front page
 
-.site-content{
-  @include desktop{
-  margin: 58px 80px;
-  }
-}
 // media screen for mobile (max-width: 480px)
 .site-main {
     .home-wrapper {
@@ -81,36 +76,39 @@
               margin: 90px 100px;
               text-align: center;
             }
- 
+
           }
         // }//welcome-wrapper
     }//home
 }
-//this is for the quick links
+//this is for the quick links section
+
+.link-title{
+h2 {
+    padding: 0;
+    width: 100%;
+    height: 42px;
+    font-family: "Asap";
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    @include desktop{
+      margin: 15px;
+      padding: 21px 24px;
+      font-size: 48px;
+      font-family: 'Asap';
+    }
+  }
+}
+
 .links-wrapper {
     width: 480px;
     @include desktop{
       flex-direction: row;
       display: flex;
-      margin: 0;
-      padding: 175px 0;
+      margin: 20px -60px;
+      padding-top: 70px;
     }
-    h2 {
-        padding: 0;
-        width: 480px;
-        height: 42px;
-        font-family: "Asap";
-        font-size: 36px;
-        line-height: 42px;
-        color: #000000;
-        // @include desktop{
-        //   margin: auto;
-        //   display: flex;
-        //   width: 852px;
-        // }
-
-    }
-    article {
         p {
             width: 377px;
             font-family: "Noto Sans";
@@ -118,8 +116,11 @@
             line-height: 40px;
             color: #000000;
             margin: 40px;
+            @include desktop{
+              padding: 30px 40px;
+              margin: 15px 40px;
+            }
         }
-    }
     .benifits{
       .green-btn {
           background-color: #4FC8A1;
@@ -135,9 +136,15 @@
           font-weight: 300;
           text-shadow: none;
           letter-spacing: 0.8px;
+          @include desktop {
+            display: block;
+            width: 319px;
+            height: 66px;
+            font-size: 26px;
+          }
       }
     }
-    .nw-program {
+    .nw-program-page {
         .green-btn {
             background-color: #4FC8A1;
             border-radius: 6px;
@@ -152,6 +159,12 @@
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
+            @include desktop {
+              display: block;
+              width: 319px;
+              height: 66px;
+              font-size: 26px;
+            }
         }
     }
     .involved {
@@ -166,6 +179,13 @@
             font-weight: 300;
             text-shadow: none;
             letter-spacing: 0.8px;
+            @include desktop {
+              display: block;
+              width: 319px;
+              height: 66px;
+              font-size: 26px;
+              padding: 6px 85px;
+            }
         }
     }
 }
@@ -184,10 +204,39 @@
             line-height: 42px;
             color: #000;
             margin: 35px;
+            @include desktop{
+              width: 852px;
+              height: 55px;
+              font-family: "Asap";
+              font-size: 48px;
+              line-height: 55px;
+              margin: 0;
+              box-sizing: border-box;
+              width: 1283px;
+            }
         }
         img {
             width: 287px;
             height: 470px;
+            @include desktop{
+              float: right;
+              position: absolute;
+              right: 35px;
+            }
+            p {
+                width: 470px;
+                font-family: "Noto Sans";
+                font-size: 20px;
+                line-height: 46px;
+                color: #000;
+                margin: 45px;
+                @include desktop{
+                  float: right;
+                  position: absolute;
+                  right: 35px;
+                }
+            }
+
         }
         p {
             width: 377px;
@@ -196,6 +245,13 @@
             line-height: 46px;
             color: #000;
             margin: 40px;
+            @include desktop{
+              width: 852px;
+              // height: 184px;
+              font-family: "Noto Sans";
+              font-size: 22px;
+              line-height: 46px;
+            }
             .info {
                 width: 470px;
                 // height: 294px;
@@ -204,14 +260,6 @@
                 font-weight: bold;
                 line-height: 42px;
                 color: #000;
-            }
-            .img-text {
-                width: 470px;
-                font-family: "Noto Sans";
-                font-size: 20px;
-                line-height: 46px;
-                color: #000;
-                margin: 45px;
             }
         }
         //p

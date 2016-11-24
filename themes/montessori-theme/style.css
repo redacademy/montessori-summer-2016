@@ -289,7 +289,8 @@ body {
   background: #fff;
   font-family: "Noto Sans";
   box-sizing: border-box;
-  line-height: 2; }
+  line-height: 2;
+  margin: 0 auto; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -326,11 +327,6 @@ table {
   margin: 0;
   width: 100%; }
 
-/*.container{
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
-}*/
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -438,12 +434,6 @@ textarea {
   float: right;
   margin-left: 1rem; }
 
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -522,48 +512,16 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.cfsBorder {
-  width: 60%;
-  text-align: justify;
-  height: 150px;
-  border-left: 5px solid #D93B57;
-  padding-left: 20px;
-  padding-right: 10px; }
-
-.cfscontainer {
-  width: 80px;
-  padding: 10px;
-  overflow: visible;
-  height: auto; }
-
 .main-navigation-container {
   display: -ms-flexbox;
   display: flex; }
 
 .main-navigation {
-  width: 100%; }
+  padding-top: 40px;
+  margin-right: 38px; }
 
 div .menu-primary-menu-container {
   width: 100%; }
-
-.montessori-logo {
-  width: 15rem;
-  height: 5rem; }
-  .montessori-logo img {
-    height: 100%;
-    width: 100%; }
-
-@media (min-width: 48rem) {
-  .menu-primary-menu-container {
-    display: none; } }
-
-.montessori-logo {
-  width: 10rem;
-  height: 2rem; }
-  .montessori-logo img {
-    height: 100%;
-    width: 100%; }
 
 .main-navigation-container {
   display: -ms-flexbox;
@@ -595,16 +553,13 @@ div .menu-primary-menu-container {
   -ms-flex-pack: justify;
       justify-content: space-between;
   height: 5rem; }
-  @media (min-width: 73rem) {
+  @media (min-width: 48rem) {
     .main-navigation-container {
       display: inline-block;
       height: 8rem;
       padding: 0 15px; } }
 
-.main-navigation {
-  width: 100%; }
-
-@media (min-width: 73rem) {
+@media (min-width: 60rem) {
   .menu-primary-menu-container {
     display: inline-block; }
     .menu-primary-menu-container ul li {
@@ -614,7 +569,7 @@ div .menu-primary-menu-container {
         text-decoration: none;
         color: #000000;
         color: #231F20;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         border-top: 6px solid transparent;
         list-style: none;
         padding: 15px 0;
@@ -629,7 +584,7 @@ div .secondary {
   padding-right: 2rem;
   margin-top: 20px;
   background-color: #248E6A; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     div .secondary {
       white-space: nowrap;
       overflow: hidden;
@@ -658,12 +613,12 @@ div .secondary {
   margin: 10px 0 20px 30px;
   width: 14rem;
   height: 7rem; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .montessori-logo {
       margin: 0;
       padding: 30px 0 30px 10px;
       width: 20rem;
-      min-width: 12rem;
+      min-width: 16rem;
       height: 8rem; } }
   .montessori-logo img {
     position: relative;
@@ -684,7 +639,7 @@ div .secondary {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .main-menu-wrapper {
       white-space: nowrap;
       overflow: hidden; } }
@@ -695,13 +650,14 @@ div .secondary {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
-  border-bottom: solid 2px #000000;
   top: 0; }
 
 .site-content {
-  padding-top: 87px;
-  border-bottom: solid 2px #000000;
+  padding-top: 110px;
   top: 0; }
+
+.home .site-header {
+  position: absolute; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -717,12 +673,11 @@ div .secondary {
   font-family: "PT Sans";
   overflow: hidden;
   font-size: 0.8rem;
-  max-width: 30rem;
   min-width: 380px;
   height: 150px;
   background-color: #125A50;
   color: #fff; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .site-footer {
       width: 100%; } }
 
@@ -795,21 +750,17 @@ div .secondary {
   cursor: pointer;
   color: #248E6A; }
 
-@media (min-width: 73rem) {
-  .site-content {
-    margin: 58px 80px; } }
-
 .site-main .home-wrapper {
   width: 480px;
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .site-main .home-wrapper {
       width: 541.64px;
       height: 555px;
       background-color: rgba(0, 0, 0, 0.74);
       position: relative; } }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .site-main .home-wrapper .home-img {
       background-color: rgba(0, 0, 0, 0.74);
       width: 1264px;
@@ -828,7 +779,7 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper h2 {
         font-size: 46px;
         padding-top: 70px;
@@ -840,7 +791,7 @@ div .secondary {
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper p {
         width: 447px;
         height: 230px;
@@ -858,7 +809,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 73rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper .red-btn {
         padding: 10px;
         font-size: 24px;
@@ -867,31 +818,42 @@ div .secondary {
         margin: 90px 100px;
         text-align: center; } }
 
+.link-title h2 {
+  padding: 0;
+  width: 100%;
+  height: 42px;
+  font-family: "Asap";
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000; }
+  @media (min-width: 60rem) {
+    .link-title h2 {
+      margin: 15px;
+      padding: 21px 24px;
+      font-size: 48px;
+      font-family: 'Asap'; } }
+
 .links-wrapper {
   width: 480px; }
-  @media (min-width: 73rem) {
+  @media (min-width: 60rem) {
     .links-wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
       display: -ms-flexbox;
       display: flex;
-      margin: 0;
-      padding: 175px 0; } }
-  .links-wrapper h2 {
-    padding: 0;
-    width: 480px;
-    height: 42px;
-    font-family: "Asap";
-    font-size: 36px;
-    line-height: 42px;
-    color: #000000; }
-  .links-wrapper article p {
+      margin: 20px -60px;
+      padding-top: 70px; } }
+  .links-wrapper p {
     width: 377px;
     font-family: "Noto Sans";
     font-size: 20px;
     line-height: 40px;
     color: #000000;
     margin: 40px; }
+    @media (min-width: 60rem) {
+      .links-wrapper p {
+        padding: 30px 40px;
+        margin: 15px 40px; } }
   .links-wrapper .benifits .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
@@ -906,7 +868,13 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-  .links-wrapper .nw-program .green-btn {
+    @media (min-width: 60rem) {
+      .links-wrapper .benifits .green-btn {
+        display: block;
+        width: 319px;
+        height: 66px;
+        font-size: 26px; } }
+  .links-wrapper .nw-program-page .green-btn {
     background-color: #4FC8A1;
     border-radius: 6px;
     font-family: "Noto Sans";
@@ -920,6 +888,12 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
+    @media (min-width: 60rem) {
+      .links-wrapper .nw-program-page .green-btn {
+        display: block;
+        width: 319px;
+        height: 66px;
+        font-size: 26px; } }
   .links-wrapper .involved .red-btn {
     padding: 17px 70px;
     background-color: #F76072;
@@ -931,6 +905,13 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
+    @media (min-width: 60rem) {
+      .links-wrapper .involved .red-btn {
+        display: block;
+        width: 319px;
+        height: 66px;
+        font-size: 26px;
+        padding: 6px 85px; } }
 
 .support-wrapper {
   width: 480px;
@@ -946,9 +927,36 @@ div .secondary {
       line-height: 42px;
       color: #000;
       margin: 35px; }
+      @media (min-width: 60rem) {
+        .support-wrapper .information h2 {
+          width: 852px;
+          height: 55px;
+          font-family: "Asap";
+          font-size: 48px;
+          line-height: 55px;
+          margin: 0;
+          box-sizing: border-box;
+          width: 1283px; } }
     .support-wrapper .information img {
       width: 287px;
       height: 470px; }
+      @media (min-width: 60rem) {
+        .support-wrapper .information img {
+          float: right;
+          position: absolute;
+          right: 35px; } }
+      .support-wrapper .information img p {
+        width: 470px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 46px;
+        color: #000;
+        margin: 45px; }
+        @media (min-width: 60rem) {
+          .support-wrapper .information img p {
+            float: right;
+            position: absolute;
+            right: 35px; } }
     .support-wrapper .information p {
       width: 377px;
       font-family: "Noto Sans";
@@ -956,6 +964,12 @@ div .secondary {
       line-height: 46px;
       color: #000;
       margin: 40px; }
+      @media (min-width: 60rem) {
+        .support-wrapper .information p {
+          width: 852px;
+          font-family: "Noto Sans";
+          font-size: 22px;
+          line-height: 46px; } }
       .support-wrapper .information p .info {
         width: 470px;
         font-family: "Noto Sans";
@@ -963,13 +977,6 @@ div .secondary {
         font-weight: bold;
         line-height: 42px;
         color: #000; }
-      .support-wrapper .information p .img-text {
-        width: 470px;
-        font-family: "Noto Sans";
-        font-size: 20px;
-        line-height: 46px;
-        color: #000;
-        margin: 45px; }
     .support-wrapper .information .red-btn {
       width: 185px;
       height: 47px;
@@ -1097,12 +1104,16 @@ body {
   margin: 0 auto; }
   .main-history img {
     float: left;
-    width: 227px;
-    height: 244px; }
+    width: 190px;
+    height: 190px; }
   .main-history p {
-    text-align: left; }
+    padding-top: 4px;
+    text-align: left;
+    display: block; }
 
 .main-philosophy {
+  margin: 0 auto;
+  max-width: 650px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1112,183 +1123,192 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
-
-.philosophy-grid {
-  /*background-color:#AFF1D3;*/
-  width: 48%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative; }
-  @media (min-width: 73rem) {
-    .philosophy-grid {
-      -webkit-transition: 1.9s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transition: 1.9s;
-      -moz-transform-style: preserve-3d;
-      -o-transition: 1.9s;
-      -o-transform-style: preserve-3d;
-      transition: 1.9s;
-      transform-style: preserve-3d; }
-      .philosophy-grid:hover {
-        transform: rotateY(180deg); } }
-  .philosophy-grid .philosophy-img {
-    z-index: -1;
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    height: 200px; }
-    @media (min-width: 73rem) {
-      .philosophy-grid .philosophy-img {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; } }
-  .philosophy-grid h2 {
-    z-index: 1;
-    text-align: center;
-    display: inline-block;
-    width: 95%;
-    color: #248E6A;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    padding-bottom: 0px;
-    font-size: 1rem;
-    height: auto;
-    overflow: hidden;
-    padding: 20px;
-    position: absolute; }
-    @media (min-width: 73rem) {
-      .philosophy-grid h2 {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; } }
-  .philosophy-grid p {
-    text-align: left;
-    display: inline-block;
-    font-family: "Noto Sans";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1000000;
-    height: 200px;
-    width: 400px;
-    border-radius: 10px;
-    border: 1px solid #248E6A;
-    text-align: left;
-    overflow: hidden;
-    padding: 5px;
-    visibility: hidden; }
-    @media (min-width: 73rem) {
-      .philosophy-grid p {
-        right: 500px;
-        visibility: visible;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        background-color: #fff;
-        transform: rotateY(180deg); } }
-
-/*.main-history,
-.main-materials,
-.philosophy-section{
-padding-bottom: 60px;
-   border-bottom: 2px solid #2EB688;
-}*/
-/*.history-thumbnail{
-    img{
-
-    }
-}*/
-/*
-.main-materials{
-     padding: 0px;
-     @include flex(flex-start,space-between);
+  @media (min-width: 60rem) {
+    .main-philosophy {
+      max-width: 950px;
+      height: 640px; } }
+  .main-philosophy .philosophy-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    }
- .philosophy-thumbnails {
-
-     overflow: hidden;
-    height: 640px;
-    img{
-
+    position: relative;
     width: 200px;
     height: 200px;
-
-}}
-
-.philosophy-titles { width: 200px;
-a{
-
-    text-align: left;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    position:absolute;
-    color:green;
-}
-}
-.philosophy-titles a:hover{
-
-}
-
-.philosophy-content p{
-    width: 200px;
-    */
-/*position: absolute;*/
-/*
-ul .each-philosophy{
-
-width:200px;
-
-
-    & .philosophy-thumbnail{
-
-
-        height: 200px;
-    }
-    div h2{
-        font-family: $font_title;
-        display: inline-block;
-        font-size: 1rem;
-        width: 200px;
-        height: 33px;
-        position: absolute;
-        z-index: 3;
-      color:green;
-
+    background-color: #AFF1D3;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative; }
+    @media (min-width: 60rem) {
+      .main-philosophy .philosophy-grid {
+        width: 300px;
+        height: 300px;
+        background-color: #AFF1D3;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 1.9s;
+        -o-transform-style: preserve-3d;
+        transition: 1s;
+        transform-style: preserve-3d; }
+        .main-philosophy .philosophy-grid:hover {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: rotateY(180deg); } }
+    .main-philosophy .philosophy-grid .philosophy-img {
+      z-index: 2;
+      height: auto;
       text-align: center;
-    }
-     img{
-       margin-top: 13px;
-        z-index: 1;
-       position: relative;
-    }
+      overflow: hidden;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      height: 200px; }
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid .philosophy-img {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; } }
+      .main-philosophy .philosophy-grid .philosophy-img img {
+        position: absolute;
+        top: 46px;
+        right: 63px;
+        width: 70px;
+        height: 70px; }
+        @media (min-width: 60rem) {
+          .main-philosophy .philosophy-grid .philosophy-img img {
+            left: 78px;
+            top: 10px;
+            width: 137px;
+            height: 120px; } }
+    .main-philosophy .philosophy-grid h2 {
+      z-index: 1;
+      text-align: center;
+      display: inline-block;
+      width: 95%;
+      color: #248E6A;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      padding-bottom: 0px;
+      font-size: 1rem;
+      height: auto;
+      overflow: hidden;
+      padding: 20px;
+      bottom: -18px;
+      line-height: 1.2;
+      position: absolute; }
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid h2 {
+          font-size: 1.4rem;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; } }
+    .main-philosophy .philosophy-grid p {
+      text-align: left;
+      display: inline-block;
+      font-family: "Noto Sans";
+      position: absolute;
+      top: -17px;
+      overflow-y: scroll;
+      font-size: 1.3rem;
+      left: 0px;
+      z-index: 1000000;
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      border: 1px solid #248E6A;
+      text-align: left;
+      overflow: hidden;
+      padding: 5px;
+      visibility: hidden; }
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid p {
+          overflow: scroll;
+          font-size: 1.2rem;
+          visibility: visible;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          background-color: #fff;
+          transform: rotateY(180deg); } }
 
-}
-.main-philosophy{
- }*/
+.benefits li {
+  list-style-type: circle; }
+
 /*Start Resources Section  */
+.green-btn {
+  background-color: #4fc8a1;
+  border-radius: 6px;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  padding: 13px 50px;
+  font-weight: 300;
+  text-shadow: none;
+  letter-spacing: .8px; }
+  @media (min-width: 60rem) {
+    .green-btn {
+      display: block;
+      width: 331px;
+      height: 65px;
+      font-size: 16px; } }
+
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
-.site-content {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding-left: 20;
-  padding-right: 20; }
+* {
+  box-sizing: border-box; }
 
-.target {
-  background: #0099cc;
-  width: 300px;
-  height: 300px;
-  height: 160px;
-  padding: 5px;
-  display: none; }
+.about-wrapper {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  -ms-flex-align: center;
+      align-items: center; }
+  .about-wrapper h1 {
+    font-family: "Asap";
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 2.625rem;
+    text-align: left;
+    color: #000000; }
+
+.archive {
+  margin-left: 0 auto; }
+  .archive .site-content {
+    margin: 0 auto;
+    padding-left: 20;
+    padding-right: 20; }
+  .archive .target {
+    background-color: grey;
+    width: 100%;
+    height: 10%;
+    height: 160px;
+    padding: 0.625rem;
+    display: none; }
+
+.left-red-border {
+  width: 80%;
+  height: 90px;
+  border-left: 7px solid #D93B57;
+  padding-left: 20px;
+  padding-right: 10px; }
+
+.red-border-container {
+  width: 30rem;
+  padding: 10px;
+  overflow: visible;
+  height: auto;
+  margin-bottom: 70px; }
 
 site-main .involved-wrapper {
   width: 480px;
@@ -1356,3 +1376,61 @@ site-main .a green-btn {
   margin: 20px;
   -ms-flex-direction: row;
       flex-direction: row; }
+
+.text-title h3 {
+  border-top: 5px solid #248e6a;
+  width: 150px;
+  color: #000; }
+
+.text-shadow {
+  border-top: 5px solid #248e6a;
+  width: 300px; }
+
+.site-main .involved-wrapper {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.site-main .a h2 {
+  color: #000; }
+
+/*--------------------------------------------------------------
+# NW Program Page
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+.nw-program-wrapper {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 0.9375rem;
+  -ms-flex-align: center;
+      align-items: center; }
+  .nw-program-wrapper h1 {
+    font-family: "Asap";
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 2.625rem;
+    text-align: left;
+    color: #000000; }
+
+.nw-program {
+  margin: auto; }
+  .nw-program .red-border-container {
+    width: 30rem;
+    padding: 10px;
+    overflow: visible;
+    height: auto;
+    margin-bottom: 70px; }
+    .nw-program .red-border-container .left-red-border {
+      width: 80%;
+      height: 90px;
+      border-left: 7px solid #D93B57;
+      padding-left: 20px;
+      padding-right: 10px; }
+
+.mob-container {
+  overflow-x: hidden;
+  max-width: 30rem;
+  margin: 0 auto; }

@@ -24,6 +24,7 @@ green-btn{
        font-weight: bold;
        text-align: center;
        line-height: 30px;
+<<<<<<< HEAD
        display:block;
 
       //  margin-left: 15px;
@@ -31,6 +32,9 @@ green-btn{
       //  font-weight: 300;
       //  text-shadow: none;
       //  display: block;
+=======
+
+>>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
      }
 
     }
@@ -39,10 +43,28 @@ green-btn{
 
 
 
+<<<<<<< HEAD
  .text-shadow{
+=======
+ .text-title{
+    h3 {
+   border-top: 5px solid #248e6a;
+
+   width: 150px;
+   color:#000;
+ }
+ }
+
+.text-shadow{
+  border-top: 5px solid #248e6a;
+  width:300px;
+
+}
+>>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8
 
 border-top: 3px solid #248e6a;
 
+<<<<<<< HEAD
    width: 100%;
 }
 
@@ -148,3 +170,18 @@ border-top: 3px solid #248e6a;
   //
   //     }
   // }
+=======
+.site-main{
+    .involved-wrapper{
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+.a h2{
+  color: #000;
+
+
+}
+ }
+>>>>>>> 094d6a1895d75377884da028d9891534c1e3f6b8

@@ -1,41 +1,10 @@
 
 // special CFS div
 
-  //  <div class="cfsBorder">
-  //  <div class="cfscontainer"> here will be text area <div>
-  //  <div>
-
-// .cfsBorder{
-//   width:10px;
-//   height: 90px;
-//   border-left: 3px solid #D93B57;
-//
-// }
-//
-// .cfscontainer{
-//   width: 80px;
-//   padding: 10px;
-//   overflow:visible;
-//    height: auto;
-// }
 
 
-// button
-
-// <button class="btn ">here will be the text</button>
-
-
-// button {
-//   width: 320px;
-//   height: 66px;
-//   overflow: hidden;
-// }
-//
-// .btn {
-//   padding: 20px 50px;
-//   background-color: $color_btn_green;
-//   color: $white;
-//   font-size: 20px;
-//   border: 0;
-  border-radius:10px;
+.mob-container{
+  overflow-x: hidden;
+  max-width:$mobile_width;
+  margin: 0 auto;
 }
