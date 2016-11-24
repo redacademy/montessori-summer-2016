@@ -17,7 +17,11 @@ padding-right: 10px;
  overflow:visible;
   height: auto;
 }
-
+.mobile-container {
+  width:480px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
   //  <div class="cfsBorder">
   //  <div class="cfscontainer"> here will be text area <div>
   //  <div>

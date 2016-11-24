@@ -8,39 +8,27 @@
 
 ?>
 
-        <main id="main" class="site-main mobile-container  " role="main">
+        <main id="main" class="site-main " role="main">
 
 <!-- Our History Section  -->
-          <section id="history" class="history-section ">
+          <section id="history" class="history-section mobile-container">
   <div class="main-history">
 
 
 
   <div class= "history-img" >
-    <br>
-    <br>
-    <br>
-    <br>
 
-
-
- <?php
- output_image('history_img');
- ?>
-
-
-
+ <?php output_image('history_img'); ?>
 </div>
 <div class="history-title" >
-
-<?php
+         <?php
               $history = CFS()->get('history_title');
               if( !empty($history) ){
                 echo $history; };
             ?>
             </div>
             <div class="history-content">
-<?php
+          <?php
               $histor = CFS()->get('history_content');
               if( !empty($histor) ){
                 echo $histor; };
@@ -48,7 +36,7 @@
 
  </div>
 </div>
-             </section>
+    </section>
 
 <!-- Philosophy Section  -->
 
@@ -57,25 +45,13 @@
  <h1>Philosophy</h1>
 
  <div class="main-philosophy">
-
-
-
  <?php $fields = CFS()->get( 'philosophy' );?>
 <?php foreach ( $fields as $field )  { ?>
 <div class="philosophy-grid ">
-
 <h2 ><?php echo $field['philosophy_title'];?></h2>
-
 <p><?php echo $field['philosophy_content'];?></p>
-
-
-
 <div class= "philosophy-img" >
-
 <?php
-
-
-
 $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 <a href="#"> <?echo '<img src="'.$src[0].'" />';
 ?></a>
@@ -83,9 +59,7 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 </div>
  <?php }?>
  </div>
-
-
-        </section>
+    </section>
 
 <!-- Start our Benefits -->
 
@@ -95,14 +69,11 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
                    <h1>Benefits of Montessori</h1>
 <?php $fields = CFS()->get( 'benefits' );?>
 <?php foreach ( $fields as $field )  { ?>
-
   <div class= "benefits-img" >
 <?php
 $src = wp_get_attachment_image_src($field['benefits_img'], 'small');
-
 echo '<img src="'.$src[0].'" />';} ?>
 </div>
-
             <div class="benefits-content">
 <?php
               $benefit = CFS()->get('benefits_content');
@@ -111,8 +82,7 @@ echo '<img src="'.$src[0].'" />';} ?>
             ?>
  </div>
 </div>
-
-<!--  here is a deferent section -->
+<!--  here is the meta data of the benefits section -->
 
 <?php $fields = CFS()->get( 'benefits_details' );?>
 <?php foreach ( $fields as $field )  { ?>
@@ -122,10 +92,6 @@ echo '<img src="'.$src[0].'" />';} ?>
 }
 ?>
  </div>
-
-
-
-
 </section>
 
 
@@ -136,34 +102,31 @@ echo '<img src="'.$src[0].'" />';} ?>
 
 <section id="materials" class="materials-section mobile-container">
                   <ul class="main-materials">
-
 <?php $fields = CFS()->get( 'materials' );?>
 <?php foreach ( $fields as $field )  { ?>
-
 <div class="materials" >
 <div><h1><?php echo $field['materials_title'];?></h1>
-
   <div>
 <?php
 $src = wp_get_attachment_image_src($field['materials_img'], 'small');
-
 echo '<img src="'.$src[0].'" />'; ?>
 <p>  <?php echo $field['materials_content'];?></p>
-
-<?php
-}
-?>
+<?php } ?>
 <p>  <?php echo $field['materials_content'];?></p>
-
  </div>
-                  </ul>
+    </ul>
 
 </section>
 <!-- Resources Section  -->
-<section id= "resources">
+<section id= "resources" class="mobile-container">
 <div class="title-resources">
               <h1 id="resources" >Resources</h1>
+
+
+<button class="btn-green"> NW Montessori Program</button>
+</div>
 </section>
+
 
 
 <?php get_footer();?>
