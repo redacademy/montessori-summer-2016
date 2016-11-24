@@ -2,46 +2,190 @@
 # NW Program Page
 --------------------------------------------------------------*/
 // General Setting
+
 * {
 	box-sizing: border-box;
 }
-
 // @media screen and (max-width: 480px) {
 .nw-program-wrapper {
-	max-width:$mobile_width;
+	max-width: $mobile_width;
+	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
+
 	h1 {
 		font-family: $font_title;
-		font-size:$h1_size_mob;
+		font-size: $h1_size_mob;
 		font-weight: normal;
 		line-height: $basic_hline_height * 4.2;
 		text-align: left;
-		color:$black;
-
+		color: $black;
 	}
 }
+//Enrollment Section
+.enroll{
+	margin: 2px;
 
 
-.nw-program{
-	margin: auto;
-	.red-border-container{
-		width: $mobile_width;
-		padding: 10px;
-		overflow: visible;
-		height: auto;
-		margin-bottom: 70px;
-		.left-red-border{
-			width: 80%;
-			height: 90px;
-			border-left: 7px solid $color_bar_pink;
-			padding-left: 20px;
-			padding-right: 10px;
-
-		}
-
+.enroll-block{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 10px auto;
+	flex-direction: column;
+	.green-btn {
+		height: 47px;
+		padding: 17px 20px;
+		background-color: #4FC8A1;
+		border-radius: 6px;
+		font-family: "Noto Sans";
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 30px;
+		color: #fff;
+		text-shadow: none;
+		letter-spacing: 0.8px;
 	}
 
 }
+}
+//teacher list Section
+.teacher-grid{
+
+	.flip-container {
+	display: flex;
+ 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+   background: #aff1d3;
+   border-radius:50%;
+
+ }
+
+ 	.flip-container:hover .flipper,
+   .flip-container.hover .flipper {
+ 		-webkit-transform: rotateY(180deg);
+ 		-moz-transform: rotateY(180deg);
+ 		transform: rotateY(180deg);
+ 	}
+
+ .flip-container, .front, .back {
+ 	width: 125px;
+ 	height: 125px;
+ }
+
+ .flipper {
+ 	flex: 1 0 auto;
+ 	display: flex;
+
+ 	 width: 50%;
+   position: relative;
+ 	-webkit-transition: 1.9s;
+ 	-webkit-transform-style: preserve-3d;
+
+ 	-moz-transition: 1.9s;
+ 	-moz-transform-style: preserve-3d;
+
+ 	transition: 1.9s;
+ 	transform-style: preserve-3d;
+
+ }
+
+ .front, .back {
+ 	-webkit-backface-visibility: hidden;
+ 	-moz-backface-visibility: hidden;
+ 	backface-visibility: hidden;
+
+ }
+
+ .front {
+ 	position: absolute;
+   background-size:cover;
+   border-radius:50%;
+	 flex: 2;
+
+ }
+
+
+ .back {
+ 	-webkit-transform: rotateY(180deg);
+ 	-moz-transform: rotateY(180deg);
+ 	transform: rotateY(180deg);
+
+ }
+
+ .back {
+ 		border-radius: 50%;
+ 		position: absolute;
+ 		width: 125px;
+ 		overflow: hidden;
+ 		text-overflow: ellipsis;
+ 		height: 125px;
+ 		text-align: center;
+   right:3px;
+ }
+.teacher_det{
+ 		 text-align: center;
+
+ 	 	p{
+ 	 		font-size: 50%;
+ 	 	}
+ }
+
+ }
+
+//Enrollment Section
+
+
+
+// .teacher-grid{
+// 	// @include flex(center,space-around);
+// 	// flex-wrap: wrap;
+// display: flex;
+//
+// 	// position: relative;
+//
+// .switch {
+// 	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+// 	border-radius: 50%;
+// 	width: 125px;
+// 	height: 125px;
+//
+//
+//
+//
+// 	.teacher-img {
+// 		background-size: cover;
+// 		position: relative;
+// 		border-radius: 50%;
+// 		width: 125px;
+// 		height: 125px;
+// 		background: #aff1d3;
+// 		flex: 2 0 50%;
+//
+// 	}
+//
+// 	p {
+		// border-radius: 50%;
+		// top: 60px;
+		// position: absolute;
+		// width: 125px;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// height: 125px;
+		// text-align: center;
+// 		display: none;
+// 	}
+//
+//
+//    }
+// 	 .teacher_name{
+// 		 text-align: center;
+//
+// 	 	p{
+// 	 		font-size: 50%;
+// 	 	}
+// }
+// }
