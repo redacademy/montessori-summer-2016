@@ -14,6 +14,8 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
+	background-color: green;
+
 
 	h1 {
 		font-family: $font_title;
@@ -24,9 +26,24 @@
 		color: $black;
 	}
 }
+// Section Why NW Program Section
+.nw-program{
+	display: flex;
+	flex-direction: column;
+
+			.why-nw{
+							display:inline-block;
+							   .nw-img{
+											display:flex;
+											justify-content: center;
+											margin-bottom: 50px;
+								 }
+					    }
+		     }
+
 //Enrollment Section
 .enroll{
-	margin: 2px;
+	width: 100%;
 			.enroll-block{
 				max-width: 70%;
 				display: flex;

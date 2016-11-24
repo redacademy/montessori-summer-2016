@@ -15,14 +15,12 @@ get_header(); ?>
 
 <section class="nw-program">
 			<h1>Why NW Montessori Program?</h1>
-			<p> <?php echo CFS()->get('main-reason'); ?> </p>
+			<div class="why-nw"> <?php echo CFS()->get('main-reason'); ?> </p>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
-		<div class=""><?php echo CFS()->get('main-reason'); ?> </div>
+		<div class="red-border-container"><?php echo CFS()->get('main-reason'); ?> </div>
 </section>
-
-
 
 <!-- **********///////////Montessori Daily Schedule section/////////////********** -->
 
@@ -36,7 +34,7 @@ get_header(); ?>
 				<h1>Funding</h1>
 				<p class="funding-info">Where does it come from?</p>
 				<span class="funding-explain">There are two ways of answering this.</span>
-			  <div> <?php echo CFS()->get('funding-block'); ?> </div>
+			  <div class="red-border-container"> <?php echo CFS()->get('funding-block'); ?> </div>
 				<div class="funding-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>

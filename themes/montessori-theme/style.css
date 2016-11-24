@@ -1352,7 +1352,8 @@ site-main .involved-title green-btn {
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  background-color: green; }
   .nw-program-wrapper h1 {
     font-family: "Asap";
     font-size: 2.5rem;
@@ -1361,8 +1362,22 @@ site-main .involved-title green-btn {
     text-align: left;
     color: #000000; }
 
+.nw-program {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .nw-program .why-nw {
+    display: inline-block; }
+    .nw-program .why-nw .nw-img {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      margin-bottom: 50px; }
+
 .enroll {
-  margin: 2px; }
+  width: 100%; }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -1449,10 +1464,11 @@ site-main .involved-title green-btn {
     font-size: 50%; }
 
 .red-border-container {
-  width: 100%;
+  width: 95%;
   height: 100px;
+  display: inline-block;
   margin-bottom: 100px;
-  margin-left: 30px;
+  margin-left: 5%;
   padding-left: 15px;
   border-left: 7px solid #D93B57;
   overflow: visible; }
