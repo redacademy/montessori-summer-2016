@@ -6,49 +6,29 @@
 */
 get_header(); ?>
 
-    <div id="primary" class="content-area">
+<div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 <section class="involved-wrapper ">
 <div class="main-what-new mob-container">
  <?php
 $args = array(
-
     'post_type' => 'post',
     'show_per_page' => 1,
 );
 $query = new WP_Query( $args  );
-
-
 if ( $query-> have_posts() ) :  ?>
 
     <?php while ($query-> have_posts() )  : $query->the_post(); ?>
-
-
-
   <div class="involved-title">
-
-     
-
 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-
-
 <?php the_content();?>
 </div>
-
 <!-- <?php //if (has_post_thumbnail( )): ?> -->
-
 </div>
-
-
-
     <php the_content();?>
-
-
     <?php if (has_post_thumbnail()): ?>
     <?php the_post_thumbnail('Normal'); ?>
-
       <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a>
-
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
@@ -77,7 +57,7 @@ if ( $query-> have_posts() ) :  ?>
 
   <div class="involve-page">
            <?php if (has_post_thumbnail( )): ?>
-          		<?php the_post_thumbnail( 'large' ); ?>
+          		<?php the_post_thumbnail( 'large' ); ?>
            <?php endif ; ?>
          </div>
          <article class="involved">
