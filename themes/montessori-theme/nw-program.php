@@ -13,7 +13,7 @@ get_header(); ?>
 
 	<!-- **********/////////////////Why NW Program Section///////////////********** -->
 
-<section class="nw-program">
+<section id="nw-program" class="nw-program">
 			<h1>Why NW Montessori Program?</h1>
 			<div class="why-nw"> <?php echo CFS()->get('main-reason'); ?> </p>
 			<div class="nw-img">
@@ -30,7 +30,7 @@ get_header(); ?>
 
 <!-- **********////////////////////////Funding///////////////////////********** -->
 
-	<section class="funding">
+	<section id="funding" class="funding">
 				<h1>Funding</h1>
 				<p class="funding-info">Where does it come from?</p>
 				<span class="funding-explain">There are two ways of answering this.</span>
@@ -51,7 +51,7 @@ get_header(); ?>
 
 	<!-- **********/////////Custom Post Loop To Call School List/////////********** -->
 
-	<section class="school-list">
+	<section id="schools-teachers" class="school-list">
 
 		<h1>Schools & Teachers</h1>
 				<?php query_posts(array( 'post_type' => 'school', ));?>
@@ -85,7 +85,7 @@ get_header(); ?>
 
 
  <?php
-  query_posts(array( 'post_type' => 'staff','staff-category' => 'teachers' ));
+  query_posts(array( 'post_type' => 'staff','taxonomy' => 'teachers' ));
   ?>
 	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -94,7 +94,11 @@ get_header(); ?>
 <div class="flip-container">
 	<div class="flip-wrap">
 <div class="flipper">
-	      <div class="front"><?php the_post_thumbnail('teacher-ID','small'); ?></div>
+	      <div class="front">
+					<?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'large' ); ?>
+								<?php endif; ?>
+							</div>
 			<div class="back"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
 		</div><!-- #flippre -->
 	</div><!-- #flippre -->
@@ -134,7 +138,7 @@ get_header(); ?>
 
  <!-- **********/////////////////Enrollment Section///////////////********** -->
 
-<section class="enroll">
+<section id="how-to-enroll" class="enroll">
 				<h1>How to Enroll Your Child</h1>
 				<div class="red-border-container"> <?php echo CFS()->get('enroll'); ?> </div>
 

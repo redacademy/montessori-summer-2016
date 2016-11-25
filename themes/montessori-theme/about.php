@@ -12,7 +12,7 @@ get_header(); ?>
 
 
 			<!-- **********///////////////// about NW School Section ///////////////********** -->
-			<section class="about-school">
+			<section id="our-history" class="about-school">
 				<?php
 			$fields = CFS()->get( 'content_group' );
 
@@ -25,7 +25,7 @@ get_header(); ?>
 			  ?>
 		</section>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
-			<section>
+			<section id="board-members">
 				<!-- Custom Post Loop To Call Members List  -->
 				<?php
 			query_posts(array( 'post_type' => 'staff','staff-category' => 'members' ));
@@ -59,7 +59,7 @@ get_header(); ?>
 								<?php wp_reset_query(); ?>
 			</section>
 			<!-- **********///////////////// Members at Large Section ///////////////********** -->
-     <section class="members_at_large">
+     <section  class="members_at_large">
 			 <h1>Members at Large</h1>
 	  	<?php
 			$fields = CFS()->get( 'members_at_large' );
@@ -71,7 +71,7 @@ get_header(); ?>
     </section>
 
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
-		<section class="meeting-minutes">
+		<section id="meetings" class="meeting-minutes">
 			<h1>Meeting Minutes</h1>
 			<img src="<?php bloginfo('template_directory'); ?>/images/" alt="Meeting Minutes Section" />
 			<?php
@@ -96,7 +96,7 @@ get_header(); ?>
 			</section>
 
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
-			<section class="newsLetter">
+			<section id="newsletter" class="newsLetter">
 					<h1>NewsLetter</h1>
 					<p>exciting time of the year! </p>
 					<?php echo '<h3>'.CFS()->get( 'date' ).'</h3>'; ?>
