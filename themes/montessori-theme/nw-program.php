@@ -85,9 +85,9 @@ get_header(); ?>
 
 
  <?php
-  query_posts(array( 'post_type' => 'staff','taxonomy' => 'teachers' ));
+ query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'teachers' ));
   ?>
-	<div class="teacher-grid">
+	<div class="member-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 

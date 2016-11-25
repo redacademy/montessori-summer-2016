@@ -1435,11 +1435,17 @@ li {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-align: center;
-        align-items: center; }
+    -ms-flex-item-align: center;
+        align-self: center; }
     .members_at_large .members_at_large-grid .members_at_large-name {
       width: 33%;
-      display: block; }
+      display: -ms-flexbox;
+      display: flex; }
+      .members_at_large .members_at_large-grid .members_at_large-name p {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center; }
 
 .meeting-minutes {
   display: -ms-flexbox;
@@ -1579,6 +1585,7 @@ site-main .a green-btn {
   -ms-flex-direction: column;
       flex-direction: column; }
   .funding .funding-img, .funding .money-spend-img {
+    margin-top: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1627,28 +1634,32 @@ site-main .a green-btn {
     max-width: 70%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     margin: 40px auto;
     -ms-flex-direction: column;
         flex-direction: column; }
     .enroll .enroll-block .enroll-img {
       margin-bottom: 50px; }
-    .enroll .enroll-block .green-btn {
-      height: 47px;
-      display: inline-block;
-      box-sizing: border-box;
-      text-align: center;
-      background-color: #4FC8A1;
-      border-radius: 6px;
-      font-family: "Noto Sans";
-      font-size: 15px;
-      font-weight: bold;
-      text-align: center;
-      line-height: 30px;
-      color: #fff;
-      text-shadow: none;
-      letter-spacing: 0.8px; }
+    .enroll .enroll-block .enroll-btn {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+      .enroll .enroll-block .enroll-btn .green-btn {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        height: 47px;
+        display: inline-block;
+        text-align: center;
+        background-color: #4FC8A1;
+        border-radius: 6px;
+        font-family: "Noto Sans";
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        text-shadow: none;
+        letter-spacing: 0.8px; }
 
 .teacher-list {
   padding: 2px;

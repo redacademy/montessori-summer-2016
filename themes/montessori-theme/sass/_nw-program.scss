@@ -49,6 +49,7 @@
 	flex-direction: column;
 
 	.funding-img,.money-spend-img {
+		margin-top: 100px;
 		display: flex;
 		justify-content: center;
 		img{
@@ -101,16 +102,18 @@ flex-direction: column;
 	.enroll-block {
 		max-width: 70%;
 		display: flex;
-		justify-content: space-around;
 		margin: 40px auto;
 		flex-direction: column;
 		.enroll-img {
 			margin-bottom: 50px;
 		}
+		.enroll-btn{
+			align-self: center;
+
 		.green-btn {
+			align-self: center;
 			height: 47px;
 			display: inline-block;
-			box-sizing: border-box;
 			text-align: center;
 			background-color: #4FC8A1;
 			border-radius: 6px;
@@ -122,8 +125,9 @@ flex-direction: column;
 			color: #fff;
 			text-shadow: none;
 			letter-spacing: 0.8px;
-		}
-	}
+	  	}
+  	}
+  }
 }
 //teacher list Section
 

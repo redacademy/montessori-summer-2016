@@ -27,31 +27,29 @@ get_header(); ?>
 			<section id="board-members">
 				<!-- Custom Post Loop To Call Members List  -->
 				<?php
-			query_posts(array( 'post_type' => 'staff','staff-category' => 'members' ));
+
+				query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'members' ));
 			?>
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
-					<div class="flip-container">
-						<div class="flip-wrap">
-					<div class="flipper">
-						<div class="front">
-							<?php the_post_thumbnail('members->ID','thumbnail');?>
-						</div>
-						<div class="back">
-							<p class="teacher_title">
-								<?php echo CFS()->get('member_vision'); ?>
-							</p>
-						</div>
-						</div><!-- #flippre -->
+			<div class="teacher-grid">
+		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+			<div class="flip-container">
+				<div class="flip-wrap">
+			<div class="flipper">
+				      <div class="front">
+							      	<?php if ( has_post_thumbnail() ) : ?>
+			                <?php the_post_thumbnail( 'large' ); ?>
+											<?php endif; ?>
+							</div>
+						<div class="back"><p ><?php echo CFS()->get('members_vision'); ?></p></div>
 					</div><!-- #flippre -->
-						</div><!-- #flip-container -->
-						<div class="member_det">
-							<p class="teacher_name">
-								<?php echo CFS()->get('member_name'); ?>
-							</p>
-							<p class="teacher_title">
-								<?php echo CFS()->get('member_title'); ?>
-							</p>
-						</div>
+				</div><!-- #flippre -->
+					</div><!-- #flip-container -->
+					<div class="teacher_det">
+			      <p><?php echo CFS()->get('members_name'); ?></p>
+			    	<p><?php echo CFS()->get('members_title'); ?></p>
+					</div><!-- #teacher_det -->
+
 						<?php endwhile; else: ?>
 							<p>Sorry, no posts matched your criteria.</p>
 							<?php endif; ?>
