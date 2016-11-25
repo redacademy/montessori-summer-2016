@@ -89,10 +89,12 @@ get_header(); ?>
 
 
 <div class="flip-container">
+	<div class="flip-wrap">
 <div class="flipper">
 	      <div class="front"><?php the_post_thumbnail('small'); ?></div>
 			<div class="back"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
 		</div><!-- #flippre -->
+	</div><!-- #flippre -->
 
 		</div><!-- #flip-container -->
 		<div class="teacher_det">

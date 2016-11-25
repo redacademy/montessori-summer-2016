@@ -53,6 +53,17 @@ get_header(); ?>
 							<?php endif; ?>
 								<?php wp_reset_query(); ?>
 			</section>
+			<!-- **********///////////////// Members at Large Section ///////////////********** -->
+     <section class="members_at_large">
+			 <h1>Members at Large</h1>
+	  	<?php
+			$fields = CFS()->get( 'members_at_large' );
+
+			foreach ( $fields as $field ) {
+			echo '<div class="">'.'</p>'.$field['members_at_large_name'].'</p>'.'</div>';
+			}
+			?>
+    </section>
 			<!-- **********///////////////// Archive Section ///////////////********** -->
 
 			<section class="archive">
