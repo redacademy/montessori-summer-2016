@@ -1,18 +1,15 @@
-.page {
-  .content-area {
+.page {  
+  .contact_info {
     width: 100%;
-        margin: 20px;
-
-  @include desktop{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
-    padding-top: 50px;
-  }
-  .site-main {
     margin: 20px;
+    @include desktop{
+      margin-left: auto;
+      margin-right: auto;
+      width: 1120px;
+      padding-top: 50px;
+    }
   }
-}
+
   h2{
     width: 207px;
     height: 24px;
@@ -74,7 +71,7 @@
           input{
             width: 300px !important;
             height: 40px;
-            
+
               input[type=submit]{
                 width: 164px;
                 height: 67px;
