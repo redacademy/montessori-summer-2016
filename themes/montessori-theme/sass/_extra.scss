@@ -23,6 +23,7 @@ margin: 0;
 }
 ////**mobile container we will change it when we finish the mobile first **///
 .mob-container{
+  transition: all .5s ease-out .5s;
   overflow-x: hidden;
   max-width:$mobile_width;
   margin: 0px auto;
@@ -35,4 +36,8 @@ margin: 0;
 	margin: 0 auto;
 	overflow: auto;
   padding: 40px 0;
+}
+
+body{
+
 }
