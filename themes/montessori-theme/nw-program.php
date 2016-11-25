@@ -19,7 +19,7 @@ get_header(); ?>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
-		<div class="red-border-container"><?php echo CFS()->get('main-reason'); ?> </div>
+		<div class="red-border-container"><?php echo CFS()->get('main-reason'); ?></div>
 </section>
 
 <!-- **********///////////Montessori Daily Schedule section/////////////********** -->
@@ -74,31 +74,38 @@ get_header(); ?>
  <!-- **********///////////////// Teacher List Section ///////////////********** -->
 
  <section class="teacher-list">
-	 <div class="teacher-grid">
 
-		 <h1>Teachers<h1>
+     <label class="toggle">
+		  <h1>Teachers<h1>
+		 </label>
  <!-- Custom Post Loop To Call Teacher List  -->
+
+
  <?php
   query_posts(array( 'post_type' => 'staff','staff-category' => 'Teachers' ));
   ?>
+	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 
 <div class="flip-container">
 <div class="flipper">
 	      <div class="front"><?php the_post_thumbnail('small'); ?></div>
-			 <div class="back">
-			<div class="teacher_det"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
-					</div>
+			<div class="back"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
+		</div><!-- #flippre -->
 
-		</div>
-    <div class="teacher_det"><p><?php echo CFS()->get('teacher_name'); ?></p>
+		</div><!-- #flip-container -->
+		<div class="teacher_det">
+      <p><?php echo CFS()->get('teacher_name'); ?></p>
     	<p><?php echo CFS()->get('teacher_title'); ?></p>
-			</div>
+		</div><!-- #teacher_det -->
+
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>
   <?php endif; ?>
+		</div>
 	<?php wp_reset_query(); ?>
-</div>
+
   </section>
 
  <!-- **********///////////////// Preschools List Section ///////////////********** -->
@@ -106,15 +113,15 @@ get_header(); ?>
   <section class="preschools-list">
   <!-- Custom Field Loop To Call Preschools List  -->
   <label class="toggle">
-		<h1>List of Private Montessori Preschools</h1>
-		<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+		<h1>List of Private </br>Montessori Preschools<span class"row">  ></span></h1>
 	</label>
+
 		 <div class="target">
 	<?php
   	$fields = CFS()->get( 'list_of_preschools' );
      foreach ( $fields as $field ) {
-       echo '<span class"lstSchool">'.$field['school_name'].'</span>';
-       echo '</p>'.$field['adrees'].'</p>';
+       echo '<p>'.'<span class"lstSchool">'.$field['school_name'].'</span>'.'</p>';
+       echo '<p>'.$field['adrees'].'</p>';
         } ?>
 			</div>
   <?php echo '<p>'.CFS()->get( 'abstract' ).'</p>'; ?>
@@ -123,30 +130,30 @@ get_header(); ?>
  <!-- **********/////////////////Enrollment Section///////////////********** -->
 
 <section class="enroll">
-	<h1>How to Enroll Your Child</h1>
-	<div> <?php echo CFS()->get('enroll'); ?> </div>
+				<h1>How to Enroll Your Child</h1>
+				<div class="red-border-container"> <?php echo CFS()->get('enroll'); ?> </div>
 
-	<h3 >When can my child start? </h3>
-	<p> <?php echo CFS()->get('time-start'); ?> </p>
+				<h3 >When can my child start? </h3>
+				<p> <?php echo CFS()->get('time-start'); ?> </p>
 
-  <h3 >How do I apply?</h3>
-<ol>
-  <?php $fields = CFS()->get( 'guids' );
+			  <h3 >How do I apply?</h3>
+		  	<ol>
+			  <?php $fields = CFS()->get( 'guids' );
 
-     foreach ( $fields as $field ) {?>
-			 <li>
- <?php echo '<p class="">'.$field['instructions'].'</p>';
-} ?>
-</li>
-</ol>
-	 <div class="enroll-block">
-		 <div class="enroll-img">
-	 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
-  </div>
-	<div class="enroll-btn">
-    <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</a>
-	</div>
-  </div>
+	 foreach ( $fields as $field ) {?>
+						 <li>
+			  <?php echo '<p class="">'.$field['instructions'].'</p>';
+			  } ?>
+			  </li>
+			  </ol>
+				<div class="enroll-block">
+			  <div class="enroll-img">
+			  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
+			  </div>
+				<div class="enroll-btn">
+			  <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</a>
+				</div>
+			  </div>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
 

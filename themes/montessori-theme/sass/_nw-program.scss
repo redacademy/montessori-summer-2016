@@ -15,7 +15,7 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	background-color: green;
+	background-color: grey;
 
 	h1 {
 		font-family: $font_title;
@@ -42,28 +42,37 @@
 		}
 	}
 }
-
 // Funding Section
 
 .funding {
 	display: flex;
 	flex-direction: column;
-		.funding-img img{
 
-				width: 90%;
-		}
+	.funding-img img {
+		width: 90%;
+	}
 
-		.money-spend-img img{
-				width: 90%;
-		}
-		.funding-btn{
-			width: 40%;
-			display: flex;
-			align-items: center;
-		}
+	.funding-btn {
+		width: 40%;
+		display: flex;
+		align-items: center;
+	}
 }
+//Preschools List Section
 
+.preschools-list {
+	padding: 1px;
+
+	.target {
+		margin: 0 auto;
+	}
+
+	span {
+		color: #248E6A;
+	}
+}
 //Enrollment Section
+
 .enroll {
 	width: 100%;
 
@@ -98,12 +107,64 @@
 }
 //teacher list Section
 
-.teacher-grid {
+.teacher-list {
+	padding: 2px;
+	flex-wrap: wrap;
+	display: flex;
+
+	.teacher-grid {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 	.flip-container {
 		display: flex;
 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
 		background: #aff1d3;
 		border-radius: 50%;
+
+		.flipper {
+			flex: 1 0 auto;
+			display: flex;
+			width: 50%;
+			position: relative;
+			-webkit-transition: 1.9s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transition: 1.9s;
+			-moz-transform-style: preserve-3d;
+			transition: 1.9s;
+			transform-style: preserve-3d;
+
+			p {
+				font-size: 50%;
+				line-height: 30px;
+			}
+		}
+
+		.front {
+			position: absolute;
+			background-size: cover;
+			border-radius: 50%;
+			flex: 2;
+
+			img {
+				border-radius: 50%;
+			}
+		}
+		.back {
+			border-radius: 50%;
+			position: absolute;
+			width: 125px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 125px;
+			text-align: center;
+			right: 3px;
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
 	}
 
 	.flip-container.hover .flipper,
@@ -120,19 +181,6 @@
 		height: 125px;
 	}
 
-	.flipper {
-		flex: 1 0 auto;
-		display: flex;
-		width: 50%;
-		position: relative;
-		-webkit-transition: 1.9s;
-		-webkit-transform-style: preserve-3d;
-		-moz-transition: 1.9s;
-		-moz-transform-style: preserve-3d;
-		transition: 1.9s;
-		transform-style: preserve-3d;
-	}
-
 	.back,
 	.front {
 		-webkit-backface-visibility: hidden;
@@ -140,29 +188,8 @@
 		backface-visibility: hidden;
 	}
 
-	.front {
-		position: absolute;
-		background-size: cover;
-		border-radius: 50%;
-		flex: 2;
-	}
 
-	.back {
-		-webkit-transform: rotateY(180deg);
-		-moz-transform: rotateY(180deg);
-		transform: rotateY(180deg);
-	}
 
-	.back {
-		border-radius: 50%;
-		position: absolute;
-		width: 125px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		height: 125px;
-		text-align: center;
-		right: 3px;
-	}
 
 	.teacher_det {
 		text-align: center;

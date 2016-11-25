@@ -1,12 +1,16 @@
 .red-border-container{
 width: 95%;
-height: 100px;
+height: 160px;
 display: inline-block;
 margin-bottom: 100px;
-margin-left: 5%;
+margin-left: 7.5%;
+padding-right: 9.4%;
 padding-left: 15px;
 border-left: 7px solid $border_left_red;
 overflow:visible;
+p{
+  margin: 0 auto;
+}
 }
 
 .mob-container{

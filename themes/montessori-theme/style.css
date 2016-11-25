@@ -1353,7 +1353,7 @@ site-main .involved-title green-btn {
   padding-right: 0.9375rem;
   -ms-flex-align: center;
       align-items: center;
-  background-color: green; }
+  background-color: grey; }
   .nw-program-wrapper h1 {
     font-family: "Asap";
     font-size: 2.5rem;
@@ -1383,14 +1383,19 @@ site-main .involved-title green-btn {
       flex-direction: column; }
   .funding .funding-img img {
     width: 90%; }
-  .funding .money-spend-img img {
-    width: 90%; }
   .funding .funding-btn {
     width: 40%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center; }
+
+.preschools-list {
+  padding: 1px; }
+  .preschools-list .target {
+    margin: 0 auto; }
+  .preschools-list span {
+    color: #248E6A; }
 
 .enroll {
   width: 100%; }
@@ -1421,76 +1426,88 @@ site-main .involved-title green-btn {
       text-shadow: none;
       letter-spacing: 0.8px; }
 
-.teacher-grid .flip-container {
+.teacher-list {
+  padding: 2px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -ms-flexbox;
-  display: flex;
-  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-  background: #aff1d3;
-  border-radius: 50%; }
-
-.teacher-grid .flip-container.hover .flipper,
-.teacher-grid .flip-container:hover .flipper {
-  transform: rotateY(180deg); }
-
-.teacher-grid .back,
-.teacher-grid .flip-container,
-.teacher-grid .front {
-  width: 125px;
-  height: 125px; }
-
-.teacher-grid .flipper {
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d; }
-
-.teacher-grid .back,
-.teacher-grid .front {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.teacher-grid .front {
-  position: absolute;
-  background-size: cover;
-  border-radius: 50%;
-  -ms-flex: 2;
-      flex: 2; }
-
-.teacher-grid .back {
-  transform: rotateY(180deg); }
-
-.teacher-grid .back {
-  border-radius: 50%;
-  position: absolute;
-  width: 125px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 125px;
-  text-align: center;
-  right: 3px; }
-
-.teacher-grid .teacher_det {
-  text-align: center; }
-  .teacher-grid .teacher_det p {
-    font-size: 50%; }
+  display: flex; }
+  .teacher-list .teacher-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .teacher-list .flip-container {
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+    background: #aff1d3;
+    border-radius: 50%; }
+    .teacher-list .flip-container .flipper {
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      position: relative;
+      -webkit-transition: 1.9s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1.9s;
+      -moz-transform-style: preserve-3d;
+      transition: 1.9s;
+      transform-style: preserve-3d; }
+      .teacher-list .flip-container .flipper p {
+        font-size: 50%;
+        line-height: 30px; }
+    .teacher-list .flip-container .front {
+      position: absolute;
+      background-size: cover;
+      border-radius: 50%;
+      -ms-flex: 2;
+          flex: 2; }
+      .teacher-list .flip-container .front img {
+        border-radius: 50%; }
+    .teacher-list .flip-container .back {
+      border-radius: 50%;
+      position: absolute;
+      width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 125px;
+      text-align: center;
+      right: 3px;
+      transform: rotateY(180deg); }
+  .teacher-list .flip-container.hover .flipper,
+  .teacher-list .flip-container:hover .flipper {
+    transform: rotateY(180deg); }
+  .teacher-list .back,
+  .teacher-list .flip-container,
+  .teacher-list .front {
+    width: 125px;
+    height: 125px; }
+  .teacher-list .back,
+  .teacher-list .front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .teacher-list .teacher_det {
+    text-align: center; }
+    .teacher-list .teacher_det p {
+      font-size: 50%; }
 
 .red-border-container {
   width: 95%;
-  height: 100px;
+  height: 160px;
   display: inline-block;
   margin-bottom: 100px;
-  margin-left: 5%;
+  margin-left: 7.5%;
+  padding-right: 9.4%;
   padding-left: 15px;
   border-left: 7px solid #D93B57;
   overflow: visible; }
+  .red-border-container p {
+    margin: 0 auto; }
 
 .mob-container {
   overflow-x: hidden;
