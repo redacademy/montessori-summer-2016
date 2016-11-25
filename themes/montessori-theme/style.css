@@ -1287,6 +1287,30 @@ li {
 .benefits li {
   list-style-type: disc; }
 
+.first-benefits-section {
+  width: 80%;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .first-benefits-section .benefits-img {
+    width: 190px;
+    height: 219px; }
+    @media (min-width: 60rem) {
+      .first-benefits-section .benefits-img {
+        width: 350px;
+        height: auto;
+        padding-bottom: 40px; } }
+  .first-benefits-section p {
+    padding-top: 4px;
+    text-align: left;
+    display: block; }
+    @media (min-width: 60rem) {
+      .first-benefits-section p {
+        font-size: 1.5rem; } }
+
 /*Start Resources Section  */
 .green-btn {
   background-color: #4fc8a1;

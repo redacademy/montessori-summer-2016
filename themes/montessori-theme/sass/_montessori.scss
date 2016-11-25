@@ -219,6 +219,37 @@ li {
 .benefits li {
     list-style-type: disc;
 }
+.first-benefits-section{
+  width: 80%;
+  @include flex(flex-end,space-between);
+      .benefits-img {
+          width: 190px;
+          height: 219px;
+          @include desktop {
+              width: 350px;
+              height: auto;
+              padding-bottom: 40px;
+          };
+
+
+}
+.benefits-title{
+}
+
+
+
+    p {
+        padding-top: 4px;
+        text-align: left;
+        display: block;
+        @include desktop {
+            font-size: 1.5rem;
+        };
+    }
+}
+
+
+
 /*Start Resources Section  */
 .green-btn {
     background-color: #4fc8a1;

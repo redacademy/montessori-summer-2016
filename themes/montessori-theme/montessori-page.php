@@ -76,12 +76,13 @@ foreach($fields as $field)
 
 <section id="benefits-of-montessori" class="benefits-section mob-container">
 <div class="main-benefits content-wrapper">
-     <h1>Benefits of Montessori</h1>
+<h1>Benefits of Montessori</h1>
+<div class="first-benefits-section">
 
   <div class= "benefits-img" >
   <?php
 output_image('benefits_img'); ?>
- </div>
+
         <div class="benefits-content">
             <?php
 $benefit = CFS()->get('benefits_content');
@@ -90,8 +91,9 @@ if (!empty($benefit))
   {
   echo $benefit;
   }; ?>
+  </div>
         </div>
-
+</div>
 <!--  here is the meta data of the benefits section -->
 
           <ul>
