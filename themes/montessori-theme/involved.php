@@ -7,39 +7,30 @@
 get_header();
  ?>
 
+<div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
-
-          <!-- our involved section -->
-<section id="involved" class="involved-section mob-container ">
-<div class="main-involved-wrapper">
-
-
-    <?php
+<section class="involved-wrapper ">
+<div class="main-what-new mob-container">
+ <?php
 $args = array(
     'post_type' => 'post',
     'show_per_page' => 1,
 );
 $query = new WP_Query( $args  );
-if ( $query-> have_posts() ) :
-  while ($query-> have_posts() )  : $query->the_post(); ?>
-   <div class="involved-title">
-      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-   </div>
-<?php endwhile; ?>
+if ( $query-> have_posts() ) :  ?>
 
-<?php while ($query-> have_posts() )  : $query->the_post(); ?>
-<div class="involved-content">
-    <?php the_content('involved_content');?>
-  </div>
-    <div class= "involved-img" >
-      <?php output_image('involved_img'); ?>
-
-  </div>
-
-      <div class="button">
-        <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
-
+    <?php while ($query-> have_posts() )  : $query->the_post(); ?>
+  <div class="involved-title">
+<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+<?php the_content();?>
+</div>
+<!-- <?php //if (has_post_thumbnail( )): ?> -->
+</div>
+    <php the_content();?>
+    <?php if (has_post_thumbnail()): ?>
+    <?php the_post_thumbnail('Normal'); ?>
+      <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a>
+    <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
@@ -49,18 +40,16 @@ if ( $query-> have_posts() ) :
 
 <!-- This is for suppot now  & did you  and image -->
 <div class="text-shadow">
-  <h2>Support Now</h2>
-</div>
-<div class="banner_post">
+<h2
+  <a class="text_post" href="<?php echo esc_url(the_permalink()); ?>">Support Now </a></div>
+<h2>
+  <a class="banner_post" href="<?php echo esc_url(the_permalink()); ?>">Did you Know.... </a>
 
-  <h2>Did you Know.... </h2>
-  </div>
-<!-- this for support section -->
-<div support-containar>
-  <div class="support-img"><?php output_image('support_img'); ?>
-    <?php output_image('play_img'); ?>
-  </div>
-</div>
+  <div class="involve-page">
+           <?php if (has_post_thumbnail( )): ?>
+          		<?php the_post_thumbnail( 'large' ); ?>
+           <?php endif ; ?>
+         </div>
          <article class="involved">
            <a class="circle-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">your involvement+contribution</a>
            <p><?php echo CFS()->get('get_text'); ?></p>
