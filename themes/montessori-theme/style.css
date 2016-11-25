@@ -1435,24 +1435,13 @@ li {
     padding: 0.625rem;
     display: none; }
 
-<<<<<<< HEAD
 .about-school {
   margin: 0px; }
-=======
-.left-red-border {
-  width: 80%;
-  height: 90px;
-  overflow: visible;
-  border-left: 7px solid #D93B57;
-  padding-left: 20px;
-  padding-right: 10px; }
-
-.red-border-container {
-  width: 37.5rem;
-  padding: 10px;
-  height: auto;
-  margin-bottom: 70px; }
->>>>>>> 5d4f16eb3510e79b04310fbd1b40fcbceeb99f99
+  .about-school .red-border-container {
+    width: 37.5rem;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 70px; }
 
 site-main .involved-wrapper {
   width: 480px;

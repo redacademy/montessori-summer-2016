@@ -84,7 +84,6 @@ function output_image($custom_field_slug, $size = 'medium'){
  * Enqueue scripts and styles.
  */
 function montessori_scripts() {
-<<<<<<< HEAD
 	wp_enqueue_script('jquery');
 	wp_enqueue_style( 'montessori-style', get_stylesheet_uri() );
 	wp_enqueue_script('montessori-main-script',get_template_directory_uri().'/build/js/main-script.min.js' ,array('jquery'),false,true);
