@@ -10,7 +10,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="about-wrapper">
 
-
 			<!-- **********///////////////// about NW School Section ///////////////********** -->
 			<section id="our-history" class="about-school">
 				<?php
@@ -82,32 +81,34 @@ get_header(); ?>
 			// echo	'<input type="checkbox"  value="1"'.$field['options'].'/>');
 			// }
 			?>
+			<div class="red-more">
+			<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</a>
+		</div>
 		</section>
-
-
 			<!-- **********///////////////// Archive Section ///////////////********** -->
-
 			<section class="archive">
 			<label class="toggle">
 				<?php the_archive_title( '<h1>', '</h1>' ) ;?>
 				<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
 			 </label>
-			<div class="target" <?php get_sidebar(); ?> </div>
+			<div class="target" ><?php get_sidebar(); ?> </div>
 			</section>
-
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
 			<section id="newsletter" class="newsLetter">
 					<h1>NewsLetter</h1>
-					<p>exciting time of the year! </p>
-					<?php echo '<h3>'.CFS()->get( 'date' ).'</h3>'; ?>
+					<h3>exciting time of the year! </h3>
+					<?php echo '<h4>'.CFS()->get( 'date' ).'</h4>'; ?>
 						<?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
+						<div class="red-more">
+						<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</a>
+				  	</div>
 			</section>
-			<!-- **********///////////////// newsLetter Section ///////////////********** -->
+			<!-- **********///////////////////////////////////////////////////********** -->
 
-		    </div>
+		</div>
 		<!-- #about-page -->
+			<?php get_footer(); ?>
 		</main>
 		<!-- #main -->
-</div>
-	  <!-- #primary -->
-	<?php get_footer(); ?>
+		</div>
+		<!-- #primary -->
