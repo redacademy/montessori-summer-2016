@@ -5,7 +5,7 @@ $basic_pading: 0.625rem; /// ==>10px ////
 $basic_margin: 0.625rem; /// ==>10px ////
 $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
-$desktop_width:48rem; //768px
+$desktop_width:60rem; //960px
 $Tablet_width:37.5rem; //
 $mobile_width:37.5rem; //480px for Mobile Container
 //Layout//
@@ -24,6 +24,7 @@ $color_text-screen:#21759b;
 /********* Colours **********/
 
 //Montessori Brand Colours//
+$border_left_red:#D93B57;
 $border_left_red: #D93B57;
 $color_btn_orange: #F76072 ;
 $color_btn_hover_pink: #CB203E ;

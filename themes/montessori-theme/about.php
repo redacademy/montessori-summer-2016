@@ -12,35 +12,40 @@ get_header(); ?>
 
 
 			<!-- **********///////////////// about NW School Section ///////////////********** -->
-			<section>
+			<section id="our-history" class="about-school">
 				<?php
 			$fields = CFS()->get( 'content_group' );
 
 			foreach ( $fields as $field ) {
 
-				echo '<h1 class="">'.$field['content_group_title'].'</h1>';
-				echo '<p class="">'.$field['content_group_paragragh'].'</p>';
-			  echo '<div class="red-border-container">'.'<div class="left-red-border">'.$field['content_group_description'].'</div>'.'<div>';
+				echo '<h1 >'.$field['content_group_title'].'</h1>';
+				echo '<div class="about-content">'.$field['content_group_paragragh'].'</div>';
+			  echo '<div class="red-border-container">'.$field['content_group_description'].'</div>';
 			}
 			  ?>
 		</section>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
-			<section>
+			<section id="board-members">
 				<!-- Custom Post Loop To Call Members List  -->
 				<?php
 			query_posts(array( 'post_type' => 'staff','staff-category' => 'members' ));
 			?>
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<!-- <h2><?php the_title(); ?></h2> -->
-						<div class="">
-							<?php the_post_thumbnail('thumbnail');?>
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+					<div class="flip-container">
+						<div class="flip-wrap">
+					<div class="flipper">
+						<div class="front">
+							<?php the_post_thumbnail('members->ID','thumbnail');?>
 						</div>
 						<div class="back">
 							<p class="teacher_title">
 								<?php echo CFS()->get('member_vision'); ?>
 							</p>
 						</div>
-						<div>
+						</div><!-- #flippre -->
+					</div><!-- #flippre -->
+						</div><!-- #flip-container -->
+						<div class="member_det">
 							<p class="teacher_name">
 								<?php echo CFS()->get('member_name'); ?>
 							</p>
@@ -53,6 +58,33 @@ get_header(); ?>
 							<?php endif; ?>
 								<?php wp_reset_query(); ?>
 			</section>
+			<!-- **********///////////////// Members at Large Section ///////////////********** -->
+     <section  class="members_at_large">
+			 <h1>Members at Large</h1>
+	  	<?php
+			$fields = CFS()->get( 'members_at_large' );
+
+			foreach ( $fields as $field ) {
+			echo '<div class="">'.'</p>'.$field['members_at_large_name'].'</p>'.'</div>';
+			}
+			?>
+    </section>
+
+		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
+		<section id="meetings" class="meeting-minutes">
+			<h1>Meeting Minutes</h1>
+			<img src="<?php bloginfo('template_directory'); ?>/images/" alt="Meeting Minutes Section" />
+			<?php
+			$fields = CFS()->get( 'meeting_minutes_date' );
+			$fields = CFS()->get( 'meeting_minutes' );
+
+			// foreach ( $fields as $field ) {
+			// echo	'<input type="checkbox"  value="1"'.$field['options'].'/>');
+			// }
+			?>
+		</section>
+
+
 			<!-- **********///////////////// Archive Section ///////////////********** -->
 
 			<section class="archive">
@@ -64,7 +96,7 @@ get_header(); ?>
 			</section>
 
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
-			<section class="newsLetter">
+			<section id="newsletter" class="newsLetter">
 					<h1>NewsLetter</h1>
 					<p>exciting time of the year! </p>
 					<?php echo '<h3>'.CFS()->get( 'date' ).'</h3>'; ?>

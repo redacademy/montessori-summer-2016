@@ -566,7 +566,7 @@ div .menu-primary-menu-container {
       height: 8rem;
       padding: 0 15px; } }
 
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
   .menu-primary-menu-container {
     display: inline-block; }
     .menu-primary-menu-container ul li {
@@ -582,31 +582,6 @@ div .menu-primary-menu-container {
         padding: 15px 0;
         margin: 0 5px; } }
 
-div .secondary {
-  text-align: right;
-  max-width: 100%;
-  max-height: 100%;
-  font-family: "PT Sans";
-  text-align: right;
-  padding-right: 2rem;
-  margin-top: 20px;
-  background-color: #248E6A; }
-  @media (min-width: 48rem) {
-    div .secondary {
-      white-space: normal;
-      overflow: hidden;
-      padding: 5px 20 10px 10;
-      width: 100%; } }
-  div .secondary .active {
-    background-color: #4FC8A1; }
-  div .secondary li {
-    display: inline-block;
-    padding: 10px; }
-    div .secondary li a {
-      font-size: 1.3rem;
-      text-decoration: none;
-      color: white; }
-
 .responsive-menu-button {
   margin-top: 0.5rem !important; }
 
@@ -620,7 +595,7 @@ div .secondary {
   margin: 10px 0 20px 30px;
   width: 14rem;
   height: 7rem; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .montessori-logo {
       margin: 0;
       padding: 30px 0 30px 10px;
@@ -646,7 +621,7 @@ div .secondary {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .main-menu-wrapper {
       white-space: nowrap;
       overflow: hidden; } }
@@ -666,6 +641,31 @@ div .secondary {
 .home .site-header {
   position: absolute; }
 
+div .secondary {
+  text-align: right;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "PT Sans";
+  text-align: right;
+  padding-right: 2rem;
+  margin-top: 20px;
+  background-color: #248E6A; }
+  @media (min-width: 60rem) {
+    div .secondary {
+      white-space: normal;
+      overflow: hidden;
+      padding: 5px 20 10px 10;
+      width: 100%; } }
+  div .secondary .active {
+    background-color: #4FC8A1; }
+  div .secondary li {
+    display: inline-block;
+    padding: 10px; }
+    div .secondary li a {
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: white; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -684,7 +684,7 @@ div .secondary {
   height: 150px;
   background-color: #125A50;
   color: #fff; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .site-footer {
       width: 100%; } }
 
@@ -766,13 +766,13 @@ div .secondary {
       width: 480px;
       height: 585px;
       background-color: rgba(0, 0, 0, 0.74); }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .site-main .home .home-wrapper {
           width: 35%;
           height: 555px;
           background-color: rgba(0, 0, 0, 0.74);
           position: relative; } }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .site-main .home .home-wrapper .home-img {
           background-color: rgba(0, 0, 0, 0.74);
           width: 1264px;
@@ -791,7 +791,7 @@ div .secondary {
         width: 119.23px;
         height: 74px;
         border-bottom: 4px solid #fff; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .site-main .home .home-wrapper h2 {
             font-size: 46px;
             padding-top: 70px;
@@ -803,7 +803,7 @@ div .secondary {
         line-height: 40px;
         color: #fff;
         margin: 30px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .site-main .home .home-wrapper p {
             width: 447px;
             height: 230px;
@@ -821,7 +821,7 @@ div .secondary {
         font-weight: 300;
         text-shadow: none;
         letter-spacing: 0.8px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .site-main .home .home-wrapper .red-btn {
             padding: 10px;
             font-size: 24px;
@@ -837,7 +837,7 @@ div .secondary {
     font-size: 36px;
     line-height: 42px;
     color: #000000; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .site-main .link-title h2 {
         margin: 15px;
         padding: 21px 24px;
@@ -845,7 +845,7 @@ div .secondary {
         font-family: 'Asap'; } }
   .site-main .links-wrapper {
     width: 480px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .site-main .links-wrapper {
         -ms-flex-direction: row;
             flex-direction: row;
@@ -860,7 +860,7 @@ div .secondary {
       line-height: 40px;
       color: #000000;
       margin: 40px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .site-main .links-wrapper p {
           padding: 30px 40px;
           margin: 15px 40px; } }
@@ -878,7 +878,7 @@ div .secondary {
       font-weight: 300;
       text-shadow: none;
       letter-spacing: 0.8px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .site-main .links-wrapper .benifits .green-btn {
           display: block;
           width: 319px;
@@ -898,7 +898,7 @@ div .secondary {
       font-weight: 300;
       text-shadow: none;
       letter-spacing: 0.8px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .site-main .links-wrapper .nw-program-page .green-btn {
           display: block;
           width: 319px;
@@ -915,7 +915,7 @@ div .secondary {
       font-weight: 300;
       text-shadow: none;
       letter-spacing: 0.8px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .site-main .links-wrapper .involved .red-btn {
           display: block;
           width: 319px;
@@ -935,7 +935,7 @@ div .secondary {
         line-height: 42px;
         color: #000;
         margin: 35px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .site-main .support-wrapper .information h2 {
             width: 852px;
             height: 55px;
@@ -945,6 +945,7 @@ div .secondary {
             margin: 0;
             box-sizing: border-box;
             width: 1283px; } }
+<<<<<<< HEAD
       .site-main .support-wrapper .information .support-img-wrapper {
         text-align: center; }
         @media (min-width: 48rem) {
@@ -965,6 +966,28 @@ div .secondary {
             margin: 45px; }
       .site-main .support-wrapper .information blockquote {
         border-left: 8px solid red; }
+=======
+      .site-main .support-wrapper .information img {
+        width: 287px;
+        height: 470px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information img {
+            float: right;
+            position: absolute;
+            right: 35px; } }
+        .site-main .support-wrapper .information img p {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          line-height: 46px;
+          color: #000;
+          margin: 45px; }
+          @media (min-width: 60rem) {
+            .site-main .support-wrapper .information img p {
+              float: right;
+              position: absolute;
+              right: 35px; } }
+>>>>>>> c9ad4ec6aee2415b4e21184183c1d114783d8ea5
       .site-main .support-wrapper .information p {
         width: 377px;
         font-family: "Noto Sans";
@@ -972,7 +995,7 @@ div .secondary {
         line-height: 46px;
         color: #000;
         margin: 40px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .site-main .support-wrapper .information p {
             width: 852px;
             font-family: "Noto Sans";
@@ -1091,7 +1114,7 @@ body {
 .page .contact_info {
   width: 100%;
   margin: 20px; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .page .contact_info {
       margin-left: auto;
       margin-right: auto;
@@ -1105,7 +1128,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #000000; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .page h2 {
       width: 1295px;
       height: 55px;
@@ -1120,7 +1143,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .page h3 {
       width: 1295px;
       height: 55px;
@@ -1135,7 +1158,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #000000; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .wpcf7 .wpcf7-form p label {
       width: 76px;
       height: 40px;
@@ -1156,7 +1179,7 @@ body {
         height: 67px;
         background-color: #4FC8A1 !important;
         border-radius: 6px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
           width: 450px !important;
           height: 50px; } }
@@ -1169,15 +1192,36 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-body p, li {
+body p,
+li {
   font-size: 1.3rem; }
 
+.history-content {
+  width: 100%;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+
+.history-title {
+  margin-bottom: 0px;
+  -ms-flex: 0 70%;
+      flex: 0 70%; }
+
 .main-history {
-  margin: 0 auto; }
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .main-history .history-img {
     float: left;
     width: 190px;
     height: 219px; }
+    @media (min-width: 60rem) {
+      .main-history .history-img {
+        width: 350px;
+        height: auto;
+        padding-bottom: 40px; } }
     .main-history .history-img img {
       width: 100%;
       height: 100%; }
@@ -1185,6 +1229,9 @@ body p, li {
     padding-top: 4px;
     text-align: left;
     display: block; }
+    @media (min-width: 60rem) {
+      .main-history p {
+        font-size: 1.5rem; } }
 
 .main-philosophy {
   margin: 100px auto;
@@ -1199,7 +1246,7 @@ body p, li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .main-philosophy {
       max-width: 950px;
       height: 640px; } }
@@ -1225,18 +1272,18 @@ body p, li {
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .main-philosophy .philosophy-grid {
         width: 300px;
         height: 300px;
         background-color: #AFF1D3;
-        -webkit-transition: 1.9s;
+        -webkit-transition: 3s;
         -webkit-transform-style: preserve-3d;
-        -moz-transition: 1.9s;
+        -moz-transition: 2s;
         -moz-transform-style: preserve-3d;
-        -o-transition: 1.9s;
+        -o-transition: 3s;
         -o-transform-style: preserve-3d;
-        transition: 1s;
+        transition: 3s;
         transform-style: preserve-3d; }
         .main-philosophy .philosophy-grid:hover {
           -webkit-backface-visibility: hidden;
@@ -1251,7 +1298,7 @@ body p, li {
       position: relative;
       width: 100%;
       height: 200px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid .philosophy-img {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden; } }
@@ -1261,12 +1308,14 @@ body p, li {
         right: 63px;
         width: 70px;
         height: 70px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .main-philosophy .philosophy-grid .philosophy-img img {
-            left: 78px;
-            top: 10px;
-            width: 137px;
-            height: 120px; } }
+            left: 56px;
+            top: 9px;
+            width: 175px;
+            height: 135px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; } }
     .main-philosophy .philosophy-grid h2 {
       z-index: 1;
       text-align: center;
@@ -1283,11 +1332,15 @@ body p, li {
       bottom: -18px;
       line-height: 1.2;
       position: absolute; }
-      @media (min-width: 48rem) {
-        .main-philosophy .philosophy-grid h2 {
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid h2 .show {
           font-size: 1.4rem;
           -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; } }
+          backface-visibility: hidden; }
+        .main-philosophy .philosophy-grid h2:hover {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: rotateY(180deg); } }
     .main-philosophy .philosophy-grid p {
       text-align: left;
       display: inline-block;
@@ -1297,7 +1350,7 @@ body p, li {
       overflow-y: scroll;
       font-size: 1.3rem;
       left: 0;
-      z-index: 1000000;
+      z-index: 1000;
       height: 300px;
       width: 300px;
       border-radius: 10px;
@@ -1306,7 +1359,7 @@ body p, li {
       overflow: hidden;
       padding: 5px;
       visibility: hidden; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid p {
           overflow: scroll;
           font-size: 1.2rem;
@@ -1317,7 +1370,31 @@ body p, li {
           transform: rotateY(180deg); } }
 
 .benefits li {
-  list-style-type: circle; }
+  list-style-type: disc; }
+
+.first-benefits-section {
+  width: 80%;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .first-benefits-section .benefits-img {
+    width: 190px;
+    height: 219px; }
+    @media (min-width: 60rem) {
+      .first-benefits-section .benefits-img {
+        width: 350px;
+        height: auto;
+        padding-bottom: 40px; } }
+  .first-benefits-section p {
+    padding-top: 4px;
+    text-align: left;
+    display: block; }
+    @media (min-width: 60rem) {
+      .first-benefits-section p {
+        font-size: 1.5rem; } }
 
 /*Start Resources Section  */
 .green-btn {
@@ -1331,11 +1408,10 @@ body p, li {
   color: #fff;
   padding: 12px 39px;
   text-shadow: none;
-  letter-spacing: .8px;
-  display: block; }
-  @media (min-width: 48rem) {
+  letter-spacing: 0.8px;
+  display: inline-block; }
+  @media (min-width: 60rem) {
     .green-btn {
-      display: block;
       width: 331px;
       height: 65px;
       font-size: 16px; } }
@@ -1374,19 +1450,13 @@ body p, li {
     padding: 0.625rem;
     display: none; }
 
-.left-red-border {
-  width: 80%;
-  height: 90px;
-  overflow: visible;
-  border-left: 7px solid #D93B57;
-  padding-left: 20px;
-  padding-right: 10px; }
-
-.red-border-container {
-  width: 37.5rem;
-  padding: 10px;
-  height: auto;
-  margin-bottom: 70px; }
+.about-school {
+  margin: 0px; }
+  .about-school .red-border-container {
+    width: 37.5rem;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 70px; }
 
 site-main .involved-wrapper {
   width: 480px;
@@ -1469,7 +1539,8 @@ site-main .a green-btn {
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  background-color: grey; }
   .nw-program-wrapper h1 {
     font-family: "Asap";
     font-size: 2.5rem;
@@ -1478,22 +1549,86 @@ site-main .a green-btn {
     text-align: left;
     color: #000000; }
 
-.enroll {
-  margin: 2px; }
-  .enroll .enroll-block {
-    width: 60%;
+.nw-program {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .nw-program .why-nw {
+    display: inline-block; }
+    .nw-program .why-nw .nw-img {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      margin-bottom: 50px; }
+
+.funding {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .funding .funding-img, .funding .money-spend-img {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .funding .funding-img img, .funding .money-spend-img img {
+      width: 95%;
+      height: 95%;
+      margin-right: 2px; }
+  .funding .funding-btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .funding .funding-btn .green-btn {
+      padding: 10px;
+      width: 44.666%;
+      margin-right: 2px; }
+
+.school-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .school-list .school-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .school-list .school-img img {
+      width: 80%;
+      height: 80%; }
+    .school-list .school-img .address .phone {
+      font-weight: bolder; }
+
+.preschools-list {
+  padding: 1px; }
+  .preschools-list .target {
+    margin: 0 auto; }
+
+.enroll {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .enroll .enroll-block {
+    max-width: 70%;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 10px auto;
+    margin: 40px auto;
     -ms-flex-direction: column;
         flex-direction: column; }
+    .enroll .enroll-block .enroll-img {
+      margin-bottom: 50px; }
     .enroll .enroll-block .green-btn {
       height: 47px;
-      padding: 17px 20px;
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
       background-color: #4FC8A1;
       border-radius: 6px;
       font-family: "Noto Sans";
@@ -1505,66 +1640,91 @@ site-main .a green-btn {
       text-shadow: none;
       letter-spacing: 0.8px; }
 
-.teacher-grid .flip-container {
+.teacher-list {
+  padding: 2px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -ms-flexbox;
-  display: flex;
-  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-  background: #aff1d3;
-  border-radius: 50%; }
+  display: flex; }
+  .teacher-list .teacher-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .teacher-list .flip-container {
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+    background: #aff1d3;
+    border-radius: 50%; }
+    .teacher-list .flip-container .flipper {
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      width: 50%;
+      position: relative;
+      -webkit-transition: 1.9s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1.9s;
+      -moz-transform-style: preserve-3d;
+      transition: 1.9s;
+      transform-style: preserve-3d; }
+      .teacher-list .flip-container .flipper p {
+        font-size: 50%;
+        line-height: 30px; }
+    .teacher-list .flip-container .front {
+      position: absolute;
+      background-size: cover;
+      border-radius: 50%;
+      -ms-flex: 2;
+          flex: 2; }
+      .teacher-list .flip-container .front img {
+        border-radius: 50%; }
+    .teacher-list .flip-container .back {
+      border-radius: 50%;
+      position: absolute;
+      width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 125px;
+      text-align: center;
+      right: 3px;
+      transform: rotateY(180deg); }
+  .teacher-list .flip-container.hover .flipper,
+  .teacher-list .flip-container:hover .flipper {
+    transform: rotateY(180deg); }
+  .teacher-list .back,
+  .teacher-list .flip-container,
+  .teacher-list .front {
+    width: 125px;
+    height: 125px; }
+  .teacher-list .back,
+  .teacher-list .front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .teacher-list .teacher_det {
+    text-align: center; }
+    .teacher-list .teacher_det p {
+      font-size: 50%; }
 
-.teacher-grid .flip-container:hover .flipper,
-.teacher-grid .flip-container.hover .flipper {
-  transform: rotateY(180deg); }
-
-.teacher-grid .flip-container, .teacher-grid .front, .teacher-grid .back {
-  width: 125px;
-  height: 125px; }
-
-.teacher-grid .flipper {
-  -ms-flex: 1 0 auto;
-      flex: 1 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  position: relative;
-  -webkit-transition: 1.9s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transition: 1.9s;
-  -moz-transform-style: preserve-3d;
-  transition: 1.9s;
-  transform-style: preserve-3d; }
-
-.teacher-grid .front, .teacher-grid .back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.teacher-grid .front {
-  position: absolute;
-  background-size: cover;
-  border-radius: 50%;
-  -ms-flex: 2;
-      flex: 2; }
-
-.teacher-grid .back {
-  transform: rotateY(180deg); }
-
-.teacher-grid .back {
-  border-radius: 50%;
-  position: absolute;
-  width: 125px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 125px;
-  text-align: center;
-  right: 3px; }
-
-.teacher-grid .teacher_det {
-  text-align: center; }
-  .teacher-grid .teacher_det p {
-    font-size: 50%; }
+.red-border-container {
+  width: 95%;
+  height: 160px;
+  display: inline-block;
+  margin-bottom: 100px;
+  margin-left: 7.5%;
+  padding-right: 9.4%;
+  padding-left: 15px;
+  border-left: 7px solid #D93B57;
+  overflow: visible; }
+  .red-border-container p {
+    margin: 0 auto; }
 
 .red-border-q {
-  width: 87%;
+  width: 65%;
   top: 10px;
   margin: 0 30px;
   padding-left: 25px;
@@ -1585,8 +1745,8 @@ site-main .a green-btn {
   border-left: solid 8px #D93B57; }
 
 .mob-container {
+  transition: all .5s ease-out .5s;
   overflow-x: hidden;
-  max-width: 37.5rem;
   margin: 0px auto; }
 
 .content-wrapper {

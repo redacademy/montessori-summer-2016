@@ -2,16 +2,32 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
-body p,li{
-  font-size: $font_body_size_mob;
-}
-.main-history {
-    margin: 0 auto;
 
+body p,
+li {
+    font-size: $font_body_size_mob;
+}
+
+.history-content{
+  width:100%;
+  flex-wrap:wrap-reverse;
+}
+.history-title{
+  margin-bottom: 0px;
+  flex:0 70%;
+}
+
+.main-history {
+@include flex(flex-end,space-between);
     .history-img {
         float: left;
         width: 190px;
         height: 219px;
+        @include desktop {
+            width: 350px;
+            height: auto;
+            padding-bottom: 40px;
+        };
 
         img {
             width: 100%;
@@ -23,9 +39,13 @@ body p,li{
         padding-top: 4px;
         text-align: left;
         display: block;
+        @include desktop {
+            font-size: 1.5rem;
+        };
     }
 }
 ////************philosophy Section ************/////
+
 .main-philosophy {
     margin: 100px auto;
     max-width: 90%;
@@ -41,6 +61,7 @@ body p,li{
     div {
         width: 100%;
     }
+
 
     .philosophy-grid {
         display: -ms-flexbox;
@@ -63,13 +84,13 @@ body p,li{
             width: 300px;
             height: 300px;
             background-color: #AFF1D3;
-            -webkit-transition: 1.9s;
+            -webkit-transition: 3s;
             -webkit-transform-style: preserve-3d;
-            -moz-transition: 1.9s;
+            -moz-transition: 2s;
             -moz-transform-style: preserve-3d;
-            -o-transition: 1.9s;
+            -o-transition: 3s;
             -o-transform-style: preserve-3d;
-            transition: 1s;
+            transition: 3s;
             transform-style: preserve-3d;
 
             &:hover {
@@ -107,10 +128,14 @@ body p,li{
                 width: 70px;
                 height: 70px;
                 @include desktop {
-                    left: 78px;
-                    top: 10px;
-                    width: 137px;
-                    height: 120px;
+                    left: 56px;
+                    top: 9px;
+                    width: 175px;
+                    height: 135px;
+                    -webkit-backface-visibility: hidden;
+                    -moz-backface-visibility: hidden;
+                    -o-backface-visibility: hidden;
+                    backface-visibility: hidden;
                 }
             }
         }
@@ -130,11 +155,24 @@ body p,li{
             bottom: -18px;
             line-height: 1.2;
             @include desktop {
-                font-size: 1.4rem;
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
+                .show {
+                    font-size: 1.4rem;
+                    -webkit-backface-visibility: hidden;
+                    -moz-backface-visibility: hidden;
+                    -o-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+
+                &:hover {
+                    -webkit-backface-visibility: hidden;
+                    -moz-backface-visibility: hidden;
+                    -o-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -webkit-transform: rotateY(180deg);
+                    -moz-transform: rotateY(180deg);
+                    -o-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+                }
             }
             position: absolute;
         }
@@ -148,7 +186,7 @@ body p,li{
             overflow-y: scroll;
             font-size: 1.3rem;
             left: 0;
-            z-index: 1000000;
+            z-index: 1000;
             height: 300px;
             width: 300px;
             border-radius: 10px;
@@ -174,31 +212,59 @@ body p,li{
         }
     }
 }
-//////************Start philosophy Section ************//////
-//////************End philosophy Section ************//////
+////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 ////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
 .benefits li {
-    list-style-type: circle;
+    list-style-type: disc;
 }
+.first-benefits-section{
+  width: 80%;
+  @include flex(flex-end,space-between);
+      .benefits-img {
+          width: 190px;
+          height: 219px;
+          @include desktop {
+              width: 350px;
+              height: auto;
+              padding-bottom: 40px;
+          };
+
+
+}
+.benefits-title{
+}
+
+
+
+    p {
+        padding-top: 4px;
+        text-align: left;
+        display: block;
+        @include desktop {
+            font-size: 1.5rem;
+        };
+    }
+}
+
+
+
 /*Start Resources Section  */
 .green-btn {
-  background-color: #4fc8a1;
-  border-radius: 6px;
-  font-family: Noto Sans;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 28px;
-  color: #fff;
-  padding: 12px 39px;
-  text-shadow: none;
-  letter-spacing: .8px;
-  display: block;
-
+    background-color: #4fc8a1;
+    border-radius: 6px;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    padding: 12px 39px;
+    text-shadow: none;
+    letter-spacing: 0.8px;
+    display: inline-block;
     @include desktop {
-        display: block;
         width: 331px;
         height: 65px;
         font-size: 16px;

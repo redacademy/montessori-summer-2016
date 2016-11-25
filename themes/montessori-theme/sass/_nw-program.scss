@@ -7,6 +7,7 @@
 	box-sizing: border-box;
 }
 // @media screen and (max-width: 480px) {
+
 .nw-program-wrapper {
 	max-width: $mobile_width;
 	height: auto;
@@ -14,6 +15,7 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
+	background-color: grey;
 
 	h1 {
 		font-family: $font_title;
@@ -24,168 +26,194 @@
 		color: $black;
 	}
 }
-//Enrollment Section
-.enroll{
-	margin: 2px;
+// Section Why NW Program Section
 
-
-.enroll-block{
-	width: 60%;
+.nw-program {
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin: 10px auto;
 	flex-direction: column;
-	.green-btn {
-		height: 47px;
-		padding: 17px 20px;
-		background-color: #4FC8A1;
-		border-radius: 6px;
-		font-family: "Noto Sans";
-		font-size: 15px;
-		font-weight: bold;
-		text-align: center;
-		line-height: 30px;
-		color: #fff;
-		text-shadow: none;
-		letter-spacing: 0.8px;
-	}
 
+	.why-nw {
+		display: inline-block;
+
+		.nw-img {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+	}
 }
+// Funding Section
+
+.funding {
+	display: flex;
+	flex-direction: column;
+
+	.funding-img,.money-spend-img {
+		display: flex;
+		justify-content: center;
+		img{
+			width: 95%;
+			height: 95%;
+			margin-right: 2px;
+		}
+	}
+	.funding-btn {
+		display: flex;
+		justify-content: center;
+		.green-btn{
+			padding: 10px;
+			width: 44.666%;
+			margin-right: 2px;
+		}
+	}
+}
+//School List Section
+.school-list{
+	display: flex;
+	flex-direction: column;
+	    .school-img{
+				display: flex;
+				justify-content: center;
+				img{
+				width:80%;
+				height:80%;
+
+		    }
+			 .address	.phone {
+				font-weight: bolder;
+			}
+   	}
+}
+
+//Preschools List Section
+
+.preschools-list {
+	padding: 1px;
+
+	.target {
+		margin: 0 auto;
+	}
+}
+//Enrollment Section
+.enroll {
+display: flex;
+flex-direction: column;
+	.enroll-block {
+		max-width: 70%;
+		display: flex;
+		justify-content: space-around;
+		margin: 40px auto;
+		flex-direction: column;
+		.enroll-img {
+			margin-bottom: 50px;
+		}
+		.green-btn {
+			height: 47px;
+			display: inline-block;
+			box-sizing: border-box;
+			text-align: center;
+			background-color: #4FC8A1;
+			border-radius: 6px;
+			font-family: "Noto Sans";
+			font-size: 15px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 30px;
+			color: #fff;
+			text-shadow: none;
+			letter-spacing: 0.8px;
+		}
+	}
 }
 //teacher list Section
-.teacher-grid{
+
+.teacher-list {
+	padding: 2px;
+	flex-wrap: wrap;
+	display: flex;
+
+	.teacher-grid {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
 	.flip-container {
-	display: flex;
- 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
-   background: #aff1d3;
-   border-radius:50%;
+		display: flex;
+		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+		background: #aff1d3;
+		border-radius: 50%;
 
- }
+		.flipper {
+			flex: 1 0 auto;
+			display: flex;
+			width: 50%;
+			position: relative;
+			-webkit-transition: 1.9s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transition: 1.9s;
+			-moz-transform-style: preserve-3d;
+			transition: 1.9s;
+			transform-style: preserve-3d;
 
- 	.flip-container:hover .flipper,
-   .flip-container.hover .flipper {
- 		-webkit-transform: rotateY(180deg);
- 		-moz-transform: rotateY(180deg);
- 		transform: rotateY(180deg);
- 	}
+			p {
+				font-size: 50%;
+				line-height: 30px;
+			}
+		}
 
- .flip-container, .front, .back {
- 	width: 125px;
- 	height: 125px;
- }
+		.front {
+			position: absolute;
+			background-size: cover;
+			border-radius: 50%;
+			flex: 2;
 
- .flipper {
- 	flex: 1 0 auto;
- 	display: flex;
+			img {
+				border-radius: 50%;
+			}
+		}
 
- 	 width: 50%;
-   position: relative;
- 	-webkit-transition: 1.9s;
- 	-webkit-transform-style: preserve-3d;
+		.back {
+			border-radius: 50%;
+			position: absolute;
+			width: 125px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 125px;
+			text-align: center;
+			right: 3px;
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
 
- 	-moz-transition: 1.9s;
- 	-moz-transform-style: preserve-3d;
+	.flip-container.hover .flipper,
+	.flip-container:hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
 
- 	transition: 1.9s;
- 	transform-style: preserve-3d;
+	.back,
+	.flip-container,
+	.front {
+		width: 125px;
+		height: 125px;
+	}
 
- }
+	.back,
+	.front {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
 
- .front, .back {
- 	-webkit-backface-visibility: hidden;
- 	-moz-backface-visibility: hidden;
- 	backface-visibility: hidden;
+	.teacher_det {
+		text-align: center;
 
- }
-
- .front {
- 	position: absolute;
-   background-size:cover;
-   border-radius:50%;
-	 flex: 2;
-
- }
-
-
- .back {
- 	-webkit-transform: rotateY(180deg);
- 	-moz-transform: rotateY(180deg);
- 	transform: rotateY(180deg);
-
- }
-
- .back {
- 		border-radius: 50%;
- 		position: absolute;
- 		width: 125px;
- 		overflow: hidden;
- 		text-overflow: ellipsis;
- 		height: 125px;
- 		text-align: center;
-   right:3px;
- }
-.teacher_det{
- 		 text-align: center;
-
- 	 	p{
- 	 		font-size: 50%;
- 	 	}
- }
-
- }
-
-//Enrollment Section
-
-
-
-// .teacher-grid{
-// 	// @include flex(center,space-around);
-// 	// flex-wrap: wrap;
-// display: flex;
-//
-// 	// position: relative;
-//
-// .switch {
-// 	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
-// 	border-radius: 50%;
-// 	width: 125px;
-// 	height: 125px;
-//
-//
-//
-//
-// 	.teacher-img {
-// 		background-size: cover;
-// 		position: relative;
-// 		border-radius: 50%;
-// 		width: 125px;
-// 		height: 125px;
-// 		background: #aff1d3;
-// 		flex: 2 0 50%;
-//
-// 	}
-//
-// 	p {
-		// border-radius: 50%;
-		// top: 60px;
-		// position: absolute;
-		// width: 125px;
-		// overflow: hidden;
-		// text-overflow: ellipsis;
-		// height: 125px;
-		// text-align: center;
-// 		display: none;
-// 	}
-//
-//
-//    }
-// 	 .teacher_name{
-// 		 text-align: center;
-//
-// 	 	p{
-// 	 		font-size: 50%;
-// 	 	}
-// }
-// }
+		p {
+			font-size: 50%;
+		}
+	}
+}
