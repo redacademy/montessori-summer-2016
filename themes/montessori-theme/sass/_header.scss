@@ -67,11 +67,11 @@ div .menu-primary-menu-container {
 }
 div .secondary {
 	text-align: right;
-	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	font-family: $font_footer_header;
-	max-height: 100px;
 	@include desktop {
-		white-space: nowrap;
+		white-space:normal;
 		overflow: hidden;
 		padding: 5px 20 10px 10;
 		width: 100%;

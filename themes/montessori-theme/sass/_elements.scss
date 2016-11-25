@@ -1,5 +1,9 @@
 
-
+.content-wrapper{
+	max-width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+}
 html {
 	box-sizing: border-box;
   font-family: $font_main;

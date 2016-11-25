@@ -12,7 +12,7 @@
 
 <!-- Our History Section  -->
           <section id="history" class="history-section mob-container">
-  <div class="main-history ">
+  <div class="main-history content-wrapper">
 
 <div class="history-title" >
          <h1><?php
@@ -39,7 +39,7 @@
 
 <section id="philosophy" class="philosophys-section ">
 
- 
+
  <div class="main-philosophy ">
  <div class=""><h1>Philosophy</h1></div>
 
@@ -62,9 +62,9 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 <!-- Start our Benefits -->
 
 <section id="benefits-of-montessori" class="benefits-section mob-container">
-
+<div class="main-benefits content-wrapper">
      <h1>Benefits of Montessori</h1>
-      <div class="main-benefits mob-container">
+
   <div class= "benefits-img" >
   <?php output_image('benefits_img'); ?>
 </div>
@@ -75,7 +75,7 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
                 echo $benefit; };
             ?>
  </div>
-</div>
+
 <!--  here is the meta data of the benefits section -->
 <ul>
 <?php $fields = CFS()->get( 'benefits_details' );?>
@@ -87,6 +87,7 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 ?>
  </div>
  </ul>
+ </div>
 </section>
 
 
@@ -97,7 +98,7 @@ $src = wp_get_attachment_image_src($field['philosophy_img'], 'small');?>
 
 <section id="materials" class="materials-section mob-container">
 
-  <div class="main-materials">
+  <div class="main-materials content-wrapper">
 
 <?php $fields = CFS()->get( 'materials' );?>
 <?php foreach ( $fields as $field )  { ?>
@@ -114,7 +115,7 @@ echo '<img src="'.$src[0].'" />'; ?>
 </section>
 <!-- Resources Section  -->
 <section id= "resources" class="container mob-container">
-  <div class="main-resources ">
+  <div class="main-resources content-wrapper">
 <div class="title-resources">
               <h1 id="resources" >Resources</h1>
 

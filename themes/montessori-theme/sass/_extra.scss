@@ -26,6 +26,13 @@ margin: 0;
   overflow-x: hidden;
   max-width:$mobile_width;
   margin: 0px auto;
+
+
+}
+.content-wrapper{
+ border-bottom: solid 3px $color_btn_green;
+	max-width: 90%;
+	margin: 0 auto;
+	overflow: auto;
   padding: 40px 0;
-  border-bottom: solid 2px $color_btn_green;
 }
