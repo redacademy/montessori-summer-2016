@@ -751,22 +751,22 @@ div .secondary {
   color: #248E6A; }
 
 .site-main .home-wrapper {
-  width: 480px;
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
   @media (min-width: 60rem) {
     .site-main .home-wrapper {
-      width: 541.64px;
       height: 555px;
       background-color: rgba(0, 0, 0, 0.74);
       position: relative; } }
   @media (min-width: 60rem) {
     .site-main .home-wrapper .home-img {
       background-color: rgba(0, 0, 0, 0.74);
-      width: 1264px;
+      width: 100%;
       height: 555px;
       z-index: -1;
       position: absolute; } }
+  .site-main .home-wrapper .home-img img {
+    width: 100%; }
   .site-main .home-wrapper h2 {
     font-family: 'Asap';
     font-size: 36px;
@@ -913,103 +913,98 @@ div .secondary {
         font-size: 26px;
         padding: 6px 85px; } }
 
-.support-wrapper {
-  width: 480px;
-  height: auto; }
-  .support-wrapper .information {
-    height: auto; }
-    .support-wrapper .information h2 {
-      border-top: 2px solid #2EB688;
-      width: 377px;
-      height: 42px;
-      font-family: 'Asap';
-      font-size: 36px;
-      line-height: 42px;
-      color: #000;
-      margin: 35px; }
-      @media (min-width: 60rem) {
-        .support-wrapper .information h2 {
-          width: 852px;
-          height: 55px;
-          font-family: "Asap";
-          font-size: 48px;
-          line-height: 55px;
-          margin: 0;
-          box-sizing: border-box;
-          width: 1283px; } }
-    .support-wrapper .information img {
-      width: 287px;
-      height: 470px; }
-      @media (min-width: 60rem) {
-        .support-wrapper .information img {
-          float: right;
-          position: absolute;
-          right: 35px; } }
-      .support-wrapper .information img p {
-        width: 470px;
-        font-family: "Noto Sans";
-        font-size: 20px;
-        line-height: 46px;
-        color: #000;
-        margin: 45px; }
-        @media (min-width: 60rem) {
-          .support-wrapper .information img p {
-            float: right;
-            position: absolute;
-            right: 35px; } }
-    .support-wrapper .information p {
-      width: 377px;
+.support-wrapper .information {
+  height: auto;
+  position: relative; }
+  .support-wrapper .information h2 {
+    border-top: 2px solid #2EB688;
+    width: 377px;
+    height: 42px;
+    font-family: 'Asap';
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin: 35px; }
+    @media (min-width: 60rem) {
+      .support-wrapper .information h2 {
+        height: 55px;
+        font-family: "Asap";
+        font-size: 48px;
+        line-height: 55px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 1283px; } }
+  .support-wrapper .information img {
+    width: 287px;
+    height: 470px; }
+    @media (min-width: 60rem) {
+      .support-wrapper .information img {
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        position: absolute;
+        right: 35px; } }
+    .support-wrapper .information img p {
       font-family: "Noto Sans";
       font-size: 20px;
       line-height: 46px;
       color: #000;
-      margin: 40px; }
+      margin: 45px; }
       @media (min-width: 60rem) {
-        .support-wrapper .information p {
-          width: 852px;
-          font-family: "Noto Sans";
-          font-size: 22px;
-          line-height: 46px; } }
-      .support-wrapper .information p .info {
-        width: 470px;
+        .support-wrapper .information img p {
+          float: right;
+          position: absolute;
+          right: 35px; } }
+  .support-wrapper .information p {
+    font-family: "Noto Sans";
+    font-size: 20px;
+    line-height: 46px;
+    color: #000;
+    margin: 40px; }
+    @media (min-width: 60rem) {
+      .support-wrapper .information p {
         font-family: "Noto Sans";
-        font-size: 26px;
-        font-weight: bold;
-        line-height: 42px;
-        color: #000; }
-    .support-wrapper .information .red-btn {
-      width: 185px;
-      height: 47px;
-      background-color: #F76072;
-      border-color: #F76072;
-      border-radius: 6px;
-      color: #fff;
-      margin-left: 20px;
-      padding: 8px;
-      box-shadow: none;
+        font-size: 22px;
+        line-height: 46px; } }
+    .support-wrapper .information p .info {
+      width: 470px;
       font-family: "Noto Sans";
-      font-size: 20px;
-      font-weight: 300;
-      text-shadow: none;
-      letter-spacing: 0.8px;
-      text-decoration: none; }
-    .support-wrapper .information .green-btn {
-      background-color: #4FC8A1;
-      border-color: #4FC8A1;
-      border-radius: 6px;
-      font-family: "Noto Sans";
-      font-size: 20px;
+      font-size: 26px;
       font-weight: bold;
-      text-align: center;
-      line-height: 30px;
-      color: #fff;
-      margin-left: 20px;
-      padding: 8px;
-      box-shadow: none;
-      font-weight: 300;
-      text-shadow: none;
-      letter-spacing: 0.8px;
-      text-decoration: none; }
+      line-height: 42px;
+      color: #000; }
+  .support-wrapper .information .red-btn {
+    width: 185px;
+    height: 47px;
+    background-color: #F76072;
+    border-color: #F76072;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 20px;
+    padding: 8px;
+    box-shadow: none;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px;
+    text-decoration: none; }
+  .support-wrapper .information .green-btn {
+    background-color: #4FC8A1;
+    border-color: #4FC8A1;
+    border-radius: 6px;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 20px;
+    padding: 8px;
+    box-shadow: none;
+    font-weight: 300;
+    text-shadow: none;
+    letter-spacing: 0.8px;
+    text-decoration: none; }
 
 .all-features {
   margin-bottom: 30px; }
@@ -1088,14 +1083,85 @@ body {
   background-color: #ffffff; }
 
 /***************************************************/
-body {
-  padding: 0;
-  margin: 0; }
+.page .content-area {
+  width: 100%;
+  margin: 20px; }
+  @media (min-width: 60rem) {
+    .page .content-area {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1120px;
+      padding-top: 50px; } }
+  .page .content-area .site-main {
+    margin: 20px; }
 
-.site-main .entry-content {
-  padding-left: 18px; }
-  .site-main .entry-content h2 {
-    padding: 0; }
+.page h2 {
+  width: 207px;
+  height: 24px;
+  font-family: ".SF NS Display";
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000; }
+  @media (min-width: 60rem) {
+    .page h2 {
+      width: 1295px;
+      height: 55px;
+      font-family: 'Asap';
+      font-size: 48px;
+      line-height: 55px; } }
+
+.page h3 {
+  width: 152px;
+  height: 21px;
+  font-family: ".AppleSystemUIFont";
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000; }
+  @media (min-width: 60rem) {
+    .page h3 {
+      width: 1295px;
+      height: 55px;
+      font-family: 'Asap';
+      font-size: 38px;
+      line-height: 55px; } }
+
+.wpcf7 .wpcf7-form p label {
+  width: 49px;
+  height: 19px;
+  font-family: ".AppleSystemUIFont";
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000; }
+  @media (min-width: 60rem) {
+    .wpcf7 .wpcf7-form p label {
+      width: 76px;
+      height: 40px;
+      font-family: "Noto Sans";
+      font-size: 22px;
+      line-height: 40px; } }
+  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
+    width: 300px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    padding: 10px 0px; }
+    .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
+      width: 300px !important;
+      height: 40px; }
+      .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input input[type=submit] {
+        width: 164px;
+        height: 67px;
+        background-color: #4FC8A1 !important;
+        border-radius: 6px; }
+      @media (min-width: 60rem) {
+        .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
+          width: 450px !important;
+          height: 50px; } }
+      .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
+        width: 300px !important;
+        height: 40px;
+        background-color: #FFFFFF;
+        border-radius: 3px; }
 
 /*--------------------------------------------------------------
 # Montessori

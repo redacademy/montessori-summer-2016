@@ -9,7 +9,7 @@ get_header(); ?>
         <main id="main" class="site-main" role="main">
       <div class="home container">
       <section class="home-wrapper container">
-        <div class="home-img container">
+        <div class="home-img">
           <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
         </div>
 <!-- this is for the welcoming title  -->
@@ -48,7 +48,7 @@ get_header(); ?>
         </div>
 
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">How Money is Spent</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
