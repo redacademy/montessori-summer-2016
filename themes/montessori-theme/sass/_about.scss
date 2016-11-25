@@ -45,10 +45,27 @@
 
 // Members at Large Section
 .members_at_large{
-	display: flex{
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	.members_at_large-grid{
+		display: flex;
+    flex-wrap: wrap;
+		align-items: center;
+		.members_at_large-name{
+       width: 33%;
+		  display: block;;
+
+
+	   	}
+
+		}
 
 	}
-}
+
+
+
+
 
 
 // Meeting Minutes Section

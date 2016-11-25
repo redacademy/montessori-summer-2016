@@ -60,13 +60,16 @@ get_header(); ?>
 			<!-- **********///////////////// Members at Large Section ///////////////********** -->
      <section  class="members_at_large">
 			 <h1>Members at Large</h1>
+			 <div class="members_at_large-grid">
 	  	<?php
 			$fields = CFS()->get( 'members_at_large' );
 
 			foreach ( $fields as $field ) {
-			echo '<div class="">'.'</p>'.$field['members_at_large_name'].'</p>'.'</div>';
+
+			echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'].'</p>'.'</div>';
 			}
 			?>
+		</div>
     </section>
 
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->

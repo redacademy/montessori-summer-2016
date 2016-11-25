@@ -1425,7 +1425,21 @@ li {
 
 .members_at_large {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .members_at_large .members_at_large-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center; }
+    .members_at_large .members_at_large-grid .members_at_large-name {
+      width: 33%;
+      display: block; }
 
 .meeting-minutes {
   display: -ms-flexbox;
