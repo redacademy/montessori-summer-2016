@@ -66,8 +66,8 @@ get_header(); ?>
 						<?php the_post_thumbnail('post->id','small'); ?>
 					</div>
 				 </div> <!-- closes the first div box -->
-				  <span style="">Address:<?php echo CFS()->get('address'); ?></span>
-					<span style="bolder">Phone:<?php echo CFS()->get('phone'); ?></span>
+				  <p ><span style="font-weight:bolder">Address: </span><?php echo CFS()->get('address'); ?></p>
+					<p ><span style="font-weight:bolder">Phone: </span><?php echo CFS()->get('phone'); ?></p>
 				 <?php endwhile; else: ?>
 				 <h1>Sorry, no posts matched your criteria.</h1>
 				 <?php endif; ?>
@@ -125,8 +125,8 @@ get_header(); ?>
 	<?php
   	$fields = CFS()->get( 'list_of_preschools' );
      foreach ( $fields as $field ) {
-       echo '<p>'.'<span class"lstSchool">'.$field['school_name'].'</span>'.'</p>';
-       echo '<p>'.$field['adrees'].'</p>';
+       echo '<p style="color:#248E6A>'.$field['school_name'].'</p>';
+       echo '<span>'.$field['adrees'].'</span>';
         } ?>
 			</div>
   <?php echo '<p>'.CFS()->get( 'abstract' ).'</p>'; ?>
