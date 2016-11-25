@@ -64,11 +64,11 @@
                                 'menu_class'=> 'secondary'
                             ) );
                             ?>
-                          <?php elseif ( is_page_template( 'nw-program.php' ) ):?>
+                          <?php elseif( is_page_template( 'nw-program.php' ) ):?>
                               <?php
                               wp_nav_menu( array(
-                                  'theme_location' => 'nw-program',
-                                  'menu_id' => 'nw-program',
+                                  'theme_location' => 'program',
+                                  'menu_id' => 'program',
                                   'menu_class'=> 'secondary'
                               ) );
                               ?>

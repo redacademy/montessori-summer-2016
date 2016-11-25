@@ -119,7 +119,7 @@ echo '<img src="'.$src[0].'" />'; ?>
               <h1 id="resources" >Resources</h1>
 
 
-<button class="green-btn"> NW Montessori Program</button>
+<button class="green-btn">NW Montessori Program</button>
 </div>
 </div>
 </section>
