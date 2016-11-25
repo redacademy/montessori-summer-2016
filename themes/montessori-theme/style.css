@@ -1381,14 +1381,10 @@ site-main .involved-title green-btn {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .funding .funding-img {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin-bottom: 50px; }
-    .funding .funding-img img {
-      width: 85%; }
+  .funding .funding-img img {
+    width: 90%; }
+  .funding .money-spend-img img {
+    width: 90%; }
   .funding .funding-btn {
     width: 40%;
     display: -ms-flexbox;

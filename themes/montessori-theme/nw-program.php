@@ -40,7 +40,9 @@ get_header(); ?>
 			  </div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
 				<h3 class="nw-program">How is the money spent?</h3>
+				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
+ </div>
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
 				<div class="funding-btn">
 				<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</a>
@@ -128,12 +130,15 @@ get_header(); ?>
 	<p> <?php echo CFS()->get('time-start'); ?> </p>
 
   <h3 >How do I apply?</h3>
-
+<ol>
   <?php $fields = CFS()->get( 'guids' );
-     foreach ( $fields as $field ) {
- echo '<p class="">'.$field['instructions'].'</p>';
-}
-   ?>
+
+     foreach ( $fields as $field ) {?>
+			 <li>
+ <?php echo '<p class="">'.$field['instructions'].'</p>';
+} ?>
+</li>
+</ol>
 	 <div class="enroll-block">
 		 <div class="enroll-img">
 	 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />

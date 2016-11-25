@@ -48,14 +48,13 @@
 .funding {
 	display: flex;
 	flex-direction: column;
-		.funding-img {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
-			img{
-				width: 85%;
-			}
+		.funding-img img{
 
+				width: 90%;
+		}
+
+		.money-spend-img img{
+				width: 90%;
 		}
 		.funding-btn{
 			width: 40%;
