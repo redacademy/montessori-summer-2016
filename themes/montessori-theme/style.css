@@ -566,7 +566,7 @@ div .menu-primary-menu-container {
       height: 8rem;
       padding: 0 15px; } }
 
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
   .menu-primary-menu-container {
     display: inline-block; }
     .menu-primary-menu-container ul li {
@@ -595,7 +595,7 @@ div .menu-primary-menu-container {
   margin: 10px 0 20px 30px;
   width: 14rem;
   height: 7rem; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .montessori-logo {
       margin: 0;
       padding: 30px 0 30px 10px;
@@ -621,7 +621,7 @@ div .menu-primary-menu-container {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .main-menu-wrapper {
       white-space: nowrap;
       overflow: hidden; } }
@@ -650,7 +650,7 @@ div .secondary {
   padding-right: 2rem;
   margin-top: 20px;
   background-color: #248E6A; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     div .secondary {
       white-space: normal;
       overflow: hidden;
@@ -684,7 +684,7 @@ div .secondary {
   height: 150px;
   background-color: #125A50;
   color: #fff; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .site-footer {
       width: 100%; } }
 
@@ -761,13 +761,13 @@ div .secondary {
   width: 480px;
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .site-main .home-wrapper {
       width: 541.64px;
       height: 555px;
       background-color: rgba(0, 0, 0, 0.74);
       position: relative; } }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .site-main .home-wrapper .home-img {
       background-color: rgba(0, 0, 0, 0.74);
       width: 100px;
@@ -786,7 +786,7 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper h2 {
         font-size: 46px;
         padding-top: 70px;
@@ -798,7 +798,7 @@ div .secondary {
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper p {
         width: 447px;
         height: 230px;
@@ -816,7 +816,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .site-main .home-wrapper .red-btn {
         padding: 10px;
         font-size: 24px;
@@ -833,7 +833,7 @@ div .secondary {
   font-size: 36px;
   line-height: 42px;
   color: #000000; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .link-title h2 {
       margin: 15px;
       padding: 21px 24px;
@@ -842,7 +842,7 @@ div .secondary {
 
 .links-wrapper {
   width: 480px; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .links-wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
@@ -857,7 +857,7 @@ div .secondary {
     line-height: 40px;
     color: #000000;
     margin: 40px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .links-wrapper p {
         padding: 30px 40px;
         margin: 15px 40px; } }
@@ -875,7 +875,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .links-wrapper .benifits .green-btn {
         display: block;
         width: 319px;
@@ -895,7 +895,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .links-wrapper .nw-program-page .green-btn {
         display: block;
         width: 319px;
@@ -912,7 +912,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .links-wrapper .involved .red-btn {
         display: block;
         width: 319px;
@@ -934,7 +934,7 @@ div .secondary {
       line-height: 42px;
       color: #000;
       margin: 35px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .support-wrapper .information h2 {
           width: 852px;
           height: 55px;
@@ -947,7 +947,7 @@ div .secondary {
     .support-wrapper .information img {
       width: 287px;
       height: 470px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .support-wrapper .information img {
           float: right;
           position: absolute;
@@ -959,7 +959,7 @@ div .secondary {
         line-height: 46px;
         color: #000;
         margin: 45px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .support-wrapper .information img p {
             float: right;
             position: absolute;
@@ -971,7 +971,7 @@ div .secondary {
       line-height: 46px;
       color: #000;
       margin: 40px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .support-wrapper .information p {
           width: 852px;
           font-family: "Noto Sans";
@@ -1111,12 +1111,32 @@ body p,
 li {
   font-size: 1.3rem; }
 
+.history-content {
+  width: 100%;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse; }
+
+.history-title {
+  margin-bottom: 0px;
+  -ms-flex: 0 70%;
+      flex: 0 70%; }
+
 .main-history {
-  margin: 0 auto; }
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .main-history .history-img {
     float: left;
     width: 190px;
     height: 219px; }
+    @media (min-width: 60rem) {
+      .main-history .history-img {
+        width: 350px;
+        height: auto;
+        padding-bottom: 40px; } }
     .main-history .history-img img {
       width: 100%;
       height: 100%; }
@@ -1124,6 +1144,9 @@ li {
     padding-top: 4px;
     text-align: left;
     display: block; }
+    @media (min-width: 60rem) {
+      .main-history p {
+        font-size: 1.5rem; } }
 
 .main-philosophy {
   margin: 100px auto;
@@ -1138,7 +1161,7 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     .main-philosophy {
       max-width: 950px;
       height: 640px; } }
@@ -1164,7 +1187,7 @@ li {
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative; }
-    @media (min-width: 48rem) {
+    @media (min-width: 60rem) {
       .main-philosophy .philosophy-grid {
         width: 300px;
         height: 300px;
@@ -1190,7 +1213,7 @@ li {
       position: relative;
       width: 100%;
       height: 200px; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid .philosophy-img {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden; } }
@@ -1200,7 +1223,7 @@ li {
         right: 63px;
         width: 70px;
         height: 70px; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .main-philosophy .philosophy-grid .philosophy-img img {
             left: 56px;
             top: 9px;
@@ -1224,15 +1247,15 @@ li {
       bottom: -18px;
       line-height: 1.2;
       position: absolute; }
-      @media (min-width: 48rem) {
-        .main-philosophy .philosophy-grid h2 {
+      @media (min-width: 60rem) {
+        .main-philosophy .philosophy-grid h2 .show {
           font-size: 1.4rem;
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
-          .main-philosophy .philosophy-grid h2:hover {
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            transform: rotateY(180deg); } }
+        .main-philosophy .philosophy-grid h2:hover {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: rotateY(180deg); } }
     .main-philosophy .philosophy-grid p {
       text-align: left;
       display: inline-block;
@@ -1242,7 +1265,7 @@ li {
       overflow-y: scroll;
       font-size: 1.3rem;
       left: 0;
-      z-index: 1000000;
+      z-index: 1000;
       height: 300px;
       width: 300px;
       border-radius: 10px;
@@ -1251,7 +1274,7 @@ li {
       overflow: hidden;
       padding: 5px;
       visibility: hidden; }
-      @media (min-width: 48rem) {
+      @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid p {
           overflow: scroll;
           font-size: 1.2rem;
@@ -1262,7 +1285,7 @@ li {
           transform: rotateY(180deg); } }
 
 .benefits li {
-  list-style-type: circle; }
+  list-style-type: disc; }
 
 /*Start Resources Section  */
 .green-btn {
@@ -1277,10 +1300,9 @@ li {
   padding: 12px 39px;
   text-shadow: none;
   letter-spacing: 0.8px;
-  display: block; }
-  @media (min-width: 48rem) {
+  display: inline-block; }
+  @media (min-width: 60rem) {
     .green-btn {
-      display: block;
       width: 331px;
       height: 65px;
       font-size: 16px; } }
@@ -1509,7 +1531,7 @@ site-main .a green-btn {
     font-size: 50%; }
 
 .red-border-q {
-  width: 87%;
+  width: 65%;
   top: 10px;
   margin: 0 30px;
   padding-left: 25px;
@@ -1532,7 +1554,6 @@ site-main .a green-btn {
 .mob-container {
   transition: all .5s ease-out .5s;
   overflow-x: hidden;
-  max-width: 37.5rem;
   margin: 0px auto; }
 
 .content-wrapper {

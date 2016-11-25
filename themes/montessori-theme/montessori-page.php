@@ -14,7 +14,11 @@ get_header();
           <section id="history" class="history-section mob-container">
   <div class="main-history content-wrapper">
 
-<div class="history-title" >
+            <div class= "history-img" >
+           <?php
+output_image('history_img'); ?>
+          </div>
+          <div class="history-title" >
          <h1><?php
 $history = CFS()->get('history_title');
 
@@ -23,22 +27,17 @@ if (!empty($history))
   echo $history;
   };
 ?></h1>
-            </div>
-            <div class= "history-img" >
-           <?php
-output_image('history_img'); ?>
-          </div>
-            <div class="history-content">
-          <p><?php
+<div class="history-content">
+<p><?php
 $histor = CFS()->get('history_content');
 
 if (!empty($histor))
-  {
-  echo $histor;
-  };
+{
+echo $histor;
+};
 ?></p>
-
- </div>
+</div>
+  </div>
 </div>
     </section>
 
@@ -56,14 +55,14 @@ $fields = CFS()->get('philosophy'); ?>
 foreach($fields as $field)
   { ?>
 <div class="philosophy-grid ">
-<h2 ><?php
-  echo $field['philosophy_title']; ?></h2>
+<h2 ><a href="" onclick="return showImage()";><?php
+  echo $field['philosophy_title']; ?></a></h2>
 <p><?php
   echo $field['philosophy_content']; ?></p>
 <div class= "philosophy-img" >
 <?php
   $src = wp_get_attachment_image_src($field['philosophy_img'], 'medium'); ?>
-<a href="#"> <?php
+<a href="#" onclick="return showImage()"; > <?php
   echo '<img src="' . $src[0] . '" />';
 ?></a>
 </div>

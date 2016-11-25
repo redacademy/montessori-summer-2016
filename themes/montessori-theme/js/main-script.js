@@ -17,10 +17,8 @@ jQuery(document).ready(function( $ ) {
 
 //  SMOOTH SCROL:
 
-// SMOOTH SCROL:
-
 // ----------------------------------------------------------------
-  $(document).ready(function(){
+
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -35,7 +33,7 @@ jQuery(document).ready(function( $ ) {
         }
       });
     });
-  });
+
 
 // --------------------------------------------------------------
 // Add Slide Down to Preschools List:
@@ -45,20 +43,6 @@ jQuery(document).ready(function( $ ) {
 $('.toggle').click(function() {
     $('.target').toggle('slow');
 });
-
-// --------------------------------------------------------------
-// hover class for img
-
-// ----------------------------------------------------------------
-
-// $('.switch').hover(function() {
-//         $(this).find('.teacher-img').hide();
-//         $(this).find('.teacher_vision').show();
-//     }, function() {
-//         $(this).find('teacher_vision').hide();
-//         $(this).find('.teacher-img').show();
-// });
-
 
 
 });

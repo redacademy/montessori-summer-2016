@@ -1,6 +1,6 @@
 /// this framework is for the block quotes to make the red bar left
 .red-border-q{
-  width:87%;
+  width:65%;
 top: 10px;
 margin: 0 30px ;
   padding-left: 25px;
@@ -25,10 +25,8 @@ margin: 0;
 .mob-container{
   transition: all .5s ease-out .5s;
   overflow-x: hidden;
-  max-width:$mobile_width;
+  // min-width:$desktop-width;
   margin: 0px auto;
-
-
 }
 .content-wrapper{
  border-bottom: solid 3px $color_btn_green;
