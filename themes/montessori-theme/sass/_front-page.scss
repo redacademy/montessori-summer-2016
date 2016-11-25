@@ -1,4 +1,4 @@
-//front page
+/////*****front page****/////
 
 // media screen for mobile (max-width: 480px)
 .site-main {
@@ -16,7 +16,7 @@
         .home-img{
           @include desktop{
             background-color: rgba(0,0,0,0.74);
-            width: 100%;
+            width: 100px;
             height: 555px;
             z-index: -1;
             position: absolute;

@@ -274,6 +274,11 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.content-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: auto; }
+
 html {
   box-sizing: border-box;
   font-family: "Noto Sans";
@@ -289,8 +294,10 @@ body {
   background: #fff;
   font-family: "Noto Sans";
   box-sizing: border-box;
-  line-height: 2;
+  line-height: 2rem;
   margin: 0 auto; }
+  body p, body li {
+    line-height: 2rem; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -546,20 +553,20 @@ div .menu-primary-menu-container {
   width: 100%;
   background-color: #fff;
   font-family: "PT Sans";
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
   height: 5rem; }
-  @media (min-width: 48rem) {
+  @media (min-width: 37.5rem) {
     .main-navigation-container {
       display: inline-block;
       height: 8rem;
       padding: 0 15px; } }
 
-@media (min-width: 60rem) {
+@media (min-width: 48rem) {
   .menu-primary-menu-container {
     display: inline-block; }
     .menu-primary-menu-container ul li {
@@ -577,16 +584,16 @@ div .menu-primary-menu-container {
 
 div .secondary {
   text-align: right;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   font-family: "PT Sans";
-  max-height: 100px;
   text-align: right;
   padding-right: 2rem;
   margin-top: 20px;
   background-color: #248E6A; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     div .secondary {
-      white-space: nowrap;
+      white-space: normal;
       overflow: hidden;
       padding: 5px 20 10px 10;
       width: 100%; } }
@@ -596,7 +603,7 @@ div .secondary {
     display: inline-block;
     padding: 10px; }
     div .secondary li a {
-      font-size: 2;
+      font-size: 1.3rem;
       text-decoration: none;
       color: white; }
 
@@ -613,7 +620,7 @@ div .secondary {
   margin: 10px 0 20px 30px;
   width: 14rem;
   height: 7rem; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .montessori-logo {
       margin: 0;
       padding: 30px 0 30px 10px;
@@ -633,20 +640,20 @@ div .secondary {
 .main-menu-wrapper {
   width: 100%;
   height: 80px;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .main-menu-wrapper {
       white-space: nowrap;
       overflow: hidden; } }
 
 .site-header {
   z-index: 999;
-  min-width: 30rem;
+  min-width: 37.5rem;
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
@@ -664,8 +671,8 @@ div .secondary {
 --------------------------------------------------------------*/
 /* Background*/
 .site-footer {
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
@@ -677,7 +684,7 @@ div .secondary {
   height: 150px;
   background-color: #125A50;
   color: #fff; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .site-footer {
       width: 100%; } }
 
@@ -687,11 +694,11 @@ div .secondary {
   width: 100%;
   padding: 10px 0 30px 0;
   height: 30px;
-  margin-top: -10px; }
+  margin-top: -30px; }
   .footer-block-item1 ul {
-    margin-left: 30px;
     padding-left: 0px; }
     .footer-block-item1 ul li {
+      line-height: normal;
       font-size: 1.1rem;
       padding: 0px 10px 0px 10px;
       display: inline-block; }
@@ -713,14 +720,13 @@ div .secondary {
   width: 100%;
   text-align: center; }
   .footer-block-item2 p {
-    margin-bottom: 0px;
-    padding-bottom: 0px; }
+    margin: 0px auto; }
     .footer-block-item2 p i {
       display: inline-block;
       margin: 0px;
-      padding: 4px;
+      padding: 3px;
       margin-right: 5px;
-      width: 22px;
+      width: 24px;
       color: #fff;
       border: solid 1px #fff;
       border-radius: 50%; }
@@ -738,8 +744,9 @@ div .secondary {
   text-align: center;
   text-transform: capitalize; }
   .footer-block-item3 p {
-    height: 30px;
-    display: block; }
+    margin: 0px;
+    height: 20px;
+    font-size: 1rem; }
 
 /*the links in the footer */
 .footer-block-item1 li a:hover {
@@ -753,15 +760,15 @@ div .secondary {
 .site-main .home-wrapper {
   height: 585px;
   background-color: rgba(0, 0, 0, 0.74); }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .site-main .home-wrapper {
       height: 555px;
       background-color: rgba(0, 0, 0, 0.74);
       position: relative; } }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .site-main .home-wrapper .home-img {
       background-color: rgba(0, 0, 0, 0.74);
-      width: 100%;
+      width: 100px;
       height: 555px;
       z-index: -1;
       position: absolute; } }
@@ -779,7 +786,7 @@ div .secondary {
     width: 119.23px;
     height: 74px;
     border-bottom: 4px solid #fff; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .site-main .home-wrapper h2 {
         font-size: 46px;
         padding-top: 70px;
@@ -791,7 +798,7 @@ div .secondary {
     line-height: 40px;
     color: #fff;
     margin: 30px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .site-main .home-wrapper p {
         width: 447px;
         height: 230px;
@@ -809,7 +816,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .site-main .home-wrapper .red-btn {
         padding: 10px;
         font-size: 24px;
@@ -826,7 +833,7 @@ div .secondary {
   font-size: 36px;
   line-height: 42px;
   color: #000000; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .link-title h2 {
       margin: 15px;
       padding: 21px 24px;
@@ -835,7 +842,7 @@ div .secondary {
 
 .links-wrapper {
   width: 480px; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .links-wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
@@ -850,7 +857,7 @@ div .secondary {
     line-height: 40px;
     color: #000000;
     margin: 40px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .links-wrapper p {
         padding: 30px 40px;
         margin: 15px 40px; } }
@@ -868,7 +875,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .links-wrapper .benifits .green-btn {
         display: block;
         width: 319px;
@@ -888,7 +895,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .links-wrapper .nw-program-page .green-btn {
         display: block;
         width: 319px;
@@ -905,7 +912,7 @@ div .secondary {
     font-weight: 300;
     text-shadow: none;
     letter-spacing: 0.8px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .links-wrapper .involved .red-btn {
         display: block;
         width: 319px;
@@ -925,7 +932,7 @@ div .secondary {
     line-height: 42px;
     color: #000;
     margin: 35px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .support-wrapper .information h2 {
         height: 55px;
         font-family: "Asap";
@@ -937,7 +944,7 @@ div .secondary {
   .support-wrapper .information img {
     width: 287px;
     height: 470px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .support-wrapper .information img {
         display: -ms-inline-flexbox;
         display: inline-flex;
@@ -949,7 +956,7 @@ div .secondary {
       line-height: 46px;
       color: #000;
       margin: 45px; }
-      @media (min-width: 60rem) {
+      @media (min-width: 48rem) {
         .support-wrapper .information img p {
           float: right;
           position: absolute;
@@ -960,7 +967,7 @@ div .secondary {
     line-height: 46px;
     color: #000;
     margin: 40px; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .support-wrapper .information p {
         font-family: "Noto Sans";
         font-size: 22px;
@@ -1086,7 +1093,7 @@ body {
 .page .content-area {
   width: 100%;
   margin: 20px; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .page .content-area {
       margin-left: auto;
       margin-right: auto;
@@ -1102,7 +1109,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   color: #000000; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .page h2 {
       width: 1295px;
       height: 55px;
@@ -1117,7 +1124,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .page h3 {
       width: 1295px;
       height: 55px;
@@ -1132,7 +1139,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #000000; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .wpcf7 .wpcf7-form p label {
       width: 76px;
       height: 40px;
@@ -1153,7 +1160,7 @@ body {
         height: 67px;
         background-color: #4FC8A1 !important;
         border-radius: 6px; }
-      @media (min-width: 60rem) {
+      @media (min-width: 48rem) {
         .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
           width: 450px !important;
           height: 50px; } }
@@ -1166,22 +1173,29 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
+body p, li {
+  font-size: 1.3rem; }
+
 .main-history {
   margin: 0 auto; }
-  .main-history img {
+  .main-history .history-img {
     float: left;
     width: 190px;
-    height: 190px; }
+    height: 219px; }
+    .main-history .history-img img {
+      width: 100%;
+      height: 100%; }
   .main-history p {
     padding-top: 4px;
     text-align: left;
     display: block; }
 
 .main-philosophy {
-  margin: 0 auto;
-  max-width: 650px;
-  display: -ms-flexbox;
+  margin: 100px auto;
+  max-width: 90%;
+  height: auto;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: distribute;
@@ -1189,10 +1203,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .main-philosophy {
       max-width: 950px;
       height: 640px; } }
+  .main-philosophy div {
+    width: 100%; }
   .main-philosophy .philosophy-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1208,11 +1224,12 @@ body {
     background-color: #AFF1D3;
     margin-top: 20px;
     display: flex;
+    display: -ms-flexbox;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     position: relative; }
-    @media (min-width: 60rem) {
+    @media (min-width: 48rem) {
       .main-philosophy .philosophy-grid {
         width: 300px;
         height: 300px;
@@ -1238,7 +1255,7 @@ body {
       position: relative;
       width: 100%;
       height: 200px; }
-      @media (min-width: 60rem) {
+      @media (min-width: 48rem) {
         .main-philosophy .philosophy-grid .philosophy-img {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden; } }
@@ -1248,7 +1265,7 @@ body {
         right: 63px;
         width: 70px;
         height: 70px; }
-        @media (min-width: 60rem) {
+        @media (min-width: 48rem) {
           .main-philosophy .philosophy-grid .philosophy-img img {
             left: 78px;
             top: 10px;
@@ -1262,7 +1279,7 @@ body {
       color: #248E6A;
       -ms-flex-direction: row;
           flex-direction: row;
-      padding-bottom: 0px;
+      padding-bottom: 0;
       font-size: 1rem;
       height: auto;
       overflow: hidden;
@@ -1270,7 +1287,7 @@ body {
       bottom: -18px;
       line-height: 1.2;
       position: absolute; }
-      @media (min-width: 60rem) {
+      @media (min-width: 48rem) {
         .main-philosophy .philosophy-grid h2 {
           font-size: 1.4rem;
           -webkit-backface-visibility: hidden;
@@ -1283,7 +1300,7 @@ body {
       top: -17px;
       overflow-y: scroll;
       font-size: 1.3rem;
-      left: 0px;
+      left: 0;
       z-index: 1000000;
       height: 300px;
       width: 300px;
@@ -1293,7 +1310,7 @@ body {
       overflow: hidden;
       padding: 5px;
       visibility: hidden; }
-      @media (min-width: 60rem) {
+      @media (min-width: 48rem) {
         .main-philosophy .philosophy-grid p {
           overflow: scroll;
           font-size: 1.2rem;
@@ -1311,16 +1328,16 @@ body {
   background-color: #4fc8a1;
   border-radius: 6px;
   font-family: Noto Sans;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
-  line-height: 30px;
+  line-height: 28px;
   color: #fff;
-  padding: 13px 50px;
-  font-weight: 300;
+  padding: 12px 39px;
   text-shadow: none;
-  letter-spacing: .8px; }
-  @media (min-width: 60rem) {
+  letter-spacing: .8px;
+  display: block; }
+  @media (min-width: 48rem) {
     .green-btn {
       display: block;
       width: 331px;
@@ -1334,7 +1351,7 @@ body {
   box-sizing: border-box; }
 
 .about-wrapper {
-  max-width: 30rem;
+  max-width: 37.5rem;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1352,8 +1369,7 @@ body {
   margin-left: 0 auto; }
   .archive .site-content {
     margin: 0 auto;
-    padding-left: 20;
-    padding-right: 20; }
+    padding: 0 auto; }
   .archive .target {
     background-color: grey;
     width: 100%;
@@ -1371,7 +1387,7 @@ body {
   padding-right: 10px; }
 
 .red-border-container {
-  width: 30rem;
+  width: 37.5rem;
   padding: 10px;
   height: auto;
   margin-bottom: 70px; }
@@ -1451,7 +1467,7 @@ site-main .a green-btn {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
-  max-width: 30rem;
+  max-width: 37.5rem;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
@@ -1551,7 +1567,35 @@ site-main .a green-btn {
   .teacher-grid .teacher_det p {
     font-size: 50%; }
 
+.red-border-q {
+  width: 87%;
+  top: 10px;
+  margin: 0 30px;
+  padding-left: 25px;
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold; }
+  .red-border-q p {
+    margin: 0; }
+
+.red-border-q ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5PX;
+  left: 0PX;
+  height: 100%;
+  border-left: solid 8px #D93B57; }
+
 .mob-container {
   overflow-x: hidden;
-  max-width: 30rem;
-  margin: 0 auto; }
+  max-width: 37.5rem;
+  margin: 0px auto; }
+
+.content-wrapper {
+  border-bottom: solid 3px #4FC8A1;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 40px 0; }

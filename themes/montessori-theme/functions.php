@@ -22,7 +22,7 @@ function montessori_setup() {
         'about' => esc_html( 'about secondary Menu' ),
         'montessori' => esc_html( 'motessori Menu' ),
     'program' => esc_html( 'program Menu' ),
-        'get-involved' => esc_html( 'get involved Menu' ),
+          'get-involved' => esc_html( 'get-involved Menu' ),
         'contact' => esc_html( 'contact Menu' ),
     ) );
     // Switch search form, comment form, and comments to output valid HTML5.

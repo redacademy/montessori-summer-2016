@@ -1,7 +1,7 @@
 <?php
 /**
 * The main template file.
-*template name: Get-involved
+*template name: get-involved
 * @package RED_Starter_Theme
 */
 get_header(); ?>
