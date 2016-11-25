@@ -1,3 +1,9 @@
+///****Header***/////
+
+
+
+/////****Start Main Menu**** ////
+
 .main-navigation-container {
 	display: flex;
 }
@@ -64,35 +70,10 @@ div .menu-primary-menu-container {
 			}
 		}
 	}
+
 }
-div .secondary {
-	text-align: right;
-	width: 100%;
-	font-family: $font_footer_header;
-	max-height: 100px;
-	@include desktop {
-		white-space: nowrap;
-		overflow: hidden;
-		padding: 5px 20 10px 10;
-		width: 100%;
-	}
-	text-align: right;
-	padding-right: 2rem;
-	margin-top: 20px;
-	background-color: #248E6A;
-	& .active {
-		background-color: $color_btn_green;
-	}
-	li {
-		display: inline-block;
-		padding: 10px;
-		a {
-			font-size: $font_body_size_mob;
-			text-decoration: none;
-			color: white;
-		}
-	}
-}
+
+///////The Hamburger Menu Section//////
 .responsive-menu-button {
 	margin-top: 0.5rem !important;
 }
@@ -103,6 +84,8 @@ div .secondary {
 		cursor: pointer;
 	}
 }
+
+/////**** The Brand Logo Section ***/////
 
 .montessori-logo{
 
@@ -147,9 +130,40 @@ div .secondary {
 	top: 0;
 }
 .site-content {
-	padding-top: 110px;
+	padding-top: 80px;
 	top: 0;
 }
 .home .site-header{
 	position:absolute;
 }
+////**Sub Menu Section**/////
+
+div .secondary {
+	text-align: right;
+	max-width: 100%;
+	max-height: 100%;
+	font-family: $font_footer_header;
+	@include desktop {
+		white-space:normal;
+		overflow: hidden;
+		padding: 5px 20 10px 10;
+		width: 100%;
+	}
+	text-align: right;
+	padding-right: 2rem;
+	margin-top: 20px;
+	background-color: #248E6A;
+	& .active {
+		background-color: $color_btn_green;
+	}
+	li {
+		display: inline-block;
+		padding: 10px;
+		a {
+			font-size: $font_body_size_mob;
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+

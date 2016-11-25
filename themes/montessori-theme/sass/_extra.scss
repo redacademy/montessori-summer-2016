@@ -1,3 +1,4 @@
+
 .red-border-container{
 width: 95%;
 height: 160px;
@@ -13,8 +14,44 @@ p{
 }
 }
 
+/// this framework is for the block quotes to make the red bar left
+.red-border-q{
+  width:65%;
+top: 10px;
+margin: 0 30px ;
+  padding-left: 25px;
+  display:inline-block;
+    position: relative;
+      font-size: 1.1rem;
+      font-weight: bold;
+    p{
+margin: 0;
+    }
+}
+.red-border-q ::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 5PX;
+    left: 0PX;
+    height: 100%;
+ border-left:solid 8px $border_left_red;
+}
+////**mobile container we will change it when we finish the mobile first **///
 .mob-container{
+  transition: all .5s ease-out .5s;
   overflow-x: hidden;
-  max-width:$mobile_width;
-  margin: 0 auto;
+  // min-width:$desktop-width;
+  margin: 0px auto;
+}
+.content-wrapper{
+ border-bottom: solid 3px $color_btn_green;
+	max-width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+  padding: 40px 0;
+}
+
+body{
+
 }
