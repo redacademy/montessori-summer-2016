@@ -59,12 +59,15 @@ get_header(); ?>
 				 <div class="post">
 				 <!-- Display the Title  -->
 				 <h2><?php the_title(); ?></h2>
-				  <div class="entry">
+				  <div class="shool-content">
 				    <?php the_content(); ?>
 				  </div>
+					<div class="school-img">
+						<?php the_post_thumbnail('post->id','small'); ?>
+					</div>
 				 </div> <!-- closes the first div box -->
-				     <span class="address">$<?php echo CFS()->get('address'); ?></span>
-					<span class="phone">$<?php echo CFS()->get('phone'); ?></span>
+				  <span style="">Address:<?php echo CFS()->get('address'); ?></span>
+					<span style="bolder">Phone:<?php echo CFS()->get('phone'); ?></span>
 				 <?php endwhile; else: ?>
 				 <h1>Sorry, no posts matched your criteria.</h1>
 				 <?php endif; ?>
@@ -82,7 +85,7 @@ get_header(); ?>
 
 
  <?php
-  query_posts(array( 'post_type' => 'staff','staff-category' => 'Teachers' ));
+  query_posts(array( 'post_type' => 'staff','staff-category' => 'teachers' ));
   ?>
 	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -91,7 +94,7 @@ get_header(); ?>
 <div class="flip-container">
 	<div class="flip-wrap">
 <div class="flipper">
-	      <div class="front"><?php the_post_thumbnail('small'); ?></div>
+	      <div class="front"><?php the_post_thumbnail('teacher-ID','small'); ?></div>
 			<div class="back"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
 		</div><!-- #flippre -->
 	</div><!-- #flippre -->

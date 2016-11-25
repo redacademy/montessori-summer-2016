@@ -1381,14 +1381,40 @@ site-main .involved-title green-btn {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .funding .funding-img img {
-    width: 90%; }
-  .funding .funding-btn {
-    width: 40%;
+  .funding .funding-img, .funding .money-spend-img {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .funding .funding-img img, .funding .money-spend-img img {
+      width: 95%;
+      height: 95%;
+      margin-right: 2px; }
+  .funding .funding-btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .funding .funding-btn .green-btn {
+      padding: 10px;
+      width: 44.666%;
+      margin-right: 2px; }
+
+.school-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .school-list .school-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .school-list .school-img img {
+      width: 80%;
+      height: 80%; }
+    .school-list .school-img .address .phone {
+      font-weight: bolder; }
 
 .preschools-list {
   padding: 1px; }
@@ -1398,7 +1424,10 @@ site-main .involved-title green-btn {
     color: #248E6A; }
 
 .enroll {
-  width: 100%; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;

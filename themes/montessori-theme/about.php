@@ -30,17 +30,22 @@ get_header(); ?>
 				<?php
 			query_posts(array( 'post_type' => 'staff','staff-category' => 'members' ));
 			?>
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<!-- <h2><?php the_title(); ?></h2> -->
-						<div class="">
-							<?php the_post_thumbnail('thumbnail');?>
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+					<div class="flip-container">
+						<div class="flip-wrap">
+					<div class="flipper">
+						<div class="front">
+							<?php the_post_thumbnail('members->ID','thumbnail');?>
 						</div>
 						<div class="back">
 							<p class="teacher_title">
 								<?php echo CFS()->get('member_vision'); ?>
 							</p>
 						</div>
-						<div>
+						</div><!-- #flippre -->
+					</div><!-- #flippre -->
+						</div><!-- #flip-container -->
+						<div class="member_det">
 							<p class="teacher_name">
 								<?php echo CFS()->get('member_name'); ?>
 							</p>
@@ -64,6 +69,22 @@ get_header(); ?>
 			}
 			?>
     </section>
+
+		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
+		<section class="meeting-minutes">
+			<h1>Meeting Minutes</h1>
+			<img src="<?php bloginfo('template_directory'); ?>/images/" alt="Meeting Minutes Section" />
+			<?php
+			$fields = CFS()->get( 'meeting_minutes_date' );
+			$fields = CFS()->get( 'meeting_minutes' );
+
+			// foreach ( $fields as $field ) {
+			// echo	'<input type="checkbox"  value="1"'.$field['options'].'/>');
+			// }
+			?>
+		</section>
+
+
 			<!-- **********///////////////// Archive Section ///////////////********** -->
 
 			<section class="archive">
