@@ -8,30 +8,44 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
+
+<section class="involved-wrapper ">
+<div class="main-what-new mob-container">
 <?php
-   if ( have_posts() ) :
-       while ( have_posts() ) : the_post();
-       ?>
+$args = array(
+
+   'post_type' => 'post',
+   'show_page' => 3,
+);
+$query = new WP_Query( $args  );
+if ( $query-> have_posts() ) :  ?>
+ <?php while ($query-> the_posts() )  : $query->the_post(); ?>
+   echo
+   <div class="involved-title">
+ <h2>
+   <div class="title-containar" -->
+    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+
+    </div>
 
 
-   <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-       <header class="entry-header">
-           <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-       </header><!-- .entry-header -->
-   <?php get_the_post_thumbnail( 'thumbnail' ); ?>
-       <div class="entry-content">
-           <?php the_content(); ?>
+ </h2>
+</div>
+<?php the_content();?>
+<?php if (has_post_thumbnail()): ?>
+<?php the_post_thumbnail(); ?>
+</div>
+</div>
 
-       </div><!-- .entry-content -->
-   </section><!-- #post-## -->
+<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a>
 
-       <?php endwhile;
+   <?php endif; ?>
+ <?php endwhile; ?>
+<?php endif; ?>
 
 
-   else :
-       echo wpautop( 'Sorry, no posts were found' );
-   endif;
-   ?>
+
+<?php wp_reset_postdata(); ?>
 
 </section>
 </main><!-- #main -->
