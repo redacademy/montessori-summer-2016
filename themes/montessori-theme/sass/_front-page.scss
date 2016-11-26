@@ -1,4 +1,5 @@
-//front page
+//-------------------front page---------------------------//
+
 // media screen for mobile (max-width: 480px)
 .site-main {
   margin: 0;
@@ -327,6 +328,13 @@
             box-sizing: border-box;
             height: 139.76px;
             width: 480.27px;
+    position: relative;
+	border-radius: 10px;
+	font-family: 'Noto Sans';
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;	
+
             .features-flipper {
                 position: relative;
                 -webkit-transition: 1.9s;
@@ -344,6 +352,7 @@
                     -moz-transform: rotateY(180deg);
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
+                    cursor: pointer;
                 }
                 .front {
                     height: auto;
@@ -361,8 +370,8 @@
                     backface-visibility: hidden;
                 }
                 .features-back {
-                    width: 480px;
-                    height: 170px;
+                    // width: 480px;
+                    // height: 170px;
                     border: 1px solid #248E6A;
                     margin: 0;
                     text-align: center;
