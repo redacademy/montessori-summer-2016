@@ -13,18 +13,23 @@ html {
 p,
 li {
 	 font-size: $font_body_size_mob;
+	 font-family:$font_title;
 }
 h1,h2,h3{
  text-transform: capitalize;
+ font-family:$font_title;
+ font-weight: lighter;
 }
 
 h1{font-size:$h1_size_mob;
-font-family:$font_title}
+}
 h2{
 font-size:$h2_size_mob;
 }
 h3{
  font-size:$h3_size_mob;
+ font-family:$font_title;
+
 }
 
 @include desktop{

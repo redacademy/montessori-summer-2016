@@ -56,9 +56,9 @@ $fields = CFS()->get('philosophy'); ?>
 foreach($fields as $field)
   { ?>
 <div class="philosophy-grid">
-<h2 ><a href="" onclick="return showImage()";><?php
-  echo $field['philosophy_title']; ?></a></h2>
-<p><?php
+  <h2><a href="#" onclick="return showImage()";><?php
+    echo $field['philosophy_title']; ?></a></h2>
+  <p><?php
   echo $field['philosophy_content']; ?></p>
 <div class= "philosophy-img" >
 <?php

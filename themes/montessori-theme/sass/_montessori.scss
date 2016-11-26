@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 /////*Start History Section**/////
 
-
 .history-content {
     width: 80%;
     flex-wrap: wrap;
@@ -13,18 +12,16 @@
 .history-title {
     margin-bottom: 0;
     flex: 0 90%;
-
 }
 
 .main-history {
-p:nth-child(4){
-margin-left: -40%;
-overflow: visible;;
-  @include desktop {
-      margin-left: 0px;
+    p:nth-child(4) {
+        margin-left: -40%;
+        overflow: visible;
+        @include desktop {
+            margin-left: 0;
+        }
     }
-   }
-
     @include flex(flex-end,space-between);
 
     .history-img {
@@ -43,50 +40,49 @@ overflow: visible;;
             height: 100%;
         }
     }
-
     @include desktop {
-      .red-border-q{
-        width:80%;
-      top: 10px;
-      margin: 0 0 0 15% ;
-        padding-left: 25px;
-        display:inline-block;
-          position: relative;
+        .red-border-q {
+            width: 80%;
+            top: 10px;
+            margin: 0 0 0 15%;
+            padding-left: 25px;
+            display: inline-block;
+            position: relative;
 
-          p{
-            font-size: 2rem;
-      margin: 0;
-          }
-      }
-      .red-border-q ::before{
-          content:"";
-          display: block;
-          position: absolute;
-          top: 5PX;
-          left: 0PX;
-          height: 100%;
-       border-left:solid 8px $border_left_red;
-      }
+            p {
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 8px $border_left_red;
+        }
         font-size: 1.5rem;
     };
+
     p {
         padding-top: 4px;
-
         text-align: left;
-
     }
 }
 ////************philosophy Section ************/////
 
 .main-philosophy {
     margin: 100px auto;
-    max-width: 90%;
+    width: 70%;
     height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
     position: relative;
     @include desktop {
-        max-width: 950px;
+
         height: 640px;
     }
 
@@ -95,25 +91,19 @@ overflow: visible;;
     }
 
     .philosophy-grid {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        position: relative;
+
+
+        flex:0 0 auto;
         width: 200px;
         height: 200px;
         background-color: #AFF1D3;
         margin-top: 20px;
-        @include flex(center,space-around);
+        @include flex(center,space-between);
         flex-wrap: wrap;
         position: relative;
         @include desktop {
-            width: 300px;
-            height: 300px;
+            width: 310px;
+            height: 310px;
             background-color: #AFF1D3;
             -webkit-transition: 3s;
             -webkit-transform-style: preserve-3d;
@@ -125,7 +115,7 @@ overflow: visible;;
             transform-style: preserve-3d;
 
             &:hover {
-              @include  visibility(hidden);
+                @include visibility(hidden);
                 @include rotate(180deg);
             }
         }
@@ -137,7 +127,7 @@ overflow: visible;;
             overflow: hidden;
             padding: 20px;
             @include desktop {
-                @include  visibility(hidden);
+                 @include visibility(hidden);
             }
             position: relative;
             width: 100%;
@@ -154,33 +144,42 @@ overflow: visible;;
                     top: 9px;
                     width: 175px;
                     height: 135px;
-                    @include  visibility(hidden);
+                    @include visibility(hidden);
                 }
             }
         }
 
         h2 {
             z-index: 1;
+            margin: 0;
             text-align: center;
             display: inline-block;
-            width: 95%;
-            color: #248E6A;
-            flex-direction: row;
-            padding-bottom: 0;
-            font-size: 1rem;
+            width: 90%;
+            color: #248e6a;
             height: auto;
             overflow: hidden;
-            padding: 20px;
-            bottom: -18px;
-            line-height: 1.2;
+            padding: 0;
+            bottom: 32px;
+            line-height: 1.3rem;
+            position: absolute;
+
+            a {
+                color: #248E6A;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
             @include desktop {
+                a {
+                    font-size: $font_body_size_desktop;
+                }
+
                 .show {
                     font-size: 1.4rem;
-                    @include  visibility(hidden);
+                    @include visibility(hidden);
                 }
 
                 &:hover {
-                  @include  visibility(hidden);
+                    @include visibility(hidden);
                     @include rotate(180deg);
                 }
             }
@@ -209,7 +208,7 @@ overflow: visible;;
                 overflow: scroll;
                 font-size: 1.2rem;
                 visibility: visible;
-                @include  visibility(hidden);
+                @include visibility(hidden);
                 background-color: #fff;
                 @include rotate(180deg);
             }
@@ -219,65 +218,74 @@ overflow: visible;;
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 
-.main-materials div:nth-of-type(3){
-  @include desktop{ flex-direction: row-reverse;
-  }
+.main-materials div:nth-of-type(3) {
+    @include desktop {
+        flex-direction: row-reverse;
+    }
 }
 
-.materials{
-  margin-top: 60px;
-  width:100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-@include desktop{  @include flex(flex-start,space-between);
-flex-direction: row;
-  flex-wrap: wrap;
-}
-   img{
-    width:230px;
-    height: 230px;
+.materials {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include desktop {
-      margin:40px 0 0 40px;
-      width:300px;
-      height:300px;
+         @include flex(flex-start,space-between);
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-  }}
-  .materials-contents{
-  @include desktop {
-    width:60%;
-    .red-border-q{
-      width:75%;
-    top: 10px;
-    margin: 0 0 0 10% ;
-      padding-left: 25px;
-      display:inline-block;
-        position: relative;
-          font-size: 1.1rem;
-          font-weight: bold;
-        p{
-    margin: 0;
+
+    img {
+        width: 230px;
+        height: 230px;
+        @include desktop {
+            margin: 40px 0 0 40px;
+            width: 300px;
+            height: 300px;
         }
     }
-    .red-border-q ::before{
-        content:"";
-        display: block;
-        position: absolute;
-        top: 5PX;
-        left: 0PX;
-        height: 100%;
-     border-left:solid 8px $border_left_red;
-    }
-      font-size: 1.5rem;
-  }
 }
-.materials-grid img:nth-of-type(2){
-  align-self: left;
-}
-.materials-grid{
-  margin: 0px;
-  padding: 0px;
 
+.materials-contents {
+    @include desktop {
+        width: 60%;
+
+        .red-border-q {
+            width: 75%;
+            top: 10px;
+            margin: 0 0 0 10%;
+            padding-left: 25px;
+            display: inline-block;
+            position: relative;
+            font-size: 1.1rem;
+            font-weight: bold;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 8px $border_left_red;
+        }
+        font-size: 1.5rem;
+    }
+}
+
+.materials-grid img:nth-of-type(2) {
+    align-self: left;
+}
+
+.materials-grid {
+    margin: 0;
+    padding: 0;
 }
 ////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
@@ -291,68 +299,72 @@ flex-direction: row;
     height: 100%;
     @include flex(center,space-between);
     flex-direction: column;
-@include desktop {flex-direction: row;}
-    img{
+    @include desktop {
+        flex-direction: row;
+    }
 
+    img {
         width: 250px;
         height: 250px;
         margin-top: 30px;
         @include desktop {
-          align-self: flex-start;
+            align-self: flex-start;
             width: 350px;
             height: 350px;
-            margin: 0 40px 20px 0
+            margin: 0 40px 20px 0;
         }
     }
 }
-    .benefits-content {
-        width: 100%;
-        @include desktop {
-          max-width: 80%;
-          .red-border-q{
-            width:75%;
-          top: 10px;
-          margin: 0 0 0 10% ;
+
+.benefits-content {
+    width: 100%;
+    @include desktop {
+        max-width: 80%;
+
+        .red-border-q {
+            width: 75%;
+            top: 10px;
+            margin: 0 0 0 10%;
             padding-left: 25px;
-            display:inline-block;
-              position: relative;
-                font-size: 1.1rem;
-                font-weight: bold;
-          }
-          .red-border-q ::before{
-              content:"";
-              display: block;
-              position: absolute;
-              top: 5PX;
-              left: 0PX;
-              height: 100%;
-           border-left:solid 8px $border_left_red;
-          }
+            display: inline-block;
+            position: relative;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 8px $border_left_red;
+        }
+        font-size: 1.5rem;
+    }
+}
+
+.benefits-title {
+    p {
+        padding-top: 4px;
+        display: block;
+        @include desktop {
             font-size: 1.5rem;
         }
     }
-
-    .benefits-title {
-        p {
-            padding-top: 4px;
-            display: block;
-            @include desktop {
-                font-size: 1.5rem;
-            }
-        }
-    }
+}
 ///Archive ////
 
-.montessori-archive{
-  margin-top: 40px;
-h3{
-width:40%;
-  border-top: solid 3px $color_btn_green;
-  padding-top: 30px;
-}}
+.montessori-archive {
+    margin-top: 40px;
 
-
-
+    h3 {
+        width: 40%;
+        border-top: solid 3px $color_btn_green;
+        padding-top: 30px;
+    }
+}
 /*Start Resources Section  */
 .green-btn {
     background-color: #4fc8a1;
