@@ -3,32 +3,7 @@
 --------------------------------------------------------------*/
 /////*Start History Section**/////
 
- p,
-li {
-    font-size: $font_body_size_mob;
-}
-h1,h2,h3{
-  text-transform: capitalize;
-}
 
-h1{font-size:$h1_size_mob;}
-h2{
-font-size:$h2_size_mob;
-}
-h3{
-  font-size:$h3_size_mob;
-}
-
-@include desktop{
-  p,
-  li {
-     font-size: $font_body_size_desktop;}
-  h1{font-size:$h1_size_desktop;}
-  h2{
-  font-size:$h2_size_desktop;}
-  h3{
-    font-size:$h3_size_desktop;
-}}
 .history-content {
     width: 80%;
     flex-wrap: wrap;
@@ -71,16 +46,15 @@ overflow: visible;;
 
     @include desktop {
       .red-border-q{
-        width:70%;
+        width:80%;
       top: 10px;
-      margin: 0 0 0 10% ;
+      margin: 0 0 0 15% ;
         padding-left: 25px;
         display:inline-block;
           position: relative;
-            font-size: 1.2rem;
-            font-weight: bold;
+
           p{
-            overflow: visible;
+            font-size: 2rem;
       margin: 0;
           }
       }
@@ -151,14 +125,8 @@ overflow: visible;;
             transform-style: preserve-3d;
 
             &:hover {
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
-                -webkit-transform: rotateY(180deg);
-                -moz-transform: rotateY(180deg);
-                -o-transform: rotateY(180deg);
-                transform: rotateY(180deg);
+              @include  visibility(hidden);
+                @include rotate(180deg);
             }
         }
 
@@ -169,10 +137,7 @@ overflow: visible;;
             overflow: hidden;
             padding: 20px;
             @include desktop {
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
+                @include  visibility(hidden);
             }
             position: relative;
             width: 100%;
@@ -189,10 +154,7 @@ overflow: visible;;
                     top: 9px;
                     width: 175px;
                     height: 135px;
-                    -webkit-backface-visibility: hidden;
-                    -moz-backface-visibility: hidden;
-                    -o-backface-visibility: hidden;
-                    backface-visibility: hidden;
+                    @include  visibility(hidden);
                 }
             }
         }
@@ -214,21 +176,12 @@ overflow: visible;;
             @include desktop {
                 .show {
                     font-size: 1.4rem;
-                    -webkit-backface-visibility: hidden;
-                    -moz-backface-visibility: hidden;
-                    -o-backface-visibility: hidden;
-                    backface-visibility: hidden;
+                    @include  visibility(hidden);
                 }
 
                 &:hover {
-                    -webkit-backface-visibility: hidden;
-                    -moz-backface-visibility: hidden;
-                    -o-backface-visibility: hidden;
-                    backface-visibility: hidden;
-                    -webkit-transform: rotateY(180deg);
-                    -moz-transform: rotateY(180deg);
-                    -o-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
+                  @include  visibility(hidden);
+                    @include rotate(180deg);
                 }
             }
             position: absolute;
@@ -246,7 +199,7 @@ overflow: visible;;
             z-index: 1000;
             height: 300px;
             width: 300px;
-            border-radius: 10px;
+            @include border-radius (10px);
             border: 1px solid #248E6A;
             text-align: left;
             overflow: hidden;
@@ -256,15 +209,9 @@ overflow: visible;;
                 overflow: scroll;
                 font-size: 1.2rem;
                 visibility: visible;
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
+                @include  visibility(hidden);
                 background-color: #fff;
-                -webkit-transform: rotateY(180deg);
-                -moz-transform: rotateY(180deg);
-                -o-transform: rotateY(180deg);
-                transform: rotateY(180deg);
+                @include rotate(180deg);
             }
         }
     }
@@ -409,7 +356,7 @@ width:40%;
 /*Start Resources Section  */
 .green-btn {
     background-color: #4fc8a1;
-    border-radius: 6px;
+    @include border-radius (6px);
     font-family: Noto Sans;
     font-size: 14px;
     font-weight: 700;

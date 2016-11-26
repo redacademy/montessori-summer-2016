@@ -285,6 +285,36 @@ html {
   font-size: 16px;
   font-size: 1rem; }
 
+p,
+li {
+  font-size: 1.6rem; }
+
+h1, h2, h3 {
+  text-transform: capitalize; }
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Asap"; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+@media (min-width: 60rem) {
+  p,
+  li {
+    font-size: 1.7rem; }
+  h1 {
+    font-family: "Asap";
+    font-weight: lighter;
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.2rem; }
+  h3 {
+    font-size: 2rem; } }
+
 *,
 *:before,
 *:after {
@@ -1182,33 +1212,6 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-p,
-li {
-  font-size: 1.6rem; }
-
-h1, h2, h3 {
-  text-transform: capitalize; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
-@media (min-width: 60rem) {
-  p,
-  li {
-    font-size: 1.7rem; }
-  h1 {
-    font-size: 3rem; }
-  h2 {
-    font-size: 2.2rem; }
-  h3 {
-    font-size: 2rem; } }
-
 .history-content {
   width: 80%;
   -ms-flex-wrap: wrap;
@@ -1251,16 +1254,14 @@ h3 {
     .main-history {
       font-size: 1.5rem; }
       .main-history .red-border-q {
-        width: 70%;
+        width: 80%;
         top: 10px;
-        margin: 0 0 0 10%;
+        margin: 0 0 0 15%;
         padding-left: 25px;
         display: inline-block;
-        position: relative;
-        font-size: 1.2rem;
-        font-weight: bold; }
+        position: relative; }
         .main-history .red-border-q p {
-          overflow: visible;
+          font-size: 2rem;
           margin: 0; }
       .main-history .red-border-q ::before {
         content: "";
@@ -1874,7 +1875,6 @@ site-main .a green-btn {
     margin: 0 auto; }
 
 .mob-container {
-  transition: all .5s ease-out .5s;
   overflow-x: hidden;
   margin: 0px auto; }
 
