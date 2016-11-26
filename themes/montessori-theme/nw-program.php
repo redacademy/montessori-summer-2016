@@ -81,15 +81,14 @@ get_header(); ?>
      <label class="toggle">
 		  <h1>Teachers<h1>
 		 </label>
+
  <!-- Custom Post Loop To Call Teacher List  -->
-
-
  <?php
+
  query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'teachers' ));
   ?>
 	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
 
 <div class="flip-container">
 	<div class="flip-wrap">
@@ -114,7 +113,6 @@ get_header(); ?>
   <?php endif; ?>
 		</div>
 	<?php wp_reset_query(); ?>
-
   </section>
 
  <!-- **********///////////////// Preschools List Section ///////////////********** -->

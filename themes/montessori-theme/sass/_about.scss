@@ -36,8 +36,97 @@
 
 // Members List Section
 
+.members-list {
+	padding: 2px;
+	flex-wrap: wrap;
+	display: flex;
 
+	.members-grid {
+		display: flex;
+		flex: 50%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
+	.members-container {
+		display: flex;
+		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+		background: #aff1d3;
+		border-radius: 50%;
+
+		.flipper {
+			flex: 1 0 auto;
+			display: flex;
+			width: 50%;
+			position: relative;
+			-webkit-transition: 1.9s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transition: 1.9s;
+			-moz-transform-style: preserve-3d;
+			transition: 1.9s;
+			transform-style: preserve-3d;
+
+			p {
+				font-size: 50%;
+				line-height: 30px;
+			}
+		}
+
+		.member-img {
+			position: absolute;
+			background-size: cover;
+			border-radius: 50%;
+			flex: 2;
+
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		.member-vision {
+			border-radius: 50%;
+			position: absolute;
+			width: 125px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 125px;
+			text-align: center;
+			right: 3px;
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
+
+	.members-container.hover .flipper,
+	.members-container:hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+	.member-vision,
+	.members-container,
+	.member-img {
+		width: 125px;
+		height: 125px;
+	}
+
+	.member-vision,
+	.member-img {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.member_det {
+		text-align: center;
+
+		p {
+			font-size: 50%;
+		}
+	}
+}
 
 
 // Members at Large Section
@@ -56,8 +145,6 @@
 			display: flex;
 			align-self: center;
 			}
-
-
 
 	   	}
 		}
