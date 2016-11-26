@@ -345,6 +345,13 @@
             box-sizing: border-box;
             height: 139.76px;
             width: 480.27px;
+            position: relative;
+	border-radius: 10px;
+	font-family: 'Noto Sans';
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;	
+
             .features-flipper {
                 position: relative;
                 -webkit-transition: 1.9s;
@@ -363,6 +370,11 @@
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
                 }
+                ::active{
+                        transform: translate(0px,5px);
+                    -webkit-transform: translate(0px,5px);
+                        border-bottom: 1px solid;
+                        }
                 .front {
                     height: auto;
                     text-align: center;
@@ -400,7 +412,7 @@
                 }
             }
         }
-        .green-btn {
+        .features-green-btn {
             color: #248E6A;
             text-decoration: none;
         }

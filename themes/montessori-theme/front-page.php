@@ -88,7 +88,7 @@ get_header(); ?>
                   </p>
                   <p class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
-                    <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
+                    <a class="features-green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
                   </p>
                 </div>
               </section>
