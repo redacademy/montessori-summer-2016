@@ -1454,7 +1454,11 @@ li {
   width: 200px;
   height: 120px;
   background-color: #4FC8A1;
-  padding-top: 20px; }
+  padding-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .involved-title a {
     color: #000; }
 
@@ -1478,15 +1482,13 @@ li {
   width: 100%; }
 
 .support-containar {
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .support-img {
-  width: 200px;
-  height: 100%;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-align: center; }
+  width: 150px;
+  height: 150.60px;
+  display: inline-block; }
 
 img {
   width: 100%;
