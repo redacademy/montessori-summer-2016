@@ -768,7 +768,7 @@ div .secondary {
       background-color: rgba(0, 0, 0, 0.74); }
       @media (min-width: 60rem) {
         .site-main .home .home-wrapper {
-          width: 35%;
+          width: 541.64px;
           height: 555px;
           background-color: rgba(0, 0, 0, 0.74);
           position: relative; } }
@@ -923,6 +923,7 @@ div .secondary {
           font-size: 26px;
           padding: 6px 85px; } }
   .site-main .support-wrapper {
+    width: 480px;
     height: auto; }
     .site-main .support-wrapper .information {
       height: auto; }
@@ -945,6 +946,7 @@ div .secondary {
             margin: 0;
             box-sizing: border-box;
             width: 1283px; } }
+<<<<<<< HEAD
       .site-main .support-wrapper .information .support-img-wrapper {
         text-align: center; }
         @media (min-width: 60rem) {
@@ -965,6 +967,28 @@ div .secondary {
             margin: 45px; }
       .site-main .support-wrapper .information blockquote {
         border-left: 8px solid red; }
+=======
+      .site-main .support-wrapper .information img {
+        width: 287px;
+        height: 470px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information img {
+            float: right;
+            position: absolute;
+            right: 35px; } }
+        .site-main .support-wrapper .information img p {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          line-height: 46px;
+          color: #000;
+          margin: 45px; }
+          @media (min-width: 60rem) {
+            .site-main .support-wrapper .information img p {
+              float: right;
+              position: absolute;
+              right: 35px; } }
+>>>>>>> c58c7f6d518e2ab55c36ec9885c243cc8509b320
       .site-main .support-wrapper .information p {
         width: 377px;
         font-family: "Noto Sans";
@@ -978,6 +1002,13 @@ div .secondary {
             font-family: "Noto Sans";
             font-size: 22px;
             line-height: 46px; } }
+        .site-main .support-wrapper .information p .info {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 42px;
+          color: #000; }
       .site-main .support-wrapper .information .red-btn {
         width: 185px;
         height: 47px;
@@ -1189,7 +1220,7 @@ li {
       flex-wrap: wrap-reverse; }
 
 .history-title {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   -ms-flex: 0 70%;
       flex: 0 70%; }
 
@@ -1201,7 +1232,9 @@ li {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .main-history .history-img {
-    float: left;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 100px;
     width: 190px;
     height: 219px; }
     @media (min-width: 60rem) {
@@ -1212,13 +1245,31 @@ li {
     .main-history .history-img img {
       width: 100%;
       height: 100%; }
+  @media (min-width: 60rem) {
+    .main-history {
+      font-size: 1.5rem; }
+      .main-history .red-border-q {
+        width: 60%;
+        top: 10px;
+        margin: 0 0 0 10%;
+        padding-left: 25px;
+        display: inline-block;
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        .main-history .red-border-q p {
+          margin: 0; }
+      .main-history .red-border-q ::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5PX;
+        left: 0PX;
+        height: 100%;
+        border-left: solid 8px #D93B57; } }
   .main-history p {
     padding-top: 4px;
-    text-align: left;
-    display: block; }
-    @media (min-width: 60rem) {
-      .main-history p {
-        font-size: 1.5rem; } }
+    text-align: left; }
 
 .main-philosophy {
   margin: 100px auto;
@@ -1356,32 +1407,108 @@ li {
           background-color: #fff;
           transform: rotateY(180deg); } }
 
+.materials {
+  margin-top: 60px;
+  width: 95%; }
+  @media (min-width: 60rem) {
+    .materials {
+      display: flex;
+      display: -ms-flexbox;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+
+.materials-img img {
+  width: 300px;
+  height: 300px; }
+  @media (min-width: 60rem) {
+    .materials-img img {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin-top: 40px;
+      width: 350px;
+      height: 350px; } }
+
+@media (min-width: 60rem) {
+  .materials-contents {
+    width: 70%;
+    font-size: 1.5rem; }
+    .materials-contents .red-border-q {
+      width: 75%;
+      top: 10px;
+      margin: 0 0 0 10%;
+      padding-left: 25px;
+      display: inline-block;
+      position: relative;
+      font-size: 1.1rem;
+      font-weight: bold; }
+      .materials-contents .red-border-q p {
+        margin: 0; }
+    .materials-contents .red-border-q ::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5PX;
+      left: 0PX;
+      height: 100%;
+      border-left: solid 8px #D93B57; } }
+
 .benefits li {
   list-style-type: disc; }
 
 .first-benefits-section {
-  width: 80%;
+  width: 90%;
+  height: 100%;
   display: flex;
   display: -ms-flexbox;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .first-benefits-section .benefits-img {
-    width: 190px;
-    height: 219px; }
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 220px;
+    height: 220px;
+    margin-top: 30px; }
     @media (min-width: 60rem) {
       .first-benefits-section .benefits-img {
         width: 350px;
-        height: auto;
+        height: 350px;
         padding-bottom: 40px; } }
-  .first-benefits-section p {
-    padding-top: 4px;
-    text-align: left;
-    display: block; }
-    @media (min-width: 60rem) {
-      .first-benefits-section p {
-        font-size: 1.5rem; } }
+
+.benefits-content {
+  width: 70%; }
+  @media (min-width: 60rem) {
+    .benefits-content {
+      font-size: 1.5rem; }
+      .benefits-content .red-border-q {
+        width: 75%;
+        top: 10px;
+        margin: 0 0 0 10%;
+        padding-left: 25px;
+        display: inline-block;
+        position: relative;
+        font-size: 1.1rem;
+        font-weight: bold; }
+        .benefits-content .red-border-q p {
+          margin: 0; }
+      .benefits-content .red-border-q ::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5PX;
+        left: 0PX;
+        height: 100%;
+        border-left: solid 8px #D93B57; } }
+
+.benefits-title p {
+  padding-top: 4px;
+  display: block; }
+  @media (min-width: 60rem) {
+    .benefits-title p {
+      font-size: 1.5rem; } }
 
 /*Start Resources Section  */
 .green-btn {
@@ -1476,12 +1603,24 @@ li {
     -ms-flex-item-align: end;
         align-self: flex-end; }
 
-.site-main .main-involved-wrapper {
-  margin: 0 auto;
-  max-width: 480px; }
+site-main .involved-wrapper {
+  width: 480px;
+  padding: 0 auto;
+  margin-left: auto;
+  margin-right: auto; }
 
-.involved-title {
+site-main .a green-btn {
+  text-decoration: none;
+  padding-left: 19px;
+  padding-right: 36px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  width: 120px;
+  height: 220px;
+  font-size: 15px;
+  font-family: Asap;
   color: #000;
+<<<<<<< HEAD
   font-size: 20px;
   text-align: center;
   width: 200px;
@@ -1496,24 +1635,21 @@ li {
     color: #000; }
 
 .green-button {
+=======
+>>>>>>> c58c7f6d518e2ab55c36ec9885c243cc8509b320
   background-color: #4FC8A1;
-  border-radius: 6px;
   font-family: "Noto Sans";
   font-size: 15px;
   font-weight: bold;
   text-align: center;
   line-height: 30px;
-  color: #fff;
-  padding: 5px 20px;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  display: inline-block; }
+  display: block; }
 
 .text-shadow {
   border-top: 3px solid #248e6a;
   width: 100%; }
 
+<<<<<<< HEAD
 .support-containar {
   -ms-flex-pack: center;
       justify-content: center; }
@@ -1532,73 +1668,46 @@ img {
   height: 178px;
   display: -ms-flexbox;
   display: flex;
+=======
+.get_involved img {
+  float: left;
+  width: 227px;
+  height: 244px; }
+
+.involved .green-btn {
+  padding-left: 19px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  font-size: 25px;
+>>>>>>> c58c7f6d518e2ab55c36ec9885c243cc8509b320
   height: 200px;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 150%;
   background-color: #4fc8a1;
-  margin: 130px;
+  display: block;
+  width: 200px;
   text-align: center;
   color: #fff;
-  padding-top: 50px;
-  font-weight: 300;
-  font-family: Asap;
-  font-size: 18px;
-  text-align: center;
-  line-height: 27px; }
+  text-align: center; }
 
-.re-btn {
-  width: 199.38px;
-  height: 47px;
+.involved .red-btn {
+  padding: 15px 40px;
+  background-color: #F76072;
   border-radius: 6px;
-  background-color: #CB203E;
   color: #fff;
-  margin-left: 20px;
-  padding: 10px;
-  box-shadow: none;
   font-family: "Noto Sans";
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 300;
   text-shadow: none;
   letter-spacing: 0.8px;
-  text-decoration: none;
-  width: 199.38px;
-  height: 27px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-weight: bold;
   text-align: center;
-  line-height: 27px;
-  margin: 60px; }
-
-.pink-btn {
-  background-color: #f76072;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  margin-left: 20px;
-  padding: 8px;
-  box-shadow: none;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none; }
-
-.contact-container .contact-person {
-  color: #fff;
-  background-color: #4fc8a1;
-  font-size: 10px;
+  display: inline;
+  line-height: inherit;
+  margin: 20px;
   -ms-flex-direction: row;
-      flex-direction: row;
-  text-align: center;
-  width: 50px; }
-
-blockquote {
-  border-left: 10px solid #CB203E;
-  padding: 0 19px; }
+      flex-direction: row; }
 
 /*--------------------------------------------------------------
 # NW Program Page
@@ -1802,27 +1911,6 @@ blockquote {
   overflow: visible; }
   .red-border-container p {
     margin: 0 auto; }
-
-.red-border-q {
-  width: 65%;
-  top: 10px;
-  margin: 0 30px;
-  padding-left: 25px;
-  display: inline-block;
-  position: relative;
-  font-size: 1.1rem;
-  font-weight: bold; }
-  .red-border-q p {
-    margin: 0; }
-
-.red-border-q ::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5PX;
-  left: 0PX;
-  height: 100%;
-  border-left: solid 8px #D93B57; }
 
 .mob-container {
   transition: all .5s ease-out .5s;
