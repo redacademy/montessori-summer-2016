@@ -11,6 +11,7 @@ get_header();
         <main id="main" class="site-main " role="main">
 
 <!-- Our History Section  -->
+
           <section id="history" class="history-section mob-container">
   <div class="main-history content-wrapper">
 
@@ -46,7 +47,7 @@ echo $histor;
 <section id="philosophy" class="philosophys-section ">
 
  <div class="main-philosophy ">
- <div class=""><h1>Philosophy</h1></div>
+ <div><h1>Philosophy</h1></div>
 
  <?php
 $fields = CFS()->get('philosophy'); ?>
@@ -54,7 +55,7 @@ $fields = CFS()->get('philosophy'); ?>
 
 foreach($fields as $field)
   { ?>
-<div class="philosophy-grid ">
+<div class="philosophy-grid">
 <h2 ><a href="" onclick="return showImage()";><?php
   echo $field['philosophy_title']; ?></a></h2>
 <p><?php
@@ -78,22 +79,22 @@ foreach($fields as $field)
 <div class="main-benefits content-wrapper">
 <h1>Benefits of Montessori</h1>
 <div class="first-benefits-section">
-
-  <div class= "benefits-img" >
-  <?php
-output_image('benefits_img'); ?>
-
-        <div class="benefits-content">
-            <?php
+  <div class="benefits-content">
+      <?php
 $benefit = CFS()->get('benefits_content');
 
 if (!empty($benefit))
-  {
-  echo $benefit;
-  }; ?>
-  </div>
-        </div>
+{
+echo $benefit;
+}; ?>
 </div>
+  <div class= "benefits-img" >
+  <?php
+output_image('benefits_img'); ?>
+</div>
+
+        </div>
+
 <!--  here is the meta data of the benefits section -->
 
           <ul>
@@ -115,6 +116,7 @@ foreach($fields as $field)
       </div>
            </ul>
  </div>
+ </div>
 </section>
 
 
@@ -133,25 +135,35 @@ $fields = CFS()->get('materials'); ?>
 
 foreach($fields as $field)
   { ?>
-<div class="materials" >
-<div><h1><?php
-  echo $field['materials_title']; ?></h1>
-  <div>
+<div class="materials materials-grid">
+
+
+
+
+<div class="materials-contents"><p>
+  <h1><?php
+    echo $field['materials_title']; ?></h1>
+  <?php
+  echo $field['materials_content']; ?></p>
+</div>
+<!-- <div class="materials-img"> -->
 <?php
   $src = wp_get_attachment_image_src($field['materials_img'], 'small');
   echo '<img src="' . $src[0] . '" />'; ?>
-<p>  <?php
-  echo $field['materials_content']; ?></p>
+<!-- </div> -->
+</div>
 <?php
+
   } ?>
- </div>
+
+
 </div>
 </section>
 <!-- Resources Section  -->
 <section id= "resources" class="container mob-container">
   <div class="main-resources content-wrapper">
 <div class="title-resources">
-              <h1 id="resources" >Resources</h1>
+              <h1 id="resources">Resources</h1>
 
 
 <button class="green-btn">NW Montessori Program</button>
