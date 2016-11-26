@@ -1670,6 +1670,8 @@ site-main .a green-btn {
   .teacher-list .teacher-grid {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex: 50%;
+        flex: 50%;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-wrap: wrap;

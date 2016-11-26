@@ -138,6 +138,7 @@ flex-direction: column;
 
 	.teacher-grid {
 		display: flex;
+		flex: 50%;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
