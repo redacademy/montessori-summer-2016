@@ -47,7 +47,7 @@ get_header(); ?>
           <div> <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" /> </div>
           <div> <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p> </div>
         </div>
-       <?php echo CFS()->get('second_support_paragraph'); ?> 
+       <?php echo CFS()->get('second_support_paragraph'); ?>
 
 
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
@@ -88,7 +88,7 @@ get_header(); ?>
                   </p>
                   <p class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
-                    <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
+                    <a class="features-green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
                   </p>
                 </div>
               </section>
