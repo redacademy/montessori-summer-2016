@@ -4,7 +4,7 @@
 /////*Start History Section**/////
 
 .history-content {
-    width: 80%;
+    width: 100%;
     flex-wrap: wrap;
     margin-left: 30px;
 }
@@ -62,7 +62,7 @@
             top: 5PX;
             left: 0PX;
             height: 100%;
-            border-left: solid 8px $border_left_red;
+            border-left: solid 12px $border_left_red;
         }
         font-size: 1.5rem;
     };
@@ -102,8 +102,8 @@
         flex-wrap: wrap;
         position: relative;
         @include desktop {
-            width: 310px;
-            height: 310px;
+            width: 300px;
+            height: 300px;
             background-color: #AFF1D3;
             -webkit-transition: 3s;
             -webkit-transform-style: preserve-3d;
@@ -223,6 +223,16 @@
         flex-direction: row-reverse;
     }
 }
+.main-materials div:nth-of-type(1){
+      img{
+        display:none;
+      }
+        .materials-contents{
+          width: 90%;
+        }
+}
+
+
 
 .materials {
     margin-top: 60px;
@@ -240,7 +250,7 @@
         width: 230px;
         height: 230px;
         @include desktop {
-            margin: 40px 0 0 40px;
+            margin-top: 100px;
             width: 300px;
             height: 300px;
         }
@@ -248,8 +258,9 @@
 }
 
 .materials-contents {
+  width: 100%;
     @include desktop {
-        width: 60%;
+width: 60%;
 
         .red-border-q {
             width: 75%;
@@ -258,11 +269,12 @@
             padding-left: 25px;
             display: inline-block;
             position: relative;
-            font-size: 1.1rem;
-            font-weight: bold;
+
+
 
             p {
                 margin: 0;
+                  font-size: 2rem;
             }
         }
 
@@ -273,18 +285,19 @@
             top: 5PX;
             left: 0PX;
             height: 100%;
-            border-left: solid 8px $border_left_red;
+            border-left: solid 12px $border_left_red;
         }
         font-size: 1.5rem;
     }
 }
 
-.materials-grid img:nth-of-type(2) {
+.materials-grid div:nth-of-type(2) {
     align-self: left;
 }
 
+
 .materials-grid {
-    margin: 0;
+    margin:40px 0;
     padding: 0;
 }
 ////////*******End Materials Section******/////////
@@ -309,8 +322,8 @@
         margin-top: 30px;
         @include desktop {
             align-self: flex-start;
-            width: 350px;
-            height: 350px;
+            width: 330px;
+            height: 330px;
             margin: 0 40px 20px 0;
         }
     }
@@ -319,7 +332,6 @@
 .benefits-content {
     width: 100%;
     @include desktop {
-        max-width: 80%;
 
         .red-border-q {
             width: 75%;
@@ -328,9 +340,9 @@
             padding-left: 25px;
             display: inline-block;
             position: relative;
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
+            p{
+                font-size: 2rem;
+        }}
 
         .red-border-q::before {
             content: "";
@@ -339,9 +351,8 @@
             top: 5PX;
             left: 0PX;
             height: 100%;
-            border-left: solid 8px $border_left_red;
+            border-left: solid 12px $border_left_red;
         }
-        font-size: 1.5rem;
     }
 }
 
