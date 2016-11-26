@@ -369,6 +369,7 @@
                     -moz-transform: rotateY(180deg);
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
+                    cursor: pointer;
                 }
                 ::active{
                         transform: translate(0px,5px);
@@ -391,8 +392,8 @@
                     backface-visibility: hidden;
                 }
                 .features-back {
-                    width: 480px;
-                    height: 170px;
+                    // width: 480px;
+                    // height: 170px;
                     border: 1px solid #248E6A;
                     margin: 0;
                     text-align: center;

@@ -1056,7 +1056,8 @@ div .secondary {
         -ms-flex-direction: row;
             flex-direction: row; }
         .site-main .all-features .features-wrapper .features-flipper:hover {
-          transform: rotateY(180deg); }
+          transform: rotateY(180deg);
+          cursor: pointer; }
         .site-main .all-features .features-wrapper .features-flipper ::active {
           transform: translate(0px, 5px);
           -webkit-transform: translate(0px, 5px);
@@ -1074,8 +1075,6 @@ div .secondary {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden; }
         .site-main .all-features .features-wrapper .features-flipper .features-back {
-          width: 480px;
-          height: 170px;
           border: 1px solid #248E6A;
           margin: 0;
           text-align: center;
@@ -1796,3 +1795,85 @@ blockquote {
   margin: 0 auto;
   overflow: auto;
   padding: 40px 0; }
+
+/*--------------------------- # 404 page --------------------------*/
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0.0;
+    box-shadow: 0 0 0 1rem rgba(108, 196, 23, 0.2), 0 0 0 2rem rgba(108, 196, 23, 0.15), 0 0 0 4rem rgba(108, 196, 23, 0.2); }
+  50% {
+    opacity: 1.0;
+    box-shadow: 0 0 0 1.25rem rgba(108, 196, 23, 0.2), 0 0 0 2.75rem rgba(108, 196, 23, 0.1), 0 0 0 5rem rgba(108, 196, 23, 0); }
+  75% {
+    box-shadow: 0 0 0 1.5rem rgba(108, 196, 23, 0.2), 0 0 0 3rem rgba(108, 196, 23, 0), 0 0 0 6rem rgba(108, 196, 23, 0); }
+  100% {
+    transform: scale(1.5, 1.5);
+    opacity: 0.0;
+    box-shadow: 0 0 0 1.75rem rgba(108, 196, 23, 0), 0 0 0 3.75rem rgba(108, 196, 23, 0), 0 0 0 7rem rgba(108, 196, 23, 0); } }
+
+@keyframes pulsatetwo {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0.0;
+    box-shadow: 0 0 0 1rem rgba(108, 196, 23, 0.2), 0 0 0 2rem rgba(108, 196, 23, 0.15), 0 0 0 4rem rgba(108, 196, 23, 0.2); }
+  50% {
+    opacity: 1.0;
+    box-shadow: 0 0 0 1.25rem rgba(108, 196, 23, 0.2), 0 0 0 2.75rem rgba(108, 196, 23, 0.1), 0 0 0 5rem rgba(108, 196, 23, 0); }
+  75% {
+    box-shadow: 0 0 0 1.5rem rgba(108, 196, 23, 0.2), 0 0 0 3rem rgba(108, 196, 23, 0), 0 0 0 6rem rgba(108, 196, 23, 0); }
+  100% {
+    transform: scale(3, 3);
+    opacity: 0.8;
+    box-shadow: 0 0 0 1.75rem rgba(108, 196, 23, 0), 0 0 0 3.75rem rgba(108, 196, 23, 0), 0 0 0 7rem rgba(108, 196, 23, 0); } }
+
+.error-404 {
+  padding-top: 0px;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: -webkit-linear-gradient(#091704, rgba(0, 0, 0, 0.7)), url(https://wallpaperscraft.com/image/green_yellow_lines_light_131_1920x1080.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .error-404 .title {
+    color: #4fc8a1;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-shadow: 0 1px 0 #fff;
+    padding: 10px;
+    line-height: 75px;
+    text-align: center; }
+  .error-404 h2 {
+    color: #4fc8a1;
+    min-height: 200px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+
+.btn-return {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  animation: pulsate 3.5s ease-out;
+  animation-iteration-count: infinite;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .btn-return:hover {
+    background-color: #142806; }
