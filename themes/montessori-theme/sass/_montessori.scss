@@ -9,26 +9,36 @@ li {
 }
 
 .history-content {
-    width: 100%;
-    flex-wrap: wrap-reverse;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-left: 30px;
 }
 
 .history-title {
     margin-bottom: 0;
-    flex: 0 70%;
+    flex: 0 90%;
+
 }
 
 .main-history {
+p:nth-child(4){
+margin-left: -40%;
+overflow: visible;;
+  @include desktop {
+      margin-left: 0px;
+    }
+   }
+
     @include flex(flex-end,space-between);
 
     .history-img {
         align-self: flex-start;
         margin-top: 100px;
-        width: 190px;
-        height: 219px;
+        width: 220px;
+        height: 240px;
         @include desktop {
-            width: 350px;
-            height: auto;
+            width: 430px;
+            height: 500px;
             padding-bottom: 40px;
         };
 
@@ -40,7 +50,7 @@ li {
 
     @include desktop {
       .red-border-q{
-        width:60%;
+        width:70%;
       top: 10px;
       margin: 0 0 0 10% ;
         padding-left: 25px;
@@ -49,6 +59,7 @@ li {
             font-size: 1.2rem;
             font-weight: bold;
           p{
+            overflow: visible;
       margin: 0;
           }
       }
@@ -240,24 +251,33 @@ li {
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 
+.main-materials div:nth-of-type(3){
+  @include desktop{ flex-direction: row-reverse;
+  }
+}
+
 .materials{
   margin-top: 60px;
-  width:95%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 @include desktop{  @include flex(flex-start,space-between);
-}}
-  .materials-img img{
-    width:300px;
-    height: 300px;
+flex-direction: row;
+  flex-wrap: wrap;
+}
+   img{
+    width:230px;
+    height: 230px;
     @include desktop {
-      align-self: flex-start;
-      margin-top: 40px;
-      width:350px;
-      height:350px;
+      margin:40px 0 0 40px;
+      width:300px;
+      height:300px;
     }
-  }
+  }}
   .materials-contents{
   @include desktop {
-    width:70%;
+    width:60%;
     .red-border-q{
       width:75%;
     top: 10px;
@@ -283,7 +303,14 @@ li {
       font-size: 1.5rem;
   }
 }
+.materials-grid img:nth-of-type(2){
+  align-self: left;
+}
+.materials-grid{
+  margin: 0px;
+  padding: 0px;
 
+}
 ////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
 
@@ -294,12 +321,12 @@ li {
 .first-benefits-section {
     width: 90%;
     height: 100%;
-    @include flex(flex-start,space-between);
+    @include flex(center,space-between);
 
-    .benefits-img{
+    img{
         align-self: flex-start;
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
         margin-top: 30px;
         @include desktop {
             width: 350px;
