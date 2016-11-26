@@ -79,6 +79,9 @@ foreach($fields as $field)
 <div class="main-benefits content-wrapper">
 <h1>Benefits of Montessori</h1>
 <div class="first-benefits-section">
+  <?php
+output_image('benefits_img'); ?>
+
   <div class="benefits-content">
       <?php
 $benefit = CFS()->get('benefits_content');
@@ -88,9 +91,6 @@ if (!empty($benefit))
 echo $benefit;
 }; ?>
 </div>
-
-  <?php
-output_image('benefits_img'); ?>
 
 
         </div>
@@ -149,15 +149,31 @@ foreach($fields as $field)
 <?php
 
   } ?>
+  <!-- Archive Title -->
+  <div class="montessori-archive">
+    <h1>Archives</h1>
+  </div>
 </div>
+
 </section>
 <!-- Resources Section  -->
 <section id= "resources" class="container mob-container">
   <div class="main-resources content-wrapper">
-<div class="title-resources">
-              <h1 id="resources">Resources</h1>
-<button class="green-btn">NW Montessori Program</button>
+    <div class="title-resources">
+                  <h1 id="resources">Resources</h1>
 </div>
+<div class="montessori-archive">
+<h1>Archives</h1>
+</div>
+<div class="montessori-archive">
+<h1>videos</h1>
+</div>
+<div class="montessori-archive">
+<h1>others</h1>
+</div>
+
+<button class="green-btn">NW Montessori Program</button>
+
 </div>
 </section>
 

@@ -1186,6 +1186,9 @@ body p,
 li {
   font-size: 1.6rem; }
 
+h1, h2, h3 {
+  text-transform: capitalize; }
+
 .history-content {
   width: 80%;
   -ms-flex-wrap: wrap;
@@ -1466,23 +1469,30 @@ li {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 60rem) {
+    .first-benefits-section {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
   .first-benefits-section img {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     width: 250px;
     height: 250px;
     margin-top: 30px; }
     @media (min-width: 60rem) {
       .first-benefits-section img {
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         width: 350px;
         height: 350px;
-        padding-bottom: 40px; } }
+        margin: 0 40px 20px 0; } }
 
 .benefits-content {
-  width: 70%; }
+  width: 100%; }
   @media (min-width: 60rem) {
     .benefits-content {
+      max-width: 80%;
       font-size: 1.5rem; }
       .benefits-content .red-border-q {
         width: 75%;
@@ -1493,8 +1503,6 @@ li {
         position: relative;
         font-size: 1.1rem;
         font-weight: bold; }
-        .benefits-content .red-border-q p {
-          margin: 0; }
       .benefits-content .red-border-q ::before {
         content: "";
         display: block;
@@ -1510,6 +1518,13 @@ li {
   @media (min-width: 60rem) {
     .benefits-title p {
       font-size: 1.5rem; } }
+
+.montessori-archive {
+  margin-top: 40px; }
+  .montessori-archive h1 {
+    width: 40%;
+    border-top: solid 4px #4FC8A1;
+    padding-top: 30px; }
 
 /*Start Resources Section  */
 .green-btn {

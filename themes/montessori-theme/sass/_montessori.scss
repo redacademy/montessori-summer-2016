@@ -7,6 +7,9 @@ body p,
 li {
     font-size: $font_body_size_mob;
 }
+h1,h2,h3{
+  text-transform: capitalize;
+}
 
 .history-content {
     width: 80%;
@@ -322,22 +325,25 @@ flex-direction: row;
     width: 90%;
     height: 100%;
     @include flex(center,space-between);
-
+    flex-direction: column;
+@include desktop {flex-direction: row;}
     img{
-        align-self: flex-start;
+
         width: 250px;
         height: 250px;
         margin-top: 30px;
         @include desktop {
+          align-self: flex-start;
             width: 350px;
             height: 350px;
-            padding-bottom: 40px;
+            margin: 0 40px 20px 0
         }
     }
 }
     .benefits-content {
-        width: 70%;
+        width: 100%;
         @include desktop {
+          max-width: 80%;
           .red-border-q{
             width:75%;
           top: 10px;
@@ -347,9 +353,6 @@ flex-direction: row;
               position: relative;
                 font-size: 1.1rem;
                 font-weight: bold;
-              p{
-          margin: 0;
-              }
           }
           .red-border-q ::before{
               content:"";
@@ -373,6 +376,17 @@ flex-direction: row;
             }
         }
     }
+///Archive ////
+
+.montessori-archive{
+  margin-top: 40px;
+h1{
+width:40%;
+  border-top: solid 4px $color_btn_green;
+  padding-top: 30px;
+}}
+
+
 
 /*Start Resources Section  */
 .green-btn {
