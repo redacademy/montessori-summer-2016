@@ -8,12 +8,12 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
       <div class="home container">
-      <section class="home-wrapper">
+      <section class="home-wrapper container">
         <div class="home-img">
           <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
         </div>
 <!-- this is for the welcoming title  -->
-        <div class="welcome-wrapper ">
+        <div class="welcome-wrapper container">
             <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
             <p><?php echo CFS()->get('banner_paragraph') ?></p>
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/about/">Our Society Role</a>
@@ -40,23 +40,20 @@ get_header(); ?>
 <!-- we need your support section -->
     <section class="support-wrapper ">
       <div class="information">
-        <h2> <?php echo CFS()->get('support_title'); ?> </h2>
-        <p class="info"> <?php echo CFS()->get('first_support_paragraph'); ?> </p>
-        <div class="support-img-wrapper">
-          <div> <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" /> </div>
-          <div> <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p> </div>
+        <p class="info"> <?php echo CFS()->get('info_paragraph'); ?> </p>
+        <div class="support-img">
+          <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" />
+          <p>Your monthly contribution costs only two Lattes a month.</p>
         </div>
-       <?php echo CFS()->get('second_support_paragraph'); ?> 
-
 
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
-    <section class="all-features ">
+    <section class="all-features container">
       <h2> <?php echo CFS()->get('featured_title'); ?></h2>
-      <section class="features-wrapper ">
+      <section class="features-wrapper container">
         <div class="features-flipper">
           <p class="front">
             <?php echo CFS()->get('features_front'); ?>
@@ -68,7 +65,7 @@ get_header(); ?>
         </div>
       </section>
 <!-- second flipper -->
-        <section class="features-wrapper ">
+        <section class="features-wrapper container">
             <div class="features-flipper">
               <p class="front">
                 <?php echo CFS()->get('second_features_front'); ?>
@@ -80,14 +77,14 @@ get_header(); ?>
             </div>
         </section>
 <!-- third flipper -->
-            <section class="features-wrapper ">
+            <section class="features-wrapper container">
                 <div class="features-flipper">
                   <p class="front">
                     <?php echo CFS()->get('third_features_front'); ?>
                   </p>
                   <p class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
-                    <a class="features-green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
+                    <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
                   </p>
                 </div>
               </section>

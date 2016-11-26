@@ -8,19 +8,22 @@ li {
     font-size: $font_body_size_mob;
 }
 
-.history-content{
-  width:100%;
-  flex-wrap:wrap-reverse;
+.history-content {
+    width: 100%;
+    flex-wrap: wrap-reverse;
 }
-.history-title{
-  margin-bottom: 0px;
-  flex:0 70%;
+
+.history-title {
+    margin-bottom: 0;
+    flex: 0 70%;
 }
 
 .main-history {
-@include flex(flex-end,space-between);
+    @include flex(flex-end,space-between);
+
     .history-img {
-        float: left;
+        align-self: flex-start;
+        margin-top: 100px;
         width: 190px;
         height: 219px;
         @include desktop {
@@ -35,13 +38,36 @@ li {
         }
     }
 
+    @include desktop {
+      .red-border-q{
+        width:60%;
+      top: 10px;
+      margin: 0 0 0 10% ;
+        padding-left: 25px;
+        display:inline-block;
+          position: relative;
+            font-size: 1.2rem;
+            font-weight: bold;
+          p{
+      margin: 0;
+          }
+      }
+      .red-border-q ::before{
+          content:"";
+          display: block;
+          position: absolute;
+          top: 5PX;
+          left: 0PX;
+          height: 100%;
+       border-left:solid 8px $border_left_red;
+      }
+        font-size: 1.5rem;
+    };
     p {
         padding-top: 4px;
+
         text-align: left;
-        display: block;
-        @include desktop {
-            font-size: 1.5rem;
-        };
+
     }
 }
 ////************philosophy Section ************/////
@@ -61,7 +87,6 @@ li {
     div {
         width: 100%;
     }
-
 
     .philosophy-grid {
         display: -ms-flexbox;
@@ -214,41 +239,113 @@ li {
 }
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
+
+.materials{
+  margin-top: 60px;
+  width:95%;
+@include desktop{  @include flex(flex-start,space-between);
+}}
+  .materials-img img{
+    width:300px;
+    height: 300px;
+    @include desktop {
+      align-self: flex-start;
+      margin-top: 40px;
+      width:350px;
+      height:350px;
+    }
+  }
+  .materials-contents{
+  @include desktop {
+    width:70%;
+    .red-border-q{
+      width:75%;
+    top: 10px;
+    margin: 0 0 0 10% ;
+      padding-left: 25px;
+      display:inline-block;
+        position: relative;
+          font-size: 1.1rem;
+          font-weight: bold;
+        p{
+    margin: 0;
+        }
+    }
+    .red-border-q ::before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: 5PX;
+        left: 0PX;
+        height: 100%;
+     border-left:solid 8px $border_left_red;
+    }
+      font-size: 1.5rem;
+  }
+}
+
 ////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
+
 .benefits li {
     list-style-type: disc;
 }
-.first-benefits-section{
-  width: 80%;
-  @include flex(flex-end,space-between);
-      .benefits-img {
-          width: 190px;
-          height: 219px;
-          @include desktop {
-              width: 350px;
-              height: auto;
-              padding-bottom: 40px;
-          };
 
+.first-benefits-section {
+    width: 90%;
+    height: 100%;
+    @include flex(flex-start,space-between);
 
-}
-.benefits-title{
-}
-
-
-
-    p {
-        padding-top: 4px;
-        text-align: left;
-        display: block;
+    .benefits-img{
+        align-self: flex-start;
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
         @include desktop {
-            font-size: 1.5rem;
-        };
+            width: 350px;
+            height: 350px;
+            padding-bottom: 40px;
+        }
     }
 }
+    .benefits-content {
+        width: 70%;
+        @include desktop {
+          .red-border-q{
+            width:75%;
+          top: 10px;
+          margin: 0 0 0 10% ;
+            padding-left: 25px;
+            display:inline-block;
+              position: relative;
+                font-size: 1.1rem;
+                font-weight: bold;
+              p{
+          margin: 0;
+              }
+          }
+          .red-border-q ::before{
+              content:"";
+              display: block;
+              position: absolute;
+              top: 5PX;
+              left: 0PX;
+              height: 100%;
+           border-left:solid 8px $border_left_red;
+          }
+            font-size: 1.5rem;
+        }
+    }
 
-
+    .benefits-title {
+        p {
+            padding-top: 4px;
+            display: block;
+            @include desktop {
+                font-size: 1.5rem;
+            }
+        }
+    }
 
 /*Start Resources Section  */
 .green-btn {
