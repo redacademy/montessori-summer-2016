@@ -5,13 +5,14 @@
   padding: 0;
     .home {
       margin: 0 auto;
-      // padding: 0px 90px;
+    //   padding: 0px 90px;
+    // background-color: hotpink;
         .home-wrapper {
             width: 480px;
             height: 585px;
             background-color: rgba(0,0,0,0.74);
             @include desktop {
-                width: 541.64px;
+                width: 35%;
                 height: 555px;
                 background-color: rgba(0,0,0,0.74);
                 position: relative;
@@ -190,7 +191,7 @@
     }
     // this is for the support section
     .support-wrapper {
-        width: 480px;
+        // width: 480px;
         height: auto;
         .information {
             height: auto;
@@ -214,27 +215,44 @@
                     width: 1283px;
                 }
             }
+            .support-img-wrapper{
+                text-align: center;
+                @include desktop {
+                    display: inline-block;
+                    right: 40px;
+                    position: absolute;
+                }
             img {
                 width: 287px;
-                height: 470px;
-                @include desktop {
-                    float: right;
-                    position: absolute;
-                    right: 35px;
-                }
-                p {
+                // height: 470px;
+                // @include desktop {
+                //     display: inline-flex;
+                //     // right: 40px;
+                //     position: absolute;
+                //     right: 35px;
+                // }
+                p{
+                .image-text {
+                    display: inline-block;
                     width: 470px;
                     font-family: "Noto Sans";
                     font-size: 20px;
-                    line-height: 46px;
+                    line-height: 40px;
+                    text-align: center;
                     color: #000;
                     margin: 45px;
-                    @include desktop {
-                        float: right;
-                        position: absolute;
-                        right: 35px;
+                    // @include desktop {
+                    // display: inline-flex;
+                    // // right: 40px;
+                    //     position: relative;
+                    //     right: 35px;
+                    // }
                     }
                 }
+            }
+            }
+            blockquote {
+                border-left: 8px solid red; 
             }
             p {
                 width: 377px;
@@ -250,15 +268,15 @@
                     font-size: 22px;
                     line-height: 46px;
                 }
-                .info {
-                    width: 470px;
-                    // height: 294px;
-                    font-family: "Noto Sans";
-                    font-size: 26px;
-                    font-weight: bold;
-                    line-height: 42px;
-                    color: #000;
-                }
+                // .info {
+                //     width: 470px;
+                //     // height: 294px;
+                //     font-family: "Noto Sans";
+                //     font-size: 26px;
+                //     font-weight: bold;
+                //     line-height: 42px;
+                //     color: #000;
+                // }
             }
             //p
             .red-btn {
@@ -327,6 +345,13 @@
             box-sizing: border-box;
             height: 139.76px;
             width: 480.27px;
+            position: relative;
+	border-radius: 10px;
+	font-family: 'Noto Sans';
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;	
+
             .features-flipper {
                 position: relative;
                 -webkit-transition: 1.9s;
@@ -345,6 +370,11 @@
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
                 }
+                ::active{
+                        transform: translate(0px,5px);
+                    -webkit-transform: translate(0px,5px);
+                        border-bottom: 1px solid;
+                        }
                 .front {
                     height: auto;
                     text-align: center;
@@ -382,7 +412,7 @@
                 }
             }
         }
-        .green-btn {
+        .features-green-btn {
             color: #248E6A;
             text-decoration: none;
         }

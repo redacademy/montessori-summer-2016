@@ -768,7 +768,7 @@ div .secondary {
       background-color: rgba(0, 0, 0, 0.74); }
       @media (min-width: 60rem) {
         .site-main .home .home-wrapper {
-          width: 541.64px;
+          width: 35%;
           height: 555px;
           background-color: rgba(0, 0, 0, 0.74);
           position: relative; } }
@@ -923,7 +923,6 @@ div .secondary {
           font-size: 26px;
           padding: 6px 85px; } }
   .site-main .support-wrapper {
-    width: 480px;
     height: auto; }
     .site-main .support-wrapper .information {
       height: auto; }
@@ -946,6 +945,28 @@ div .secondary {
             margin: 0;
             box-sizing: border-box;
             width: 1283px; } }
+<<<<<<< HEAD
+      .site-main .support-wrapper .information .support-img-wrapper {
+        text-align: center; }
+        @media (min-width: 48rem) {
+          .site-main .support-wrapper .information .support-img-wrapper {
+            display: inline-block;
+            right: 40px;
+            position: absolute; } }
+        .site-main .support-wrapper .information .support-img-wrapper img {
+          width: 287px; }
+          .site-main .support-wrapper .information .support-img-wrapper img p .image-text {
+            display: inline-block;
+            width: 470px;
+            font-family: "Noto Sans";
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            color: #000;
+            margin: 45px; }
+      .site-main .support-wrapper .information blockquote {
+        border-left: 8px solid red; }
+=======
       .site-main .support-wrapper .information img {
         width: 287px;
         height: 470px; }
@@ -966,6 +987,7 @@ div .secondary {
               float: right;
               position: absolute;
               right: 35px; } }
+>>>>>>> c9ad4ec6aee2415b4e21184183c1d114783d8ea5
       .site-main .support-wrapper .information p {
         width: 377px;
         font-family: "Noto Sans";
@@ -979,13 +1001,6 @@ div .secondary {
             font-family: "Noto Sans";
             font-size: 22px;
             line-height: 46px; } }
-        .site-main .support-wrapper .information p .info {
-          width: 470px;
-          font-family: "Noto Sans";
-          font-size: 26px;
-          font-weight: bold;
-          line-height: 42px;
-          color: #000; }
       .site-main .support-wrapper .information .red-btn {
         width: 185px;
         height: 47px;
