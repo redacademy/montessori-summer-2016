@@ -4,7 +4,8 @@
 *template name: get-involved
 * @package RED_Starter_Theme
 */
-get_header(); ?>
+get_header();
+ ?>
 
 <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -32,21 +33,10 @@ if ( $query-> have_posts() ) :  ?>
     <?php endif; ?>
   <?php endwhile; ?>
 <?php endif; ?>
-
-
-
 <?php wp_reset_postdata(); ?>
 
-</section>
-</main><!-- #main -->
-</div><!-- #primary -->
 
 
-
-<!--This is for past Events  -->
-<!-- <div class="text-title">
-<h3>  <a class="text_post" href="<?php echo esc_url(the_permalink()); ?>">past Events </a> </h3>
-</div> -->
 
 <!-- This is for suppot now  & did you  and image -->
 <div class="text-shadow">
@@ -61,15 +51,28 @@ if ( $query-> have_posts() ) :  ?>
            <?php endif ; ?>
          </div>
          <article class="involved">
-           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">your involvement+contribution</a>
+           <a class="circle-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">your involvement+contribution</a>
            <p><?php echo CFS()->get('get_text'); ?></p>
          </article>
 
-         <article class="involved">
-           <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">voleenter</a>
-           <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">make a donation</a>
+         <div>
+                     <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Voleenter</a>
+                   <a class="pink-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
+          </div>
+
+         <article class="contact-container">
+              <div class="contact-person">
+            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a></div>
+            <div class="contact-online">
+              <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a><div>
+              <div class="contact-email">
+                  <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a></div>
            <p><?php echo CFS()->get('get_text'); ?></p>
          </article>
+       </section>
+
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+</main>
+</div>

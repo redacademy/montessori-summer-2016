@@ -768,7 +768,7 @@ div .secondary {
       background-color: rgba(0, 0, 0, 0.74); }
       @media (min-width: 60rem) {
         .site-main .home .home-wrapper {
-          width: 541.64px;
+          width: 35%;
           height: 555px;
           background-color: rgba(0, 0, 0, 0.74);
           position: relative; } }
@@ -923,7 +923,6 @@ div .secondary {
           font-size: 26px;
           padding: 6px 85px; } }
   .site-main .support-wrapper {
-    width: 480px;
     height: auto; }
     .site-main .support-wrapper .information {
       height: auto; }
@@ -946,26 +945,26 @@ div .secondary {
             margin: 0;
             box-sizing: border-box;
             width: 1283px; } }
-      .site-main .support-wrapper .information img {
-        width: 287px;
-        height: 470px; }
+      .site-main .support-wrapper .information .support-img-wrapper {
+        text-align: center; }
         @media (min-width: 60rem) {
-          .site-main .support-wrapper .information img {
-            float: right;
-            position: absolute;
-            right: 35px; } }
-        .site-main .support-wrapper .information img p {
-          width: 470px;
-          font-family: "Noto Sans";
-          font-size: 20px;
-          line-height: 46px;
-          color: #000;
-          margin: 45px; }
-          @media (min-width: 60rem) {
-            .site-main .support-wrapper .information img p {
-              float: right;
-              position: absolute;
-              right: 35px; } }
+          .site-main .support-wrapper .information .support-img-wrapper {
+            display: inline-block;
+            right: 40px;
+            position: absolute; } }
+        .site-main .support-wrapper .information .support-img-wrapper img {
+          width: 287px; }
+          .site-main .support-wrapper .information .support-img-wrapper img p .image-text {
+            display: inline-block;
+            width: 470px;
+            font-family: "Noto Sans";
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            color: #000;
+            margin: 45px; }
+      .site-main .support-wrapper .information blockquote {
+        border-left: 8px solid red; }
       .site-main .support-wrapper .information p {
         width: 377px;
         font-family: "Noto Sans";
@@ -979,13 +978,6 @@ div .secondary {
             font-family: "Noto Sans";
             font-size: 22px;
             line-height: 46px; } }
-        .site-main .support-wrapper .information p .info {
-          width: 470px;
-          font-family: "Noto Sans";
-          font-size: 26px;
-          font-weight: bold;
-          line-height: 42px;
-          color: #000; }
       .site-main .support-wrapper .information .red-btn {
         width: 185px;
         height: 47px;
@@ -1474,73 +1466,127 @@ li {
     -ms-flex-item-align: end;
         align-self: flex-end; }
 
-site-main .involved-wrapper {
-  width: 480px;
-  padding: 0 auto;
-  margin-left: auto;
-  margin-right: auto; }
+.site-main .main-involved-wrapper {
+  margin: 0 auto;
+  max-width: 480px; }
 
-site-main .a green-btn {
-  text-decoration: none;
-  padding-left: 19px;
-  padding-right: 36px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  width: 120px;
-  height: 220px;
-  font-size: 15px;
-  font-family: Asap;
+.involved-title {
   color: #000;
+  font-size: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
   background-color: #4FC8A1;
+  padding-top: 20px; }
+  .involved-title a {
+    color: #000; }
+
+.green-button {
+  background-color: #4FC8A1;
+  border-radius: 6px;
   font-family: "Noto Sans";
   font-size: 15px;
   font-weight: bold;
   text-align: center;
   line-height: 30px;
-  display: block; }
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: 300;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+  display: inline-block; }
 
 .text-shadow {
   border-top: 3px solid #248e6a;
   width: 100%; }
 
-.get_involved img {
-  float: left;
-  width: 227px;
-  height: 244px; }
+.support-containar {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
-.involved .green-btn {
-  padding-left: 19px;
-  padding-right: 25px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  font-size: 25px;
-  height: 200px;
+.support-img {
+  width: 200px;
+  height: 100%;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.involved .circle-btn {
+  width: 200px;
+  height: 178px;
   display: -ms-flexbox;
+  display: flex;
+  height: 200px;
   display: flex;
   border-radius: 150%;
   background-color: #4fc8a1;
-  display: block;
-  width: 200px;
+  margin: 130px;
   text-align: center;
   color: #fff;
-  text-align: center; }
+  padding-top: 50px;
+  font-weight: 300;
+  font-family: Asap;
+  font-size: 18px;
+  text-align: center;
+  line-height: 27px; }
 
-.involved .red-btn {
-  padding: 15px 40px;
-  background-color: #F76072;
+.re-btn {
+  width: 199.38px;
+  height: 47px;
   border-radius: 6px;
+  background-color: #CB203E;
   color: #fff;
+  margin-left: 20px;
+  padding: 10px;
+  box-shadow: none;
   font-family: "Noto Sans";
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 300;
   text-shadow: none;
   letter-spacing: 0.8px;
+  text-decoration: none;
+  width: 199.38px;
+  height: 27px;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
-  display: inline;
-  line-height: inherit;
-  margin: 20px;
+  line-height: 27px;
+  margin: 60px; }
+
+.pink-btn {
+  background-color: #f76072;
+  border-radius: 6px;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  margin-left: 20px;
+  padding: 8px;
+  box-shadow: none;
+  font-weight: 300;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+  text-decoration: none; }
+
+.contact-container .contact-person {
+  color: #fff;
+  background-color: #4fc8a1;
+  font-size: 10px;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  text-align: center;
+  width: 50px; }
+
+blockquote {
+  border-left: 10px solid #CB203E;
+  padding: 0 19px; }
 
 /*--------------------------------------------------------------
 # NW Program Page
