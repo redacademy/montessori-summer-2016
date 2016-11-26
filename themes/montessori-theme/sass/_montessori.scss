@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 /////*Start History Section**/////
 
-body p,
+ p,
 li {
     font-size: $font_body_size_mob;
 }
@@ -11,6 +11,24 @@ h1,h2,h3{
   text-transform: capitalize;
 }
 
+h1{font-size:$h1_size_mob;}
+h2{
+font-size:$h2_size_mob;
+}
+h3{
+  font-size:$h3_size_mob;
+}
+
+@include desktop{
+  p,
+  li {
+     font-size: $font_body_size_desktop;}
+  h1{font-size:$h1_size_desktop;}
+  h2{
+  font-size:$h2_size_desktop;}
+  h3{
+    font-size:$h3_size_desktop;
+}}
 .history-content {
     width: 80%;
     flex-wrap: wrap;
@@ -380,9 +398,9 @@ flex-direction: row;
 
 .montessori-archive{
   margin-top: 40px;
-h1{
+h3{
 width:40%;
-  border-top: solid 4px $color_btn_green;
+  border-top: solid 3px $color_btn_green;
   padding-top: 30px;
 }}
 

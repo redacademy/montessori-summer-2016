@@ -1182,12 +1182,32 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
-body p,
+p,
 li {
   font-size: 1.6rem; }
 
 h1, h2, h3 {
   text-transform: capitalize; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+@media (min-width: 60rem) {
+  p,
+  li {
+    font-size: 1.7rem; }
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.2rem; }
+  h3 {
+    font-size: 2rem; } }
 
 .history-content {
   width: 80%;
@@ -1521,9 +1541,9 @@ h1, h2, h3 {
 
 .montessori-archive {
   margin-top: 40px; }
-  .montessori-archive h1 {
+  .montessori-archive h3 {
     width: 40%;
-    border-top: solid 4px #4FC8A1;
+    border-top: solid 3px #4FC8A1;
     padding-top: 30px; }
 
 /*Start Resources Section  */
@@ -1561,7 +1581,7 @@ h1, h2, h3 {
       align-items: center; }
   .about-wrapper h1 {
     font-family: "Asap";
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: normal;
     line-height: 2.625rem;
     text-align: left;
@@ -1673,7 +1693,7 @@ site-main .a green-btn {
   background-color: grey; }
   .nw-program-wrapper h1 {
     font-family: "Asap";
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: normal;
     line-height: 2.625rem;
     text-align: left;
@@ -1859,7 +1879,7 @@ site-main .a green-btn {
   margin: 0px auto; }
 
 .content-wrapper {
-  border-bottom: solid 4px #4FC8A1;
+  border-bottom: solid 3px #4FC8A1;
   max-width: 85%;
   margin: 0 auto;
   overflow: hidden;

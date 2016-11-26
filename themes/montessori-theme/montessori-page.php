@@ -151,7 +151,7 @@ foreach($fields as $field)
   } ?>
   <!-- Archive Title -->
   <div class="montessori-archive">
-    <h1>Archives</h1>
+    <h3>Archives</h3>
   </div>
 </div>
 
@@ -163,13 +163,13 @@ foreach($fields as $field)
                   <h1 id="resources">Resources</h1>
 </div>
 <div class="montessori-archive">
-<h1>Archives</h1>
+<h3>Archives</h3>
 </div>
 <div class="montessori-archive">
-<h1>videos</h1>
+<h3>videos</h3>
 </div>
 <div class="montessori-archive">
-<h1>others</h1>
+<h3>others</h3>
 </div>
 
 <button class="green-btn">NW Montessori Program</button>
