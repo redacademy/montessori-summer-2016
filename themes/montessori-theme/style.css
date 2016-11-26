@@ -945,10 +945,9 @@ div .secondary {
             margin: 0;
             box-sizing: border-box;
             width: 1283px; } }
-<<<<<<< HEAD
       .site-main .support-wrapper .information .support-img-wrapper {
         text-align: center; }
-        @media (min-width: 48rem) {
+        @media (min-width: 60rem) {
           .site-main .support-wrapper .information .support-img-wrapper {
             display: inline-block;
             right: 40px;
@@ -966,28 +965,6 @@ div .secondary {
             margin: 45px; }
       .site-main .support-wrapper .information blockquote {
         border-left: 8px solid red; }
-=======
-      .site-main .support-wrapper .information img {
-        width: 287px;
-        height: 470px; }
-        @media (min-width: 60rem) {
-          .site-main .support-wrapper .information img {
-            float: right;
-            position: absolute;
-            right: 35px; } }
-        .site-main .support-wrapper .information img p {
-          width: 470px;
-          font-family: "Noto Sans";
-          font-size: 20px;
-          line-height: 46px;
-          color: #000;
-          margin: 45px; }
-          @media (min-width: 60rem) {
-            .site-main .support-wrapper .information img p {
-              float: right;
-              position: absolute;
-              right: 35px; } }
->>>>>>> c9ad4ec6aee2415b4e21184183c1d114783d8ea5
       .site-main .support-wrapper .information p {
         width: 377px;
         font-family: "Noto Sans";
@@ -1057,7 +1034,13 @@ div .secondary {
       width: 200px;
       box-sizing: border-box;
       height: 139.76px;
-      width: 480.27px; }
+      width: 480.27px;
+      position: relative;
+      border-radius: 10px;
+      font-family: 'Noto Sans';
+      font-size: 15px;
+      color: #000;
+      text-decoration: none; }
       .site-main .all-features .features-wrapper .features-flipper {
         position: relative;
         -webkit-transition: 1.9s;
@@ -1074,6 +1057,10 @@ div .secondary {
             flex-direction: row; }
         .site-main .all-features .features-wrapper .features-flipper:hover {
           transform: rotateY(180deg); }
+        .site-main .all-features .features-wrapper .features-flipper ::active {
+          transform: translate(0px, 5px);
+          -webkit-transform: translate(0px, 5px);
+          border-bottom: 1px solid; }
         .site-main .all-features .features-wrapper .features-flipper .front {
           height: auto;
           text-align: center;
@@ -1100,7 +1087,7 @@ div .secondary {
           bottom: 1px;
           background-color: #fff;
           transform: rotateY(180deg); }
-    .site-main .all-features .green-btn {
+    .site-main .all-features .features-green-btn {
       color: #248E6A;
       text-decoration: none; }
 
