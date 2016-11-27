@@ -20,30 +20,37 @@
 // Section Why NW Program Section
 
 .nw-program {
-	display: flex;
-	flex-direction: column;
+	border-bottom: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
 
 	.why-nw {
-		display: inline-block;
-
-		.nw-img {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
+		p {
+			display: block;
 		}
 	}
+	.nw-img {
+		display: flex;
+		justify-content: center;
+		margin-top: $basic_margin*5.5;
+		margin-bottom: $basic_margin*4.5;
+	}
 }
-// Funding Section
 
+// Funding Section
 .funding {
 	display: flex;
 	flex-direction: column;
-
-	.funding-img,
-	.money-spend-img {
-		margin-top: 100px;
-		display: flex;
-		justify-content: center;
+	margin-top: $basic_margin*4;
+	.funding-img {
+		margin-top: 25rem;
+	}
+			.money-spend-img{
+				margin-top: 5rem;
+			}
+ .money-spend-img,
+ .funding-img {
+	 display:flex;
+	 justify-content: center;
 
 		img {
 			width: 95%;
@@ -68,16 +75,13 @@
 .school-list {
 	display: flex;
 	flex-direction: column;
-
 	.school-img {
 		display: flex;
 		justify-content: center;
-
 		img {
 			width: 80%;
 			height: 80%;
 		}
-
 		.address .phone {
 			font-weight: bolder;
 		}
@@ -97,9 +101,10 @@
 .enroll {
 	display: flex;
 	flex-direction: column;
-.enroll-info{
-	margin-left: 10px;
-}
+
+	.enroll-info {
+		margin-top: 10rem;
+	}
 
 	.enroll-block {
 		max-width: 70%;

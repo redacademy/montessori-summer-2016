@@ -2182,33 +2182,36 @@ body {
   background-color: grey; }
 
 .nw-program {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  .nw-program .why-nw {
-    display: inline-block; }
-    .nw-program .why-nw .nw-img {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      margin-bottom: 50px; }
+  border-bottom: solid 3px #4FC8A1;
+  padding-bottom: 2.8125rem; }
+  .nw-program .why-nw p {
+    display: block; }
+  .nw-program .nw-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 3.4375rem;
+    margin-bottom: 2.8125rem; }
 
 .funding {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
-  .funding .funding-img,
+      flex-direction: column;
+  margin-top: 2.5rem; }
+  .funding .funding-img {
+    margin-top: 25rem; }
   .funding .money-spend-img {
-    margin-top: 100px;
+    margin-top: 5rem; }
+  .funding .money-spend-img,
+  .funding .funding-img {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    .funding .funding-img img,
-    .funding .money-spend-img img {
+    .funding .money-spend-img img,
+    .funding .funding-img img {
       width: 95%;
       height: 95%;
       margin-right: 2px; }
@@ -2249,7 +2252,7 @@ body {
   -ms-flex-direction: column;
       flex-direction: column; }
   .enroll .enroll-info {
-    margin-left: 10px; }
+    margin-top: 10rem; }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2357,7 +2360,6 @@ body {
   height: 160px;
   display: inline-block;
   margin-left: 7.5%;
-  margin-bottom: 65%;
   padding-right: 9.4%;
   padding-left: 15px;
   border-left: 7px solid #D93B57;

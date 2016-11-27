@@ -15,10 +15,11 @@ get_header(); ?>
 
 <section id="nw-program" class="nw-program">
 			<h1>Why NW Montessori Program?</h1>
-			<div class="why-nw"> <?php echo CFS()->get('main-reason'); ?> </p>
+			<div class="why-nw"> <?php echo CFS()->get('main-reason'); ?> </p></div>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
+
 		<div class="red-border-container"><?php echo CFS()->get('main-reason'); ?></div>
 </section>
 
@@ -32,20 +33,20 @@ get_header(); ?>
 
 	<section id="funding" class="funding">
 				<h1>Funding</h1>
-				<h2 class="funding-info">Where does it come from?</h2>
-				<span class="funding-explain">There are two ways of answering this.</span>
+				<h2 >Where does it come from?</h2>
+				<h3>There are two ways of answering this</h3>
 			  <div class="red-border-container"> <?php echo CFS()->get('funding-block'); ?> </div>
 				<div class="funding-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
-				<h2 class="nw-program">How is the money spent?</h2>
+				<h2>How is the money spent?</h2>
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
  </div>
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
 				<div class="funding-btn">
-				<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</a>
+				<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</button>
 			  </div>
 	</section>
 
