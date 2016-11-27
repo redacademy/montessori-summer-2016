@@ -80,7 +80,7 @@ function school_categories() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'school categories', array( 'school' ), $args );
+	register_taxonomy( 'school_categories', array( 'school' ), $args );
 
 }
 add_action( 'init', 'school_categories', 0 );

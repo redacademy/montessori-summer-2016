@@ -15,6 +15,7 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
 	align-items: center;
+	background-color: grey;
 
 	h1 {
 		font-family: $font_title;
@@ -24,16 +25,8 @@
 		color: $black;
 	}
 }
-
-
 // about NW School Section
-.about-school{
-
-
-}
-
-
-
+.about-school {}
 // Members List Section
 
 .members-list {
@@ -105,15 +98,15 @@
 		transform: rotateY(180deg);
 	}
 
+	.member-img,
 	.member-vision,
-	.members-container,
-	.member-img {
+	.members-container {
 		width: 125px;
 		height: 125px;
 	}
 
-	.member-vision,
-	.member-img {
+	.member-img,
+	.member-vision {
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
@@ -127,40 +120,36 @@
 		}
 	}
 }
-
-
 // Members at Large Section
-.members_at_large{
+.members_at_large {
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 	justify-content: center;
-	.members_at_large-grid{
+
+	.members_at_large-grid {
 		display: flex;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
 
-		.members_at_large-name{
-		  display: flex;
+		.members_at_large-name {
+			display: flex;
 			width: 33%;
-
 			text-align: center;
-			p{
-			display: block;
-			width: 33%;
+
+			p {
+				display: block;
+				width: 33%;
 				padding: 5%;
 			}
-
-	   	}
 		}
 	}
-
+}
 // Meeting Minutes Section
-.meeting-minutes{
-	display: flex;
-	justify-content: center;
-	     .red-more{
-				 align-self: flex-end;
-			 }
-     }
+
+
+
+	.red-more {
+		align-self: flex-end;
+	}
 
 // Archive Section
 .archive {
@@ -174,16 +163,11 @@
 		display: none;
 	}
 }
-
-
 // newsLetter Section
-
-.newsLetter{
+.newsLetter {
 	display: flex;
 	flex-direction: column;
-	.red-more{
-	align-self: flex-end;
+	.red-more {
+		align-self: flex-end;
 	}
-
-
 }

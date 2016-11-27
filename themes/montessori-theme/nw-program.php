@@ -54,7 +54,7 @@ get_header(); ?>
 	<section id="schools-teachers" class="school-list">
 
 		<h1>Schools & Teachers</h1>
-				<?php query_posts(array( 'post_type' => 'school', ));?>
+				<?php query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'school' ));?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				 <div class="post">
 				 <!-- Display the Title  -->

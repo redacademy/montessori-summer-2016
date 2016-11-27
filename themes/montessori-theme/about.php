@@ -44,13 +44,13 @@ get_header(); ?>
 			                <?php the_post_thumbnail( 'small' ); ?>
 											<?php endif; ?>
 							</div>
-						<div class="members_vision"><p ><?php echo CFS()->get('members_vision'); ?></p></div>
+						<div class="members_vision"><p ><?php echo CFS()->get('member_vision'); ?></p></div>
 					</div><!-- #flippre -->
 				</div><!-- #flippre -->
 					</div><!-- #flip-container -->
 					<div class="member_det">
-			      <p><?php echo CFS()->get('members_name'); ?></p>
-			    	<p><?php echo CFS()->get('members_title'); ?></p>
+			      <p><?php echo CFS()->get('member_name'); ?></p>
+			    	<p><?php echo CFS()->get('member_title'); ?></p>
 					</div><!-- #member_det -->
 
 						<?php endwhile; else: ?>
@@ -76,24 +76,39 @@ get_header(); ?>
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
 		<section id="meetings" class="meeting-minutes">
 			<h1>Meeting Minutes</h1>
+<div class="event-date">
+			  <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
+</div>
 			<?php
-			$fields = CFS()->get( 'meeting_minutes_date' );
-			$fields = CFS()->get( 'meeting_minutes' );
 
-			// foreach ( $fields as $field ) {
-			// echo	'<input type="checkbox"  value="1"'.$field['options'].'/>');
-			// }
-			?>
+			query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'news' ));
+		?>
+		<div class="event-grid">
+	 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+						<div class="news-img">
+										<?php if ( has_post_thumbnail() ) : ?>
+										<?php the_post_thumbnail( 'small' ); ?>
+								  	<?php endif; ?>
+
+		<?php endwhile; else: ?>
+
+			<p>Sorry, no posts matched your criteria.</p>
+			<?php endif; ?>
+			<form action="event-checkbox" method="get">
+	  <input type="checkbox" ></br>
+	  <input type="checkbox"checked></br>
+		<input type="checkbox" ></br>
+	</form>
+				<?php wp_reset_query(); ?>
 			<div class="red-more">
 			<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</a>
 		</div>
 		</section>
 			<!-- **********///////////////// Archive Section ///////////////********** -->
 			<section class="archive">
-				<h1>Archive</h1>
 
-
-			<div class="target" ><?php get_sidebar(); ?> </div>
+     <?php get_sidebar(); ?>
 			</section>
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
 			<section id="newsletter" class="newsLetter">
