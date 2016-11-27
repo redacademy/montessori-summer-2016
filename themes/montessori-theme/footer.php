@@ -22,12 +22,16 @@ echo get_page_link(get_page_by_title(contact)->ID); ?>">Contact us</a>
                 <a href="<?php
 echo get_page_link(get_page_by_title(get - involved)->ID); ?>">Get involved</a>
                 </li>
+                <li>
+                  <i class="fa fa-facebook desktop-footer" aria-hidden="true"></i>
+                  <a href="">Follow us </a>
+                </li>
             </ul>
                 </div>
                  <div class="footer-block-item2">
-             <p><i class="fa fa-facebook" aria-hidden="true"></i>
+             <p><i class="fa fa-facebook " aria-hidden="true"></i>
              <a href="">Follow us </a>
-            <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a> 
+            <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a>
             </p>
                  </div>
                 <div class="footer-block-item3">
@@ -36,6 +40,7 @@ echo get_page_link(get_page_by_title(get - involved)->ID); ?>">Get involved</a>
             </div>
         </div><!-- #page -->
 </footer><!-- #colophon -->
+
         <?php
 wp_footer(); ?>
 
