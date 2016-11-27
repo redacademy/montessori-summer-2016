@@ -83,6 +83,7 @@
     position: relative;
     @include desktop {
         height: 640px;
+
     }
 
     div {
@@ -90,6 +91,7 @@
     }
 
     .philosophy-grid {
+
         flex: 0 0 auto;
         width: 200px;
         height: 200px;
@@ -110,6 +112,7 @@
             -o-transform-style: preserve-3d;
             transition: 3s;
             transform-style: preserve-3d;
+            @include border-radius(10px);
 
             &:hover {
                 @include visibility(hidden);
@@ -118,12 +121,15 @@
         }
 
         .philosophy-img {
+
             z-index: 2;
             height: auto;
             text-align: center;
             overflow: hidden;
             padding: 20px;
+
             @include desktop {
+
                  @include visibility(hidden);
             }
             position: relative;
@@ -213,6 +219,8 @@
         }
     }
 }
+
+
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 

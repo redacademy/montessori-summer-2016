@@ -624,14 +624,17 @@ div .menu-primary-menu-container {
   height: 22px !important; }
 
 .responsive-menu-inner,
-.responsive-menu-inner::before,
-.responsive-menu-inner::after {
+.responsive-menu-inner::after,
+.responsive-menu-inner::before {
   background-color: #D8D8D8 !important;
   width: 34px !important;
   height: 4px !important;
   border-radius: 0px !important; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   box-shadow: none !important; }
 
 button#responsive-menu-button {
@@ -663,7 +666,7 @@ button#responsive-menu-button {
     padding-top: 25px; }
     @media (min-width: 60rem) {
       .montessori-logo img {
-        padding-top: 0px; } }
+        padding-top: 0; } }
     .montessori-logo img a {
       bottom: -20px;
       cursor: pointer;
@@ -696,7 +699,24 @@ button#responsive-menu-button {
 .home .site-header {
   position: absolute; }
 
+div .secondary li a {
+  padding: 0 10px; }
+
+div {
+  position: relative; }
+  div .secondary li:nth-child(3) a {
+    border-left: solid 1px white;
+    border-right: solid 1px white; }
+
+div {
+  position: relative; }
+  div .secondary li:nth-child(4) a {
+    padding: 0 20px;
+    border-left: solid 1px white;
+    border-right: solid 1px white; }
+
 div .secondary {
+  position: relative;
   text-align: right;
   max-width: 100%;
   height: 100%;
@@ -1353,7 +1373,8 @@ body {
         -o-transition: 3s;
         -o-transform-style: preserve-3d;
         transition: 3s;
-        transform-style: preserve-3d; }
+        transform-style: preserve-3d;
+        border-radius: 10px; }
         .main-philosophy .philosophy-grid:hover {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
