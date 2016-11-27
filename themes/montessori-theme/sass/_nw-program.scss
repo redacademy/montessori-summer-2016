@@ -5,6 +5,7 @@
 
 * {
 	box-sizing: border-box;
+	font-size: $font_body_size_mob;
 }
 // @media screen and (max-width: 480px) {
 
@@ -15,7 +16,6 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	background-color: grey;
 
 	h1 {
 		font-family: Asap;
@@ -142,7 +142,7 @@ flex-direction: column;
 
 
 
-	.member-block {
+	.teacher-block {
 		flex: .03;
 		display: flex;
 		flex-direction: column;

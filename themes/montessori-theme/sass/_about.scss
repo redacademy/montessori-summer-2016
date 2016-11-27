@@ -5,6 +5,7 @@
 
 * {
 	box-sizing: border-box;
+	font-size: $font_body_size_mob;
 }
 // @media screen and (max-width: 480px) {
 
@@ -14,11 +15,9 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
 	align-items: center;
-	background-color: grey;
 
 	h1 {
 		font-family: $font_title;
-		font-size: $h1_size_mob;
 		font-weight: normal;
 		line-height: $basic_hline_height * 4.2;
 		text-align: left;
@@ -29,6 +28,7 @@
 
 // about NW School Section
 .about-school{
+
 
 }
 
@@ -137,13 +137,16 @@
 	.members_at_large-grid{
 		display: flex;
     flex-wrap: wrap;
-		align-self: center;
+
 		.members_at_large-name{
-       width: 33%;
 		  display: flex;
+			width: 33%;
+
+			text-align: center;
 			p{
-			display: flex;
-			align-self: center;
+			display: block;
+			width: 33%;
+				padding: 5%;
 			}
 
 	   	}

@@ -58,7 +58,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				 <div class="post">
 				 <!-- Display the Title  -->
-				 <h2><?php the_title(); ?></h2>
+				 <h1><?php the_title(); ?></h1>
 				  <div class="shool-content">
 				    <?php the_content(); ?>
 				  </div>
@@ -89,7 +89,7 @@ get_header(); ?>
   ?>
 	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="member-block">
+<div class="teacher-block">
 <div class="flip-container">
 	<div class="flip-wrap">
 <div class="flipper">
@@ -106,7 +106,7 @@ get_header(); ?>
       <p><?php echo CFS()->get('teacher_name'); ?></p>
     	<p><?php echo CFS()->get('teacher_title'); ?></p>
 		</div><!-- #teacher_det -->
-	</div><!-- #member_block -->
+	</div><!-- #teacher_block -->
 
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>

@@ -26,6 +26,8 @@ get_header(); ?>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
 			<section id="board-members" class="members-list">
 
+				<h1>Board Members<h1>
+
 				<!-- Custom Post Loop To Call Members List  -->
 				<?php
 
@@ -74,7 +76,6 @@ get_header(); ?>
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
 		<section id="meetings" class="meeting-minutes">
 			<h1>Meeting Minutes</h1>
-			<img src="<?php bloginfo('template_directory'); ?>/images/" alt="Meeting Minutes Section" />
 			<?php
 			$fields = CFS()->get( 'meeting_minutes_date' );
 			$fields = CFS()->get( 'meeting_minutes' );
@@ -89,10 +90,9 @@ get_header(); ?>
 		</section>
 			<!-- **********///////////////// Archive Section ///////////////********** -->
 			<section class="archive">
-			<label class="toggle">
-				<?php the_archive_title( '<h1>', '</h1>' ) ;?>
-				<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
-			 </label>
+				<h1>Archive</h1>
+
+
 			<div class="target" ><?php get_sidebar(); ?> </div>
 			</section>
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->

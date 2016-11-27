@@ -1163,7 +1163,8 @@ li {
 # About Page
 --------------------------------------------------------------*/
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.3rem; }
 
 .about-wrapper {
   max-width: 37.5rem;
@@ -1171,11 +1172,9 @@ li {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   -ms-flex-align: center;
-      align-items: center;
-  background-color: grey; }
+      align-items: center; }
   .about-wrapper h1 {
     font-family: "Asap";
-    font-size: 2.5rem;
     font-weight: normal;
     line-height: 2.625rem;
     text-align: left;
@@ -1264,18 +1263,16 @@ li {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-item-align: center;
-        align-self: center; }
+        flex-wrap: wrap; }
     .members_at_large .members_at_large-grid .members_at_large-name {
-      width: 33%;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      width: 33%;
+      text-align: center; }
       .members_at_large .members_at_large-grid .members_at_large-name p {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-item-align: center;
-            align-self: center; }
+        display: block;
+        width: 33%;
+        padding: 5%; }
 
 .meeting-minutes {
   display: -ms-flexbox;
@@ -1308,7 +1305,8 @@ li {
 # NW Program Page
 --------------------------------------------------------------*/
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.3rem; }
 
 .nw-program-wrapper {
   max-width: 37.5rem;
@@ -1317,8 +1315,7 @@ li {
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center;
-  background-color: grey; }
+      align-items: center; }
   .nw-program-wrapper h1 {
     font-family: Asap;
     font-size: 2.5rem;
@@ -1436,7 +1433,7 @@ li {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .teacher-list .teacher-grid .member-block {
+    .teacher-list .teacher-grid .teacher-block {
       -ms-flex: .03;
           flex: .03;
       display: -ms-flexbox;
@@ -1446,11 +1443,11 @@ li {
       -ms-flex-align: center;
           align-items: center; }
       @media (min-width: 37.5rem) {
-        .teacher-list .teacher-grid .member-block {
+        .teacher-list .teacher-grid .teacher-block {
           -ms-flex: .03;
               flex: .03; } }
       @media (min-width: 60rem) {
-        .teacher-list .teacher-grid .member-block {
+        .teacher-list .teacher-grid .teacher-block {
           -ms-flex: 1;
               flex: 1; } }
     .teacher-list .teacher-grid .flip-container {
