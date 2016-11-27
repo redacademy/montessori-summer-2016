@@ -3,32 +3,35 @@
 --------------------------------------------------------------*/
 /////*Start History Section**/////
 
-body p,
-li {
-    font-size: $font_body_size_mob;
-}
-
 .history-content {
     width: 100%;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    margin-left: 30px;
 }
 
 .history-title {
     margin-bottom: 0;
-    flex: 0 70%;
+    flex: 0 90%;
 }
 
 .main-history {
+    p:nth-child(4) {
+        margin-left: -40%;
+        overflow: visible;
+        @include desktop {
+            margin-left: 0;
+        }
+    }
     @include flex(flex-end,space-between);
 
     .history-img {
         align-self: flex-start;
         margin-top: 100px;
-        width: 190px;
-        height: 219px;
+        width: 220px;
+        height: 240px;
         @include desktop {
-            width: 350px;
-            height: auto;
+            width: 430px;
+            height: 500px;
             padding-bottom: 40px;
         };
 
@@ -37,50 +40,49 @@ li {
             height: 100%;
         }
     }
-
     @include desktop {
-      .red-border-q{
-        width:60%;
-      top: 10px;
-      margin: 0 0 0 10% ;
-        padding-left: 25px;
-        display:inline-block;
-          position: relative;
-            font-size: 1.2rem;
-            font-weight: bold;
-          p{
-      margin: 0;
-          }
-      }
-      .red-border-q ::before{
-          content:"";
-          display: block;
-          position: absolute;
-          top: 5PX;
-          left: 0PX;
-          height: 100%;
-       border-left:solid 8px $border_left_red;
-      }
+        .red-border-q {
+            width: 80%;
+            top: 10px;
+            margin: 0 0 0 15%;
+            padding-left: 25px;
+            display: inline-block;
+            position: relative;
+
+            p {
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 12px $border_left_red;
+        }
         font-size: 1.5rem;
     };
+
     p {
         padding-top: 4px;
-
         text-align: left;
-
     }
 }
 ////************philosophy Section ************/////
 
 .main-philosophy {
     margin: 100px auto;
-    max-width: 90%;
+    width: 70%;
     height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
     position: relative;
     @include desktop {
-        max-width: 950px;
+
         height: 640px;
     }
 
@@ -89,20 +91,14 @@ li {
     }
 
     .philosophy-grid {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        position: relative;
+
+
+        flex:0 0 auto;
         width: 200px;
         height: 200px;
         background-color: #AFF1D3;
         margin-top: 20px;
-        @include flex(center,space-around);
+        @include flex(center,space-between);
         flex-wrap: wrap;
         position: relative;
         @include desktop {
@@ -119,14 +115,8 @@ li {
             transform-style: preserve-3d;
 
             &:hover {
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
-                -webkit-transform: rotateY(180deg);
-                -moz-transform: rotateY(180deg);
-                -o-transform: rotateY(180deg);
-                transform: rotateY(180deg);
+                @include visibility(hidden);
+                @include rotate(180deg);
             }
         }
 
@@ -137,10 +127,7 @@ li {
             overflow: hidden;
             padding: 20px;
             @include desktop {
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
+                 @include visibility(hidden);
             }
             position: relative;
             width: 100%;
@@ -157,46 +144,43 @@ li {
                     top: 9px;
                     width: 175px;
                     height: 135px;
-                    -webkit-backface-visibility: hidden;
-                    -moz-backface-visibility: hidden;
-                    -o-backface-visibility: hidden;
-                    backface-visibility: hidden;
+                    @include visibility(hidden);
                 }
             }
         }
 
         h2 {
             z-index: 1;
+            margin: 0;
             text-align: center;
             display: inline-block;
-            width: 95%;
-            color: #248E6A;
-            flex-direction: row;
-            padding-bottom: 0;
-            font-size: 1rem;
+            width: 90%;
+            color: #248e6a;
             height: auto;
             overflow: hidden;
-            padding: 20px;
-            bottom: -18px;
-            line-height: 1.2;
+            padding: 0;
+            bottom: 32px;
+            line-height: 1.3rem;
+            position: absolute;
+
+            a {
+                color: #248E6A;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
             @include desktop {
+                a {
+                    font-size: $font_body_size_desktop;
+                }
+
                 .show {
                     font-size: 1.4rem;
-                    -webkit-backface-visibility: hidden;
-                    -moz-backface-visibility: hidden;
-                    -o-backface-visibility: hidden;
-                    backface-visibility: hidden;
+                    @include visibility(hidden);
                 }
 
                 &:hover {
-                    -webkit-backface-visibility: hidden;
-                    -moz-backface-visibility: hidden;
-                    -o-backface-visibility: hidden;
-                    backface-visibility: hidden;
-                    -webkit-transform: rotateY(180deg);
-                    -moz-transform: rotateY(180deg);
-                    -o-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
+                    @include visibility(hidden);
+                    @include rotate(180deg);
                 }
             }
             position: absolute;
@@ -214,7 +198,7 @@ li {
             z-index: 1000;
             height: 300px;
             width: 300px;
-            border-radius: 10px;
+            @include border-radius (10px);
             border: 1px solid #248E6A;
             text-align: left;
             overflow: hidden;
@@ -224,15 +208,9 @@ li {
                 overflow: scroll;
                 font-size: 1.2rem;
                 visibility: visible;
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                backface-visibility: hidden;
+                @include visibility(hidden);
                 background-color: #fff;
-                -webkit-transform: rotateY(180deg);
-                -moz-transform: rotateY(180deg);
-                -o-transform: rotateY(180deg);
-                transform: rotateY(180deg);
+                @include rotate(180deg);
             }
         }
     }
@@ -240,50 +218,88 @@ li {
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 
-.materials{
-  margin-top: 60px;
-  width:95%;
-@include desktop{  @include flex(flex-start,space-between);
-}}
-  .materials-img img{
-    width:300px;
-    height: 300px;
+.main-materials div:nth-of-type(3) {
     @include desktop {
-      align-self: flex-start;
-      margin-top: 40px;
-      width:350px;
-      height:350px;
+        flex-direction: row-reverse;
     }
-  }
-  .materials-contents{
-  @include desktop {
-    width:70%;
-    .red-border-q{
-      width:75%;
-    top: 10px;
-    margin: 0 0 0 10% ;
-      padding-left: 25px;
-      display:inline-block;
-        position: relative;
-          font-size: 1.1rem;
-          font-weight: bold;
-        p{
-    margin: 0;
+}
+.main-materials div:nth-of-type(1){
+      img{
+        display:none;
+      }
+        .materials-contents{
+          width: 90%;
         }
-    }
-    .red-border-q ::before{
-        content:"";
-        display: block;
-        position: absolute;
-        top: 5PX;
-        left: 0PX;
-        height: 100%;
-     border-left:solid 8px $border_left_red;
-    }
-      font-size: 1.5rem;
-  }
 }
 
+
+
+.materials {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+         @include flex(flex-start,space-between);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 230px;
+        height: 230px;
+        @include desktop {
+            margin-top: 100px;
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+.materials-contents {
+  width: 100%;
+    @include desktop {
+width: 60%;
+
+        .red-border-q {
+            width: 75%;
+            top: 10px;
+            margin: 0 0 0 10%;
+            padding-left: 25px;
+            display: inline-block;
+            position: relative;
+
+
+
+            p {
+                margin: 0;
+                  font-size: 2rem;
+            }
+        }
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 12px $border_left_red;
+        }
+        font-size: 1.5rem;
+    }
+}
+
+.materials-grid div:nth-of-type(2) {
+    align-self: left;
+}
+
+
+.materials-grid {
+    margin:40px 0;
+    padding: 0;
+}
 ////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
 
@@ -294,63 +310,76 @@ li {
 .first-benefits-section {
     width: 90%;
     height: 100%;
-    @include flex(flex-start,space-between);
+    @include flex(center,space-between);
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
 
-    .benefits-img{
-        align-self: flex-start;
-        width: 220px;
-        height: 220px;
+    img {
+        width: 250px;
+        height: 250px;
         margin-top: 30px;
         @include desktop {
-            width: 350px;
-            height: 350px;
-            padding-bottom: 40px;
+            align-self: flex-start;
+            width: 330px;
+            height: 330px;
+            margin: 0 40px 20px 0;
         }
     }
 }
-    .benefits-content {
-        width: 70%;
-        @include desktop {
-          .red-border-q{
-            width:75%;
-          top: 10px;
-          margin: 0 0 0 10% ;
+
+.benefits-content {
+    width: 100%;
+    @include desktop {
+
+        .red-border-q {
+            width: 75%;
+            top: 10px;
+            margin: 0 0 0 10%;
             padding-left: 25px;
-            display:inline-block;
-              position: relative;
-                font-size: 1.1rem;
-                font-weight: bold;
-              p{
-          margin: 0;
-              }
-          }
-          .red-border-q ::before{
-              content:"";
-              display: block;
-              position: absolute;
-              top: 5PX;
-              left: 0PX;
-              height: 100%;
-           border-left:solid 8px $border_left_red;
-          }
+            display: inline-block;
+            position: relative;
+            p{
+                font-size: 2rem;
+        }}
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 12px $border_left_red;
+        }
+    }
+}
+
+.benefits-title {
+    p {
+        padding-top: 4px;
+        display: block;
+        @include desktop {
             font-size: 1.5rem;
         }
     }
+}
+///Archive ////
 
-    .benefits-title {
-        p {
-            padding-top: 4px;
-            display: block;
-            @include desktop {
-                font-size: 1.5rem;
-            }
-        }
+.montessori-archive {
+    margin-top: 40px;
+
+    h3 {
+        width: 40%;
+        border-top: solid 3px $color_btn_green;
+        padding-top: 30px;
     }
-
+}
 /*Start Resources Section  */
 .green-btn {
     background-color: #4fc8a1;
-    border-radius: 6px;
+    @include border-radius (6px);
     font-family: Noto Sans;
     font-size: 14px;
     font-weight: 700;
