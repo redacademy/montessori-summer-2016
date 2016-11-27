@@ -1627,12 +1627,20 @@ body {
     .benefits-title p {
       font-size: 1.5rem; } }
 
-.montessori-archive {
-  margin-top: 40px; }
-  .montessori-archive h3 {
-    width: 40%;
-    border-top: solid 3px #4FC8A1;
-    padding-top: 30px; }
+.the-archive ul {
+  width: 500px;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  font-family: "Asap", sans-serif; }
+  .the-archive ul li {
+    padding-left: 30px;
+    line-height: inherit;
+    font-size: 1.4rem; }
+
+.montessori-archive h3 {
+  width: 600px;
+  border-top: solid 3px #4FC8A1;
+  padding-top: 12px; }
 
 /*Start Resources Section  */
 .main-resources {

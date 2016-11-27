@@ -386,14 +386,25 @@
     }
 }
 ///Archive ////
+.the-archive ul{
+  width: 500px;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  font-family: $font_title;
+  li{
+    padding-left: 30px;
+    line-height: inherit;
+    font-size: 1.4rem;
+  }
+}
 
 .montessori-archive {
-    margin-top: 40px;
+
 
     h3 {
-        width: 40%;
+        width: 600px;
         border-top: solid 3px $color_btn_green;
-        padding-top: 30px;
+        padding-top: 12px;
     }
 }
 /*Start Resources Section  */

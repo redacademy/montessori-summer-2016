@@ -42,11 +42,11 @@ jQuery(document).ready(function( $ ) {
 
 $('.toggle').click(function() {
 $('#target').slideToggle('1000');
-$(".arrow").on("click", function () {
+ $(".arrow").click(function () {
     $(this).toggleClass("rotate");
 });
 
-});
+ });
 
 
 });
