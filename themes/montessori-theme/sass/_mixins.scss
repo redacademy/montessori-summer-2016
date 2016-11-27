@@ -26,12 +26,34 @@
 		@content;
 	}
 }
-
+///flex mixin
 @mixin flex($align,$justify) {
 	display: flex;
 	display: -webkit-box;
   display: -ms-flexbox;
 	align-items: $align;
 	justify-content: $justify;
+}
 
+///border radius extentions
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+///visibility extentions
+
+@mixin visibility($visibility) {
+-webkit-backface-visibility: $visibility;
+-moz-backface-visibility: $visibility;
+-o-backface-visibility: $visibility;
+backface-visibility: $visibility;
+}
+//rotate extentions
+@mixin rotate($rotate) {
+-webkit-transform: rotateY($rotate);
+-moz-transform: rotateY($rotate);
+-o-transform: rotateY($rotate);
+transform: rotateY($rotate);
 }

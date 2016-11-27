@@ -11,6 +11,7 @@ get_header();
         <main id="main" class="site-main " role="main">
 
 <!-- Our History Section  -->
+
           <section id="history" class="history-section mob-container">
   <div class="main-history content-wrapper">
 
@@ -43,21 +44,21 @@ echo $histor;
 
 <!-- Philosophy Section  -->
 
-<section id="philosophy" class="philosophys-section ">
+<section id="philosophy" class="philosophys-section mob-container">
 
- <div class="main-philosophy ">
- <div class=""><h1>Philosophy</h1></div>
 
+ <div class="main-philosophy content-wrapper">
+   <div><h1>Philosophy</h1></div>
  <?php
 $fields = CFS()->get('philosophy'); ?>
 <?php
 
 foreach($fields as $field)
   { ?>
-<div class="philosophy-grid ">
-<h2 ><a href="" onclick="return showImage()";><?php
-  echo $field['philosophy_title']; ?></a></h2>
-<p><?php
+<div class="philosophy-grid">
+  <h2><a href="#" onclick="return showImage()";><?php
+    echo $field['philosophy_title']; ?></a></h2>
+  <p><?php
   echo $field['philosophy_content']; ?></p>
 <div class= "philosophy-img" >
 <?php
@@ -78,22 +79,22 @@ foreach($fields as $field)
 <div class="main-benefits content-wrapper">
 <h1>Benefits of Montessori</h1>
 <div class="first-benefits-section">
-
-  <div class= "benefits-img" >
   <?php
 output_image('benefits_img'); ?>
 
-        <div class="benefits-content">
-            <?php
+  <div class="benefits-content">
+      <?php
 $benefit = CFS()->get('benefits_content');
 
 if (!empty($benefit))
-  {
-  echo $benefit;
-  }; ?>
-  </div>
-        </div>
+{
+echo $benefit;
+}; ?>
 </div>
+
+
+        </div>
+
 <!--  here is the meta data of the benefits section -->
 
           <ul>
@@ -115,6 +116,7 @@ foreach($fields as $field)
       </div>
            </ul>
  </div>
+ </div>
 </section>
 
 
@@ -133,33 +135,47 @@ $fields = CFS()->get('materials'); ?>
 
 foreach($fields as $field)
   { ?>
-<div class="materials" >
-<div><h1><?php
-  echo $field['materials_title']; ?></h1>
-  <div>
-<?php
-  $src = wp_get_attachment_image_src($field['materials_img'], 'small');
-  echo '<img src="' . $src[0] . '" />'; ?>
-<p>  <?php
+<div class="materials materials-grid">
+<div class="materials-contents"><p>
+  <h1><?php
+    echo $field['materials_title']; ?></h1>
+      <?php
   echo $field['materials_content']; ?></p>
-<?php
-  } ?>
- </div>
 </div>
+<div><?php
+  $src = wp_get_attachment_image_src($field['materials_img'], 'small');
+  echo '<img src="' . $src[0] . '" />'; ?></div>
+</div>
+<?php
+
+  } ?>
+  <!-- Archive Title -->
+  <div class="montessori-archive">
+    <h3>Archives</h3>
+  </div>
+</div>
+
 </section>
 <!-- Resources Section  -->
 <section id= "resources" class="container mob-container">
   <div class="main-resources content-wrapper">
-<div class="title-resources">
-              <h1 id="resources" >Resources</h1>
-
+    <div class="title-resources">
+                  <h1 id="resources">Resources</h1>
+</div>
+<div class="montessori-archive">
+<h3>Archives</h3>
+</div>
+<div class="montessori-archive">
+<h3>videos</h3>
+</div>
+<div class="montessori-archive">
+<h3>others</h3>
+</div>
 
 <button class="green-btn">NW Montessori Program</button>
-</div>
+
 </div>
 </section>
-
-
 
 <?php
 get_footer(); ?>
