@@ -14,7 +14,6 @@
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
-	align-items: center;
 	background-color: grey;
 
 	h1 {
@@ -26,23 +25,35 @@
 	}
 }
 // about NW School Section
-.about-school {}
+
+// .about-school {}
 // Members List Section
 
 .members-list {
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
-
 	.members-grid {
 		display: flex;
-		flex: 50%;
-		flex-direction: row;
 		flex-wrap: wrap;
-	}
+		justify-content: space-around;
 
-	.members-container {
-		display: flex;
+		.members-block {
+			flex: 0.03;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@include tablet {
+				flex: 0.03;
+			}
+			@include desktop {
+				flex: 1;
+			}
+		}
+
+
+	.flip-container {
+		display: block;
 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
 		background: #aff1d3;
 		border-radius: 50%;
@@ -58,6 +69,9 @@
 			-moz-transform-style: preserve-3d;
 			transition: 1.9s;
 			transform-style: preserve-3d;
+			.members_det {
+				display: block;
+			}
 
 			p {
 				font-size: 50%;
@@ -65,7 +79,7 @@
 			}
 		}
 
-		.member-img {
+		.front {
 			position: absolute;
 			background-size: cover;
 			border-radius: 50%;
@@ -76,7 +90,7 @@
 			}
 		}
 
-		.member-vision {
+		.back {
 			border-radius: 50%;
 			position: absolute;
 			width: 125px;
@@ -91,28 +105,28 @@
 		}
 	}
 
-	.members-container.hover .flipper,
-	.members-container:hover .flipper {
+	.flip-container.hover .flipper,
+	.flip-container:hover .flipper {
 		-webkit-transform: rotateY(180deg);
 		-moz-transform: rotateY(180deg);
 		transform: rotateY(180deg);
 	}
 
-	.member-img,
-	.member-vision,
-	.members-container {
+	.back,
+	.flip-container,
+	.front {
 		width: 125px;
 		height: 125px;
 	}
 
-	.member-img,
-	.member-vision {
+	.back,
+	.front {
 		-webkit-backface-visibility: hidden;
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
 	}
 
-	.member_det {
+	.members_det {
 		text-align: center;
 
 		p {
@@ -120,7 +134,14 @@
 		}
 	}
 }
+}
+
+
+
+
+
 // Members at Large Section
+
 .members_at_large {
 	display: flex;
 	flex-direction: column;
@@ -143,30 +164,42 @@
 		}
 	}
 }
-// Meeting Minutes Section
+// Meeting Minutes & Archive Section
 
+.event-grid {
+	display: flex;
+	flex-direction: column;
 
-
-	.red-more {
-		align-self: flex-end;
-	}
-
-// Archive Section
-.archive {
-	margin-left: 0 auto;
-
-	.target {
-		background-color: grey;
+	.news-img img {
 		width: 100%;
-		height: 10%;
-		padding: $basic_pading;
-		display: none;
 	}
+
+	.archive-sec {
+		display: flex;
+
+		.green-btn {
+			align-self: baseline;
+			order: 1;
+		}
+
+		.green-btn {
+			align-self: flex-start;
+		}
+	}
+}
+
+.target {
+	background-color: grey;
+	width: 100%;
+	height: 10%;
+	padding: $basic_pading;
+	display: none;
 }
 // newsLetter Section
 .newsLetter {
 	display: flex;
 	flex-direction: column;
+
 	.red-more {
 		align-self: flex-end;
 	}

@@ -89,10 +89,10 @@ get_header(); ?>
   ?>
 	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="teacher-block">
-<div class="flip-container">
+	<div class="teacher-block">
+	<div class="flip-container">
 	<div class="flip-wrap">
-<div class="flipper">
+	<div class="flipper">
 	      <div class="front">
 					<?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'large' ); ?>
@@ -110,7 +110,7 @@ get_header(); ?>
 
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>
-  <?php endif; ?>
+<?php endif; ?>s
 		</div>
 	<?php wp_reset_query(); ?>
   </section>
