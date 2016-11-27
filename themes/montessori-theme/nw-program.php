@@ -39,7 +39,7 @@ get_header(); ?>
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
-				<h3 class="nw-program">How is the money spent?</h3>
+				<h2 class="nw-program">How is the money spent?</h2>
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
  </div>
@@ -54,11 +54,11 @@ get_header(); ?>
 	<section id="schools-teachers" class="school-list">
 
 		<h1>Schools & Teachers</h1>
-				<?php query_posts(array( 'post_type' => 'school', ));?>
+				<?php query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'school' ));?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				 <div class="post">
 				 <!-- Display the Title  -->
-				 <h2><?php the_title(); ?></h2>
+				 <h1><?php the_title(); ?></h1>
 				  <div class="shool-content">
 				    <?php the_content(); ?>
 				  </div>
@@ -81,19 +81,18 @@ get_header(); ?>
      <label class="toggle">
 		  <h1>Teachers<h1>
 		 </label>
+
  <!-- Custom Post Loop To Call Teacher List  -->
-
-
  <?php
-  query_posts(array( 'post_type' => 'staff','taxonomy' => 'teachers' ));
+
+ query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'teachers' ));
   ?>
 	<div class="teacher-grid">
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-
-<div class="flip-container">
+	<div class="teacher-block">
+	<div class="flip-container">
 	<div class="flip-wrap">
-<div class="flipper">
+	<div class="flipper">
 	      <div class="front">
 					<?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'large' ); ?>
@@ -101,20 +100,19 @@ get_header(); ?>
 							</div>
 			<div class="back"><p ><?php echo CFS()->get('teacher_vision'); ?></p></div>
 		</div><!-- #flippre -->
-	</div><!-- #flippre -->
-
-		</div><!-- #flip-container -->
+	</div><!-- #flippre-wrap-->
+</div><!-- #flip-container -->
 		<div class="teacher_det">
       <p><?php echo CFS()->get('teacher_name'); ?></p>
     	<p><?php echo CFS()->get('teacher_title'); ?></p>
 		</div><!-- #teacher_det -->
+	</div><!-- #teacher_block -->
 
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>
-  <?php endif; ?>
+<?php endif; ?>s
 		</div>
 	<?php wp_reset_query(); ?>
-
   </section>
 
  <!-- **********///////////////// Preschools List Section ///////////////********** -->

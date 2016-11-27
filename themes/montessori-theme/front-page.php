@@ -22,7 +22,7 @@ get_header(); ?>
 <!-- this is for the quick links -->
     <div class="link-title">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
-    </div> 
+    </div>
       <section class="links-wrapper ">
           <article class="benifits">
             <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
@@ -46,7 +46,10 @@ get_header(); ?>
           <div> <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" /> </div>
           <div> <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p> </div>
         </div>
-       <?php echo CFS()->get('second_support_paragraph'); ?> 
+       <?php echo CFS()->get('second_support_paragraph'); ?>
+
+       <?php echo CFS()->get('second_support_paragraph'); ?>
+
 
 
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>

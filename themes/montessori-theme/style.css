@@ -238,7 +238,7 @@ th {
 --------------------------------------------------------------*/
 p,
 li {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-family: "Asap", sans-serif; }
 
 h1, h2, h3 {
@@ -247,7 +247,7 @@ h1, h2, h3 {
   font-weight: lighter; }
 
 h1 {
-  font-size: 1.9rem; }
+  font-size: 2.25rem; }
 
 h2 {
   font-size: 1.6rem; }
@@ -1198,6 +1198,349 @@ a {
 body {
   background-color: #ffffff; }
 
+.site-main {
+  margin: 0;
+  padding: 0; }
+  .site-main .home {
+    margin: 0 auto; }
+    .site-main .home .home-wrapper {
+      width: 480px;
+      height: 585px;
+      background-color: rgba(0, 0, 0, 0.74); }
+      @media (min-width: 60rem) {
+        .site-main .home .home-wrapper {
+          width: 541.64px;
+          height: 555px;
+          background-color: rgba(0, 0, 0, 0.74);
+          position: relative; } }
+      @media (min-width: 60rem) {
+        .site-main .home .home-wrapper .home-img {
+          background-color: rgba(0, 0, 0, 0.74);
+          width: 1264px;
+          height: 555px;
+          z-index: -1;
+          position: absolute; } }
+      .site-main .home .home-wrapper h2 {
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 42px;
+        color: #fff;
+        margin-top: 0;
+        margin-left: 30px;
+        padding-top: 17px;
+        box-sizing: border-box;
+        width: 119.23px;
+        height: 74px;
+        border-bottom: 4px solid #fff; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper h2 {
+            font-size: 46px;
+            padding-top: 70px;
+            line-height: 0; } }
+      .site-main .home .home-wrapper p {
+        height: 160px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+        margin: 30px; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper p {
+            width: 447px;
+            height: 230px;
+            font-family: "Noto Sans";
+            font-size: 24px;
+            line-height: 46px; } }
+      .site-main .home .home-wrapper .red-btn {
+        background-color: #F76072;
+        border-radius: 6px;
+        color: #fff;
+        margin-left: 155px;
+        padding: 8px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper .red-btn {
+            padding: 10px;
+            font-size: 24px;
+            display: block;
+            max-width: 320px;
+            margin: 90px 100px;
+            text-align: center; } }
+  .site-main .link-title h2 {
+    padding: 0;
+    width: 100%;
+    height: 42px;
+    font-family: "Asap";
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000; }
+    @media (min-width: 60rem) {
+      .site-main .link-title h2 {
+        margin: 15px;
+        padding: 21px 24px;
+        font-size: 48px;
+        font-family: 'Asap'; } }
+  .site-main .links-wrapper {
+    width: 480px; }
+    @media (min-width: 60rem) {
+      .site-main .links-wrapper {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 20px -60px;
+        padding-top: 70px; } }
+    .site-main .links-wrapper p {
+      width: 377px;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      line-height: 40px;
+      color: #000000;
+      margin: 40px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper p {
+          padding: 30px 40px;
+          margin: 15px 40px; } }
+    .site-main .links-wrapper .benifits .green-btn {
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 80px;
+      padding: 17px 20px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .benifits .green-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px; } }
+    .site-main .links-wrapper .nw-program-page .green-btn {
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 80px;
+      padding: 17px 70px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .nw-program-page .green-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px; } }
+    .site-main .links-wrapper .involved .red-btn {
+      padding: 17px 70px;
+      background-color: #F76072;
+      border-radius: 6px;
+      color: #fff;
+      margin-left: 80px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .involved .red-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px;
+          padding: 6px 85px; } }
+  .site-main .support-wrapper {
+    width: 480px;
+    height: auto; }
+    .site-main .support-wrapper .information {
+      height: auto; }
+      .site-main .support-wrapper .information h2 {
+        border-top: 2px solid #2EB688;
+        width: 377px;
+        height: 42px;
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 42px;
+        color: #000;
+        margin: 35px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information h2 {
+            width: 852px;
+            height: 55px;
+            font-family: "Asap";
+            font-size: 48px;
+            line-height: 55px;
+            margin: 0;
+            box-sizing: border-box;
+            width: 1283px; } }
+      .site-main .support-wrapper .information img {
+        width: 287px;
+        height: 470px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information img {
+            float: right;
+            position: absolute;
+            right: 35px; } }
+        .site-main .support-wrapper .information img p {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          line-height: 46px;
+          color: #000;
+          margin: 45px; }
+          @media (min-width: 60rem) {
+            .site-main .support-wrapper .information img p {
+              float: right;
+              position: absolute;
+              right: 35px; } }
+      .site-main .support-wrapper .information p {
+        width: 377px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 46px;
+        color: #000;
+        margin: 40px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information p {
+            width: 852px;
+            font-family: "Noto Sans";
+            font-size: 22px;
+            line-height: 46px; } }
+        .site-main .support-wrapper .information p .info {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 42px;
+          color: #000; }
+      .site-main .support-wrapper .information .red-btn {
+        width: 185px;
+        height: 47px;
+        background-color: #F76072;
+        border-color: #F76072;
+        border-radius: 6px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 8px;
+        box-shadow: none;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        text-decoration: none; }
+      .site-main .support-wrapper .information .green-btn {
+        background-color: #4FC8A1;
+        border-color: #4FC8A1;
+        border-radius: 6px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 8px;
+        box-shadow: none;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        text-decoration: none; }
+  .site-main .all-features {
+    margin-bottom: 30px; }
+    .site-main .all-features h2 {
+      box-sizing: border-box;
+      width: 440px;
+      border-top: 2px solid #2EB688;
+      padding-top: 50px;
+      height: 42px;
+      font-family: 'Asap';
+      font-size: 36px;
+      line-height: 0;
+      color: #000;
+      margin-left: 30px; }
+      .site-main .all-features h2 .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px; }
+    .site-main .all-features .features-wrapper {
+      /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+      background: #aff1d3;
+      width: 200px;
+      box-sizing: border-box;
+      height: 139.76px;
+      width: 480.27px;
+      position: relative;
+      border-radius: 10px;
+      font-family: 'Noto Sans';
+      font-size: 15px;
+      color: #000;
+      text-decoration: none; }
+      .site-main .all-features .features-wrapper .features-flipper {
+        position: relative;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 1.9s;
+        -o-transform-style: preserve-3d;
+        transition: 1.9s;
+        transform-style: preserve-3d;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+        .site-main .all-features .features-wrapper .features-flipper:hover {
+          transform: rotateY(180deg);
+          cursor: pointer; }
+        .site-main .all-features .features-wrapper .features-flipper .front {
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+          padding: 20px;
+          width: 450px;
+          font-family: 'Asap';
+          font-size: 24px;
+          text-align: center;
+          color: #000000;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+        .site-main .all-features .features-wrapper .features-flipper .features-back {
+          border: 1px solid #248E6A;
+          margin: 0;
+          text-align: center;
+          overflow: hidden;
+          padding: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          position: absolute;
+          bottom: 1px;
+          background-color: #fff;
+          transform: rotateY(180deg); }
+    .site-main .all-features .green-btn {
+      color: #248E6A;
+      text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #ffffff; }
+
 /***************************************************/
 .page .contact_info {
   width: 100%;
@@ -1673,108 +2016,162 @@ body {
   box-sizing: border-box; }
 
 .about-wrapper {
-  max-width: 37.5rem;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  -ms-flex-align: center;
-      align-items: center; }
-  .about-wrapper h1 {
-    font-family: "Asap", sans-serif;
-    font-size: 1.9rem;
-    font-weight: normal;
-    line-height: 2.625rem;
-    text-align: left;
-    color: #000000; }
-
-.archive {
-  margin-left: 0 auto; }
-  .archive .site-content {
-    margin: 0 auto;
-    padding: 0 auto; }
-  .archive .target {
-    background-color: grey;
-    width: 100%;
-    height: 10%;
-    height: 160px;
-    padding: 0.625rem;
-    display: none; }
+  max-width: 37.5rem;
+  background-color: grey; }
 
 .about-school {
-  margin: 0px; }
-  .about-school .red-border-container {
-    width: 37.5rem;
-    padding: 10px;
-    height: auto;
-    margin-bottom: 70px; }
+  border-bottom: solid 3px #4FC8A1;
+  padding-bottom: 4.875rem; }
 
-site-main .involved-wrapper {
-  width: 480px;
-  padding: 0 auto;
-  margin-left: auto;
-  margin-right: auto; }
+.members-list {
+  padding: 2px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex; }
+  .members-list .members-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .members-list .members-grid .members-block {
+      -ms-flex: 0.03;
+          flex: 0.03;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      @media (min-width: 37.5rem) {
+        .members-list .members-grid .members-block {
+          -ms-flex: 0.03;
+              flex: 0.03; } }
+      @media (min-width: 60rem) {
+        .members-list .members-grid .members-block {
+          -ms-flex: 1;
+              flex: 1; } }
+    .members-list .members-grid .flip-container {
+      display: block;
+      box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+      background: #aff1d3;
+      border-radius: 50%; }
+      .members-list .members-grid .flip-container .flipper {
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        position: relative;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        transition: 1.9s;
+        transform-style: preserve-3d; }
+        .members-list .members-grid .flip-container .flipper .members_det {
+          display: block; }
+        .members-list .members-grid .flip-container .flipper p {
+          font-size: 1rem;
+          font-style: italic;
+          line-height: 1.5rem; }
+      .members-list .members-grid .flip-container .front {
+        position: absolute;
+        background-size: cover;
+        border-radius: 50%;
+        -ms-flex: 2;
+            flex: 2; }
+        .members-list .members-grid .flip-container .front img {
+          border-radius: 50%; }
+      .members-list .members-grid .flip-container .back {
+        border-radius: 50%;
+        position: absolute;
+        width: 125px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 125px;
+        text-align: center;
+        right: 3px;
+        transform: rotateY(180deg); }
+    .members-list .members-grid .flip-container.hover .flipper,
+    .members-list .members-grid .flip-container:hover .flipper {
+      transform: rotateY(180deg); }
+    .members-list .members-grid .back,
+    .members-list .members-grid .flip-container,
+    .members-list .members-grid .front {
+      width: 125px;
+      height: 125px; }
+    .members-list .members-grid .back,
+    .members-list .members-grid .front {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .members-list .members-grid .members_det {
+      text-align: center;
+      font-size: 1.375rem; }
 
-site-main .a green-btn {
-  text-decoration: none;
-  padding-left: 19px;
-  padding-right: 36px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  width: 120px;
-  height: 220px;
-  font-size: 15px;
-  font-family: Asap;
-  color: #000;
-  background-color: #4FC8A1;
-  font-family: "Noto Sans";
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  display: block; }
-
-.text-shadow {
-  border-top: 3px solid #248e6a;
-  width: 100%; }
-
-.get_involved img {
-  float: left;
-  width: 227px;
-  height: 244px; }
-
-.involved .green-btn {
-  padding-left: 19px;
-  padding-right: 25px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  font-size: 25px;
-  height: 200px;
+.members_at_large {
+  padding-bottom: 3.4375rem;
+  border-bottom: solid 3px #4FC8A1;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 150%;
-  background-color: #4fc8a1;
-  display: block;
-  width: 200px;
-  text-align: center;
-  color: #fff;
-  text-align: center; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .members_at_large .members_at_large-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .members_at_large .members_at_large-grid .members_at_large-name {
+      font-size: 1.375rem;
+      display: -ms-flexbox;
+      display: flex;
+      width: 26%;
+      text-align: center;
+      margin: 1rem; }
 
-.involved .red-btn {
-  padding: 15px 40px;
-  background-color: #F76072;
-  border-radius: 6px;
-  color: #fff;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-align: center;
-  display: inline;
-  line-height: inherit;
-  margin: 20px;
-  -ms-flex-direction: row;
-      flex-direction: row; }
+.event-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .event-grid .news-img img {
+    width: 100%; }
+  .event-grid .archive-sec {
+    display: -ms-flexbox;
+    display: flex; }
+    .event-grid .archive-sec .green-btn {
+      -ms-flex-item-align: baseline;
+          align-self: baseline;
+      -ms-flex-order: 1;
+          order: 1; }
+    .event-grid .archive-sec .green-btn {
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+
+.target {
+  background-color: grey;
+  width: 100%;
+  height: 10%;
+  padding: 0.625rem;
+  display: none; }
+
+.newsLetter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .newsLetter .red-more {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
 
 /*--------------------------------------------------------------
 # NW Program Page
@@ -1791,13 +2188,6 @@ site-main .a green-btn {
   -ms-flex-align: center;
       align-items: center;
   background-color: grey; }
-  .nw-program-wrapper h1 {
-    font-family: "Asap", sans-serif;
-    font-size: 1.9rem;
-    font-weight: normal;
-    line-height: 2.625rem;
-    text-align: left;
-    color: #000000; }
 
 .nw-program {
   display: -ms-flexbox;
@@ -1818,12 +2208,15 @@ site-main .a green-btn {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .funding .funding-img, .funding .money-spend-img {
+  .funding .funding-img,
+  .funding .money-spend-img {
+    margin-top: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    .funding .funding-img img, .funding .money-spend-img img {
+    .funding .funding-img img,
+    .funding .money-spend-img img {
       width: 95%;
       height: 95%;
       margin-right: 2px; }
@@ -1867,28 +2260,15 @@ site-main .a green-btn {
     max-width: 70%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     margin: 40px auto;
     -ms-flex-direction: column;
         flex-direction: column; }
     .enroll .enroll-block .enroll-img {
       margin-bottom: 50px; }
-    .enroll .enroll-block .green-btn {
-      height: 47px;
-      display: inline-block;
-      box-sizing: border-box;
-      text-align: center;
-      background-color: #4FC8A1;
-      border-radius: 6px;
-      font-family: "Noto Sans";
-      font-size: 15px;
-      font-weight: bold;
-      text-align: center;
-      line-height: 30px;
-      color: #fff;
-      text-shadow: none;
-      letter-spacing: 0.8px; }
+    .enroll .enroll-block .enroll-btn {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
 
 .teacher-list {
   padding: 2px;
@@ -1899,72 +2279,89 @@ site-main .a green-btn {
   .teacher-list .teacher-grid {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .teacher-list .flip-container {
-    display: -ms-flexbox;
-    display: flex;
-    box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
-    background: #aff1d3;
-    border-radius: 50%; }
-    .teacher-list .flip-container .flipper {
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .teacher-list .teacher-grid .teacher-block {
+      -ms-flex: 0.03;
+          flex: 0.03;
       display: -ms-flexbox;
       display: flex;
-      width: 50%;
-      position: relative;
-      -webkit-transition: 1.9s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transition: 1.9s;
-      -moz-transform-style: preserve-3d;
-      transition: 1.9s;
-      transform-style: preserve-3d; }
-      .teacher-list .flip-container .flipper p {
-        font-size: 50%;
-        line-height: 30px; }
-    .teacher-list .flip-container .front {
-      position: absolute;
-      background-size: cover;
-      border-radius: 50%;
-      -ms-flex: 2;
-          flex: 2; }
-      .teacher-list .flip-container .front img {
-        border-radius: 50%; }
-    .teacher-list .flip-container .back {
-      border-radius: 50%;
-      position: absolute;
-      width: 125px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 125px;
-      text-align: center;
-      right: 3px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+      @media (min-width: 37.5rem) {
+        .teacher-list .teacher-grid .teacher-block {
+          -ms-flex: 0.03;
+              flex: 0.03; } }
+      @media (min-width: 60rem) {
+        .teacher-list .teacher-grid .teacher-block {
+          -ms-flex: 1;
+              flex: 1; } }
+    .teacher-list .teacher-grid .flip-container {
+      display: block;
+      box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+      background: #aff1d3;
+      border-radius: 50%; }
+      .teacher-list .teacher-grid .flip-container .flipper {
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        position: relative;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        transition: 1.9s;
+        transform-style: preserve-3d; }
+        .teacher-list .teacher-grid .flip-container .flipper .teacher_det {
+          display: block; }
+        .teacher-list .teacher-grid .flip-container .flipper p {
+          font-size: 50%;
+          line-height: 30px; }
+      .teacher-list .teacher-grid .flip-container .front {
+        position: absolute;
+        background-size: cover;
+        border-radius: 50%;
+        -ms-flex: 2;
+            flex: 2; }
+        .teacher-list .teacher-grid .flip-container .front img {
+          border-radius: 50%; }
+      .teacher-list .teacher-grid .flip-container .back {
+        border-radius: 50%;
+        position: absolute;
+        width: 125px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 125px;
+        text-align: center;
+        right: 3px;
+        transform: rotateY(180deg); }
+    .teacher-list .teacher-grid .flip-container.hover .flipper,
+    .teacher-list .teacher-grid .flip-container:hover .flipper {
       transform: rotateY(180deg); }
-  .teacher-list .flip-container.hover .flipper,
-  .teacher-list .flip-container:hover .flipper {
-    transform: rotateY(180deg); }
-  .teacher-list .back,
-  .teacher-list .flip-container,
-  .teacher-list .front {
-    width: 125px;
-    height: 125px; }
-  .teacher-list .back,
-  .teacher-list .front {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
-  .teacher-list .teacher_det {
-    text-align: center; }
-    .teacher-list .teacher_det p {
-      font-size: 50%; }
+    .teacher-list .teacher-grid .back,
+    .teacher-list .teacher-grid .flip-container,
+    .teacher-list .teacher-grid .front {
+      width: 125px;
+      height: 125px; }
+    .teacher-list .teacher-grid .back,
+    .teacher-list .teacher-grid .front {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .teacher-list .teacher-grid .teacher_det {
+      text-align: center; }
+      .teacher-list .teacher-grid .teacher_det p {
+        font-size: 50%; }
 
 .red-border-container {
   width: 90%;
   height: 160px;
   display: inline-block;
-  margin-bottom: 100px;
   margin-left: 7.5%;
   padding-right: 9.4%;
   padding-left: 15px;
@@ -1981,6 +2378,8 @@ site-main .a green-btn {
   border-bottom: solid 3px #4FC8A1;
   max-width: 85%;
   margin: 0 auto;
+  overflow: auto;
+  padding: 40px 0;
   overflow: hidden;
   height: 100%;
   padding: 30px 0; }
