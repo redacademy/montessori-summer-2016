@@ -37,6 +37,9 @@ h3{
  h3{
 	 font-size:$h3_size_desktop;
 }}
+body{
+	line-height: 3rem;
+}
 //////////////////////////////
 
 
@@ -51,7 +54,7 @@ textarea {
 	color: $color_text_main;
 	font-family: $font_main;
 	@include font-size(1);
-	line-height: $font_line_height_body;
+	
 }
 
 /* Headings */

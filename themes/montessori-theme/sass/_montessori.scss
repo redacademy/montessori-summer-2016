@@ -147,7 +147,7 @@
         }
 
         h2 {
-          -index: 1;
+          z-index: 1;
   margin: 0;
   text-align: center;
   display: inline-block;
@@ -157,18 +157,18 @@
   overflow: hidden;
   padding: 0;
   bottom: 35px;
-  line-height: 1.3rem;
+  line-height: 1.2rem;
   position: absolute;
   right: 24px;
 
             a {
                 color: #248E6A;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-weight: bold;
             }
             @include desktop {
                 a {
-                    font-size: $font_body_size_desktop;
+                    font-size: 1.3rem;
                 }
 
                 .show {
@@ -373,6 +373,9 @@
     }
 }
 /*Start Resources Section  */
+.main-resources {
+  height: 400px;
+  position: relative;
 .green-btn {
     background-color: #4fc8a1;
     @include border-radius (6px);
@@ -382,13 +385,15 @@
     text-align: center;
     line-height: 28px;
     color: #fff;
-    padding: 12px 39px;
+    padding: 10px 20px;
     text-shadow: none;
     letter-spacing: 0.8px;
-    display: inline-block;
+    display: block;
+    margin: 10px auto;
     @include desktop {
         width: 331px;
         height: 65px;
-        font-size: 16px;
+        font-size: 20px;
     }
+}
 }

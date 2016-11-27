@@ -8,7 +8,6 @@
 .main-navigation-container {
 	display: flex;
 }
-
 .main-navigation {
 	padding-top: 40px;
 	margin-right: 38px;
@@ -49,7 +48,7 @@ div .menu-primary-menu-container {
 .main-navigation-container {
 	width: 100%;
 	background-color: $white;
-	font-family: $font_footer_header;
+	font-family: $font_header_footer;
 	@include flex(center,space-between);
 	height: 5rem;
 	@include tablet {
@@ -84,15 +83,19 @@ div .menu-primary-menu-container {
 }
 ///////The Hamburger Menu Section//////
 .responsive-menu-button {
-	margin-top: 0.5rem !important;
+	margin-top: 0.1rem !important;
 }
-.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
-
+.responsive-menu-box {
+    width: 34px!important;
+    height: 22px!important;
+	}
+.responsive-menu-inner,
+.responsive-menu-inner::before,
+ .responsive-menu-inner::after {
     background-color: #D8D8D8!important;
 		width: 34px!important;;
 				height: 4px!important;
     border-radius: 0px!important;
-
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
 
@@ -100,8 +103,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
 }
 button#responsive-menu-button {
-
-
+	    top: 6px!important;
+	    right: 8%!important;
     background-color: transparent!important;
 }
 #primary-menu li.current-menu-item {
@@ -127,9 +130,11 @@ button#responsive-menu-button {
 
 	img {
 		position: relative;
-		height: 100%;
-		width: 100%;
-
+	height: 100%;
+	width: 100%;
+	padding-top: 25px;
+	@include desktop{padding-top: 0px;
+}
 		a {
 			bottom: -20px;
 			cursor: pointer;
@@ -141,9 +146,10 @@ button#responsive-menu-button {
 
 .main-menu-wrapper {
 	width: 100%;
-	height: 80px;
+	height: 65px;
 	@include flex(center,space-between);
 	@include desktop {
+	height:90px;
 		white-space: nowrap;
 		overflow: hidden;
 	}
@@ -168,17 +174,17 @@ button#responsive-menu-button {
 div .secondary {
 	text-align: right;
 	max-width: 100%;
-	max-height: 100%;
-	font-family: $font_footer_header;
+	height: 100%;
+	font-family:$font_header_footer;
 	@include desktop {
-		white-space: normal;
-		overflow: hidden;
+		white-space:inherit;;
 		padding: 5px 20 10px 10;
 		width: 100%;
+		height: 65px;
 	}
 	text-align: right;
 	padding-right: 2rem;
-	margin-top: 20px;
+	margin-top: 10px;
 	background-color: #248E6A;
 
 	& .active {
@@ -187,16 +193,20 @@ div .secondary {
 
 	li {
 		display: inline-block;
-		padding: 10px;
+		padding: 7px 15px;
+		@include desktop{
+			padding: 7px 25px;
+		};
 
 		a {
-			font-size: $font_body_size_mob;
+			font-weight: lighter;
+			font-size: 1.3rem;
+			@include desktop{
+				font-size: 1.5rem;
+
+			}
 			text-decoration: none;
 			color: white;
 		}
 	}
-}
-
-#top{
-	color:black;
 }
