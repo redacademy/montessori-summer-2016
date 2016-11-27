@@ -44,13 +44,13 @@ jQuery(document).ready(function( $ ) {
 // hover class for img
 
 // ----------------------------------------------------------------
-if ( $(".b1") ) {
-       $('.b1').append('<p>B1 is there</p>')};
-       else if  ($(".b2") ) {
-       $('.b2').append('<p>B2 is there</p>');
-       alert("b2");}
-
-});
+// if ( $(".b1") ) {
+//        $('.b1').append('<p>B1 is there</p>')};
+//        else if  ($(".b2") ) {
+//        $('.b2').append('<p>B2 is there</p>');
+//        alert("b2");}
+//
+// });
 
 $('.toggle').click(function() {
 $('#target').slideToggle('1000');
@@ -59,5 +59,4 @@ $(".arrow").on("click", function () {
 });
 
 });
-
 });
