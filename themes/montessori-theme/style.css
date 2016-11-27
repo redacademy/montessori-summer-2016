@@ -1349,12 +1349,15 @@ div .secondary {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -ms-flex-align: baseline;
+        align-items: baseline; }
     .members_at_large .members_at_large-grid .members_at_large-name {
       display: -ms-flexbox;
       display: flex;
-      width: 33%;
-      text-align: center; }
+      width: 27%;
+      text-align: center;
+      margin: 1rem; }
       .members_at_large .members_at_large-grid .members_at_large-name p {
         display: block;
         width: 33%;

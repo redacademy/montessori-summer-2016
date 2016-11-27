@@ -150,11 +150,13 @@
 	.members_at_large-grid {
 		display: flex;
 		flex-wrap: wrap;
+		align-items: baseline;
 
 		.members_at_large-name {
 			display: flex;
-			width: 33%;
+			width: 27%;
 			text-align: center;
+			margin: 1rem;
 
 			p {
 				display: block;
