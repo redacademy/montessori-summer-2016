@@ -51,6 +51,9 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Asap");
+@import url("https://fonts.googleapis.com/css?family=PT");
+@import url("https://fonts.googleapis.com/css?family=Noto");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -233,35 +236,63 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-/******* Headings *****/
-h1, h2, h3, h4, h5, h6, button {
-  font-weight: bold;
-  padding: 1rem 0; }
+p,
+li {
+  font-size: 1.9rem;
+  font-family: "Asap", sans-serif; }
 
+h1, h2, h3 {
+  text-transform: capitalize;
+  font-family: "Asap", sans-serif;
+  font-weight: lighter; }
+
+h1 {
+  font-size: 1.9rem; }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Asap", sans-serif; }
+
+@media (min-width: 60rem) {
+  p,
+  li {
+    font-size: 2.1rem; }
+  h1 {
+    font-family: "Asap", sans-serif;
+    font-weight: lighter;
+    font-size: 2.8rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; } }
+
+body {
+  line-height: 3rem; }
+
+/******* Headings *****/
 body,
 button,
 input,
 select,
 textarea {
   color: #404040;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  font-size: 1rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
-p {
-  margin-bottom: 1rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
 code, kbd, tt, var {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -281,42 +312,9 @@ big {
 
 html {
   box-sizing: border-box;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem; }
-
-p,
-li {
-  font-size: 1.6rem;
-  font-family: "Asap"; }
-
-h1, h2, h3 {
-  text-transform: capitalize;
-  font-family: "Asap";
-  font-weight: lighter; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2rem; }
-
-h3 {
-  font-size: 1.3rem;
-  font-family: "Asap"; }
-
-@media (min-width: 60rem) {
-  p,
-  li {
-    font-size: 1.7rem; }
-  h1 {
-    font-family: "Asap";
-    font-weight: lighter;
-    font-size: 3rem; }
-  h2 {
-    font-size: 2.2rem; }
-  h3 {
-    font-size: 1.7rem; } }
 
 *,
 *:before,
@@ -325,12 +323,11 @@ h3 {
 
 body {
   background: #fff;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
-  line-height: 2rem;
   margin: 0 auto; }
   body p, body li {
-    line-height: 2rem; }
+    line-height: 3rem; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -552,6 +549,10 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site-content {
+  padding-top: 110px;
+  top: 0; }
+
 .main-navigation-container {
   display: -ms-flexbox;
   display: flex; }
@@ -585,7 +586,7 @@ div .menu-primary-menu-container {
 .main-navigation-container {
   width: 100%;
   background-color: #fff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -616,7 +617,30 @@ div .menu-primary-menu-container {
         margin: 0 5px; } }
 
 .responsive-menu-button {
-  margin-top: 0.5rem !important; }
+  margin-top: 0.1rem !important; }
+
+.responsive-menu-box {
+  width: 34px !important;
+  height: 22px !important; }
+
+.responsive-menu-inner,
+.responsive-menu-inner::after,
+.responsive-menu-inner::before {
+  background-color: #D8D8D8 !important;
+  width: 34px !important;
+  height: 4px !important;
+  border-radius: 0px !important; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  box-shadow: none !important; }
+
+button#responsive-menu-button {
+  top: 6px !important;
+  right: 8% !important;
+  background-color: transparent !important; }
 
 #primary-menu li.current-menu-item a {
   border-top: 6px solid #57B79F;
@@ -638,7 +662,11 @@ div .menu-primary-menu-container {
   .montessori-logo img {
     position: relative;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    padding-top: 25px; }
+    @media (min-width: 60rem) {
+      .montessori-logo img {
+        padding-top: 0; } }
     .montessori-logo img a {
       bottom: -20px;
       cursor: pointer;
@@ -647,7 +675,7 @@ div .menu-primary-menu-container {
 
 .main-menu-wrapper {
   width: 100%;
-  height: 80px;
+  height: 65px;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -656,6 +684,7 @@ div .menu-primary-menu-container {
       justify-content: space-between; }
   @media (min-width: 60rem) {
     .main-menu-wrapper {
+      height: 90px;
       white-space: nowrap;
       overflow: hidden; } }
 
@@ -663,41 +692,61 @@ div .menu-primary-menu-container {
   z-index: 999;
   min-width: 37.5rem;
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: #fff;
   position: fixed;
-  top: 0; }
-
-.site-content {
-  padding-top: 80px;
   top: 0; }
 
 .home .site-header {
   position: absolute; }
 
+div .secondary li a {
+  padding: 0 10px; }
+
+div {
+  position: relative; }
+  div .secondary li:nth-child(3) a {
+    border-left: solid 1px white;
+    border-right: solid 1px white; }
+
+div {
+  position: relative; }
+  div .secondary li:nth-child(4) a {
+    padding: 0 20px;
+    border-left: solid 1px white;
+    border-right: solid 1px white; }
+
 div .secondary {
+  position: relative;
   text-align: right;
   max-width: 100%;
-  max-height: 100%;
-  font-family: "PT Sans";
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
   text-align: right;
   padding-right: 2rem;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #248E6A; }
   @media (min-width: 60rem) {
     div .secondary {
-      white-space: normal;
-      overflow: hidden;
+      white-space: inherit;
       padding: 5px 20 10px 10;
-      width: 100%; } }
+      width: 100%;
+      height: 65px; } }
   div .secondary .active {
     background-color: #4FC8A1; }
   div .secondary li {
     display: inline-block;
-    padding: 10px; }
+    padding: 7px 15px; }
+    @media (min-width: 60rem) {
+      div .secondary li {
+        padding: 7px 25px; } }
     div .secondary li a {
-      font-size: 1.6rem;
+      font-weight: lighter;
+      font-size: 1.3rem;
       text-decoration: none;
       color: white; }
+      @media (min-width: 60rem) {
+        div .secondary li a {
+          font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
 # Footer
@@ -710,7 +759,7 @@ div .secondary {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   overflow: hidden;
   font-size: 0.8rem;
   min-width: 380px;
@@ -732,8 +781,8 @@ div .secondary {
     padding-left: 0px; }
     .footer-block-item1 ul li {
       line-height: normal;
-      font-size: 1.1rem;
-      padding: 0px 10px 0px 10px;
+      font-size: 1.3rem;
+      padding: 0 10px;
       display: inline-block; }
       .footer-block-item1 ul li a {
         color: #D3E0DE;
@@ -756,15 +805,15 @@ div .secondary {
     margin: 0px auto; }
     .footer-block-item2 p i {
       display: inline-block;
-      margin: 0px;
-      padding: 3px;
+      margin: 0;
+      padding: 3.9px;
       margin-right: 5px;
-      width: 24px;
+      width: 46px;
       color: #fff;
-      border: solid 1px #fff;
+      border: 1px solid #fff;
       border-radius: 50%; }
   .footer-block-item2 a {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-right: 10px;
     color: #D3E0DE;
     text-decoration: none; }
@@ -981,7 +1030,8 @@ div .secondary {
         -o-transition: 3s;
         -o-transform-style: preserve-3d;
         transition: 3s;
-        transform-style: preserve-3d; }
+        transform-style: preserve-3d;
+        border-radius: 10px; }
         .main-philosophy .philosophy-grid:hover {
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -1009,8 +1059,8 @@ div .secondary {
           .main-philosophy .philosophy-grid .philosophy-img img {
             left: 56px;
             top: 9px;
-            width: 175px;
-            height: 135px;
+            width: 190px;
+            height: 153px;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden; } }
     .main-philosophy .philosophy-grid h2 {
@@ -1018,22 +1068,23 @@ div .secondary {
       margin: 0;
       text-align: center;
       display: inline-block;
-      width: 90%;
+      width: 80%;
       color: #248e6a;
       height: auto;
       overflow: hidden;
       padding: 0;
-      bottom: 32px;
-      line-height: 1.3rem;
+      bottom: 35px;
+      line-height: 1.2rem;
       position: absolute;
+      right: 24px;
       position: absolute; }
       .main-philosophy .philosophy-grid h2 a {
         color: #248E6A;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold; }
       @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid h2 a {
-          font-size: 1.7rem; }
+          font-size: 1.3rem; }
         .main-philosophy .philosophy-grid h2 .show {
           font-size: 1.4rem;
           -webkit-backface-visibility: hidden;
@@ -1045,7 +1096,7 @@ div .secondary {
     .main-philosophy .philosophy-grid p {
       text-align: left;
       display: inline-block;
-      font-family: "Noto Sans";
+      font-family: "Noto Sans", sans-serif;
       position: absolute;
       top: -17px;
       overflow-y: scroll;
@@ -1211,24 +1262,28 @@ div .secondary {
     padding-top: 30px; }
 
 /*Start Resources Section  */
-.green-btn {
-  background-color: #4fc8a1;
-  border-radius: 6px;
-  font-family: Noto Sans;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 28px;
-  color: #fff;
-  padding: 12px 39px;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  display: inline-block; }
-  @media (min-width: 60rem) {
-    .green-btn {
-      width: 331px;
-      height: 65px;
-      font-size: 16px; } }
+.main-resources {
+  height: 400px;
+  position: relative; }
+  .main-resources .green-btn {
+    background-color: #4fc8a1;
+    border-radius: 6px;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    padding: 10px 20px;
+    text-shadow: none;
+    letter-spacing: 0.8px;
+    display: block;
+    margin: 10px auto; }
+    @media (min-width: 60rem) {
+      .main-resources .green-btn {
+        width: 331px;
+        height: 65px;
+        font-size: 20px; } }
 
 /*--------------------------------------------------------------
 # About Page
@@ -1244,7 +1299,12 @@ div .secondary {
   padding-right: 1.25rem;
   background-color: grey; }
   .about-wrapper h1 {
+<<<<<<< HEAD
     font-family: "Asap";
+=======
+    font-family: "Asap", sans-serif;
+    font-size: 1.9rem;
+>>>>>>> 3edec62b3dfc3b6001aaf72e9b0f14ba66a2733a
     font-weight: normal;
     line-height: 2.625rem;
     text-align: left;
@@ -1414,8 +1474,13 @@ div .secondary {
   -ms-flex-align: center;
       align-items: center; }
   .nw-program-wrapper h1 {
+<<<<<<< HEAD
     font-family: Asap;
     font-size: 2.5rem;
+=======
+    font-family: "Asap", sans-serif;
+    font-size: 1.9rem;
+>>>>>>> 3edec62b3dfc3b6001aaf72e9b0f14ba66a2733a
     font-weight: normal;
     line-height: 2.625rem;
     text-align: left;

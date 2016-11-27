@@ -15,7 +15,7 @@ get_header(); ?>
 
 			<section class="error-404 not-found container">
 
-				<h1 class="title">Ooops, this page does not exist on <span>Montissori Society</span> Website</h1>
+				<h1 class="title">Ooops, this page does not exist on Montissori Society Website</h1>
 			
 				<a href="<?php echo get_home_url(); ?>" class="btn-return"> </a>
 

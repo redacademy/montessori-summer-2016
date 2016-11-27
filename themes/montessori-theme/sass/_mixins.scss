@@ -26,14 +26,13 @@
 		@content;
 	}
 }
-
+///flex mixin
 @mixin flex($align,$justify) {
 	display: flex;
 	display: -webkit-box;
   display: -ms-flexbox;
 	align-items: $align;
 	justify-content: $justify;
-
 }
 
 ///border radius extentions
