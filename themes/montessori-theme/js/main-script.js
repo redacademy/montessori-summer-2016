@@ -49,3 +49,5 @@ if ( $(".b1") ) {
        else if  ($(".b2") ) {
        $('.b2').append('<p>B2 is there</p>');
        alert("b2");}
+
+});
