@@ -32,7 +32,7 @@
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*5.5;
-		margin-bottom: $basic_margin*4.5;
+		margin-bottom: $basic_margin*3;
 	}
 }
 
@@ -40,29 +40,32 @@
 .funding {
 	display: flex;
 	flex-direction: column;
-	margin-top: $basic_margin*4;
+	margin-top: $basic_margin*3;
+	border-bottom: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
+
+
 	.funding-img {
-		margin-top: 25rem;
+		margin-top:$basic_margin*40;
 	}
-			.money-spend-img{
-				margin-top: 5rem;
-			}
+	.funding-det{
+		display: block;
+	}
  .money-spend-img,
  .funding-img {
 	 display:flex;
 	 justify-content: center;
 
 		img {
-			width: 95%;
-			height: 95%;
-			margin-right: 2px;
+			width: 87%;
+			margin-right:$basic_margin/5;
+			margin-bottom:$basic_margin;
 		}
 	}
-
 	.funding-btn {
 		display: flex;
 		justify-content: center;
-
+		margin-top:$basic_margin*3;
 		.green-btn {
 			padding: 10px;
 			width: 44.666%;

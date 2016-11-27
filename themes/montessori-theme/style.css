@@ -2192,18 +2192,20 @@ body {
     -ms-flex-pack: center;
         justify-content: center;
     margin-top: 3.4375rem;
-    margin-bottom: 2.8125rem; }
+    margin-bottom: 1.875rem; }
 
 .funding {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-top: 2.5rem; }
+  margin-top: 1.875rem;
+  border-bottom: solid 3px #4FC8A1;
+  padding-bottom: 2.8125rem; }
   .funding .funding-img {
     margin-top: 25rem; }
-  .funding .money-spend-img {
-    margin-top: 5rem; }
+  .funding .funding-det {
+    display: block; }
   .funding .money-spend-img,
   .funding .funding-img {
     display: -ms-flexbox;
@@ -2212,14 +2214,15 @@ body {
         justify-content: center; }
     .funding .money-spend-img img,
     .funding .funding-img img {
-      width: 95%;
-      height: 95%;
-      margin-right: 2px; }
+      width: 87%;
+      margin-right: 0.125rem;
+      margin-bottom: 0.625rem; }
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    margin-top: 1.875rem; }
     .funding .funding-btn .green-btn {
       padding: 10px;
       width: 44.666%;

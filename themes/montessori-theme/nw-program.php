@@ -39,12 +39,14 @@ get_header(); ?>
 				<div class="funding-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
+				<div class="funding-det">
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
 				<h2>How is the money spent?</h2>
+				<p> <?php echo CFS()->get('money-spend'); ?> </p>
+			</div>
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
  </div>
-				<p> <?php echo CFS()->get('money-spend'); ?> </p>
 				<div class="funding-btn">
 				<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</button>
 			  </div>
