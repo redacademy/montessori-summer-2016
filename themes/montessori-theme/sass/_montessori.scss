@@ -2,6 +2,22 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.toggle{
+  color:green;
+  padding-left:10px;
+}
+
+.fa-angle-down{
+
+  color:green;
+  padding-left:10px;
+}
 
 .history-content {
     width: 100%;

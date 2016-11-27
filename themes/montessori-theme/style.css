@@ -486,6 +486,14 @@ textarea {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+#target {
+  background: #fff;
+  width: 300px;
+  height: 300px;
+  height: 160px;
+  padding: 5px;
+  display: none; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -777,6 +785,9 @@ div .secondary {
   padding: 10px 0 30px 0;
   height: 30px;
   margin-top: -30px; }
+  @media (min-width: 60rem) {
+    .footer-block-item1 {
+      width: 1400px; } }
   .footer-block-item1 ul {
     padding-left: 0px; }
     .footer-block-item1 ul li {
@@ -784,6 +795,11 @@ div .secondary {
       font-size: 1.3rem;
       padding: 0 10px;
       display: inline-block; }
+      @media (min-width: 60rem) {
+        .footer-block-item1 ul li {
+          padding: 0 60px;
+          font-size: 1.3rem;
+          text-align: left; } }
       .footer-block-item1 ul li a {
         color: #D3E0DE;
         text-decoration: none; }
@@ -1264,6 +1280,20 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
+.rotate {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+.toggle {
+  color: green;
+  padding-left: 10px; }
+
+.fa-angle-down {
+  color: green;
+  padding-left: 10px; }
+
 .history-content {
   width: 100%;
   -ms-flex-wrap: wrap;

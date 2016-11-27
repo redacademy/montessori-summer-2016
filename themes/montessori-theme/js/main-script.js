@@ -41,8 +41,12 @@ jQuery(document).ready(function( $ ) {
 // ----------------------------------------------------------------
 
 $('.toggle').click(function() {
-    $('.target').toggle('slow');
+$('#target').slideToggle('1000');
+$(".arrow").on("click", function () {
+    $(this).toggleClass("rotate");
 });
 
 });
 
+
+});
