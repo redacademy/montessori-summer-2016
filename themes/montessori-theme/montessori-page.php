@@ -171,9 +171,9 @@ foreach($fields as $field)
 <div class="montessori-archive">
 <h3>others</h3>
 </div>
-
+<div>
 <button class="green-btn">NW Montessori Program</button>
-
+</div>
 </div>
 </section>
 
