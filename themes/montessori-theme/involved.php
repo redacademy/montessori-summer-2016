@@ -23,25 +23,31 @@ $args = array(
 $query = new WP_Query( $args  );
 if ( $query-> have_posts() ) :
  while ($query-> have_posts() )  : $query->the_post(); ?>
-  <div class="involved-title">
-     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-  </div>
 
+  <div  class="involved-title">
+     <a id= " dd<?php the_id(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+
+
+  </div>
+  <div class="dd">
 <?php endwhile; ?>
 <?php while ($query-> have_posts() )  : $query->the_post(); ?>
-<div class="involved-content">
+<div id= " dd<?php the_id(); ?>" class="involved-content">
    <?php the_content('involved_content');?>
  </div>
    <div class= "involved-img" >
      <?php output_image('involved_img'); ?>
+   </div>
 
  </div>
 
-     <div class="button">
+     <div class="green-button">
        <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
 
  <?php endwhile; ?>
 <?php endif; ?>
+<div class="content"></div>
+
 <?php wp_reset_postdata(); ?>
 
 
@@ -71,22 +77,25 @@ if ( $query-> have_posts() ) :
         <div>
                     <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
 
-                  <a class="pink-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
+                  <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
          </div>
+          <div id"btn-content"></div>
 
-        <article class="contact-container">
-             <div class="contact-person">
-           <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a></div>
+        <article id="btn-volun" class="contact-container">
+             <div class="contact-persons">
+           <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"> in person </a></div>
            <div class="contact-online">
-             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a><div>
+             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"> online </a></div>
              <div class="contact-email">
-                 <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a></div>
+                 <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"> email</a></div>
           <p><?php echo CFS()->get('get_text'); ?></p>
         </article>
+
+        </div>
       </section>
 
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
 </main>
-</div>
