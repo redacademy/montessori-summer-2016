@@ -9,14 +9,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="about-wrapper">
 			<!-- **********///////////////// about NW School Section ///////////////********** -->
-			<section id="our-history" class="about-school">
+			<section id="our-history " class="about" >
 				<?php
 			$fields = CFS()->get( 'content_group' );
-			foreach ( $fields as $field ) {
-				echo '<h1 >'.$field['content_group_title'].'</h1>';
+			foreach ( $fields as $field ) {?>
+				<div class="about-school">
+ <?php	echo '<h1 >'.$field['content_group_title'].'</h1>';
 				echo '<div class="about-content">'.$field['content_group_paragragh'].'</div>';
-			  echo '<div class="red-border-container">'.$field['content_group_description'].'</div>';
-			}
+			  echo '<div class="red-border-container">'.$field['content_group_description'].'</div>';?>
+				</div>
+		<?php	}
 			  ?>
 		</section>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
@@ -43,7 +45,7 @@ get_header(); ?>
 					</div><!-- #flip-container -->
 					<div class="members_det">
 			      <p><?php echo CFS()->get('member_name'); ?></p>
-			    	<p><?php echo CFS()->get('member_title'); ?></p>
+			    	<p class="bold"><?php echo CFS()->get('member_title'); ?></p>
 					</div><!-- #member_det -->
 				</div><!-- #members_block -->
 						<?php endwhile; else: ?>
@@ -91,7 +93,7 @@ get_header(); ?>
 				</div><!-- #event-grid -->
 			<div class="archive-sec">
 
-	<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</a>
+	<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
 	<div class="archive-block">
 	<label class="archive" ><h1>Archives</h1></lable>
   <div class="toggle"><?php get_sidebar(); ?></div>
@@ -100,11 +102,11 @@ get_header(); ?>
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
 			<section id="newsletter" class="newsLetter">
 					<h1>NewsLetter</h1>
-					<h3>exciting time of the year! </h3>
-					<?php echo '<h4>'.CFS()->get( 'date' ).'</h4>'; ?>
+					<h2>exciting time of the year! </h2>
+					<?php echo '<h3>'.CFS()->get( 'date' ).'</h3>'; ?>
 						<?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
 						<div class="red-more">
-						<a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</a>
+						<button class="green-btn"href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
 				  	</div>
 			</section>
 			<!-- **********///////////////////////////////////////////////////********** -->

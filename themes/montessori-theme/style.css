@@ -238,7 +238,7 @@ th {
 --------------------------------------------------------------*/
 p,
 li {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-family: "Asap", sans-serif; }
 
 h1, h2, h3 {
@@ -247,7 +247,7 @@ h1, h2, h3 {
   font-weight: lighter; }
 
 h1 {
-  font-size: 1.9rem; }
+  font-size: 2.25rem; }
 
 h2 {
   font-size: 1.6rem; }
@@ -486,6 +486,14 @@ textarea {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+#target {
+  background: #fff;
+  width: 300px;
+  height: 300px;
+  height: 160px;
+  padding: 5px;
+  display: none; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -777,6 +785,9 @@ div .secondary {
   padding: 10px 0 30px 0;
   height: 30px;
   margin-top: -30px; }
+  @media (min-width: 60rem) {
+    .footer-block-item1 {
+      width: 1400px; } }
   .footer-block-item1 ul {
     padding-left: 0px; }
     .footer-block-item1 ul li {
@@ -784,6 +795,11 @@ div .secondary {
       font-size: 1.3rem;
       padding: 0 10px;
       display: inline-block; }
+      @media (min-width: 60rem) {
+        .footer-block-item1 ul li {
+          padding: 0 60px;
+          font-size: 1.3rem;
+          text-align: left; } }
       .footer-block-item1 ul li a {
         color: #D3E0DE;
         text-decoration: none; }
@@ -838,6 +854,692 @@ div .secondary {
 .footer-block-item2 a:hover {
   cursor: pointer;
   color: #248E6A; }
+
+.site-main {
+  margin: 0;
+  padding: 0; }
+  .site-main .home {
+    margin: 0 auto; }
+    .site-main .home .home-wrapper {
+      width: 480px;
+      height: 585px;
+      background-color: rgba(0, 0, 0, 0.74); }
+      @media (min-width: 60rem) {
+        .site-main .home .home-wrapper {
+          width: 541.64px;
+          height: 555px;
+          background-color: rgba(0, 0, 0, 0.74);
+          position: relative; } }
+      @media (min-width: 60rem) {
+        .site-main .home .home-wrapper .home-img {
+          background-color: rgba(0, 0, 0, 0.74);
+          width: 1264px;
+          height: 555px;
+          z-index: -1;
+          position: absolute; } }
+      .site-main .home .home-wrapper h2 {
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 42px;
+        color: #fff;
+        margin-top: 0;
+        margin-left: 30px;
+        padding-top: 17px;
+        box-sizing: border-box;
+        width: 119.23px;
+        height: 74px;
+        border-bottom: 4px solid #fff; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper h2 {
+            font-size: 46px;
+            padding-top: 70px;
+            line-height: 0; } }
+      .site-main .home .home-wrapper p {
+        height: 160px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+        margin: 30px; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper p {
+            width: 447px;
+            height: 230px;
+            font-family: "Noto Sans";
+            font-size: 24px;
+            line-height: 46px; } }
+      .site-main .home .home-wrapper .red-btn {
+        background-color: #F76072;
+        border-radius: 6px;
+        color: #fff;
+        margin-left: 155px;
+        padding: 8px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper .red-btn {
+            padding: 10px;
+            font-size: 24px;
+            display: block;
+            max-width: 320px;
+            margin: 90px 100px;
+            text-align: center; } }
+  .site-main .link-title h2 {
+    padding: 0;
+    width: 100%;
+    height: 42px;
+    font-family: "Asap";
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000; }
+    @media (min-width: 60rem) {
+      .site-main .link-title h2 {
+        margin: 15px;
+        padding: 21px 24px;
+        font-size: 48px;
+        font-family: 'Asap'; } }
+  .site-main .links-wrapper {
+    width: 480px; }
+    @media (min-width: 60rem) {
+      .site-main .links-wrapper {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 20px -60px;
+        padding-top: 70px; } }
+    .site-main .links-wrapper p {
+      width: 377px;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      line-height: 40px;
+      color: #000000;
+      margin: 40px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper p {
+          padding: 30px 40px;
+          margin: 15px 40px; } }
+    .site-main .links-wrapper .benifits .green-btn {
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 80px;
+      padding: 17px 20px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .benifits .green-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px; } }
+    .site-main .links-wrapper .nw-program-page .green-btn {
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 80px;
+      padding: 17px 70px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .nw-program-page .green-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px; } }
+    .site-main .links-wrapper .involved .red-btn {
+      padding: 17px 70px;
+      background-color: #F76072;
+      border-radius: 6px;
+      color: #fff;
+      margin-left: 80px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .involved .red-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px;
+          padding: 6px 85px; } }
+  .site-main .support-wrapper {
+    width: 480px;
+    height: auto; }
+    .site-main .support-wrapper .information {
+      height: auto; }
+      .site-main .support-wrapper .information h2 {
+        border-top: 2px solid #2EB688;
+        width: 377px;
+        height: 42px;
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 42px;
+        color: #000;
+        margin: 35px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information h2 {
+            width: 852px;
+            height: 55px;
+            font-family: "Asap";
+            font-size: 48px;
+            line-height: 55px;
+            margin: 0;
+            box-sizing: border-box;
+            width: 1283px; } }
+      .site-main .support-wrapper .information img {
+        width: 287px;
+        height: 470px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information img {
+            float: right;
+            position: absolute;
+            right: 35px; } }
+        .site-main .support-wrapper .information img p {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          line-height: 46px;
+          color: #000;
+          margin: 45px; }
+          @media (min-width: 60rem) {
+            .site-main .support-wrapper .information img p {
+              float: right;
+              position: absolute;
+              right: 35px; } }
+      .site-main .support-wrapper .information p {
+        width: 377px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 46px;
+        color: #000;
+        margin: 40px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information p {
+            width: 852px;
+            font-family: "Noto Sans";
+            font-size: 22px;
+            line-height: 46px; } }
+        .site-main .support-wrapper .information p .info {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 42px;
+          color: #000; }
+      .site-main .support-wrapper .information .red-btn {
+        width: 185px;
+        height: 47px;
+        background-color: #F76072;
+        border-color: #F76072;
+        border-radius: 6px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 8px;
+        box-shadow: none;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        text-decoration: none; }
+      .site-main .support-wrapper .information .green-btn {
+        background-color: #4FC8A1;
+        border-color: #4FC8A1;
+        border-radius: 6px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 8px;
+        box-shadow: none;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        text-decoration: none; }
+  .site-main .all-features {
+    margin-bottom: 30px; }
+    .site-main .all-features h2 {
+      box-sizing: border-box;
+      width: 440px;
+      border-top: 2px solid #2EB688;
+      padding-top: 50px;
+      height: 42px;
+      font-family: 'Asap';
+      font-size: 36px;
+      line-height: 0;
+      color: #000;
+      margin-left: 30px; }
+      .site-main .all-features h2 .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px; }
+    .site-main .all-features .features-wrapper {
+      /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+      background: #aff1d3;
+      width: 200px;
+      box-sizing: border-box;
+      height: 139.76px;
+      width: 480.27px;
+      position: relative;
+      border-radius: 10px;
+      font-family: 'Noto Sans';
+      font-size: 15px;
+      color: #000;
+      text-decoration: none; }
+      .site-main .all-features .features-wrapper .features-flipper {
+        position: relative;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 1.9s;
+        -o-transform-style: preserve-3d;
+        transition: 1.9s;
+        transform-style: preserve-3d;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+        .site-main .all-features .features-wrapper .features-flipper:hover {
+          transform: rotateY(180deg);
+          cursor: pointer; }
+        .site-main .all-features .features-wrapper .features-flipper .front {
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+          padding: 20px;
+          width: 450px;
+          font-family: 'Asap';
+          font-size: 24px;
+          text-align: center;
+          color: #000000;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+        .site-main .all-features .features-wrapper .features-flipper .features-back {
+          border: 1px solid #248E6A;
+          margin: 0;
+          text-align: center;
+          overflow: hidden;
+          padding: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          position: absolute;
+          bottom: 1px;
+          background-color: #fff;
+          transform: rotateY(180deg); }
+    .site-main .all-features .green-btn {
+      color: #248E6A;
+      text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #ffffff; }
+
+.site-main {
+  margin: 0;
+  padding: 0; }
+  .site-main .home {
+    margin: 0 auto; }
+    .site-main .home .home-wrapper {
+      width: 480px;
+      height: 585px;
+      background-color: rgba(0, 0, 0, 0.74); }
+      @media (min-width: 60rem) {
+        .site-main .home .home-wrapper {
+          width: 541.64px;
+          height: 555px;
+          background-color: rgba(0, 0, 0, 0.74);
+          position: relative; } }
+      @media (min-width: 60rem) {
+        .site-main .home .home-wrapper .home-img {
+          background-color: rgba(0, 0, 0, 0.74);
+          width: 1264px;
+          height: 555px;
+          z-index: -1;
+          position: absolute; } }
+      .site-main .home .home-wrapper h2 {
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 42px;
+        color: #fff;
+        margin-top: 0;
+        margin-left: 30px;
+        padding-top: 17px;
+        box-sizing: border-box;
+        width: 119.23px;
+        height: 74px;
+        border-bottom: 4px solid #fff; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper h2 {
+            font-size: 46px;
+            padding-top: 70px;
+            line-height: 0; } }
+      .site-main .home .home-wrapper p {
+        height: 160px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
+        margin: 30px; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper p {
+            width: 447px;
+            height: 230px;
+            font-family: "Noto Sans";
+            font-size: 24px;
+            line-height: 46px; } }
+      .site-main .home .home-wrapper .red-btn {
+        background-color: #F76072;
+        border-radius: 6px;
+        color: #fff;
+        margin-left: 155px;
+        padding: 8px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px; }
+        @media (min-width: 60rem) {
+          .site-main .home .home-wrapper .red-btn {
+            padding: 10px;
+            font-size: 24px;
+            display: block;
+            max-width: 320px;
+            margin: 90px 100px;
+            text-align: center; } }
+  .site-main .link-title h2 {
+    padding: 0;
+    width: 100%;
+    height: 42px;
+    font-family: "Asap";
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000; }
+    @media (min-width: 60rem) {
+      .site-main .link-title h2 {
+        margin: 15px;
+        padding: 21px 24px;
+        font-size: 48px;
+        font-family: 'Asap'; } }
+  .site-main .links-wrapper {
+    width: 480px; }
+    @media (min-width: 60rem) {
+      .site-main .links-wrapper {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 20px -60px;
+        padding-top: 70px; } }
+    .site-main .links-wrapper p {
+      width: 377px;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      line-height: 40px;
+      color: #000000;
+      margin: 40px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper p {
+          padding: 30px 40px;
+          margin: 15px 40px; } }
+    .site-main .links-wrapper .benifits .green-btn {
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 80px;
+      padding: 17px 20px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .benifits .green-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px; } }
+    .site-main .links-wrapper .nw-program-page .green-btn {
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 80px;
+      padding: 17px 70px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .nw-program-page .green-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px; } }
+    .site-main .links-wrapper .involved .red-btn {
+      padding: 17px 70px;
+      background-color: #F76072;
+      border-radius: 6px;
+      color: #fff;
+      margin-left: 80px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px; }
+      @media (min-width: 60rem) {
+        .site-main .links-wrapper .involved .red-btn {
+          display: block;
+          width: 319px;
+          height: 66px;
+          font-size: 26px;
+          padding: 6px 85px; } }
+  .site-main .support-wrapper {
+    width: 480px;
+    height: auto; }
+    .site-main .support-wrapper .information {
+      height: auto; }
+      .site-main .support-wrapper .information h2 {
+        border-top: 2px solid #2EB688;
+        width: 377px;
+        height: 42px;
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 42px;
+        color: #000;
+        margin: 35px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information h2 {
+            width: 852px;
+            height: 55px;
+            font-family: "Asap";
+            font-size: 48px;
+            line-height: 55px;
+            margin: 0;
+            box-sizing: border-box;
+            width: 1283px; } }
+      .site-main .support-wrapper .information img {
+        width: 287px;
+        height: 470px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information img {
+            float: right;
+            position: absolute;
+            right: 35px; } }
+        .site-main .support-wrapper .information img p {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          line-height: 46px;
+          color: #000;
+          margin: 45px; }
+          @media (min-width: 60rem) {
+            .site-main .support-wrapper .information img p {
+              float: right;
+              position: absolute;
+              right: 35px; } }
+      .site-main .support-wrapper .information p {
+        width: 377px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        line-height: 46px;
+        color: #000;
+        margin: 40px; }
+        @media (min-width: 60rem) {
+          .site-main .support-wrapper .information p {
+            width: 852px;
+            font-family: "Noto Sans";
+            font-size: 22px;
+            line-height: 46px; } }
+        .site-main .support-wrapper .information p .info {
+          width: 470px;
+          font-family: "Noto Sans";
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 42px;
+          color: #000; }
+      .site-main .support-wrapper .information .red-btn {
+        width: 185px;
+        height: 47px;
+        background-color: #F76072;
+        border-color: #F76072;
+        border-radius: 6px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 8px;
+        box-shadow: none;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        text-decoration: none; }
+      .site-main .support-wrapper .information .green-btn {
+        background-color: #4FC8A1;
+        border-color: #4FC8A1;
+        border-radius: 6px;
+        font-family: "Noto Sans";
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        margin-left: 20px;
+        padding: 8px;
+        box-shadow: none;
+        font-weight: 300;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        text-decoration: none; }
+  .site-main .all-features {
+    margin-bottom: 30px; }
+    .site-main .all-features h2 {
+      box-sizing: border-box;
+      width: 440px;
+      border-top: 2px solid #2EB688;
+      padding-top: 50px;
+      height: 42px;
+      font-family: 'Asap';
+      font-size: 36px;
+      line-height: 0;
+      color: #000;
+      margin-left: 30px; }
+      .site-main .all-features h2 .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px; }
+    .site-main .all-features .features-wrapper {
+      /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+      background: #aff1d3;
+      width: 200px;
+      box-sizing: border-box;
+      height: 139.76px;
+      width: 480.27px;
+      position: relative;
+      border-radius: 10px;
+      font-family: 'Noto Sans';
+      font-size: 15px;
+      color: #000;
+      text-decoration: none; }
+      .site-main .all-features .features-wrapper .features-flipper {
+        position: relative;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 1.9s;
+        -o-transform-style: preserve-3d;
+        transition: 1.9s;
+        transform-style: preserve-3d;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+        .site-main .all-features .features-wrapper .features-flipper:hover {
+          transform: rotateY(180deg);
+          cursor: pointer; }
+        .site-main .all-features .features-wrapper .features-flipper .front {
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+          padding: 20px;
+          width: 450px;
+          font-family: 'Asap';
+          font-size: 24px;
+          text-align: center;
+          color: #000000;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+        .site-main .all-features .features-wrapper .features-flipper .features-back {
+          border: 1px solid #248E6A;
+          margin: 0;
+          text-align: center;
+          overflow: hidden;
+          padding: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          position: absolute;
+          bottom: 1px;
+          background-color: #fff;
+          transform: rotateY(180deg); }
+    .site-main .all-features .green-btn {
+      color: #248E6A;
+      text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #ffffff; }
 
 /***************************************************/
 .page .contact_info {
@@ -921,6 +1623,20 @@ div .secondary {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
+.rotate {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+.toggle {
+  color: green;
+  padding-left: 10px; }
+
+.fa-angle-down {
+  color: green;
+  padding-left: 10px; }
+
 .history-content {
   width: 100%;
   -ms-flex-wrap: wrap;
@@ -1289,26 +2005,18 @@ div .secondary {
 # About Page
 --------------------------------------------------------------*/
 * {
-  box-sizing: border-box;
-  font-size: 1.6rem; }
+  box-sizing: border-box; }
 
 .about-wrapper {
-  max-width: 37.5rem;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  max-width: 37.5rem;
   background-color: grey; }
-  .about-wrapper h1 {
-<<<<<<< HEAD
-    font-family: "Asap";
-=======
-    font-family: "Asap", sans-serif;
-    font-size: 1.9rem;
->>>>>>> 3edec62b3dfc3b6001aaf72e9b0f14ba66a2733a
-    font-weight: normal;
-    line-height: 2.625rem;
-    text-align: left;
-    color: #000000; }
+
+.about-school {
+  border-bottom: solid 3px #4FC8A1;
+  padding-bottom: 4.875rem; }
 
 .members-list {
   padding: 2px;
@@ -1328,10 +2036,10 @@ div .secondary {
           flex: 0.03;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
       @media (min-width: 37.5rem) {
         .members-list .members-grid .members-block {
           -ms-flex: 0.03;
@@ -1361,8 +2069,9 @@ div .secondary {
         .members-list .members-grid .flip-container .flipper .members_det {
           display: block; }
         .members-list .members-grid .flip-container .flipper p {
-          font-size: 50%;
-          line-height: 30px; }
+          font-size: 1rem;
+          font-style: italic;
+          line-height: 1.5rem; }
       .members-list .members-grid .flip-container .front {
         position: absolute;
         background-size: cover;
@@ -1394,11 +2103,12 @@ div .secondary {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center; }
-      .members-list .members-grid .members_det p {
-        font-size: 50%; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .members_at_large {
+  padding-bottom: 3.4375rem;
+  border-bottom: solid 3px #4FC8A1;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1410,18 +2120,15 @@ div .secondary {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-align: baseline;
-        align-items: baseline; }
+    -ms-flex-pack: center;
+        justify-content: center; }
     .members_at_large .members_at_large-grid .members_at_large-name {
+      font-size: 1.375rem;
       display: -ms-flexbox;
       display: flex;
-      width: 27%;
+      width: 26%;
       text-align: center;
       margin: 1rem; }
-      .members_at_large .members_at_large-grid .members_at_large-name p {
-        display: block;
-        width: 33%;
-        padding: 5%; }
 
 .event-grid {
   display: -ms-flexbox;
@@ -1462,8 +2169,7 @@ div .secondary {
 # NW Program Page
 --------------------------------------------------------------*/
 * {
-  box-sizing: border-box;
-  font-size: 1.6rem; }
+  box-sizing: border-box; }
 
 .nw-program-wrapper {
   max-width: 37.5rem;
@@ -1472,19 +2178,8 @@ div .secondary {
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center; }
-  .nw-program-wrapper h1 {
-<<<<<<< HEAD
-    font-family: Asap;
-    font-size: 2.5rem;
-=======
-    font-family: "Asap", sans-serif;
-    font-size: 1.9rem;
->>>>>>> 3edec62b3dfc3b6001aaf72e9b0f14ba66a2733a
-    font-weight: normal;
-    line-height: 2.625rem;
-    text-align: left;
-    color: #000000; }
+      align-items: center;
+  background-color: grey; }
 
 .nw-program {
   display: -ms-flexbox;
@@ -1566,23 +2261,6 @@ div .secondary {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
-      .enroll .enroll-block .enroll-btn .green-btn {
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
-        height: 47px;
-        display: inline-block;
-        text-align: center;
-        background-color: #4FC8A1;
-        border-radius: 6px;
-        font-family: "Noto Sans";
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 30px;
-        color: #fff;
-        text-shadow: none;
-        letter-spacing: 0.8px; }
 
 .teacher-list {
   padding: 2px;

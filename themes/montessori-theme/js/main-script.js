@@ -51,3 +51,13 @@ if ( $(".b1") ) {
        alert("b2");}
 
 });
+
+$('.toggle').click(function() {
+$('#target').slideToggle('1000');
+$(".arrow").on("click", function () {
+    $(this).toggleClass("rotate");
+});
+
+});
+
+});

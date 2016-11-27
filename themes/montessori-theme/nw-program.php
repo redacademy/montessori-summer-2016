@@ -39,7 +39,7 @@ get_header(); ?>
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
-				<h3 class="nw-program">How is the money spent?</h3>
+				<h2 class="nw-program">How is the money spent?</h2>
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
  </div>
