@@ -32,7 +32,7 @@ get_header(); ?>
 
 	<section id="funding" class="funding">
 				<h1>Funding</h1>
-				<p class="funding-info">Where does it come from?</p>
+				<h2 class="funding-info">Where does it come from?</h2>
 				<span class="funding-explain">There are two ways of answering this.</span>
 			  <div class="red-border-container"> <?php echo CFS()->get('funding-block'); ?> </div>
 				<div class="funding-img">
@@ -77,10 +77,8 @@ get_header(); ?>
  <!-- **********///////////////// Teacher List Section ///////////////********** -->
 
  <section class="teacher-list">
-
-     <label class="toggle">
-		  <h1>Teachers<h1>
-		 </label>
+	 <h1>Teachers<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
+	 <!-- <div id="target"></div> -->
 
  <!-- Custom Post Loop To Call Teacher List  -->
  <?php
@@ -110,7 +108,7 @@ get_header(); ?>
 
   <?php endwhile; else: ?>
   <p>Sorry, no posts matched your criteria.</p>
-<?php endif; ?>s
+<?php endif; ?>
 		</div>
 	<?php wp_reset_query(); ?>
   </section>
@@ -119,10 +117,7 @@ get_header(); ?>
 
   <section class="preschools-list">
   <!-- Custom Field Loop To Call Preschools List  -->
-  <label class="toggle">
-		<h1>List of Private </br>Montessori Preschools<span class"row">  ></span></h1>
-	</label>
-
+	<h1>List of Private </br>Montessori Preschools<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
 		 <div class="target">
 	<?php
   	$fields = CFS()->get( 'list_of_preschools' );
@@ -139,11 +134,11 @@ get_header(); ?>
 <section id="how-to-enroll" class="enroll">
 				<h1>How to Enroll Your Child</h1>
 				<div class="red-border-container"> <?php echo CFS()->get('enroll'); ?> </div>
-
-				<h3 >When can my child start? </h3>
+<div class="enroll-info">
+				<h2 >When can my child start? </h2>
 				<p> <?php echo CFS()->get('time-start'); ?> </p>
 
-			  <h3 >How do I apply?</h3>
+			  <h2 >How do I apply?</h2>
 		  	<ol>
 			  <?php $fields = CFS()->get( 'guids' );
 
@@ -153,12 +148,13 @@ get_header(); ?>
 			  } ?>
 			  </li>
 			  </ol>
+			</div>
 				<div class="enroll-block">
 			  <div class="enroll-img">
 			  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
 			  </div>
 				<div class="enroll-btn">
-			  <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</a>
+			  <button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</button>
 				</div>
 			  </div>
 </section>

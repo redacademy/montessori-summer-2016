@@ -2248,6 +2248,8 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  .enroll .enroll-info {
+    margin-left: 10px; }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2313,8 +2315,9 @@ body {
         .teacher-list .teacher-grid .flip-container .flipper .teacher_det {
           display: block; }
         .teacher-list .teacher-grid .flip-container .flipper p {
-          font-size: 50%;
-          line-height: 30px; }
+          font-size: 1rem;
+          font-style: italic;
+          line-height: 1.5rem; }
       .teacher-list .teacher-grid .flip-container .front {
         position: absolute;
         background-size: cover;
@@ -2346,15 +2349,15 @@ body {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .teacher-list .teacher-grid .teacher_det {
-      text-align: center; }
-      .teacher-list .teacher-grid .teacher_det p {
-        font-size: 50%; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .red-border-container {
   width: 90%;
   height: 160px;
   display: inline-block;
   margin-left: 7.5%;
+  margin-bottom: 65%;
   padding-right: 9.4%;
   padding-left: 15px;
   border-left: 7px solid #D93B57;

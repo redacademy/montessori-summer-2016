@@ -84,6 +84,7 @@
 	}
 }
 //Preschools List Section
+
 .preschools-list {
 	padding: 1px;
 
@@ -96,6 +97,9 @@
 .enroll {
 	display: flex;
 	flex-direction: column;
+.enroll-info{
+	margin-left: 10px;
+}
 
 	.enroll-block {
 		max-width: 70%;
@@ -109,7 +113,6 @@
 
 		.enroll-btn {
 			align-self: center;
-
 		}
 	}
 }
@@ -119,6 +122,7 @@
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
+
 	.teacher-grid {
 		display: flex;
 		flex-wrap: wrap;
@@ -160,8 +164,9 @@
 				}
 
 				p {
-					font-size: 50%;
-					line-height: 30px;
+					font-size: 1rem;
+					font-style: italic;
+					line-height: $basic_hline_height*2.4;
 				}
 			}
 
@@ -214,10 +219,7 @@
 
 		.teacher_det {
 			text-align: center;
-
-			p {
-				font-size: 50%;
-			}
+			font-size: $font_member_staff;
 		}
 	}
 }
