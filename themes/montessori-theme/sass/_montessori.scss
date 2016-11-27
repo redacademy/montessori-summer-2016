@@ -82,7 +82,6 @@
     flex-wrap: wrap;
     position: relative;
     @include desktop {
-
         height: 640px;
     }
 
@@ -91,9 +90,7 @@
     }
 
     .philosophy-grid {
-
-
-        flex:0 0 auto;
+        flex: 0 0 auto;
         width: 200px;
         height: 200px;
         background-color: #AFF1D3;
@@ -142,26 +139,27 @@
                 @include desktop {
                     left: 56px;
                     top: 9px;
-                    width: 175px;
-                    height: 135px;
+                    width: 190px;
+                    height: 153px;
                     @include visibility(hidden);
                 }
             }
         }
 
         h2 {
-            z-index: 1;
-            margin: 0;
-            text-align: center;
-            display: inline-block;
-            width: 90%;
-            color: #248e6a;
-            height: auto;
-            overflow: hidden;
-            padding: 0;
-            bottom: 32px;
-            line-height: 1.3rem;
-            position: absolute;
+          -index: 1;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+  color: #248e6a;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  bottom: 35px;
+  line-height: 1.3rem;
+  position: absolute;
+  right: 24px;
 
             a {
                 color: #248E6A;
@@ -223,16 +221,16 @@
         flex-direction: row-reverse;
     }
 }
-.main-materials div:nth-of-type(1){
-      img{
-        display:none;
-      }
-        .materials-contents{
-          width: 90%;
-        }
+
+.main-materials div:nth-of-type(1) {
+    img {
+        display: none;
+    }
+
+    .materials-contents {
+        width: 90%;
+    }
 }
-
-
 
 .materials {
     margin-top: 60px;
@@ -258,9 +256,9 @@
 }
 
 .materials-contents {
-  width: 100%;
+    width: 100%;
     @include desktop {
-width: 60%;
+        width: 60%;
 
         .red-border-q {
             width: 75%;
@@ -270,11 +268,9 @@ width: 60%;
             display: inline-block;
             position: relative;
 
-
-
             p {
                 margin: 0;
-                  font-size: 2rem;
+                font-size: 2rem;
             }
         }
 
@@ -295,9 +291,8 @@ width: 60%;
     align-self: left;
 }
 
-
 .materials-grid {
-    margin:40px 0;
+    margin: 40px 0;
     padding: 0;
 }
 ////////*******End Materials Section******/////////
@@ -332,7 +327,6 @@ width: 60%;
 .benefits-content {
     width: 100%;
     @include desktop {
-
         .red-border-q {
             width: 75%;
             top: 10px;
@@ -340,9 +334,11 @@ width: 60%;
             padding-left: 25px;
             display: inline-block;
             position: relative;
-            p{
+
+            p {
                 font-size: 2rem;
-        }}
+            }
+        }
 
         .red-border-q::before {
             content: "";

@@ -1,34 +1,37 @@
-///****Header***/////
-
-
-
+///**** The Header ***/////
 /////****Start Main Menu**** ////
-
 .main-navigation-container {
 	display: flex;
 }
+
 .main-navigation {
-    padding-top: 40px;
-    margin-right: 38px;
+	padding-top: 40px;
+	margin-right: 38px;
 }
 
 div .menu-primary-menu-container {
 	width: 100%;
 }
+
 .main-navigation-container {
 	display: flex;
 }
+
 .main-navigation {
 	width: 70%;
 }
+
 div .menu-primary-menu-container {
 	width: 100%;
 }
+
 .menu-primary-menu-container {
 	display: none;
+
 	ul {
 		li {
 			display: inline-block;
+
 			a:hover {
 				border-top: 6px solid #57B79F;
 				color: #57B79F;
@@ -37,13 +40,14 @@ div .menu-primary-menu-container {
 		}
 	}
 }
+
 .main-navigation-container {
 	width: 100%;
 	background-color: $white;
 	font-family: $font_footer_header;
 	@include flex(center,space-between);
 	height: 5rem;
-	@include tablet{
+	@include tablet {
 		display: inline-block;
 		height: 8rem;
 		padding: 0 15px;
@@ -53,9 +57,11 @@ div .menu-primary-menu-container {
 .menu-primary-menu-container {
 	@include desktop {
 		display: inline-block;
+
 		ul {
 			li {
 				display: inline;
+
 				a {
 					text-transform: uppercase;
 					text-decoration: none;
@@ -70,13 +76,12 @@ div .menu-primary-menu-container {
 			}
 		}
 	}
-
 }
-
 ///////The Hamburger Menu Section//////
 .responsive-menu-button {
 	margin-top: 0.5rem !important;
 }
+
 #primary-menu li.current-menu-item {
 	a {
 		border-top: 6px solid #57B79F;
@@ -84,11 +89,8 @@ div .menu-primary-menu-container {
 		cursor: pointer;
 	}
 }
-
 /////**** The Brand Logo Section ***/////
-
-.montessori-logo{
-
+.montessori-logo {
 	padding: 0;
 	margin: 10px 0 20px 30px;
 	width: 14rem;
@@ -100,10 +102,12 @@ div .menu-primary-menu-container {
 		min-width: 16rem;
 		height: 8rem;
 	}
+
 	img {
 		position: relative;
 		height: 100%;
 		width: 100%;
+
 		a {
 			bottom: -20px;
 			cursor: pointer;
@@ -112,6 +116,7 @@ div .menu-primary-menu-container {
 		}
 	}
 }
+
 .main-menu-wrapper {
 	width: 100%;
 	height: 80px;
@@ -121,20 +126,23 @@ div .menu-primary-menu-container {
 		overflow: hidden;
 	}
 }
+
 .site-header {
 	z-index: 999;
 	min-width: $mobile-width;
 	width: 100%;
-	background: rgba($white,0.7);
+	background: $white;
 	position: fixed;
 	top: 0;
 }
+
 .site-content {
 	padding-top: 80px;
 	top: 0;
 }
-.home .site-header{
-	position:absolute;
+
+.home .site-header {
+	position: absolute;
 }
 ////**Sub Menu Section**/////
 
@@ -144,7 +152,7 @@ div .secondary {
 	max-height: 100%;
 	font-family: $font_footer_header;
 	@include desktop {
-		white-space:normal;
+		white-space: normal;
 		overflow: hidden;
 		padding: 5px 20 10px 10;
 		width: 100%;
@@ -153,16 +161,23 @@ div .secondary {
 	padding-right: 2rem;
 	margin-top: 20px;
 	background-color: #248E6A;
+
 	& .active {
 		background-color: $color_btn_green;
 	}
+
 	li {
 		display: inline-block;
 		padding: 10px;
+
 		a {
 			font-size: $font_body_size_mob;
 			text-decoration: none;
 			color: white;
 		}
 	}
+}
+
+#top{
+	color:black;
 }
