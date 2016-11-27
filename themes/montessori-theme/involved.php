@@ -26,7 +26,7 @@ if ( $query-> have_posts() ) :
   <div class="involved-title">
      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </div>
-  
+
 <?php endwhile; ?>
 <?php while ($query-> have_posts() )  : $query->the_post(); ?>
 <div class="involved-content">
@@ -49,6 +49,8 @@ if ( $query-> have_posts() ) :
 
 <!-- This is for suppot now  & did you  and image -->
 <div class="text-shadow">
+
+
  <h2>Support Now</h2>
 </div>
 <div class="banner_post">
@@ -58,7 +60,7 @@ if ( $query-> have_posts() ) :
 <!-- this for support section -->
 <div support-containar>
  <div class="support-img"><?php output_image('support_img'); ?>
-   <?php output_image('play_img'); ?>
+   <?php output_image('play-img'); ?>
  </div>
 </div>
         <article class="involved">
@@ -67,7 +69,7 @@ if ( $query-> have_posts() ) :
         </article>
 
         <div>
-                    <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Voleenter</a>
+                    <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
 
                   <a class="pink-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
          </div>
