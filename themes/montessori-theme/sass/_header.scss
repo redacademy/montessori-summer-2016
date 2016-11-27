@@ -1,4 +1,9 @@
 ///**** The Header ***/////
+
+.site-content {
+	padding-top: 110px;
+	top: 0;
+}
 /////****Start Main Menu**** ////
 .main-navigation-container {
 	display: flex;
@@ -81,7 +86,24 @@ div .menu-primary-menu-container {
 .responsive-menu-button {
 	margin-top: 0.5rem !important;
 }
+.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
 
+    background-color: #D8D8D8!important;
+		width: 34px!important;;
+				height: 4px!important;
+    border-radius: 0px!important;
+
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+
+    box-shadow: none !important;
+
+}
+button#responsive-menu-button {
+
+
+    background-color: transparent!important;
+}
 #primary-menu li.current-menu-item {
 	a {
 		border-top: 6px solid #57B79F;
@@ -136,10 +158,7 @@ div .menu-primary-menu-container {
 	top: 0;
 }
 
-.site-content {
-	padding-top: 80px;
-	top: 0;
-}
+
 
 .home .site-header {
 	position: absolute;
