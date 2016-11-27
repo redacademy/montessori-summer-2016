@@ -7,7 +7,7 @@
 
 
 // Register Custom Montessori Staff
-function Montessori_Staff() {
+function montessori_staff() {
 
 	$labels = array(
 		'name'                  => _x( 'Montessori Staff', 'Post Type General Name', 'text_domain' ),
@@ -59,7 +59,7 @@ function Montessori_Staff() {
 	register_post_type( 'staff', $args );
 
 }
-add_action( 'init', 'Montessori_Staff', 0 );
+add_action( 'init', 'montessori_staff', 0 );
 
 
 // Register Custom School
@@ -116,5 +116,3 @@ function school_post_type() {
 
 }
 add_action( 'init', 'school_post_type', 0 );
-
-

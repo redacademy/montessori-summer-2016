@@ -29,7 +29,7 @@ if ( $query-> have_posts() ) :
 
 
   </div>
-  <div class="dd">
+
 <?php endwhile; ?>
 <?php while ($query-> have_posts() )  : $query->the_post(); ?>
 <div id= " dd<?php the_id(); ?>" class="involved-content">
@@ -46,12 +46,21 @@ if ( $query-> have_posts() ) :
 
  <?php endwhile; ?>
 <?php endif; ?>
-<div class="content"></div>
+
+
 
 <?php wp_reset_postdata(); ?>
 
+</section>
+</main><!-- #main -->
+</div><!-- #primary -->
 
 
+
+<!--This is for past Events  -->
+<!-- <div class="text-title">
+<h3>  <a class="text_post" href="<?php echo esc_url(the_permalink()); ?>">past Events </a> </h3>
+</div> -->
 
 <!-- This is for suppot now  & did you  and image -->
 <div class="text-shadow">
@@ -94,6 +103,16 @@ if ( $query-> have_posts() ) :
         </div>
       </section>
 
+         <article class="involved">
+           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">your involvement+contribution</a>
+           <p><?php echo CFS()->get('get_text'); ?></p>
+         </article>
+
+         <article class="involved">
+           <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">voleenter</a>
+           <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">make a donation</a>
+           <p><?php echo CFS()->get('get_text'); ?></p>
+         </article>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -17,8 +17,10 @@ jQuery(document).ready(function( $ ) {
 
 //  SMOOTH SCROL:
 
-// ----------------------------------------------------------------
+// SMOOTH SCROL:
 
+// ----------------------------------------------------------------
+  $(document).ready(function(){
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -33,16 +35,41 @@ jQuery(document).ready(function( $ ) {
         }
       });
     });
+  });
 
 
+});
+
+<<<<<<< HEAD
+});
+
+=======
 // --------------------------------------------------------------
-// Add Slide Down to Preschools List:
+// hover class for img
 
 // ----------------------------------------------------------------
 
+// if ( $(".b1") ) {
+//        $('.b1').append('<p>B1 is there</p>')};
+//        else if  ($(".b2") ) {
+//        $('.b2').append('<p>B2 is there</p>');
+//        alert("b2");}
+//
+// });
+
+if ( $(".b1") ) {
+       $('.b1').append('<p>B1 is there</p>')};
+       else if  ($(".b2") ) {
+       $('.b2').append('<p>B2 is there</p>');
+       alert("b2");}
+
+});
+
 $('.toggle').click(function() {
-    $('.target').toggle('slow');
+$('#target').slideToggle('1000');
+ $(".arrow").click(function () {
+    $(this).toggleClass("rotate");
 });
 
 });
-
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12

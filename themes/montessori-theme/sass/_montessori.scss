@@ -2,12 +2,35 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.toggle{
+  color:green;
+  padding-left:10px;
+}
 
 .history-content {
     width: 100%;
     flex-wrap: wrap;
     margin-left: 30px;
 }
+
+.fa-angle-down{
+
+  color:green;
+  padding-left:10px;
+}
+
+.history-content {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
 
 .history-title {
     margin-bottom: 0;
@@ -83,6 +106,7 @@
     position: relative;
     @include desktop {
         height: 640px;
+
     }
 
     div {
@@ -90,6 +114,8 @@
     }
 
     .philosophy-grid {
+
+
         flex: 0 0 auto;
         width: 200px;
         height: 200px;
@@ -110,6 +136,7 @@
             -o-transform-style: preserve-3d;
             transition: 3s;
             transform-style: preserve-3d;
+            @include border-radius(10px);
 
             &:hover {
                 @include visibility(hidden);
@@ -118,12 +145,15 @@
         }
 
         .philosophy-img {
+
             z-index: 2;
             height: auto;
             text-align: center;
             overflow: hidden;
             padding: 20px;
+
             @include desktop {
+
                  @include visibility(hidden);
             }
             position: relative;
@@ -147,7 +177,11 @@
         }
 
         h2 {
+<<<<<<< HEAD
           -index: 1;
+=======
+          z-index: 1;
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
   margin: 0;
   text-align: center;
   display: inline-block;
@@ -157,18 +191,30 @@
   overflow: hidden;
   padding: 0;
   bottom: 35px;
+<<<<<<< HEAD
   line-height: 1.3rem;
+=======
+  line-height: 1.2rem;
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
   position: absolute;
   right: 24px;
 
             a {
                 color: #248E6A;
+<<<<<<< HEAD
                 font-size: 1.2rem;
+=======
+                font-size: 1.1rem;
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
                 font-weight: bold;
             }
             @include desktop {
                 a {
+<<<<<<< HEAD
                     font-size: $font_body_size_desktop;
+=======
+                    font-size: 1.3rem;
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
                 }
 
                 .show {
@@ -213,6 +259,8 @@
         }
     }
 }
+
+
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 
@@ -334,6 +382,7 @@
             padding-left: 25px;
             display: inline-block;
             position: relative;
+<<<<<<< HEAD
 
             p {
                 font-size: 2rem;
@@ -352,6 +401,26 @@
     }
 }
 
+=======
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        .red-border-q::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5PX;
+            left: 0PX;
+            height: 100%;
+            border-left: solid 12px $border_left_red;
+        }
+    }
+}
+
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 .benefits-title {
     p {
         padding-top: 4px;
@@ -362,6 +431,7 @@
     }
 }
 ///Archive ////
+<<<<<<< HEAD
 
 .montessori-archive {
     margin-top: 40px;
@@ -370,9 +440,33 @@
         width: 40%;
         border-top: solid 3px $color_btn_green;
         padding-top: 30px;
+=======
+.the-archive ul{
+  width: 500px;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  font-family: $font_title;
+  li{
+    padding-left: 30px;
+    line-height: inherit;
+    font-size: 1.4rem;
+  }
+}
+
+.montessori-archive {
+
+
+    h3 {
+        width: 600px;
+        border-top: solid 3px $color_btn_green;
+        padding-top: 12px;
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
     }
 }
 /*Start Resources Section  */
+.main-resources {
+  height: 400px;
+  position: relative;
 .green-btn {
     background-color: #4fc8a1;
     @include border-radius (6px);
@@ -382,13 +476,15 @@
     text-align: center;
     line-height: 28px;
     color: #fff;
-    padding: 12px 39px;
+    padding: 10px 20px;
     text-shadow: none;
     letter-spacing: 0.8px;
-    display: inline-block;
+    display: block;
+    margin: 10px auto;
     @include desktop {
         width: 331px;
         height: 65px;
-        font-size: 16px;
+        font-size: 20px;
     }
+}
 }

@@ -55,10 +55,10 @@ body {
 	background: $white;
   font-family: $font_body;
 	box-sizing: border-box;
-	line-height: $mobile_line_height;
+
 	margin: 0 auto;
 p,li{
-	line-height: $mobile_line_height;
+	line-height: 3rem;
 }
 }
 

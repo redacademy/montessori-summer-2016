@@ -21,6 +21,7 @@ $color_text_main:#404040;
 $color_mobile_clicked_green:#125A50;
 $color_text-screen:#21759b;
 
+
 /********* Colours **********/
 
 //Montessori Brand Colours//
@@ -38,6 +39,7 @@ $white: #fff;
 
 
 // Typography ///
+<<<<<<< HEAD
 $font_title: 'Asap';
 $font_footer_header: 'PT Sans';
 $font_body: 'Noto Sans';
@@ -55,4 +57,24 @@ $h1_size_desktop: 3rem;
 $h2_size_desktop: 2.2rem;
 $h3_size_desktop: 1.7rem;
 $font_body_size_desktop: 1.7rem;
+=======
+$font_title: 'Asap',sans-serif;
+$font_header_footer: 'PT Sans',sans-serif;
+$font_body: 'Noto Sans',sans-serif;
+$font_main: 'Noto Sans',sans-serif;
+///Font Sizing ///
+// mobile sizes ///
+$h1_size_mob: 2.25rem;
+$h2_size_mob: 1.6rem;
+$h3_size_mob: 1.2rem;
+$font_body_size_mob: 1.6rem;
+$font_member_staff:1.375rem;
+
+
+/// desktop sizes ////
+$h1_size_desktop: 2.8rem;
+$h2_size_desktop: 2rem;
+$h3_size_desktop: 1.5rem;
+$font_body_size_desktop: 2.1rem;
+>>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 $font_line-height-body: 1.5;
