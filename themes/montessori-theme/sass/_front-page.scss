@@ -299,13 +299,14 @@
                 color: #fff;
                 margin-left: 20px;
                 padding: 8px;
-                box-shadow: none;
                 font-family: "Noto Sans";
                 font-size: 20px;
                 font-weight: 300;
-                text-shadow: none;
                 letter-spacing: 0.8px;
-                text-decoration: none;
+                // width: 200px;
+                height: 47px;
+                display: flex;
+
             }
             .green-btn {
                 background-color: #4FC8A1;
@@ -319,11 +320,11 @@
                 color: #fff;
                 margin-left: 20px;
                 padding: 8px;
-                box-shadow: none;
                 font-weight: 300;
-                text-shadow: none;
                 letter-spacing: 0.8px;
-                text-decoration: none;
+                height: 47px;
+                width: 185px;
+                display: flex;
             }
         }
         //information
