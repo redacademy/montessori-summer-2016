@@ -12,31 +12,19 @@
   color:green;
   padding-left:10px;
 }
-
-.history-content {
-    width: 100%;
-    flex-wrap: wrap;
-    margin-left: 30px;
-}
-
 .fa-angle-down{
-
   color:green;
   padding-left:10px;
 }
-
 .history-content {
     width: 100%;
     flex-wrap: wrap;
     margin-left: 30px;
 }
-
-
 .history-title {
     margin-bottom: 0;
     flex: 0 90%;
 }
-
 .main-history {
     p:nth-child(4) {
         margin-left: -40%;
@@ -46,7 +34,6 @@
         }
     }
     @include flex(flex-end,space-between);
-
     .history-img {
         align-self: flex-start;
         margin-top: 100px;
@@ -57,7 +44,6 @@
             height: 500px;
             padding-bottom: 40px;
         };
-
         img {
             width: 100%;
             height: 100%;
@@ -71,13 +57,11 @@
             padding-left: 25px;
             display: inline-block;
             position: relative;
-
             p {
                 font-size: 2rem;
                 margin: 0;
             }
         }
-
         .red-border-q::before {
             content: "";
             display: block;
@@ -89,14 +73,12 @@
         }
         font-size: 1.5rem;
     };
-
     p {
         padding-top: 4px;
         text-align: left;
     }
 }
 ////************philosophy Section ************/////
-
 .main-philosophy {
     margin: 100px auto;
     width: 70%;
@@ -106,16 +88,11 @@
     position: relative;
     @include desktop {
         height: 640px;
-
     }
-
     div {
         width: 100%;
     }
-
     .philosophy-grid {
-
-
         flex: 0 0 auto;
         width: 200px;
         height: 200px;
@@ -137,29 +114,23 @@
             transition: 3s;
             transform-style: preserve-3d;
             @include border-radius(10px);
-
             &:hover {
                 @include visibility(hidden);
                 @include rotate(180deg);
             }
         }
-
         .philosophy-img {
-
             z-index: 2;
             height: auto;
             text-align: center;
             overflow: hidden;
             padding: 20px;
-
             @include desktop {
-
                  @include visibility(hidden);
             }
             position: relative;
             width: 100%;
             height: 200px;
-
             img {
                 position: absolute;
                 top: 46px;
@@ -175,11 +146,7 @@
                 }
             }
         }
-
         h2 {
-
-          -index: 1;
-
           z-index: 1;
   margin: 0;
   text-align: center;
@@ -190,10 +157,9 @@
   overflow: hidden;
   padding: 0;
   bottom: 35px;
-  line-height: 1.3rem;
+  line-height: 1.2rem;
   position: absolute;
   right: 24px;
-
             a {
                 color: #248E6A;
                 font-size: 1.1rem;
@@ -201,14 +167,12 @@
             }
             @include desktop {
                 a {
-                    font-size: $font_body_size_desktop;
+                    font-size: 1.3rem;
                 }
-
                 .show {
                     font-size: 1.4rem;
                     @include visibility(hidden);
                 }
-
                 &:hover {
                     @include visibility(hidden);
                     @include rotate(180deg);
@@ -216,7 +180,6 @@
             }
             position: absolute;
         }
-
         p {
             text-align: left;
             display: inline-block;
@@ -246,27 +209,21 @@
         }
     }
 }
-
-
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
-
 .main-materials div:nth-of-type(3) {
     @include desktop {
         flex-direction: row-reverse;
     }
 }
-
 .main-materials div:nth-of-type(1) {
     img {
         display: none;
     }
-
     .materials-contents {
         width: 90%;
     }
 }
-
 .materials {
     margin-top: 60px;
     width: 100%;
@@ -278,7 +235,6 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     img {
         width: 230px;
         height: 230px;
@@ -289,12 +245,10 @@
         }
     }
 }
-
 .materials-contents {
     width: 100%;
     @include desktop {
         width: 60%;
-
         .red-border-q {
             width: 75%;
             top: 10px;
@@ -302,13 +256,11 @@
             padding-left: 25px;
             display: inline-block;
             position: relative;
-
             p {
                 margin: 0;
                 font-size: 2rem;
             }
         }
-
         .red-border-q::before {
             content: "";
             display: block;
@@ -321,22 +273,18 @@
         font-size: 1.5rem;
     }
 }
-
 .materials-grid div:nth-of-type(2) {
     align-self: left;
 }
-
 .materials-grid {
     margin: 40px 0;
     padding: 0;
 }
 ////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
-
 .benefits li {
     list-style-type: disc;
 }
-
 .first-benefits-section {
     width: 90%;
     height: 100%;
@@ -345,7 +293,6 @@
     @include desktop {
         flex-direction: row;
     }
-}
     img {
         width: 250px;
         height: 250px;
@@ -357,8 +304,7 @@
             margin: 0 40px 20px 0;
         }
     }
-
-
+}
 .benefits-content {
     width: 100%;
     @include desktop {
@@ -369,12 +315,10 @@
             padding-left: 25px;
             display: inline-block;
             position: relative;
-
             p {
                 font-size: 2rem;
             }
         }
-
         .red-border-q::before {
             content: "";
             display: block;
@@ -386,25 +330,6 @@
         }
     }
 }
-
-
-            p {
-                font-size: 2rem;
-            }
-
-
-        .red-border-q::before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 5PX;
-            left: 0PX;
-            height: 100%;
-            border-left: solid 12px $border_left_red;
-        }
-
-
-
 .benefits-title {
     p {
         padding-top: 4px;
@@ -415,14 +340,6 @@
     }
 }
 ///Archive ////
-
-.montessori-archive {
-    margin-top: 40px;
-
-    h3 {
-        width: 40%;
-        border-top: solid 3px $color_btn_green;
-        padding-top: 30px;
 .the-archive ul{
   width: 500px;
   line-height: 2.5rem;
@@ -434,10 +351,7 @@
     font-size: 1.4rem;
   }
 }
-
 .montessori-archive {
-
-
     h3 {
         width: 600px;
         border-top: solid 3px $color_btn_green;
@@ -446,6 +360,7 @@
 }
 /*Start Resources Section  */
 .main-resources {
+  border-bottom: none;
   height: 400px;
   position: relative;
 .green-btn {

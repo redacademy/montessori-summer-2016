@@ -43,16 +43,12 @@ get_header(); ?>
       <div class="information">
         <h2> <?php echo CFS()->get('support_title'); ?> </h2>
         <p class="info"> <?php echo CFS()->get('first_support_paragraph'); ?> </p>
+
         <div class="support-img-wrapper">
           <div> <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" /> </div>
-          <div> <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p> </div>
+          <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p>
         </div>
        <?php echo CFS()->get('second_support_paragraph'); ?>
-
-       <?php echo CFS()->get('second_support_paragraph'); ?>
-
-
-
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
       </div>

@@ -152,11 +152,9 @@ foreach($fields as $field)
   <!-- Archive Title -->
   <div class="montessori-archive">
 
-
     <h3>archives<span class=""><i class="fa fa-angle-down " aria-hidden="true"></i></span></h3>
     <div id="#"><a href=""></a></div>
   </div>
-
 </div>
 
 </section>
@@ -165,7 +163,6 @@ foreach($fields as $field)
   <div class="main-resources content-wrapper">
     <div class="title-resources">
                   <h1 id="resources">Resources</h1>
-
 </div>
 <div class="montessori-archive">
   <h3>archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h3>

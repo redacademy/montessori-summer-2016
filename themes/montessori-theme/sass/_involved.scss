@@ -12,31 +12,41 @@
       .container {
           width: 100%;
           margin: 0 auto;
+          // padding: 0
+          // background-color: #4FC8A1;
+
       }
   }
 }
 }
 
 .involved-title {
-  width: 200px;
-  height: 120px;
+  // width: 200px;
+  // height: 120px;
   background-color: #4FC8A1;
   float: left;
   margin-left: 25px;
+  margin-top: 100px;
   margin-bottom: 25px;
 
-    a {
-  width: 145px;
-  height: 81px;
+
+  a {
+  width: 200px;
+  height: 120px;
   font-family: Asap;
   font-size: 20px;
   line-height: 27px;
-  color:#fff;
-  margin-right: 25px
-  text-align:center;
-    }
+  color:#000;
+  margin-right: 25px;
+  background-color: #4FC8A1;
 
-}
+
+  &:hover {
+    color: red;
+  }
+
+
+
 
   .gre-button {
       width: 261px;
@@ -71,6 +81,8 @@
        color: #FFF;
      }
    }
+
+
 
 
 
@@ -118,8 +130,8 @@ justify-content: center;
 
     height: 100%;
 
+} @include desktop {
 }
-
 // This for green circle btn
 
 .involved {
@@ -170,12 +182,12 @@ justify-content: center;
     font-weight: bold;
     text-align: center;
     line-height: 27px;
-
+    &:hover {
+        background-color: red;
+    }
 
 }
-& hover {
-    background-color: red;
-}
+
 
 // This for donation
 .pink-btn {
@@ -261,6 +273,4 @@ blockquote {
          margin: 20px;
          flex-direction:row;
      }
- }
-
- @
+  }

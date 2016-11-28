@@ -13,9 +13,7 @@ get_header();
          <!-- our involved section -->
 <section id="involved" class="involved-section mob-container ">
 <div class="main-involved-wrapper">
-
-
-   <?php
+  <?php
 $args = array(
    'post_type' => 'post',
    'show_per_page' => 1,
@@ -24,7 +22,10 @@ $query = new WP_Query( $args  );
 if ( $query-> have_posts() ) :
  while ($query-> have_posts() )  : $query->the_post(); ?>
   <div class="involved-title">
-     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+     <a href="#"><?php the_title(); ?></a>
+     
+
+
   </div>
 
 <?php endwhile; ?>
@@ -51,17 +52,17 @@ if ( $query-> have_posts() ) :
 <div class="text-shadow">
 
 
- <h2>Support Now</h2>
+ <h3>Support Now</h2>
 </div>
 <div class="banner_post">
 
- <h2>Did you Know.... </h2>
+ <h3> Did you Know.... </h2>
  </div>
 <!-- this for support section -->
 <div support-containar>
  <div class="support-img"><?php output_image('support_img'); ?>
    <?php output_image('play-img'); ?>
-   <?php output_image('fild-trip'); ?>
+   <?php output_image('field-trip'); ?>
    </div>
 </div>
         <article class="involved">

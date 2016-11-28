@@ -91,24 +91,26 @@ get_header(); ?>
 	    </form>
 				<?php wp_reset_query(); ?>
 				</div><!-- #event-grid -->
-			<div class="archive-sec">
-
-	<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
-	<div class="archive-block">
-	<label class="archive" ><h1>Archives</h1></lable>
-  <div class="toggle"><?php get_sidebar(); ?></div>
-	</div>
-			</section>
+				<div class="red-more">
+				<button class="green-btn"href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
+				</div>
+						</section>
 			<!-- **********///////////////// newsLetter Section ///////////////********** -->
 			<section id="newsletter" class="newsLetter">
 					<h1>NewsLetter</h1>
 					<h2>exciting time of the year! </h2>
-					<?php echo '<h3>'.CFS()->get( 'date' ).'</h3>'; ?>
+					<?php echo '<p style="font-size:1.68rem;margin-top:3rem">'.CFS()->get( 'date' ).'</p>'; ?>
 						<?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
-						<div class="red-more">
-						<button class="green-btn"href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
-				  	</div>
 			</section>
+			<div class="archive-sec">
+					<div class="arch-btn">
+    	<button class="green-btn">Read More</button>
+		</div>
+<div class="arch-block">
+	<h1>Archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
+  <a href="#" class="target"><?php get_sidebar(); ?></a>
+</div>
+	</div>
 			<!-- **********///////////////////////////////////////////////////********** -->
 		</div>
 		<!-- #about-page -->

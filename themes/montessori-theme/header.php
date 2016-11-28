@@ -74,14 +74,14 @@ elseif (is_page_template('contact.php')): ?>
     'menu_class' => 'secondary'
   ));
 ?>
-                        <?php
-elseif (is_page_template('get-involved.php')): ?>
-                            <?php
-  wp_nav_menu(array(
-    'theme_location' => 'get-involved',
-    'menu_id' => 'get-involved',
-    'menu_class' => 'secondary'
-  ));
+<?php
+elseif (is_page_template('involved.php')): ?>
+    <?php
+wp_nav_menu(array(
+'theme_location' => 'get-involved',
+'menu_id' => 'get-involved',
+'menu_class' => 'secondary'
+));
 ?>
                           <?php
 elseif (is_page_template('nw-program.php')): ?>
