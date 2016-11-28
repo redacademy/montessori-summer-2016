@@ -16,19 +16,22 @@
 .footer-blocks {
     @include flex(center,space-between);
     flex-wrap: wrap;
-    width: 440px;
+    min-width: 95%;
     @include desktop {
-        width: 100%;
+
     }
 }
 
 .footer-block-item1 {
+  width:100%;
+  text-align: center;
   position: relative;
   padding: 0;
   height: 40px;
   margin-top: 5px;
     @include desktop {
-        width: 70%;
+text-align: left;
+        min-width: 70%;
     }
 
 
@@ -45,7 +48,7 @@
         display: none;
         @include desktop {
           display: inline-block;
-margin: 13px;
+margin-left: -20px;
 padding: 3.2px 8.6px;
 width: 30.6px;
 color: #fff;
@@ -56,9 +59,9 @@ font-size: 1.1rem;
     }
 
     ul {display: inline-flex;
-      flex-wrap: nowrap;
       padding-left: 0px;
-        overflow: hidden;
+      padding-right: 0px;
+
 
         li:nth-child(even) a{
             border-left: solid 1px $white;
@@ -69,7 +72,8 @@ font-size: 1.1rem;
         }
         @include desktop {
         li:first-child a{
-          padding-left: 0px;}
+          padding-left: 0px;
+        }
             li:nth-child(4) a{
                 border-right: solid 1px $white;
             }
@@ -83,11 +87,13 @@ font-size: 1.1rem;
         display: inline-block;
 
         a {
-          padding: 0 10px;
+          padding: 0 22px;
+          margin-right: 0px;
             font-size: 1.2rem;
             @include desktop {
                 font-size: 1.3rem;
-                padding:0 30px;
+                padding:0 35px;
+
             };
             color: #D3E0DE;
             text-decoration: none;
@@ -99,7 +105,8 @@ font-size: 1.1rem;
 .footer-block-item2 {
   @include desktop {
 
-    display:none;};
+    display:none;
+  };
     padding-left: 0;
 width: 100%;
 text-align: center;
@@ -123,7 +130,7 @@ margin-top: 0px;
 
     a {
         font-size: 1.1rem;
-        margin-right: 10px;
+        margin-right: 1px;
         color: #D3E0DE;
         text-decoration: none;
     }
@@ -131,8 +138,6 @@ margin-top: 0px;
 
 /* copy rights*/
 .footer-block-item3 {
-
-
     padding-top: 5px;
     width: 100%;
     height: 50px;
@@ -141,14 +146,14 @@ margin-top: 0px;
     @include desktop{
       width: 50%;
       text-align: left;
-      padding:0 0 40px 0px;
+      padding:33px 0 40px 0px;
 
     }
     p {
         margin: 0;
         height: 40px;
-        font-size: 1rem;
-        @include desktop{font-size: 1.3rem;}
+        font-size: 1.1rem;
+        @include desktop{font-size: 1.2rem;}
     }
 }
 /*the links in the footer */
@@ -167,11 +172,22 @@ margin-top: 0px;
 .desktop-add-block{
   display: none;
   @include desktop{
+    margin-top:-30px;
     display: inline-block;
-    width: 30%;
-  ul li{
-    line-height: 1.9rem;
-    font-size: 1.2rem;
-  }}
+    min-width: 30%;
+  ul {padding: 0px;
+  margin: 0px;}
+  li{
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+  }
+  a{
+    cursor: pointer;
+    color: $white;
+  }
+  a:hover {
+      color: $color_btn_hover_green;
+  }
+}
 
 }

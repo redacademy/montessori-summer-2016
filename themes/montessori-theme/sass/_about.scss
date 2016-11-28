@@ -1,3 +1,179 @@
+<<<<<<< HEAD
+// /*--------------------------------------------------------------
+// # About Page
+// --------------------------------------------------------------*/
+// // General Setting
+//
+// * {
+// 	box-sizing: border-box;
+// }
+// // @media screen and (max-width: 480px) {
+//
+// .about-wrapper {
+// 	margin: 0 auto;
+// 	padding-left: $basic_pading * 2;
+// 	padding-right: $basic_pading * 2;
+// 	max-width: $mobile_width;
+// 	background-color: grey;
+// }
+//
+// // about NW School Sectio
+// .about-school {
+// 	border-bottom: solid 3px $color_btn_green;
+// 	padding-bottom: $basic_margin*7.8;
+// }
+// // Members List Section
+// .members-list {
+// 	padding: 2px;
+// 	flex-wrap: wrap;
+// 	display: flex;
+// 	.members-grid {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		justify-content: space-around;
+// 		.members-block {
+// 			flex: 0.03;
+// 			display: flex;
+// 		  align-items: center;
+// 			flex-direction: column;
+// 			@include tablet {
+// 				flex: 0.03;
+// 			}
+// 			@include desktop {
+// 				flex: 1;
+// 			}
+// 		}
+// 	.flip-container {
+// 		display: block;
+// 		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+// 		background: #aff1d3;
+// 		border-radius: 50%;
+//
+// 		.flipper {
+// 			flex: 1 0 auto;
+// 			display: flex;
+// 			width: 50%;
+// 			position: relative;
+// 			-webkit-transition: 1.9s;
+// 			-webkit-transform-style: preserve-3d;
+// 			-moz-transition: 1.9s;
+// 			-moz-transform-style: preserve-3d;
+// 			transition: 1.9s;
+// 			transform-style: preserve-3d;
+// 			.members_det {
+// 				display: block;
+// 			}
+// 			p {
+// 				font-size: 1rem;
+// 				font-style: italic;
+// 				line-height:$basic_hline_height*2.4 ;
+// 			}
+// 		}
+//
+// 		.front {
+// 			position: absolute;
+// 			background-size: cover;
+// 			border-radius: 50%;
+// 			flex: 2;
+// 			img {
+// 				border-radius: 50%;
+// 			}
+// 		}
+// 		.back {
+// 			border-radius: 50%;
+// 			position: absolute;
+// 			width: 125px;
+// 			overflow: hidden;
+// 			text-overflow: ellipsis;
+// 			height: 125px;
+// 			text-align: center;
+// 			right: 3px;
+// 			-webkit-transform: rotateY(180deg);
+// 			-moz-transform: rotateY(180deg);
+// 			transform: rotateY(180deg);
+// 		}
+// 	}
+// 	.flip-container.hover .flipper,
+// 	.flip-container:hover .flipper {
+// 		-webkit-transform: rotateY(180deg);
+// 		-moz-transform: rotateY(180deg);
+// 		transform: rotateY(180deg);
+// 	}
+// 	.back,
+// 	.flip-container,
+// 	.front {
+// 		width: 125px;
+// 		height: 125px;
+// 	}
+//
+// 	.back,
+// 	.front {
+// 		-webkit-backface-visibility: hidden;
+// 		-moz-backface-visibility: hidden;
+// 		backface-visibility: hidden;
+// 	}
+// 	.members_det {
+// 		text-align: center;
+// 		font-size: $font_member_staff;
+// 	}
+// }
+// }
+// // Members at Large Section
+//
+// .members_at_large {
+// 	padding-bottom: $basic_margin*5.5;
+// 	border-bottom: solid 3px $color_btn_green;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	.members_at_large-grid {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		justify-content: center;
+// 		.members_at_large-name {
+// 			font-size: $font_member_staff;
+// 			display: flex;
+// 			width: 26%;
+// 			text-align: center;
+// 			margin: 1rem;
+// 		}
+// 	}
+// }
+// // Meeting Minutes & Archive Section
+// .event-grid {
+// 	display: flex;
+// 	flex-direction: column;
+// 	.news-img img {
+// 		width: 100%;
+// 	}
+// 	.archive-sec {
+// 		display: flex;
+// 		.green-btn {
+// 			align-self: baseline;
+// 			order: 1;
+// 		}
+// 		.green-btn {
+// 			align-self: flex-start;
+// 		}
+// 	}
+// }
+// .target {
+// 	background-color: grey;
+// 	width: 100%;
+// 	height: 10%;
+// 	padding: $basic_pading;
+// 	display: none;
+// }
+// // newsLetter Section
+// .newsLetter {
+// 	display: flex;
+// 	flex-direction: column;
+//
+// 	.red-more {
+// 		align-self: flex-end;
+// 	}
+// }
+=======
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
