@@ -181,6 +181,10 @@ button#responsive-menu-button {
 }
 ////**Sub Menu Section**/////
 
+.back-to-top{
+	position: absolute;
+	left: 0;
+}
 div {
 	.secondary li a {
 		padding: 0 10px;
@@ -205,20 +209,23 @@ div {
 		border-right: solid 1px white;
 	}
 }
+.secondary li:nth-child(2) {
+	margin-left: 70px;
+}
+
 
 div .secondary {
-
 	position: relative;
 	text-align: right;
 	min-width: 80%;
 	height: 100%;
 	font-family: $font_header_footer;
-	@include desktop {
+	@include desktop {text-align: right;
 		white-space: inherit;
 		padding: 5px 20 10px 10;
 		height: 65px;
 	}
-	text-align: right;
+	text-align: center;
 	padding-right:5px;
 	margin-top: 10px;
 	background-color: #248E6A;
@@ -227,6 +234,7 @@ div .secondary {
 		background-color: $color_btn_green;
 	}
 	ul{
+
 		min-width:50%;
 	}
 

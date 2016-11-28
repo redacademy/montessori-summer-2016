@@ -27,14 +27,6 @@ p,li{
 }
 }
 
-blockquote, q {
-	quotes: "" "";
-
-	&:before,
-	&:after {
-		content: "";
-	}
-}
 
 hr {
 	background-color: #ffffff;
