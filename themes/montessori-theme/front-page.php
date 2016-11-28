@@ -56,33 +56,50 @@ get_header(); ?>
       </div>
     </section>
 <!-- this is for the features news  -->
-  <?php
-      $args = array(
-        'posts_per_page' => 3
-      );
-      $my_query = new WP_Query($args );
-        if ( $my_query->have_posts() ) {
-          while ( $my_query->have_posts() ) {
-            $my_query->the_post();?>
+<article class="all-features">
+  <h2> Features News</h2>
+    <section class="features-wrapper">
 
-          <!-- // All the content in the loop goes here -->
-          <?php
-    			$fields = CFS()->get( 'featured_title' );
-    			?>
+      <?php
+          $args = array(
+            'posts_per_page' => 3
+          );
+          $my_query = new WP_Query($args );
+            if ( $my_query->have_posts() ) {
+              while ( $my_query->have_posts() ) {
+                $my_query->the_post();?>
 
-          <div class="story-info">
-            <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
-            <?php the_content();?>
-            <a class="btn" href="<?php the_permalink(); ?>" >Read More</a>
-          </div>
+              <!-- // All the content in the loop goes here -->
+              <div class="features-flipper">
 
-        <?php  //echo featured_title();
-          //featured_title();
-          //the_content();
-          }
-        }
-        wp_reset_postdata();
-  ?>
+              <div class="story-info">
+                <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+
+                    <div class="features-back">
+                    <?php the_content();?>
+                    <a class="btn" href="<?php the_permalink(); ?>" >Read More</a>
+                  </div>
+              </div>
+            </div>
+
+            <?php
+              //echo featured_title();
+              //featured_title();
+              //the_content();
+              }
+            }
+            wp_reset_postdata();
+      ?>
+  </section>
+
+</article>
+
+
+
+
+
+
+
         </main><!-- #main -->
     </div><!-- #primary -->
   <?php get_footer(); ?>

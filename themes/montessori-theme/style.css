@@ -958,7 +958,7 @@ div .secondary {
   margin: 0 auto; }
   @media (min-width: 70rem) {
     .site-main .home {
-      padding: 0px 90px; } }
+      padding: 0 90px; } }
   .site-main .home .home-wrapper {
     width: 480px;
     height: 585px;
@@ -1149,7 +1149,7 @@ div .secondary {
       .site-main .support-wrapper .information .support-img-wrapper {
         height: 0; } }
     .site-main .support-wrapper .information .support-img-wrapper img {
-      margin: 0px 6rem; }
+      margin: 0 6rem; }
       @media (min-width: 70rem) {
         .site-main .support-wrapper .information .support-img-wrapper img {
           height: auto;
@@ -1194,7 +1194,7 @@ div .secondary {
           font-family: Noto Sans;
           font-size: 22px;
           line-height: 47px;
-          letter-spacing: .9px;
+          letter-spacing: 0.9px;
           margin: 30px 40px; } }
       .site-main .support-wrapper .information p .info {
         width: 470px;
