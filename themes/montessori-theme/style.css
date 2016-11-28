@@ -1056,15 +1056,14 @@ div .secondary {
       font-weight: 300;
       letter-spacing: 0.8px;
       height: 47px;
-      display: -ms-flexbox;
-      display: flex; }
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
     .site-main .support-wrapper .information .green-btn {
       background-color: #4FC8A1;
       border-color: #4FC8A1;
       border-radius: 6px;
       font-family: "Noto Sans";
       font-size: 20px;
-      font-weight: bold;
       text-align: center;
       line-height: 30px;
       color: #fff;
@@ -1074,8 +1073,8 @@ div .secondary {
       letter-spacing: 0.8px;
       height: 47px;
       width: 185px;
-      display: -ms-flexbox;
-      display: flex; }
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
 
 .site-main .all-features {
   margin-bottom: 30px; }

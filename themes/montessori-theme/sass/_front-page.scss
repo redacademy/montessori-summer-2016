@@ -305,7 +305,7 @@
                 letter-spacing: 0.8px;
                 // width: 200px;
                 height: 47px;
-                display: flex;
+                display: inline-flex;
 
             }
             .green-btn {
@@ -314,7 +314,6 @@
                 border-radius: 6px;
                 font-family: "Noto Sans";
                 font-size: 20px;
-                font-weight: bold;
                 text-align: center;
                 line-height: 30px;
                 color: #fff;
@@ -324,7 +323,7 @@
                 letter-spacing: 0.8px;
                 height: 47px;
                 width: 185px;
-                display: flex;
+                display: inline-flex;
             }
         }
         //information
