@@ -108,7 +108,6 @@ input[type="reset"],
 input[type="submit"] {
 	box-shadow: none !important;
 }
-<<<<<<< HEAD
 .responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
 
     background-color: #D8D8D8!important;
@@ -127,7 +126,6 @@ button#responsive-menu-button {
 
     background-color: transparent!important;
 }
-=======
 
 button#responsive-menu-button {
 	top: 6px!important;
@@ -135,7 +133,6 @@ button#responsive-menu-button {
 	background-color: transparent!important;
 }
 
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 #primary-menu li.current-menu-item {
 	a {
 		border-top: 6px solid #57B79F;
@@ -144,10 +141,7 @@ button#responsive-menu-button {
 	}
 }
 /////**** The Brand Logo Section ***/////
-<<<<<<< HEAD
-=======
 
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 .montessori-logo {
 	padding: 0;
 	margin: 10px 0 20px 30px;
@@ -165,13 +159,10 @@ button#responsive-menu-button {
 		position: relative;
 		height: 100%;
 		width: 100%;
-<<<<<<< HEAD
-=======
 		padding-top: 25px;
 		@include desktop {
 			padding-top: 0;
 		}
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 
 		a {
 			bottom: -20px;
@@ -202,11 +193,8 @@ button#responsive-menu-button {
 	top: 0;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 .home .site-header {
 	position: absolute;
 }
@@ -244,12 +232,9 @@ div .secondary {
 	height: 100%;
 	font-family: $font_header_footer;
 	@include desktop {
-<<<<<<< HEAD
 		white-space: normal;
 		overflow: hidden;
-=======
 		white-space: inherit;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 		padding: 5px 20 10px 10;
 		width: 100%;
 		height: 65px;
@@ -265,14 +250,12 @@ div .secondary {
 
 	li {
 		display: inline-block;
-<<<<<<< HEAD
 		padding: 10px;
-=======
+
 		padding: 7px 15px;
 		@include desktop {
 			padding: 7px 25px;
-		};
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+		}
 
 		a {
 			font-weight: lighter;
@@ -285,10 +268,7 @@ div .secondary {
 		}
 	}
 }
-<<<<<<< HEAD
 
 #top{
 	color:black;
 }
-=======
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12

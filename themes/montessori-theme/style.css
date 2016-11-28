@@ -304,7 +304,6 @@ h3 {
 body {
   line-height: 3rem; }
 
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 /******* Headings *****/
 body,
 button,
@@ -826,12 +825,10 @@ div .secondary {
       div .secondary li {
         padding: 7px 25px; } }
     div .secondary li a {
-<<<<<<< HEAD
+
       font-size: 1.6rem;
-=======
       font-weight: lighter;
       font-size: 1.3rem;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
       text-decoration: none;
       color: white; }
       @media (min-width: 60rem) {
@@ -1798,7 +1795,6 @@ body {
     width: 220px;
     height: 240px; }
     @media (min-width: 60rem) {
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
       .main-history .history-img {
         width: 430px;
         height: 500px;
@@ -1911,11 +1907,8 @@ body {
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden; } }
     .main-philosophy .philosophy-grid h2 {
-<<<<<<< HEAD
-      -index: 1;
-=======
+
       z-index: 1;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
       margin: 0;
       text-align: center;
       display: inline-block;
@@ -1925,29 +1918,25 @@ body {
       overflow: hidden;
       padding: 0;
       bottom: 35px;
-<<<<<<< HEAD
-      line-height: 1.3rem;
-=======
+
       line-height: 1.2rem;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
       position: absolute;
       right: 24px;
       position: absolute; }
       .main-philosophy .philosophy-grid h2 a {
         color: #248E6A;
-<<<<<<< HEAD
         font-size: 1.2rem;
         font-weight: bold; }
       @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid h2 a {
           font-size: 1.7rem; }
-=======
+
         font-size: 1.1rem;
         font-weight: bold; }
       @media (min-width: 60rem) {
         .main-philosophy .philosophy-grid h2 a {
           font-size: 1.3rem; }
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+
         .main-philosophy .philosophy-grid h2 .show {
           font-size: 1.4rem;
           -webkit-backface-visibility: hidden;
@@ -2109,14 +2098,7 @@ body {
       left: 0PX;
       height: 100%;
       border-left: solid 12px #D93B57; } }
-<<<<<<< HEAD
 
-.benefits-title p {
-  padding-top: 4px;
-  display: block; }
-  @media (min-width: 60rem) {
-    .benefits-title p {
-      font-size: 1.5rem; } }
 
 .montessori-archive {
   margin-top: 40px; }
@@ -2124,8 +2106,6 @@ body {
     width: 40%;
     border-top: solid 3px #4FC8A1;
     padding-top: 30px; }
-=======
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 
 .benefits-title p {
   padding-top: 4px;
@@ -2190,7 +2170,6 @@ body {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 4.875rem; }
 
-<<<<<<< HEAD
 .site-main
 .involved-wrapper {
   width: 480px;
@@ -2262,7 +2241,6 @@ a {
 .support-containar {
   display: -ms-flexbox;
   display: flex;
-=======
 .members-list {
   padding: 2px;
   -ms-flex-wrap: wrap;
@@ -2358,7 +2336,6 @@ a {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
   -ms-flex-pack: center;
       justify-content: center; }
   .members_at_large .members_at_large-grid {
@@ -2376,7 +2353,6 @@ a {
       text-align: center;
       margin: 1rem; }
 
-<<<<<<< HEAD
 .support-img {
   width: 150px 60px;
   height: 160.50px;
@@ -2386,7 +2362,6 @@ a {
 
 img {
   height: 100%; }
-=======
 .event-grid {
   display: -ms-flexbox;
   display: flex;
@@ -2412,12 +2387,10 @@ img {
   height: 10%;
   padding: 0.625rem;
   display: none; }
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 
 .newsLetter {
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   height: 200px;
   border-radius: 150%;
   background-color: #4fc8a1;
@@ -2483,13 +2456,11 @@ hover {
 blockquote {
   border-left: 10px solid #CB203E;
   padding: 0 19px; }
-=======
   -ms-flex-direction: column;
       flex-direction: column; }
   .newsLetter .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 
 .involved .green-btn {
   padding-left: 19px;
@@ -2734,7 +2705,6 @@ blockquote {
 =======
   overflow: auto;
   padding: 40px 0;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
   overflow: hidden;
   height: 100%;
   padding: 30px 0; }

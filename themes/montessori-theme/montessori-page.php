@@ -151,15 +151,12 @@ foreach($fields as $field)
   } ?>
   <!-- Archive Title -->
   <div class="montessori-archive">
-<<<<<<< HEAD
-    <h3>Archives</h3>
-=======
+
 
     <h3>archives<span class=""><i class="fa fa-angle-down " aria-hidden="true"></i></span></h3>
     <div id="#"><a href=""></a></div>
   </div>
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
-  </div>
+
 </div>
 
 </section>
@@ -168,8 +165,7 @@ foreach($fields as $field)
   <div class="main-resources content-wrapper">
     <div class="title-resources">
                   <h1 id="resources">Resources</h1>
-<<<<<<< HEAD
-=======
+
 </div>
 <div class="montessori-archive">
   <h3>archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h3>
@@ -200,7 +196,7 @@ echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biogra
   </div>
 <div>
 <button class="green-btn">NW Montessori Program</button>
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+
 </div>
 <div class="montessori-archive">
 <h3>Archives</h3>
@@ -212,13 +208,12 @@ echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biogra
 <h3>others</h3>
 </div>
 
-<<<<<<< HEAD
+
 <button class="green-btn">NW Montessori Program</button>
 
 </div>
 </section>
 
-=======
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+
 <?php
 get_footer(); ?>

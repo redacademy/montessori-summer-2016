@@ -1,16 +1,21 @@
-
-
-.site-main
-   .involved-wrapper{
-     width: 480px;
-     padding: 0 auto;
-     margin-left: auto;
-     margin-right: auto;
-
-
+/*--------------------------------------------------------------
+#  get involved Page
+--------------------------------------------------------------*/
+// General Setting
+* {
+  box-sizing: border-box;
 }
 
-
+.site-main{
+  .involved-wrapper{
+    @media (max-width: 780px) {
+      .container {
+          width: 100%;
+          margin: 0 auto;
+      }
+  }
+}
+}
 
 .involved-title {
   width: 200px;
@@ -20,29 +25,18 @@
   margin-left: 25px;
   margin-bottom: 25px;
 
-  // color:#000;
-  // font-size: 20px;
-  // text-align: center;
-  // width: 200px;
-  // height: 120px;
-  // background-color: #4FC8A1;
-  // padding-top: 20px;
-  // display: flex;
-  // justify-content: space-between;
-  // box-sizing: border-box;
-  //
-  }
     a {
-      width: 145px;
+  width: 145px;
   height: 81px;
   font-family: Asap;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 27px;
-  color: #1B1B1B;
+  color:#fff;
   margin-right: 25px
+  text-align:center;
     }
 
-
+}
 
   .gre-button {
       width: 261px;
@@ -255,7 +249,7 @@ blockquote {
          border-radius: 6px;
          color: #fff;
 
-        //  margin-left: 80px;
+        margin-left: 80px;
          font-family: "Noto Sans";
          font-size: 24px;
          font-weight: 300;
@@ -268,3 +262,5 @@ blockquote {
          flex-direction:row;
      }
  }
+
+ @

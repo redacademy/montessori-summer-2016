@@ -72,4 +72,3 @@ $('#target').slideToggle('1000');
 });
 
 });
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12

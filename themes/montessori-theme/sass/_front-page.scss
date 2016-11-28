@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 
 
 // front page
@@ -411,8 +410,6 @@
 // }
 
 //-------------------front page---------------------------//
-=======
->>>>>>> about
 
 // front page
 // media screen for mobile (max-width: 480px)
@@ -822,8 +819,6 @@
 //     background-color: #ffffff;
 // }
 
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
-//-------------------front page---------------------------//
 
 // media screen for mobile (max-width: 480px)
 .site-main {
@@ -902,7 +897,7 @@
                     max-width: 320px;
                     margin: 90px 100px;
                     text-align: center;
-                } 
+                }
             }
             // }//welcome-wrapper
         }
@@ -1043,10 +1038,7 @@
             img {
                 width: 287px;
                 height: 470px;
-<<<<<<< HEAD
-                @include desktop {
-                    float: right;
-=======
+
                 @include desktop {
                     float: right;
                     position: absolute;
@@ -1254,12 +1246,10 @@ body {
                     width: 1264px;
                     height: 555px;
                     z-index: -1;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+
                     position: absolute;
                     right: 35px;
                 }
-<<<<<<< HEAD
-=======
             }
             h2 {
                 font-family: 'Asap';
@@ -1458,7 +1448,6 @@ body {
                     position: absolute;
                     right: 35px;
                 }
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
                 p {
                     width: 470px;
                     font-family: "Noto Sans";

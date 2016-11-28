@@ -13,7 +13,6 @@ h1,h2,h3{
  font-family:$font_title;
  font-weight: lighter;
 }
-<<<<<<< HEAD
 
 h1{font-size:$h1_size_mob;
 }
@@ -38,7 +37,7 @@ h3{
  h3{
 	 font-size:$h3_size_desktop;
 }}
-=======
+
 
 h1{font-size:$h1_size_mob;
 }
@@ -66,7 +65,7 @@ h3{
 body{
 	line-height: 3rem;
 }
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+
 //////////////////////////////
 
 
@@ -81,7 +80,7 @@ textarea {
 	color: $color_text_main;
 	font-family: $font_main;
 	@include font-size(1);
-	
+
 }
 
 /* Headings */
