@@ -6,7 +6,9 @@
         width: 100%;
         height: auto;
          margin: 0 auto;
-        padding: 0px 90px;
+         @include desktop{
+            padding: 0px 90px;
+         }
         .home-wrapper {
             width: 480px;
             height: 585px;
@@ -221,7 +223,7 @@
                 }
 
             img {
-                text-align: center;
+                margin: 0px 6rem;
                 // width: 287px;
                 // height: 470px;
                 @include desktop {
@@ -246,11 +248,15 @@
         } //support-wrapper
 
         blockquote {
-            border-left: 6px solid red;
+            border-left: 6px solid #D93B57;
+            font-size: 25px;
+            margin-bottom: 95px;
+            height: 125px;
                 @include desktop{
+                    border-left: 6px solid #D93B57;
                     margin: 27px 119px;
-                    width: 30%;
-
+                    width: 70%;
+                    height: auto;
                 p {
                     font-size: 24px;
                 }
