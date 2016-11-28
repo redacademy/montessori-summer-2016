@@ -22,11 +22,10 @@ get_header(); ?>
 <!-- this is for the quick links -->
     <div class="link-title">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
-<<<<<<< HEAD
+
     </div>
-=======
+
     </div>
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
       <section class="links-wrapper ">
           <article class="benifits">
             <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
