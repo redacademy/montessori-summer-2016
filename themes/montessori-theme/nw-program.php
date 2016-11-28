@@ -14,13 +14,13 @@ get_header(); ?>
 	<!-- **********/////////////////Why NW Program Section///////////////********** -->
 
 <section id="nw-program" class="nw-program">
-			<h1>Why NW Montessori Program?</h1>
-			<div class="why-nw"> <?php echo CFS()->get('main-reason'); ?> </p></div>
+			<h1>Why NW Montessori</br> Program?</h1>
+			<div class="why-nw"><?php echo CFS()->get('main-reason'); ?></div>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
 
-		<div class="red-border-container"><?php echo CFS()->get('main-reason'); ?></div>
+		<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
 </section>
 
 <!-- **********///////////Montessori Daily Schedule section/////////////********** -->
@@ -33,9 +33,9 @@ get_header(); ?>
 
 	<section id="funding" class="funding">
 				<h1>Funding</h1>
-				<h2 >Where does it come from?</h2>
+				<h3 >Where does it come from?</h3>
 				<h3>There are two ways of answering this</h3>
-			  <div class="red-border-container"> <?php echo CFS()->get('funding-block'); ?> </div>
+			  <div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('funding-block'); ?></p></div>
 				<div class="funding-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
@@ -124,10 +124,10 @@ get_header(); ?>
 		 <div class="target">
 	<?php
   	$fields = CFS()->get( 'list_of_preschools' );
-     foreach ( $fields as $field ) {
-       echo '<p style="color:#248E6A>'.$field['school_name'].'</p>';
-       echo '<span>'.$field['adrees'].'</span>';
-        } ?>
+     foreach ( $fields as $field ) {?>
+      <p style="font-size:1.4rem"><span style="color:#248E6A"><?php echo $field['school_name'];?></span>
+		  <?php echo $field['adrees']?> </p>
+      <?php  } ?>
 			</div>
   <?php echo '<p>'.CFS()->get( 'abstract' ).'</p>'; ?>
    </section>
@@ -135,13 +135,13 @@ get_header(); ?>
  <!-- **********/////////////////Enrollment Section///////////////********** -->
 
 <section id="how-to-enroll" class="enroll">
-				<h1>How to Enroll Your Child</h1>
-				<div class="red-border-container"> <?php echo CFS()->get('enroll'); ?> </div>
+				<h1>How to Enroll Your</br> Child</h1>
+				<div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('enroll'); ?> </p></div>
 <div class="enroll-info">
-				<h2 >When can my child start? </h2>
+				<h3 >When can my child start?</h3>
 				<p> <?php echo CFS()->get('time-start'); ?> </p>
 
-			  <h2 >How do I apply?</h2>
+			  <h3 >How do I apply?</h3>
 		  	<ol>
 			  <?php $fields = CFS()->get( 'guids' );
 
@@ -162,7 +162,6 @@ get_header(); ?>
 			  </div>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
-
 </div>
 <!-- #about-page -->
 	<?php get_footer(); ?>

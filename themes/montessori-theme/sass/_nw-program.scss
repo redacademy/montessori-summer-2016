@@ -17,8 +17,51 @@
 	align-items: center;
 	background-color: grey;
 }
-// Section Why NW Program Section
+// fonts
 
+h1,
+h2,
+h3 {
+	font-family: $font_title;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.25rem;
+	line-height: 2.625rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+	line-height: 2.125rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.6875rem;
+}
+
+p {
+	font-size: 1.625rem;
+	line-height: 2.5rem;
+	font-style: $font_body;
+}
+
+.spcil p {
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+	font-style: $font_main;
+}
+
+.green-btn {
+	background-color: #4FC8A1;
+	color: $white;
+	font-family: "Noto Sans";
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-decoration: none;
+}
+// Section Why NW Program Section
 .nw-program {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
@@ -28,6 +71,7 @@
 			display: block;
 		}
 	}
+
 	.nw-img {
 		display: flex;
 		justify-content: center;
@@ -35,7 +79,6 @@
 		margin-bottom: $basic_margin*3;
 	}
 }
-
 // Funding Section
 .funding {
 	display: flex;
@@ -44,28 +87,31 @@
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
 
-
 	.funding-img {
-		margin-top:$basic_margin*40;
+		margin-top: $basic_margin*40;
 	}
-	.funding-det{
+
+	.funding-det {
 		display: block;
 	}
- .money-spend-img,
- .funding-img {
-	 display:flex;
-	 justify-content: center;
+
+	.funding-img,
+	.money-spend-img {
+		display: flex;
+		justify-content: center;
 
 		img {
 			width: 87%;
-			margin-right:$basic_margin/5;
-			margin-bottom:$basic_margin;
+			margin-right: $basic_margin/5;
+			margin-bottom: $basic_margin;
 		}
 	}
+
 	.funding-btn {
 		display: flex;
 		justify-content: center;
-		margin-top:$basic_margin*3;
+		margin-top: $basic_margin*3;
+
 		.green-btn {
 			padding: 10px;
 			width: 44.666%;
@@ -78,13 +124,16 @@
 .school-list {
 	display: flex;
 	flex-direction: column;
+
 	.school-img {
 		display: flex;
 		justify-content: center;
+
 		img {
 			width: 80%;
 			height: 80%;
 		}
+
 		.address .phone {
 			font-weight: bolder;
 		}
@@ -106,7 +155,7 @@
 	flex-direction: column;
 
 	.enroll-info {
-		margin-top: 10rem;
+		margin-top: 27rem;
 	}
 
 	.enroll-block {
