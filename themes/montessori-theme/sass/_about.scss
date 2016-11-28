@@ -13,7 +13,6 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
 	max-width: $mobile_width;
-	background-color: grey;
 }
 
 // about NW School Sectio
@@ -139,21 +138,16 @@
 	}
 }
 // Meeting Minutes & Archive Section
-.event-grid {
+.meeting-minutes {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: $basic_margin*5.5;
+	border-bottom: solid 3px $color_btn_green;
 	.news-img img {
 		width: 100%;
 	}
-	.archive-sec {
-		display: flex;
-		.green-btn {
-			align-self: baseline;
-			order: 1;
-		}
-		.green-btn {
-			align-self: flex-start;
-		}
+	.red-more {
+		align-self: flex-end;
 	}
 }
 .target {
@@ -164,11 +158,23 @@
 	display: none;
 }
 // newsLetter Section
+
 .newsLetter {
 	display: flex;
 	flex-direction: column;
-
-	.red-more {
-		align-self: flex-end;
+}
+.archive-sec {
+display: flex;
+justify-content: space-between;
+.arch-btn{
+	order: 1;
+	align-self: flex-start;
+	.green-btn{
+		font-size: 1.25rem;
 	}
+}
+.arch-block{
+	width: 55%;
+	border-top:solid 3px $color_btn_green;
+}
 }
