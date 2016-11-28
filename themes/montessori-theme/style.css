@@ -1380,7 +1380,6 @@ body {
     margin-top: 100px;
     width: 220px;
     height: 240px; }
-<<<<<<< HEAD
     @media (min-width: 70rem) {
       .main-history .history-img {
         width: 430px;
@@ -2182,9 +2181,6 @@ body {
         width: 331px;
         height: 65px;
         font-size: 20px; } }
-
-<<<<<<< HEAD
-=======
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
@@ -2382,8 +2378,6 @@ blockquote {
   border-left: 10px solid #CB203E;
   padding: 0 19px; }
 
-<<<<<<< HEAD
-=======
   -ms-flex-direction: column;
       flex-direction: column; }
 
