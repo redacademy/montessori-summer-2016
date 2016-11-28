@@ -2,12 +2,74 @@
 # Typography
 --------------------------------------------------------------*/
 
+////Montessori Elements Typography ////
+p,
+li {
+	 font-size: $font_body_size_mob;
+	 font-family:$font_title;
+}
+h1,h2,h3{
+ text-transform: capitalize;
+ font-family:$font_title;
+ font-weight: lighter;
+}
+
+h1{font-size:$h1_size_mob;
+}
+h2{
+font-size:$h2_size_mob;
+}
+h3{
+ font-size:$h3_size_mob;
+ font-family:$font_title;
+
+}
+
+@include desktop{
+ p,
+ li {
+		font-size: $font_body_size_desktop;}
+ h1{font-family:$font_title;
+	 font-weight: lighter;
+	 font-size:$h1_size_desktop;}
+ h2{
+ font-size:$h2_size_desktop;}
+ h3{
+	 font-size:$h3_size_desktop;
+}}
+
+h1{font-size:$h1_size_mob;
+}
+h2{
+font-size:$h2_size_mob;
+}
+h3{
+ font-size:$h3_size_mob;
+ font-family:$font_title;
+
+}
+
+@include desktop{
+ p,
+ li {
+		font-size: $font_body_size_desktop;}
+ h1{font-family:$font_title;
+	 font-weight: lighter;
+	 font-size:$h1_size_desktop;}
+ h2{
+ font-size:$h2_size_desktop;}
+ h3{
+	 font-size:$h3_size_desktop;
+}}
+body{
+	line-height: 3rem;
+}
+//////////////////////////////
+
+
 /******* Headings *****/
 
-h1, h2, h3, h4, h5, h6, button {
-	font-weight: bold;
-	padding: $base_spacing_normal 0;
-}
+
 body,
 button,
 input,
@@ -16,7 +78,7 @@ textarea {
 	color: $color_text_main;
 	font-family: $font_main;
 	@include font-size(1);
-	line-height: $font_line_height_body;
+
 }
 
 /* Headings */
@@ -27,9 +89,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 
-p {
-	margin-bottom: $base_spacing_normal;
-}
 
 dfn, cite, em, i {
 	font-style: italic;

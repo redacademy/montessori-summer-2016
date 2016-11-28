@@ -15,52 +15,103 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	background-color: grey;
+}
+// fonts
 
-	h1 {
-		font-family: $font_title;
-		font-size: $h1_size_mob;
-		font-weight: normal;
-		line-height: $basic_hline_height * 4.2;
-		text-align: left;
-		color: $black;
-	}
+h1,
+h2,
+h3 {
+	font-family: $font_title;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.25rem;
+	line-height: 2.625rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+	line-height: 2.125rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.6875rem;
+}
+
+p {
+	font-size: 1.625rem;
+	line-height: 2.5rem;
+	font-style: $font_body;
+}
+
+.spcil p {
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+	font-style: $font_main;
+}
+
+.green-btn {
+	background-color: #4FC8A1;
+	color: $white;
+	font-family: "Noto Sans";
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-decoration: none;
 }
 // Section Why NW Program Section
-
 .nw-program {
-	display: flex;
-	flex-direction: column;
+	border-bottom: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
 
 	.why-nw {
-		display: inline-block;
-
-		.nw-img {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
+		p {
+			display: block;
 		}
+	}
+
+	.nw-img {
+		display: flex;
+		justify-content: center;
+		margin-top: $basic_margin*5.5;
+		margin-bottom: $basic_margin*3;
 	}
 }
 // Funding Section
-
 .funding {
 	display: flex;
 	flex-direction: column;
+	margin-top: $basic_margin*3;
+	border-bottom: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
 
-	.funding-img,.money-spend-img {
+	.funding-img {
+		margin-top: $basic_margin*40;
+	}
+
+	.funding-det {
+		display: block;
+	}
+
+	.funding-img,
+	.money-spend-img {
 		display: flex;
 		justify-content: center;
-		img{
-			width: 95%;
-			height: 95%;
-			margin-right: 2px;
+
+		img {
+			width: 87%;
+			margin-right: $basic_margin/5;
+			margin-bottom: $basic_margin;
 		}
 	}
+
 	.funding-btn {
 		display: flex;
 		justify-content: center;
-		.green-btn{
+		margin-top: $basic_margin*3;
+
+		.green-btn {
 			padding: 10px;
 			width: 44.666%;
 			margin-right: 2px;
@@ -68,23 +119,25 @@
 	}
 }
 //School List Section
-.school-list{
+
+.school-list {
 	display: flex;
 	flex-direction: column;
-	    .school-img{
-				display: flex;
-				justify-content: center;
-				img{
-				width:80%;
-				height:80%;
 
-		    }
-			 .address	.phone {
-				font-weight: bolder;
-			}
-   	}
+	.school-img {
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 80%;
+			height: 80%;
+		}
+
+		.address .phone {
+			font-weight: bolder;
+		}
+	}
 }
-
 //Preschools List Section
 
 .preschools-list {
@@ -95,33 +148,27 @@
 	}
 }
 //Enrollment Section
+
 .enroll {
-display: flex;
-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+
+	.enroll-info {
+		margin-top: 27rem;
+	}
+
 	.enroll-block {
 		max-width: 70%;
 		display: flex;
-		justify-content: space-around;
 		margin: 40px auto;
 		flex-direction: column;
+
 		.enroll-img {
 			margin-bottom: 50px;
 		}
-		.green-btn {
-			height: 47px;
-			display: inline-block;
-			box-sizing: border-box;
-			text-align: center;
-			background-color: #4FC8A1;
-			border-radius: 6px;
-			font-family: "Noto Sans";
-			font-size: 15px;
-			font-weight: bold;
-			text-align: center;
-			line-height: 30px;
-			color: #fff;
-			text-shadow: none;
-			letter-spacing: 0.8px;
+
+		.enroll-btn {
+			align-self: center;
 		}
 	}
 }
@@ -134,86 +181,101 @@ flex-direction: column;
 
 	.teacher-grid {
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
-	}
+		justify-content: space-around;
 
-	.flip-container {
-		display: flex;
-		box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
-		background: #aff1d3;
-		border-radius: 50%;
-
-		.flipper {
-			flex: 1 0 auto;
+		.teacher-block {
+			flex: 0.03;
 			display: flex;
-			width: 50%;
-			position: relative;
-			-webkit-transition: 1.9s;
-			-webkit-transform-style: preserve-3d;
-			-moz-transition: 1.9s;
-			-moz-transform-style: preserve-3d;
-			transition: 1.9s;
-			transform-style: preserve-3d;
-
-			p {
-				font-size: 50%;
-				line-height: 30px;
+			flex-direction: column;
+			align-items: center;
+			@include tablet {
+				flex: 0.03;
+			}
+			@include desktop {
+				flex: 1;
 			}
 		}
 
-		.front {
-			position: absolute;
-			background-size: cover;
+		.flip-container {
+			display: block;
+			box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+			background: #aff1d3;
 			border-radius: 50%;
-			flex: 2;
 
-			img {
+			.flipper {
+				flex: 1 0 auto;
+				display: flex;
+				width: 50%;
+				position: relative;
+				-webkit-transition: 1.9s;
+				-webkit-transform-style: preserve-3d;
+				-moz-transition: 1.9s;
+				-moz-transform-style: preserve-3d;
+				transition: 1.9s;
+				transform-style: preserve-3d;
+
+				.teacher_det {
+					display: block;
+				}
+
+				p {
+					font-size: 1rem;
+					font-style: italic;
+					line-height: $basic_hline_height*2.4;
+				}
+			}
+
+			.front {
+				position: absolute;
+				background-size: cover;
 				border-radius: 50%;
+				flex: 2;
+
+				img {
+					border-radius: 50%;
+				}
+			}
+
+			.back {
+				border-radius: 50%;
+				position: absolute;
+				width: 125px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 125px;
+				text-align: center;
+				right: 3px;
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				transform: rotateY(180deg);
 			}
 		}
 
-		.back {
-			border-radius: 50%;
-			position: absolute;
-			width: 125px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			height: 125px;
-			text-align: center;
-			right: 3px;
+		.flip-container.hover .flipper,
+		.flip-container:hover .flipper {
 			-webkit-transform: rotateY(180deg);
 			-moz-transform: rotateY(180deg);
 			transform: rotateY(180deg);
 		}
-	}
 
-	.flip-container.hover .flipper,
-	.flip-container:hover .flipper {
-		-webkit-transform: rotateY(180deg);
-		-moz-transform: rotateY(180deg);
-		transform: rotateY(180deg);
-	}
+		.back,
+		.flip-container,
+		.front {
+			width: 125px;
+			height: 125px;
+		}
 
-	.back,
-	.flip-container,
-	.front {
-		width: 125px;
-		height: 125px;
-	}
+		.back,
+		.front {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
 
-	.back,
-	.front {
-		-webkit-backface-visibility: hidden;
-		-moz-backface-visibility: hidden;
-		backface-visibility: hidden;
-	}
-
-	.teacher_det {
-		text-align: center;
-
-		p {
-			font-size: 50%;
+		.teacher_det {
+			text-align: center;
+			font-size: $font_member_staff;
 		}
 	}
 }

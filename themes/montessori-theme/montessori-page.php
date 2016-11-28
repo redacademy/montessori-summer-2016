@@ -151,7 +151,10 @@ foreach($fields as $field)
   } ?>
   <!-- Archive Title -->
   <div class="montessori-archive">
-    <h3>Archives</h3>
+
+    <h3>archives<span class=""><i class="fa fa-angle-down " aria-hidden="true"></i></span></h3>
+    <div id="#"><a href=""></a></div>
+  </div>
   </div>
 </div>
 
@@ -163,17 +166,35 @@ foreach($fields as $field)
                   <h1 id="resources">Resources</h1>
 </div>
 <div class="montessori-archive">
-<h3>Archives</h3>
-</div>
-<div class="montessori-archive">
-<h3>videos</h3>
-</div>
-<div class="montessori-archive">
-<h3>others</h3>
-</div>
+  <h3>archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h3>
+  <div id="target" class="the-archive">
+    <ul>
+      learn more about montessori history
+      <div class="">
 
+
+    <li><a href="<?php
+echo get_page_link(get_page_by_title()->ID); ?>">Montessori FAQ</a></li>
+
+<li><a href="<?php
+echo get_page_link(get_page_by_title()->ID); ?>">Montessori education</a></li>
+<li><a href="<?php
+echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biography</a></li></div>
+</ul>
+</div>
+<div class="montessori-archive">
+  <div class="">
+  <h3>videos<span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
+  <div class="#"></div></div>
+</div>
+<div class="montessori-archive">
+  <div class="">
+  <h3>other<span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
+  <div class="#"></div></div>
+  </div>
+<div>
 <button class="green-btn">NW Montessori Program</button>
-
+</div>
 </div>
 </section>
 

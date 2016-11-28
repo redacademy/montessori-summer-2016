@@ -18,7 +18,7 @@ jQuery(document).ready(function( $ ) {
 //  SMOOTH SCROL:
 
 // ----------------------------------------------------------------
-
+  $(document).ready(function(){
     $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -33,16 +33,39 @@ jQuery(document).ready(function( $ ) {
         }
       });
     });
+    });
+  ///------ Toogle the Archive contents and flib the arrow---
+  $('.toggle').click(function() {
+  $('#target').slideToggle('1000');
+   $(".arrow").click(function () {
+      $(this).toggleClass("rotate");
+  });
 
+  });
 
-// --------------------------------------------------------------
-// Add Slide Down to Preschools List:
+});
 
 // ----------------------------------------------------------------
+// if ( $(".b1") ) {
+//        $('.b1').append('<p>B1 is there</p>')};
+//        else if  ($(".b2") ) {
+//        $('.b2').append('<p>B2 is there</p>');
+//        alert("b2");}
+//
+// });
 
 $('.toggle').click(function() {
-    $('.target').toggle('slow');
+$('#target').slideToggle('1000');
+$(".arrow").on("click", function () {
+    $(this).toggleClass("rotate");
 });
 
 });
 
+if ( $(".b1") ) {
+       $('.b1').append('<p>B1 is there</p>')};
+       else if  ($(".b2") ) {
+       $('.b2').append('<p>B2 is there</p>');
+       alert("b2");}
+
+});
