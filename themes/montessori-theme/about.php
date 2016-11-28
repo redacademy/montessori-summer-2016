@@ -44,8 +44,8 @@ get_header(); ?>
 				</div><!-- #flippre -->
 					</div><!-- #flip-container -->
 					<div class="members_det">
-			      <p><?php echo CFS()->get('member_name'); ?></p>
-			    	<p class="bold"><?php echo CFS()->get('member_title'); ?></p>
+			      <p style="font-size:20px"><?php echo CFS()->get('member_name'); ?></p>
+			    	<p style="font-size:20px"><?php echo CFS()->get('member_title'); ?></p>
 					</div><!-- #member_det -->
 				</div><!-- #members_block -->
 						<?php endwhile; else: ?>
