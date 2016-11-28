@@ -22,8 +22,9 @@ get_header(); ?>
 			  ?>
 		</section>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
+
+			<h1>Board Members<h1>
 			<section id="board-members" class="members-list">
-				<h1>Board Members<h1>
 				<!-- Custom Post Loop To Call Members List  -->
 				<?php
 				query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'members' ));
