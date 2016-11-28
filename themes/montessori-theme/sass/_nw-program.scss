@@ -15,46 +15,101 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	background-color: grey;
+}
+// fonts
+
+h1,
+h2,
+h3 {
+	font-family: $font_title;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.25rem;
+	line-height: 2.625rem;
+}
+
+h2 {
+	font-size: 1.875rem;
+	line-height: 2.125rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.6875rem;
+}
+
+p {
+	font-size: 1.625rem;
+	line-height: 2.5rem;
+	font-style: $font_body;
+}
+
+.spcil p {
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+	font-style: $font_main;
+}
+
+.green-btn {
+	background-color: #4FC8A1;
+	color: $white;
+	font-family: "Noto Sans";
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-decoration: none;
 }
 // Section Why NW Program Section
-
 .nw-program {
-	display: flex;
-	flex-direction: column;
+	border-bottom: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
 
 	.why-nw {
-		display: inline-block;
-
-		.nw-img {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
+		p {
+			display: block;
 		}
+	}
+
+	.nw-img {
+		display: flex;
+		justify-content: center;
+		margin-top: $basic_margin*5.5;
+		margin-bottom: $basic_margin*3;
 	}
 }
 // Funding Section
-
 .funding {
 	display: flex;
 	flex-direction: column;
+	margin-top: $basic_margin*3;
+	border-bottom: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
+
+	.funding-img {
+		margin-top: $basic_margin*40;
+	}
+
+	.funding-det {
+		display: block;
+	}
 
 	.funding-img,
 	.money-spend-img {
-		margin-top: 100px;
 		display: flex;
 		justify-content: center;
 
 		img {
-			width: 95%;
-			height: 95%;
-			margin-right: 2px;
+			width: 87%;
+			margin-right: $basic_margin/5;
+			margin-bottom: $basic_margin;
 		}
 	}
 
 	.funding-btn {
 		display: flex;
 		justify-content: center;
+		margin-top: $basic_margin*3;
 
 		.green-btn {
 			padding: 10px;
@@ -84,6 +139,7 @@
 	}
 }
 //Preschools List Section
+
 .preschools-list {
 	padding: 1px;
 
@@ -97,6 +153,10 @@
 	display: flex;
 	flex-direction: column;
 
+	.enroll-info {
+		margin-top: 27rem;
+	}
+
 	.enroll-block {
 		max-width: 70%;
 		display: flex;
@@ -109,7 +169,6 @@
 
 		.enroll-btn {
 			align-self: center;
-
 		}
 	}
 }
@@ -119,6 +178,7 @@
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
+
 	.teacher-grid {
 		display: flex;
 		flex-wrap: wrap;
@@ -160,8 +220,9 @@
 				}
 
 				p {
-					font-size: 50%;
-					line-height: 30px;
+					font-size: 1rem;
+					font-style: italic;
+					line-height: $basic_hline_height*2.4;
 				}
 			}
 
@@ -214,10 +275,7 @@
 
 		.teacher_det {
 			text-align: center;
-
-			p {
-				font-size: 50%;
-			}
+			font-size: $font_member_staff;
 		}
 	}
 }
