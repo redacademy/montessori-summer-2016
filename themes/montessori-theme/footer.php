@@ -27,7 +27,7 @@ echo get_page_link(get_page_by_title(get - involved)->ID); ?>">Get involved</a>
                  <div class="footer-block-item2">
              <p><i class="fa fa-facebook" aria-hidden="true"></i>
              <a href="">Follow us </a>
-            <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a> 
+            <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a>
             </p>
                  </div>
                 <div class="footer-block-item3">
