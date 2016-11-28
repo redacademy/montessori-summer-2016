@@ -5,6 +5,7 @@
 	top: 0;
 }
 /////****Start Main Menu**** ////
+
 .main-navigation-container {
 	display: flex;
 }
@@ -23,7 +24,7 @@ div .menu-primary-menu-container {
 }
 
 .main-navigation {
-	width: 70%;
+	min-width: 70%;
 }
 
 div .menu-primary-menu-container {
@@ -69,14 +70,14 @@ div .menu-primary-menu-container {
 
 				a {
 					text-transform: uppercase;
-					text-decoration: none;
-					color: $black;
-					color: #231F20;
-					font-size: 1.2rem;
-					border-top: 6px solid transparent;
-					list-style: none;
-					padding: 15px 0;
-					margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    color: #231f20;
+    font-size: 1.6rem;
+    border-top: 6px solid transparent;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0 5px;
 				}
 			}
 		}
@@ -108,26 +109,6 @@ input[type="reset"],
 input[type="submit"] {
 	box-shadow: none !important;
 }
-<<<<<<< HEAD
-.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
-
-    background-color: #D8D8D8!important;
-		width: 34px!important;;
-				height: 4px!important;
-    border-radius: 0px!important;
-
-}
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-
-    box-shadow: none !important;
-
-}
-button#responsive-menu-button {
-
-
-    background-color: transparent!important;
-}
-=======
 
 button#responsive-menu-button {
 	top: 6px!important;
@@ -135,7 +116,6 @@ button#responsive-menu-button {
 	background-color: transparent!important;
 }
 
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 #primary-menu li.current-menu-item {
 	a {
 		border-top: 6px solid #57B79F;
@@ -144,10 +124,7 @@ button#responsive-menu-button {
 	}
 }
 /////**** The Brand Logo Section ***/////
-<<<<<<< HEAD
-=======
 
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 .montessori-logo {
 	padding: 0;
 	margin: 10px 0 20px 30px;
@@ -165,13 +142,10 @@ button#responsive-menu-button {
 		position: relative;
 		height: 100%;
 		width: 100%;
-<<<<<<< HEAD
-=======
 		padding-top: 25px;
 		@include desktop {
 			padding-top: 0;
 		}
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 
 		a {
 			bottom: -20px;
@@ -202,11 +176,6 @@ button#responsive-menu-button {
 	top: 0;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 .home .site-header {
 	position: absolute;
 }
@@ -238,57 +207,46 @@ div {
 }
 
 div .secondary {
+
 	position: relative;
 	text-align: right;
-	max-width: 100%;
+	min-width: 80%;
 	height: 100%;
 	font-family: $font_header_footer;
 	@include desktop {
-<<<<<<< HEAD
-		white-space: normal;
-		overflow: hidden;
-=======
 		white-space: inherit;
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 		padding: 5px 20 10px 10;
-		width: 100%;
 		height: 65px;
 	}
 	text-align: right;
-	padding-right: 2rem;
+	padding-right:5px;
 	margin-top: 10px;
 	background-color: #248E6A;
 
 	& .active {
 		background-color: $color_btn_green;
 	}
+	ul{
+		min-width:50%;
+	}
 
 	li {
 		display: inline-block;
-<<<<<<< HEAD
-		padding: 10px;
-=======
-		padding: 7px 15px;
+		padding: 7px 10px;
 		@include desktop {
-			padding: 7px 25px;
+			padding: 7px 15px;
 		};
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
 
 		a {
+			padding: 0 8px;
+			margin-right: 0;
 			font-weight: lighter;
-			font-size: 1.3rem;
+			font-size: 1.2rem;
 			@include desktop {
-				font-size: 1.5rem;
+				font-size: 1.4rem;
 			}
 			text-decoration: none;
 			color: white;
 		}
 	}
 }
-<<<<<<< HEAD
-
-#top{
-	color:black;
-}
-=======
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
