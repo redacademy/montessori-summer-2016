@@ -2,11 +2,11 @@
 
 // media screen for mobile (max-width: 480px)
 .site-main {
-  margin: 0;
-  padding: 0;
     .home {
-      margin: 0 auto;
-      // padding: 0px 90px;
+        width: 100%;
+        height: auto;
+         margin: 0 auto;
+        padding: 0px 90px;
         .home-wrapper {
             width: 480px;
             height: 585px;
@@ -137,7 +137,7 @@
                 text-shadow: none;
                 letter-spacing: 0.8px;
                 @include desktop {
-                    display: block;
+                    display: inline;
                     width: 319px;
                     height: 66px;
                     font-size: 26px;
@@ -160,7 +160,7 @@
                 text-shadow: none;
                 letter-spacing: 0.8px;
                 @include desktop {
-                    display: block;
+                    display: inline;
                     width: 319px;
                     height: 66px;
                     font-size: 26px;
@@ -180,18 +180,17 @@
                 text-shadow: none;
                 letter-spacing: 0.8px;
                 @include desktop {
-                    display: block;
+                    display: inline;
                     width: 319px;
                     height: 66px;
                     font-size: 26px;
-                    padding: 6px 85px;
                 }
             }
         }
     }
     // this is for the support section
     .support-wrapper {
-        width: 480px;
+        width: 100%;
         height: auto;
         .information {
             height: auto;
@@ -215,28 +214,49 @@
                     width: 1283px;
                 }
             }
+            .support-img-wrapper{
+                height: auto;
+                @include desktop{
+                height: 0;
+                }
+
             img {
-                width: 287px;
-                height: 470px;
+                text-align: center;
+                // width: 287px;
+                // height: 470px;
                 @include desktop {
-                    float: right;
+                    display: flex;
+                    top: 82rem;
                     position: absolute;
                     right: 35px;
                 }
-                p {
-                    width: 470px;
-                    font-family: "Noto Sans";
-                    font-size: 20px;
-                    line-height: 46px;
-                    color: #000;
-                    margin: 45px;
-                    @include desktop {
-                        float: right;
-                        position: absolute;
-                        right: 35px;
-                    }
+            }
+
+            p {
+                text-align: center;
+                // height: auto;
+                @include desktop {
+                   display: flex;
+                    top: 18rem;
+                    position: relative;
+                    right: -950px;
+                    width: 25%;
                 }
             }
+        } //support-wrapper
+
+        blockquote {
+            border-left: 6px solid red;
+                @include desktop{
+                    margin: 27px 119px;
+                    width: 30%;
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+
             p {
                 width: 377px;
                 font-family: "Noto Sans";
@@ -245,12 +265,14 @@
                 color: #000;
                 margin: 40px;
                 @include desktop {
-                    width: 852px;
-                    // height: 184px;
-                    font-family: "Noto Sans";
+                    width: 61%;
+                    font-family: Noto Sans;
                     font-size: 22px;
-                    line-height: 46px;
-                }
+                    line-height: 47px;
+                    letter-spacing: .9px;
+                    margin: 30px 40px;                
+                    }
+
                 .info {
                     width: 470px;
                     // height: 294px;
