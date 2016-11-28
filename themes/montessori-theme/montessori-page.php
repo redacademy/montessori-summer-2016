@@ -155,7 +155,6 @@ foreach($fields as $field)
     <h3>archives<span class=""><i class="fa fa-angle-down " aria-hidden="true"></i></span></h3>
     <div id="#"><a href=""></a></div>
   </div>
-  </div>
 </div>
 
 </section>
@@ -194,9 +193,24 @@ echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biogra
   </div>
 <div>
 <button class="green-btn">NW Montessori Program</button>
+
 </div>
+<div class="montessori-archive">
+<h3>Archives</h3>
+</div>
+<div class="montessori-archive">
+<h3>videos</h3>
+</div>
+<div class="montessori-archive">
+<h3>others</h3>
+</div>
+
+
+<button class="green-btn">NW Montessori Program</button>
+
 </div>
 </section>
+
 
 <?php
 get_footer(); ?>

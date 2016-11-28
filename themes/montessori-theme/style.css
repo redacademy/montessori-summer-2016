@@ -239,11 +239,11 @@ th {
 p,
 li {
   font-size: 1.6rem;
-  font-family: "Asap", sans-serif; }
+  font-family: "Asap"; }
 
 h1, h2, h3 {
   text-transform: capitalize;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap";
   font-weight: lighter; }
 
 h1 {
@@ -254,14 +254,37 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  font-family: "Asap", sans-serif; }
+  font-family: "Asap"; }
 
 @media (min-width: 70rem) {
   p,
   li {
     font-size: 2.1rem; }
   h1 {
-    font-family: "Asap", sans-serif;
+    font-family: "Asap";
+    font-weight: lighter;
+    font-size: 2.8rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; } }
+
+h1 {
+  font-size: 2.25rem; }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Asap"; }
+
+@media (min-width: 70rem) {
+  p,
+  li {
+    font-size: 2.1rem; }
+  h1 {
+    font-family: "Asap";
     font-weight: lighter;
     font-size: 2.8rem; }
   h2 {
@@ -302,7 +325,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-size: 16px;
   font-size: 1rem; }
 
@@ -315,7 +338,7 @@ dfn, cite, em, i {
   font-style: italic; }
 
 code, kbd, tt, var {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -335,7 +358,7 @@ big {
 
 html {
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-size: 16px;
   font-size: 1rem; }
 
@@ -346,7 +369,7 @@ html {
 
 body {
   background: #fff;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   box-sizing: border-box;
   margin: 0 auto; }
   body p, body li {
@@ -609,7 +632,7 @@ div .menu-primary-menu-container {
 .main-navigation-container {
   width: 100%;
   background-color: #fff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -734,6 +757,10 @@ button#responsive-menu-button {
 .home .site-header {
   position: absolute; }
 
+.back-to-top {
+  position: absolute;
+  left: 0; }
+
 div .secondary li a {
   padding: 0 10px; }
 
@@ -755,7 +782,7 @@ div .secondary {
   text-align: right;
   min-width: 80%;
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   text-align: right;
   padding-right: 5px;
   margin-top: 10px;
@@ -799,7 +826,7 @@ div .secondary {
 /* Background*/
 .site-footer {
   margin: 0px auto;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   height: 150px;
   background-color: #125A50;
   color: #fff; }
@@ -1590,7 +1617,7 @@ body {
     .main-philosophy .philosophy-grid p {
       text-align: left;
       display: inline-block;
-      font-family: "Noto Sans", sans-serif;
+      font-family: "Noto Sans";
       position: absolute;
       top: -17px;
       overflow-y: scroll;
@@ -1752,7 +1779,7 @@ body {
   width: 500px;
   line-height: 2.5rem;
   font-size: 1.6rem;
-  font-family: "Asap", sans-serif; }
+  font-family: "Asap"; }
   .the-archive ul li {
     padding-left: 30px;
     line-height: inherit;
@@ -1941,7 +1968,6 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-
 .archive-sec {
   display: -ms-flexbox;
   display: flex;
@@ -1958,29 +1984,34 @@ body {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
 
-.site-main
-.involved-wrapper {
-  width: 480px;
-  padding: 0 auto;
-  margin-left: auto;
-  margin-right: auto; }
+/*--------------------------------------------------------------
+#  get involved Page
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+@media (max-width: 780px) {
+  .site-main .involved-wrapper .container {
+    width: 100%;
+    margin: 0 auto; } }
 
 .involved-title {
-  width: 200px;
-  height: 120px;
   background-color: #4FC8A1;
   float: left;
   margin-left: 25px;
+  margin-top: 100px;
   margin-bottom: 25px; }
-
-a {
-  width: 145px;
-  height: 81px;
-  font-family: Asap;
-  font-size: 24px;
-  line-height: 27px;
-  color: #1B1B1B;
-  margin-right: 25px; }
+  .involved-title a {
+    width: 200px;
+    height: 120px;
+    font-family: Asap;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000;
+    margin-right: 25px;
+    background-color: #4FC8A1; }
+    .involved-title a:hover {
+      color: red; }
 
 .gre-button {
   width: 261px;
@@ -2076,9 +2107,8 @@ img {
   font-weight: bold;
   text-align: center;
   line-height: 27px; }
-
-hover {
-  background-color: red; }
+  .re-btn:hover {
+    background-color: red; }
 
 .pink-btn {
   width: 175.38px;
@@ -2132,6 +2162,7 @@ blockquote {
   background-color: #F76072;
   border-radius: 6px;
   color: #fff;
+  margin-left: 80px;
   font-family: "Noto Sans";
   font-size: 24px;
   font-weight: 300;
@@ -2162,7 +2193,7 @@ blockquote {
 h1,
 h2,
 h3 {
-  font-family: "Asap", sans-serif;
+  font-family: "Asap";
   font-weight: normal; }
 
 h1 {
@@ -2180,12 +2211,12 @@ h3 {
 p {
   font-size: 1.625rem;
   line-height: 2.5rem;
-  font-style: "Noto Sans", sans-serif; }
+  font-style: "Noto Sans"; }
 
 .spcil p {
   font-size: 1.25rem;
   line-height: 2.5rem;
-  font-style: "Noto Sans", sans-serif; }
+  font-style: "Noto Sans"; }
 
 .green-btn {
   background-color: #4FC8A1;
@@ -2388,6 +2419,9 @@ p {
   border-bottom: solid 3px #4FC8A1;
   max-width: 85%;
   margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  padding: 30px 0;
   overflow: auto;
   height: 100%;
   padding: 30px 0; }

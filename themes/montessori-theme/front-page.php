@@ -25,7 +25,6 @@ get_header(); ?>
 
     </div>
 
-    </div>
       <section class="links-wrapper ">
           <article class="benifits">
             <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
