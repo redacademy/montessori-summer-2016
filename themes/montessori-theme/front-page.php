@@ -22,11 +22,9 @@ get_header(); ?>
 <!-- this is for the quick links -->
     <div class="link-title">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
-<<<<<<< HEAD
+
     </div>
-=======
-    </div>
->>>>>>> 22ffa10b077fca18faa181bcf81418ad445d9f12
+
       <section class="links-wrapper ">
           <article class="benifits">
             <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
@@ -46,60 +44,61 @@ get_header(); ?>
       <div class="information">
         <h2> <?php echo CFS()->get('support_title'); ?> </h2>
         <p class="info"> <?php echo CFS()->get('first_support_paragraph'); ?> </p>
+
         <div class="support-img-wrapper">
-          <div> <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" /> </div>
-          <div> <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p> </div>
+         <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" />
+          <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p>
         </div>
        <?php echo CFS()->get('second_support_paragraph'); ?>
-
-       <?php echo CFS()->get('second_support_paragraph'); ?>
-
-
-
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
           <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
       </div>
     </section>
 <!-- this is for the features news  -->
-    <section class="all-features ">
-      <h2> <?php echo CFS()->get('featured_title'); ?></h2>
-      <section class="features-wrapper ">
-        <div class="features-flipper">
-          <p class="front">
-            <?php echo CFS()->get('features_front'); ?>
-          </p>
-          <p class="features-back">
-            <?php echo CFS()->get('features_back'); ?>
-            <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
-          </p>
-        </div>
-      </section>
-<!-- second flipper -->
-        <section class="features-wrapper ">
-            <div class="features-flipper">
-              <p class="front">
-                <?php echo CFS()->get('second_features_front'); ?>
-              </p>
-              <p class="features-back">
-                <?php echo CFS()->get('second_features_back'); ?>
-                <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
-              </p>
+<article class="all-features">
+  <h2> Features News</h2>
+    <section class="features-wrapper">
+
+      <?php
+          $args = array(
+            'posts_per_page' => 3
+          );
+          $my_query = new WP_Query($args );
+            if ( $my_query->have_posts() ) {
+              while ( $my_query->have_posts() ) {
+                $my_query->the_post();?>
+
+              <!-- // All the content in the loop goes here -->
+              <div class="features-flipper">
+
+              <div class="story-info">
+                <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+
+                    <div class="features-back">
+                    <?php the_content();?>
+                    <a class="btn" href="<?php the_permalink(); ?>" >Read More</a>
+                  </div>
+              </div>
             </div>
-        </section>
-<!-- third flipper -->
-            <section class="features-wrapper ">
-                <div class="features-flipper">
-                  <p class="front">
-                    <?php echo CFS()->get('third_features_front'); ?>
-                  </p>
-                  <p class="features-back">
-                    <?php echo CFS()->get('third_features_back'); ?>
-                    <a class="features-green-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Read More</a>
-                  </p>
-                </div>
-              </section>
-      </section>
-    </div>
+
+            <?php
+              //echo featured_title();
+              //featured_title();
+              //the_content();
+              }
+            }
+            wp_reset_postdata();
+      ?>
+  </section>
+
+</article>
+
+
+
+
+
+
+
         </main><!-- #main -->
     </div><!-- #primary -->
   <?php get_footer(); ?>

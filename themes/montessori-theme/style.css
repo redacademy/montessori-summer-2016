@@ -239,11 +239,11 @@ th {
 p,
 li {
   font-size: 1.6rem;
-  font-family: "Asap", sans-serif; }
+  font-family: "Asap"; }
 
 h1, h2, h3 {
   text-transform: capitalize;
-  font-family: "Asap", sans-serif;
+  font-family: "Asap";
   font-weight: lighter; }
 
 h1 {
@@ -254,14 +254,37 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  font-family: "Asap", sans-serif; }
+  font-family: "Asap"; }
 
 @media (min-width: 70rem) {
   p,
   li {
     font-size: 2.1rem; }
   h1 {
-    font-family: "Asap", sans-serif;
+    font-family: "Asap";
+    font-weight: lighter;
+    font-size: 2.8rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.5rem; } }
+
+h1 {
+  font-size: 2.25rem; }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Asap"; }
+
+@media (min-width: 70rem) {
+  p,
+  li {
+    font-size: 2.1rem; }
+  h1 {
+    font-family: "Asap";
     font-weight: lighter;
     font-size: 2.8rem; }
   h2 {
@@ -279,7 +302,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-size: 16px;
   font-size: 1rem; }
 
@@ -292,7 +315,7 @@ dfn, cite, em, i {
   font-style: italic; }
 
 code, kbd, tt, var {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -312,7 +335,7 @@ big {
 
 html {
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   font-size: 16px;
   font-size: 1rem; }
 
@@ -323,7 +346,7 @@ html {
 
 body {
   background: #fff;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans";
   box-sizing: border-box;
   margin: 0 auto; }
   body p, body li {
@@ -578,7 +601,7 @@ div .menu-primary-menu-container {
 .main-navigation-container {
   width: 100%;
   background-color: #fff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -719,7 +742,7 @@ div .secondary {
   text-align: right;
   min-width: 80%;
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   text-align: center;
   padding-right: 5px;
   margin-top: 10px;
@@ -757,7 +780,7 @@ div .secondary {
 /* Background*/
 .site-footer {
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   height: 150px;
   background-color: #125A50;
   color: #fff; }
@@ -913,10 +936,14 @@ div .secondary {
 .site-main .home {
   width: 100%;
   height: auto;
+  margin: 0 auto;
   margin: 0 auto; }
   @media (min-width: 70rem) {
     .site-main .home {
       padding: 0px 90px; } }
+  @media (min-width: 70rem) {
+    .site-main .home {
+      padding: 0 90px; } }
   .site-main .home .home-wrapper {
     width: 480px;
     height: 585px;
@@ -1132,153 +1159,184 @@ div .secondary {
       font-size: 25px;
       margin-bottom: 95px;
       height: 125px; }
-      @media (min-width: 70rem) {
-        .site-main .support-wrapper .information blockquote {
-          border-left: 6px solid #D93B57;
-          margin: 27px 119px;
-          width: 70%;
-          height: auto; }
-          .site-main .support-wrapper .information blockquote p {
-            font-size: 24px; } }
-    .site-main .support-wrapper .information p {
-      width: 377px;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      line-height: 46px;
-      color: #000;
-      margin: 40px; }
-      @media (min-width: 70rem) {
-        .site-main .support-wrapper .information p {
-          width: 61%;
-          font-family: Noto Sans;
-          font-size: 22px;
-          line-height: 47px;
-          letter-spacing: .9px;
-          margin: 30px 40px; } }
-      .site-main .support-wrapper .information p .info {
-        width: 470px;
-        font-family: "Noto Sans";
-        font-size: 26px;
-        font-weight: bold;
-        line-height: 42px;
-        color: #000; }
-    .site-main .support-wrapper .information .red-btn {
-      width: 185px;
-      height: 47px;
-      background-color: #F76072;
-      border-color: #F76072;
-      border-radius: 6px;
-      color: #fff;
-      margin-left: 20px;
-      padding: 8px;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      font-weight: 300;
-      letter-spacing: 0.8px;
-      height: 47px;
-      display: -ms-flexbox;
-      display: flex; }
-    .site-main .support-wrapper .information .green-btn {
-      background-color: #4FC8A1;
-      border-color: #4FC8A1;
-      border-radius: 6px;
-      font-family: "Noto Sans";
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      line-height: 30px;
-      color: #fff;
-      margin-left: 20px;
-      padding: 8px;
-      font-weight: 300;
-      letter-spacing: 0.8px;
-      height: 47px;
-      width: 185px;
-      display: -ms-flexbox;
-      display: flex; }
 
-.site-main .all-features {
-  margin-bottom: 30px; }
-  .site-main .all-features h2 {
-    box-sizing: border-box;
-    width: 440px;
-    border-top: 2px solid #2EB688;
-    padding-top: 50px;
-    height: 42px;
-    font-family: 'Asap';
-    font-size: 36px;
-    line-height: 0;
-    color: #000;
-    margin-left: 30px; }
-    .site-main .all-features h2 .container {
-      margin-left: auto;
-      margin-right: auto;
-      width: 480px; }
-  .site-main .all-features .features-wrapper {
-    /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-    background: #aff1d3;
-    width: 200px;
-    box-sizing: border-box;
-    height: 139.76px;
-    width: 480.27px;
-    position: relative;
-    border-radius: 10px;
-    font-family: 'Noto Sans';
-    font-size: 15px;
-    color: #000;
-    text-decoration: none; }
-    .site-main .all-features .features-wrapper .features-flipper {
+@media (min-width: 70rem) and (min-width: 70rem) {
+  .site-main .support-wrapper .information blockquote .support-img-wrapper {
+    height: 0; } }
+      @media (min-width: 70rem) {
+        .site-main .support-wrapper .information blockquote .support-img-wrapper img {
+          margin: 0 6rem; } }
+  @media (min-width: 70rem) and (min-width: 70rem) {
+    .site-main .support-wrapper .information blockquote .support-img-wrapper img {
+      height: auto;
+      display: -ms-flexbox;
+      display: flex;
+      top: -13rem;
+      position: absolute;
+      right: 35px; } }
+      @media (min-width: 70rem) {
+        .site-main .support-wrapper .information blockquote .support-img-wrapper p {
+          text-align: center; } }
+  @media (min-width: 70rem) and (min-width: 70rem) {
+    .site-main .support-wrapper .information blockquote .support-img-wrapper p {
+      display: -ms-flexbox;
+      display: flex;
+      top: 18rem;
       position: relative;
-      -webkit-transition: 1.9s;
-      -webkit-transform-style: preserve-3d;
-      -moz-transition: 1.9s;
-      -moz-transform-style: preserve-3d;
-      -o-transition: 1.9s;
-      -o-transform-style: preserve-3d;
-      transition: 1.9s;
-      transform-style: preserve-3d;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-      .site-main .all-features .features-wrapper .features-flipper:hover {
-        transform: rotateY(180deg);
-        cursor: pointer; }
-      .site-main .all-features .features-wrapper .features-flipper .front {
-        height: auto;
-        text-align: center;
-        overflow: hidden;
-        padding: 20px;
-        width: 450px;
+      right: -950px;
+      width: 25%; } }
+      @media (min-width: 70rem) {
+        .site-main .support-wrapper .information blockquote blockquote {
+          border-left: 6px solid #D93B57;
+          font-size: 25px;
+          margin-bottom: 95px;
+          height: 125px; } }
+  @media (min-width: 70rem) and (min-width: 70rem) {
+    .site-main .support-wrapper .information blockquote blockquote {
+      border-left: 6px solid #D93B57;
+      margin: 27px 119px;
+      width: 70%;
+      height: auto; }
+      .site-main .support-wrapper .information blockquote blockquote p {
+        font-size: 24px; } }
+      @media (min-width: 70rem) {
+        .site-main .support-wrapper .information blockquote p {
+          width: 377px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          line-height: 46px;
+          color: #000;
+          margin: 40px; } }
+  @media (min-width: 70rem) and (min-width: 70rem) {
+    .site-main .support-wrapper .information blockquote p {
+      width: 61%;
+      font-family: Noto Sans;
+      font-size: 22px;
+      line-height: 47px;
+      letter-spacing: .9px;
+      margin: 30px 40px; } }
+      @media (min-width: 70rem) {
+          .site-main .support-wrapper .information blockquote p .info {
+            width: 470px;
+            font-family: "Noto Sans";
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 42px;
+            color: #000; }
+        .site-main .support-wrapper .information blockquote .red-btn {
+          width: 185px;
+          height: 47px;
+          background-color: #F76072;
+          border-color: #F76072;
+          border-radius: 6px;
+          color: #fff;
+          margin-left: 20px;
+          padding: 8px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          font-weight: 300;
+          letter-spacing: 0.8px;
+          height: 47px;
+          display: -ms-flexbox;
+          display: flex; }
+        .site-main .support-wrapper .information blockquote .green-btn {
+          background-color: #4FC8A1;
+          border-color: #4FC8A1;
+          border-radius: 6px;
+          font-family: "Noto Sans";
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 30px;
+          color: #fff;
+          margin-left: 20px;
+          padding: 8px;
+          font-weight: 300;
+          letter-spacing: 0.8px;
+          height: 47px;
+          width: 185px;
+          display: -ms-flexbox;
+          display: flex; } }
+    .site-main .support-wrapper .information .all-features {
+      margin-bottom: 30px; }
+      .site-main .support-wrapper .information .all-features h2 {
+        box-sizing: border-box;
+        width: 440px;
+        border-top: 2px solid #2EB688;
+        padding-top: 50px;
+        height: 42px;
         font-family: 'Asap';
-        font-size: 24px;
-        text-align: center;
-        color: #000000;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; }
-      .site-main .all-features .features-wrapper .features-flipper .features-back {
-        border: 1px solid #248E6A;
-        margin: 0;
-        text-align: center;
-        overflow: hidden;
-        padding: 0;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        position: absolute;
-        bottom: 1px;
-        background-color: #fff;
-        transform: rotateY(180deg); }
-  .site-main .all-features .green-btn {
-    color: #248E6A;
+        font-size: 36px;
+        line-height: 0;
+        color: #000;
+        margin-left: 30px; }
+        .site-main .support-wrapper .information .all-features h2 .container {
+          margin-left: auto;
+          margin-right: auto;
+          width: 480px; }
+      .site-main .support-wrapper .information .all-features .features-wrapper {
+        /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
+        background: #aff1d3;
+        width: 200px;
+        box-sizing: border-box;
+        height: 139.76px;
+        width: 480.27px;
+        position: relative;
+        border-radius: 10px;
+        font-family: 'Noto Sans';
+        font-size: 15px;
+        color: #000;
+        text-decoration: none; }
+        .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper {
+          position: relative;
+          -webkit-transition: 1.9s;
+          -webkit-transform-style: preserve-3d;
+          -moz-transition: 1.9s;
+          -moz-transform-style: preserve-3d;
+          -o-transition: 1.9s;
+          -o-transform-style: preserve-3d;
+          transition: 1.9s;
+          transform-style: preserve-3d;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+          .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper:hover {
+            transform: rotateY(180deg);
+            cursor: pointer; }
+          .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper .front {
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+            padding: 20px;
+            width: 450px;
+            font-family: 'Asap';
+            font-size: 24px;
+            text-align: center;
+            color: #000000;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
+          .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper .features-back {
+            border: 1px solid #248E6A;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            padding: 0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            bottom: 1px;
+            background-color: #fff;
+            transform: rotateY(180deg); }
+      .site-main .support-wrapper .information .all-features .green-btn {
+        color: #248E6A;
+        text-decoration: none; }
+  .site-main .support-wrapper a {
     text-decoration: none; }
-
-a {
-  text-decoration: none; }
 
 body {
   background-color: #ffffff; }
 
-/***************************************************/
 .page .contact_info {
   width: 100%;
   margin: 20px; }
@@ -1537,7 +1595,7 @@ body {
     .main-philosophy .philosophy-grid p {
       text-align: left;
       display: inline-block;
-      font-family: "Noto Sans", sans-serif;
+      font-family: "Noto Sans";
       position: absolute;
       top: -17px;
       overflow-y: scroll;
@@ -1702,7 +1760,7 @@ body {
   width: 500px;
   line-height: 2.5rem;
   font-size: 1.6rem;
-  font-family: "Asap", sans-serif; }
+  font-family: "Asap"; }
   .the-archive ul li {
     padding-left: 30px;
     line-height: inherit;
@@ -2122,7 +2180,7 @@ hover {
 h1,
 h2,
 h3 {
-  font-family: "Asap", sans-serif;
+  font-family: "Asap";
   font-weight: normal; }
 
 h1 {
@@ -2140,12 +2198,12 @@ h3 {
 p {
   font-size: 1.625rem;
   line-height: 2.5rem;
-  font-style: "Noto Sans", sans-serif; }
+  font-style: "Noto Sans"; }
 
 .spcil p {
   font-size: 1.25rem;
   line-height: 2.5rem;
-  font-style: "Noto Sans", sans-serif; }
+  font-style: "Noto Sans"; }
 
 .green-btn {
   background-color: #4FC8A1;
@@ -2348,6 +2406,9 @@ p {
   border-bottom: solid 3px #4FC8A1;
   max-width: 85%;
   margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  padding: 30px 0;
   overflow: auto;
   height: 100%;
   padding: 30px 0; }
@@ -2411,7 +2472,7 @@ p {
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 50px;
     text-shadow: 0 1px 0 #fff;
     padding: 10px;
     line-height: 75px;

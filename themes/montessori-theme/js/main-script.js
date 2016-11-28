@@ -45,8 +45,6 @@ jQuery(document).ready(function( $ ) {
 
 });
 
-
-<<<<<<< HEAD
 // ----------------------------------------------------------------
 // if ( $(".b1") ) {
 //        $('.b1').append('<p>B1 is there</p>')};
@@ -63,13 +61,11 @@ $(".arrow").on("click", function () {
 });
 
 });
-=======
 
 if ( $(".b1") ) {
        $('.b1').append('<p>B1 is there</p>')};
        else if  ($(".b2") ) {
        $('.b2').append('<p>B2 is there</p>');
        alert("b2");}
->>>>>>> 445096c5d91431c2484ea3d1e36c5b42124e4dc4
 
 });
