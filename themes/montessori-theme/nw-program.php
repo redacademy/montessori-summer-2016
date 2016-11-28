@@ -104,8 +104,8 @@ get_header(); ?>
 	</div><!-- #flippre-wrap-->
 </div><!-- #flip-container -->
 		<div class="teacher_det">
-      <p><?php echo CFS()->get('teacher_name'); ?></p>
-    	<p><?php echo CFS()->get('teacher_title'); ?></p>
+      <p style="font-size:20px"><?php echo CFS()->get('teacher_name'); ?></p>
+    	<p style="font-size:20px"><?php echo CFS()->get('teacher_title'); ?></p>
 		</div><!-- #teacher_det -->
 	</div><!-- #teacher_block -->
 
