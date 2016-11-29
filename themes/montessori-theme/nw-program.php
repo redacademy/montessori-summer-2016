@@ -12,13 +12,14 @@ get_header(); ?>
 		<div class="nw-program-wrapper">
 
 	<!-- **********/////////////////Why NW Program Section///////////////********** -->
-
 <section id="nw-program" class="nw-program">
 			<h1>Why NW Montessori</br> Program?</h1>
+			<div class="nw-part1">
 			<div class="why-nw"><?php echo CFS()->get('main-reason'); ?></div>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
+		</div>
 
 		<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
 </section>
@@ -35,17 +36,21 @@ get_header(); ?>
 				<h1>Funding</h1>
 				<h3 >Where does it come from?</h3>
 				<h3>There are two ways of answering this</h3>
-			  <div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('funding-block'); ?></p></div>
+			<div class="nw-part2">
+			 <div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('funding-block'); ?></p></div>
 				<div class="funding-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
-				<div class="funding-det">
+			</div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
 				<h2>How is the money spent?</h2>
+				<div class="nw-part3">
+					<div class="money-spend-para">
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
 			</div>
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
+ </div>
  </div>
 				<div class="funding-btn">
 				<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</button>
@@ -104,8 +109,8 @@ get_header(); ?>
 	</div><!-- #flippre-wrap-->
 </div><!-- #flip-container -->
 		<div class="teacher_det">
-      <p><?php echo CFS()->get('teacher_name'); ?></p>
-    	<p><?php echo CFS()->get('teacher_title'); ?></p>
+      <p style="font-size:20px"><?php echo CFS()->get('teacher_name'); ?></p>
+    	<p style="font-size:20px"><?php echo CFS()->get('teacher_title'); ?></p>
 		</div><!-- #teacher_det -->
 	</div><!-- #teacher_block -->
 
