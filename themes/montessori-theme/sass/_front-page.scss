@@ -1,9 +1,12 @@
 //-------------------front page---------------------------//
-// media screen for mobile (max-width: 480px)
 .site-main {
     .home {
         width: 100%;
         height: auto;
+         margin: 0 auto;
+         @include desktop{
+            padding: 0px 90px;
+         }
         margin: 0 auto;
         @include desktop {
             padding: 0 90px;
@@ -216,6 +219,43 @@
                     width: 1283px;
                 }
             }
+            .support-img-wrapper{
+                height: auto;
+                @include desktop{
+                height: 0;
+                }
+
+            img {
+                margin: 0px 6rem;
+                // width: 287px;
+                // height: 470px;
+                @include desktop {
+                    display: flex;
+                    top: 82rem;
+                    position: absolute;
+                    right: 35px;
+                }
+            }
+
+            p {
+                text-align: center;
+                // height: auto;
+                @include desktop {
+                   display: flex;
+                    top: 18rem;
+                    position: relative;
+                    right: -950px;
+                    width: 25%;
+                }
+            }
+        } //support-wrapper
+
+        blockquote {
+            border-left: 6px solid #D93B57;
+            font-size: 25px;
+            margin-bottom: 95px;
+            height: 125px;
+                @include desktop{
             .support-img-wrapper {
                 // height: auto;
                 @include desktop {
@@ -256,11 +296,11 @@
                     margin: 27px 119px;
                     width: 70%;
                     height: auto;
-                    p {
-                        font-size: 24px;
-                    }
+                p {
+                    font-size: 24px;
                 }
             }
+        }
             p {
                 width: 377px;
                 font-family: "Noto Sans";
@@ -273,9 +313,10 @@
                     font-family: Noto Sans;
                     font-size: 22px;
                     line-height: 47px;
-                    letter-spacing: 0.9px;
+                    letter-spacing: .9px;
                     margin: 30px 40px;
-                }
+                    }
+
                 .info {
                     width: 470px;
                     // height: 294px;
@@ -451,13 +492,11 @@
         .green-btn {
             color: #248E6A;
             text-decoration: none;
-        }
-    }
+    }}
 }
 a {
     text-decoration: none;
-}
+    }} }
 body {
     background-color: #ffffff;
 }
-/***************************************************/
