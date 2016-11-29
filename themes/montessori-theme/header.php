@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The header for our theme.
@@ -54,6 +55,7 @@ wp_nav_menu(array(
 <nav>
 <!--end the bar between two menues  -->
             <?php
+
 if (is_page_template('about.php')): ?>
                         <?php
   wp_nav_menu(array(
@@ -101,6 +103,7 @@ elseif (is_page_template('nw-program.php')): ?>
 ?>
 
                     <?php
+
 endif; ?>
                 </div>
             </div>

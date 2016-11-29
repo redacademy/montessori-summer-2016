@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @ah-programer
- Unwatch 7
-  Star 0
- Fork 0 redacademy/montessori-summer-2016
- Code  Issues 8  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathmontessori-summer-2016/themes/montessori-theme/montessori-page.php
-9b4520d  3 hours ago
-@yousefhad yousefhad add all the fontswe need from google and linked them from functions t…
-2 contributors @yousefhad @ah-programer
-RawBlameHistory
-221 lines (182 sloc)  5.01 KB
 
 <?php
 /**
@@ -39,6 +22,7 @@ output_image('history_img'); ?>
           <div class="history-title" >
          <h1><?php
 $history = CFS()->get('history_title');
+
 if (!empty($history))
   {
   echo $history;
@@ -53,6 +37,7 @@ output_image('history_img'); ?>
 <div class="history-content">
 <p><?php
 $histor = CFS()->get('history_content');
+
 if (!empty($histor))
 {
 echo $histor;
@@ -74,6 +59,7 @@ echo $histor;
  <?php
 $fields = CFS()->get('philosophy'); ?>
 <?php
+
 foreach($fields as $field)
   { ?>
 <div class="philosophy-grid">
@@ -106,6 +92,7 @@ output_image('benefits_img'); ?>
   <div class="benefits-content">
       <?php
 $benefit = CFS()->get('benefits_content');
+
 if (!empty($benefit))
 {
 echo $benefit;
@@ -121,6 +108,7 @@ echo $benefit;
         <?php
 $fields = CFS()->get('benefits_details'); ?>
         <?php
+
 foreach($fields as $field)
   { ?>
       <div class="benefits">
@@ -130,6 +118,7 @@ foreach($fields as $field)
         </li>
         <?php
   }
+
 ?>
       </div>
            </ul>
@@ -150,6 +139,7 @@ foreach($fields as $field)
 <?php
 $fields = CFS()->get('materials'); ?>
 <?php
+
 foreach($fields as $field)
   { ?>
 <div class="materials materials-grid">
@@ -164,6 +154,7 @@ foreach($fields as $field)
   echo '<img src="' . $src[0] . '" />'; ?></div>
 </div>
 <?php
+
   } ?>
   <!-- Archive Title -->
   <div class="montessori-archive">
@@ -227,5 +218,3 @@ echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
 
 <?php
 get_footer(); ?>
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help

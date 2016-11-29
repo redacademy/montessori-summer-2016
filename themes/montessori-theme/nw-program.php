@@ -55,7 +55,6 @@ get_header(); ?>
 	<!-- **********/////////Custom Post Loop To Call School List/////////********** -->
 
 	<section id="schools-teachers" class="school-list">
-
 		<h1>Schools & Teachers</h1>
 				<?php query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'school' ));?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -120,7 +119,7 @@ get_header(); ?>
 
   <section class="preschools-list">
   <!-- Custom Field Loop To Call Preschools List  -->
-	<h1>List of Private </br>Montessori Preschools<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
+	<h1>List of Private Montessori Preschools<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
 		 <div class="target">
 	<?php
   	$fields = CFS()->get( 'list_of_preschools' );
@@ -128,8 +127,8 @@ get_header(); ?>
       <p style="font-size:1.4rem"><span style="color:#248E6A"><?php echo $field['school_name'];?></span>
 		  <?php echo $field['adrees']?> </p>
       <?php  } ?>
-			</div>
   <?php echo '<p>'.CFS()->get( 'abstract' ).'</p>'; ?>
+		</div>
    </section>
 
  <!-- **********/////////////////Enrollment Section///////////////********** -->
@@ -140,8 +139,9 @@ get_header(); ?>
 <div class="enroll-info">
 				<h3 >When can my child start?</h3>
 				<p> <?php echo CFS()->get('time-start'); ?> </p>
-
 			  <h3 >How do I apply?</h3>
+				<div class="enrollment-wrap">
+					<div class="guids">
 		  	<ol>
 			  <?php $fields = CFS()->get( 'guids' );
 
@@ -151,7 +151,7 @@ get_header(); ?>
 			  } ?>
 			  </li>
 			  </ol>
-			</div>
+      </div>
 				<div class="enroll-block">
 			  <div class="enroll-img">
 			  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
@@ -159,7 +159,9 @@ get_header(); ?>
 				<div class="enroll-btn">
 			  <button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</button>
 				</div>
+				</div>
 			  </div>
+			</div>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
 </div>
