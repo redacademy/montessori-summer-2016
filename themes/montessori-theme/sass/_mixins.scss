@@ -16,16 +16,16 @@
 }
 //Desktop Screen size
 @mixin desktop {
-	@media (min-width: #{$desktop-width}) {
+	@media (min-width: #{$desktop_width}) {
 		@content;
 	}
 }
 //Tablet Screen size
-@mixin tablet {
-	@media (min-width: #{$Tablet-width}) {
-		@content;
-	}
-}
+// @mixin tablet {
+// 	@media (min-width: #{$Tablet-width}) {
+// 		@content;
+// 	}
+// }
 ///flex mixin
 @mixin flex($align,$justify) {
 	display: flex;

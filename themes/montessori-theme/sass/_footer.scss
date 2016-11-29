@@ -86,10 +86,10 @@
         a {
             padding: 0 22px;
             margin-right: 0;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             @include desktop {
-                font-size: 1.3rem;
-                padding: 0 35px;
+                font-size: 1.2rem;
+                padding: 0 30px;
             };
             color: #D3E0DE;
             text-decoration: none;
@@ -168,7 +168,7 @@
 .desktop-add-block {
     display: none;
     @include desktop {
-        margin-top: -30px;
+        margin-top: -5px;
         display: inline-block;
         min-width: 30%;
 
@@ -178,8 +178,8 @@
         }
 
         li {
-            line-height: 2.5rem;
-            font-size: 1.3rem;
+            line-height: 2rem;
+            font-size: 1.2rem;
         }
 
         a {

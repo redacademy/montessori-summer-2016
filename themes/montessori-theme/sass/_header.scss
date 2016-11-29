@@ -18,17 +18,8 @@
 div .menu-primary-menu-container {
 	width: 100%;
 }
-
-.main-navigation-container {
-	display: flex;
-}
-
 .main-navigation {
 	min-width: 70%;
-}
-
-div .menu-primary-menu-container {
-	width: 100%;
 }
 
 .menu-primary-menu-container {
@@ -53,11 +44,11 @@ div .menu-primary-menu-container {
 	font-family: $font_header_footer;
 	@include flex(center,space-between);
 	height: 5rem;
-	@include tablet {
-		display: inline-block;
-		height: 8rem;
-		padding: 0 15px;
-	}
+
+		display: inline-block;//
+		height: 8rem;//
+		padding: 0 15px;//
+
 }
 
 .menu-primary-menu-container {
@@ -100,13 +91,10 @@ div .menu-primary-menu-container {
 	background-color: #D8D8D8!important;
 	width: 34px!important;
 	height: 4px!important;
-	border-radius: 0px!important;
 }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="button"] {
 	box-shadow: none !important;
 }
 
@@ -169,7 +157,7 @@ button#responsive-menu-button {
 
 .site-header {
 	z-index: 999;
-	min-width: $mobile-width;
+	min-width:380px;
 	width: 100%;
 	background: $white;
 	position: fixed;
@@ -188,6 +176,7 @@ button#responsive-menu-button {
 div {
 	.secondary li a {
 		padding: 0 10px;
+		line-height: 3.2rem;
 	}
 }
 
@@ -220,7 +209,8 @@ div .secondary {
 	min-width: 80%;
 	height: 100%;
 	font-family: $font_header_footer;
-	@include desktop {text-align: right;
+	@include desktop {
+		text-align: right;
 		white-space: inherit;
 		padding: 5px 20 10px 10;
 		height: 65px;

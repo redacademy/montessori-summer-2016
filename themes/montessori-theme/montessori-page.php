@@ -27,7 +27,13 @@ if (!empty($history))
   {
   echo $history;
   };
-?></h1>
+?>
+  <div class= "history-img1" >
+           <?php
+output_image('history_img'); ?>
+          </div>
+
+</h1>
 <div class="history-content">
 <p><?php
 $histor = CFS()->get('history_content');
