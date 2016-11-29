@@ -23,7 +23,7 @@ if ( $query-> have_posts() ) :
  while ($query-> have_posts() )  : $query->the_post(); ?>
   <div class="involved-title">
      <a href="#"><?php the_title(); ?></a>
-     
+     <div class="moretag" href="<?php the_permalink(); ?>"></div>
 
 
   </div>
@@ -39,7 +39,7 @@ if ( $query-> have_posts() ) :
  </div>
 
      <div class="button">
-       <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
+       <a class="gre-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
 
  <?php endwhile; ?>
 <?php endif; ?>
