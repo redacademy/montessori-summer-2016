@@ -11,6 +11,27 @@
 		padding-top: 140px;
 	};
 }
+
+///the second part between two menues///
+
+.the-page-title{
+
+	background-color: $white;
+	height: 40px;
+	ul{display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: relative;
+
+	li{
+		display: inline-block;
+	}}
+	@include desktop{
+display: none;
+	};
+}
+
+
 /////****Start Main Menu**** ////
 
 .main-navigation-container {

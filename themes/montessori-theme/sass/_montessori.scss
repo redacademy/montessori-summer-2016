@@ -257,7 +257,6 @@
 }
 
 .materials {
-    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -272,7 +271,7 @@
         width: 330px;
         height: 330px;
         @include desktop {
-            margin-top: 100px;
+            margin-top: 50px;
 
         }
     }
