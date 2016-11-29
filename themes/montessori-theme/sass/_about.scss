@@ -37,7 +37,7 @@
 		justify-content: space-around;
 		@include desktop {
 				flex-direction:row;
-		};
+		}
 
 		.members-block {
 			flex: 33%;
@@ -47,7 +47,7 @@
 			@include desktop {
 				max-width: 990px;
 					flex: 1;
-			};
+			}
 		}
 	.flip-container {
 		display: block;
@@ -101,7 +101,7 @@
 				height: 200px;
 				right: 4px;
 				top:55px;
-			} ;
+			}
 		}
 	}
 	.flip-container.hover .flipper,
@@ -118,11 +118,11 @@
 		 @media screen and (min-width: 650px){
 			width: 190px;
 			height: 190px;
-		};
+		}
 		@include desktop{
 			width: 200px;
 			height: 200px;
-		} ;
+		}
 	}
 	.back,
 	.front {
