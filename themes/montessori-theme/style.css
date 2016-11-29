@@ -2225,6 +2225,24 @@ img {
   text-align: center;
   width: 50px; }
 
+blockquote {
+  border-left: 10px solid #CB203E;
+  padding: 0 19px; }
+
+.involved .green-btn {
+  padding: 20px 25px 19px 19px;
+  font-size: 25px;
+  height: 200px;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 150%;
+  background-color: #4fc8a1;
+  display: block;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  text-align: center; }
+
 .involved .red-btn {
   padding: 15px 40px;
   background-color: #F76072;
@@ -2242,10 +2260,6 @@ img {
   margin: 20px;
   -ms-flex-direction: row;
       flex-direction: row; }
-
-border-radius {
-  border-left: solid 12px #D93B57;
-  border-color: red; }
 
 /*--------------------------------------------------------------
 # NW Program Page

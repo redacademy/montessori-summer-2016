@@ -89,7 +89,7 @@
     align-self: center;
 }
 img {
-    height: 100%;
+  height: 100%;
 
 }
  @include desktop {
@@ -175,29 +175,29 @@ img {
     }
 }
 // This is for red line beside the paragraf
-// blockquote {
-//     border-left: 10px solid #CB203E;
-//     padding: 0 19px;
-// }
-// .involved {
-//     .green-btn {
-//         padding: 20px 25px 19px 19px;
-//         font-size: 25px;
-//         height: 200px;
-//         display: flex;
-//         -webkit-border-radius: 150%;
-//         -moz-border-radius: 150%;
-//         -ms-border-radius: 150%;
-//         -o-border-radius: 150%;
-//         border-radius: 150%;
-//         background-color: #4fc8a1;
-//         display: block;
-//         width: 200px;
-//         text-align: center;
-//         color: #fff;
-//         text-align: center;
-//     }
-// }
+blockquote {
+    border-left: 10px solid #CB203E;
+    padding: 0 19px;
+}
+.involved {
+    .green-btn {
+        padding: 20px 25px 19px 19px;
+        font-size: 25px;
+        height: 200px;
+        display: flex;
+        -webkit-border-radius: 150%;
+        -moz-border-radius: 150%;
+        -ms-border-radius: 150%;
+        -o-border-radius: 150%;
+        border-radius: 150%;
+        background-color: #4fc8a1;
+        display: block;
+        width: 200px;
+        text-align: center;
+        color: #fff;
+        text-align: center;
+    }
+}
 .involved {
     .red-btn {
         padding: 15px 40px;
@@ -216,8 +216,4 @@ img {
         margin: 20px;
         flex-direction: row;
     }
-}
-border-radius {
-    border-left: solid 12px $border_left_red;
-    border-color: red;
 }
