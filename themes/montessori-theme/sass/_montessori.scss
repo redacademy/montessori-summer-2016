@@ -3,6 +3,25 @@
 --------------------------------------------------------------*/
 /////*Start History Section**/////
 
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.toggle {
+    color: green;
+    padding-left: 10px;
+}
+.fa-angle-down {
+    color: green;
+    padding-left: 10px;
+}
+.history-content {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
 .history-title {
     margin-bottom: 0;
     flex: 0 90%;
@@ -175,7 +194,7 @@
             margin: 0;
             text-align: center;
             display: inline-block;
-            width: 85.1%;
+            width: 80%;
             color: #248e6a;
             height: auto;
             overflow: hidden;
@@ -257,7 +276,6 @@
 }
 
 .materials {
-    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -272,7 +290,7 @@
         width: 330px;
         height: 330px;
         @include desktop {
-            margin-top: 100px;
+            margin-top: 50px;
 
         }
     }
@@ -392,7 +410,6 @@
         }
     }
 }
-
 .benefits-title {
     p {
         padding-top: 4px;
@@ -403,7 +420,21 @@
     }
 }
 ///Archive ////
+.the-archive ul {
+    width: 500px;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    font-family: $font_title;
+    li {
+        padding-left: 30px;
+        line-height: inherit;
+        font-size: 1.4rem;
+        a{
+          color: $color_btn_hover_green;
+        }
+    }}
 .fa-caret-right{
+  cursor: pointer;
   color: $color_btn_hover_green;
   padding-right: 5px;
 }
@@ -422,8 +453,9 @@ width: 450px;
         padding-left: 30px;
         line-height: inherit;
 
-    a{font-size: 1.2rem;@include desktop{font-size: 1.4rem;}
-          color: $color_btn_hover_green;
+    a{color: $color_btn_hover_green;
+      font-size: 1.2rem;@include desktop{font-size: 1.4rem;}
+
       }
     }
 }
@@ -452,32 +484,34 @@ width: 450px;
 .fa-angle-down {
     color: green;
     padding-left: 10px;
+    cursor: pointer;
 }
 /*Start Resources Section  */
 .main-resources {
     border-bottom: none;
     height: 400px;
     position: relative;
+  }
     .green-bt{
         background-color: #4fc8a1;
         @include border-radius (6px);
-
-
         letter-spacing: 0.8px;
         display: block;
         margin: 10px auto;;
         text-shadow: none;
+        width: 300px;
+        height: 60px;
         a{
           font-family: Noto Sans;
-          font-size:1rem;
+          font-size:0.8rem;
           font-weight: 700;
           text-align: center;
           line-height: 28px;
           color: #fff;
-          padding: 10px 20px;
+          padding: 10px 25px;
         }
         @include desktop {
-            width: 331px;
+            width: 400px;
             height: 65px;
             font-size: 20px;
             a{
@@ -485,4 +519,3 @@ font-size:1.1rem;
             }
         }
     }
-}

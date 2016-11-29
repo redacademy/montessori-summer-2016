@@ -11,6 +11,27 @@
 		padding-top: 140px;
 	};
 }
+
+///the second part between two menues///
+
+.the-page-title{
+
+	background-color: $white;
+	height: 40px;
+	ul{display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: relative;
+
+	li{
+		display: inline-block;
+	}}
+	@include desktop{
+display: none;
+	};
+}
+
+
 /////****Start Main Menu**** ////
 
 .main-navigation-container {
@@ -230,44 +251,6 @@ div {
 	}
 }
 div .secondary {
-    position: relative;
-    text-align: right;
-    min-width: 80%;
-    height: 100%;
-    font-family: $font_header_footer;
-    @include desktop {
-        white-space: inherit;
-        padding: 5px 20 10px 10;
-        height: 65px;
-    }
-    text-align: right;
-    padding-right:5px;
-    margin-top: 10px;
-    background-color: #248E6A;
-    & .active {
-        background-color: $color_btn_green;
-    }
-    ul{
-        min-width:50%;
-    }
-    li {
-        display: inline-block;
-        padding: 7px 10px;
-        @include desktop {
-            padding: 7px 15px;
-        };
-        a {
-            padding: 0 8px;
-            margin-right: 0;
-            font-weight: lighter;
-            font-size: 1.2rem;
-            @include desktop {
-                font-size: 1.4rem;
-            }
-            text-decoration: none;
-            color: white;
-          }
-    }
 	position: relative;
 
 

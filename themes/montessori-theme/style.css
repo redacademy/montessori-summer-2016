@@ -51,9 +51,6 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Asap");
-@import url("https://fonts.googleapis.com/css?family=PT");
-@import url("https://fonts.googleapis.com/css?family=Noto");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -288,7 +285,7 @@ h1, h2, h3 {
   font-weight: lighter; }
 
 h1 {
-  font-size: 1rem; }
+  font-size: 2rem; }
 
 h2 {
   font-size: 1.6rem; }
@@ -553,6 +550,23 @@ object {
     .home .site-content {
       padding-top: 140px; } }
 
+.the-page-title {
+  background-color: #fff;
+  height: 40px; }
+  .the-page-title ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    position: relative; }
+    .the-page-title ul li {
+      display: inline-block; }
+  @media (min-width: 768px) {
+    .the-page-title {
+      display: none; } }
+
 .main-navigation-container {
   display: -ms-flexbox;
   display: flex; }
@@ -579,7 +593,7 @@ div .menu-primary-menu-container {
 .main-navigation-container {
   width: 100%;
   background-color: #fff;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Serif", serif;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -724,44 +738,10 @@ div .secondary li a {
 
 div .secondary {
   position: relative;
-  text-align: right;
-  min-width: 80%;
-  height: 100%;
-  font-family: "PT Sans", sans-serif;
-  text-align: right;
-  padding-right: 5px;
-  margin-top: 10px;
-  background-color: #248E6A;
-  position: relative;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Serif", serif;
   text-align: center;
   padding-right: 5px;
   background-color: #248E6A; }
-  @media (min-width: 768px) {
-    div .secondary {
-      white-space: inherit;
-      padding: 5px 20 10px 10;
-      height: 65px; } }
-  div .secondary .active {
-    background-color: #4FC8A1; }
-  div .secondary ul {
-    min-width: 50%; }
-  div .secondary li {
-    display: inline-block;
-    padding: 7px 10px; }
-    @media (min-width: 768px) {
-      div .secondary li {
-        padding: 7px 15px; } }
-    div .secondary li a {
-      padding: 0 8px;
-      margin-right: 0;
-      font-weight: lighter;
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: white; }
-      @media (min-width: 768px) {
-        div .secondary li a {
-          font-size: 1.4rem; } }
   @media (min-width: 768px) {
     div .secondary {
       text-align: right;
@@ -795,7 +775,7 @@ div .secondary {
 /* Background*/
 .site-footer {
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Serif", serif;
   height: 150px;
   background-color: #125A50;
   color: #fff; }
@@ -1291,35 +1271,63 @@ div .secondary {
           width: 480px; }
       .site-main .support-wrapper .information .all-features .features-wrapper {
         /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-        background: #aff1d3;
-        width: 200px;
-        box-sizing: border-box;
-        height: 139.76px;
-        width: 480.27px;
-        position: relative;
-        border-radius: 10px;
-        font-family: 'Noto Sans';
-        font-size: 15px;
-        color: #000;
-        text-decoration: none; }
+        margin: 100px auto;
+        height: auto;
+        display: flex;
+        display: -ms-flexbox;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        position: relative; }
+        @media (min-width: 768px) {
+          .site-main .support-wrapper .information .all-features .features-wrapper {
+            height: 640px;
+            display: -ms-flexbox;
+            display: flex; } }
         .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper {
-          position: relative;
-          -webkit-transition: 1.9s;
-          -webkit-transform-style: preserve-3d;
-          -moz-transition: 1.9s;
-          -moz-transform-style: preserve-3d;
-          -o-transition: 1.9s;
-          -o-transform-style: preserve-3d;
-          transition: 1.9s;
-          transform-style: preserve-3d;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
-          -ms-flex-direction: row;
-              flex-direction: row; }
-          .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper:hover {
-            transform: rotateY(180deg);
-            cursor: pointer; }
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+          width: 400px;
+          height: 400px;
+          background-color: #AFF1D3;
+          margin-top: 20px;
+          display: flex;
+          display: -ms-flexbox;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          position: relative; }
+          @media (min-width: 768px) {
+            .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper {
+              width: 300px;
+              height: 300px;
+              cursor: pointer;
+              background-color: #AFF1D3;
+              -webkit-transition: 1.9s;
+              -webkit-transform-style: preserve-3d;
+              -moz-transition: 1.9s;
+              -moz-transform-style: preserve-3d;
+              -o-transition: 1.9s;
+              -o-transform-style: preserve-3d;
+              transition: 1.9s;
+              transform-style: preserve-3d;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+              border-radius: 10px; }
+              .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper:hover {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                transform: rotateY(180deg); } }
           .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper .front {
+            background: #aff1d3;
             height: auto;
             text-align: center;
             overflow: hidden;
@@ -1331,18 +1339,27 @@ div .secondary {
             color: #000000;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
+            @media (min-width: 768px) {
+              .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper .front {
+                width: 100%; } }
           .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper .features-back {
             border: 1px solid #248E6A;
             margin: 0;
             text-align: center;
             overflow: hidden;
             padding: 0;
+            height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             position: absolute;
             bottom: 1px;
             background-color: #fff;
             transform: rotateY(180deg); }
+            .site-main .support-wrapper .information .all-features .features-wrapper .features-flipper .features-back p {
+              font-size: 15px;
+              text-align: start;
+              line-height: 31px;
+              padding: 10px; }
       .site-main .support-wrapper .information .all-features .green-btn {
         color: #248E6A;
         text-decoration: none; }
@@ -1418,6 +1435,26 @@ body {
 /*--------------------------------------------------------------
 # Montessori
 --------------------------------------------------------------*/
+.rotate {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
+
+.toggle {
+  color: green;
+  padding-left: 10px; }
+
+.fa-angle-down {
+  color: green;
+  padding-left: 10px; }
+
+.history-content {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 30px; }
+
 .history-title {
   margin-bottom: 0;
   -ms-flex: 0 90%;
@@ -1576,7 +1613,7 @@ body {
       margin: 0;
       text-align: center;
       display: inline-block;
-      width: 85.1%;
+      width: 80%;
       color: #248e6a;
       height: auto;
       overflow: hidden;
@@ -1641,7 +1678,6 @@ body {
   width: 90%; }
 
 .materials {
-  margin-top: 50px;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -1666,7 +1702,7 @@ body {
     height: 330px; }
     @media (min-width: 768px) {
       .materials img {
-        margin-top: 100px; } }
+        margin-top: 50px; } }
 
 .materials-contents {
   width: 90%; }
@@ -1768,7 +1804,20 @@ body {
     .benefits-title p {
       font-size: 1.5rem; } }
 
+.the-archive ul {
+  width: 500px;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  font-family: "Asap", sans-serif; }
+  .the-archive ul li {
+    padding-left: 30px;
+    line-height: inherit;
+    font-size: 1.4rem; }
+    .the-archive ul li a {
+      color: #248E6A; }
+
 .fa-caret-right {
+  cursor: pointer;
   color: #248E6A;
   padding-right: 5px; }
 
@@ -1786,8 +1835,8 @@ body {
     padding-left: 30px;
     line-height: inherit; }
     .the-archive ul li a {
-      font-size: 1.2rem;
-      color: #248E6A; }
+      color: #248E6A;
+      font-size: 1.2rem; }
       @media (min-width: 768px) {
         .the-archive ul li a {
           font-size: 1.4rem; } }
@@ -1809,35 +1858,39 @@ body {
 
 .fa-angle-down {
   color: green;
-  padding-left: 10px; }
+  padding-left: 10px;
+  cursor: pointer; }
 
 /*Start Resources Section  */
 .main-resources {
   border-bottom: none;
   height: 400px;
   position: relative; }
-  .main-resources .green-bt {
-    background-color: #4fc8a1;
-    border-radius: 6px;
-    letter-spacing: 0.8px;
-    display: block;
-    margin: 10px auto;
-    text-shadow: none; }
-    .main-resources .green-bt a {
-      font-family: Noto Sans;
-      font-size: 1rem;
-      font-weight: 700;
-      text-align: center;
-      line-height: 28px;
-      color: #fff;
-      padding: 10px 20px; }
-    @media (min-width: 768px) {
-      .main-resources .green-bt {
-        width: 331px;
-        height: 65px;
-        font-size: 20px; }
-        .main-resources .green-bt a {
-          font-size: 1.1rem; } }
+
+.green-bt {
+  background-color: #4fc8a1;
+  border-radius: 6px;
+  letter-spacing: 0.8px;
+  display: block;
+  margin: 10px auto;
+  text-shadow: none;
+  width: 300px;
+  height: 60px; }
+  .green-bt a {
+    font-family: Noto Sans;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    padding: 10px 25px; }
+  @media (min-width: 768px) {
+    .green-bt {
+      width: 400px;
+      height: 65px;
+      font-size: 20px; }
+      .green-bt a {
+        font-size: 1.1rem; } }
 
 /*--------------------------------------------------------------
 # About Page
@@ -2459,10 +2512,8 @@ p {
   border-bottom: solid 3px #4FC8A1;
   max-width: 85%;
   margin: 0 auto;
-  overflow: hidden;
   height: 100%;
   padding: 30px 0;
-  overflow: auto;
   height: 100%;
   padding: 30px 0; }
 

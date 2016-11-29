@@ -1,3 +1,4 @@
+
 /********* Montessori Site Structure **********/
 
 $base_space_unit: 1.5em;
@@ -5,8 +6,8 @@ $basic_pading: 0.625rem; /// ==>10px ////
 $basic_margin: 0.625rem; /// ==>10px ////
 $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
-$desktop_width:768px; //768px
-// $Tablet_width:40rem; //
+$desktop_width:768px; //992px
+$desktop_large_width:992px; //
 $mobile_width:37.5rem; //480px for Mobile Container
 //Layout//
 $mobile_line_height:1.5rem;
@@ -39,13 +40,14 @@ $white: #fff;
 
 
 // Typography ///
-$font_title: 'Asap',sans-serif;
-$font_header_footer: 'PT Sans',sans-serif;
-$font_body: 'Noto Sans',sans-serif;
-$font_main: 'Noto Sans',sans-serif;
+$font_title: 'Asap', sans-serif;
+$font_header_footer:  'PT Serif', serif;
+$font_body: 'Noto Sans', sans-serif;
+$font_main: 'Noto Sans', sans-serif;
+
 ///Font Sizing ///
 // mobile sizes ///
-$h1_size_mob: 1rem;
+$h1_size_mob: 2rem;
 $h2_size_mob: 1.6rem;
 $h3_size_mob: 1.4rem;
 $font_school_info: 1.5rem;
