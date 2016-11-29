@@ -117,7 +117,7 @@
 .main-philosophy {
     margin: 100px auto;
     width: 400px;
-    min-width: 90%;
+    min-width: 80%;
     height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
@@ -287,8 +287,8 @@
     }
 
     img {
-        width: 330px;
-        height: 330px;
+        width: 300px;
+        height: 300px;
         @include desktop {
             margin-top: 50px;
 
@@ -364,13 +364,12 @@
     }
 
     img {
-        width: 250px;
-        height: 250px;
-        margin-top: 30px;
+      width: 300px;
+      height: 300px;
+        padding-top:50px;
         @include desktop {
             align-self: flex-start;
-            width: 330px;
-            height: 330px;
+
             margin: 0 40px 20px 0;
         }
     }
