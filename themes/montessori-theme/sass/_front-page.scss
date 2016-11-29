@@ -1,4 +1,6 @@
 //-------------------front page---------------------------//
+
+// media screen for mobile (max-width: 480px)
 .site-main {
     .home {
         width: 100%;
@@ -7,10 +9,6 @@
          @include desktop{
             padding: 0px 90px;
          }
-        margin: 0 auto;
-        @include desktop {
-            padding: 0 90px;
-        }
         .home-wrapper {
             width: 480px;
             height: 585px;
@@ -27,7 +25,6 @@
                     width: 1264px;
                     height: 555px;
                     z-index: -1;
-
                     position: absolute;
                 }
             }
@@ -82,7 +79,7 @@
                     max-width: 320px;
                     margin: 90px 100px;
                     text-align: center;
-                }
+                } 
             }
             // }//welcome-wrapper
         }
@@ -220,7 +217,7 @@
                 }
             }
             .support-img-wrapper{
-                height: auto;
+                // height: auto;
                 @include desktop{
                 height: 0;
                 }
@@ -230,10 +227,11 @@
                 // width: 287px;
                 // height: 470px;
                 @include desktop {
+                    height: auto;
                     display: flex;
-                    top: 82rem;
+                    // top: -13rem;
                     position: absolute;
-                    right: 35px;
+                    // right: -115px;
                 }
             }
 
@@ -242,10 +240,10 @@
                 // height: auto;
                 @include desktop {
                    display: flex;
-                    top: 18rem;
+                    // top: 18rem;
                     position: relative;
                     right: -950px;
-                    width: 25%;
+                    // width: 25%;
                 }
             }
         } //support-wrapper
@@ -256,42 +254,6 @@
             margin-bottom: 95px;
             height: 125px;
                 @include desktop{
-            .support-img-wrapper {
-                // height: auto;
-                @include desktop {
-                    height: 0;
-                }
-                img {
-                    margin: 0 6rem;
-                    // width: 287px;
-                    // height: 470px;
-                    @include desktop {
-                        height: auto;
-                        display: flex;
-                        top: -13rem;
-                        position: absolute;
-                        right: 35px;
-                    }
-                }
-                p {
-                    text-align: center;
-                    // height: auto;
-                    @include desktop {
-                        display: flex;
-                        top: 18rem;
-                        position: relative;
-                        right: -950px;
-                        width: 25%;
-                    }
-                }
-            }
-            //support-wrapper
-            blockquote {
-                border-left: 6px solid #D93B57;
-                font-size: 25px;
-                margin-bottom: 95px;
-                height: 125px;
-                @include desktop {
                     border-left: 6px solid #D93B57;
                     margin: 27px 119px;
                     width: 70%;
@@ -301,6 +263,7 @@
                 }
             }
         }
+
             p {
                 width: 377px;
                 font-family: "Noto Sans";
@@ -314,7 +277,7 @@
                     font-size: 22px;
                     line-height: 47px;
                     letter-spacing: .9px;
-                    margin: 30px 40px;
+                    margin: 30px 40px;                
                     }
 
                 .info {
@@ -344,6 +307,7 @@
                 // width: 200px;
                 height: 47px;
                 display: flex;
+
             }
             .green-btn {
                 background-color: #4FC8A1;
@@ -367,8 +331,7 @@
         //information
     }
     //support-wrapper
-
-// this is for the features fliper
+    // this is for the features fliper
     .all-features {
         margin-bottom: 30px;
         h2 {
@@ -391,58 +354,37 @@
         .features-wrapper {
             /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
             // background: #aff1d3;
-            // width: 200px;
-            // box-sizing: border-box;
-            // // width: 480.27px;
-            // position: relative;
-            // border-radius: 10px;
-            // font-family: 'Noto Sans';
-            // font-size: 15px;
-            // color: #000;
-            // text-decoration: none;
-            margin: 100px auto;
-            height: auto;
-            @include flex(center,space-around);
-            flex-wrap: wrap;
+            width: 200px;
+            box-sizing: border-box;
+            // height: 139.76px;
+            width: 480.27px;
             position: relative;
-            @include desktop {
-                height: 640px;
-                display: flex;
-            }
-            .features-flipper {
-                flex: 0 0 auto;
-                width: 400px;
-                height: 400px;
-                background-color: #AFF1D3;
-                margin-top: 20px;
-                @include flex(center,space-between);
-                flex-wrap: wrap;
-                position: relative;
-                @include desktop {
-                    width: 300px;
-                    height: 300px;
-                    cursor: pointer;
-                    background-color: #AFF1D3;
-                    // position: relative;
-                    -webkit-transition: 1.9s;
-                    -webkit-transform-style: preserve-3d;
-                    -moz-transition: 1.9s;
-                    -moz-transform-style: preserve-3d;
-                    -o-transition: 1.9s;
-                    -o-transform-style: preserve-3d;
-                    transition: 1.9s;
-                    transform-style: preserve-3d;
-                    justify-content: space-around;
-                    flex-direction: row;
-                    @include border-radius(10px);
-                    &:hover {
-                        @include visibility(hidden);
-                        @include rotate(180deg);
-                    }
-                }
+            border-radius: 10px;
+            font-family: 'Noto Sans';
+            font-size: 15px;
+            color: #000;
+            text-decoration: none;	
 
+            .features-flipper {
+                position: relative;
+                -webkit-transition: 1.9s;
+                -webkit-transform-style: preserve-3d;
+                -moz-transition: 1.9s;
+                -moz-transform-style: preserve-3d;
+                -o-transition: 1.9s;
+                -o-transform-style: preserve-3d;
+                transition: 1.9s;
+                transform-style: preserve-3d;
+                justify-content: space-around;
+                flex-direction: row;
+                &:hover {
+                    -webkit-transform: rotateY(180deg);
+                    -moz-transform: rotateY(180deg);
+                    -o-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+                    cursor: pointer;
+                }
                 .front {
-                  background: #aff1d3;
                     height: auto;
                     text-align: center;
                     overflow: hidden;
@@ -456,9 +398,6 @@
                     -moz-backface-visibility: hidden;
                     -o-backface-visibility: hidden;
                     backface-visibility: hidden;
-                    @include desktop{
-                      width: 100%;
-                    }
                 }
                 .features-back {
                     // width: 480px;
@@ -468,7 +407,6 @@
                     text-align: center;
                     overflow: hidden;
                     padding: 0;
-                    height: 100%;
                     -webkit-backface-visibility: hidden;
                     -moz-backface-visibility: hidden;
                     -o-backface-visibility: hidden;
@@ -480,23 +418,19 @@
                     -moz-transform: rotateY(180deg);
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
-                    p{
-                      font-size: 15px;
-                      text-align: start;
-                      line-height: 31px;
-                      padding: 10px;
-                  }
                 }
             }
         }
         .green-btn {
             color: #248E6A;
             text-decoration: none;
-    }}
+        }
+    }
 }
 a {
     text-decoration: none;
-    }} }
+}
 body {
     background-color: #ffffff;
 }
+/***************************************************/
