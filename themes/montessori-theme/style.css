@@ -905,6 +905,7 @@ div .secondary {
       .desktop-add-block a:hover {
         color: #248E6A; } }
 
+/***************************************************/
 .page .contact_info {
   width: 100%;
   margin: 20px; }
@@ -1405,6 +1406,43 @@ div .secondary {
   max-width: 768px;
   background-color: grey; }
 
+h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6875rem; }
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.spcil p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.green-btn {
+  background-color: #4FC8A1;
+  color: #fff;
+  font-family: "Noto Sans";
+  border-radius: 6px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none; }
+
 .about-school {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 4.875rem; }
@@ -1518,7 +1556,8 @@ div .secondary {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -1770,11 +1809,7 @@ hover {
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
-* {
-  box-sizing: border-box; }
-
 .nw-program-wrapper {
-  max-width: 768px;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
@@ -1782,8 +1817,26 @@ hover {
   -ms-flex-align: center;
       align-items: center; }
 
+h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6875rem; }
+
 p {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-style: "Noto Sans", sans-serif; }
 
@@ -1804,11 +1857,9 @@ p {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
   .nw-program .why-nw p {
-    display: block; }
-    @media (min-width: 768px) {
-      .nw-program .why-nw p {
-        -moz-text-align-last: right;
-             text-align-last: right; } }
+    display: block;
+    -ms-flex-negative: 5;
+        flex-shrink: 5; }
   .nw-program .nw-img {
     display: -ms-flexbox;
     display: flex;
@@ -1818,9 +1869,7 @@ p {
     margin-bottom: 1.875rem; }
     @media (min-width: 768px) {
       .nw-program .nw-img {
-        float: right;
-        width: 900rem;
-        height: 300px; } }
+        width: 50%; } }
 
 @media (min-width: 768px) {
   .nw-part1 {
@@ -1842,48 +1891,57 @@ p {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center; }
-    @media (min-width: 768px) {
-      .funding .funding-img,
-      .funding .money-spend-img {
-        width: 50%;
-        margin-bottom: 4rem; } }
+        justify-content: center;
+    margin-top: 2rem; }
+  @media (min-width: 768px) {
+    .funding .funding-img img {
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+      width: 120%; } }
+  @media (min-width: 768px) {
+    .funding .money-spend-img img {
+      padding-right: 1.7rem; } }
   @media (min-width: 768px) {
     .funding .nw-part2 {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center; }
+      .funding .nw-part2 .red-border-container {
+        width: 82%;
+        display: -ms-flexbox;
+        display: flex; } }
   @media (min-width: 768px) {
     .funding .nw-part3 {
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-align: center;
+          align-items: center;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
     .funding .money-spend-para {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex: 25%;
-          flex: 25%;
-      height: 50%;
-      -ms-flex-negative: 2;
-          flex-shrink: 2; }
-    .funding img {
-      height: 60%; } }
-  @media (min-width: 768px) {
-    .funding .red-border-container {
-      width: 60%;
-      height: 20rem; } }
+      -ms-flex-negative: 5;
+          flex-shrink: 5; } }
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     margin-top: 1.875rem; }
+    @media (min-width: 768px) {
+      .funding .funding-btn {
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
     .funding .funding-btn .green-btn {
       padding: 10px;
       width: 44.666%;
       margin-right: 2px; }
+      @media (min-width: 768px) {
+        .funding .funding-btn .green-btn {
+          padding: 1.2rem;
+          width: 18%; } }
 
 .school-list {
   display: -ms-flexbox;
@@ -1935,6 +1993,10 @@ p {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media (min-width: 768px) {
+    .teacher-list {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .teacher-list .teacher-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1942,6 +2004,10 @@ p {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    @media (min-width: 768px) {
+      .teacher-list .teacher-grid {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
     .teacher-list .teacher-grid .teacher-block {
       -ms-flex: 33%;
           flex: 33%;
@@ -1953,6 +2019,7 @@ p {
           align-items: center; }
       @media (min-width: 768px) {
         .teacher-list .teacher-grid .teacher-block {
+          max-width: 990px;
           -ms-flex: 1;
               flex: 1; } }
     .teacher-list .teacher-grid .flip-container {
@@ -1990,21 +2057,39 @@ p {
       .teacher-list .teacher-grid .flip-container .back {
         border-radius: 50%;
         position: absolute;
-        width: 100px;
+        width: 125px;
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 100px;
+        height: 125px;
         text-align: center;
         right: 3px;
         transform: rotateY(180deg); }
+        @media (min-width: 768px) {
+          .teacher-list .teacher-grid .flip-container .back {
+            width: 200px;
+            height: 200px;
+            right: 4px;
+            top: 55px; } }
     .teacher-list .teacher-grid .flip-container.hover .flipper,
     .teacher-list .teacher-grid .flip-container:hover .flipper {
       transform: rotateY(180deg); }
     .teacher-list .teacher-grid .back,
     .teacher-list .teacher-grid .flip-container,
     .teacher-list .teacher-grid .front {
-      width: 100px;
-      height: 100px; }
+      width: 125px;
+      height: 125px; }
+      @media screen and (min-width: 650px) {
+        .teacher-list .teacher-grid .back,
+        .teacher-list .teacher-grid .flip-container,
+        .teacher-list .teacher-grid .front {
+          width: 190px;
+          height: 190px; } }
+      @media (min-width: 768px) {
+        .teacher-list .teacher-grid .back,
+        .teacher-list .teacher-grid .flip-container,
+        .teacher-list .teacher-grid .front {
+          width: 200px;
+          height: 200px; } }
     .teacher-list .teacher-grid .back,
     .teacher-list .teacher-grid .front {
       -webkit-backface-visibility: hidden;

@@ -3,13 +3,12 @@
 --------------------------------------------------------------*/
 // General Setting
 
-* {
-	box-sizing: border-box;
-}
+// * {
+// 	box-sizing: border-box;
+// }
 // @media screen and (max-width: 480px) {
 
 .nw-program-wrapper {
-	max-width: $desktop_width;
 	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
@@ -17,30 +16,31 @@
 	align-items: center;
 }
 // fonts
-// h1,
-// h2,
-// h3 {
-// 	font-family: $font_title;
-// 	font-weight: normal;
-// }
-//
-// h1 {
-// 	font-size: 2.25rem;
-// 	line-height: 2.625rem;
-// }
-//
-// h2 {
-// 	font-size: 1.875rem;
-// 	line-height: 2.125rem;
-// }
-//
-// h3 {
-// 	font-size: 1.5rem;
-// 	line-height: 1.6875rem;
-// }
+
+h1,
+h2,
+h3 {
+	font-family: $font_title;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: $h1_size_mob;
+	line-height: 2.625rem;
+}
+
+h2 {
+	font-size: $h2_size_mob;
+	line-height: 2.125rem;
+}
+
+h3 {
+	font-size: $h3_size_mob;
+	line-height: 1.6875rem;
+}
 
 p {
-	font-size: 1.625rem;
+	font-size: $font_body_size_mob;
 	line-height: 2.5rem;
 	font-style: $font_body;
 }
@@ -67,23 +67,18 @@ p {
 
 	.why-nw {
 		p {
-			display: block;
-			@include desktop {
-				text-align-last: right;
-			};
+			display:block;
+			flex-shrink: 5;
 		}
 	}
-
 	.nw-img {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*5.5;
 		margin-bottom: $basic_margin*3;
 		@include desktop {
-			float: right;
-			width: 900rem;
-			height: 300px;
-		};
+			width: 50%;
+		}
 	}
 }
 
@@ -94,52 +89,51 @@ p {
 	};
 }
 // Funding Section
+
 .funding {
 	display: flex;
 	flex-direction: column;
 	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
+
 	.funding-img,
 	.money-spend-img {
 		display: flex;
 		justify-content: center;
-		@include desktop{
-			width: 50%;
-			margin-bottom: 4rem;
+		margin-top: 2rem;
+	}
+	.funding-img img {
+		@include desktop {
+			flex-grow: 1;
+			width: 120%;
 		}
+	}
+
+	.money-spend-img img {
+		@include desktop {
+			padding-right:1.7rem;
+		};
 	}
 	.nw-part2 {
-	@include desktop {
+		@include desktop {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
+			.red-border-container {
+				width: 82%;
+				display: flex;
+			}
 		}
-}
-	@include desktop{
-	.nw-part3{
-
-		display:flex;
-		flex-direction: row-reverse;
 	}
-		.money-spend-para{
+	@include desktop {
+		.nw-part3 {
 			display: flex;
-			flex:25%;
-			height: 50%;
-			flex-shrink: 2;
-
-
+			align-items: center;
+			flex-direction: row-reverse;
 		}
-		img{
-			height:60%;
-		}
-
-}
-
-
-	.red-border-container {
-		@include desktop {
-			width: 60%;
-			height: 20rem;
+		.money-spend-para {
+			flex-shrink: 5;
 		}
 	}
 
@@ -147,11 +141,18 @@ p {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*3;
+		@include desktop{
+			justify-content: flex-end;
+		}
 
 		.green-btn {
 			padding: 10px;
 			width: 44.666%;
 			margin-right: 2px;
+			@include desktop{
+				padding: 1.2rem;
+				width: 18%;
+			};
 		}
 	}
 }
@@ -169,7 +170,6 @@ p {
 			width: 80%;
 			height: 80%;
 		}
-
 		.address .phone {
 			font-weight: bolder;
 		}
@@ -216,21 +216,25 @@ p {
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: center;
+	@include desktop {
+		flex-direction: column;
+	}
 
 	.teacher-grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		@include desktop {
+			flex-direction: row;
+		}
 
 		.teacher-block {
 			flex: 33%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			// @include tablet {
-			// 	flex: 0.03;
-			// }
 			@include desktop {
+				max-width: 990px;
 				flex: 1;
 			}
 		}
@@ -278,15 +282,21 @@ p {
 			.back {
 				border-radius: 50%;
 				position: absolute;
-				width: 100px;
+				width: 125px;
 				overflow: hidden;
 				text-overflow: ellipsis;
-				height: 100px;
+				height: 125px;
 				text-align: center;
 				right: 3px;
 				-webkit-transform: rotateY(180deg);
 				-moz-transform: rotateY(180deg);
 				transform: rotateY(180deg);
+				@include desktop {
+					width: 200px;
+					height: 200px;
+					right: 4px;
+					top: 55px;
+				}
 			}
 		}
 
@@ -300,8 +310,16 @@ p {
 		.back,
 		.flip-container,
 		.front {
-			width: 100px;
-			height: 100px;
+			width: 125px;
+			height: 125px;
+			@media screen and (min-width: 650px) {
+				width: 190px;
+				height: 190px;
+			}
+			@include desktop {
+				width: 200px;
+				height: 200px;
+			}
 		}
 
 		.back,
