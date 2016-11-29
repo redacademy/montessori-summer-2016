@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The header for our theme.
@@ -44,6 +43,7 @@ echo $histor;
 };
 ?></p>
 </div>
+
   </div>
 </div>
     </section>
@@ -102,7 +102,7 @@ echo $benefit;
         </div>
 
 <!--  here is the meta data of the benefits section -->
-
+<div>
           <ul>
         <?php
 $fields = CFS()->get('benefits_details'); ?>

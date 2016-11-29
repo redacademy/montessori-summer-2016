@@ -23,7 +23,7 @@ if ( $query-> have_posts() ) :
  while ($query-> have_posts() )  : $query->the_post(); ?>
   <div class="involved-title">
      <a href="#"><?php the_title(); ?></a>
-     
+
 
 
   </div>
