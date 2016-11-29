@@ -411,88 +411,6 @@
         }
     }
 }
-//
-//             p {
-//                 font-size: 2rem;
-//             }
-//         }
-//
-//         .red-border-q::before {
-//             content: "";
-//             display: block;
-//             position: absolute;
-//             top: 5PX;
-//             left: 0PX;
-//             height: 100%;
-//             border-left: solid 12px $border_left_red;
-//         }
-//     }
-// }
-//
-// .benefits-title {
-//     p {
-//         padding-top: 4px;
-//         display: block;
-//         @include desktop {
-//             font-size: 1.5rem;
-//         }
-//     }
-// }
-// ///Archive ////
-// .montessori-archive {
-//     margin-top: 40px;
-//
-//     h3 {
-//         width: 40%;
-//         border-top: solid 3px $color_btn_green;
-//         padding-top: 30px;
-// .the-archive ul{
-//   width: 500px;
-//   line-height: 2.5rem;
-//   font-size: 1.6rem;
-//   font-family: $font_title;
-//   li{
-//     padding-left: 30px;
-//     line-height: inherit;
-//     font-size: 1.4rem;
-//   }
-// }
-//
-// .montessori-archive {
-//
-//
-//     h3 {
-//         width: 600px;
-//         border-top: solid 3px $color_btn_green;
-//         padding-top: 12px;
-//     }
-// }
-// /*Start Resources Section  */
-// .main-resources {
-//   border-bottom: none;
-//   height: 400px;
-//   position: relative;
-// .green-btn {
-//     background-color: #4fc8a1;
-//     @include border-radius (6px);
-//     font-family: Noto Sans;
-//     font-size: 14px;
-//     font-weight: 700;
-//     text-align: center;
-//     line-height: 28px;
-//     color: #fff;
-//     padding: 10px 20px;
-//     text-shadow: none;
-//     letter-spacing: 0.8px;
-//     display: block;
-//     margin: 10px auto;
-//     @include desktop {
-//         width: 331px;
-//         height: 65px;
-//         font-size: 20px;
-//     }
-// }
-// }
 .benefits-title {
     p {
         padding-top: 4px;
@@ -594,4 +512,4 @@ font-size:1.1rem;
             }
         }
     }
-}
+} }

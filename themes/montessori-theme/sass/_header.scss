@@ -1,8 +1,15 @@
 ///**** The Header ***/////
-
+.masthead{
+	position: absolute;
+}
 .site-content {
-	padding-top: 110px;
+	padding-top: 160px;
 	top: 0;
+}
+.home .site-content{
+	padding-top: 0px;@include desktop{
+		padding-top: 140px;
+	};
 }
 /////****Start Main Menu**** ////
 
@@ -53,6 +60,8 @@ div .menu-primary-menu-container {
 
 .menu-primary-menu-container {
 	@include desktop {
+
+    white-space:nowrap;
 		display: inline-block;
 
 		ul {
@@ -64,11 +73,11 @@ div .menu-primary-menu-container {
     text-decoration: none;
     color: #000;
     color: #231f20;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border-top: 6px solid transparent;
     list-style: none;
-    padding: 15px 0;
-    margin: 0 5px;
+    padding: 15px 5px;
+
 				}
 			}
 		}
@@ -132,9 +141,12 @@ button#responsive-menu-button {
 		width: 100%;
 		padding-top: 25px;
 		@include desktop {
-			padding-top: 0;
-		}
+			height: 100px;
+			width: 300px;
+			padding-top: 0px;
+			margin-top: 0px;
 
+		}
 		a {
 			bottom: -20px;
 			cursor: pointer;
@@ -144,14 +156,20 @@ button#responsive-menu-button {
 	}
 }
 
+.main-menu-wrapper{
+
+	@include desktop{
+
+	};
+}
 .main-menu-wrapper {
+	border-bottom: 2px solid #E2E2E2;
 	width: 100%;
-	height: 65px;
+	height: 80px;
 	@include flex(center,space-between);
 	@include desktop {
+		border-bottom:none;
 		height: 90px;
-		white-space: nowrap;
-		overflow: hidden;
 	}
 }
 
@@ -160,11 +178,15 @@ button#responsive-menu-button {
 	min-width:380px;
 	width: 100%;
 	background: $white;
-	position: fixed;
+	position: absolute;@include desktop{
+		position: fixed;
+	};
 	top: 0;
 }
 
 .home .site-header {
+	padding-top:0;
+
 	position: absolute;
 }
 ////**Sub Menu Section**/////
@@ -172,13 +194,9 @@ button#responsive-menu-button {
 .back-to-top{
 	position: absolute;
 	left: 0;
+margin-right: 30px;
 }
-div {
-	.secondary li a {
-		padding: 0 10px;
-		line-height: 3.2rem;
-	}
-}
+
 
 div {
 	position: relative;
@@ -202,22 +220,30 @@ div {
 	margin-left: 70px;
 }
 
-
+div {
+	.secondary li a {
+		padding: 0 5px;
+		line-height: 2.3rem;
+		@include desktop{
+			line-height: 2.3rem
+		};
+	}
+}
 div .secondary {
 	position: relative;
-	text-align: right;
-	min-width: 80%;
-	height: 100%;
+
+
+
 	font-family: $font_header_footer;
 	@include desktop {
 		text-align: right;
-		white-space: inherit;
-		padding: 5px 20 10px 10;
-		height: 65px;
+		padding:8px 10px;
+		height: 70px;
+		margin-top: 40px;
 	}
 	text-align: center;
 	padding-right:5px;
-	margin-top: 10px;
+
 	background-color: #248E6A;
 
 	& .active {
