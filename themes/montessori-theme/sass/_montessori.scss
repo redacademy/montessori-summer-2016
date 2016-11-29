@@ -329,6 +329,10 @@
 
 .benefits li {
     list-style-type: disc;
+    @include desktop{
+      // color:red;
+
+    };
 }
 
 .first-benefits-section {
@@ -454,24 +458,31 @@ width: 450px;
     border-bottom: none;
     height: 400px;
     position: relative;
-    .green-btn {
+    .green-bt{
         background-color: #4fc8a1;
         @include border-radius (6px);
-        font-family: Noto Sans;
-        font-size: 14px;
-        font-weight: 700;
-        text-align: center;
-        line-height: 28px;
-        color: #fff;
-        padding: 10px 20px;
-        text-shadow: none;
+
+
         letter-spacing: 0.8px;
         display: block;
-        margin: 10px auto;
+        margin: 10px auto;;
+        text-shadow: none;
+        a{
+          font-family: Noto Sans;
+          font-size:1rem;
+          font-weight: 700;
+          text-align: center;
+          line-height: 28px;
+          color: #fff;
+          padding: 10px 20px;
+        }
         @include desktop {
             width: 331px;
             height: 65px;
             font-size: 20px;
+            a{
+font-size:1.1rem;
+            }
         }
     }
 }

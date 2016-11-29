@@ -1773,25 +1773,28 @@ body {
   border-bottom: none;
   height: 400px;
   position: relative; }
-  .main-resources .green-btn {
+  .main-resources .green-bt {
     background-color: #4fc8a1;
     border-radius: 6px;
-    font-family: Noto Sans;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 28px;
-    color: #fff;
-    padding: 10px 20px;
-    text-shadow: none;
     letter-spacing: 0.8px;
     display: block;
-    margin: 10px auto; }
+    margin: 10px auto;
+    text-shadow: none; }
+    .main-resources .green-bt a {
+      font-family: Noto Sans;
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 28px;
+      color: #fff;
+      padding: 10px 20px; }
     @media (min-width: 768px) {
-      .main-resources .green-btn {
+      .main-resources .green-bt {
         width: 331px;
         height: 65px;
-        font-size: 20px; } }
+        font-size: 20px; }
+        .main-resources .green-bt a {
+          font-size: 1.1rem; } }
 
 /*--------------------------------------------------------------
 # About Page

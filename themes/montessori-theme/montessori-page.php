@@ -209,7 +209,8 @@ echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
   <div class="#"></div></div>
   </div>
 <div>
-<button class="green-btn">NW Montessori Program</button>
+<button class="green-bt"><a href="<?php
+     echo get_page_link(get_page_by_title('nw-program')->ID);?>">NW Montessori Program</a></button>
 </div>
 </div>
 </section>
