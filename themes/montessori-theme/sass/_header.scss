@@ -18,17 +18,8 @@
 div .menu-primary-menu-container {
 	width: 100%;
 }
-
-.main-navigation-container {
-	display: flex;
-}
-
 .main-navigation {
 	min-width: 70%;
-}
-
-div .menu-primary-menu-container {
-	width: 100%;
 }
 
 .menu-primary-menu-container {
@@ -53,11 +44,11 @@ div .menu-primary-menu-container {
 	font-family: $font_header_footer;
 	@include flex(center,space-between);
 	height: 5rem;
-	@include tablet {
-		display: inline-block;
-		height: 8rem;
-		padding: 0 15px;
-	}
+
+		display: inline-block;//
+		height: 8rem;//
+		padding: 0 15px;//
+
 }
 
 .menu-primary-menu-container {
@@ -100,32 +91,11 @@ div .menu-primary-menu-container {
 	background-color: #D8D8D8!important;
 	width: 34px!important;
 	height: 4px!important;
-	border-radius: 0px!important;
 }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="button"] {
 	box-shadow: none !important;
-}
-.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
-
-    background-color: #D8D8D8!important;
-		width: 34px!important;;
-				height: 4px!important;
-    border-radius: 0px!important;
-
-}
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-
-    box-shadow: none !important;
-
-}
-button#responsive-menu-button {
-
-
-    background-color: transparent!important;
 }
 
 button#responsive-menu-button {
@@ -187,7 +157,7 @@ button#responsive-menu-button {
 
 .site-header {
 	z-index: 999;
-	min-width: $mobile-width;
+	min-width:380px;
 	width: 100%;
 	background: $white;
 	position: fixed;
@@ -199,9 +169,14 @@ button#responsive-menu-button {
 }
 ////**Sub Menu Section**/////
 
+.back-to-top{
+	position: absolute;
+	left: 0;
+}
 div {
 	.secondary li a {
 		padding: 0 10px;
+		line-height: 3.2rem;
 	}
 }
 
@@ -223,22 +198,24 @@ div {
 		border-right: solid 1px white;
 	}
 }
+.secondary li:nth-child(2) {
+	margin-left: 70px;
+}
+
 
 div .secondary {
-
 	position: relative;
 	text-align: right;
 	min-width: 80%;
 	height: 100%;
 	font-family: $font_header_footer;
 	@include desktop {
-		white-space: normal;
-		overflow: hidden;
+		text-align: right;
 		white-space: inherit;
 		padding: 5px 20 10px 10;
 		height: 65px;
 	}
-	text-align: right;
+	text-align: center;
 	padding-right:5px;
 	margin-top: 10px;
 	background-color: #248E6A;
@@ -247,13 +224,12 @@ div .secondary {
 		background-color: $color_btn_green;
 	}
 	ul{
+
 		min-width:50%;
 	}
 
 	li {
 		display: inline-block;
-		padding: 10px;
-		padding: 7px 15px;
 		padding: 7px 10px;
 		@include desktop {
 			padding: 7px 15px;
@@ -271,8 +247,4 @@ div .secondary {
 			color: white;
 		}
 	}
-}
-
-#top{
-	color:black;
 }

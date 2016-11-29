@@ -2,28 +2,6 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
-.rotate {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-}
-.toggle{
-  color:green;
-  padding-left:10px;
-}
-
-.fa-angle-down{
-
-  color:green;
-  padding-left:10px;
-}
-
-.history-content {
-    width: 100%;
-    flex-wrap: wrap;
-    margin-left: 30px;
-}
 
 .history-title {
     margin-bottom: 0;
@@ -40,66 +18,95 @@
     }
     @include flex(flex-end,space-between);
 
-    .history-img {
-        align-self: flex-start;
-        margin-top: 100px;
-        width: 220px;
-        height: 240px;
-        @include desktop {
-            width: 430px;
-            height: 500px;
-            padding-bottom: 40px;
-        };
+    .history-img1 {
+        display: block;
 
         img {
-            width: 100%;
-            height: 100%;
+            float: left;
+        }
+        @include desktop {
+            display: none;
+        };
+    }
+
+    .history-img {
+        display: none;
+        @include desktop {
+            display: block;
+            margin-top: 100px;
+            align-self: flex-end;
+            width: 430px;
+            height: 500px;
+            padding-bottom: 100px;;
         }
     }
+}
+
+.history-content {
+    blockquote {
+
+        text-align: left;
+    }
+
+    p {
+        width: 100%;
+        text-align: left;
+        display: inline;
+        overflow: hidden;
+    }
+    width: 100%;
+
+
+
+    blockquote {
+      width: 100%
+    }
     @include desktop {
-        .red-border-q {
-            width: 80%;
+        blockquote {
+            width: 75%;
+            min-width: 70%;
             top: 10px;
             margin: 0 0 0 15%;
             padding-left: 25px;
-            display: inline-block;
             position: relative;
 
             p {
+              margin: 0px;
                 font-size: 2rem;
-                margin: 0;
             }
         }
 
-        .red-border-q::before {
+        blockquote::before {
             content: "";
-            display: block;
+            display: inline-block;
             position: absolute;
             top: 5PX;
             left: 0PX;
             height: 100%;
             border-left: solid 12px $border_left_red;
+            font-size: 1.5rem;
         }
-        font-size: 1.5rem;
-    };
 
-    p {
-        padding-top: 4px;
-        text-align: left;
+        p {
+          display: inline-block;
+            text-align: left;
+        }
     }
 }
 ////************philosophy Section ************/////
 
 .main-philosophy {
     margin: 100px auto;
-    width: 70%;
+    width: 400px;
+    min-width: 90%;
     height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
     position: relative;
     @include desktop {
+      width: 1000px;
+      min-width: 950px;
         height: 640px;
-
     }
 
     div {
@@ -107,7 +114,6 @@
     }
 
     .philosophy-grid {
-
         flex: 0 0 auto;
         width: 200px;
         height: 200px;
@@ -137,15 +143,11 @@
         }
 
         .philosophy-img {
-
             z-index: 2;
             height: auto;
             text-align: center;
-            overflow: hidden;
             padding: 20px;
-
             @include desktop {
-
                  @include visibility(hidden);
             }
             position: relative;
@@ -169,35 +171,27 @@
         }
 
         h2 {
-          -index: 1;
-          z-index: 1;
-  margin: 0;
-  text-align: center;
-  display: inline-block;
-  width: 80%;
-  color: #248e6a;
-  height: auto;
-  overflow: hidden;
-  padding: 0;
-  bottom: 35px;
-  line-height: 1.3rem;
-  line-height: 1.2rem;
-  position: absolute;
-  right: 24px;
+            z-index: 1;
+            margin: 0;
+            text-align: center;
+            display: inline-block;
+            width: 85.1%;
+            color: #248e6a;
+            height: auto;
+            overflow: hidden;
+            padding: 0;
+            bottom: 14px;
+            line-height: 0.9rem;
+            right: 10px;
+            position: absolute;
 
             a {
                 color: #248E6A;
-                font-size: 1.2rem;
-
                 font-size: 1.1rem;
-                font-size: 1.1rem;
-
                 font-weight: bold;
             }
             @include desktop {
                 a {
-
-                    font-size: $font_body_size_desktop;
                     font-size: 1.3rem;
                 }
 
@@ -243,8 +237,6 @@
         }
     }
 }
-
-
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
 
@@ -265,48 +257,55 @@
 }
 
 .materials {
-    margin-top: 60px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include desktop {
-         @include flex(flex-start,space-between);
+         @include flex(center,space-between);
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     img {
-        width: 230px;
-        height: 230px;
+        width: 330px;
+        height: 330px;
         @include desktop {
             margin-top: 100px;
-            width: 300px;
-            height: 300px;
+
         }
     }
 }
 
 .materials-contents {
-    width: 100%;
+    blockquote {
+
+
+    p {
+        display: inline;
+    }}
+    width: 90%;
     @include desktop {
         width: 60%;
+        min-width: 50%;
 
-        .red-border-q {
+        blockquote {
             width: 75%;
+            min-width: 70%;
             top: 10px;
-            margin: 0 0 0 10%;
+            margin: 0 0 0 15%;
             padding-left: 25px;
             display: inline-block;
             position: relative;
 
             p {
-                margin: 0;
+                margin: 0px;
                 font-size: 2rem;
             }
         }
 
-        .red-border-q::before {
+        blockquote::before {
             content: "";
             display: block;
             position: absolute;
@@ -314,28 +313,31 @@
             left: 0PX;
             height: 100%;
             border-left: solid 12px $border_left_red;
+            font-size: 1.5rem;
         }
-        font-size: 1.5rem;
+
+        p {
+          display: inline;
+            padding-top: 4px;
+            text-align: left;@include desktop{
+              display: inline-block;
+            };
+        }
     }
 }
-
-.materials-grid div:nth-of-type(2) {
-    align-self: left;
-}
-
-.materials-grid {
-    margin: 40px 0;
-    padding: 0;
-}
-////////*******End Materials Section******/////////
 /////*Start Benefits Section**/////
 
 .benefits li {
     list-style-type: disc;
+    @include desktop{
+      // color:red;
+
+    };
 }
 
 .first-benefits-section {
-    width: 90%;
+    width: 100%;
+    min-width: 80%;
     height: 100%;
     @include flex(center,space-between);
     flex-direction: column;
@@ -359,20 +361,21 @@
 .benefits-content {
     width: 100%;
     @include desktop {
-        .red-border-q {
-            width: 75%;
+        blockquote {
+            width: 70%;
             top: 10px;
-            margin: 0 0 0 10%;
+            margin: 0 0 0 15%;
             padding-left: 25px;
             display: inline-block;
             position: relative;
 
             p {
+                margin: 0px;
                 font-size: 2rem;
             }
         }
 
-        .red-border-q::before {
+        blockquote::before {
             content: "";
             display: block;
             position: absolute;
@@ -380,10 +383,15 @@
             left: 0PX;
             height: 100%;
             border-left: solid 12px $border_left_red;
+            font-size: 1.5rem;
+        }
+
+        p {
+            padding-top: 4px;
+            text-align: left;
         }
     }
 }
-
 //
 //             p {
 //                 font-size: 2rem;
@@ -466,3 +474,98 @@
 //     }
 // }
 // }
+=======
+.benefits-title {
+    p {
+        padding-top: 4px;
+        display: block;
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+}
+///Archive ////
+.fa-caret-right{
+  color: $color_btn_hover_green;
+  padding-right: 5px;
+}
+.the-archive ul {
+width: 450px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-family: $font_title;
+    @include desktop{
+      line-height: 2.5rem;
+      font-size: 1.6rem;
+      width: 600px
+    };
+
+    li {
+        padding-left: 30px;
+        line-height: inherit;
+
+    a{font-size: 1.2rem;@include desktop{font-size: 1.4rem;}
+          color: $color_btn_hover_green;
+      }
+    }
+}
+
+.montessori-archive {
+    h3 {
+        width: 600px;
+        border-top: solid 3px $color_btn_green;
+        padding-top: 12px;
+    }
+}
+///rotate the arrow and toggle the contents
+
+.rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.toggle {
+    color: green;
+    padding-left: 10px;
+}
+
+.fa-angle-down {
+    color: green;
+    padding-left: 10px;
+}
+/*Start Resources Section  */
+.main-resources {
+    border-bottom: none;
+    height: 400px;
+    position: relative;
+    .green-bt{
+        background-color: #4fc8a1;
+        @include border-radius (6px);
+
+
+        letter-spacing: 0.8px;
+        display: block;
+        margin: 10px auto;;
+        text-shadow: none;
+        a{
+          font-family: Noto Sans;
+          font-size:1rem;
+          font-weight: 700;
+          text-align: center;
+          line-height: 28px;
+          color: #fff;
+          padding: 10px 20px;
+        }
+        @include desktop {
+            width: 331px;
+            height: 65px;
+            font-size: 20px;
+            a{
+font-size:1.1rem;
+            }
+        }
+    }
+}
+>>>>>>> e5e177db6fd3e4d95e31e51f83792ab0f2df4f1e

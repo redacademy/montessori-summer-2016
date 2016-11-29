@@ -2,8 +2,50 @@
 .content-wrapper{
 	max-width: 90%;
 	margin: 0 auto;
-	overflow: auto;
 }
+////Montessori Elements Typography ////
+a:hover {
+		cursor: pointer;
+		color: $color_btn_hover_green;
+}
+a{
+	text-decoration: none;
+}
+p,
+li {
+	 font-size: $font_body_size_mob;
+	 font-family:$font_title;
+}
+h1,h2,h3{
+ text-transform: capitalize;
+ font-family:$font_title;
+ font-weight: lighter;
+}
+
+h1{font-size:$h1_size_mob;
+}
+h2{
+font-size:$h2_size_mob;
+}
+h3{
+ font-size:$h3_size_mob;
+ font-family:$font_title;
+
+}
+
+@include desktop{
+ p,
+ li {
+		font-size: $font_body_size_desktop;}
+ h1{font-family:$font_title;
+	 font-weight: lighter;
+	 font-size:$h1_size_desktop;}
+ h2{
+ font-size:$h2_size_desktop;}
+ h3{
+	 font-size:$h3_size_desktop;
+}}
+
 html {
 	box-sizing: border-box;
   font-family: $font_main;
@@ -23,18 +65,13 @@ body {
 
 	margin: 0 auto;
 p,li{
-	line-height: 3rem;
+	line-height: 2.6rem;
+	@include desktop{
+		line-height: 2.3rem;
+	};
 }
 }
 
-blockquote, q {
-	quotes: "" "";
-
-	&:before,
-	&:after {
-		content: "";
-	}
-}
 
 hr {
 	background-color: #ffffff;
