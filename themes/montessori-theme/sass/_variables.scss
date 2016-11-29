@@ -5,9 +5,9 @@ $basic_pading: 0.625rem; /// ==>10px ////
 $basic_margin: 0.625rem; /// ==>10px ////
 $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
-$desktop_width: 959px; //992px
-$tablet_width: 768px; //
-
+$desktop_width:768px; //768px
+// $Tablet_width:40rem; //
+$mobile_width:37.5rem; //480px for Mobile Container
 //Layout//
 $mobile_line_height:1.5rem;
 $base_spacing_normal: 1rem;
@@ -39,11 +39,27 @@ $white: #fff;
 
 
 // Typography ///
-$font_title: 'Asap', sans-serif;
-$font_header_footer:  'PT Serif', serif;
-$font_body: 'Noto Sans', sans-serif;
-$font_main: 'Noto Sans', sans-serif;
+$font_title: 'Asap';
+$font_footer_header: 'PT Sans';
+$font_body: 'Noto Sans';
+$font_main: 'Noto Sans';
+///Font Sizing ///
+// mobile sizes ///
+$h1_size_mob: 2.25rem;
+$h2_size_mob: 1.6rem;
+$h3_size_mob: 1.2rem;
+$font_body_size_mob: 1.6rem;
 
+
+/// desktop sizes ////
+$h1_size_desktop: 3rem;
+$h2_size_desktop: 2.2rem;
+$h3_size_desktop: 1.7rem;
+$font_body_size_desktop: 1.7rem;
+$font_title: 'Asap',sans-serif;
+$font_header_footer: 'PT Sans',sans-serif;
+$font_body: 'Noto Sans',sans-serif;
+$font_main: 'Noto Sans',sans-serif;
 ///Font Sizing ///
 // mobile sizes ///
 $h1_size_mob: 2rem;
