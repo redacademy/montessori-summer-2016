@@ -102,6 +102,9 @@ p {
 		display: flex;
 		justify-content: center;
 		margin-top: 2rem;
+		@include desktop{
+			margin-top:0px;
+		};
 	}
 	.funding-img img {
 		@include desktop {
@@ -157,7 +160,6 @@ p {
 	}
 }
 //School List Section
-
 .school-list {
 	display: flex;
 	flex-direction: column;
@@ -189,8 +191,14 @@ p {
 .enroll {
 	display: flex;
 	flex-direction: column;
+.enrollment-wrap{
+	@include desktop{
+		display: flex;
+		flex-direction: row;
 
-	.enroll-info {
+	}
+}
+	.enroll-info  {
 		margin-top: 27rem;
 	}
 
@@ -199,18 +207,17 @@ p {
 		display: flex;
 		margin: 40px auto;
 		flex-direction: column;
+		justify-content: center;
 
 		.enroll-img {
 			margin-bottom: 50px;
 		}
-
 		.enroll-btn {
 			align-self: center;
 		}
 	}
 }
 //teacher list Section
-
 .teacher-list {
 	padding: 2px;
 	flex-wrap: wrap;
@@ -299,7 +306,6 @@ p {
 				}
 			}
 		}
-
 		.flip-container.hover .flipper,
 		.flip-container:hover .flipper {
 			-webkit-transform: rotateY(180deg);

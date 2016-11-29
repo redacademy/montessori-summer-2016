@@ -60,7 +60,6 @@ get_header(); ?>
 	<!-- **********/////////Custom Post Loop To Call School List/////////********** -->
 
 	<section id="schools-teachers" class="school-list">
-
 		<h1>Schools & Teachers</h1>
 				<?php query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'school' ));?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -145,8 +144,8 @@ get_header(); ?>
 <div class="enroll-info">
 				<h3 >When can my child start?</h3>
 				<p> <?php echo CFS()->get('time-start'); ?> </p>
-
 			  <h3 >How do I apply?</h3>
+				<div class="enrollment-wrap">
 		  	<ol>
 			  <?php $fields = CFS()->get( 'guids' );
 
@@ -156,7 +155,7 @@ get_header(); ?>
 			  } ?>
 			  </li>
 			  </ol>
-			</div>
+
 				<div class="enroll-block">
 			  <div class="enroll-img">
 			  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
@@ -164,7 +163,9 @@ get_header(); ?>
 				<div class="enroll-btn">
 			  <button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</button>
 				</div>
+				</div>
 			  </div>
+			</div>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
 </div>
