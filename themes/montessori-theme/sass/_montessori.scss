@@ -8,13 +8,13 @@
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
-.toggle{
-  color:green;
-  padding-left:10px;
+.toggle {
+    color: green;
+    padding-left: 10px;
 }
-.fa-angle-down{
-  color:green;
-  padding-left:10px;
+.fa-angle-down {
+    color: green;
+    padding-left: 10px;
 }
 .history-content {
     width: 100%;
@@ -147,19 +147,19 @@
             }
         }
         h2 {
-          z-index: 1;
-  margin: 0;
-  text-align: center;
-  display: inline-block;
-  width: 80%;
-  color: #248e6a;
-  height: auto;
-  overflow: hidden;
-  padding: 0;
-  bottom: 35px;
-  line-height: 1.2rem;
-  position: absolute;
-  right: 24px;
+            z-index: 1;
+            margin: 0;
+            text-align: center;
+            display: inline-block;
+            width: 80%;
+            color: #248e6a;
+            height: auto;
+            overflow: hidden;
+            padding: 0;
+            bottom: 35px;
+            line-height: 1.2rem;
+            position: absolute;
+            right: 24px;
             a {
                 color: #248E6A;
                 font-size: 1.1rem;
@@ -340,16 +340,16 @@
     }
 }
 ///Archive ////
-.the-archive ul{
-  width: 500px;
-  line-height: 2.5rem;
-  font-size: 1.6rem;
-  font-family: $font_title;
-  li{
-    padding-left: 30px;
-    line-height: inherit;
-    font-size: 1.4rem;
-  }
+.the-archive ul {
+    width: 500px;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    font-family: $font_title;
+    li {
+        padding-left: 30px;
+        line-height: inherit;
+        font-size: 1.4rem;
+    }
 }
 .montessori-archive {
     h3 {
@@ -360,27 +360,27 @@
 }
 /*Start Resources Section  */
 .main-resources {
-  border-bottom: none;
-  height: 400px;
-  position: relative;
-.green-btn {
-    background-color: #4fc8a1;
-    @include border-radius (6px);
-    font-family: Noto Sans;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 28px;
-    color: #fff;
-    padding: 10px 20px;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    display: block;
-    margin: 10px auto;
-    @include desktop {
-        width: 331px;
-        height: 65px;
-        font-size: 20px;
+    border-bottom: none;
+    height: 400px;
+    position: relative;
+    .green-btn {
+        background-color: #4fc8a1;
+        @include border-radius (6px);
+        font-family: Noto Sans;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 28px;
+        color: #fff;
+        padding: 10px 20px;
+        text-shadow: none;
+        letter-spacing: 0.8px;
+        display: block;
+        margin: 10px auto;
+        @include desktop {
+            width: 331px;
+            height: 65px;
+            font-size: 20px;
+        }
     }
-}
 }
