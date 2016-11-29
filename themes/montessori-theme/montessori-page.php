@@ -178,14 +178,24 @@ foreach($fields as $field)
       learn more about montessori history
       <div class="">
 
-
-    <li><a href="<?php
+    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
 echo get_page_link(get_page_by_title()->ID); ?>">Montessori FAQ</a></li>
 
-<li><a href="<?php
+<li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
 echo get_page_link(get_page_by_title()->ID); ?>">Montessori education</a></li>
-<li><a href="<?php
+<li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
 echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biography</a></li></div>
+</ul>
+
+<ul>
+  Learn more about Montessory Materials
+  <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
+echo get_page_link(get_page_by_title()->ID); ?>">A look at the binomial cube</a></li>
+</ul>
+<ul>
+  Learn more about Montessory Philosophy
+  <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
+echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
 </ul>
 </div>
 <div class="montessori-archive">

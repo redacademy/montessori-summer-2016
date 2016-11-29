@@ -4,6 +4,10 @@
 	margin: 0 auto;
 }
 ////Montessori Elements Typography ////
+a:hover {
+		cursor: pointer;
+		color: $color_btn_hover_green;
+}
 a{
 	text-decoration: none;
 }

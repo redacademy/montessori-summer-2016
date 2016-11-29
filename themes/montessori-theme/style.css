@@ -273,6 +273,10 @@ big {
   max-width: 90%;
   margin: 0 auto; }
 
+a:hover {
+  cursor: pointer;
+  color: #248E6A; }
+
 a {
   text-decoration: none; }
 
@@ -293,7 +297,7 @@ h2 {
   font-size: 1.6rem; }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Asap", sans-serif; }
 
 @media (min-width: 768px) {
@@ -307,7 +311,7 @@ h3 {
   h2 {
     font-size: 2rem; }
   h3 {
-    font-size: 1.5rem; } }
+    font-size: 1.7rem; } }
 
 html {
   box-sizing: border-box;
@@ -1330,21 +1334,6 @@ body {
       font-size: 48px;
       line-height: 55px; } }
 
-.page h3 {
-  width: 152px;
-  height: 21px;
-  font-family: ".AppleSystemUIFont";
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .page h3 {
-      width: 1295px;
-      height: 55px;
-      font-family: 'Asap';
-      font-size: 38px;
-      line-height: 55px; } }
-
 .wpcf7 .wpcf7-form p label {
   width: 49px;
   height: 19px;
@@ -1621,8 +1610,8 @@ body {
     .materials {
       display: flex;
       display: -ms-flexbox;
-      -ms-flex-align: start;
-          align-items: flex-start;
+      -ms-flex-align: center;
+          align-items: center;
       -ms-flex-pack: justify;
           justify-content: space-between;
       -ms-flex-direction: row;
@@ -1630,13 +1619,11 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
   .materials img {
-    width: 230px;
-    height: 230px; }
+    width: 330px;
+    height: 330px; }
     @media (min-width: 768px) {
       .materials img {
-        margin-top: 100px;
-        width: 300px;
-        height: 300px; } }
+        margin-top: 100px; } }
 
 .materials-contents {
   width: 90%; }
@@ -1644,7 +1631,7 @@ body {
     display: inline; }
   @media (min-width: 768px) {
     .materials-contents {
-      width: 65%;
+      width: 60%;
       min-width: 50%; }
       .materials-contents blockquote {
         width: 75%;
@@ -1667,8 +1654,12 @@ body {
         border-left: solid 12px #D93B57;
         font-size: 1.5rem; }
       .materials-contents p {
+        display: inline;
         padding-top: 4px;
         text-align: left; } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      .materials-contents p {
+        display: inline-block; } }
 
 .benefits li {
   list-style-type: disc; }
@@ -1734,15 +1725,29 @@ body {
     .benefits-title p {
       font-size: 1.5rem; } }
 
+.fa-caret-right {
+  color: #248E6A;
+  padding-right: 5px; }
+
 .the-archive ul {
-  width: 500px;
-  line-height: 2.5rem;
-  font-size: 1.6rem;
+  width: 450px;
+  line-height: 2rem;
+  font-size: 1.3rem;
   font-family: "Asap", sans-serif; }
+  @media (min-width: 768px) {
+    .the-archive ul {
+      line-height: 2.5rem;
+      font-size: 1.6rem;
+      width: 600px; } }
   .the-archive ul li {
     padding-left: 30px;
-    line-height: inherit;
-    font-size: 1.4rem; }
+    line-height: inherit; }
+    .the-archive ul li a {
+      font-size: 1.2rem;
+      color: #248E6A; }
+      @media (min-width: 768px) {
+        .the-archive ul li a {
+          font-size: 1.4rem; } }
 
 .montessori-archive h3 {
   width: 600px;
