@@ -1809,13 +1809,17 @@ hover {
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
 .nw-program-wrapper {
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  background-color: grey; }
 
 h1,
 h2,
@@ -1896,7 +1900,7 @@ p {
     @media (min-width: 768px) {
       .funding .funding-img,
       .funding .money-spend-img {
-        margin-top: 0px; } }
+        margin-top: 0; } }
   @media (min-width: 768px) {
     .funding .funding-img img {
       -ms-flex-positive: 1;
@@ -1904,7 +1908,10 @@ p {
       width: 120%; } }
   @media (min-width: 768px) {
     .funding .money-spend-img img {
-      padding-right: 1.7rem; } }
+      padding-right: 4rem;
+      padding-left: .4rem; } }
+  .funding h2 {
+    text-align: center; }
   @media (min-width: 768px) {
     .funding .nw-part2 {
       display: -ms-flexbox;
@@ -1964,9 +1971,14 @@ p {
       font-weight: bolder; }
 
 .preschools-list {
-  padding: 1px; }
-  .preschools-list .target {
-    margin: 0 auto; }
+  border-bottom: solid 3px #4FC8A1; }
+  .preschools-list h1 {
+    width: 78%; }
+  @media (min-width: 768px) {
+    .preschools-list h1 {
+      width: 40%;
+      padding: 1.7rem;
+      border-top: solid 3px #4FC8A1; } }
 
 .enroll {
   display: -ms-flexbox;
@@ -1978,9 +1990,16 @@ p {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row; }
+      .enroll .enrollment-wrap .guids {
+        -ms-flex-negative: 3.5;
+            flex-shrink: 3.5;
+        padding-right: 1rem; } }
   .enroll .enroll-info {
     margin-top: 27rem; }
+    @media (min-width: 768px) {
+      .enroll .enroll-info {
+        margin-top: 2rem; } }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2005,6 +2024,10 @@ p {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .teacher-list h1 {
+    width: 40%;
+    padding: 1.7rem;
+    border-top: solid 3px #4FC8A1; }
   @media (min-width: 768px) {
     .teacher-list {
       -ms-flex-direction: column;
