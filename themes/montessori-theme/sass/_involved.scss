@@ -3,274 +3,220 @@
 --------------------------------------------------------------*/
 // General Setting
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-.site-main{
-  .involved-wrapper{
-    @media (max-width: 780px) {
-      .container {
-          width: 100%;
-          margin: 0 auto;
-          // padding: 0
-          // background-color: #4FC8A1;
-
-      }
-  }
+.site-main {
+    .involved-wrapper {
+        @media (max-width: 780px) {
+            .container {
+                width: 100%;
+                margin: 0 auto;
+                // padding: 0
+                // background-color: #4FC8A1;
+            }
+        }
+    }
 }
-}
-
 .involved-title {
-  // width: 200px;
-  // height: 120px;
-  background-color: #4FC8A1;
-  float: left;
-  margin-left: 25px;
-  margin-top: 100px;
-  margin-bottom: 25px;
-
-
-  a {
-  width: 200px;
-  height: 120px;
-  font-family: Asap;
-  font-size: 20px;
-  line-height: 27px;
-  color:#000;
-  margin-right: 25px;
-  background-color: #4FC8A1;
-
-
-  &:hover {
-    color: red;
-  }
-
-
-
-
-  .gre-button {
-      width: 261px;
-      height: 47px;
-      background-color: #4FC8A1;
-      border-radius: 6px;
-      text-decoration: none;
-
-      //  width: 120px;
-      //  height: 220px;
-       font-size: 15px;
-       font-family: Asap;
-       color:#fff;
-       background-color: #4FC8A1 ;
-       font-family: "Noto Sans";
-       font-size: 15px;
-       font-weight: bold;
-       text-align: center;
-       line-height: 30px;
-       display:block;
-
-     a {
-
-       width: 216px;
-       height: 30px;
-       font-family: "Noto Sans";
-       padding-top: 10px;
-       font-size: 20px;
-       font-weight: bold;
-       text-align: center;
-       line-height: 30px;
-       color: #FFF;
-     }
-   }
-
-
-
-
-
-
-
-
-
-.text-shadow{
-   border-top: 3px solid #248e6a;
-   width: 100%;
-}
-.get_involved img {
-  float: left;
-  width: 227px;
-  height: 244px;
-}
-
-
-
-// This is for green line
-.text-shadow {
-    border-top: 3px solid #248e6a;
-    width: 100%;
-    margin-bottom: 10px;
-}
-// This is for support now container
-
-
-
-.support-containar {
-display: flex;
-justify-content: center;
-
-
-
-}
- .support-img{
-   width:150px 60px;
-    height: 160.50px;
-    align-self: center;
-
-
-}
-    img{
-
-    height: 100%;
-
-} @include desktop {
-}
-// This for green circle btn
-
-.involved {
-    .circle-btn {
+    // width: 200px;
+    // height: 120px;
+    background-color: #4FC8A1;
+    float: left;
+    margin-left: 25px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    a {
         width: 200px;
-        height: 178px;
-        display: flex;
-        height: 200px;
-       -webkit-border-radius: 150%;
-        -moz-border-radius: 150%;
-        -ms-border-radius: 150%;
-        -o-border-radius: 150%;
-        border-radius: 150%;
-        background-color: #4fc8a1;
-        margin: 130px;
-        text-align: center;
-        color: #fff;
-        padding-top: 50px;
-        font-weight: 300;
-        // width: 157.58px;
-        // height: 108px;
+        height: 120px;
         font-family: Asap;
-        font-size: 18px;
-        text-align: center;
+        font-size: 20px;
         line-height: 27px;
-  }
-}
-
-
-// This for volenteer btn
-
-.re-btn {
-    width: 175.38px;
-    height: 47px;
-    border-radius: 6px;
-    background-color:#f76072;
-    color: #fff;
-    margin-left:60px;
-    padding: 10px;
-    box-shadow: none;
-    font-family: "Noto Sans";
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    text-decoration: none;
-    font-family: "Noto Sans";
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 27px;
-    &:hover {
-        background-color: red;
+        color: #000;
+        margin-right: 25px;
+        background-color: #4FC8A1;
+        &:hover {
+            color: red;
+        }
+        .gre-button {
+            width: 261px;
+            height: 47px;
+            background-color: #4FC8A1;
+            border-radius: 6px;
+            text-decoration: none;
+            //  width: 120px;
+            //  height: 220px;
+            font-size: 15px;
+            font-family: Asap;
+            color: #fff;
+            background-color: #4FC8A1;
+            font-family: "Noto Sans";
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            a {
+                width: 216px;
+                height: 30px;
+                font-family: "Noto Sans";
+                padding-top: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 30px;
+                color: #FFF;
+            }
+        }
+        .text-shadow {
+            border-top: 3px solid #248e6a;
+            width: 100%;
+        }
+        .get_involved img {
+            float: left;
+            width: 227px;
+            height: 244px;
+        }
+        // This is for green line
+        .text-shadow {
+            border-top: 3px solid #248e6a;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        // This is for support now container
+        .support-containar {
+            display: flex;
+            justify-content: center;
+        }
+        .support-img {
+            width: 150px 60px;
+            height: 160.50px;
+            align-self: center;
+        }
+        img {
+            height: 100%;
+        }
+        @include desktop {}
+        // This for green circle btn
+        .involved {
+            .circle-btn {
+                width: 200px;
+                height: 178px;
+                display: flex;
+                height: 200px;
+                -webkit-border-radius: 150%;
+                -moz-border-radius: 150%;
+                -ms-border-radius: 150%;
+                -o-border-radius: 150%;
+                border-radius: 150%;
+                background-color: #4fc8a1;
+                margin: 130px;
+                text-align: center;
+                color: #fff;
+                padding-top: 50px;
+                font-weight: 300;
+                // width: 157.58px;
+                // height: 108px;
+                font-family: Asap;
+                font-size: 18px;
+                text-align: center;
+                line-height: 27px;
+            }
+        }
+        // This for volenteer btn
+        .re-btn {
+            width: 175.38px;
+            height: 47px;
+            border-radius: 6px;
+            background-color: #f76072;
+            color: #fff;
+            margin-left: 60px;
+            padding: 10px;
+            box-shadow: none;
+            font-family: "Noto Sans";
+            font-weight: 300;
+            text-shadow: none;
+            letter-spacing: 0.8px;
+            text-decoration: none;
+            font-family: "Noto Sans";
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 27px;
+            &:hover {
+                background-color: red;
+            }
+        }
+        // This for donation
+        .pink-btn {
+            width: 175.38px;
+            height: 47px;
+            background-color: #f76072;
+            border-radius: 6px;
+            font-family: "Noto Sans";
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            margin-left: 60px;
+            padding: 8px;
+            box-shadow: none;
+            text-shadow: none;
+            letter-spacing: 0.8px;
+            text-decoration: none;
+        }
+        // This for you click on foleenter shaw the other btn
+        .contact-container {
+            .contact-person {
+                color: #fff;
+                background-color: #4fc8a1;
+                font-size: 10px;
+                flex-direction: row;
+                text-align: center;
+                width: 50px;
+            }
+        }
+        // This is for red line beside the paragraf
+        blockquote {
+            border-left: 10px solid #CB203E;
+            padding: 0 19px;
+        }
+        .involved {
+            .green-btn {
+                padding: 20px 25px 19px 19px;
+                font-size: 25px;
+                height: 200px;
+                display: flex;
+                -webkit-border-radius: 150%;
+                -moz-border-radius: 150%;
+                -ms-border-radius: 150%;
+                -o-border-radius: 150%;
+                border-radius: 150%;
+                background-color: #4fc8a1;
+                display: block;
+                width: 200px;
+                text-align: center;
+                color: #fff;
+                text-align: center;
+            }
+        }
+        .involved {
+            .red-btn {
+                padding: 15px 40px;
+                background-color: #F76072;
+                border-radius: 6px;
+                color: #fff;
+                margin-left: 80px;
+                font-family: "Noto Sans";
+                font-size: 24px;
+                font-weight: 300;
+                text-shadow: none;
+                letter-spacing: 0.8px;
+                text-align: center;
+                display: inline;
+                line-height: inherit;
+                margin: 20px;
+                flex-direction: row;
+            }
+        }
     }
-
-}
-
-
-// This for donation
-.pink-btn {
-    width:175.38px;
-    height: 47px;
-    background-color: #f76072;
-    border-radius: 6px;
-    font-family: "Noto Sans";
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    margin-left: 60px;
-    padding: 8px;
-    box-shadow: none;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    text-decoration: none;
-}
-
-
-
-// This for you click on foleenter shaw the other btn
-.contact-container {
-    .contact-person {
-        color: #fff;
-        background-color: #4fc8a1;
-        font-size: 10px;
-        flex-direction: row;
-        text-align: center;
-        width: 50px;
-    }
-}
-
-
-// This is for red line beside the paragraf
-
-blockquote {
-    border-left: 10px solid #CB203E;
-    padding: 0 19px;
-}
-
-.involved {
-  .green-btn{
-
-      padding-left:19px;
-      padding-right:25px;
-      padding-top: 20px;
-      padding-bottom: 19px;
-      font-size: 25px;
-      height: 200px;
-      display: flex;
-      -webkit-border-radius: 150%;
-      -moz-border-radius: 150%;
-      -ms-border-radius: 150%;
-      -o-border-radius: 150%;
-      border-radius: 150%;
-      background-color: #4fc8a1;
-      display:block;
-      width:200px;
-      text-align: center;
-      color:#fff;
-      text-align: center
-      }
- }
-
- .involved {
-     .red-btn {
-         padding: 15px 40px;
-         background-color: #F76072;
-         border-radius: 6px;
-         color: #fff;
-
-        margin-left: 80px;
-         font-family: "Noto Sans";
-         font-size: 24px;
-         font-weight: 300;
-         text-shadow: none;
-         letter-spacing: 0.8px;
-         text-align: center;
-         display:inline;
-         line-height: inherit;
-         margin: 20px;
-         flex-direction:row;
-     }
   }

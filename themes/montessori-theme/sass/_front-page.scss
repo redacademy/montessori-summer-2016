@@ -349,17 +349,19 @@
         }
         .features-wrapper {
             /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-            background: #aff1d3;
-            width: 200px;
+            // background: #aff1d3;
+            // width: 200px;
             box-sizing: border-box;
-            height: 139.76px;
-            width: 480.27px;
+            // width: 480.27px;
             position: relative;
             border-radius: 10px;
             font-family: 'Noto Sans';
             font-size: 15px;
             color: #000;
             text-decoration: none;
+            @include desktop{
+              display: flex;
+            }
             .features-flipper {
                 position: relative;
                 -webkit-transition: 1.9s;
@@ -380,6 +382,8 @@
                     cursor: pointer;
                 }
                 .front {
+                  background: #aff1d3;
+
                     height: auto;
                     text-align: center;
                     overflow: hidden;
@@ -402,6 +406,7 @@
                     text-align: center;
                     overflow: hidden;
                     padding: 0;
+                    height: 100%;
                     -webkit-backface-visibility: hidden;
                     -moz-backface-visibility: hidden;
                     -o-backface-visibility: hidden;
@@ -413,6 +418,9 @@
                     -moz-transform: rotateY(180deg);
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
+                    p{
+                      font-size: 25px;
+                    }
                 }
             }
         }

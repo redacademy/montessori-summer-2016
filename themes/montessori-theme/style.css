@@ -292,29 +292,6 @@ h3 {
   h3 {
     font-size: 1.5rem; } }
 
-h1 {
-  font-size: 2.25rem; }
-
-h2 {
-  font-size: 1.6rem; }
-
-h3 {
-  font-size: 1.2rem;
-  font-family: "Asap", sans-serif; }
-
-@media (min-width: 70rem) {
-  p,
-  li {
-    font-size: 2.1rem; }
-  h1 {
-    font-family: "Asap", sans-serif;
-    font-weight: lighter;
-    font-size: 2.8rem; }
-  h2 {
-    font-size: 2rem; }
-  h3 {
-    font-size: 1.5rem; } }
-
 body {
   line-height: 3rem; }
 
@@ -683,18 +660,6 @@ input[type="reset"],
 input[type="submit"] {
   box-shadow: none !important; }
 
-.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
-  background-color: #D8D8D8 !important;
-  width: 34px !important;
-  height: 4px !important;
-  border-radius: 0px !important; }
-
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  box-shadow: none !important; }
-
-button#responsive-menu-button {
-  background-color: transparent !important; }
-
 button#responsive-menu-button {
   top: 6px !important;
   right: 8% !important;
@@ -789,8 +754,6 @@ div .secondary {
   background-color: #248E6A; }
   @media (min-width: 70rem) {
     div .secondary {
-      white-space: normal;
-      overflow: hidden;
       white-space: inherit;
       padding: 5px 20 10px 10;
       height: 65px; } }
@@ -800,8 +763,6 @@ div .secondary {
     min-width: 50%; }
   div .secondary li {
     display: inline-block;
-    padding: 10px;
-    padding: 7px 15px;
     padding: 7px 10px; }
     @media (min-width: 70rem) {
       div .secondary li {
@@ -816,9 +777,6 @@ div .secondary {
       @media (min-width: 70rem) {
         div .secondary li a {
           font-size: 1.4rem; } }
-
-#top {
-  color: black; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -1284,17 +1242,17 @@ div .secondary {
       width: 480px; }
   .site-main .all-features .features-wrapper {
     /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-    background: #aff1d3;
-    width: 200px;
     box-sizing: border-box;
-    height: 139.76px;
-    width: 480.27px;
     position: relative;
     border-radius: 10px;
     font-family: 'Noto Sans';
     font-size: 15px;
     color: #000;
     text-decoration: none; }
+    @media (min-width: 70rem) {
+      .site-main .all-features .features-wrapper {
+        display: -ms-flexbox;
+        display: flex; } }
     .site-main .all-features .features-wrapper .features-flipper {
       position: relative;
       -webkit-transition: 1.9s;
@@ -1313,6 +1271,7 @@ div .secondary {
         transform: rotateY(180deg);
         cursor: pointer; }
       .site-main .all-features .features-wrapper .features-flipper .front {
+        background: #aff1d3;
         height: auto;
         text-align: center;
         overflow: hidden;
@@ -1330,12 +1289,15 @@ div .secondary {
         text-align: center;
         overflow: hidden;
         padding: 0;
+        height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
         bottom: 1px;
         background-color: #fff;
         transform: rotateY(180deg); }
+        .site-main .all-features .features-wrapper .features-flipper .features-back p {
+          font-size: 25px; }
   .site-main .all-features .green-btn {
     color: #248E6A;
     text-decoration: none; }
@@ -1968,6 +1930,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+
 .archive-sec {
   display: -ms-flexbox;
   display: flex;
@@ -2012,168 +1975,151 @@ body {
     background-color: #4FC8A1; }
     .involved-title a:hover {
       color: red; }
-
-.gre-button {
-  width: 261px;
-  height: 47px;
-  background-color: #4FC8A1;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: Asap;
-  color: #fff;
-  background-color: #4FC8A1;
-  font-family: "Noto Sans";
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  display: block; }
-  .gre-button a {
-    width: 216px;
-    height: 30px;
-    font-family: "Noto Sans";
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #FFF; }
-
-.text-shadow {
-  border-top: 3px solid #248e6a;
-  width: 100%; }
-
-.get_involved img {
-  float: left;
-  width: 227px;
-  height: 244px; }
-
-.text-shadow {
-  border-top: 3px solid #248e6a;
-  width: 100%;
-  margin-bottom: 10px; }
-
-.support-containar {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.support-img {
-  width: 150px 60px;
-  height: 160.50px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
-
-img {
-  height: 100%; }
-
-.involved .circle-btn {
-  width: 200px;
-  height: 178px;
-  display: -ms-flexbox;
-  display: flex;
-  height: 200px;
-  border-radius: 150%;
-  background-color: #4fc8a1;
-  margin: 130px;
-  text-align: center;
-  color: #fff;
-  padding-top: 50px;
-  font-weight: 300;
-  font-family: Asap;
-  font-size: 18px;
-  text-align: center;
-  line-height: 27px; }
-
-.re-btn {
-  width: 175.38px;
-  height: 47px;
-  border-radius: 6px;
-  background-color: #f76072;
-  color: #fff;
-  margin-left: 60px;
-  padding: 10px;
-  box-shadow: none;
-  font-family: "Noto Sans";
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none;
-  font-family: "Noto Sans";
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 27px; }
-  .re-btn:hover {
-    background-color: red; }
-
-.pink-btn {
-  width: 175.38px;
-  height: 47px;
-  background-color: #f76072;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  margin-left: 60px;
-  padding: 8px;
-  box-shadow: none;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none; }
-
-.contact-container .contact-person {
-  color: #fff;
-  background-color: #4fc8a1;
-  font-size: 10px;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  text-align: center;
-  width: 50px; }
-
-blockquote {
-  border-left: 10px solid #CB203E;
-  padding: 0 19px; }
-
-.involved .green-btn {
-  padding-left: 19px;
-  padding-right: 25px;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  font-size: 25px;
-  height: 200px;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 150%;
-  background-color: #4fc8a1;
-  display: block;
-  width: 200px;
-  text-align: center;
-  color: #fff;
-  text-align: center; }
-
-.involved .red-btn {
-  padding: 15px 40px;
-  background-color: #F76072;
-  border-radius: 6px;
-  color: #fff;
-  margin-left: 80px;
-  font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-align: center;
-  display: inline;
-  line-height: inherit;
-  margin: 20px;
-  -ms-flex-direction: row;
-      flex-direction: row; }
+    .involved-title a .gre-button {
+      width: 261px;
+      height: 47px;
+      background-color: #4FC8A1;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: Asap;
+      color: #fff;
+      background-color: #4FC8A1;
+      font-family: "Noto Sans";
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      display: block; }
+      .involved-title a .gre-button a {
+        width: 216px;
+        height: 30px;
+        font-family: "Noto Sans";
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #FFF; }
+    .involved-title a .text-shadow {
+      border-top: 3px solid #248e6a;
+      width: 100%; }
+    .involved-title a .get_involved img {
+      float: left;
+      width: 227px;
+      height: 244px; }
+    .involved-title a .text-shadow {
+      border-top: 3px solid #248e6a;
+      width: 100%;
+      margin-bottom: 10px; }
+    .involved-title a .support-containar {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+    .involved-title a .support-img {
+      width: 150px 60px;
+      height: 160.50px;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
+    .involved-title a img {
+      height: 100%; }
+    .involved-title a .involved .circle-btn {
+      width: 200px;
+      height: 178px;
+      display: -ms-flexbox;
+      display: flex;
+      height: 200px;
+      border-radius: 150%;
+      background-color: #4fc8a1;
+      margin: 130px;
+      text-align: center;
+      color: #fff;
+      padding-top: 50px;
+      font-weight: 300;
+      font-family: Asap;
+      font-size: 18px;
+      text-align: center;
+      line-height: 27px; }
+    .involved-title a .re-btn {
+      width: 175.38px;
+      height: 47px;
+      border-radius: 6px;
+      background-color: #f76072;
+      color: #fff;
+      margin-left: 60px;
+      padding: 10px;
+      box-shadow: none;
+      font-family: "Noto Sans";
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      font-family: "Noto Sans";
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 27px; }
+      .involved-title a .re-btn:hover {
+        background-color: red; }
+    .involved-title a .pink-btn {
+      width: 175.38px;
+      height: 47px;
+      background-color: #f76072;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 60px;
+      padding: 8px;
+      box-shadow: none;
+      text-shadow: none;
+      letter-spacing: 0.8px;
+      text-decoration: none; }
+    .involved-title a .contact-container .contact-person {
+      color: #fff;
+      background-color: #4fc8a1;
+      font-size: 10px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      text-align: center;
+      width: 50px; }
+    .involved-title a blockquote {
+      border-left: 10px solid #CB203E;
+      padding: 0 19px; }
+    .involved-title a .involved .green-btn {
+      padding: 20px 25px 19px 19px;
+      font-size: 25px;
+      height: 200px;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 150%;
+      background-color: #4fc8a1;
+      display: block;
+      width: 200px;
+      text-align: center;
+      color: #fff;
+      text-align: center; }
+    .involved-title a .involved .red-btn {
+      padding: 15px 40px;
+      background-color: #F76072;
+      border-radius: 6px;
+      color: #fff;
+      margin-left: 80px;
+      font-family: "Noto Sans";
+      font-size: 24px;
+      font-weight: 300;
+      text-shadow: none;
+      letter-spacing: 0.8px;
+      text-align: center;
+      display: inline;
+      line-height: inherit;
+      margin: 20px;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 /*--------------------------------------------------------------
 # NW Program Page
