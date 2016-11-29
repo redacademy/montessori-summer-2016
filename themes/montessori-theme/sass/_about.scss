@@ -132,7 +132,6 @@
 	}
 	.members_det {
 		text-align: center;
-		width: 100px;
 		// font-size: $font_member_staff;
 	}
 }
@@ -154,8 +153,9 @@
 		};
 		.members_at_large-name {
 			font-size: $font_member_staff;
+			justify-content: center;
 			display: flex;
-			width: 26%;
+		  padding: .2rem;
 			text-align: center;
 			margin: 1rem;
 		}
@@ -173,13 +173,6 @@
 	.red-more {
 		align-self: flex-end;
 	}
-}
-.target {
-	background-color: grey;
-	width: 100%;
-	height: 10%;
-	padding: $basic_pading;
-	display: none;
 }
 // newsLetter Section
 

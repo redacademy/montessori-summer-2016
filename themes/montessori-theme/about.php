@@ -23,8 +23,9 @@ get_header(); ?>
 		</section>
 			<!-- **********///////////////// Members List Section ///////////////********** -->
 
-			<h1>Board Members<h1>
+
 			<section id="board-members" class="members-list">
+					<h1>Board Members<h1>
 				<!-- Custom Post Loop To Call Members List  -->
 				<?php
 				query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'members' ));
@@ -46,7 +47,7 @@ get_header(); ?>
 					</div><!-- #flip-container -->
 					<div class="members_det">
 			      <p style="font-size:20px"><?php echo CFS()->get('member_name'); ?></p>
-			    	<p style="font-size:20px"><?php echo CFS()->get('member_title'); ?></p>
+			    	<p style="font-weight:bolder"><?php echo CFS()->get('member_title'); ?></p>
 					</div><!-- #member_det -->
 				</div><!-- #members_block -->
 						<?php endwhile; else: ?>
@@ -73,18 +74,7 @@ get_header(); ?>
 			  <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
 </div>
 	<div class="event-grid">
-			<?php
-			query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'news' ));
-		  ?>
-	  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<div class="news-img">
-										<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'large' ); ?>
-								  	<?php endif; ?>
-									</div>
-		  <?php endwhile; else: ?>
-			<p>Sorry, no posts matched your criteria.</p>
-			<?php endif; ?>
+
 			<form action="event-checkbox" method="get">
 				  <input type="checkbox" ></br>
 				  <input type="checkbox"checked></br>

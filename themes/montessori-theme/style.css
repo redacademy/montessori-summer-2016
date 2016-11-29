@@ -1505,8 +1505,7 @@ div .secondary {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center;
-      width: 100px; }
+      text-align: center; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -1530,9 +1529,11 @@ div .secondary {
             flex-wrap: nowrap; } }
     .members_at_large .members_at_large-grid .members_at_large-name {
       font-size: 1.375rem;
+      -ms-flex-pack: center;
+          justify-content: center;
       display: -ms-flexbox;
       display: flex;
-      width: 26%;
+      padding: .2rem;
       text-align: center;
       margin: 1rem; }
 
@@ -1548,13 +1549,6 @@ div .secondary {
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
-
-.target {
-  background-color: grey;
-  width: 100%;
-  height: 10%;
-  padding: 0.625rem;
-  display: none; }
 
 .newsLetter {
   display: -ms-flexbox;
@@ -1771,31 +1765,13 @@ blockquote {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
-  max-width: 37.5rem;
+  max-width: 70rem;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
       align-items: center; }
-
-h1,
-h2,
-h3 {
-  font-family: "Asap", sans-serif;
-  font-weight: normal; }
-
-h1 {
-  font-size: 2.25rem;
-  line-height: 2.625rem; }
-
-h2 {
-  font-size: 1.875rem;
-  line-height: 2.125rem; }
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.6875rem; }
 
 p {
   font-size: 1.625rem;
@@ -1820,6 +1796,10 @@ p {
   padding-bottom: 2.8125rem; }
   .nw-program .why-nw p {
     display: block; }
+    @media (min-width: 70rem) {
+      .nw-program .why-nw p {
+        -moz-text-align-last: right;
+             text-align-last: right; } }
   .nw-program .nw-img {
     display: -ms-flexbox;
     display: flex;
@@ -1827,6 +1807,18 @@ p {
         justify-content: center;
     margin-top: 3.4375rem;
     margin-bottom: 1.875rem; }
+    @media (min-width: 70rem) {
+      .nw-program .nw-img {
+        float: right;
+        width: 900rem;
+        height: 300px; } }
+
+@media (min-width: 70rem) {
+  .nw-part1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; } }
 
 .funding {
   display: -ms-flexbox;
@@ -1836,21 +1828,43 @@ p {
   margin-top: 1.875rem;
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
-  .funding .funding-img {
-    margin-top: 25rem; }
-  .funding .funding-det {
-    display: block; }
   .funding .funding-img,
   .funding .money-spend-img {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    .funding .funding-img img,
-    .funding .money-spend-img img {
-      width: 87%;
-      margin-right: 0.125rem;
-      margin-bottom: 0.625rem; }
+    @media (min-width: 70rem) {
+      .funding .funding-img,
+      .funding .money-spend-img {
+        width: 50%;
+        margin-bottom: 4rem; } }
+  @media (min-width: 70rem) {
+    .funding .nw-part2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  @media (min-width: 70rem) {
+    .funding .nw-part3 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+    .funding .money-spend-para {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex: 25%;
+          flex: 25%;
+      height: 50%;
+      -ms-flex-negative: 2;
+          flex-shrink: 2; }
+    .funding img {
+      height: 60%; } }
+  @media (min-width: 70rem) {
+    .funding .red-border-container {
+      width: 60%;
+      height: 20rem; } }
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
@@ -1928,16 +1942,6 @@ p {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
-      @media (min-width: 37.5rem) {
-        .teacher-list .teacher-grid .teacher-block {
-          -ms-flex: 0.03;
-              flex: 0.03; } }
-      @media (min-width: 70rem) {
-        .teacher-list .teacher-grid .teacher-block {
-          -ms-flex: 1;
-              flex: 1;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
     .teacher-list .teacher-grid .flip-container {
       display: block;
       box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
@@ -2006,6 +2010,7 @@ p {
   border-left: 7px solid #D93B57;
   overflow: visible; }
   .red-border-container p {
+    display: block;
     margin: 0 auto; }
 
 .content-wrapper {
