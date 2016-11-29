@@ -1,5 +1,4 @@
 //-------------------front page---------------------------//
-
 // media screen for mobile (max-width: 480px)
 .site-main {
     .home {
@@ -9,6 +8,10 @@
          @include desktop{
             padding: 0px 90px;
          }
+        margin: 0 auto;
+        @include desktop {
+            padding: 0 90px;
+        }
         .home-wrapper {
             width: 480px;
             height: 585px;
@@ -233,7 +236,6 @@
                     position: absolute;
                     right: 35px;
                 }
-
             }
 
             p {
@@ -255,6 +257,42 @@
             margin-bottom: 95px;
             height: 125px;
                 @include desktop{
+            .support-img-wrapper {
+                // height: auto;
+                @include desktop {
+                    height: 0;
+                }
+                img {
+                    margin: 0 6rem;
+                    // width: 287px;
+                    // height: 470px;
+                    @include desktop {
+                        height: auto;
+                        display: flex;
+                        top: -13rem;
+                        position: absolute;
+                        right: 35px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    // height: auto;
+                    @include desktop {
+                        display: flex;
+                        top: 18rem;
+                        position: relative;
+                        right: -950px;
+                        width: 25%;
+                    }
+                }
+            }
+            //support-wrapper
+            blockquote {
+                border-left: 6px solid #D93B57;
+                font-size: 25px;
+                margin-bottom: 95px;
+                height: 125px;
+                @include desktop {
                     border-left: 6px solid #D93B57;
                     margin: 27px 119px;
                     width: 70%;
@@ -264,7 +302,6 @@
                 }
             }
         }
-
             p {
                 width: 377px;
                 font-family: "Noto Sans";
@@ -307,8 +344,7 @@
                 letter-spacing: 0.8px;
                 // width: 200px;
                 height: 47px;
-                display: inline-flex;
-
+                display: flex;
             }
             .green-btn {
                 background-color: #4FC8A1;
@@ -316,6 +352,7 @@
                 border-radius: 6px;
                 font-family: "Noto Sans";
                 font-size: 20px;
+                font-weight: bold;
                 text-align: center;
                 line-height: 30px;
                 color: #fff;
@@ -325,13 +362,14 @@
                 letter-spacing: 0.8px;
                 height: 47px;
                 width: 185px;
-                display: inline-flex;
+                display: flex;
             }
         }
         //information
     }
     //support-wrapper
-    // this is for the features fliper
+
+// this is for the features fliper
     .all-features {
         margin-bottom: 30px;
         h2 {
@@ -358,13 +396,12 @@
             box-sizing: border-box;
             height: 139.76px;
             width: 480.27px;
-    position: relative;
-	border-radius: 10px;
-	font-family: 'Noto Sans';
-	font-size: 15px;
-	color: #000;
-	text-decoration: none;
-
+            position: relative;
+            border-radius: 10px;
+            font-family: 'Noto Sans';
+            font-size: 15px;
+            color: #000;
+            text-decoration: none;
             .features-flipper {
                 position: relative;
                 -webkit-transition: 1.9s;
@@ -418,19 +455,15 @@
                     -moz-transform: rotateY(180deg);
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
-                }
-            }
-        }
+    }}}
         .green-btn {
             color: #248E6A;
             text-decoration: none;
-        }
-    }
+    }}
 }
 a {
     text-decoration: none;
-}
+    }} }
 body {
     background-color: #ffffff;
 }
-/***************************************************/

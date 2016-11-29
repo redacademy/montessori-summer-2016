@@ -16,23 +16,25 @@ get_header();
   <?php
 $args = array(
    'post_type' => 'post',
-   'show_per_page' => 1,
+   'posts_per_page' => 3,
 );
 $query = new WP_Query( $args  );
 if ( $query-> have_posts() ) :
  while ($query-> have_posts() )  : $query->the_post(); ?>
-  <div class="involved-title">
+   <div class="involved-title">
      <a href="#"><?php the_title(); ?></a>
-     <div class="moretag" href="<?php the_permalink(); ?>"></div>
+    </div>
+     <!-- <div class="moretag" href="<?php the_permalink(); ?>"></div> -->
 
 
-  </div>
+
 
 <?php endwhile; ?>
+</div>
 <?php while ($query-> have_posts() )  : $query->the_post(); ?>
 <div class="involved-content">
    <?php the_content('involved_content');?>
- </div>
+
    <div class= "involved-img" >
      <?php output_image('involved_img'); ?>
 
@@ -104,9 +106,7 @@ if ( $query-> have_posts() ) :
 
 
 
+      </main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-</div>
-</main>
