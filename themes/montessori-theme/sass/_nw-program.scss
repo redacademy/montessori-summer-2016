@@ -3,13 +3,12 @@
 --------------------------------------------------------------*/
 // General Setting
 
-* {
-	box-sizing: border-box;
-}
+// * {
+// 	box-sizing: border-box;
+// }
 // @media screen and (max-width: 480px) {
 
 .nw-program-wrapper {
-	max-width: $desktop_width;
 	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
@@ -72,7 +71,6 @@ p {
 			flex-shrink: 5;
 		}
 	}
-
 	.nw-img {
 		display: flex;
 		justify-content: center;
@@ -103,51 +101,39 @@ p {
 	.money-spend-img {
 		display: flex;
 		justify-content: center;
-		@include desktop {
-			display: flex;
-			margin-bottom: 12rem;
-		}
+		margin-top: 2rem;
 	}
-
 	.funding-img img {
 		@include desktop {
 			flex-grow: 1;
-			width: 175%;
-			height: 175%;
+			width: 120%;
 		}
 	}
 
 	.money-spend-img img {
 		@include desktop {
-			flex-grow: 1;
-			align-self: baseline;
-			width: 70%;
-			height: 68%;
-			padding-top:1.7rem;
 			padding-right:1.7rem;
 		};
 	}
-
 	.nw-part2 {
 		@include desktop {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
+			.red-border-container {
+				width: 82%;
+				display: flex;
+			}
 		}
 	}
 	@include desktop {
 		.nw-part3 {
 			display: flex;
+			align-items: center;
 			flex-direction: row-reverse;
-			height: 38rem;
 		}
 		.money-spend-para {
 			flex-shrink: 5;
-		}
-	}
-
-	.red-border-container {
-		@include desktop {
-			height: 22rem;
 		}
 	}
 
@@ -155,11 +141,18 @@ p {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*3;
+		@include desktop{
+			justify-content: flex-end;
+		}
 
 		.green-btn {
 			padding: 10px;
 			width: 44.666%;
 			margin-right: 2px;
+			@include desktop{
+				padding: 1.2rem;
+				width: 18%;
+			};
 		}
 	}
 }
