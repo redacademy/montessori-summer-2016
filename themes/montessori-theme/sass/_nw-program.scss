@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
@@ -7,48 +6,47 @@
 * {
 	box-sizing: border-box;
 }
+// @media screen and (max-width: 480px) {
 
 .nw-program-wrapper {
+	max-width: $desktop_width;
 	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	// background-color: grey;
 }
 // fonts
-
-h1,
-h2,
-h3 {
-	font-family: $font_title;
-	line-height:$mobile_line_height;
-	font-weight: normal;
-}
-
-h1 {
-	font-size: $h1_size_mob;
-	line-height: 2.625rem;
-}
-
-h2 {
-	font-size: $h2_size_mob;
-	line-height: 2.125rem;
-}
-
-h3 {
-	font-size: $h3_size_mob;
-	line-height: 1.6875rem;
-}
+// h1,
+// h2,
+// h3 {
+// 	font-family: $font_title;
+// 	font-weight: normal;
+// }
+//
+// h1 {
+// 	font-size: 2.25rem;
+// 	line-height: 2.625rem;
+// }
+//
+// h2 {
+// 	font-size: 1.875rem;
+// 	line-height: 2.125rem;
+// }
+//
+// h3 {
+// 	font-size: 1.5rem;
+// 	line-height: 1.6875rem;
+// }
 
 p {
-	font-size: $font_body_size_mob;
+	font-size: 1.625rem;
 	line-height: 2.5rem;
 	font-style: $font_body;
 }
 
 .spcil p {
-	font-size: 1.15rem;
+	font-size: 1.25rem;
 	line-height: 2.5rem;
 	font-style: $font_main;
 }
@@ -64,160 +62,136 @@ p {
 // Section Why NW Program Section
 
 .nw-program {
-	display: flex;
-	flex-direction: column;
 	border-bottom: solid 3px $color_btn_green;
-	padding-bottom: $basic_margin *9.5;
+	padding-bottom: $basic_margin *4.5;
 
 	.why-nw {
 		p {
 			display: block;
-			flex-shrink: 5;
+			@include desktop {
+				text-align-last: right;
+			};
 		}
 	}
 
 	.nw-img {
 		display: flex;
 		justify-content: center;
-		margin-top: $basic_margin*2.5;
+		margin-top: $basic_margin*5.5;
 		margin-bottom: $basic_margin*3;
+		@include desktop {
+			float: right;
+			width: 900rem;
+			height: 300px;
+		};
 	}
 }
+
 .nw-part1 {
 	@include desktop {
 		display: flex;
 		flex-direction: row;
-	}
+	};
 }
 // Funding Section
+
 .funding {
 	display: flex;
 	flex-direction: column;
-	margin-top: $basic_margin*2;
+	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
 
 	.funding-img,
 	.money-spend-img {
-		align-self: center;
+		display: flex;
 		justify-content: center;
-		margin-top: 2rem;
-		h2{
-			text-align: left;
-		}
-	}
-
-	.funding-img img {
-		@media screen and (max-width: 768px) {
-			flex-grow: 1;
-			width: 120%;
-		}
-	}
-	.funding-img img {
 		@include desktop {
-			flex-grow: 1;
-			width: 120%;
-		}
-	}
-	.money-spend-img img {
-		@include desktop {
-			padding-right: 4rem;
-			padding-left: .4rem;
+			width: 50%;
+			margin-bottom: 4rem;
 		}
 	}
 
 	.nw-part2 {
-@include desktop {
+		@include desktop {
 			display: flex;
 			flex-direction: row;
-			align-items: center;
-		  .red-border-container {
-				width: 82%;
-				display: flex;
-			}
 		}
 	}
 	@include desktop {
 		.nw-part3 {
 			display: flex;
-			align-items: center;
 			flex-direction: row-reverse;
 		}
+
 		.money-spend-para {
-			flex-shrink: 5;
+			display: flex;
+			flex: 25%;
+			height: 50%;
+			flex-shrink: 2;
+		}
+
+		img {
+			height: 60%;
 		}
 	}
+
+	.red-border-container {
+		@include desktop {
+			width: 60%;
+			height: 20rem;
+		}
+	}
+
 	.funding-btn {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*3;
-@include desktop {
-		justify-content: flex-end;
-	}
-	.green-btn {
-		padding: 1rem;
-		width: 44.666%;
-		justify-content: center;
-		margin-right: 2px;
-@include desktop {
-		padding: 1.2rem;
-		width: 18%;
-				}
-			}
+
+		.green-btn {
+			padding: 10px;
+			width: 44.666%;
+			margin-right: 2px;
 		}
-	}
-	//School List Section
-	.school-list {
-		display: flex;
-		flex-direction: column;
-
-		.school-img {
-			display: flex;
-			justify-content: center;
-
-			img {
-				width: 80%;
-				height: 80%;
-			}
-
-			.address .phone {
-				font-weight: bolder;
-			}
-		}
-	}
-	Preschools List Section
-	.preschools-list {
-
-		@include desktop {
-			h1{
-			  width: 55%;
-				padding: 1.7rem;
-				border-top: solid 3px $color_btn_green;
-			}
 	}
 }
-//Enrollment Section
-.enroll {
-	border-top: solid 3px $color_btn_green;
-	padding-bottom: $basic_margin *4.5;
+//School List Section
+
+.school-list {
 	display: flex;
 	flex-direction: column;
 
-	.enrollment-wrap {
-	@include desktop {
-			display: flex;
-			flex-direction: row;
-			.guids {
-				flex-shrink: 3.5;
-				padding-right: 1rem;
-			}
+	.school-img {
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 80%;
+			height: 80%;
+		}
+
+		.address .phone {
+			font-weight: bolder;
 		}
 	}
+}
+//Preschools List Section
+
+.preschools-list {
+	padding: 1px;
+
+	.target {
+		margin: 0 auto;
+	}
+}
+//Enrollment Section
+
+.enroll {
+	display: flex;
+	flex-direction: column;
+
 	.enroll-info {
-		margin-top: 3rem;
-@include desktop {
-			margin-top: 2rem;
-		}
+		margin-top: 27rem;
 	}
 
 	.enroll-block {
@@ -225,12 +199,9 @@ p {
 		display: flex;
 		margin: 40px auto;
 		flex-direction: column;
-		justify-content: center;
 
 		.enroll-img {
 			margin-bottom: 50px;
-			display: flex;
-			justify-content: center;
 		}
 
 		.enroll-btn {
@@ -244,32 +215,22 @@ p {
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
+	justify-content: center;
 
-
-	h1 {
-		width: 40%;
-		padding: 1.7rem;
-		border-top: solid 3px $color_btn_green;
-	}
 	.teacher-grid {
 		display: flex;
-		flex: 100%;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		@media screen and (max-width: 768px) {
-			flex-direction: row;
-			@include desktop{
-			flex-direction: row;
-			};
-		}
 
 		.teacher-block {
 			flex: 33%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			// @include tablet {
+			// 	flex: 0.03;
+			// }
 			@include desktop {
-				flex: 18%;
 				flex: 1;
 			}
 		}
@@ -317,21 +278,15 @@ p {
 			.back {
 				border-radius: 50%;
 				position: absolute;
-				width: 125px;
+				width: 100px;
 				overflow: hidden;
 				text-overflow: ellipsis;
-				height: 125px;
+				height: 100px;
 				text-align: center;
 				right: 3px;
 				-webkit-transform: rotateY(180deg);
 				-moz-transform: rotateY(180deg);
 				transform: rotateY(180deg);
-				@media screen and (max-width: 768px) {
-					width: 180px;
-					height: 180px;
-					right: 4px;
-					top: 55px;
-				}
 			}
 		}
 
@@ -345,28 +300,20 @@ p {
 		.back,
 		.flip-container,
 		.front {
-			width: 125px;
-			height: 125px;
-			@media screen and (max-width: 768px) {
-				width: 180px;
-				height: 180px;
-			}
-			@include desktop {
-				width: 200px;
-				height: 200px;
-			}
+			width: 100px;
+			height: 100px;
 		}
 
-		.back,
-		.front {
-			-webkit-backface-visibility: hidden;
-			-moz-backface-visibility: hidden;
-			backface-visibility: hidden;
-		}
+	.back,
+	.front {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
 
-		.teacher_det {
-			text-align: center;
-			font-size: $font_member_staff;
-		}
 	}
+.teacher_det {
+	text-align: center;
+	font-size: $font_member_staff;
+}
+}
 }

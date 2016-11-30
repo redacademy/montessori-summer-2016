@@ -1,13 +1,11 @@
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
-
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
 }
-
 // Center block
 @mixin center-block {
 	display: block;
@@ -16,7 +14,7 @@
 }
 //Desktop Screen size
 @mixin desktop {
-	@media (min-width: #{$desktop_width}) {
+	 @media (min-width: #{$desktop_width}){
 		@content;
 	}
 }
@@ -30,30 +28,28 @@
 @mixin flex($align,$justify) {
 	display: flex;
 	display: -webkit-box;
-  display: -ms-flexbox;
+	display: -ms-flexbox;
 	align-items: $align;
 	justify-content: $justify;
 }
-
 ///border radius extentions
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
 }
 ///visibility extentions
-
 @mixin visibility($visibility) {
--webkit-backface-visibility: $visibility;
--moz-backface-visibility: $visibility;
--o-backface-visibility: $visibility;
-backface-visibility: $visibility;
+	-webkit-backface-visibility: $visibility;
+	-moz-backface-visibility: $visibility;
+	-o-backface-visibility: $visibility;
+	backface-visibility: $visibility;
 }
 //rotate extentions
 @mixin rotate($rotate) {
--webkit-transform: rotateY($rotate);
--moz-transform: rotateY($rotate);
--o-transform: rotateY($rotate);
-transform: rotateY($rotate);
+	-webkit-transform: rotateY($rotate);
+	-moz-transform: rotateY($rotate);
+	-o-transform: rotateY($rotate);
+	transform: rotateY($rotate);
 }

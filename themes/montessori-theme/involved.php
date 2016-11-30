@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-       <main id="main" class="site-main" role="main">
+       <main id="main back-to-top" class="site-main" role="main">
 
 
          <!-- our involved section -->
@@ -16,7 +16,7 @@ get_header();
   <?php
 $args = array(
    'post_type' => 'post',
-   'show_per_page' => 1,
+   'posts_per_page' => 3,
 );
 $query = new WP_Query( $args  );
 if ( $query-> have_posts() ) :
@@ -50,19 +50,17 @@ if ( $query-> have_posts() ) :
 
 <!-- This is for suppot now  & did you  and image -->
 <div class="text-shadow">
-
-
- <h3>Support Now</h2>
+  <h3>Support Now</h2>
 </div>
 <div class="banner_post">
 
- <h3> Did you Know.... </h2>
+  <h3> Did you Know.... </h2>
  </div>
 <!-- this for support section -->
 <div support-containar>
  <div class="support-img"><?php output_image('support_img'); ?>
    <?php output_image('play-img'); ?>
-   <?php output_image('field-trip'); ?>
+   <?php output_image('field-img'); ?>
    </div>
 </div>
         <article class="involved">

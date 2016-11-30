@@ -2,6 +2,11 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
+.history-content {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
 
 .history-title {
     margin-bottom: 0;
@@ -22,6 +27,7 @@
         display: block;
 
         img {
+          padding-top: 40px;
             float: left;
         }
         @include desktop {
@@ -37,14 +43,13 @@
             align-self: flex-end;
             width: 430px;
             height: 500px;
-            padding-bottom: 100px;;
+            padding-bottom: 100px;
         }
     }
 }
 
 .history-content {
     blockquote {
-
         text-align: left;
     }
 
@@ -56,10 +61,8 @@
     }
     width: 100%;
 
-
-
     blockquote {
-      width: 100%
+        width: 100%;
     }
     @include desktop {
         blockquote {
@@ -71,7 +74,7 @@
             position: relative;
 
             p {
-              margin: 0px;
+                margin: 0;
                 font-size: 2rem;
             }
         }
@@ -88,24 +91,26 @@
         }
 
         p {
-          display: inline-block;
+            display: inline-block;
             text-align: left;
         }
     }
 }
 ////************philosophy Section ************/////
-
+.active{
+  visibility: visible;
+}
 .main-philosophy {
     margin: 100px auto;
     width: 400px;
-    min-width: 90%;
+    min-width: 75%;
     height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
     position: relative;
     @include desktop {
-      width: 1000px;
-      min-width: 950px;
+        width: 1000px;
+        min-width: 950px;
         height: 640px;
     }
 
@@ -126,18 +131,17 @@
             width: 300px;
             height: 300px;
             background-color: #AFF1D3;
-            -webkit-transition: 3s;
+            -webkit-transition: 0.8s;
             -webkit-transform-style: preserve-3d;
-            -moz-transition: 2s;
+            -moz-transition: 0.8s;
             -moz-transform-style: preserve-3d;
-            -o-transition: 3s;
+            -o-transition: 0.8s;
             -o-transform-style: preserve-3d;
-            transition: 3s;
+            transition: 0.8s;
             transform-style: preserve-3d;
             @include border-radius(10px);
 
             &:hover {
-                @include visibility(hidden);
                 @include rotate(180deg);
             }
         }
@@ -161,10 +165,10 @@
                 width: 70px;
                 height: 70px;
                 @include desktop {
-                    left: 56px;
-                    top: 9px;
-                    width: 190px;
-                    height: 153px;
+                    left: 48px;
+                    top: -19px;
+                    width: 210px;
+                    height: 186px;
                     @include visibility(hidden);
                 }
             }
@@ -175,7 +179,7 @@
             margin: 0;
             text-align: center;
             display: inline-block;
-            width: 85.1%;
+            width: 80%;
             color: #248e6a;
             height: auto;
             overflow: hidden;
@@ -239,7 +243,6 @@
 }
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
-
 .main-materials div:nth-of-type(3) {
     @include desktop {
         flex-direction: row-reverse;
@@ -257,7 +260,6 @@
 }
 
 .materials {
-    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -269,22 +271,20 @@
     }
 
     img {
-        width: 330px;
-        height: 330px;
+        width: 300px;
+        height: 300px;
         @include desktop {
-            margin-top: 100px;
-
+            margin-top: 50px;
         }
     }
 }
 
 .materials-contents {
     blockquote {
-
-
-    p {
-        display: inline;
-    }}
+        p {
+            display: inline;
+        }
+    }
     width: 90%;
     @include desktop {
         width: 60%;
@@ -292,7 +292,6 @@
 
         blockquote {
             width: 75%;
-            min-width: 70%;
             top: 10px;
             margin: 0 0 0 15%;
             padding-left: 25px;
@@ -300,7 +299,7 @@
             position: relative;
 
             p {
-                margin: 0px;
+                margin: 0;
                 font-size: 2rem;
             }
         }
@@ -317,10 +316,11 @@
         }
 
         p {
-          display: inline;
+            display: inline;
             padding-top: 4px;
-            text-align: left;@include desktop{
-              display: inline-block;
+            text-align: left;
+            @include desktop {
+                display: inline-block;
             };
         }
     }
@@ -329,9 +329,8 @@
 
 .benefits li {
     list-style-type: disc;
-    @include desktop{
-      // color:red;
-
+    @include desktop {
+        // color:red;
     };
 }
 
@@ -370,7 +369,7 @@
             position: relative;
 
             p {
-                margin: 0px;
+                margin: 0;
                 font-size: 2rem;
             }
         }
@@ -392,88 +391,6 @@
         }
     }
 }
-//
-//             p {
-//                 font-size: 2rem;
-//             }
-//         }
-//
-//         .red-border-q::before {
-//             content: "";
-//             display: block;
-//             position: absolute;
-//             top: 5PX;
-//             left: 0PX;
-//             height: 100%;
-//             border-left: solid 12px $border_left_red;
-//         }
-//     }
-// }
-//
-// .benefits-title {
-//     p {
-//         padding-top: 4px;
-//         display: block;
-//         @include desktop {
-//             font-size: 1.5rem;
-//         }
-//     }
-// }
-// ///Archive ////
-// .montessori-archive {
-//     margin-top: 40px;
-//
-//     h3 {
-//         width: 40%;
-//         border-top: solid 3px $color_btn_green;
-//         padding-top: 30px;
-// .the-archive ul{
-//   width: 500px;
-//   line-height: 2.5rem;
-//   font-size: 1.6rem;
-//   font-family: $font_title;
-//   li{
-//     padding-left: 30px;
-//     line-height: inherit;
-//     font-size: 1.4rem;
-//   }
-// }
-//
-// .montessori-archive {
-//
-//
-//     h3 {
-//         width: 600px;
-//         border-top: solid 3px $color_btn_green;
-//         padding-top: 12px;
-//     }
-// }
-// /*Start Resources Section  */
-// .main-resources {
-//   border-bottom: none;
-//   height: 400px;
-//   position: relative;
-// .green-btn {
-//     background-color: #4fc8a1;
-//     @include border-radius (6px);
-//     font-family: Noto Sans;
-//     font-size: 14px;
-//     font-weight: 700;
-//     text-align: center;
-//     line-height: 28px;
-//     color: #fff;
-//     padding: 10px 20px;
-//     text-shadow: none;
-//     letter-spacing: 0.8px;
-//     display: block;
-//     margin: 10px auto;
-//     @include desktop {
-//         width: 331px;
-//         height: 65px;
-//         font-size: 20px;
-//     }
-// }
-// }
 
 .benefits-title {
     p {
@@ -484,29 +401,52 @@
         }
     }
 }
-///Archive ////
-.fa-caret-right{
-  color: $color_btn_hover_green;
-  padding-right: 5px;
-}
+///Archive and rescourses sections////
 .the-archive ul {
-width: 450px;
+    width: 500px;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    font-family: $font_title;
+
+    li {
+        padding-left: 30px;
+        line-height: inherit;
+        font-size: 1.4rem;
+
+        a {
+            color: $color_btn_hover_green;
+        }
+    }
+}
+
+.fa-caret-right {
+    cursor: pointer;
+    color: $color_btn_hover_green;
+    padding-right: 5px;
+}
+
+.the-archive ul {
+    width: 450px;
     line-height: 2rem;
     font-size: 1.3rem;
     font-family: $font_title;
-    @include desktop{
-      line-height: 2.5rem;
-      font-size: 1.6rem;
-      width: 600px
+    @include desktop {
+        line-height: 2.5rem;
+        font-size: 1.6rem;
+        width: 600px;
     };
 
     li {
         padding-left: 30px;
         line-height: inherit;
 
-    a{font-size: 1.2rem;@include desktop{font-size: 1.4rem;}
-          color: $color_btn_hover_green;
-      }
+        a {
+            color: $color_btn_hover_green;
+            font-size: 1.2rem;
+            @include desktop {
+                font-size: 1.4rem;
+            }
+        }
     }
 }
 
@@ -534,37 +474,41 @@ width: 450px;
 .fa-angle-down {
     color: green;
     padding-left: 10px;
+    cursor: pointer;
 }
 /*Start Resources Section  */
 .main-resources {
     border-bottom: none;
     height: 400px;
     position: relative;
-    .green-bt{
-        background-color: #4fc8a1;
-        @include border-radius (6px);
+}
 
+.green-bt {
+    background-color: #4fc8a1;
+    @include border-radius (6px);
+    letter-spacing: 0.8px;
+    display: block;
+    margin: 10px auto;
+    text-shadow: none;
+    width: 300px;
+    height: 60px;
 
-        letter-spacing: 0.8px;
-        display: block;
-        margin: 10px auto;;
-        text-shadow: none;
-        a{
-          font-family: Noto Sans;
-          font-size:1rem;
-          font-weight: 700;
-          text-align: center;
-          line-height: 28px;
-          color: #fff;
-          padding: 10px 20px;
-        }
-        @include desktop {
-            width: 331px;
-            height: 65px;
-            font-size: 20px;
-            a{
-font-size:1.1rem;
-            }
+    a {
+        font-family: Noto Sans;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 28px;
+        color: #fff;
+        padding: 10px 25px;
+    }
+    @include desktop {
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+
+        a {
+            font-size: 1.1rem;
         }
     }
 }
