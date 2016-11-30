@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
@@ -13,7 +14,7 @@
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
-	background-color: grey;
+	// background-color: grey;
 }
 // fonts
 
@@ -32,7 +33,7 @@ h1 {
 
 h2 {
 	font-size: $h2_size_mob;
-	// line-height: 2.125rem;
+	line-height: 2.125rem;
 }
 
 h3 {
@@ -80,14 +81,10 @@ p {
 		justify-content: center;
 		margin-top: $basic_margin*2.5;
 		margin-bottom: $basic_margin*3;
-		@media screen and (max-width: 768px) {
-			width: 50%;
-			align-self: center;
-		}
 	}
 }
 .nw-part1 {
-	@media screen and (max-width: 768px) {
+	@include desktop {
 		display: flex;
 		flex-direction: row;
 	}
@@ -108,14 +105,6 @@ p {
 		h2{
 			text-align: left;
 		}
-		// @media screen and (min-width: 768px) {
-		// 	margin-top: 4rem;
-		// 	width: 60%;
-		// }
-		// @include desktop {
-			// margin-top: 4rem;
-			// width: 60%;
-		// }
 	}
 
 	.funding-img img {
@@ -124,56 +113,56 @@ p {
 			width: 120%;
 		}
 	}
-	// .funding-img img {
-	// 	@include desktop {
-	// 		flex-grow: 1;
-	// 		width: 120%;
-	// 	}
-	// }
-	// .money-spend-img img {
-	// 	@include desktop {
-	// 		padding-right: 4rem;
-	// 		padding-left: .4rem;
-	// 	}
-	// }
+	.funding-img img {
+		@include desktop {
+			flex-grow: 1;
+			width: 120%;
+		}
+	}
+	.money-spend-img img {
+		@include desktop {
+			padding-right: 4rem;
+			padding-left: .4rem;
+		}
+	}
 
-	// .nw-part2 {
-	// 	@include desktop {
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 		align-items: center;
-	// 	  .red-border-container {
-	// 			width: 82%;
-	// 			display: flex;
-	// 		}
-	// 	}
-	// }
-	// @include desktop {
-	// 	.nw-part3 {
-	// 		display: flex;
-	// 		align-items: center;
-	// 		flex-direction: row-reverse;
-	// 	}
-	// 	.money-spend-para {
-	// 		flex-shrink: 5;
-	// 	}
-	// }
+	.nw-part2 {
+@include desktop {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		  .red-border-container {
+				width: 82%;
+				display: flex;
+			}
+		}
+	}
+	@include desktop {
+		.nw-part3 {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+		}
+		.money-spend-para {
+			flex-shrink: 5;
+		}
+	}
 	.funding-btn {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*3;
-	// @include desktop {
-	// 	justify-content: flex-end;
-	// }
+@include desktop {
+		justify-content: flex-end;
+	}
 	.green-btn {
 		padding: 1rem;
 		width: 44.666%;
 		justify-content: center;
 		margin-right: 2px;
-	// @include desktop {
-	// 	padding: 1.2rem;
-	// 	width: 18%;
-	// 			}
+@include desktop {
+		padding: 1.2rem;
+		width: 18%;
+				}
 			}
 		}
 	}
@@ -196,17 +185,17 @@ p {
 			}
 		}
 	}
-	//Preschools List Section
-// 	.preschools-list {
-//
-// 		@include desktop{
-// 			h1{
-// 			  width: 55%;
-// 				padding: 1.7rem;
-// 				border-top: solid 3px $color_btn_green;
-// 			}
-// 	}
-// }
+	Preschools List Section
+	.preschools-list {
+
+		@include desktop {
+			h1{
+			  width: 55%;
+				padding: 1.7rem;
+				border-top: solid 3px $color_btn_green;
+			}
+	}
+}
 //Enrollment Section
 .enroll {
 	border-top: solid 3px $color_btn_green;
@@ -214,24 +203,21 @@ p {
 	display: flex;
 	flex-direction: column;
 
-	// .enrollment-wrap {
-	// 	@include desktop {
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 		.guids {
-	// 			flex-shrink: 3.5;
-	// 			padding-right: 1rem;
-	// 		}
-	// 	}
-	// }
+	.enrollment-wrap {
+	@include desktop {
+			display: flex;
+			flex-direction: row;
+			.guids {
+				flex-shrink: 3.5;
+				padding-right: 1rem;
+			}
+		}
+	}
 	.enroll-info {
 		margin-top: 3rem;
-		// @media screen and (min-width: 768px) {
-		// 	margin-top: 6rem;
-		// }
-		// @include desktop {
-		// 	margin-top: 2rem;
-		// }
+@include desktop {
+			margin-top: 2rem;
+		}
 	}
 
 	.enroll-block {
@@ -258,22 +244,23 @@ p {
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
-	// justify-content: center;
+
 
 	h1 {
 		width: 40%;
 		padding: 1.7rem;
 		border-top: solid 3px $color_btn_green;
 	}
-	// @include desktop {
-	// 	flex-direction: column;
-	// }
 	.teacher-grid {
 		display: flex;
+		flex: 100%;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		@media screen and (max-width: 768px) {
 			flex-direction: row;
+			@include desktop{
+			flex-direction: row;
+			};
 		}
 
 		.teacher-block {
@@ -281,8 +268,8 @@ p {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			@media screen and (max-width: 768px) {
-				max-width: 990px;
+			@include desktop {
+				flex: 18%;
 				flex: 1;
 			}
 		}
@@ -340,8 +327,8 @@ p {
 				-moz-transform: rotateY(180deg);
 				transform: rotateY(180deg);
 				@media screen and (max-width: 768px) {
-					width: 200px;
-					height: 200px;
+					width: 180px;
+					height: 180px;
 					right: 4px;
 					top: 55px;
 				}
@@ -360,11 +347,11 @@ p {
 		.front {
 			width: 125px;
 			height: 125px;
-			@media screen and (min-width: 768px) {
-				width: 190px;
-				height: 190px;
-			}
 			@media screen and (max-width: 768px) {
+				width: 180px;
+				height: 180px;
+			}
+			@include desktop {
 				width: 200px;
 				height: 200px;
 			}
