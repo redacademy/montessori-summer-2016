@@ -62,7 +62,6 @@ get_header(); ?>
          <h2> Features News</h2>
                     <!-- // All the content in the loop goes here -->
               <div class="features-wrapper">
-                <div class="features-flipper" >
 
                          <?php $args = CFS()->get('features_news'); ?>
 
@@ -75,11 +74,11 @@ get_header(); ?>
               if ( $my_query->have_posts() ) {
                 while ( $my_query->have_posts() ) {
                   $my_query->the_post();
-              ?>
+              ?>                <div class="features-flipper" >
+
                     <p class="front"><?php the_title(  ); ?> </p>
                     <div class="features-back"> <?php the_content(); ?> </div>
-                 <?php
-                 ?>
+
                   <a class="btn" href="<?php the_permalink(50); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
                   <br>
                   <!--<?php echo CFS()->get( 'features_news' ); ?>-->

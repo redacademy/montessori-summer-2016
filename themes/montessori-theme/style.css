@@ -1034,7 +1034,7 @@ div .secondary {
       margin: 20px -60px;
       padding-top: 70px; } }
   .site-main .links-wrapper p {
-    width: 377px;
+    width: 380px;
     font-family: "Noto Sans";
     font-size: 20px;
     line-height: 40px;
@@ -1123,9 +1123,10 @@ div .secondary {
           font-family: "Asap";
           font-size: 48px;
           line-height: 55px;
-          margin: 0;
+          margin: 45px 0px;
           box-sizing: border-box;
-          width: 1283px; } }
+          width: 100%;
+          padding: 45px 0px; } }
     @media (min-width: 768px) {
       .site-main .support-wrapper .information .support-img-wrapper {
         height: 0; } }
@@ -1150,18 +1151,20 @@ div .secondary {
           top: 18rem;
           position: relative;
           right: -950px;
-          width: 25%; } }
+          width: 25%;
+          font-size: 18px; } }
     .site-main .support-wrapper .information blockquote {
-      border-left: 6px solid #D93B57;
+      border-left: 14px solid #D93B57;
       font-size: 25px;
       margin-bottom: 95px;
       height: 125px; }
       @media (min-width: 768px) {
         .site-main .support-wrapper .information blockquote {
-          border-left: 6px solid #D93B57;
+          border-left: 14px solid #D93B57;
           margin: 27px 119px;
           width: 70%;
-          height: auto; }
+          height: auto;
+          padding: 0px; }
           .site-main .support-wrapper .information blockquote p {
             font-size: 24px; } }
     .site-main .support-wrapper .information p {
@@ -1173,12 +1176,11 @@ div .secondary {
       margin: 40px; }
       @media (min-width: 768px) {
         .site-main .support-wrapper .information p {
-          width: 61%;
+          width: 65%;
           font-family: 'Noto Sans';
-          font-size: 22px;
           line-height: 47px;
           letter-spacing: 0.9px;
-          margin: 30px 40px; } }
+          margin: 10px 30px; } }
       .site-main .support-wrapper .information p .info {
         width: 470px;
         font-family: "Noto Sans";
@@ -1191,7 +1193,8 @@ div .secondary {
       display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      width: 65%; }
+      width: 65%;
+      margin: 60px 0px; }
       .site-main .support-wrapper .information .btn .red-btn {
         width: 185px;
         height: 47px;
@@ -1299,8 +1302,10 @@ div .secondary {
       position: relative; }
       @media (min-width: 768px) {
         .site-main .all-features .features-wrapper .features-flipper {
+          display: -ms-flexbox;
+          display: flex;
           width: 300px;
-          height: 300px;
+          height: auto;
           background-color: #AFF1D3;
           -webkit-transition: 3s;
           -webkit-transform-style: preserve-3d;
@@ -1325,6 +1330,10 @@ div .secondary {
         color: #000000;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden; }
+        @media (min-width: 768px) {
+          .site-main .all-features .features-wrapper .features-flipper .front {
+            display: -ms-flexbox;
+            display: flex; } }
       .site-main .all-features .features-wrapper .features-flipper .features-back {
         border: 1px solid #248E6A;
         margin: 0;
@@ -1337,6 +1346,10 @@ div .secondary {
         bottom: 1px;
         background-color: #fff;
         transform: rotateY(180deg); }
+        @media (min-width: 768px) {
+          .site-main .all-features .features-wrapper .features-flipper .features-back {
+            display: -ms-flexbox;
+            display: flex; } }
   .site-main .all-features .green-btn {
     color: #248E6A;
     text-decoration: none; }
