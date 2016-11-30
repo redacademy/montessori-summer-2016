@@ -1,19 +1,21 @@
 ///
 
-.red-border-container {
-    width: 90%;
-    height: 160px;
-    display: inline-block;
-    margin-left: 7.5%;
-    padding-right: 9.4%;
-    padding-left: 15px;
-    border-left: 7px solid $border_left_red;
-    overflow: visible;
-
-    p {
-        margin: 0 auto;
-    }
+.red-border-container{
+width: 90%;
+height: 160px;
+display: inline-table;
+margin-left: 7.5%;
+padding-right: 9.4%;
+padding-left: 15px;
+border-left: 7px solid $border_left_red;
+overflow:visible;
+p{
+  display: block;
+  margin: 0 auto;
 }
+}
+
+
 /// this framework is for the block quotes to make the red bar left
 ////**mobile container we will change it when we finish the mobile first **///
 .content-wrapper {

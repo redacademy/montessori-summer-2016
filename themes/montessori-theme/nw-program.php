@@ -14,10 +14,12 @@ get_header(); ?>
 	<!-- **********/////////////////Why NW Program Section///////////////********** -->
 
 <section id="nw-program" class="nw-program">
-			<h1>Why NW Montessori</br> Program?</h1>
+			<h1>Why NW Montessori Program?</h1>
+			<div class="nw-part1">
 			<div class="why-nw"><?php echo CFS()->get('main-reason'); ?></div>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
+			</div>
 			</div>
 
 		<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
@@ -35,18 +37,22 @@ get_header(); ?>
 				<h1>Funding</h1>
 				<h3 >Where does it come from?</h3>
 				<h3>There are two ways of answering this</h3>
+				<div class="nw-part2">
 			  <div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('funding-block'); ?></p></div>
 				<div class="funding-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
-				<div class="funding-det">
+				</div>
+				<!-- <div class="funding-det"> -->
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
 				<h2>How is the money spent?</h2>
+				<div class="nw-part3">
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
-			</div>
+			<!-- </div> -->
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
  </div>
+  </div>
 				<div class="funding-btn">
 				<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</button>
 			  </div>
@@ -134,7 +140,7 @@ get_header(); ?>
  <!-- **********/////////////////Enrollment Section///////////////********** -->
 
 <section id="how-to-enroll" class="enroll">
-				<h1>How to Enroll Your</br> Child</h1>
+				<h1>How to Enroll Your Child</h1>
 				<div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('enroll'); ?> </p></div>
 <div class="enroll-info">
 				<h3 >When can my child start?</h3>
