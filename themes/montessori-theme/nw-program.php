@@ -170,9 +170,10 @@ get_header(); ?>
 			</div>
 </section>
 <!-- **********/////////////////*****************///////////////********** -->
+	<?php get_footer(); ?>
 </div>
 <!-- #about-page -->
-	<?php get_footer(); ?>
+
 </main>
 <!-- #main -->
 </div>

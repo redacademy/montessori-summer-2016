@@ -2215,7 +2215,6 @@ img {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
-  max-width: 768px;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
@@ -2223,8 +2222,27 @@ img {
   -ms-flex-align: center;
       align-items: center; }
 
+fonts
+h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6875rem; }
+
 p {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   font-style: "Noto Sans", sans-serif; }
 
@@ -2244,12 +2262,6 @@ p {
 .nw-program {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
-  .nw-program .why-nw p {
-    display: block; }
-    @media (min-width: 768px) {
-      .nw-program .why-nw p {
-        -moz-text-align-last: right;
-             text-align-last: right; } }
   .nw-program .nw-img {
     display: -ms-flexbox;
     display: flex;
@@ -2257,18 +2269,22 @@ p {
         justify-content: center;
     margin-top: 3.4375rem;
     margin-bottom: 1.875rem; }
-    @media (min-width: 768px) {
-      .nw-program .nw-img {
-        float: right;
-        width: 900rem;
-        height: 300px; } }
 
 @media (min-width: 768px) {
   .nw-part1 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row; } }
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nw-part1 .why-nw {
+      display: block;
+      -ms-flex-negative: 4;
+          flex-shrink: 4; }
+    .nw-part1 .nw-img {
+      margin-top: 0px;
+      padding-left: 1rem; } }
 
 .funding {
   display: -ms-flexbox;
@@ -2392,10 +2408,6 @@ p {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
-      @media (min-width: 768px) {
-        .teacher-list .teacher-grid .teacher-block {
-          -ms-flex: 1;
-              flex: 1; } }
     .teacher-list .teacher-grid .flip-container {
       display: block;
       box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
