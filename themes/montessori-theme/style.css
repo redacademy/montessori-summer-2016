@@ -2237,13 +2237,31 @@ img {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
-  max-width: 768px;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
       align-items: center; }
+
+fonts
+h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6875rem; }
 
 p {
   font-size: 1.625rem;
@@ -2414,10 +2432,6 @@ p {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
-      @media (min-width: 768px) {
-        .teacher-list .teacher-grid .teacher-block {
-          -ms-flex: 1;
-              flex: 1; } }
     .teacher-list .teacher-grid .flip-container {
       display: block;
       box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
