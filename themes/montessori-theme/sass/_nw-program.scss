@@ -64,34 +64,27 @@ p {
 .nw-program {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
-
-	.why-nw {
-		p {
-			display: block;
-			@include desktop {
-				text-align-last: right;
-			}
-		}
-	}
-
 	.nw-img {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*5.5;
 		margin-bottom: $basic_margin*3;
-		@include desktop {
-			float: right;
-			width: 900rem;
-			height: 300px;
-		};
 	}
 }
-
-.nw-part1 {
 	@include desktop {
+		.nw-part1 {
 		display: flex;
 		flex-direction: row;
-	};
+		align-items: center;
+		.why-nw{
+			display: block;
+			flex-shrink: 4;
+		}
+		.nw-img {
+			margin-top: 0px;
+			padding-left: 1rem;
+		}
+	}
 }
 // Funding Section
 
