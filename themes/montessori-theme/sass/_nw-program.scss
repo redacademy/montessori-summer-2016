@@ -9,15 +9,14 @@
 // @media screen and (max-width: 480px) {
 
 .nw-program-wrapper {
-
 	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
 }
-fonts
-h1,
+
+fonts h1,
 h2,
 h3 {
 	font-family: $font_title;
@@ -65,6 +64,7 @@ p {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
 
+<<<<<<< HEAD
 	.why-nw {
 		p {
 			display: block;
@@ -73,6 +73,8 @@ p {
 			}
 		}
 	}
+=======
+>>>>>>> last-branch
 	.nw-img {
 		display: flex;
 		justify-content: center;
@@ -80,28 +82,32 @@ p {
 		margin-bottom: $basic_margin*3;
 	}
 }
-	@include desktop {
-		.nw-part1 {
+@include desktop {
+	.nw-part1 {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		.why-nw{
+
+		.why-nw {
 			display: block;
 			flex-shrink: 4;
 		}
+
 		.nw-img {
-			margin-top: 0px;
+			margin-top: 0;
 			padding-left: 1rem;
 		}
 	}
 }
 // Funding Section
+
 .funding {
 	display: flex;
 	flex-direction: column;
 	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
+
 	.funding-img,
 	.money-spend-img {
 		display: flex;
@@ -111,22 +117,26 @@ p {
 			margin-top: 0;
 		}
 	}
+
 	.money-spend-img img {
 		@include desktop {
 			padding-right: 4rem;
-			padding-left: .4rem;
+			padding-left: 0.4rem;
 		}
 	}
-	h2{
+
+	h2 {
 		text-align: center;
 	}
+
 	.nw-part2 {
-	  	margin: 0 auto;
-			@include desktop {
+		margin: 0 auto;
+		@include desktop {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-		  .red-border-container {
+
+			.red-border-container {
 				padding-right: 3.4%;
 				width: 82%;
 				display: flex;
@@ -134,19 +144,21 @@ p {
 		}
 	}
 
-		.nw-part3 {
-		p{
+	.nw-part3 {
+		p {
 			flex-shrink: 22;
 		}
-				@include desktop {
+		@include desktop {
 			display: flex;
 			align-items: center;
 			flex-direction: row-reverse;
 		}
+
 		.money-spend-para {
 			flex-shrink: 5;
 		}
 	}
+
 	.funding-btn {
 		display: flex;
 		justify-content: center;
@@ -154,6 +166,7 @@ p {
 		@include desktop {
 			justify-content: flex-end;
 		}
+
 		.green-btn {
 			padding: 10px;
 			width: 44.666%;
@@ -227,16 +240,32 @@ p {
 	display: flex;
 	justify-content: center;
 
+	h1 {
+		width: 40%;
+		padding: 1.7rem;
+		border-top: solid 3px $color_btn_green;
+	}
+	@include desktop {
+		flex-direction: column;
+	}
+
 	.teacher-grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		@include desktop {
+			flex-direction: row;
+		}
 
 		.teacher-block {
 			flex: 33%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			@include desktop {
+				max-width: 990px;
+				flex: 1;
+			}
 		}
 
 		.flip-container {
@@ -291,6 +320,12 @@ p {
 				-webkit-transform: rotateY(180deg);
 				-moz-transform: rotateY(180deg);
 				transform: rotateY(180deg);
+				@include desktop {
+					width: 200px;
+					height: 200px;
+					right: 4px;
+					top: 55px;
+				}
 			}
 		}
 
@@ -306,18 +341,26 @@ p {
 		.front {
 			width: 100px;
 			height: 100px;
+			@media screen and (min-width: 650px) {
+				width: 190px;
+				height: 190px;
+			}
+			@include desktop {
+				width: 200px;
+				height: 200px;
+			}
 		}
 
-	.back,
-	.front {
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
-backface-visibility: hidden;
+		.back,
+		.front {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
 
+		.teacher_det {
+			text-align: center;
+			font-size: $font_member_staff;
+		}
 	}
-.teacher_det {
-	text-align: center;
-	font-size: $font_member_staff;
-}
-}
 }
