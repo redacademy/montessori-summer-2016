@@ -7,7 +7,7 @@ Developed by [Ayah Al-Hasan](https://github.com/ayahalhasan "Ayah's Github Profi
 
 Montessori Society is a system of education for young children that seeks to develop natural interests and activities rather than use formal teaching methods.
 
-Montessori went through UX designer from scratch, and then it's handed over to be build by the developer.
+Montessori went through UX designer which was build from scratch, and then it's handed over to be build by the developer.
 
 # The language that use in this project
 
