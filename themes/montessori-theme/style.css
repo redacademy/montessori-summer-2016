@@ -937,7 +937,7 @@ div .secondary {
   margin: 0 auto; }
   @media (min-width: 768px) {
     .site-main .home {
-      padding: 0px 90px; } }
+      padding: 0 90px; } }
   .site-main .home .home-wrapper {
     width: 480px;
     height: 585px;
@@ -948,13 +948,15 @@ div .secondary {
         height: 555px;
         background-color: rgba(0, 0, 0, 0.74);
         position: relative; } }
-    @media (min-width: 768px) {
-      .site-main .home .home-wrapper .home-img {
-        background-color: rgba(0, 0, 0, 0.74);
-        width: 1264px;
-        height: 555px;
-        z-index: -1;
-        position: absolute; } }
+    .site-main .home .home-wrapper .home-img {
+      height: auto; }
+      @media (min-width: 768px) {
+        .site-main .home .home-wrapper .home-img {
+          background-color: rgba(0, 0, 0, 0.74);
+          width: 1264px;
+          height: 555px;
+          z-index: -1;
+          position: absolute; } }
     .site-main .home .home-wrapper h2 {
       font-family: 'Asap';
       font-size: 36px;
@@ -1128,7 +1130,7 @@ div .secondary {
       .site-main .support-wrapper .information .support-img-wrapper {
         height: 0; } }
     .site-main .support-wrapper .information .support-img-wrapper img {
-      margin: 0px 6rem;
+      margin: 0 6rem;
       width: 287px;
       height: 470px; }
       @media (min-width: 768px) {
@@ -1172,10 +1174,10 @@ div .secondary {
       @media (min-width: 768px) {
         .site-main .support-wrapper .information p {
           width: 61%;
-          font-family: Noto Sans;
+          font-family: 'Noto Sans';
           font-size: 22px;
           line-height: 47px;
-          letter-spacing: .9px;
+          letter-spacing: 0.9px;
           margin: 30px 40px; } }
       .site-main .support-wrapper .information p .info {
         width: 470px;
@@ -1184,10 +1186,13 @@ div .secondary {
         font-weight: bold;
         line-height: 42px;
         color: #000; }
-    .site-main .support-wrapper .information .bt {
+    .site-main .support-wrapper .information .btn {
       display: -ms-flexbox;
-      display: flex; }
-      .site-main .support-wrapper .information .bt .red-btn {
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 65%; }
+      .site-main .support-wrapper .information .btn .red-btn {
         width: 185px;
         height: 47px;
         background-color: #F76072;
@@ -1204,27 +1209,49 @@ div .secondary {
         display: -ms-flexbox;
         display: flex; }
         @media (min-width: 768px) {
-          .site-main .support-wrapper .information .bt .red-btn {
-            background-color: #F76072;
-            border-color: #F76072; } }
-      .site-main .support-wrapper .information .bt .green-btn {
-        background-color: #4FC8A1;
-        border-color: #4FC8A1;
-        border-radius: 6px;
-        font-family: "Noto Sans";
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 30px;
-        color: #fff;
-        margin-left: 20px;
-        padding: 8px;
-        font-weight: 300;
-        letter-spacing: 0.8px;
-        height: 47px;
-        width: 185px;
-        display: -ms-flexbox;
-        display: flex; }
+          .site-main .support-wrapper .information .btn .red-btn {
+            color: #fff;
+            margin-left: 80px;
+            font-family: 'Noto Sans';
+            font-size: 24px;
+            font-weight: 300;
+            text-shadow: none;
+            letter-spacing: 0.8px;
+            width: 300px;
+            display: block;
+            text-align: center;
+            height: 55px; } }
+    .site-main .support-wrapper .information .green-btn {
+      background-color: #4FC8A1;
+      border-color: #4FC8A1;
+      border-radius: 6px;
+      font-family: "Noto Sans";
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin-left: 20px;
+      padding: 8px;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      height: 47px;
+      width: 185px;
+      display: -ms-flexbox;
+      display: flex; }
+      @media (min-width: 768px) {
+        .site-main .support-wrapper .information .green-btn {
+          color: #fff;
+          margin-left: 80px;
+          font-family: 'Noto Sans';
+          font-size: 24px;
+          font-weight: 300;
+          text-shadow: none;
+          letter-spacing: 0.8px;
+          width: 300px;
+          display: block;
+          text-align: center;
+          height: 55px; } }
 
 .site-main .all-features {
   margin-bottom: 30px; }
@@ -2084,9 +2111,6 @@ site-main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
-
-img {
-  height: 100%; }
 
 .involved .circle-btn {
   width: 200px;

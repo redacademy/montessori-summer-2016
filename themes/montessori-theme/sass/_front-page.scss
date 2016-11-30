@@ -4,10 +4,10 @@
     .home {
         width: 100%;
         height: auto;
-         margin: 0 auto;
-         @include desktop{
-            padding: 0px 90px;
-         }
+        margin: 0 auto;
+        @include desktop {
+            padding: 0 90px;
+        }
         .home-wrapper {
             width: 480px;
             height: 585px;
@@ -19,6 +19,7 @@
                 position: relative;
             }
             .home-img {
+              height: auto;
                 @include desktop {
                     background-color: rgba(0,0,0,0.74);
                     width: 1264px;
@@ -26,6 +27,7 @@
                     z-index: -1;
                     position: absolute;
                 }
+
             }
             h2 {
                 font-family: 'Asap';
@@ -78,7 +80,7 @@
                     max-width: 320px;
                     margin: 90px 100px;
                     text-align: center;
-                } 
+                }
             }
             // }//welcome-wrapper
         }
@@ -215,54 +217,51 @@
                     width: 1283px;
                 }
             }
-            .support-img-wrapper{
-                // height: auto;
-                @include desktop{
-                height: 0;
-                }
-
-            img {
-                margin: 0px 6rem;
-                width: 287px;
-                height: 470px;
-                @include desktop {
-                    height: auto;
-                    display: flex;
-                    top: -13rem;
-                    position: absolute;
-                    right: -115px;
-                }
-            }
-
-            p {
-                text-align: center;
+            .support-img-wrapper {
                 // height: auto;
                 @include desktop {
-                   display: flex;
-                    top: 18rem;
-                    position: relative;
-                    right: -950px;
-                    width: 25%;
+                    height: 0;
+                }
+                img {
+                    margin: 0 6rem;
+                    width: 287px;
+                    height: 470px;
+                    @include desktop {
+                        height: auto;
+                        display: flex;
+                        top: -13rem;
+                        position: absolute;
+                        right: -115px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    // height: auto;
+                    @include desktop {
+                        display: flex;
+                        top: 18rem;
+                        position: relative;
+                        right: -950px;
+                        width: 25%;
+                    }
                 }
             }
-        } //support-wrapper
-
-        blockquote {
-            border-left: 6px solid #D93B57;
-            font-size: 25px;
-            margin-bottom: 95px;
-            height: 125px;
-                @include desktop{
+            //support-wrapper
+            blockquote {
+                border-left: 6px solid #D93B57;
+                font-size: 25px;
+                margin-bottom: 95px;
+                height: 125px;
+                @include desktop {
                     border-left: 6px solid #D93B57;
                     margin: 27px 119px;
                     width: 70%;
                     height: auto;
-                p {
-                    font-size: 24px;
+                    p {
+                        font-size: 24px;
+                    }
                 }
             }
-        }
-
             p {
                 width: 377px;
                 font-family: "Noto Sans";
@@ -272,13 +271,12 @@
                 margin: 40px;
                 @include desktop {
                     width: 61%;
-                    font-family: Noto Sans;
+                    font-family: 'Noto Sans';
                     font-size: 22px;
                     line-height: 47px;
-                    letter-spacing: .9px;
-                    margin: 30px 40px;                
-                    }
-
+                    letter-spacing: 0.9px;
+                    margin: 30px 40px;
+                }
                 .info {
                     width: 470px;
                     // height: 294px;
@@ -290,8 +288,10 @@
                 }
             }
             //p
-            .bt{
+            .btn {
                 display: flex;
+                justify-content: space-around;
+                width: 65%;
                 .red-btn {
                     width: 185px;
                     height: 47px;
@@ -308,28 +308,50 @@
                     // width: 200px;
                     height: 47px;
                     display: flex;
-                        @include desktop{
-                        background-color: #F76072;
-                        border-color: #F76072;
-                        }
+                    @include desktop {
+                        color: #fff;
+                        margin-left: 80px;
+                        font-family: 'Noto Sans';
+                        font-size: 24px;
+                        font-weight: 300;
+                        text-shadow: none;
+                        letter-spacing: 0.8px;
+                        width: 300px;
+                        display: block;
+                        text-align: center;
+                        height: 55px;
+                    }
                 }
-                .green-btn {
-                    background-color: #4FC8A1;
-                    border-color: #4FC8A1;
-                    border-radius: 6px;
-                    font-family: "Noto Sans";
-                    font-size: 20px;
-                    font-weight: bold;
-                    text-align: center;
-                    line-height: 30px;
+            }
+            .green-btn {
+                background-color: #4FC8A1;
+                border-color: #4FC8A1;
+                border-radius: 6px;
+                font-family: "Noto Sans";
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                margin-left: 20px;
+                padding: 8px;
+                font-weight: 300;
+                letter-spacing: 0.8px;
+                height: 47px;
+                width: 185px;
+                display: flex;
+                @include desktop {
                     color: #fff;
-                    margin-left: 20px;
-                    padding: 8px;
+                    margin-left: 80px;
+                    font-family: 'Noto Sans';
+                    font-size: 24px;
                     font-weight: 300;
+                    text-shadow: none;
                     letter-spacing: 0.8px;
-                    height: 47px;
-                    width: 185px;
-                    display: flex;
+                    width: 300px;
+                    display: block;
+                    text-align: center;
+                    height: 55px;
                 }
             }
         }
@@ -368,7 +390,7 @@
             font-family: 'Noto Sans';
             font-size: 15px;
             color: #000;
-            text-decoration: none;	
+            text-decoration: none;
             .features-flipper {
                 position: relative;
                 -webkit-transition: 1.9s;

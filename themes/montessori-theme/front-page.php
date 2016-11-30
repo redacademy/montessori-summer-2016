@@ -49,9 +49,9 @@ get_header(); ?>
             <p class="image-text"> Your monthly contribution costs only two Lattes a month.</p>
         </div>
        <?php echo CFS()->get('second_support_paragraph'); ?>
-        <div class="btn" >
+       <div class="btn">
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-            <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
+          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
         </div>
       </div>
     </section>
@@ -62,24 +62,27 @@ get_header(); ?>
          <h2> Features News</h2>
                     <!-- // All the content in the loop goes here -->
               <div class="features-wrapper">
-                <div class="features-flip" >
+                <div class="features-flipper" >
+
+                         <?php $args = CFS()->get('features_news'); ?>
 
               <?php
               //Loop through posts
-              $args = array('posts_per_page' => 3, );
-
-            $features_news = new WP_Query( $args );
-              if ($features_news->have_posts() ) { 
-                while ($features_news->have_posts() ) { 
-                $features_news->the_post();
+              $args = array(
+                'posts_per_page' => 3,
+              );
+              $my_query = new WP_Query( $args );
+              if ( $my_query->have_posts() ) {
+                while ( $my_query->have_posts() ) {
+                  $my_query->the_post();
                   ?>
-                  <p class="front"> <?php the_title(  ); ?> </p>
-                  
-                 <?php 
-               ?>
-               <!--<?php the_content( 'Continue reading ' . get_the_title() ); ?>-->
+                    <p class="front"><?php the_title(  ); ?> </p>
+                    <p class="features-back"> <?php echo CFS()->get('features_news'); ?>
+                 <?php
+                 ?>
                   <a class="btn" href="<?php the_permalink(50); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
-                  <br>                  
+                  <br>
+                  <!--<?php echo CFS()->get( 'features_news' ); ?>-->
                 <?php
                 }
               }
@@ -87,10 +90,8 @@ get_header(); ?>
 
                   //loop end here
               ?>
-
+              </div> <!--features-wrapper-->
               </div> <!--features-flipper-->
-          </div>
-          
   </section>
 
 
