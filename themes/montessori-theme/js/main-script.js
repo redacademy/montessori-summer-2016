@@ -36,7 +36,7 @@ jQuery(document).ready(function( $ ) {
     });
   ///------ Toogle the Archive contents and flib the arrow---
   $('.toggle').click(function() {
-  $('#target').slideToggle('975');
+  $('#target').slideToggle('1000');
    $(".arrow").click(function () {
       $(this).toggleClass("rotate");
   });
