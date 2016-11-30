@@ -1,84 +1,112 @@
 <?php
 /**
- * The main template file.
- *Template Name: front-page
- * @package Montessori_Theme
- */
-get_header(); ?>
-    <div id="primary" class="content-area">
-        <main id="main back-to-top" class="site-main" role="main">
-      <div class="home container">
-      <section class="home-wrapper">
-        <div class="home-img">
-          <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
-        </div>
-<!-- this is for the welcoming title  -->
-        <div class="welcome-wrapper ">
-            <h2> <?php echo CFS()->get('banner_header'); ?> </h2>
-            <p><?php echo CFS()->get('banner_paragraph') ?></p>
-            <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/about/">Our Society Role</a>
-        </div>
-      </section>
-<!-- this is for the quick links -->
-    <div class="link-title">
-      <h2> <?php echo CFS()->get('links_title'); ?> </h2>
+* The main template file.
+*template name: get-involved
+* @package RED_Starter_Theme
+*/
+get_header();
+?>
 
-    </div>
+       <main id="main" class="site-main" role="main">
 
-      <section class="links-wrapper ">
-          <article class="benifits">
-            <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
-            <p><?php echo CFS()->get('contents'); ?></p>
-          </article>
-          <article class="nw-program-page">
-            <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">NW Program</a>
-            <p><?php echo CFS()->get('nw_text'); ?></p>
-          </article>
-          <article class="involved">
-            <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Get involved</a>
+
+         <!-- our involved section -->
+<section id="involved" class="involved-section mob-container ">
+<div class="main-involved-wrapper">
+  <?php
+$args = array(
+   'post_type' => 'post',
+   'show_per_page' => 1,
+);
+$query = new WP_Query( $args  );
+if ( $query-> have_posts() ) :
+ while ($query-> have_posts() )  : $query->the_post(); ?>
+  <div class="involved-title">
+     <a href="#"><?php the_title(); ?></a>
+
+
+
+  </div>
+
+<?php endwhile; ?>
+<?php while ($query-> have_posts() )  : $query->the_post(); ?>
+<div class="involved-content">
+   <?php the_content('involved_content');?>
+ </div>
+   <div class= "involved-img" >
+     <?php output_image('involved_img'); ?>
+
+ </div>
+
+     <div class="button">
+       <a class="gre-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
+
+ <?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
+
+
+
+
+<!-- This is for suppot now  & did you  and image -->
+<div class="text-shadow">
+
+
+ <h3>Support Now</h2>
+</div>
+<div class="banner_post">
+
+ <h3> Did you Know.... </h2>
+ </div>
+<!-- this for support section -->
+<div support-containar>
+ <div class="support-img"><?php output_image('support_img'); ?>
+   <?php output_image('play-img'); ?>
+   <?php output_image('field-trip'); ?>
+   </div>
+</div>
+        <article class="involved">
+          <a class="circle-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">your involvement+contribution</a>
+          <p><?php echo CFS()->get('get_text'); ?></p>
+        </article>
+
+        <div>
+          <a class="pink-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
+          <article class="contact-container">
+               <div class="contact-person">
+             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a></div>
+             <div class="contact-online">
+               <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a></div>
+               <div class="contact-email">
+                   <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a></div>
             <p><?php echo CFS()->get('get_text'); ?></p>
           </article>
-      </section>
-      <!-- we need your support section -->
-          <section class="support-wrapper ">
-            <div class="information">
-              <h2> <?php echo CFS()->get('support_title'); ?> </h2>
-              <p class="info"> <?php echo CFS()->get('first_support_paragraph'); ?> </p>
 
-              <div class="support-img-wrapper">
-                <div> <img src="<?php bloginfo('template_directory'); ?>/images/Group-8.jpg" alt="image" /> </div>
-                <p class="image-text" >Your monthly contribution costs only two Lattes a month.</p>
-              </div>
 
-             <?php echo CFS()->get('second_support_paragraph'); ?>
-                  <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-                <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
-            </div>
+
+
+      </div>
+
+        <div>  <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
+          <article class="contact-container">
+               <div class="contact-person">
+             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a></div>
+             <div class="contact-online">
+               <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a></div>
+               <div class="contact-email">
+                   <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a></div>
+            <p><?php echo CFS()->get('get_text'); ?></p>
+          </article>
           </section>
-<!-- this is for the features news  -->
 
-    <section class="all-features container">
-        <h2>Features News</h2>
-         <div class="features-wrapper">
-             <?php
-                $fields = CFS()->get('features_news'); ?>
-            <?php
-            foreach($fields as $field)
-                { ?>
-              <div class="features-flipper">
-                <div class="front">
-                  <p><?php echo $field['front']; ?></p>
-                </div>
-                <div class="features-back">
-                  <p><?php echo $field['features_back']; ?></p>
-                  <a class="green-btn" href="<?php the_permalink(); ?>/get-involved/">Read Entry</a>
-                </div>
-              </div>
-               <?php
-                } ?>
-          </div>
-    </section>
+        </div>
 
-        </main><!-- #main -->
-    </div><!-- #primary -->
-  <?php get_footer(); ?>
+
+
+
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+
+</div>
+</main>

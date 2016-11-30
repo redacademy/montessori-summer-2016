@@ -39,7 +39,7 @@ if ( $query-> have_posts() ) :
  </div>
 
      <div class="button">
-       <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
+       <a class="gre-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
 
  <?php endwhile; ?>
 <?php endif; ?>
