@@ -1813,7 +1813,6 @@ hover {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
-  max-width: 768px;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
@@ -1859,12 +1858,14 @@ p {
   text-decoration: none; }
 
 .nw-program {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   border-bottom: solid 3px #4FC8A1;
-  padding-bottom: 2.8125rem; }
+  padding-bottom: 5.9375rem; }
   .nw-program .why-nw p {
-    display: block;
-    -ms-flex-negative: 5;
-        flex-shrink: 5; }
+    display: block; }
   .nw-program .nw-img {
     display: -ms-flexbox;
     display: flex;
@@ -1872,52 +1873,141 @@ p {
         justify-content: center;
     margin-top: 3.4375rem;
     margin-bottom: 1.875rem; }
+    @media (min-width: 768px) {
+      .nw-program .nw-img {
+        width: 50%;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center; } }
+
+@media (min-width: 768px) {
+  .nw-part1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; } }
 
 .funding {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-top: 1.875rem;
+  margin-top: 1.25rem;
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
   .funding .funding-img,
   .funding .money-spend-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 2rem; }
+    @media (min-width: 768px) {
+      .funding .funding-img,
+      .funding .money-spend-img {
+        margin-top: 5rem;
+        width: 80%; } }
+  @media (min-width: 768px) {
+    .funding .funding-img img {
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+      width: 120%; } }
+  @media (min-width: 768px) {
+    .funding .money-spend-img img {
+      padding-right: 4rem;
+      padding-left: .4rem; } }
+  .funding h2 {
+    text-align: center; }
+  @media (min-width: 768px) {
+    .funding .nw-part2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center; }
+      .funding .nw-part2 .red-border-container {
+        width: 82%;
+        display: -ms-flexbox;
+        display: flex; } }
+  @media (min-width: 768px) {
+    .funding .nw-part3 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+    .funding .money-spend-para {
+      -ms-flex-negative: 5;
+          flex-shrink: 5; } }
+  .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    margin-top: 2rem; }
-  .funding .school-list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-    .funding .school-list .school-img {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      .funding .school-list .school-img img {
-        width: 80%;
-        height: 80%; }
-      .funding .school-list .school-img .address .phone {
-        font-weight: bolder; }
-  .funding .preschools-list {
-    border-bottom: solid 3px #4FC8A1; }
-    .funding .preschools-list h1 {
-      width: 78%; }
+    margin-top: 1.875rem; }
+    @media (min-width: 768px) {
+      .funding .funding-btn {
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
+    .funding .funding-btn .green-btn {
+      padding: 10px;
+      width: 44.666%;
+      margin-right: 2px; }
+      @media (min-width: 768px) {
+        .funding .funding-btn .green-btn {
+          padding: 1.2rem;
+          width: 18%; } }
 
-.enroll {
+.school-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  .school-list .school-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .school-list .school-img img {
+      width: 80%;
+      height: 80%; }
+    .school-list .school-img .address .phone {
+      font-weight: bolder; }
+
+@media (min-width: 768px) {
+  .preschools-list h1 {
+    width: 55%;
+    padding: 1.7rem;
+    border-top: solid 3px #4FC8A1; } }
+
+.enroll {
+  border-top: solid 3px #4FC8A1;
+  padding-bottom: 2.8125rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 768px) {
+    .enroll .enrollment-wrap {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .enroll .enrollment-wrap .guids {
+        -ms-flex-negative: 3.5;
+            flex-shrink: 3.5;
+        padding-right: 1rem; } }
   .enroll .enroll-info {
     margin-top: 23rem; }
-    @media screen and (min-width: 668px) {
+    @media screen and (min-width: 768px) {
       .enroll .enroll-info {
-        margin-top: 13rem; } }
+        margin-top: 6rem; } }
+    @media (min-width: 768px) {
+      .enroll .enroll-info {
+        margin-top: 2rem; } }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -1950,6 +2040,10 @@ p {
     width: 40%;
     padding: 1.7rem;
     border-top: solid 3px #4FC8A1; }
+  @media (min-width: 768px) {
+    .teacher-list {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .teacher-list .teacher-grid {
     display: -ms-flexbox;
     display: flex;
@@ -2031,7 +2125,7 @@ p {
     .teacher-list .teacher-grid .front {
       width: 125px;
       height: 125px; }
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 768px) {
         .teacher-list .teacher-grid .back,
         .teacher-list .teacher-grid .flip-container,
         .teacher-list .teacher-grid .front {

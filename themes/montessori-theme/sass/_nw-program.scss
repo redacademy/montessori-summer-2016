@@ -2,11 +2,12 @@
 # NW Program Page
 --------------------------------------------------------------*/
 // General Setting
+
 * {
 	box-sizing: border-box;
 }
+
 .nw-program-wrapper {
-	max-width: $desktop_width;
 	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
@@ -27,6 +28,7 @@ h1 {
 	font-size: $h1_size_mob;
 	line-height: 2.625rem;
 }
+
 h2 {
 	font-size: $h2_size_mob;
 	line-height: 2.125rem;
@@ -42,11 +44,13 @@ p {
 	line-height: 2.5rem;
 	font-style: $font_body;
 }
+
 .spcil p {
 	font-size: 1.25rem;
 	line-height: 2.5rem;
 	font-style: $font_main;
 }
+
 .green-btn {
 	background-color: #4FC8A1;
 	color: $white;
@@ -58,174 +62,177 @@ p {
 // Section Why NW Program Section
 
 .nw-program {
+	display: flex;
+	flex-direction: column;
 	border-bottom: solid 3px $color_btn_green;
-	padding-bottom: $basic_margin *4.5;
+	padding-bottom: $basic_margin *9.5;
+
 	.why-nw {
 		p {
 			display: block;
-			flex-shrink: 5;
+			// flex-shrink: 5;
 		}
 	}
+
 	.nw-img {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*5.5;
 		margin-bottom: $basic_margin*3;
-		// @include desktop {
-		// 	width: 50%;
-		// }
+		@include desktop {
+			width: 50%;
+			align-self: center;
+		}
 	}
 }
-// .nw-part1 {
-// 	@include desktop {
-// 		display: flex;
-// 		flex-direction: row;
-// 	}
-// }
-
+.nw-part1 {
+	@include desktop {
+		display: flex;
+		flex-direction: row;
+	}
+}
 // Funding Section
 .funding {
 	display: flex;
 	flex-direction: column;
-	margin-top: $basic_margin*3;
+	margin-top: $basic_margin*2;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
+
 	.funding-img,
 	.money-spend-img {
-		display: flex;
+		align-self: center;
 		justify-content: center;
 		margin-top: 2rem;
-		// @include desktop {
-		// 	margin-top: 0;
-		// }
+		@include desktop {
+			margin-top: 5rem;
+			width: 80%;
+		}
 	}
-	.funding-img img {
-		// @include desktop {
-		// 	flex-grow: 1;
-		// 	width: 120%;
-		// }
-	}
-	// .money-spend-img img {
-	// 	// @include desktop {
-	// 	// 	padding-right: 4rem;
-	// 	// 	padding-left: .4rem;
-	// 	// }
-	// }
-	// h2{
-	// 	text-align: center;
-	// }
-	// .nw-part2 {
-	// 	@include desktop {
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 		align-items: center;
-	// 	  .red-border-container {
-	// 			width: 82%;
-	// 			display: flex;
-	// 		}
-	// 	}
-	// }
-	// @include desktop {
-	// 	.nw-part3 {
-	// 		display: flex;
-	// 		align-items: center;
-	// 		flex-direction: row-reverse;
-	// 	}
-	// 	.money-spend-para {
-	// 		flex-shrink: 5;
-	// 	}
-	// }
-	// .funding-btn {
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	margin-top: $basic_margin*3;
-		// @include desktop {
-		// 	justify-content: flex-end;
-		// }
-		// .green-btn {
-		// 	padding: 10px;
-		// 	width: 44.666%;
-		// 	margin-right: 2px;
-			// @include desktop {
-			// 	padding: 1.2rem;
-			// 	width: 18%;
-// 			// }
-// 		}
-// 	}
-// }
 
-//School List Section
-.school-list {
-	display: flex;
-	flex-direction: column;
-	.school-img {
+	.funding-img img {
+		@include desktop {
+			flex-grow: 1;
+			width: 120%;
+		}
+	}
+	.money-spend-img img {
+		@include desktop {
+			padding-right: 4rem;
+			padding-left: .4rem;
+		}
+	}
+	h2{
+		text-align: center;
+	}
+	.nw-part2 {
+		@include desktop {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		  .red-border-container {
+				width: 82%;
+				display: flex;
+			}
+		}
+	}
+	@include desktop {
+		.nw-part3 {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+		}
+		.money-spend-para {
+			flex-shrink: 5;
+		}
+	}
+	.funding-btn {
 		display: flex;
 		justify-content: center;
+		margin-top: $basic_margin*3;
+	@include desktop {
+		justify-content: flex-end;
+	}
+	.green-btn {
+		padding: 10px;
+		width: 44.666%;
+		margin-right: 2px;
+	@include desktop {
+		padding: 1.2rem;
+		width: 18%;
+				}
+			}
+		}
+	}
+	//School List Section
+	.school-list {
+		display: flex;
+		flex-direction: column;
 
-		img {
-			width: 80%;
-			height: 80%;
+		.school-img {
+			display: flex;
+			justify-content: center;
+
+			img {
+				width: 80%;
+				height: 80%;
+			}
+
+			.address .phone {
+				font-weight: bolder;
+			}
 		}
-		.address .phone {
-			font-weight: bolder;
-		}
+	}
+	//Preschools List Section
+	.preschools-list {
+
+		@include desktop{
+			h1{
+			  width: 55%;
+				padding: 1.7rem;
+				border-top: solid 3px $color_btn_green;
+			}
 	}
 }
-
-//Preschools List Section
-.preschools-list {
-	border-bottom: solid 3px $color_btn_green;
-	h1{
-		width:78%;
-	}
-	// @include desktop{
-	// 	h1{
-	// 	  width: 40%;
-	// 		padding: 1.7rem;
-	// 		border-top: solid 3px $color_btn_green;
-	// 	}
-	}
-}
-
 //Enrollment Section
 .enroll {
+	border-top: solid 3px $color_btn_green;
+	padding-bottom: $basic_margin *4.5;
 	display: flex;
 	flex-direction: column;
-
-	// .enrollment-wrap {
-	// 	@include desktop {
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 		.guids {
-	// 			flex-shrink: 3.5;
-	// 			padding-right: 1rem;
-	// 		}
-	// 	}
-	// }
+	.enrollment-wrap {
+		@include desktop {
+			display: flex;
+			flex-direction: row;
+			.guids {
+				flex-shrink: 3.5;
+				padding-right: 1rem;
+			}
+		}
+	}
 	.enroll-info {
 		margin-top: 23rem;
-
-		@media screen and (min-width: 668px) {
-			margin-top: 13rem;
+		@media screen and (min-width: 768px) {
+			margin-top: 6rem;
 		}
-
-
-
-		// @include desktop {
-		// 	margin-top: 2rem;
-		// }
+		@include desktop {
+			margin-top: 2rem;
+		}
 	}
+
 	.enroll-block {
 		max-width: 70%;
 		display: flex;
 		margin: 40px auto;
 		flex-direction: column;
 		justify-content: center;
+
 		.enroll-img {
 			margin-bottom: 50px;
 			display: flex;
 			justify-content: center;
 		}
+
 		.enroll-btn {
 			align-self: center;
 		}
@@ -233,20 +240,20 @@ p {
 }
 //teacher list Section
 
-
 .teacher-list {
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: center;
-	h1{
+
+	h1 {
 		width: 40%;
 		padding: 1.7rem;
 		border-top: solid 3px $color_btn_green;
 	}
-	// @include desktop {
-	// 	flex-direction: column;
-	// }
+	@include desktop {
+		flex-direction: column;
+	}
 	.teacher-grid {
 		display: flex;
 		flex-wrap: wrap;
@@ -254,6 +261,7 @@ p {
 		@include desktop {
 			flex-direction: row;
 		}
+
 		.teacher-block {
 			flex: 33%;
 			display: flex;
@@ -264,11 +272,13 @@ p {
 				flex: 1;
 			}
 		}
+
 		.flip-container {
 			display: block;
 			box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
 			background: #aff1d3;
 			border-radius: 50%;
+
 			.flipper {
 				flex: 1 0 auto;
 				display: flex;
@@ -280,24 +290,29 @@ p {
 				-moz-transform-style: preserve-3d;
 				transition: 1.9s;
 				transform-style: preserve-3d;
+
 				.teacher_det {
 					display: block;
 				}
+
 				p {
 					font-size: 1rem;
 					font-style: italic;
 					line-height: $basic_hline_height*2.4;
 				}
 			}
+
 			.front {
 				position: absolute;
 				background-size: cover;
 				border-radius: 50%;
 				flex: 2;
+
 				img {
 					border-radius: 50%;
 				}
 			}
+
 			.back {
 				border-radius: 50%;
 				position: absolute;
@@ -331,7 +346,7 @@ p {
 		.front {
 			width: 125px;
 			height: 125px;
-			@media screen and (min-width: 650px) {
+			@media screen and (min-width: 768px) {
 				width: 190px;
 				height: 190px;
 			}
