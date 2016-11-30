@@ -26,8 +26,8 @@
           color: #000;
           text-align: center;
           display:flex;
-          flex-flow:  row wrap;
           justify-content:space-around;
+
 
         }
             a:hover {
@@ -36,11 +36,11 @@
       }
 }
 
-// This is for red line beside the paragraf
-blockquote {
-    border-left: 10px solid #CB203E;
-    padding: 0 19px;
+.border-radius {
+    border-left: solid 12px $border_left_red;
+    border-color: red;
 }
+
 
 .gre-button {
 
@@ -218,8 +218,4 @@ img {
         margin: 20px;
         flex-direction: row;
     }
-}
-border-radius {
-    border-left: solid 12px $border_left_red;
-    border-color: red;
 }

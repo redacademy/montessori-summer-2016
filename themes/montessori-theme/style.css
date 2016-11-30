@@ -2063,17 +2063,15 @@ body {
   text-align: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
 .involved-title a:hover {
   color: #248e6a; }
 
-blockquote {
-  border-left: 10px solid #CB203E;
-  padding: 0 19px; }
+.border-radius {
+  border-left: solid 12px #D93B57;
+  border-color: red; }
 
 .gre-button {
   width: 261px;
@@ -2218,10 +2216,6 @@ img {
   margin: 20px;
   -ms-flex-direction: row;
       flex-direction: row; }
-
-border-radius {
-  border-left: solid 12px #D93B57;
-  border-color: red; }
 
 /*--------------------------------------------------------------
 # NW Program Page
