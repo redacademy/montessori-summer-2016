@@ -46,7 +46,7 @@ jQuery(document).ready(function( $ ) {
   // $('.philosophy-img a').click(function(){
   //     $(this).parent().addClass('active').siblings().removeClass('active');
   // });
-
+  //
 
 
 
