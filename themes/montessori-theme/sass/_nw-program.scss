@@ -21,6 +21,7 @@ h1,
 h2,
 h3 {
 	font-family: $font_title;
+	line-height:$mobile_line_height;
 	font-weight: normal;
 }
 
@@ -31,7 +32,7 @@ h1 {
 
 h2 {
 	font-size: $h2_size_mob;
-	line-height: 2.125rem;
+	// line-height: 2.125rem;
 }
 
 h3 {
@@ -46,7 +47,7 @@ p {
 }
 
 .spcil p {
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	line-height: 2.5rem;
 	font-style: $font_main;
 }
@@ -70,23 +71,23 @@ p {
 	.why-nw {
 		p {
 			display: block;
-			// flex-shrink: 5;
+			flex-shrink: 5;
 		}
 	}
 
 	.nw-img {
 		display: flex;
 		justify-content: center;
-		margin-top: $basic_margin*5.5;
+		margin-top: $basic_margin*2.5;
 		margin-bottom: $basic_margin*3;
-		@include desktop {
+		@media screen and (max-width: 768px) {
 			width: 50%;
 			align-self: center;
 		}
 	}
 }
 .nw-part1 {
-	@include desktop {
+	@media screen and (max-width: 768px) {
 		display: flex;
 		flex-direction: row;
 	}
@@ -104,63 +105,75 @@ p {
 		align-self: center;
 		justify-content: center;
 		margin-top: 2rem;
-		@include desktop {
-			margin-top: 5rem;
-			width: 80%;
+		h2{
+			text-align: left;
 		}
+		// @media screen and (min-width: 768px) {
+		// 	margin-top: 4rem;
+		// 	width: 60%;
+		// }
+		// @include desktop {
+			// margin-top: 4rem;
+			// width: 60%;
+		// }
 	}
 
 	.funding-img img {
-		@include desktop {
+		@media screen and (max-width: 768px) {
 			flex-grow: 1;
 			width: 120%;
 		}
 	}
-	.money-spend-img img {
-		@include desktop {
-			padding-right: 4rem;
-			padding-left: .4rem;
-		}
-	}
-	h2{
-		text-align: center;
-	}
-	.nw-part2 {
-		@include desktop {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-		  .red-border-container {
-				width: 82%;
-				display: flex;
-			}
-		}
-	}
-	@include desktop {
-		.nw-part3 {
-			display: flex;
-			align-items: center;
-			flex-direction: row-reverse;
-		}
-		.money-spend-para {
-			flex-shrink: 5;
-		}
-	}
+	// .funding-img img {
+	// 	@include desktop {
+	// 		flex-grow: 1;
+	// 		width: 120%;
+	// 	}
+	// }
+	// .money-spend-img img {
+	// 	@include desktop {
+	// 		padding-right: 4rem;
+	// 		padding-left: .4rem;
+	// 	}
+	// }
+
+	// .nw-part2 {
+	// 	@include desktop {
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 		align-items: center;
+	// 	  .red-border-container {
+	// 			width: 82%;
+	// 			display: flex;
+	// 		}
+	// 	}
+	// }
+	// @include desktop {
+	// 	.nw-part3 {
+	// 		display: flex;
+	// 		align-items: center;
+	// 		flex-direction: row-reverse;
+	// 	}
+	// 	.money-spend-para {
+	// 		flex-shrink: 5;
+	// 	}
+	// }
 	.funding-btn {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*3;
-	@include desktop {
-		justify-content: flex-end;
-	}
+	// @include desktop {
+	// 	justify-content: flex-end;
+	// }
 	.green-btn {
-		padding: 10px;
+		padding: 1rem;
 		width: 44.666%;
+		justify-content: center;
 		margin-right: 2px;
-	@include desktop {
-		padding: 1.2rem;
-		width: 18%;
-				}
+	// @include desktop {
+	// 	padding: 1.2rem;
+	// 	width: 18%;
+	// 			}
 			}
 		}
 	}
@@ -184,40 +197,41 @@ p {
 		}
 	}
 	//Preschools List Section
-	.preschools-list {
-
-		@include desktop{
-			h1{
-			  width: 55%;
-				padding: 1.7rem;
-				border-top: solid 3px $color_btn_green;
-			}
-	}
-}
+// 	.preschools-list {
+//
+// 		@include desktop{
+// 			h1{
+// 			  width: 55%;
+// 				padding: 1.7rem;
+// 				border-top: solid 3px $color_btn_green;
+// 			}
+// 	}
+// }
 //Enrollment Section
 .enroll {
 	border-top: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
 	display: flex;
 	flex-direction: column;
-	.enrollment-wrap {
-		@include desktop {
-			display: flex;
-			flex-direction: row;
-			.guids {
-				flex-shrink: 3.5;
-				padding-right: 1rem;
-			}
-		}
-	}
+
+	// .enrollment-wrap {
+	// 	@include desktop {
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 		.guids {
+	// 			flex-shrink: 3.5;
+	// 			padding-right: 1rem;
+	// 		}
+	// 	}
+	// }
 	.enroll-info {
-		margin-top: 23rem;
-		@media screen and (min-width: 768px) {
-			margin-top: 6rem;
-		}
-		@include desktop {
-			margin-top: 2rem;
-		}
+		margin-top: 3rem;
+		// @media screen and (min-width: 768px) {
+		// 	margin-top: 6rem;
+		// }
+		// @include desktop {
+		// 	margin-top: 2rem;
+		// }
 	}
 
 	.enroll-block {
@@ -244,21 +258,21 @@ p {
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 
 	h1 {
 		width: 40%;
 		padding: 1.7rem;
 		border-top: solid 3px $color_btn_green;
 	}
-	@include desktop {
-		flex-direction: column;
-	}
+	// @include desktop {
+	// 	flex-direction: column;
+	// }
 	.teacher-grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		@include desktop {
+		@media screen and (max-width: 768px) {
 			flex-direction: row;
 		}
 
@@ -267,7 +281,7 @@ p {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			@include desktop {
+			@media screen and (max-width: 768px) {
 				max-width: 990px;
 				flex: 1;
 			}
@@ -325,7 +339,7 @@ p {
 				-webkit-transform: rotateY(180deg);
 				-moz-transform: rotateY(180deg);
 				transform: rotateY(180deg);
-				@include desktop {
+				@media screen and (max-width: 768px) {
 					width: 200px;
 					height: 200px;
 					right: 4px;
@@ -350,7 +364,7 @@ p {
 				width: 190px;
 				height: 190px;
 			}
-			@include desktop {
+			@media screen and (max-width: 768px) {
 				width: 200px;
 				height: 200px;
 			}

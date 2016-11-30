@@ -14,7 +14,7 @@ get_header(); ?>
 	<!-- **********/////////////////Why NW Program Section///////////////********** -->
 
 <section id="nw-program" class="nw-program">
-			<h1>Why NW Montessori</br> Program?</h1>
+			<h1>Why NW Montessori Program?</h1>
 			<div class="why-nw"><?php echo CFS()->get('main-reason'); ?></div>
 			<div class="nw-img">
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
@@ -134,7 +134,7 @@ get_header(); ?>
  <!-- **********/////////////////Enrollment Section///////////////********** -->
 
 <section id="how-to-enroll" class="enroll">
-				<h1>How to Enroll Your</br> Child</h1>
+				<h1>How to Enroll Your Child</h1>
 				<div class="red-border-container"><p class="spcil"> <?php echo CFS()->get('enroll'); ?> </p></div>
 <div class="enroll-info">
 				<h3 >When can my child start?</h3>
