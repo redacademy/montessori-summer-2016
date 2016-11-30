@@ -1,77 +1,91 @@
-
-.content-wrapper{
+.content-wrapper {
 	max-width: 90%;
 	margin: 0 auto;
 }
 ////Montessori Elements Typography ////
+
 a:hover {
-		cursor: pointer;
-		color: $color_btn_hover_green;
+	cursor: pointer;
+	color: $color_btn_hover_green;
 }
-a{
+
+a {
 	text-decoration: none;
 }
-p,
-li {
-	 font-size: $font_body_size_mob;
-	 font-family:$font_title;
-}
-h1,h2,h3{
- text-transform: capitalize;
- font-family:$font_title;
- font-weight: lighter;
+
+li,
+p {
+	font-size: $font_body_size_mob;
+	font-family: $font_title;
 }
 
-h1{font-size:$h1_size_mob;
-}
-h2{
-font-size:$h2_size_mob;
-}
-h3{
- font-size:$h3_size_mob;
- font-family:$font_title;
-
+h1,
+h2,
+h3 {
+	text-transform: capitalize;
+	font-family: $font_title;
+	font-weight: lighter;
 }
 
-@include desktop{
- p,
- li {
-		font-size: $font_body_size_desktop;}
- h1{font-family:$font_title;
-	 font-weight: lighter;
-	 font-size:$h1_size_desktop;}
- h2{
- font-size:$h2_size_desktop;}
- h3{
-	 font-size:$h3_size_desktop;
-}}
+h1 {
+	font-size: $h1_size_mob;
+}
+
+h2 {
+	font-size: $h2_size_mob;
+}
+
+h3 {
+	font-size: $h3_size_mob;
+	font-family: $font_title;
+}
+@include desktop {
+	li,
+	p {
+		font-size: $font_body_size_desktop;
+	}
+
+	h1 {
+		font-family: $font_title;
+		font-weight: lighter;
+		font-size: $h1_size_desktop;
+	}
+
+	h2 {
+		font-size: $h2_size_desktop;
+	}
+
+	h3 {
+		font-size: $h3_size_desktop;
+	}
+}
 
 html {
 	box-sizing: border-box;
-  font-family: $font_main;
+	font-family: $font_main;
 	@include font-size(1);
 }
 
 *,
-*:before,
-*:after {
+*:after,
+*:before {
 	box-sizing: inherit;
 }
 
 body {
 	background: $white;
-  font-family: $font_body;
+	font-family: $font_body;
 	box-sizing: border-box;
-
 	margin: 0 auto;
-p,li{
-	line-height: 2.6rem;
-	@include desktop{
-		line-height: 2.3rem;
-	};
-}
-}
 
+	li,
+	p {
+		line-height: 2.6rem;
+		@include desktop {
+			line-height: 2.3rem;
+		};
+	}
+}
 
 hr {
 	background-color: #ffffff;
@@ -80,7 +94,8 @@ hr {
 	margin-bottom: 1.5rem;
 }
 
-ul, ol {
+ol,
+ul {
 	margin: 0;
 }
 
@@ -92,8 +107,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li > ol,
+li > ul {
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-bottom: 0;
@@ -101,8 +116,8 @@ li > ol {
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 table {
