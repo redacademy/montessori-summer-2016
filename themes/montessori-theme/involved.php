@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-       <main id="main back-to-top" class="site-main" role="main">
+       <main id="main" class="site-main" role="main">
 
 
          <!-- our involved section -->
@@ -39,7 +39,7 @@ if ( $query-> have_posts() ) :
  </div>
 
      <div class="button">
-       <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
+       <a class="gre-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
 
  <?php endwhile; ?>
 <?php endif; ?>
