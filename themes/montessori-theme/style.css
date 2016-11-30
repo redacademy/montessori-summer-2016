@@ -2116,7 +2116,6 @@ img {
   text-shadow: none;
   letter-spacing: 0.8px;
   text-decoration: none;
-  font-family: "Noto Sans";
   font-size: 15px;
   font-weight: bold;
   text-align: center;
@@ -2133,7 +2132,7 @@ img {
   line-height: 30px;
   color: #fff;
   margin-left: 60px;
-  padding: 8px;
+  padding: 10px;
   box-shadow: none;
   text-shadow: none;
   letter-spacing: 0.8px;
