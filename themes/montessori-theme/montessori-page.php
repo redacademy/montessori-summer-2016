@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-        <main id="main" class="site-main " role="main">
+        <main id="main back-to-top" class="site-main " role="main">
 
 <!-- Our History Section  -->
 
@@ -35,14 +35,14 @@ output_image('history_img'); ?>
 
 </h1>
 <div class="history-content">
-<p><?php
+<?php
 $histor = CFS()->get('history_content');
 
 if (!empty($histor))
 {
 echo $histor;
 };
-?></p>
+?>
 </div>
 
   </div>
@@ -56,6 +56,7 @@ echo $histor;
 
  <div class="main-philosophy content-wrapper">
    <div><h1>Philosophy</h1></div>
+
  <?php
 $fields = CFS()->get('philosophy'); ?>
 <?php
@@ -65,12 +66,12 @@ foreach($fields as $field)
 <div class="philosophy-grid">
   <h2><a href="#" onclick="return showImage()";><?php
     echo $field['philosophy_title']; ?></a></h2>
-  <p><?php
+  <p id="ph-paragraph"><?php
   echo $field['philosophy_content']; ?></p>
 <div class= "philosophy-img" >
 <?php
   $src = wp_get_attachment_image_src($field['philosophy_img'], 'medium'); ?>
-<a href="#" onclick="return showImage()"; > <?php
+<a onclick="return showParagraph()"; > <?php
   echo '<img src="' . $src[0] . '" />';
 ?></a>
 </div>
@@ -102,10 +103,11 @@ echo $benefit;
 
         </div>
 
-<!--  here is the meta data of the benefits section -->
+<!--  here is the meta data of the benefits loop section -->
 <div>
           <ul>
         <?php
+
 $fields = CFS()->get('benefits_details'); ?>
         <?php
 
@@ -114,6 +116,7 @@ foreach($fields as $field)
       <div class="benefits">
        <li>
         <?php
+
   echo $field['benefits_parts']; ?>
         </li>
         <?php
@@ -143,11 +146,11 @@ $fields = CFS()->get('materials'); ?>
 foreach($fields as $field)
   { ?>
 <div class="materials materials-grid">
-<div class="materials-contents"><p>
+<div class="materials-contents">
   <h1><?php
     echo $field['materials_title']; ?></h1>
       <?php
-  echo $field['materials_content']; ?></p>
+  echo $field['materials_content']; ?>
 </div>
 <div><?php
   $src = wp_get_attachment_image_src($field['materials_img'], 'small');
@@ -209,9 +212,11 @@ echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
   <h3>other<span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
   <div class="#"></div></div>
   </div>
+  <!--the button-->
 <div>
 <button class="green-bt"><a href="<?php
-     echo get_page_link(get_page_by_title('nw-program')->ID);?>">NW Montessori Program</a></button>
+echo get_page_link(get_page_by_title(nw-program)->ID); ?>">NW Montessori Program</a></button>
+
 </div>
 </div>
 </section>

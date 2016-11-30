@@ -1,5 +1,4 @@
-
-site-main {
+.site-main {
     width:100%;
     display: flex;
     margin: 0 auto;
@@ -37,8 +36,14 @@ site-main {
       }
 }
 
-.button {
-      a {
+// This is for red line beside the paragraf
+blockquote {
+    border-left: 10px solid #CB203E;
+    padding: 0 19px;
+}
+
+.gre-button {
+
     width: 261px;
     height: 47px;
     background-color: #4FC8A1;
@@ -54,27 +59,35 @@ site-main {
     text-align: center;
     line-height: 30px;
     display: block;
-    padding-top: 10px;
-  }
-
+      a {
+        width: 216px;
+        height: 30px;
+        font-family: "Noto Sans";
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #FFF;
     }
-
-    // this is for green line
     .text-shadow {
-        border-top: 3px solid #248e6a;
+        border-top: 10px solid #248e6a;
         width: 100%;
-        margin-bottom: 50px;
-
+        margin-bottom: 10px;
+        // @include border-radius (10px);
+        // border-right: 1px solid #248E6A;
     }
-
-
-
-    // This is for support now container
-        .support-containar {
-        display: flex;
-        justify-content: center;
-
-
+}
+//     .get_involved img {
+//     float: left;
+//     width: 227px;
+//     height: 244px;
+// }
+// This is for green line
+// This is for support now container
+.support-containar {
+    display: flex;
+    justify-content: center;
 }
 .support-img {
     width: 150px 60px;
@@ -85,7 +98,8 @@ img {
     height: 100%;
 
 }
-
+ @include desktop {
+ }
 // This for green circle btn
 .involved {
     .circle-btn {
@@ -127,6 +141,7 @@ img {
     text-shadow: none;
     letter-spacing: 0.8px;
     text-decoration: none;
+    font-family: "Noto Sans";
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -146,7 +161,7 @@ img {
     line-height: 30px;
     color: #fff;
     margin-left: 60px;
-    padding: 10px;
+    padding: 8px;
     box-shadow: none;
     text-shadow: none;
     letter-spacing: 0.8px;
@@ -165,13 +180,9 @@ img {
         width: 50px;
     }
 }
-// This is for red line beside the paragraf
-    blockquote {
-    border-left: 10px solid #CB203E;
-    padding: 0 19px;
-}
-      .involved {
-            .green-btn {
+
+.involved {
+    .green-btn {
         padding: 20px 25px 19px 19px;
         font-size: 25px;
         height: 200px;
@@ -207,4 +218,8 @@ img {
         margin: 20px;
         flex-direction: row;
     }
+}
+border-radius {
+    border-left: solid 12px $border_left_red;
+    border-color: red;
 }
