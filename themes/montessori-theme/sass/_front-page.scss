@@ -392,24 +392,33 @@
             color: #000;
             text-decoration: none;
             .features-flipper {
-                position: relative;
-                -webkit-transition: 1.9s;
-                -webkit-transform-style: preserve-3d;
-                -moz-transition: 1.9s;
-                -moz-transform-style: preserve-3d;
-                -o-transition: 1.9s;
-                -o-transform-style: preserve-3d;
-                transition: 1.9s;
-                transform-style: preserve-3d;
-                justify-content: space-around;
-                flex-direction: row;
-                &:hover {
-                    -webkit-transform: rotateY(180deg);
-                    -moz-transform: rotateY(180deg);
-                    -o-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
-                    cursor: pointer;
-                }
+              flex: 0 0 auto;
+              width: 200px;
+              height: 200px;
+              background-color: #AFF1D3;
+              margin-top: 20px;
+              @include flex(center,space-between);
+              flex-wrap: wrap;
+              position: relative;
+              @include desktop {
+                  width: 300px;
+                  height: 300px;
+                  background-color: #AFF1D3;
+                  -webkit-transition: 3s;
+                  -webkit-transform-style: preserve-3d;
+                  -moz-transition: 2s;
+                  -moz-transform-style: preserve-3d;
+                  -o-transition: 3s;
+                  -o-transform-style: preserve-3d;
+                  transition: 3s;
+                  transform-style: preserve-3d;
+                  @include border-radius(10px);
+
+                  &:hover {
+                      @include rotate(180deg);
+                  }
+              }
+
                 .front {
                     height: auto;
                     text-align: center;

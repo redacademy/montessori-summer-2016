@@ -75,9 +75,9 @@ get_header(); ?>
               if ( $my_query->have_posts() ) {
                 while ( $my_query->have_posts() ) {
                   $my_query->the_post();
-                  ?>
+              ?>
                     <p class="front"><?php the_title(  ); ?> </p>
-                    <p class="features-back"> <?php echo CFS()->get('features_news'); ?>
+                    <div class="features-back"> <?php the_content(); ?> </div>
                  <?php
                  ?>
                   <a class="btn" href="<?php the_permalink(50); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
