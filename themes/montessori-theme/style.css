@@ -1585,7 +1585,7 @@ p {
           justify-content: center;
       display: -ms-flexbox;
       display: flex;
-      padding: .2rem;
+      padding: 0.2rem;
       text-align: center;
       margin: 1rem; }
 
@@ -1813,6 +1813,7 @@ hover {
   box-sizing: border-box; }
 
 .nw-program-wrapper {
+  max-width: 768px;
   height: auto;
   margin: 0 auto;
   padding-left: 1.25rem;
@@ -1871,16 +1872,6 @@ p {
         justify-content: center;
     margin-top: 3.4375rem;
     margin-bottom: 1.875rem; }
-    @media (min-width: 768px) {
-      .nw-program .nw-img {
-        width: 50%; } }
-
-@media (min-width: 768px) {
-  .nw-part1 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row; } }
 
 .funding {
   display: -ms-flexbox;
@@ -1897,109 +1888,36 @@ p {
     -ms-flex-pack: center;
         justify-content: center;
     margin-top: 2rem; }
-    @media (min-width: 768px) {
-      .funding .funding-img,
-      .funding .money-spend-img {
-        margin-top: 0; } }
-  @media (min-width: 768px) {
-    .funding .funding-img img {
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-      width: 120%; } }
-  @media (min-width: 768px) {
-    .funding .money-spend-img img {
-      padding-right: 4rem;
-      padding-left: .4rem; } }
-  .funding h2 {
-    text-align: center; }
-  @media (min-width: 768px) {
-    .funding .nw-part2 {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-align: center;
-          align-items: center; }
-      .funding .nw-part2 .red-border-container {
-        width: 82%;
-        display: -ms-flexbox;
-        display: flex; } }
-  @media (min-width: 768px) {
-    .funding .nw-part3 {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
-    .funding .money-spend-para {
-      -ms-flex-negative: 5;
-          flex-shrink: 5; } }
-  .funding .funding-btn {
+  .funding .school-list {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin-top: 1.875rem; }
-    @media (min-width: 768px) {
-      .funding .funding-btn {
-        -ms-flex-pack: end;
-            justify-content: flex-end; } }
-    .funding .funding-btn .green-btn {
-      padding: 10px;
-      width: 44.666%;
-      margin-right: 2px; }
-      @media (min-width: 768px) {
-        .funding .funding-btn .green-btn {
-          padding: 1.2rem;
-          width: 18%; } }
-
-.school-list {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  .school-list .school-img {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .school-list .school-img img {
-      width: 80%;
-      height: 80%; }
-    .school-list .school-img .address .phone {
-      font-weight: bolder; }
-
-.preschools-list {
-  border-bottom: solid 3px #4FC8A1; }
-  .preschools-list h1 {
-    width: 78%; }
-  @media (min-width: 768px) {
-    .preschools-list h1 {
-      width: 40%;
-      padding: 1.7rem;
-      border-top: solid 3px #4FC8A1; } }
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .funding .school-list .school-img {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .funding .school-list .school-img img {
+        width: 80%;
+        height: 80%; }
+      .funding .school-list .school-img .address .phone {
+        font-weight: bolder; }
+  .funding .preschools-list {
+    border-bottom: solid 3px #4FC8A1; }
+    .funding .preschools-list h1 {
+      width: 78%; }
 
 .enroll {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  @media (min-width: 768px) {
-    .enroll .enrollment-wrap {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-      .enroll .enrollment-wrap .guids {
-        -ms-flex-negative: 3.5;
-            flex-shrink: 3.5;
-        padding-right: 1rem; } }
   .enroll .enroll-info {
-    margin-top: 27rem; }
-    @media (min-width: 768px) {
+    margin-top: 23rem; }
+    @media screen and (min-width: 668px) {
       .enroll .enroll-info {
-        margin-top: 2rem; } }
+        margin-top: 13rem; } }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2010,7 +1928,11 @@ p {
     -ms-flex-pack: center;
         justify-content: center; }
     .enroll .enroll-block .enroll-img {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
     .enroll .enroll-block .enroll-btn {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
@@ -2028,10 +1950,6 @@ p {
     width: 40%;
     padding: 1.7rem;
     border-top: solid 3px #4FC8A1; }
-  @media (min-width: 768px) {
-    .teacher-list {
-      -ms-flex-direction: column;
-          flex-direction: column; } }
   .teacher-list .teacher-grid {
     display: -ms-flexbox;
     display: flex;
