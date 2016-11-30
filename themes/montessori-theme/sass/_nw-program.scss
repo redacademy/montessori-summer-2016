@@ -73,85 +73,95 @@ p {
 			}
 		}
 	}
-
 	.nw-img {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*5.5;
 		margin-bottom: $basic_margin*3;
-		@include desktop {
-			float: right;
-			width: 900rem;
-			height: 300px;
-		};
 	}
 }
-
-.nw-part1 {
 	@include desktop {
+		.nw-part1 {
 		display: flex;
 		flex-direction: row;
-	};
+		align-items: center;
+		.why-nw{
+			display: block;
+			flex-shrink: 4;
+		}
+		.nw-img {
+			margin-top: 0px;
+			padding-left: 1rem;
+		}
+	}
 }
 // Funding Section
-
 .funding {
 	display: flex;
 	flex-direction: column;
 	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
-
 	.funding-img,
 	.money-spend-img {
 		display: flex;
 		justify-content: center;
+		margin-top: 2rem;
 		@include desktop {
-			width: 50%;
-			margin-bottom: 4rem;
+			margin-top: 0;
 		}
 	}
-
-	.nw-part2 {
+	.money-spend-img img {
 		@include desktop {
+			padding-right: 4rem;
+			padding-left: .4rem;
+		}
+	}
+	h2{
+		text-align: center;
+	}
+	.nw-part2 {
+	  	margin: 0 auto;
+			@include desktop {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
+		  .red-border-container {
+				padding-right: 3.4%;
+				width: 82%;
+				display: flex;
+			}
 		}
 	}
-	@include desktop {
+
 		.nw-part3 {
+		p{
+			flex-shrink: 22;
+		}
+				@include desktop {
 			display: flex;
+			align-items: center;
 			flex-direction: row-reverse;
 		}
-
 		.money-spend-para {
-			display: flex;
-			flex: 25%;
-			height: 50%;
-			flex-shrink: 2;
-		}
-
-		img {
-			height: 60%;
+			flex-shrink: 5;
 		}
 	}
-
-	.red-border-container {
-		@include desktop {
-			width: 60%;
-			height: 20rem;
-		}
-	}
-
 	.funding-btn {
 		display: flex;
 		justify-content: center;
 		margin-top: $basic_margin*3;
-
+		@include desktop {
+			justify-content: flex-end;
+		}
 		.green-btn {
 			padding: 10px;
 			width: 44.666%;
 			margin-right: 2px;
+			@include desktop {
+				padding: 1.2rem;
+				width: 18%;
+			}
 		}
 	}
 }
