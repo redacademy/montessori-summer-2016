@@ -5,17 +5,21 @@
 }
 
 .site-content {
-	padding-top: 160px;
+	padding-top: 180px;
 	top: 0;
 }
 
 .home .site-content {
 	padding-top: 0;
 	@include desktop {
-		padding-top: 140px;
+		padding-top: 150px;
 	};
 }
 ///the second part between two menues///
+
+.home .the-page-title{
+	display:none;
+}
 
 .the-page-title {
 	background-color: $white;
@@ -177,9 +181,7 @@ button#responsive-menu-button {
 	}
 }
 
-.main-menu-wrapper {
-	@include desktop {};
-}
+
 
 .main-menu-wrapper {
 	border-bottom: 2px solid #E2E2E2;
@@ -188,7 +190,7 @@ button#responsive-menu-button {
 	@include flex(center,space-between);
 	@include desktop {
 		border-bottom: none;
-		height: 90px;
+		height: 120px;
 	}
 }
 
@@ -247,7 +249,10 @@ div .secondary {
 		background-color: $color_btn_green;
 	}
 
-	ul {
+	ul { @include desktop{
+		display: fixed;
+	}
+
 		min-width: 50%;
 	}
 
@@ -270,4 +275,14 @@ div .secondary {
 			color: white;
 		}
 	}
+}
+
+
+ div .transparent-menu{
+	position: fixed;
+	 @include desktop{
+		display: inline-block;
+	};
+	background-color: $white;
+
 }

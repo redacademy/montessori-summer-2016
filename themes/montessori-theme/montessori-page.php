@@ -12,7 +12,7 @@ get_header();
 
 <!-- Our History Section  -->
 
-          <section id="history" class="history-section mob-container">
+          <section id="history" class="history-section ">
   <div class="main-history content-wrapper">
 
             <div class= "history-img" >
@@ -51,7 +51,7 @@ echo $histor;
 
 <!-- Philosophy Section  -->
 
-<section id="philosophy" class="philosophys-section mob-container">
+<section id="philosophy" class="philosophys-section ">
 
 
  <div class="main-philosophy content-wrapper">
@@ -83,7 +83,7 @@ foreach($fields as $field)
 
 <!-- Start our Benefits -->
 
-<section id="benefits-of-montessori" class="benefits-section mob-container">
+<section id="benefits-of-montessori" class="benefits-section ">
 <div class="main-benefits content-wrapper">
 <h1>Benefits of Montessori</h1>
 <div class="first-benefits-section">
@@ -135,7 +135,7 @@ foreach($fields as $field)
 
 <!-- Start Materials Section  -->
 
-<section id="materials" class="materials-section mob-container">
+<section id="materials" class="materials-section ">
 
   <div class="main-materials content-wrapper">
 
@@ -170,7 +170,7 @@ foreach($fields as $field)
 
 </section>
 <!-- Resources Section  -->
-<section id= "resources" class="container mob-container">
+<section id= "resources" class="container ">
   <div class="main-resources content-wrapper">
     <div class="title-resources">
                   <h1 id="resources">Resources</h1>

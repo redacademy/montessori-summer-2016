@@ -36,7 +36,7 @@ jQuery(document).ready(function( $ ) {
     });
   ///------ Toogle the Archive contents and flib the arrow---
   $('.toggle').click(function() {
-  $('#target').slideToggle('1000');
+  $('#target').slideToggle('975');
    $(".arrow").click(function () {
       $(this).toggleClass("rotate");
   });
@@ -47,7 +47,24 @@ jQuery(document).ready(function( $ ) {
   //     $(this).parent().addClass('active').siblings().removeClass('active');
   // });
 
+  $(document).ready(function(){
+      // On scroll pages on mobile size
+
+          window.onscroll = function() {
 
 
+                var  $mainNav = $(".sub-menu-wrapper "),
+                  $navWrapper = $(".main-menu-wrapper")
+                  that = this;
+
+var $screenWidth = $( document ).width()
+              if (window.pageYOffset > 230 && $screenWidth <1024) {
+                  $navWrapper.addClass("transparent-menu");
+              }
+              else {
+                  $navWrapper.removeClass("transparent-menu");
+              }};
+
+})
 
 });
