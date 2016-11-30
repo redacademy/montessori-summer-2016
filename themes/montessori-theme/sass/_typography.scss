@@ -1,17 +1,11 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-
 // body{
 // 	line-height: 2.6rem;
 // }
-
 //////////////////////////////
-
-
 /******* Headings *****/
-
-
 body,
 button,
 input,
@@ -20,32 +14,39 @@ textarea {
 	color: $color_text_main;
 	font-family: $font_main;
 	@include font-size(1);
-
 }
-
 /* Headings */
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
 }
-
 /* Copy */
-
-
-dfn, cite, em, i {
+cite,
+dfn,
+em,
+i {
 	font-style: italic;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
 	font-family: $font_main;
 	@include font-size(0.9375);
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	cursor: help;
 }
 
-mark, ins {
+ins,
+mark {
 	text-decoration: none;
 }
 
