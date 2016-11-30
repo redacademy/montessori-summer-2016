@@ -1,47 +1,37 @@
 .site-main {
-    width:100%;
+    width: 100%;
     display: flex;
     margin: 0 auto;
     height: auto;
-
-.main-involved-wrapper {
-  padding-top: 50px;
-}
-
-
-
   }
+    .main-involved-wrapper {
+     padding-top: 50px;
 
-          .involved-title{
-              a {
-          width: 200px;
-          height: 120px;
-          margin-top: 50px;
-          background-color: #4FC8A1;
-          margin-left: 25px;
-          margin-bottom: 25px;
-          font-family: Asap;
-          font-size: 24px;
-          line-height: 27px;
-          color: #000;
-          text-align: center;
-          display:flex;
-          justify-content:space-around;
-
-
-        }
-            a:hover {
-        color: #248e6a;
-
-      }
 }
-
+.involved-title {
+    a {
+        width: 200px;
+        height: 120px;
+        margin-top: 50px;
+        background-color: #4FC8A1;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        font-family: Asap;
+        font-size: 24px;
+        line-height: 27px;
+        color: #000;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    a:hover {
+        color: #248e6a;
+    }
+}
 .border-radius {
     border-left: solid 12px $border_left_red;
     border-color: red;
 }
-
-
 .gre-button {
 
     width: 261px;
@@ -51,25 +41,18 @@
     text-decoration: none;
     font-size: 15px;
     font-family: Asap;
-    color: #fff;
-    background-color: #4FC8A1;
+
     font-family: "Noto Sans";
-    font-size: 15px;
     font-weight: bold;
     text-align: center;
     line-height: 30px;
     display: block;
-      a {
-        width: 216px;
-        height: 30px;
-        font-family: "Noto Sans";
-        padding-top: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 30px;
-        color: #FFF;
-    }
+       a {
+         color:#fff;
+       }
+}
+
+    // This is for green line
     .text-shadow {
         border-top: 10px solid #248e6a;
         width: 100%;
@@ -77,13 +60,8 @@
         // @include border-radius (10px);
         // border-right: 1px solid #248E6A;
     }
-}
-//     .get_involved img {
-//     float: left;
-//     width: 227px;
-//     height: 244px;
-// }
-// This is for green line
+
+
 // This is for support now container
 .support-containar {
     display: flex;
@@ -96,10 +74,8 @@
 }
 img {
     height: 100%;
-
 }
- @include desktop {
- }
+@include desktop {}
 // This for green circle btn
 .involved {
     .circle-btn {
@@ -147,8 +123,6 @@ img {
     text-align: center;
     line-height: 27px;
 }
-
-
 // This for donation
 .pink-btn {
     width: 175.38px;
@@ -168,8 +142,7 @@ img {
     text-decoration: none;
     float: left;
 }
-
-// This for you click on foleenter shaw the other btn
+// This for you click on volnteeer shaw the other btn
 .contact-container {
     .contact-person {
         color: #fff;
@@ -180,7 +153,6 @@ img {
         width: 50px;
     }
 }
-
 .involved {
     .green-btn {
         padding: 20px 25px 19px 19px;

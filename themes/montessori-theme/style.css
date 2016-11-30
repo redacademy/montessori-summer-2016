@@ -2046,8 +2046,9 @@ body {
   display: flex;
   margin: 0 auto;
   height: auto; }
-  .site-main .main-involved-wrapper {
-    padding-top: 50px; }
+
+.main-involved-wrapper {
+  padding-top: 50px; }
 
 .involved-title a {
   width: 200px;
@@ -2081,28 +2082,18 @@ body {
   text-decoration: none;
   font-size: 15px;
   font-family: Asap;
-  color: #fff;
-  background-color: #4FC8A1;
   font-family: "Noto Sans";
-  font-size: 15px;
   font-weight: bold;
   text-align: center;
   line-height: 30px;
   display: block; }
   .gre-button a {
-    width: 216px;
-    height: 30px;
-    font-family: "Noto Sans";
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #FFF; }
-  .gre-button .text-shadow {
-    border-top: 10px solid #248e6a;
-    width: 100%;
-    margin-bottom: 10px; }
+    color: #fff; }
+
+.text-shadow {
+  border-top: 10px solid #248e6a;
+  width: 100%;
+  margin-bottom: 10px; }
 
 .support-containar {
   display: -ms-flexbox;
