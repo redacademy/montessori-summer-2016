@@ -49,8 +49,10 @@ get_header(); ?>
             <p class="image-text"> Your monthly contribution costs only two Lattes a month.</p>
         </div>
        <?php echo CFS()->get('second_support_paragraph'); ?>
+        <div class="btn" >
             <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
+            <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
+        </div>
       </div>
     </section>
 
@@ -60,27 +62,23 @@ get_header(); ?>
          <h2> Features News</h2>
                     <!-- // All the content in the loop goes here -->
               <div class="features-wrapper">
-                <div class="features-flipper" > 
+                <div class="features-flip" >
+
               <?php
               //Loop through posts
-              $args = array(
-                'posts_per_page' => 3,
-              );
-              $my_query = new WP_Query( $args );
-              if ( $my_query->have_posts() ) { 
-                while ( $my_query->have_posts() ) { 
-                  $my_query->the_post();
+              $args = array('posts_per_page' => 3, );
+
+            $features_news = new WP_Query( $args );
+              if ($features_news->have_posts() ) { 
+                while ($features_news->have_posts() ) { 
+                $features_news->the_post();
                   ?>
-                  <div class="front"> 
-                  <?php
-                     the_title(  );
-                   ?> </div>
+                  <p class="front"> <?php the_title(  ); ?> </p>
+                  
                  <?php 
-                
                ?>
-               <div class="features-back">
+               <!--<?php the_content( 'Continue reading ' . get_the_title() ); ?>-->
                   <a class="btn" href="<?php the_permalink(50); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
-              </div>
                   <br>                  
                 <?php
                 }
@@ -89,9 +87,10 @@ get_header(); ?>
 
                   //loop end here
               ?>
-              </div> <!--features-flipper-->
 
-          </div><!--features-wrapper-->
+              </div> <!--features-flipper-->
+          </div>
+          
   </section>
 
 
