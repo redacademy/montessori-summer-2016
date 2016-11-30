@@ -959,6 +959,9 @@ div .secondary {
           height: 555px;
           z-index: -1;
           position: absolute; } }
+      @media (min-width: 768px) {
+        .site-main .home .home-wrapper .home-img .welcome-wraapper {
+          margin: 40px; } }
     .site-main .home .home-wrapper h2 {
       font-family: 'Asap';
       font-size: 36px;
@@ -1140,7 +1143,8 @@ div .secondary {
           display: -ms-flexbox;
           display: flex;
           position: absolute;
-          right: 0px; } }
+          right: 0px;
+          margin: -200px 100px; } }
     .site-main .support-wrapper .information .support-img-wrapper p {
       text-align: center; }
       @media (min-width: 768px) {
@@ -1159,7 +1163,7 @@ div .secondary {
       height: 125px; }
       @media (min-width: 768px) {
         .site-main .support-wrapper .information blockquote {
-          border-left: 6px solid #D93B57;
+          border-left: 14px solid #D93B57;
           margin: 27px 119px;
           width: 70%;
           height: auto;

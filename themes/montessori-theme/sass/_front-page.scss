@@ -28,6 +28,12 @@
                     position: absolute;
                 }
 
+                .welcome-wraapper{
+                  @include desktop{
+                    margin: 40px;
+
+                  }
+                }
             }
             h2 {
                 font-family: 'Asap';
@@ -234,6 +240,8 @@
                         // top: 100px;
                         position: absolute;
                         right: 0px;
+                        margin: -200px 100px;
+
                     }
                 }
                 p {
@@ -256,7 +264,7 @@
                 margin-bottom: 95px;
                 height: 125px;
                 @include desktop {
-                    border-left: 6px solid #D93B57;
+                    border-left: 14px solid #D93B57;
                     margin: 27px 119px;
                     width: 70%;
                     height: auto;
