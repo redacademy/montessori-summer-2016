@@ -2264,7 +2264,7 @@ h3 {
   line-height: 1.6875rem; }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   line-height: 2.5rem;
   font-style: "Noto Sans", sans-serif; }
 
@@ -2284,6 +2284,12 @@ p {
 .nw-program {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
+  .nw-program .why-nw p {
+    display: block; }
+    @media (min-width: 768px) {
+      .nw-program .why-nw p {
+        -moz-text-align-last: right;
+             text-align-last: right; } }
   .nw-program .nw-img {
     display: -ms-flexbox;
     display: flex;
@@ -2291,22 +2297,18 @@ p {
         justify-content: center;
     margin-top: 3.4375rem;
     margin-bottom: 1.875rem; }
+    @media (min-width: 768px) {
+      .nw-program .nw-img {
+        float: right;
+        width: 900rem;
+        height: 300px; } }
 
 @media (min-width: 768px) {
   .nw-part1 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-align: center;
-        align-items: center; }
-    .nw-part1 .why-nw {
-      display: block;
-      -ms-flex-negative: 4;
-          flex-shrink: 4; }
-    .nw-part1 .nw-img {
-      margin-top: 0px;
-      padding-left: 1rem; } }
+        flex-direction: row; } }
 
 .funding {
   display: -ms-flexbox;
