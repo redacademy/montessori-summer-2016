@@ -1,97 +1,96 @@
 .page {
-  .contact_info {
-    width: 100%;
-    margin: 20px;
-    @include desktop{
-      margin-left: auto;
-      margin-right: auto;
-      width: 1120px;
-      padding-top: 50px;
-    }
-  }
-
-  h2{
-    width: 207px;
-    height: 24px;
-    font-family: ".SF NS Display";
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
-  @include desktop{
-    width: 1295px;
-    height: 55px;
-    font-family: 'Asap';
-    font-size: 48px;
-    line-height: 55px;
-  }
-}
-
-  // h3{
-  //   width: 152px;
-  //   height: 21px;
-  //   font-family: ".AppleSystemUIFont";
-  //   font-size: 18px;
-  //   line-height: 21px;
-  //   color: #000000;
-  // @include desktop{
-  //   width: 1295px;
-  //   height: 55px;
-  //   font-family: 'Asap';
-  //   font-size: 38px;
-  //   line-height: 55px;
-  // }
-// }
-
-}
-
-.wpcf7{
-  .wpcf7-form{
-    p{
-      label{
-        width: 49px;
-        height: 19px;
-        font-family: ".AppleSystemUIFont";
-        font-size: 16px;
-        line-height: 18px;
-        color: #000000;
-      @include desktop{
-        width: 76px;
-        height: 40px;
-        font-family: "Noto Sans";
-        font-size: 22px;
-        line-height: 40px;
-      }
-        .wpcf7-form-control-wrap {
-          width: 300px;
-          height: 40px;
-          background-color: #FFFFFF;
-          border-radius: 3px;
-          padding: 10px 0px;
-
-          input{
-            width: 300px !important;
-            height: 40px;
-
-              input[type=submit]{
-                width: 164px;
-                height: 67px;
-                background-color: #4FC8A1 !important ;
-                border-radius: 6px;
-              }
-
-            @include desktop{
-              width: 450px !important;
-              height: 50px;
-            }
-            .wpcf7-form-control wpcf7-number wpcf7-validates-as-number{
-              width: 300px !important;
-              height: 40px;
-              background-color: #FFFFFF;
-              border-radius: 3px;
-            }
-          }
+    .contact_info {
+        width: 100%;
+        margin: 20px;
+        @include desktop {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1120px;
+            padding-top: 50px;
         }
-      }
     }
-  }
+
+    h2 {
+        width: 207px;
+        height: 24px;
+        font-family: ".SF NS Display";
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+        @include desktop {
+            width: 1295px;
+            height: 55px;
+            font-family: 'Asap';
+            font-size: 48px;
+            line-height: 55px;
+        }
+    }
+    // h3{
+    //   width: 152px;
+    //   height: 21px;
+    //   font-family: ".AppleSystemUIFont";
+    //   font-size: 18px;
+    //   line-height: 21px;
+    //   color: #000000;
+    // @include desktop{
+    //   width: 1295px;
+    //   height: 55px;
+    //   font-family: 'Asap';
+    //   font-size: 38px;
+    //   line-height: 55px;
+    // }
+    // }
+}
+
+.wpcf7 {
+    .wpcf7-form {
+        p {
+            label {
+                width: 49px;
+                height: 19px;
+                font-family: ".AppleSystemUIFont";
+                font-size: 16px;
+                line-height: 18px;
+                color: #000000;
+                @include desktop {
+                    width: 76px;
+                    height: 40px;
+                    font-family: "Noto Sans";
+                    font-size: 22px;
+                    line-height: 40px;
+                }
+
+                .wpcf7-form-control-wrap {
+                    width: 300px;
+                    height: 40px;
+                    background-color: #FFFFFF;
+                    border-radius: 3px;
+                    padding: 10px 0;
+
+                    input {
+                        width: 300px !important;
+                        height: 40px;
+
+                        input[type=submit] {
+                            width: 164px;
+                            height: 67px;
+                            background-color: #4FC8A1 !important;
+                            border-radius: 6px;
+                        }
+                        @include desktop {
+                            width: 450px !important;
+                            height: 50px;
+                        }
+
+                        .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
+                            width: 300px !important;
+                            height: 40px;
+                            background-color: #FFFFFF;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

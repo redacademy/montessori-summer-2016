@@ -6,10 +6,10 @@
  */
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main back-to-top" class="site-main" role="main">
 			<div class="about-wrapper">
 			<!-- **********///////////////// about NW School Section ///////////////********** -->
-			<section id="our-history " class="about" >
+			<section id="our-history" class="about" >
 				<?php
 			$fields = CFS()->get( 'content_group' );
 			foreach ( $fields as $field ) {?>

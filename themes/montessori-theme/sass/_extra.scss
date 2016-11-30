@@ -3,35 +3,35 @@
 .red-border-container{
 width: 90%;
 height: 160px;
-display: inline-block;
+display: inline-table;
 margin-left: 7.5%;
 padding-right: 9.4%;
 padding-left: 15px;
 border-left: 7px solid $border_left_red;
 overflow:visible;
 p{
+  display: block;
   margin: 0 auto;
 }
 }
+
 
 /// this framework is for the block quotes to make the red bar left
-
 ////**mobile container we will change it when we finish the mobile first **///
-
-.content-wrapper{
- border-bottom: solid 3px $color_btn_green;
-	max-width: 85%;
-	margin: 0 auto;
-  height: 100%;
-  padding: 30px 0;
-  height: 100%;
-  padding: 30px 0;
-
+.content-wrapper {
+    border-bottom: solid 3px $color_btn_green;
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 30px 0;
+    height: 100%;
+    padding: 30px 0;
 }
-.head-footer-container{
-	max-width: 85%;
-  margin: 0 auto;
-	overflow: auto;
-  padding: 0;
-  overflow: auto;
+
+.head-footer-container {
+    max-width: 85%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0;
+    overflow: auto;
 }

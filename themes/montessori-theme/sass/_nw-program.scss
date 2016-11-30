@@ -44,6 +44,7 @@ p {
 	line-height: 2.5rem;
 	font-style: $font_body;
 }
+
 .spcil p {
 	font-size: 1.25rem;
 	line-height: 2.5rem;
@@ -93,47 +94,47 @@ p {
 	};
 }
 // Funding Section
+
 .funding {
 	display: flex;
 	flex-direction: column;
 	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
+
 	.funding-img,
 	.money-spend-img {
 		display: flex;
 		justify-content: center;
-		@include desktop{
+		@include desktop {
 			width: 50%;
 			margin-bottom: 4rem;
 		}
 	}
+
 	.nw-part2 {
-	@include desktop {
+		@include desktop {
 			display: flex;
 			flex-direction: row;
 		}
-}
-	@include desktop{
-	.nw-part3{
-
-		display:flex;
-		flex-direction: row-reverse;
 	}
-		.money-spend-para{
+	@include desktop {
+		.nw-part3 {
 			display: flex;
-			flex:25%;
+			flex-direction: row-reverse;
+		}
+
+		.money-spend-para {
+			display: flex;
+			flex: 25%;
 			height: 50%;
 			flex-shrink: 2;
-
-
-		}
-		img{
-			height:60%;
 		}
 
-}
-
+		img {
+			height: 60%;
+		}
+	}
 
 	.red-border-container {
 		@include desktop {
@@ -232,7 +233,6 @@ p {
 			@include desktop {
 				flex: 1;
 			}
-
 		}
 
 		.flip-container {
@@ -304,16 +304,16 @@ p {
 			height: 100px;
 		}
 
-		.back,
-		.front {
-			-webkit-backface-visibility: hidden;
-			-moz-backface-visibility: hidden;
-			backface-visibility: hidden;
-		}
+	.back,
+	.front {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
 
-		.teacher_det {
-			text-align: center;
-			font-size: $font_member_staff;
-		}
 	}
+.teacher_det {
+	text-align: center;
+	font-size: $font_member_staff;
+}
+}
 }

@@ -1,110 +1,39 @@
-
-site-main {
-    width:100%;
+.site-main {
+    width: 100%;
     display: flex;
     margin: 0 auto;
     height: auto;
+  }
+    .main-involved-wrapper {
+     padding-top: 50px;
 
-.main-involved-wrapper {
-  padding-top: 50px;
 }
-
 .involved-title {
-  width: 200px;
-  height: 120px;
-  background-color: #4FC8A1;
-  float: left;
-  margin-left: 25px;
-  margin-bottom: 25px;
-
-  // color:#000;
-  // font-size: 20px;
-  // text-align: center;
-  // width: 200px;
-  // height: 120px;
-  // background-color: #4FC8A1;
-  // padding-top: 20px;
-  // display: flex;
-  // justify-content: space-between;
-  // box-sizing: border-box;
-  //
-  }
-//     a {
-//       width: 145px;
-//   height: 81px;
-//   font-family: Asap;
-//   font-size: 24px;
-//   line-height: 27px;
-//   color: #1B1B1B;
-//   margin-right: 25px
-//     }
-
-
-
-  .gre-button {
-      width: 261px;
-      height: 47px;
-      background-color: #4FC8A1;
-      border-radius: 6px;
-      text-decoration: none;
-
-      //  width: 120px;
-      //  height: 220px;
-       font-size: 15px;
-       font-family: Asap;
-       color:#fff;
-       background-color: #4FC8A1 ;
-       font-family: "Noto Sans";
-       font-size: 15px;
-       font-weight: bold;
-       text-align: center;
-       line-height: 30px;
-       display:block;
-
-     a {
-
-       width: 216px;
-       height: 30px;
-       font-family: "Noto Sans";
-       padding-top: 10px;
-       font-size: 20px;
-       font-weight: bold;
-       text-align: center;
-       line-height: 30px;
-       color: #FFF;
-     }
-   }
-
-
-
-  }
-
-          .involved-title{
-              a {
-          width: 200px;
-          height: 120px;
-          margin-top: 50px;
-          background-color: #4FC8A1;
-          margin-left: 25px;
-          margin-bottom: 25px;
-          font-family: Asap;
-          font-size: 24px;
-          line-height: 27px;
-          color: #000;
-          text-align: center;
-          display:flex;
-          flex-flow:  row wrap;
-          justify-content:space-around;
-
-        }
-            a:hover {
+    a {
+        width: 200px;
+        height: 120px;
+        margin-top: 50px;
+        background-color: #4FC8A1;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        font-family: Asap;
+        font-size: 24px;
+        line-height: 27px;
+        color: #000;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    a:hover {
         color: #248e6a;
-
-      }
+    }
 }
+.border-radius {
+    border-left: solid 12px $border_left_red;
+    border-color: red;
+}
+.gre-button {
 
-.button {
-      a {
     width: 261px;
     height: 47px;
     background-color: #4FC8A1;
@@ -112,46 +41,41 @@ site-main {
     text-decoration: none;
     font-size: 15px;
     font-family: Asap;
-    color: #fff;
-    background-color: #4FC8A1;
+
     font-family: "Noto Sans";
-    font-size: 15px;
     font-weight: bold;
     text-align: center;
     line-height: 30px;
     display: block;
-    padding-top: 10px;
-  }
+       a {
+         color:#fff;
+       }
+}
 
-    }
-
-    // this is for green line
+    // This is for green line
     .text-shadow {
-        border-top: 3px solid #248e6a;
+        border-top: 10px solid #248e6a;
         width: 100%;
-        margin-bottom: 50px;
-
+        margin-bottom: 10px;
+        // @include border-radius (10px);
+        // border-right: 1px solid #248E6A;
     }
 
 
-
-    // This is for support now container
-        .support-containar {
-        display: flex;
-        justify-content: center;
-
-
+// This is for support now container
+.support-containar {
+    display: flex;
+    justify-content: center;
 }
 .support-img {
     width: 150px 60px;
     height: 160.50px;
     align-self: center;
 }
-// img {
-//     height: 100%;
-//
-// }
-
+img {
+    height: 100%;
+}
+@include desktop {}
 // This for green circle btn
 .involved {
     .circle-btn {
@@ -199,8 +123,6 @@ site-main {
     text-align: center;
     line-height: 27px;
 }
-
-
 // This for donation
 .pink-btn {
     width: 175.38px;
@@ -220,8 +142,7 @@ site-main {
     text-decoration: none;
     float: left;
 }
-
-// This for you click on foleenter shaw the other btn
+// This for you click on volnteeer shaw the other btn
 .contact-container {
     .contact-person {
         color: #fff;
@@ -231,11 +152,6 @@ site-main {
         text-align: center;
         width: 50px;
     }
-}
-// This is for red line beside the paragraf
-blockquote {
-    border-left: 10px solid #CB203E;
-    padding: 0 19px;
 }
 .involved {
     .green-btn {
