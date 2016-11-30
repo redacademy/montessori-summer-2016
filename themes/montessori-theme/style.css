@@ -2321,48 +2321,65 @@ p {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    margin-top: 2rem; }
     @media (min-width: 768px) {
       .funding .funding-img,
       .funding .money-spend-img {
-        width: 50%;
-        margin-bottom: 4rem; } }
+        margin-top: 0; } }
   @media (min-width: 768px) {
-    .funding .nw-part2 {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row; } }
+    .funding .money-spend-img img {
+      padding-right: 4rem;
+      padding-left: .4rem; } }
+  .funding h2 {
+    text-align: center; }
+  .funding .nw-part2 {
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .funding .nw-part2 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-align: center;
+            align-items: center; }
+        .funding .nw-part2 .red-border-container {
+          padding-right: 3.4%;
+          width: 82%;
+          display: -ms-flexbox;
+          display: flex; } }
+  .funding .nw-part3 p {
+    -ms-flex-negative: 22;
+        flex-shrink: 22; }
   @media (min-width: 768px) {
     .funding .nw-part3 {
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-align: center;
+          align-items: center;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
-    .funding .money-spend-para {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex: 25%;
-          flex: 25%;
-      height: 50%;
-      -ms-flex-negative: 2;
-          flex-shrink: 2; }
-    .funding img {
-      height: 60%; } }
-  @media (min-width: 768px) {
-    .funding .red-border-container {
-      width: 60%;
-      height: 20rem; } }
+          flex-direction: row-reverse; } }
+  .funding .nw-part3 .money-spend-para {
+    -ms-flex-negative: 5;
+        flex-shrink: 5; }
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     margin-top: 1.875rem; }
+    @media (min-width: 768px) {
+      .funding .funding-btn {
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
     .funding .funding-btn .green-btn {
       padding: 10px;
       width: 44.666%;
       margin-right: 2px; }
+      @media (min-width: 768px) {
+        .funding .funding-btn .green-btn {
+          padding: 1.2rem;
+          width: 18%; } }
 
 .school-list {
   display: -ms-flexbox;
