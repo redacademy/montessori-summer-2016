@@ -58,41 +58,46 @@ get_header(); ?>
 
 
 <!-- this is for the features news  -->
-    <asection class="all-features">
-         <h2> Features News</h2>
-                    <!-- // All the content in the loop goes here -->
-              <div class="features-wrapper">
+<h1 class="the-title"> <?php echo CFS()->get('features_title'); ?></h1>
 
-                         <?php $args = CFS()->get('features_news'); ?>
+  <section class="all-features ">
+      <section class="features-wrapper ">
+        <div class="features-flipper">
 
-              <?php
-              //Loop through posts
-              $args = array(
-                'posts_per_page' => 3,
-              );
-              $my_query = new WP_Query( $args );
-              if ( $my_query->have_posts() ) {
-                while ( $my_query->have_posts() ) {
-                  $my_query->the_post();
-              ?>                <div class="features-flipper" >
+          <div class="front"><?php echo CFS()->get('features_front'); ?></div>
 
-                    <p class="front"><?php the_title(  ); ?> </p>
-                    <div class="features-back"> <?php the_content(); ?> </div>
+          <div class="features-back"> <?php echo CFS()->get('features_back'); ?>
+            <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
+          </div>
 
-                  <a class="btn" href="<?php the_permalink(50); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
-                  <br>
-                  <!--<?php echo CFS()->get( 'features_news' ); ?>-->
-                <?php
-                }
-              }
-              wp_reset_postdata();
+        </div>
+      </section>
+<!-- second flipper -->
+        <section class="features-wrapper ">
+            <div class="features-flipper">
+              <div class="front">
+                <?php echo CFS()->get('second_features_front'); ?>
+              </div>
+              <div class="features-back">
+                <?php echo CFS()->get('second_features_back'); ?>
+                <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
+              </div>
+            </div>
+        </section>
+<!-- third flipper -->
+            <section class="features-wrapper ">
+                <div class="features-flipper">
+                  <div class="front">
+                    <?php echo CFS()->get('third_features_front'); ?>
+                  </div>
 
-                  //loop end here
-              ?>
-              </div> <!--features-wrapper-->
-              </div> <!--features-flipper-->
-  </section>
-
+                  <div class="features-back">
+                    <?php echo CFS()->get('third_features_back'); ?>
+                    <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
+                  </div>
+                </div>
+              </section>
+      </section> <!-- all-features -->
 
 
         </main><!-- #main -->
