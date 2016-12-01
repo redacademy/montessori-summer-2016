@@ -2456,7 +2456,7 @@ p {
     width: 40%;
     padding: 1.7rem;
     border-top: solid 3px #4FC8A1; }
-  @media (min-width: 768px) {
+  @media (min-width: 959px) {
     .teacher-list {
       -ms-flex-direction: column;
           flex-direction: column; } }
@@ -2467,7 +2467,7 @@ p {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    @media (min-width: 768px) {
+    @media (min-width: 959px) {
       .teacher-list .teacher-grid {
         -ms-flex-direction: row;
             flex-direction: row; } }
@@ -2480,7 +2480,7 @@ p {
           flex-direction: column;
       -ms-flex-align: center;
           align-items: center; }
-      @media (min-width: 768px) {
+      @media (min-width: 959px) {
         .teacher-list .teacher-grid .teacher-block {
           max-width: 990px;
           -ms-flex: 1;
@@ -2527,7 +2527,7 @@ p {
         text-align: center;
         right: 3px;
         transform: rotateY(180deg); }
-        @media (min-width: 768px) {
+        @media (min-width: 959px) {
           .teacher-list .teacher-grid .flip-container .back {
             width: 200px;
             height: 200px;
@@ -2547,7 +2547,7 @@ p {
         .teacher-list .teacher-grid .front {
           width: 190px;
           height: 190px; } }
-      @media (min-width: 768px) {
+      @media (min-width: 959px) {
         .teacher-list .teacher-grid .back,
         .teacher-list .teacher-grid .flip-container,
         .teacher-list .teacher-grid .front {
