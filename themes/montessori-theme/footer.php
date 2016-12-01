@@ -20,16 +20,16 @@ echo get_page_link(get_page_by_title(contact)->ID); ?>">Contact us</a>
                 </li>
                 <li>
                 <a href="<?php
-echo get_page_link(get_page_by_title(get - involved)->ID); ?>">Get involved</a>
+echo get_page_link(get_page_by_title(get-involved)->ID); ?>">Get involved</a>
                 </li>
                 <li>
-                  <a href="">Follow us </a><i class="fa fa-facebook desktop-footer" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/pages/Vancouver-Montessori-School/219470428069793?hc_ref=SEARCH">Follow us </a><i class="fa fa-facebook desktop-footer" aria-hidden="true"></i>
                 </li>
             </ul>
                 </div>
                  <div class="footer-block-item2">
              <p><i class="fa fa-facebook " aria-hidden="true"></i>
-             <a href="">Follow us</a>
+             <a href="https://www.facebook.com/pages/Vancouver-Montessori-School/219470428069793?hc_ref=SEARCH">Follow us</a>
             <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a>
             </p>
                  </div>
@@ -39,9 +39,9 @@ echo get_page_link(get_page_by_title(get - involved)->ID); ?>">Get involved</a>
 <div class="desktop-add-block">
 <ul>
   <li>
-    Suite 379, 104-1015 Columbia Street
+    <span>Suite 379, 104-1015 Columbia Street</span>
     <br>
-    New Westminster BC, V3M 6V3
+    <span>New Westminster BC, V3M 6V3</span>
   </li>
   <li>
     <a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a>
