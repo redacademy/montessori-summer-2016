@@ -1889,43 +1889,8 @@ body {
 .about-wrapper {
   margin: 0 auto;
   padding-left: 1.25rem;
-  padding-right: 1.25rem; }
-
-fonts h1,
-h2,
-h3 {
-  font-family: "Asap", sans-serif;
-  font-weight: normal; }
-
-h1 {
-  font-size: 2.6rem;
-  line-height: 2.625rem; }
-
-h2 {
-  font-size: 1.6rem;
-  line-height: 2.125rem; }
-
-h3 {
-  font-size: 1.4rem;
-  line-height: 1.6875rem; }
-
-p {
-  font-size: 1.625rem;
-  line-height: 1.5rem;
-  font-style: "Noto Sans", sans-serif; }
-
-.spcil p {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  font-style: "Noto Sans", sans-serif; }
-
-.green-btn {
-  background-color: #4FC8A1;
-  color: #fff;
-  font-family: "Noto Sans";
-  font-size: 1.25rem;
-  font-weight: normal;
-  text-decoration: none; }
+  padding-right: 1.25rem;
+  max-width: 768px; }
 
 .about-school {
   border-bottom: solid 3px #4FC8A1;
@@ -1939,6 +1904,10 @@ p {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  @media (min-width: 768px) {
+    .members-list {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .members-list .members-grid {
     display: -ms-flexbox;
     display: flex;
@@ -2019,7 +1988,7 @@ p {
     .members-list .members-grid .front {
       width: 125px;
       height: 125px; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 650px) {
         .members-list .members-grid .back,
         .members-list .members-grid .flip-container,
         .members-list .members-grid .front {
@@ -2036,8 +2005,7 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center;
-      font-size: 1.375rem; }
+      text-align: center; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -2076,10 +2044,6 @@ p {
       flex-direction: column;
   padding-bottom: 3.4375rem;
   border-bottom: solid 3px #4FC8A1; }
-  .meeting-minutes .news-img img {
-    width: 100%; }
-  .meeting-minutes form {
-    padding: 2rem; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
