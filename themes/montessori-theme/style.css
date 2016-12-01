@@ -1893,6 +1893,42 @@ body {
   max-width: 768px;
   background-color: grey; }
 
+fonts h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6875rem; }
+
+p {
+  font-size: 1.625rem;
+  line-height: 1.5rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.spcil p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.green-btn {
+  background-color: #4FC8A1;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none; }
+
 .about-school {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 4.875rem; }
@@ -1929,11 +1965,6 @@ body {
           align-items: center;
       -ms-flex-direction: column;
           flex-direction: column; }
-      @media (min-width: 768px) {
-        .members-list .members-grid .members-block {
-          max-width: 990px;
-          -ms-flex: 1;
-              flex: 1; } }
     .members-list .members-grid .flip-container {
       display: block;
       box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);

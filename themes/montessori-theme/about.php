@@ -72,24 +72,11 @@ get_header(); ?>
 			  <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
 </div>
 	<div class="event-grid">
-			<?php
-			query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'news' ));
-		  ?>
-	  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<div class="news-img">
-										<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'large' ); ?>
-								  	<?php endif; ?>
-									</div>
-		  <?php endwhile; else: ?>
-			<p>Sorry, no posts matched your criteria.</p>
-			<?php endif; ?>
 			<form action="event-checkbox" method="get">
 				  <input type="checkbox" ></br>
 				  <input type="checkbox"checked></br>
 					<input type="checkbox" ></br>
 	    </form>
-				<?php wp_reset_query(); ?>
 				</div><!-- #event-grid -->
 				<div class="red-more">
 				<button class="green-btn"href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
@@ -115,7 +102,6 @@ get_header(); ?>
 				<?php get_footer(); ?>
 		</div>
 		<!-- #about-page -->
-
 		</main>
 		<!-- #main -->
 		</div>

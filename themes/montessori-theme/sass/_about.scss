@@ -6,8 +6,6 @@
 * {
 	box-sizing: border-box;
 }
-// @media screen and (max-width: 480px) {
-
 .about-wrapper {
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
@@ -15,7 +13,52 @@
 	max-width: $desktop_width;
 	background-color: grey;
 }
+
+
+fonts h1,
+h2,
+h3 {
+	font-family: $font_title;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: $h1_size_mob;
+	line-height: 2.625rem;
+}
+
+h2 {
+	font-size: $h2_size_mob;
+	line-height: 2.125rem;
+}
+
+h3 {
+	font-size: $h3_size_mob;
+	line-height: 1.6875rem;
+}
+
+p {
+	font-size: 1.625rem;
+	line-height: $mobile_line_height;
+	font-style: $font_body;
+}
+
+.spcil p {
+	font-size: 1.25rem;
+	line-height: $mobile_line_height;
+	font-style: $font_main;
+}
+
+.green-btn {
+	background-color: #4FC8A1;
+	color: $white;
+	font-family: "Noto Sans";
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-decoration: none;
+}
 // about NW School Sectio
+
 .about-school {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin*7.8;
@@ -44,10 +87,6 @@
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-			@include desktop {
-				max-width: 990px;
-				flex: 1;
-			};
 		}
 
 		.flip-container {
@@ -78,7 +117,6 @@
 					line-height: $basic_hline_height*2.4;
 				}
 			}
-
 			.front {
 				position: absolute;
 				background-size: cover;
