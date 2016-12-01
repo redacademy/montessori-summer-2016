@@ -1785,6 +1785,199 @@ body {
         font-size: 1.1rem; } }
 
 /*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+.about-wrapper {
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 768px;
+  background-color: grey; }
+
+.about-school {
+  border-bottom: solid 3px #4FC8A1;
+  padding-bottom: 4.875rem; }
+
+.members-list {
+  padding: 2px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 768px) {
+    .members-list {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+  .members-list .members-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media (min-width: 768px) {
+      .members-list .members-grid {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+    .members-list .members-grid .members-block {
+      -ms-flex: 33%;
+          flex: 33%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      @media (min-width: 768px) {
+        .members-list .members-grid .members-block {
+          max-width: 990px;
+          -ms-flex: 1;
+              flex: 1; } }
+    .members-list .members-grid .flip-container {
+      display: block;
+      box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+      background: #aff1d3;
+      border-radius: 50%; }
+      .members-list .members-grid .flip-container .flipper {
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        position: relative;
+        -webkit-transition: 1.9s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1.9s;
+        -moz-transform-style: preserve-3d;
+        transition: 1.9s;
+        transform-style: preserve-3d; }
+        .members-list .members-grid .flip-container .flipper .members_det {
+          display: block; }
+        .members-list .members-grid .flip-container .flipper p {
+          font-size: 1rem;
+          font-style: italic;
+          line-height: 1.5rem; }
+      .members-list .members-grid .flip-container .front {
+        position: absolute;
+        background-size: cover;
+        border-radius: 50%;
+        -ms-flex: 2;
+            flex: 2; }
+        .members-list .members-grid .flip-container .front img {
+          border-radius: 50%; }
+      .members-list .members-grid .flip-container .back {
+        border-radius: 50%;
+        position: absolute;
+        width: 125px;
+        text-overflow: ellipsis;
+        height: 125px;
+        text-align: center;
+        right: 3px;
+        transform: rotateY(180deg); }
+        @media (min-width: 768px) {
+          .members-list .members-grid .flip-container .back {
+            width: 200px;
+            height: 200px;
+            right: 4px;
+            top: 55px; } }
+    .members-list .members-grid .flip-container.hover .flipper,
+    .members-list .members-grid .flip-container:hover .flipper {
+      transform: rotateY(180deg); }
+    .members-list .members-grid .back,
+    .members-list .members-grid .flip-container,
+    .members-list .members-grid .front {
+      width: 125px;
+      height: 125px; }
+      @media screen and (min-width: 650px) {
+        .members-list .members-grid .back,
+        .members-list .members-grid .flip-container,
+        .members-list .members-grid .front {
+          width: 190px;
+          height: 190px; } }
+      @media (min-width: 768px) {
+        .members-list .members-grid .back,
+        .members-list .members-grid .flip-container,
+        .members-list .members-grid .front {
+          width: 200px;
+          height: 200px; } }
+    .members-list .members-grid .back,
+    .members-list .members-grid .front {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .members-list .members-grid .members_det {
+      text-align: center; }
+
+.members_at_large {
+  padding-bottom: 3.4375rem;
+  border-bottom: solid 3px #4FC8A1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .members_at_large .members_at_large-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    @media (min-width: 768px) {
+      .members_at_large .members_at_large-grid {
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+    .members_at_large .members_at_large-grid .members_at_large-name {
+      font-size: 1.375rem;
+      -ms-flex-pack: center;
+          justify-content: center;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0.2rem;
+      text-align: center;
+      margin: 1rem; }
+
+.meeting-minutes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-bottom: 3.4375rem;
+  border-bottom: solid 3px #4FC8A1; }
+  .meeting-minutes .news-img img {
+    width: 100%; }
+  .meeting-minutes .red-more {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+
+.newsLetter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.archive-sec {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .archive-sec .arch-btn {
+    -ms-flex-order: 1;
+        order: 1;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+    .archive-sec .arch-btn .green-btn {
+      font-size: 1.25rem; }
+  .archive-sec .arch-block {
+    width: 55%;
+    border-top: solid 3px #4FC8A1; }
+
+/*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
 * {
