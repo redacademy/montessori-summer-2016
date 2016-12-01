@@ -63,6 +63,7 @@ p {
 .nw-program {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
+
 	.why-nw {
 		p {
 			display: block;
@@ -105,7 +106,8 @@ p {
 	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
-	.funding-det{
+
+	.funding-det {
 		display: block;
 	}
 
@@ -145,15 +147,16 @@ p {
 		}
 	}
 	@include desktop {
-	.nw-part3 {
-		display: flex;
-		align-items: center;
-		flex-direction: row-reverse;
-		.money-spend {
-			display: block;
-			flex-shrink: 6;
+		.nw-part3 {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+
+			.money-spend {
+				display: block;
+				flex-shrink: 6;
+			}
 		}
-	 }
 	}
 
 	.funding-btn {
@@ -221,7 +224,6 @@ p {
 			}
 		}
 	}
-
 	// .enroll-info {
 	// 	margin-top: 27rem;
 	// 	@media screen and (min-width: 450px) {
@@ -237,7 +239,6 @@ p {
 	// 		margin-top: 2rem;
 	// 	}
 	// }
-
 	.enroll-block {
 		max-width: 70%;
 		display: flex;
@@ -248,6 +249,7 @@ p {
 			margin-bottom: 50px;
 			align-self: center;
 		}
+
 		.enroll-btn {
 			align-self: center;
 		}
