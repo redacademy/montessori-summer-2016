@@ -23,8 +23,9 @@
 }
 
 .the-page-title {
-	background-color: $white;
-	height: 40px;
+	background-color: #fff;
+    height: 45px;
+    padding: 0 30px;
 
 	ul {
 		display: flex;
@@ -34,6 +35,9 @@
 
 		li {
 			display: inline-block;
+			a{
+				color:#404040;
+			}
 		}
 	}
 	@include desktop {
@@ -272,7 +276,7 @@ div .secondary {
 			@include desktop {
 				font-size: 1.4rem;
 			}
-			
+
 			text-decoration: none;
 			color: white;
 		}

@@ -7,14 +7,11 @@
  */
 get_header();
 ?>
-
         <main id="main back-to-top" class="site-main " role="main">
-
 <!-- Our History Section  -->
 
           <section id="history" class="history-section ">
   <div class="main-history content-wrapper">
-
             <div class= "history-img" >
            <?php
 output_image('history_img'); ?>
@@ -22,7 +19,6 @@ output_image('history_img'); ?>
           <div class="history-title" >
          <h1><?php
 $history = CFS()->get('history_title');
-
 if (!empty($history))
   {
   echo $history;
@@ -32,19 +28,16 @@ if (!empty($history))
            <?php
 output_image('history_img'); ?>
           </div>
-
 </h1>
 <div class="history-content">
 <?php
 $histor = CFS()->get('history_content');
-
 if (!empty($histor))
 {
 echo $histor;
 };
 ?>
 </div>
-
   </div>
 </div>
     </section>
@@ -52,15 +45,11 @@ echo $histor;
 <!-- Philosophy Section  -->
 
 <section id="philosophy" class="philosophys-section ">
-
-
  <div class="main-philosophy content-wrapper">
    <div><h1>Philosophy</h1></div>
-
  <?php
 $fields = CFS()->get('philosophy'); ?>
 <?php
-
 foreach($fields as $field)
   { ?>
 <div class="philosophy-grid">
@@ -89,60 +78,46 @@ foreach($fields as $field)
 <div class="first-benefits-section">
   <?php
 output_image('benefits_img'); ?>
-
   <div class="benefits-content">
       <?php
 $benefit = CFS()->get('benefits_content');
-
 if (!empty($benefit))
 {
 echo $benefit;
 }; ?>
 </div>
-
-
         </div>
 
 <!--  here is the meta data of the benefits loop section -->
 <div>
-          <ul>
+        <ul>
         <?php
-
 $fields = CFS()->get('benefits_details'); ?>
         <?php
-
 foreach($fields as $field)
   { ?>
-      <div class="benefits">
+    <div class="benefits">
        <li>
         <?php
-
   echo $field['benefits_parts']; ?>
         </li>
         <?php
   }
-
 ?>
-      </div>
-           </ul>
+    </div>
+        </ul>
  </div>
  </div>
 </section>
-
-
 <!-- End our Benefits -->
-
 
 <!-- Start Materials Section  -->
 
 <section id="materials" class="materials-section ">
-
   <div class="main-materials content-wrapper">
-
 <?php
 $fields = CFS()->get('materials'); ?>
 <?php
-
 foreach($fields as $field)
   { ?>
 <div class="materials materials-grid">
@@ -157,16 +132,13 @@ foreach($fields as $field)
   echo '<img src="' . $src[0] . '" />'; ?></div>
 </div>
 <?php
-
   } ?>
   <!-- Archive Title -->
   <div class="montessori-archive">
-
     <h3>archives<span class=""><i class="fa fa-angle-down " aria-hidden="true"></i></span></h3>
     <div id="#"><a href=""></a></div>
   </div>
   </div>
-</div>
 
 </section>
 <!-- Resources Section  -->
@@ -181,16 +153,13 @@ foreach($fields as $field)
     <ul>
       learn more about montessori history
       <div class="">
-
     <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
 echo get_page_link(get_page_by_title()->ID); ?>">Montessori FAQ</a></li>
-
 <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
 echo get_page_link(get_page_by_title()->ID); ?>">Montessori education</a></li>
 <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
 echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biography</a></li></div>
 </ul>
-
 <ul>
   Learn more about Montessory Materials
   <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
@@ -212,14 +181,15 @@ echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
   <h3>other<span class=""><i class="fa fa-angle-down" aria-hidden="true"></i></span></h3>
   <div class="#"></div></div>
   </div>
+  </div>
+</div>
+
   <!--the button-->
 <div>
 <button class="green-bt"><a href="<?php
 echo get_page_link(get_page_by_title(nw-program)->ID); ?>">NW Montessori Program</a></button>
+</div>
 
-</div>
-</div>
 </section>
-
 <?php
 get_footer(); ?>

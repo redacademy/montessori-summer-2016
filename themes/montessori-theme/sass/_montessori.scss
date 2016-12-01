@@ -274,10 +274,12 @@
     }
 
     img {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         @include desktop {
             margin-top: 50px;
+            width: 300px;
+            height: 300px;
         }
     }
 }
@@ -347,8 +349,8 @@
     }
 
     img {
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
         margin-top: 30px;
         @include desktop {
             align-self: flex-start;
@@ -456,7 +458,8 @@
 .montessori-archive {
     border-top: solid 3px $color_btn_green;
     padding-top: 12px;
-    width: 90%;
+    margin-top: 40px;
+    width: 65%;
 
     h3 {
         @include desktop {
@@ -480,7 +483,8 @@
     padding-left: 10px;
     cursor: pointer;
 }
-/*Start Resources Section  */
+/******** Start Resources Section ********/
+
 .main-resources {
     border-bottom: none;
     height: 400px;
