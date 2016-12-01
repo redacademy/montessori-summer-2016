@@ -1,4 +1,5 @@
 
+
 <?php
 /**
  * The header for our theme.
@@ -192,4 +193,4 @@ echo get_page_link(get_page_by_title(nw-program)->ID); ?>">NW Montessori Program
 
 </section>
 <?php
-get_footer(); ?>
+get_footer(); ?> 
