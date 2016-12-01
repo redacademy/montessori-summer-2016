@@ -2178,14 +2178,15 @@ p {
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-align: center;
-        align-items: center; }
+    -ms-flex-align: start;
+        align-items: flex-start; }
     .nw-part1 .why-nw {
       display: block;
       -ms-flex-negative: 4;
-          flex-shrink: 4; }
+          flex-shrink: 4;
+      text-align: left; }
     .nw-part1 .nw-img {
-      margin-top: 0;
+      margin-top: 2rem;
       padding-left: 1rem; } }
 
 .funding {
@@ -2239,13 +2240,9 @@ p {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
       .funding .nw-part3 .money-spend {
-        -ms-flex-negative: 25;
-            flex-shrink: 25; }
-        .funding .nw-part3 .money-spend p {
-          display: block; }
-    .funding .money-spend-para {
-      -ms-flex-negative: 5;
-          flex-shrink: 5; } }
+        display: block;
+        -ms-flex-negative: 6;
+            flex-shrink: 6; } }
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
