@@ -64,6 +64,17 @@ p {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
 
+<<<<<<< HEAD
+	.why-nw {
+		p {
+			display: block;
+			@include desktop {
+				text-align-last: right;
+			}
+		}
+	}
+=======
+>>>>>>> last-branch
 	.nw-img {
 		display: flex;
 		justify-content: center;

@@ -2,6 +2,7 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
+
 .history-content {
     width: 100%;
     flex-wrap: wrap;
@@ -27,7 +28,7 @@
         display: block;
 
         img {
-          padding-top: 40px;
+            padding-top: 40px;
             float: left;
         }
         @include desktop {
@@ -97,9 +98,11 @@
     }
 }
 ////************philosophy Section ************/////
-.active{
-  visibility: visible;
+
+.active {
+    visibility: visible;
 }
+
 .main-philosophy {
     margin: 100px auto;
     width: 400px;
@@ -182,11 +185,10 @@
             width: 80%;
             color: #248e6a;
             height: auto;
-            overflow: hidden;
             padding: 0;
-            bottom: 14px;
+            bottom: 30px;
             line-height: 0.9rem;
-            right: 10px;
+            right: 22px;
             position: absolute;
 
             a {
@@ -243,6 +245,7 @@
 }
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
+
 .main-materials div:nth-of-type(3) {
     @include desktop {
         flex-direction: row-reverse;
@@ -330,7 +333,6 @@
 .benefits li {
     list-style-type: disc;
     @include desktop {
-        // color:red;
     };
 }
 
@@ -402,6 +404,7 @@
     }
 }
 ///Archive and rescourses sections////
+
 .the-archive ul {
     width: 500px;
     line-height: 2.5rem;
@@ -451,19 +454,20 @@
 }
 
 .montessori-archive {
+    border-top: solid 3px $color_btn_green;
+    padding-top: 12px;
+    width: 90%;
+
     h3 {
-        width: 600px;
-        border-top: solid 3px $color_btn_green;
-        padding-top: 12px;
+        @include desktop {
+            width: 600px;
+        };
     }
 }
 ///rotate the arrow and toggle the contents
 
 .rotate {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+  @include rotate(180deg);
 }
 
 .toggle {
@@ -484,7 +488,7 @@
 }
 
 .green-bt {
-    background-color: #4fc8a1;
+    background-color: $color_btn_green;
     @include border-radius (6px);
     letter-spacing: 0.8px;
     display: block;

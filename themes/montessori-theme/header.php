@@ -24,15 +24,16 @@ body_class(); ?>>
             <a class="skip-link screen-reader-text" href="#content"><?php
 esc_html('Skip to content'); ?></a>
             <header id="masthead" class="site-header" role="banner">
+      <div class="site-menu">
 <div class="main-menu-wrapper" >
-
+<!-- Start site-branding -->
                     <div class="site-branding montessori-logo ">
                         <a href="<?php
 echo esc_url(home_url('/')); ?>"><img src="<?php
 echo esc_url(get_template_directory_uri()); ?>/images/logo/montessori-logo.svg" alt="montessori logo"/>
                     </a>
-          </div><!-- .site-branding -->
-
+          </div>
+<!-- Start site-main-menu -->
                   <div class="site-main-menu">
                     <nav id="site-navigation" class="main-navigation" role="navigation">
                                     <?php
@@ -42,9 +43,10 @@ wp_nav_menu(array(
 )); ?>
 
                                 </nav>
-                    </div><!-- .site-main-menu -->
+                    </div>
      </div>
-     <!--the bar between two menues-->
+
+    <!--Start the bar between primary and sub menu for mobile siz -->
 <div class="the-page-title ">
 <ul>
 <li><?php echo get_the_title();?><li>
@@ -52,8 +54,10 @@ wp_nav_menu(array(
 </ul>
 </div>
 
-<nav>
-<!--end the bar between two menues  -->
+
+
+
+<nav class="sub-menu-wrapper ">
             <?php
 
 if (is_page_template('about.php')): ?>
@@ -64,7 +68,6 @@ if (is_page_template('about.php')): ?>
     'menu_class' => 'secondary'
   ));
 ?>
-
                     <?php
 elseif (is_page_template('montessori-page.php')): ?>
                         <?php
@@ -101,12 +104,10 @@ elseif (is_page_template('nw-program.php')): ?>
     'menu_class' => 'secondary'
   ));
 ?>
-
                     <?php
-
 endif; ?>
-                </div>
-            </div>
-                </nav><!-- #site-navigation -->
-            </header><!-- #masthead -->
-            <div id="content" class="site-content">
+      </div>
+  </div>
+      </nav><!-- #site-navigation -->
+  </header><!-- #masthead -->
+  <div id="content" class="site-content">
