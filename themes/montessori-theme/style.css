@@ -1793,9 +1793,43 @@ body {
 .about-wrapper {
   margin: 0 auto;
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  max-width: 768px;
-  background-color: grey; }
+  padding-right: 1.25rem; }
+
+fonts h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.6875rem; }
+
+p {
+  font-size: 1.625rem;
+  line-height: 1.5rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.spcil p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.green-btn {
+  background-color: #4FC8A1;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none; }
 
 .about-school {
   border-bottom: solid 3px #4FC8A1;
@@ -1809,10 +1843,6 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  @media (min-width: 768px) {
-    .members-list {
-      -ms-flex-direction: column;
-          flex-direction: column; } }
   .members-list .members-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1893,7 +1923,7 @@ body {
     .members-list .members-grid .front {
       width: 125px;
       height: 125px; }
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 768px) {
         .members-list .members-grid .back,
         .members-list .members-grid .flip-container,
         .members-list .members-grid .front {
@@ -1910,7 +1940,8 @@ body {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -1951,6 +1982,8 @@ body {
   border-bottom: solid 3px #4FC8A1; }
   .meeting-minutes .news-img img {
     width: 100%; }
+  .meeting-minutes form {
+    padding: 2rem; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
@@ -2050,15 +2083,32 @@ p {
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-align: center;
-        align-items: center; }
+    -ms-flex-align: start;
+        align-items: flex-start; }
     .nw-part1 .why-nw {
       display: block;
       -ms-flex-negative: 4;
-          flex-shrink: 4; }
+          flex-shrink: 4;
+      text-align: left; }
     .nw-part1 .nw-img {
-      margin-top: 0;
+      margin-top: 2rem;
       padding-left: 1rem; } }
+
+@media (min-width: 768px) {
+  .montessori-schedule {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .montessori-schedule p {
+      display: inline-block;
+      padding: 5px; }
+    .montessori-schedule .morning {
+      -ms-flex: 50%;
+          flex: 50%; }
+    .montessori-schedule .afternoon {
+      -ms-flex: 50%;
+          flex: 50%; } }
 
 .funding {
   display: -ms-flexbox;
@@ -2068,6 +2118,8 @@ p {
   margin-top: 1.875rem;
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
+  .funding .funding-det {
+    display: block; }
   .funding .funding-img,
   .funding .money-spend-img {
     display: -ms-flexbox;
@@ -2100,9 +2152,12 @@ p {
           width: 82%;
           display: -ms-flexbox;
           display: flex; } }
+<<<<<<< HEAD
   .funding .nw-part3 p {
     -ms-flex-negative: 22;
         flex-shrink: 22; }
+=======
+>>>>>>> last-branch
   @media (min-width: 768px) {
     .funding .nw-part3 {
       display: -ms-flexbox;
@@ -2110,10 +2165,18 @@ p {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-direction: row-reverse;
+<<<<<<< HEAD
           flex-direction: row-reverse; } }
   .funding .nw-part3 .money-spend-para {
     -ms-flex-negative: 5;
         flex-shrink: 5; }
+=======
+          flex-direction: row-reverse; }
+      .funding .nw-part3 .money-spend {
+        display: block;
+        -ms-flex-negative: 6;
+            flex-shrink: 6; } }
+>>>>>>> last-branch
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
@@ -2169,20 +2232,6 @@ p {
         -ms-flex-negative: 3.5;
             flex-shrink: 3.5;
         padding-right: 1rem; } }
-  .enroll .enroll-info {
-    margin-top: 27rem; }
-    @media screen and (min-width: 450px) {
-      .enroll .enroll-info {
-        margin-top: 17rem; } }
-    @media screen and (min-width: 640px) {
-      .enroll .enroll-info {
-        margin-top: 8rem; } }
-    @media screen and (min-width: 768px) {
-      .enroll .enroll-info {
-        margin-top: 5rem; } }
-    @media (min-width: 768px) {
-      .enroll .enroll-info {
-        margin-top: 2rem; } }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2206,8 +2255,8 @@ p {
       flex-wrap: wrap;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .teacher-list h1 {
     width: 40%;
     padding: 1.7rem;
@@ -2276,10 +2325,9 @@ p {
       .teacher-list .teacher-grid .flip-container .back {
         border-radius: 50%;
         position: absolute;
-        width: 100px;
-        overflow: hidden;
+        width: 125px;
         text-overflow: ellipsis;
-        height: 100px;
+        height: 125px;
         text-align: center;
         right: 3px;
         transform: rotateY(180deg); }
@@ -2295,9 +2343,9 @@ p {
     .teacher-list .teacher-grid .back,
     .teacher-list .teacher-grid .flip-container,
     .teacher-list .teacher-grid .front {
-      width: 100px;
-      height: 100px; }
-      @media screen and (min-width: 650px) {
+      width: 125px;
+      height: 125px; }
+      @media screen and (min-width: 768px) {
         .teacher-list .teacher-grid .back,
         .teacher-list .teacher-grid .flip-container,
         .teacher-list .teacher-grid .front {
@@ -2314,18 +2362,17 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .teacher-list .teacher-grid .teacher_det {
-      text-align: center;
-      font-size: 1.375rem; }
+      text-align: center; }
 
 .red-border-container {
   width: 90%;
-  height: 160px;
-  display: inline-block;
+  height: 30%;
+  display: block;
   margin-left: 7.5%;
   padding-right: 9.4%;
   padding-left: 15px;
   border-left: 7px solid #D93B57;
-  overflow: visible; }
+  border-bottom: none; }
   .red-border-container p {
     margin: 0 auto; }
 
