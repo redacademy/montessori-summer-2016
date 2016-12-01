@@ -98,8 +98,31 @@ p {
 		}
 	}
 }
-// Funding Section
 
+// Montessori Daily Schedule Section
+.montessori-schedule{
+	@include desktop{
+
+
+	display:inline-flex;
+	flex-direction: row;
+	p{
+		display:inline-block;
+		padding:5px;
+}
+	.morning{
+		flex: 50%;
+
+
+	}
+	.afternoon{
+		flex: 50%;
+	}
+}
+
+};
+
+// Funding Section
 .funding {
 	display: flex;
 	flex-direction: column;

@@ -1889,8 +1889,7 @@ body {
 .about-wrapper {
   margin: 0 auto;
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: grey; }
+  padding-right: 1.25rem; }
 
 fonts h1,
 h2,
@@ -2037,7 +2036,8 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -2189,6 +2189,22 @@ p {
     .nw-part1 .nw-img {
       margin-top: 2rem;
       padding-left: 1rem; } }
+
+@media (min-width: 768px) {
+  .montessori-schedule {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .montessori-schedule p {
+      display: inline-block;
+      padding: 5px; }
+    .montessori-schedule .morning {
+      -ms-flex: 50%;
+          flex: 50%; }
+    .montessori-schedule .afternoon {
+      -ms-flex: 50%;
+          flex: 50%; } }
 
 .funding {
   display: -ms-flexbox;

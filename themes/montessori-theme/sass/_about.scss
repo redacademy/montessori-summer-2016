@@ -10,7 +10,6 @@
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
-	background-color: grey;
 }
 
 
@@ -182,7 +181,7 @@ p {
 
 		.members_det {
 			text-align: center;
-			// font-size: $font_member_staff;
+			font-size: $font_member_staff;
 		}
 	}
 }

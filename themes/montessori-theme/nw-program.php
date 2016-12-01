@@ -21,34 +21,37 @@ get_header(); ?>
 			</div>
 	  	<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
 </section>
-
 <!-- **********///////////Montessori Daily Schedule/////////////********** -->
-<section class="montessori-schedule">
+<section class="">
 				<h1>Montessori Daily Schedule</h1>
-
+<div class="montessori-schedule">
 
 
 		<div class="morning">
-				<h2>Morning</h2>
+			  	<h2>Morning</h2>
 <?php
 $fields = CFS()->get( 'morning' );
 foreach ( $fields as $field ) {?>
+      	<div class="row">
 			  	<p><?php echo $field['morning-time'];?></p>
 			  	<p> <?php echo $field['morning-action']?> </p>
+				</div>
 <?php  } ?>
     	</div>
-	  	<div class="afternoon">
-        <h2>Afternoon</h2>
+	  	 <div class="afternoon">
+         <h2>Afternoon</h2>
 <?php
 $fields = CFS()->get( 'afternoon' );
 foreach ( $fields as $field ) {?>
+	     <div class="row">
 				 <p><?php echo $field['afternoon-time'];?></p>
 				 <p> <?php echo $field['afternoon-action']?> </p>
+			 </div>
 <?php  } ?>
       </div>
+			</div>
 </section>
 <!-- **********////////////////////////Funding///////////////////////********** -->
-
 	<section id="funding" class="funding">
 				<h1>Funding</h1>
 				<h3 >Where does it come from?</h3>
