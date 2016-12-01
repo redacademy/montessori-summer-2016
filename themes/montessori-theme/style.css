@@ -1820,21 +1820,21 @@ h1 {
   line-height: 2.625rem; }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.125rem; }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.6875rem; }
 
 p {
   font-size: 1.625rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   font-style: "Noto Sans", sans-serif; }
 
 .spcil p {
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   font-style: "Noto Sans", sans-serif; }
 
 .green-btn {
@@ -2166,12 +2166,6 @@ p {
           width: 82%;
           display: -ms-flexbox;
           display: flex; } }
-<<<<<<< HEAD
-  .funding .nw-part3 p {
-    -ms-flex-negative: 22;
-        flex-shrink: 22; }
-=======
->>>>>>> last-branch
   @media (min-width: 768px) {
     .funding .nw-part3 {
       display: -ms-flexbox;
@@ -2179,18 +2173,11 @@ p {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-direction: row-reverse;
-<<<<<<< HEAD
-          flex-direction: row-reverse; } }
-  .funding .nw-part3 .money-spend-para {
-    -ms-flex-negative: 5;
-        flex-shrink: 5; }
-=======
           flex-direction: row-reverse; }
       .funding .nw-part3 .money-spend {
         display: block;
         -ms-flex-negative: 6;
             flex-shrink: 6; } }
->>>>>>> last-branch
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
