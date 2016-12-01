@@ -65,7 +65,7 @@
 	position: relative;
 	p {
 			margin: 0;
-			font-size: 2rem;
+			font-size: 1.8rem;
 	}}
 	blockquote::before {
 			content: "";
@@ -75,7 +75,7 @@
 			left: 0PX;
 			height: 100%;
 			border-left: solid 12px $border_left_red;
-			font-size: 1.5rem;
+		
 	}
 
 	p {

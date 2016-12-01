@@ -91,6 +91,9 @@ div .menu-primary-menu-container {
 }
 
 .menu-primary-menu-container {
+	@include desktop{
+		font-size: 1.3rem;
+	};
 	@include desktop {
 		white-space: nowrap;
 		display: inline-block;
@@ -138,8 +141,9 @@ input[type="button"] {
 }
 
 button#responsive-menu-button {
-	top: 6px!important;
-	right: 8%!important;
+	top: 12px!important;
+right: 6%!important;
+background-color: transparent!important;
 	background-color: transparent!important;
 }
 
@@ -243,7 +247,8 @@ div .secondary {
 	@include desktop {
 		text-align: right;
 		padding: 0px 10px;
-		height: 70px;
+		    margin-bottom: 0px;
+		height: 69px;
 		margin-top: 40px;
 	}
 	text-align: center;
@@ -263,24 +268,39 @@ div .secondary {
 
 	li {
 		display: inline-block;
-		padding: 8px 8px;
+		padding: 8px 0px;
 		@include desktop {
-	 padding: 16px 15px;
+	 padding: 16.4px 0px;
 		};
 
 		a {
-			padding: 0 8px;
-			margin-right: 0;
+			color: white;
+			padding: 0 20px;
+			text-decoration: none;
 			font-weight: lighter;
 			font-size: 1.2rem;
 			@include desktop {
 				font-size: 1.4rem;
 			}
 
-			text-decoration: none;
-			color: white;
 		}
 	}
+}
+
+div .secondary a{
+	display: inline-block;
+
+	border-left: solid 1px white;
+}
+
+div .secondary
+{
+ li:first-child a{
+	border-left: none;
+}
+li:nth-child(2) a{
+ border-left: none;
+}
 }
 
 //// menu pop-up  mobile size on scroll///

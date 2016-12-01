@@ -25,16 +25,16 @@
     @include flex(flex-end,space-between);
 
     .history-img1 {
-        display: block;
+       display: block;
 
-        img {
-            padding-top: 40px;
-            float: left;
-        }
-        @include desktop {
-            display: none;
-        };
-    }
+       img {
+           padding-top: 40px;
+           float: left;
+       }
+       @include desktop {
+           display: none;
+       };
+   }
 
     .history-img {
         display: none;
@@ -42,9 +42,12 @@
             display: block;
             margin-top: 100px;
             align-self: flex-end;
-            width: 430px;
-            height: 500px;
+
             padding-bottom: 100px;
+            img{
+              width: 430px;
+              height: 500px;
+            }
         }
     }
 }
@@ -66,9 +69,7 @@
         width: 100%;
     }
     @include desktop {
-      @include quote{
-
-        }
+         @include quote{}
     }
 }
 ////************philosophy Section ************/////
@@ -79,7 +80,6 @@
 
 .main-philosophy {
     margin: 100px auto;
-
     min-width: 75%;
     height: auto;
     @include flex(center,space-around);
@@ -160,7 +160,7 @@
             color: #248e6a;
             height: auto;
             padding: 0;
-            bottom: 30px;
+            bottom: 44px;
             line-height: 0.9rem;
             right: 22px;
             position: absolute;
@@ -188,8 +188,7 @@
             position: absolute;
         }
 
-
-      p {
+        p {
             text-align: left;
             display: inline-block;
             font-family: $font_body;
@@ -268,10 +267,7 @@
     @include desktop {
         width: 60%;
         min-width: 50%;
-
-        @include quote{
-
-        }
+        @include quote {}
 
         p {
             display: inline;
@@ -287,8 +283,7 @@
 
 .benefits li {
     list-style-type: disc;
-    @include desktop {
-    };
+    @include desktop {};
 }
 
 .first-benefits-section {
@@ -317,9 +312,7 @@
 .benefits-content {
     width: 100%;
     @include desktop {
-        @include quote{
-
-        }
+         @include quote{}
     }
 }
 
@@ -397,7 +390,7 @@
 ///rotate the arrow and toggle the contents
 
 .rotate {
-  @include rotate(180deg);
+    @include rotate(180deg);
 }
 
 .toggle {
@@ -411,7 +404,6 @@
     cursor: pointer;
 }
 /******** Start Resources Section ********/
-
 .main-resources {
     border-bottom: none;
     height: 400px;
@@ -423,7 +415,7 @@
     @include border-radius (6px);
     letter-spacing: 0.8px;
     display: block;
-    margin: 10px auto;
+    margin: 60px auto;
     text-shadow: none;
     width: 300px;
     height: 60px;
