@@ -2068,8 +2068,30 @@ p {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  @media (min-width: 768px) {
+    .enroll .enrollment-wrap {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .enroll .enrollment-wrap .guids {
+        -ms-flex-negative: 3.5;
+            flex-shrink: 3.5;
+        padding-right: 1rem; } }
   .enroll .enroll-info {
     margin-top: 27rem; }
+    @media screen and (min-width: 450px) {
+      .enroll .enroll-info {
+        margin-top: 17rem; } }
+    @media screen and (min-width: 640px) {
+      .enroll .enroll-info {
+        margin-top: 8rem; } }
+    @media screen and (min-width: 768px) {
+      .enroll .enroll-info {
+        margin-top: 5rem; } }
+    @media (min-width: 768px) {
+      .enroll .enroll-info {
+        margin-top: 2rem; } }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2078,7 +2100,10 @@ p {
     -ms-flex-direction: column;
         flex-direction: column; }
     .enroll .enroll-block .enroll-img {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; }
     .enroll .enroll-block .enroll-btn {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
