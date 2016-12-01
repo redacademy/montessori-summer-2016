@@ -1,63 +1,50 @@
 /********* Montessori Site Structure **********/
-
 $base_space_unit: 1.5em;
 $basic_pading: 0.625rem; /// ==>10px ////
 $basic_margin: 0.625rem; /// ==>10px ////
 $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
-$desktop_width:768px; //768px
-// $Tablet_width:40rem; //
-$mobile_width:37.5rem; //480px for Mobile Container
+$desktop_width: 768px; //768px
+$desktop_mid_width: 924px; //924px mid size fonts break point
 //Layout//
-$mobile_line_height:1.5rem;
+$mobile_line_height: 1.2rem;
 $base_spacing_normal: 1rem;
 $base_spacing_large: 2.5rem;
 $base_spacing_large: 4rem;
-
 /// Colors ///
-
-$color_background_body:#fff;
-$color_text_main:#404040;
-$color_mobile_clicked_green:#125A50;
-$color_text-screen:#21759b;
-
-
+$color_background_body: #fff;
+$color_text_main: #404040;
+$color_mobile_clicked_green: #125A50;
+$color_text-screen: #21759b;
 /********* Colours **********/
-
 //Montessori Brand Colours//
-$border_left_red:#D93B57;
 $border_left_red: #D93B57;
-$color_btn_orange: #F76072 ;
-$color_btn_hover_pink: #CB203E ;
-$color_btn_green: #4FC8A1 ;
-$color_btn_hover_green: #248E6A ;
-$color_text_green: #4FC8A1 ;
-$color_bar_pink: #D93B57 ;
-$color_footer_green: #125A50 ;
-$black:#000000;
+$border_left_red: #D93B57;
+$color_btn_orange: #F76072;
+$color_btn_hover_pink: #CB203E;
+$color_btn_green: #4FC8A1;
+$color_btn_hover_green: #248E6A;
+$color_text_green: #4FC8A1;
+$color_bar_pink: #D93B57;
+$color_footer_green: #125A50;
+$black: #000000;
 $white: #fff;
-
-
 // Typography ///
-$font_title: 'Asap';
-$font_footer_header: 'PT Sans';
-$font_body: 'Noto Sans';
-$font_main: 'Noto Sans';
-
-/// desktop sizes ////
-$h1_size_desktop: 3rem;
-$h2_size_desktop: 2.2rem;
-$h3_size_desktop: 1.7rem;
-$font_body_size_desktop: 1.7rem;
-$font_title: 'Asap',sans-serif;
-$font_header_footer: 'PT Sans',sans-serif;
-$font_body: 'Noto Sans',sans-serif;
-$font_main: 'Noto Sans',sans-serif;
+$font_title: 'Asap', sans-serif;
+$font_header_footer: 'PT Serif', serif;
+$font_body: 'Noto Sans', sans-serif;
+$font_main: 'Noto Sans', sans-serif;
 ///Font Sizing ///
 // mobile sizes ///
-$h1_size_mob: 2rem;
-$h2_size_mob: 1.6rem;
-$h3_size_mob: 1.4rem;
+$h1_size_mob: 2.6rem;
+$h2_size_mob: 1.8rem;
+$h3_size_mob: 1.5rem;
 $font_school_info: 1.5rem;
 $font_body_size_mob: 1.5rem;
-$font_member_staff:1.375rem;
+$font_member_staff: 1.375rem;
+/// desktop sizes ////
+$h1_size_desktop: 3.3rem;
+$h2_size_desktop: 2.6rem;
+$h3_size_desktop: 2rem;
+$font_body_size_desktop: 2.8rem;
+$font_line-height-body: 1.9;
