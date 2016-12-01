@@ -104,6 +104,9 @@ p {
 	margin-top: $basic_margin*3;
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin *4.5;
+	.funding-det{
+		display: block;
+	}
 
 	.funding-img,
 	.money-spend-img {
@@ -140,12 +143,14 @@ p {
 			}
 		}
 	}
-
+	@include desktop {
 	.nw-part3 {
-		p {
-			flex-shrink: 22;
+		.money-spend {
+			flex-shrink: 25;
+			p{
+				display: block;
+			}
 		}
-		@include desktop {
 			display: flex;
 			align-items: center;
 			flex-direction: row-reverse;
@@ -222,21 +227,21 @@ p {
 		}
 	}
 
-	.enroll-info {
-		margin-top: 27rem;
-		@media screen and (min-width: 450px) {
-			margin-top: 17rem;
-		}
-		@media screen and (min-width: 640px) {
-			margin-top: 8rem;
-		}
-		@media screen and (min-width: 768px) {
-			margin-top: 5rem;
-		}
-		@include desktop {
-			margin-top: 2rem;
-		}
-	}
+	// .enroll-info {
+	// 	margin-top: 27rem;
+	// 	@media screen and (min-width: 450px) {
+	// 		margin-top: 17rem;
+	// 	}
+	// 	@media screen and (min-width: 640px) {
+	// 		margin-top: 8rem;
+	// 	}
+	// 	@media screen and (min-width: 768px) {
+	// 		margin-top: 5rem;
+	// 	}
+	// 	@include desktop {
+	// 		margin-top: 2rem;
+	// 	}
+	// }
 
 	.enroll-block {
 		max-width: 70%;

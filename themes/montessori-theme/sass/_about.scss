@@ -10,7 +10,6 @@
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
-	max-width: $desktop_width;
 	background-color: grey;
 }
 
@@ -199,7 +198,6 @@ p {
 		@include desktop {
 			flex-wrap: nowrap;
 		};
-
 		.members_at_large-name {
 			font-size: $font_member_staff;
 			justify-content: center;
@@ -220,6 +218,11 @@ p {
 
 	.news-img img {
 		width: 100%;
+	}
+	form{
+    padding: 2rem;
+		input{
+		}
 	}
 
 	.red-more {

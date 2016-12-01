@@ -7,12 +7,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	  <div id="primary" class="content-area">
 	  <main id="main back-to-top" class="site-main" role="main">
 		<div class="nw-program-wrapper">
-
 	<!-- **********/////////////////Why NW Program Section///////////////********** -->
-
 <section id="nw-program" class="nw-program">
 			<h1>Why NW Montessori Program?</h1>
 			<div class="nw-part1">
@@ -21,8 +19,7 @@ get_header(); ?>
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/why to choose.jpg" alt="Why NW Program" />
 			</div>
 			</div>
-
-		<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
+	  	<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
 </section>
 
 <!-- **********///////////Montessori Daily Schedule section/////////////********** -->
@@ -43,16 +40,18 @@ get_header(); ?>
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/DSC_2376.png" alt="Funding" />
 			  </div>
 				</div>
-				<!-- <div class="funding-det"> -->
+		  	<div class="funding-det">
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
 				<h2>How is the money spent?</h2>
 				<div class="nw-part3">
+				<div class="money-spend">
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
-			<!-- </div> -->
+				</div>
+		  	</div>
 				<div class="money-spend-img">
  <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/materials.jpg" alt="How is the money spent" />
- </div>
-  </div>
+        </div>
+        </div>
 				<div class="funding-btn">
 				<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</button>
 			  </div>

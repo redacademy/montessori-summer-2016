@@ -67,18 +67,26 @@ get_header(); ?>
     </section>
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
 		<section id="meetings" class="meeting-minutes">
-			<h1>Meeting Minutes</h1>
-<div class="event-date">
-			  <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
-</div>
-	<div class="event-grid">
-			<form action="event-checkbox" method="get">
-				  <input type="checkbox" ></br>
-				  <input type="checkbox"checked></br>
-					<input type="checkbox" ></br>
-	    </form>
-				</div><!-- #event-grid -->
-				<div class="red-more">
+		  	<h1>Meeting Minutes</h1>
+	      <div class="meeting-img"><?php
+	$src = wp_get_attachment_image_src($field['meeting_menutes_img'], 'small');
+  echo '<img src="' . $src[0] . '" />'; ?></div>
+       <div class="event-date">
+  <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
+      </div>
+  <?php
+  $fields = CFS()->get('the_event'); ?>
+  <?php
+  foreach($fields as $field)
+  { ?>
+  <form action="event-checkbox" method="get">
+    <input type="checkbox"checked>
+		 <?php
+  echo $field['plans']; ?>
+    </form>
+<?php
+  } ?>
+		  	<div class="red-more">
 				<button class="green-btn"href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
 				</div>
 						</section>

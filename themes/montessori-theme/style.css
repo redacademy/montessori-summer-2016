@@ -1890,7 +1890,6 @@ body {
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  max-width: 768px;
   background-color: grey; }
 
 fonts h1,
@@ -2078,6 +2077,8 @@ p {
   border-bottom: solid 3px #4FC8A1; }
   .meeting-minutes .news-img img {
     width: 100%; }
+  .meeting-minutes form {
+    padding: 2rem; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
@@ -2195,6 +2196,8 @@ p {
   margin-top: 1.875rem;
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 2.8125rem; }
+  .funding .funding-det {
+    display: block; }
   .funding .funding-img,
   .funding .money-spend-img {
     display: -ms-flexbox;
@@ -2227,9 +2230,6 @@ p {
           width: 82%;
           display: -ms-flexbox;
           display: flex; } }
-  .funding .nw-part3 p {
-    -ms-flex-negative: 22;
-        flex-shrink: 22; }
   @media (min-width: 768px) {
     .funding .nw-part3 {
       display: -ms-flexbox;
@@ -2237,10 +2237,15 @@ p {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; } }
-  .funding .nw-part3 .money-spend-para {
-    -ms-flex-negative: 5;
-        flex-shrink: 5; }
+          flex-direction: row-reverse; }
+      .funding .nw-part3 .money-spend {
+        -ms-flex-negative: 25;
+            flex-shrink: 25; }
+        .funding .nw-part3 .money-spend p {
+          display: block; }
+    .funding .money-spend-para {
+      -ms-flex-negative: 5;
+          flex-shrink: 5; } }
   .funding .funding-btn {
     display: -ms-flexbox;
     display: flex;
@@ -2296,20 +2301,6 @@ p {
         -ms-flex-negative: 3.5;
             flex-shrink: 3.5;
         padding-right: 1rem; } }
-  .enroll .enroll-info {
-    margin-top: 27rem; }
-    @media screen and (min-width: 450px) {
-      .enroll .enroll-info {
-        margin-top: 17rem; } }
-    @media screen and (min-width: 640px) {
-      .enroll .enroll-info {
-        margin-top: 8rem; } }
-    @media screen and (min-width: 768px) {
-      .enroll .enroll-info {
-        margin-top: 5rem; } }
-    @media (min-width: 768px) {
-      .enroll .enroll-info {
-        margin-top: 2rem; } }
   .enroll .enroll-block {
     max-width: 70%;
     display: -ms-flexbox;
@@ -2446,13 +2437,13 @@ p {
 
 .red-border-container {
   width: 90%;
-  height: 160px;
-  display: inline-block;
+  height: 30%;
+  display: block;
   margin-left: 7.5%;
   padding-right: 9.4%;
   padding-left: 15px;
   border-left: 7px solid #D93B57;
-  overflow: visible; }
+  border-bottom: none; }
   .red-border-container p {
     margin: 0 auto; }
 
