@@ -740,7 +740,7 @@ div .transparent-menu {
       .footer-block-item1 .fa {
         display: inline-block;
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: -4px;
         padding: 6.2px 8.6px;
         width: 30.6px;
         height: 30.6px;
@@ -1795,7 +1795,10 @@ body {
       width: 600px; } }
 
 .rotate {
-  transform: rotateY(180deg); }
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
 
 .toggle {
   color: green;
@@ -1803,8 +1806,7 @@ body {
 
 .fa-angle-down {
   color: green;
-  padding-left: 10px;
-  cursor: pointer; }
+  padding-left: 10px; }
 
 /******** Start Resources Section ********/
 .main-resources {

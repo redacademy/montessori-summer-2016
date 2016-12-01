@@ -42,7 +42,6 @@
             display: block;
             margin-top: 100px;
             align-self: flex-end;
-
             padding-bottom: 100px;
             img{
               width: 430px;
@@ -390,7 +389,10 @@
 ///rotate the arrow and toggle the contents
 
 .rotate {
-    @include rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .toggle {
@@ -401,7 +403,6 @@
 .fa-angle-down {
     color: green;
     padding-left: 10px;
-    cursor: pointer;
 }
 /******** Start Resources Section ********/
 .main-resources {
