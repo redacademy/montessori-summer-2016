@@ -69,9 +69,9 @@ p {
 	flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
-	@include desktop {
-		flex-direction: column;
-	};
+	// @include desktop {
+	// 	flex-direction: column;
+	// };
 
 	.members-grid {
 		display: flex;
@@ -86,6 +86,10 @@ p {
 			display: flex;
 			align-items: center;
 			flex-direction: column;
+			@include desktop {
+				max-width: 990px;
+				flex: 1;
+			}
 		}
 
 		.flip-container {
@@ -159,10 +163,10 @@ p {
 		.front {
 			width: 125px;
 			height: 125px;
-			@media screen and (min-width: 650px) {
+			@media screen and (min-width: 768px) {
 				width: 190px;
 				height: 190px;
-			};
+			}
 			@include desktop {
 				width: 200px;
 				height: 200px;

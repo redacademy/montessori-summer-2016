@@ -151,14 +151,12 @@ p {
 			display: flex;
 			align-items: center;
 			flex-direction: row-reverse;
-
 			.money-spend {
 				display: block;
 				flex-shrink: 6;
 			}
 		}
 	}
-
 	.funding-btn {
 		display: flex;
 		justify-content: center;
@@ -261,7 +259,8 @@ p {
 	padding: 2px;
 	flex-wrap: wrap;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+
 
 	h1 {
 		width: 40%;
@@ -334,10 +333,9 @@ p {
 			.back {
 				border-radius: 50%;
 				position: absolute;
-				width: 100px;
-				overflow: hidden;
+				width: 125px;
 				text-overflow: ellipsis;
-				height: 100px;
+				height: 125px;
 				text-align: center;
 				right: 3px;
 				-webkit-transform: rotateY(180deg);
@@ -362,9 +360,9 @@ p {
 		.back,
 		.flip-container,
 		.front {
-			width: 100px;
-			height: 100px;
-			@media screen and (min-width: 650px) {
+			width: 125px;
+			height: 125px;
+			@media screen and (min-width: 768px) {
 				width: 190px;
 				height: 190px;
 			}
@@ -383,7 +381,7 @@ p {
 
 		.teacher_det {
 			text-align: center;
-			font-size: $font_member_staff;
+			// font-size: $font_member_staff;
 		}
 	}
 }

@@ -22,12 +22,31 @@ get_header(); ?>
 	  	<div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
 </section>
 
-<!-- **********///////////Montessori Daily Schedule section/////////////********** -->
+<!-- **********///////////Montessori Daily Schedule/////////////********** -->
+<section class="montessori-schedule">
+				<h1>Montessori Daily Schedule</h1>
 
 
-             <!-- here will be the montessory schedula code-->
 
-
+		<div class="morning">
+				<h2>Morning</h2>
+<?php
+$fields = CFS()->get( 'morning' );
+foreach ( $fields as $field ) {?>
+			  	<p><?php echo $field['morning-time'];?></p>
+			  	<p> <?php echo $field['morning-action']?> </p>
+<?php  } ?>
+    	</div>
+	  	<div class="afternoon">
+        <h2>Afternoon</h2>
+<?php
+$fields = CFS()->get( 'afternoon' );
+foreach ( $fields as $field ) {?>
+				 <p><?php echo $field['afternoon-time'];?></p>
+				 <p> <?php echo $field['afternoon-action']?> </p>
+<?php  } ?>
+      </div>
+</section>
 <!-- **********////////////////////////Funding///////////////////////********** -->
 
 	<section id="funding" class="funding">

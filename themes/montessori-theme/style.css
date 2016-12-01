@@ -1940,10 +1940,6 @@ p {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  @media (min-width: 768px) {
-    .members-list {
-      -ms-flex-direction: column;
-          flex-direction: column; } }
   .members-list .members-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1964,6 +1960,11 @@ p {
           align-items: center;
       -ms-flex-direction: column;
           flex-direction: column; }
+      @media (min-width: 768px) {
+        .members-list .members-grid .members-block {
+          max-width: 990px;
+          -ms-flex: 1;
+              flex: 1; } }
     .members-list .members-grid .flip-container {
       display: block;
       box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
@@ -2019,7 +2020,7 @@ p {
     .members-list .members-grid .front {
       width: 125px;
       height: 125px; }
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 768px) {
         .members-list .members-grid .back,
         .members-list .members-grid .flip-container,
         .members-list .members-grid .front {
@@ -2321,8 +2322,8 @@ p {
       flex-wrap: wrap;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
   .teacher-list h1 {
     width: 40%;
     padding: 1.7rem;
@@ -2391,10 +2392,9 @@ p {
       .teacher-list .teacher-grid .flip-container .back {
         border-radius: 50%;
         position: absolute;
-        width: 100px;
-        overflow: hidden;
+        width: 125px;
         text-overflow: ellipsis;
-        height: 100px;
+        height: 125px;
         text-align: center;
         right: 3px;
         transform: rotateY(180deg); }
@@ -2410,9 +2410,9 @@ p {
     .teacher-list .teacher-grid .back,
     .teacher-list .teacher-grid .flip-container,
     .teacher-list .teacher-grid .front {
-      width: 100px;
-      height: 100px; }
-      @media screen and (min-width: 650px) {
+      width: 125px;
+      height: 125px; }
+      @media screen and (min-width: 768px) {
         .teacher-list .teacher-grid .back,
         .teacher-list .teacher-grid .flip-container,
         .teacher-list .teacher-grid .front {
@@ -2429,8 +2429,7 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .teacher-list .teacher-grid .teacher_det {
-      text-align: center;
-      font-size: 1.375rem; }
+      text-align: center; }
 
 .red-border-container {
   width: 90%;
