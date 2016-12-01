@@ -2013,6 +2013,13 @@ body {
     -ms-flex-item-align: end;
         align-self: flex-end; }
 
+label input {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  border: 3px solid transparent;
+  transition: border-color .2s; }
+
 .newsLetter {
   display: -ms-flexbox;
   display: flex;

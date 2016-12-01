@@ -78,7 +78,7 @@ output_image('meeting_menutes_img'); ?></div>
   <?php
   foreach($fields as $field)
   { ?>
-         <lable  class="meeting-checkbox" action="event-checkbox" method="get">
+         <lable   action="event-checkbox" method="get">
            <input type="checkbox" >
 	<?php
   echo $field['plans']; ?>
