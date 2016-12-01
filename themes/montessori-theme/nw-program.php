@@ -60,9 +60,9 @@ foreach ( $fields as $field ) {?>
 			  </div>
 				</div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
-				<h2>How is the money spent?</h2>
+			<h2>How Is The Money Spent?</h2>
 				<div class="nw-part3">
-					<div class="money-spend">
+				<div class="money-spend">
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
 				</div>
 				<div class="money-spend-img">

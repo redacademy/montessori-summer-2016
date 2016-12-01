@@ -179,9 +179,10 @@
 	padding-bottom: $basic_margin*5.5;
 	border-bottom: solid 3px $color_btn_green;
 
-// 	.news-img  {
-// align-self: center;
-// 	}
+	.meeting-img  {
+		flex: 100%;
+align-self: center;
+	}
 
 	.red-more {
 		align-self: flex-end;
