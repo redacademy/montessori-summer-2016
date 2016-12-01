@@ -1,21 +1,20 @@
-///
 
 .red-border-container {
     width: 90%;
-    height: 160px;
-    display: inline-block;
+    height: 30%;
+    display: block;
     margin-left: 7.5%;
     padding-right: 9.4%;
     padding-left: 15px;
     border-left: 7px solid $border_left_red;
-    overflow: visible;
-
+    border-bottom: none;
     p {
-        margin: 0 auto;
+      margin: 0 auto;
     }
+
 }
-/// this framework is for the block quotes to make the red bar left
-////**mobile container we will change it when we finish the mobile first **///
+/// Container wrapper to wrap all the content in the pages//
+
 .content-wrapper {
     border-bottom: solid 3px $color_btn_green;
     max-width: 85%;
@@ -27,7 +26,7 @@
 }
 
 .head-footer-container {
-    max-width: 85%;
+    max-width: 80%;
     margin: 0 auto;
     overflow: auto;
     padding: 0;

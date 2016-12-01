@@ -4,10 +4,10 @@ $basic_pading: 0.625rem; /// ==>10px ////
 $basic_margin: 0.625rem; /// ==>10px ////
 $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
-$desktop_width: 959px; //992px
-$tablet_width: 768px; //
+$desktop_width: 768px; //768px
+$desktop_mid_width: 924px; //924px mid size fonts break point
 //Layout//
-$mobile_line_height: 1.5rem;
+$mobile_line_height: 1.2rem;
 $base_spacing_normal: 1rem;
 $base_spacing_large: 2.5rem;
 $base_spacing_large: 4rem;
@@ -37,19 +37,15 @@ $font_main: 'Noto Sans', sans-serif;
 ///Font Sizing ///
 // mobile sizes ///
 $h1_size_mob: 2.6rem;
-$h2_size_mob: 1.6rem;
-$h3_size_mob: 1.4rem;
+$h2_size_mob: 1.8rem;
+$h3_size_mob: 1.5rem;
 $font_school_info: 1.5rem;
 $font_body_size_mob: 1.5rem;
 $font_member_staff: 1.375rem;
 /// desktop sizes ////
+
 $h1_size_desktop: 3rem;
 $h2_size_desktop: 2rem;
 $h3_size_desktop: 1.7rem;
 $font_body_size_desktop: 1.7rem;
 $font_line-height-body: 1.8;
-
-// Variables involved//
-// $title-font-size: 1.5em;
-// $title-height: 120px;
-// $title-width: 270px;

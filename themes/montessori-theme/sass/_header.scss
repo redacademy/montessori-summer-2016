@@ -5,30 +5,39 @@
 }
 
 .site-content {
-	padding-top: 160px;
+	padding-top: 180px;
 	top: 0;
 }
 
 .home .site-content {
-	padding-top: 0;
+
+	padding-top: 80px;
 	@include desktop {
-		padding-top: 140px;
+		padding-top: 150px;
 	};
 }
 ///the second part between two menues///
 
+.home .the-page-title{
+	display:none;
+}
+
 .the-page-title {
-	background-color: $white;
-	height: 40px;
+	background-color: #fff;
+    height: 45px;
+    padding: 0 30px;
 
 	ul {
-		display: flex;
+		@include flex(center,space-between) ;
 		flex-direction: row;
 		justify-content: space-between;
 		position: relative;
 
 		li {
 			display: inline-block;
+			a{
+				color:#404040;
+			}
 		}
 	}
 	@include desktop {
@@ -82,6 +91,9 @@ div .menu-primary-menu-container {
 }
 
 .menu-primary-menu-container {
+	@include desktop{
+		font-size: 1.3rem;
+	};
 	@include desktop {
 		white-space: nowrap;
 		display: inline-block;
@@ -95,7 +107,7 @@ div .menu-primary-menu-container {
 					text-decoration: none;
 					color: #000;
 					color: #231f20;
-					font-size: 1.2rem;
+					font-size: 1.5rem;
 					border-top: 6px solid transparent;
 					list-style: none;
 					padding: 15px 5px;
@@ -104,7 +116,7 @@ div .menu-primary-menu-container {
 		}
 	}
 }
-///////The Hamburger Menu Section//////
+///////The Hamburger Menu Section for Mobile size//////
 
 .responsive-menu-button {
 	margin-top: 0.1rem !important;
@@ -129,8 +141,9 @@ input[type="button"] {
 }
 
 button#responsive-menu-button {
-	top: 6px!important;
-	right: 8%!important;
+	top: 12px!important;
+right: 6%!important;
+background-color: transparent!important;
 	background-color: transparent!important;
 }
 
@@ -177,9 +190,7 @@ button#responsive-menu-button {
 	}
 }
 
-.main-menu-wrapper {
-	@include desktop {};
-}
+////****** Main menu wrapper*****///
 
 .main-menu-wrapper {
 	border-bottom: 2px solid #E2E2E2;
@@ -188,7 +199,7 @@ button#responsive-menu-button {
 	@include flex(center,space-between);
 	@include desktop {
 		border-bottom: none;
-		height: 90px;
+		height: 120px;
 	}
 }
 
@@ -230,13 +241,14 @@ div {
 		};
 	}
 }
-
+///*******Secondary Menu green bar section *******//
 div .secondary {
 	font-family: $font_header_footer;
 	@include desktop {
 		text-align: right;
 		padding: 0px 10px;
-		height: 70px;
+		    margin-bottom: 0px;
+		height: 69px;
 		margin-top: 40px;
 	}
 	text-align: center;
@@ -247,27 +259,56 @@ div .secondary {
 		background-color: $color_btn_green;
 	}
 
-	ul {
+	ul { @include desktop{
+		display: fixed;
+	}
+
 		min-width: 50%;
 	}
 
 	li {
 		display: inline-block;
-		padding: 8px 8px;
+		padding: 8px 0px;
 		@include desktop {
-	 padding: 16px 15px;
+	 padding: 16.4px 0px;
 		};
 
 		a {
-			padding: 0 8px;
-			margin-right: 0;
+			color: white;
+			padding: 0 20px;
+			text-decoration: none;
 			font-weight: lighter;
 			font-size: 1.2rem;
 			@include desktop {
 				font-size: 1.4rem;
 			}
-			text-decoration: none;
-			color: white;
+
 		}
 	}
+}
+
+div .secondary a{
+	display: inline-block;
+
+	border-left: solid 1px white;
+}
+
+div .secondary
+{
+ li:first-child a{
+	border-left: none;
+}
+li:nth-child(2) a{
+ border-left: none;
+}
+}
+
+//// menu pop-up  mobile size on scroll///
+ div .transparent-menu{
+	position: fixed;
+	 @include desktop{
+		display: inline-block;
+	};
+	background-color: $white;
+
 }

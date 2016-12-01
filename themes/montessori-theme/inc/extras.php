@@ -31,7 +31,7 @@ add_action( 'admin_init', 'montessori_remove_submenus', 102 );
 //*change WordPress logo to custom logo*/
 function montessori_login_logo() {
   echo '<style type="text/css">
-  h1 a { background-image: url('.get_bloginfo('template_directory').'/images/logos/montessori-logo-text-dark.svg) !important; }
+  h1 a { background-image: url('.get_bloginfo('template_directory').'/images/logo/montessori-logo.svg) !important; }
   </style>';
 }
 add_action('login_head', 'montessori_login_logo');
