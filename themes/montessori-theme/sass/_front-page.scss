@@ -19,6 +19,7 @@
                 position: relative;
             }
             .home-img {
+              margin: 0 auto;
               height: auto;
                 @include desktop {
                     background-color: rgba(0,0,0,0.74);
@@ -119,15 +120,15 @@
             padding-top: 70px;
         }
         p {
-            width: 380px;
+            width: 408px;
             font-family: "Noto Sans";
             font-size: 20px;
             line-height: 40px;
             color: #000000;
             margin: 40px;
             @include desktop {
-                padding: 30px 40px;
-                margin: 15px 40px;
+                padding: 40px;
+                margin: 15px 30px;
             }
         }
         .benifits {
@@ -251,7 +252,7 @@
                         display: flex;
                         top: 18rem;
                         position: relative;
-                        right: -950px;
+                        right: -885px;
                         width: 25%;
                         font-size: 18px;
                     }
@@ -305,6 +306,8 @@
                 display: flex;
                 justify-content: space-around;
                 width: 65%;
+                margin: 65px 0px;
+
                 .red-btn {
                     width: 185px;
                     height: 47px;
@@ -323,7 +326,6 @@
                     display: flex;
                     @include desktop {
                         color: #fff;
-                        margin-left: 80px;
                         font-family: 'Noto Sans';
                         font-size: 24px;
                         font-weight: 300;
@@ -394,7 +396,7 @@
         .features-wrapper {
             /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
             // background: #aff1d3;
-            width: 200px;
+            width: 30%;
             box-sizing: border-box;
             // height: 139.76px;
             width: 480.27px;
@@ -415,7 +417,7 @@
               position: relative;
               @include desktop {
                 display: flex;
-                  width: 300px;
+                  width: 100%;
                   height: auto;
                   background-color: #AFF1D3;
                   -webkit-transition: 3s;
@@ -429,6 +431,7 @@
                   @include border-radius(10px);
 
                   &:hover {
+                    @include visibility(hidden);
                       @include rotate(180deg);
                   }
               }
