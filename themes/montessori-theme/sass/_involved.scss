@@ -1,193 +1,208 @@
-.site-main {
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    height: auto;
+// Variables
+$title-font-size: 1.4em;
+$title-height: 120px;
+$title-width: 270px;
+
+// Colour Schema
+$mainGreen: #AFF1D3;
+$offWhite: #FFF;
+$lightblack: #333;
+$darkGreen: #4FC8A1;
+
+$main-colour: $mainGreen;
+$border-colour: $mainGreen;
+$background-colour: $offWhite;
+$darkBackground-colour: $darkGreen;
+
+$main-text: $lightblack;
+
+.main-title {
+  padding-left: 2em;
+}
+
+#involved-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height: 1200px;
+  border-bottom: 2px solid #4FC8A1;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  #column-left {
+    -webkit-flex: 3;
+    flex: 3;
+    height: 500px;
+    background-color: $background-colour;
+    margin-left: 25px;
+    border-right: 3px solid #4FC8A1;
+    border-radius: 5px;
+    margin-bottom: 5em;
+    flex-direction: column;
   }
-    .main-involved-wrapper {
-     padding-top: 50px;
+
+  #column-right {
+    -webkit-flex: 1;
+    flex: 1;
+    background-color: $background-colour;
+    margin-right: 25px;
+    flex-direction: column;
+  }
 
 }
-.involved-title {
-    a {
-        width: 200px;
-        height: 120px;
-        margin-top: 50px;
-        background-color: #4FC8A1;
-        margin-left: 25px;
-        margin-bottom: 25px;
-        font-family: Asap;
-        font-size: 24px;
-        line-height: 27px;
-        color: #000;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
+
+#yearsArchives {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.title-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-left: 10%; // Reminder to come back and use variables for margins and padding and mobile.
+}
+
+// Three main top green buttons
+.title-link {
+  width: $title-width;
+  height: $title-height;
+  font-size: $title-font-size;
+  padding-top: ($title-height/5);
+  color: $main-text;
+}
+
+.involved-title-box {
+  border-radius: 10px;
+  width: $title-width;
+  height: $title-height;
+  background-color: $mainGreen;
+  margin-right: 4%;
+  flex-direction: column;
+  text-align: center;
+  padding-top: ($title-height/6);
+
+    &:hover {
+      background-color: $darkBackground-colour;
     }
-    a:hover {
-        color: #248e6a;
-    }
-}
-.border-radius {
-    border-left: solid 12px $border_left_red;
-    border-color: red;
-}
-.gre-button {
-
-    width: 261px;
-    height: 47px;
-    background-color: #4FC8A1;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: Asap;
-
-    font-family: "Noto Sans";
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    display: block;
-       a {
-         color:#fff;
-       }
 }
 
-    // This is for green line
-    .text-shadow {
-        border-top: 10px solid #248e6a;
-        width: 100%;
-        margin-bottom: 10px;
-        // @include border-radius (10px);
-        // border-right: 1px solid #248E6A;
-    }
+// Blockqoute
+blockquote {
+  font-size: 1.1em;
+  border-left: 10px solid #D93B57;
+  padding-left: 20px;
+  height: 3em;
 
-
-// This is for support now container
-.support-containar {
+  blockquote p {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+  }
 }
-.support-img {
-    width: 150px 60px;
-    height: 160.50px;
-    align-self: center;
+
+.interest {
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4FC8A1;
 }
-img {
-    height: 100%;
+
+.green-button {
+  color: #FFF;
+  font-size: 1.5em;
 }
-@include desktop {}
+
+.full-width-section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column; /* works with row or column */
+  flex-direction: column;
+  align-items: center;
+
+  .full-width-section-item {
+    -webkit-flex: 1;
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+#sliderImages {
+  width: 100%;
+  text-align: center;
+}
+
+.involved-slider {
+  height: 340px;
+  width: 100%;
+  background-color: #FFF;
+}
+
+#circle-text {
+  vertical-align: middle;
+  color: #FFF;
+}
+
 // This for green circle btn
-.involved {
-    .circle-btn {
-        width: 200px;
-        height: 178px;
-        display: flex;
-        height: 200px;
-        -webkit-border-radius: 150%;
-        -moz-border-radius: 150%;
-        -ms-border-radius: 150%;
-        -o-border-radius: 150%;
-        border-radius: 150%;
-        background-color: #4fc8a1;
-        margin: 130px;
-        text-align: center;
-        color: #fff;
-        padding-top: 50px;
-        font-weight: 300;
-        // width: 157.58px;
-        // height: 108px;
-        font-family: Asap;
-        font-size: 18px;
-        text-align: center;
-        line-height: 27px;
-    }
-}
-// This for volenteer btn
-.re-btn {
-    width: 175.38px;
-    height: 47px;
-    border-radius: 6px;
-    background-color: #f76072;
-    color: #fff;
-    margin-left: 60px;
-    padding: 10px;
-    box-shadow: none;
-    font-family: "Noto Sans";
-    font-weight: 300;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    text-decoration: none;
-    font-family: "Noto Sans";
-    font-size: 15px;
-    font-weight: bold;
+#circle-button {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #4fc8a1;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    line-height: 27px;
+    color: #fff;
+    font-size: 40px;
+    font-family: Asap;
+    line-height: 35px;
 }
+
+#Donation {
+  width: 100%;
+}
+
+// This for volenteer btn
+.donation-button {
+  width: 320px;
+  height: 60px;
+  background-color: #f76072;
+  border-radius: 6px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  padding: 10px;
+  box-shadow: none;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+}
+
+.donation-button-group {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.re-btn {
+  margin-right: 60px;
+  float: right;
+}
+
 // This for donation
 .pink-btn {
-    width: 175.38px;
-    height: 47px;
-    background-color: #f76072;
-    border-radius: 6px;
-    font-family: "Noto Sans";
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    margin-left: 60px;
-    padding: 8px;
-    box-shadow: none;
-    text-shadow: none;
-    letter-spacing: 0.8px;
-    text-decoration: none;
-    float: left;
+  margin-left: 60px;
+  float: left;
 }
-// This for you click on volnteeer shaw the other btn
-.contact-container {
-    .contact-person {
-        color: #fff;
-        background-color: #4fc8a1;
-        font-size: 10px;
-        flex-direction: row;
-        text-align: center;
-        width: 50px;
-    }
-}
-.involved {
-    .green-btn {
-        padding: 20px 25px 19px 19px;
-        font-size: 25px;
-        height: 200px;
-        display: flex;
-        -webkit-border-radius: 150%;
-        -moz-border-radius: 150%;
-        -ms-border-radius: 150%;
-        -o-border-radius: 150%;
-        border-radius: 150%;
-        background-color: #4fc8a1;
-        display: block;
-        width: 200px;
-        text-align: center;
-        color: #fff;
-        text-align: center;
-    }
-}
-.involved {
-    .red-btn {
-        padding: 15px 40px;
-        background-color: #F76072;
-        border-radius: 6px;
-        color: #fff;
-        margin-left: 80px;
-        font-family: "Noto Sans";
-        font-size: 24px;
-        font-weight: 300;
-        text-shadow: none;
-        letter-spacing: 0.8px;
-        text-align: center;
-        display: inline;
-        line-height: inherit;
-        margin: 20px;
-        flex-direction: row;
-    }
+
+.button-contact-placeholder {
+  width: 100%;
+  height: 250px;
+  text-align: center;
 }

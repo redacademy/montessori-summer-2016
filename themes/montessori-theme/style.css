@@ -2040,173 +2040,166 @@ body {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
 
-.site-main {
-  width: 100%;
+.main-title {
+  padding-left: 2em; }
+
+#involved-container {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  height: auto; }
-
-.main-involved-wrapper {
-  padding-top: 50px; }
-
-.involved-title a {
-  width: 200px;
-  height: 120px;
-  margin-top: 50px;
-  background-color: #4FC8A1;
-  margin-left: 25px;
-  margin-bottom: 25px;
-  font-family: Asap;
-  font-size: 24px;
-  line-height: 27px;
-  color: #000;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.involved-title a:hover {
-  color: #248e6a; }
-
-.border-radius {
-  border-left: solid 12px #D93B57;
-  border-color: red; }
-
-.gre-button {
-  width: 261px;
-  height: 47px;
-  background-color: #4FC8A1;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: Asap;
-  font-family: "Noto Sans";
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  display: block; }
-  .gre-button a {
-    color: #fff; }
-
-.text-shadow {
-  border-top: 10px solid #248e6a;
-  width: 100%;
-  margin-bottom: 10px; }
-
-.support-containar {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.support-img {
-  width: 150px 60px;
-  height: 160.50px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
-
-img {
-  height: 100%; }
-
-.involved .circle-btn {
-  width: 200px;
-  height: 178px;
-  display: -ms-flexbox;
-  display: flex;
-  height: 200px;
-  border-radius: 150%;
-  background-color: #4fc8a1;
-  margin: 130px;
-  text-align: center;
-  color: #fff;
-  padding-top: 50px;
-  font-weight: 300;
-  font-family: Asap;
-  font-size: 18px;
-  text-align: center;
-  line-height: 27px; }
-
-.re-btn {
-  width: 175.38px;
-  height: 47px;
-  border-radius: 6px;
-  background-color: #f76072;
-  color: #fff;
-  margin-left: 60px;
-  padding: 10px;
-  box-shadow: none;
-  font-family: "Noto Sans";
-  font-weight: 300;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none;
-  font-family: "Noto Sans";
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 27px; }
-
-.pink-btn {
-  width: 175.38px;
-  height: 47px;
-  background-color: #f76072;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-weight: bold;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  margin-left: 60px;
-  padding: 8px;
-  box-shadow: none;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none;
-  float: left; }
-
-.contact-container .contact-person {
-  color: #fff;
-  background-color: #4fc8a1;
-  font-size: 10px;
   -ms-flex-direction: row;
       flex-direction: row;
-  text-align: center;
-  width: 50px; }
+  height: 1200px;
+  border-bottom: 2px solid #4FC8A1;
+  margin-left: 5%;
+  margin-right: 5%; }
+  #involved-container #column-left {
+    -ms-flex: 3;
+        flex: 3;
+    height: 500px;
+    background-color: #FFF;
+    margin-left: 25px;
+    border-right: 3px solid #4FC8A1;
+    border-radius: 5px;
+    margin-bottom: 5em;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  #involved-container #column-right {
+    -ms-flex: 1;
+        flex: 1;
+    background-color: #FFF;
+    margin-right: 25px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
 
-.involved .green-btn {
-  padding: 20px 25px 19px 19px;
-  font-size: 25px;
-  height: 200px;
+#yearsArchives {
+  text-align: center;
+  padding-left: 40px; }
+
+.title-container {
   display: -ms-flexbox;
   display: flex;
-  border-radius: 150%;
-  background-color: #4fc8a1;
-  display: block;
-  width: 200px;
+  -ms-flex: 1;
+      flex: 1;
+  width: 100%;
+  padding-left: 10%; }
+
+.title-link {
+  width: 270px;
+  height: 120px;
+  font-size: 1.4em;
+  padding-top: 24px;
+  color: #333; }
+
+.involved-title-box {
+  border-radius: 10px;
+  width: 270px;
+  height: 120px;
+  background-color: #AFF1D3;
+  margin-right: 4%;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
-  color: #fff;
+  padding-top: 20px; }
+  .involved-title-box:hover {
+    background-color: #4FC8A1; }
+
+blockquote {
+  font-size: 1.1em;
+  border-left: 10px solid #D93B57;
+  padding-left: 20px;
+  height: 3em; }
+  blockquote blockquote p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column; }
+
+.interest {
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4FC8A1; }
+
+.green-button {
+  color: #FFF;
+  font-size: 1.5em; }
+
+.full-width-section {
+  display: -ms-flexbox;
+  display: flex;
+  /* works with row or column */
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .full-width-section .full-width-section-item {
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+#sliderImages {
+  width: 100%;
   text-align: center; }
 
-.involved .red-btn {
-  padding: 15px 40px;
-  background-color: #F76072;
-  border-radius: 6px;
+.involved-slider {
+  height: 340px;
+  width: 100%;
+  background-color: #FFF; }
+
+#circle-text {
+  vertical-align: middle;
+  color: #FFF; }
+
+#circle-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #4fc8a1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   color: #fff;
-  margin-left: 80px;
+  font-size: 40px;
+  font-family: Asap;
+  line-height: 35px; }
+
+#Donation {
+  width: 100%; }
+
+.donation-button {
+  width: 320px;
+  height: 60px;
+  background-color: #f76072;
+  border-radius: 6px;
   font-family: "Noto Sans";
-  font-size: 24px;
-  font-weight: 300;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  padding: 10px;
+  box-shadow: none;
   text-shadow: none;
   letter-spacing: 0.8px;
-  text-align: center;
-  display: inline;
-  line-height: inherit;
-  margin: 20px;
-  -ms-flex-direction: row;
-      flex-direction: row; }
+  text-decoration: none; }
+
+.donation-button-group {
+  height: 60px;
+  margin-bottom: 10px; }
+
+.re-btn {
+  margin-right: 60px;
+  float: right; }
+
+.pink-btn {
+  margin-left: 60px;
+  float: left; }
+
+.button-contact-placeholder {
+  width: 100%;
+  height: 250px;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # NW Program Page

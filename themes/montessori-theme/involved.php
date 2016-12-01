@@ -7,104 +7,142 @@
 get_header();
 ?>
 
-       <main id="main back-to-top" class="site-main" role="main">
+<h1 class="main-title">What's New</h1>
+<main id="involved-container" class="" role="main">
 
+<!-- Column Left -->
+  <div id="column-left">
 
-         <!-- our involved section -->
-<section id="involved" class="involved-section mob-container ">
-<div class="main-involved-wrapper">
-  <?php
-$args = array(
-   'post_type' => 'post',
-   'posts_per_page' => 3,
-);
-$query = new WP_Query( $args  );
-if ( $query-> have_posts() ) :
- while ($query-> have_posts() )  : $query->the_post(); ?>
-  <div class="involved-title">
-     <a href="#"><?php the_title(); ?></a>
+  <!-- First titles, rounded corners -->
+    <section id="involved-titles-container">
+      <?php $args = array('post_type' => 'post',
+                          'posts_per_page' => 3,);
+            $query = new WP_Query( $args ); ?>
+            <!-- Three Green Buttons -->
+            <div class="title-container">
+            <?php if ( $query-> have_posts() ) : ?>
+              <!-- Check for titles and loop -->
+              <!-- JQUERY in main js file -->
+            <?php while ($query-> have_posts() ) : $query->the_post(); ?>
+              <div id="<?php echo get_the_ID(); ?>" class="involved-title-box">
 
+              <!-- Link tag -->
+                <a class="title-link" href="#"><?php the_title(); ?></a>
+              </div>
+          <?php endwhile; ?>
+          </div>
+        <?php endif; ?>
 
+        <div id="allPosts">
+          <?php while ($query-> have_posts() ) : $query->the_post(); ?>
+          <div id="post-<?php echo $id; ?>">
+              <div class="involved-content">
+                <?php the_content('involved_content');?>
+              </div>
+              <div class="involved-img" >
+                <?php output_image('involved_img'); ?>
+              </div>
+          </div>
+          <?php endwhile; ?>
+        </div>
+      <?php wp_reset_postdata(); ?>
+      <button class="interest">
+        <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Express your interest</a>
+      </button>
+    </section>
 
+    <section id="involved-support-now">
+      <div class="text-shadow">
+        <h3>Support Now</h2>
+      </div>
+      <div class="banner_post">
+        <h3> Did you Know.... </h2>
+      </div>
+    </section>
+    <!-- Past events panel on the right -->
+    </div> <!-- End of the column left -->
+    <div id="column-right">
+      <!-- <?php // get_sidebar(); ?> -->
+      <div id="past-events" style="text-align: center; font-size: 30px;">Past Events</div>
+      <div id="yearsArchives">
+        <!-- stock image for side bar / placeholder for plugin -->
+        <img src="../wp-includes/images/years.png" />
+      </div>
+
+    </div>
+  </main>
+
+  <div class="full-width-section">
+    <!-- Support Now Slider -->
+    <div class="involved-slider full-width-section-item">
+      <!-- <h1>Slider Here</h1> -->
+      <!-- stock image for side bar / placeholder for plugin -->
+      <img id="sliderImages" src="../wp-includes/images/sliderimages.png" />
+
+    </div>
   </div>
 
-<?php endwhile; ?>
-<?php while ($query-> have_posts() )  : $query->the_post(); ?>
-<div class="involved-content">
-   <?php the_content('involved_content');?>
- </div>
-   <div class= "involved-img" >
-     <?php output_image('involved_img'); ?>
+  <!-- Giant Horizontal Brace and  -->
+    <div class="braces-container">
+      <img src="../wp-includes/images/brace.png" style="margin-right: auto; margin-left: auto; width: 1426;" />
+    </div>
 
- </div>
+    <!-- Circle Stamp -->
+    <!-- <img src="" /> -->
 
-     <div class="button">
-       <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Exprsee your intrest</a></div>
-
- <?php endwhile; ?>
-<?php endif; ?>
-<?php wp_reset_postdata(); ?>
-
-
+    <!-- conflicting scss - not matching with values in _involved.scss  using inline-->
+    <div style="width: 100%;">
+      <div id="circle-button" style="width: 300px;
+      height: 300px; border-radius: 150px; background-color: #4FC8A1; padding-top: 60px;">
+        <a id="circle-text" class="circle-link" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" style="color: FFF;">your<br />involvement<br />+<br />contribution</a>
+        <p><?php echo CFS()->get('get_text'); ?></p>
+      </div>
+    </div>
 
 
-<!-- This is for suppot now  & did you  and image -->
-<div class="text-shadow">
-  <h3>Support Now</h2>
-</div>
-<div class="banner_post">
+    <!-- Two buttons on the bottom of the page -->
+    <section id="Donation">
+        <div class="donation-button-group">
+          <a class="pink-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
+          <a class="re-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
+        </div>
+        <div class="contact-group">
 
-  <h3> Did you Know.... </h2>
- </div>
-<!-- this for support section -->
-<div support-containar>
- <div class="support-img"><?php output_image('support_img'); ?>
-   <?php output_image('play-img'); ?>
-   <?php output_image('field-img'); ?>
-   </div>
-</div>
-        <article class="involved">
-          <a class="circle-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">your involvement+contribution</a>
+        <article class="contact-container">
+          <div class="contact-person" style="width: 100px; height: 100px;">
+            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a>
+          </div>
+          <div class="contact-online">
+            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a>
+          </div>
+          <div class="contact-email">
+            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a>
+          </div>
           <p><?php echo CFS()->get('get_text'); ?></p>
         </article>
 
-        <div>
-          <a class="pink-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
-          <article class="contact-container">
-               <div class="contact-person">
-             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a></div>
-             <div class="contact-online">
-               <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a></div>
-               <div class="contact-email">
-                   <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a></div>
-            <p><?php echo CFS()->get('get_text'); ?></p>
-          </article>
+        <!-- <div class="button-contact-placeholder"> -->
+          <!-- placeholder image -->
+          <!-- <img src="../wp-includes/images/buttons-placeholder.png" /> -->
+        <!-- </div> -->
 
-
-
-
+        <article class="contact-container">
+          <div class="contact-person">
+            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a>
+          </div>
+          <div class="contact-online">
+             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a>
+          </div>
+          <div class="contact-email">
+              <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a>
+          </div>
+          <p><?php echo CFS()->get('get_text'); ?></p>
+        </article>
       </div>
-
-        <div>  <a class="re-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
-          <article class="contact-container">
-               <div class="contact-person">
-             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a></div>
-             <div class="contact-online">
-               <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a></div>
-               <div class="contact-email">
-                   <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a></div>
-            <p><?php echo CFS()->get('get_text'); ?></p>
-          </article>
-          </section>
-
-        </div>
+    </section>
 
 
 
 
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-</div>
-</main>
