@@ -68,9 +68,8 @@ echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
 <section id="meetings" class="meeting-minutes">
 		  	     <h1>Meeting Minutes</h1>
-	        <div class="meeting-img"><?php
-	$src = wp_get_attachment_image_src($field['meeting_menutes_img'], 'small');
-  echo '<img src="' . $src[0] . '" />'; ?></div>
+	        <div class="meeting-img"> <?php
+output_image('meeting_menutes_img'); ?></div>
           <div class="event-date">
   <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
          </div>
