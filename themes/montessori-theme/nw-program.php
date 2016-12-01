@@ -25,8 +25,6 @@ get_header(); ?>
 <section class="">
 				<h1>Montessori Daily Schedule</h1>
 <div class="montessori-schedule">
-
-
 		<div class="morning">
 			  	<h2>Morning</h2>
 <?php
@@ -76,33 +74,29 @@ foreach ( $fields as $field ) {?>
 				<button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Donate Now</button>
 			  </div>
 	</section>
-
 	<!-- **********/////////Custom Post Loop To Call School List/////////********** -->
-
 	<section id="schools-teachers" class="school-list">
 		<h1>Schools & Teachers</h1>
 				<?php query_posts(array( 'post_type' => 'school','taxonomy' => 'school_categories','school_categories' =>'school' ));?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				 <div class="post">
 				 <!-- Display the Title  -->
 				 <h1><?php the_title(); ?></h1>
+				  <div class="school-img">
+						<?php the_post_thumbnail('post->id','small'); ?>
+					</div>
+					<div class="nw-part4">
 				  <div class="shool-content">
 				    <?php the_content(); ?>
 				  </div>
-					<div class="school-img">
-						<?php the_post_thumbnail('post->id','small'); ?>
-					</div>
-				 </div> <!-- closes the first div box -->
 				  <p ><span style="font-weight:bolder">Address: </span><?php echo CFS()->get('address'); ?></p>
 					<p ><span style="font-weight:bolder">Phone: </span><?php echo CFS()->get('phone'); ?></p>
+					</div>
 				 <?php endwhile; else: ?>
 				 <h1>Sorry, no posts matched your criteria.</h1>
 				 <?php endif; ?>
 				 <?php wp_reset_query(); ?>
 	 </section>
-
  <!-- **********///////////////// Teacher List Section ///////////////********** -->
-
   <section class="teacher-list">
 	           <h1>Teachers<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
 	                                 <!-- <div id="target"></div> -->
@@ -164,8 +158,8 @@ foreach ( $fields as $field ) {?>
 <?php $fields = CFS()->get( 'guids' );
 foreach ( $fields as $field ) {?>
 			  <li>
-<?php echo '<p class="">'.$field['instructions'].'</p>';
-} ?>
+<p><?php echo $field['instructions'];?> </p>
+<?php } ?>
 			  </li>
 			  </ol>
       </div>

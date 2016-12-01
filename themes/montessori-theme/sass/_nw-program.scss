@@ -101,9 +101,6 @@ p {
 
 // Montessori Daily Schedule Section
 .montessori-schedule{
-	@include desktop{
-
-
 	display:inline-flex;
 	flex-direction: row;
 	p{
@@ -112,15 +109,12 @@ p {
 }
 	.morning{
 		flex: 50%;
-
-
 	}
 	.afternoon{
 		flex: 50%;
 	}
 }
 
-};
 
 // Funding Section
 .funding {
@@ -204,30 +198,31 @@ p {
 .school-list {
 	display: flex;
 	flex-direction: column;
-
 	.school-img {
 		display: flex;
 		justify-content: center;
-
 		img {
-			width: 80%;
-			height: 80%;
-		}
-
-		.address .phone {
-			font-weight: bolder;
+			width: 55%;
+			height: 70%;
 		}
 	}
 }
-//Preschools List Section
+// @include desktop{
+// .school-list{
+// 	flex-direction: row-reverse;
+//
+//   }
+//  }
 
+//Preschools List Section
 .preschools-list {
 	padding: 1px;
-
 	.target {
 		margin: 0 auto;
-	}
-}
+	 }
+  }
+
+
 //Enrollment Section
 
 .enroll {
@@ -404,7 +399,7 @@ p {
 
 		.teacher_det {
 			text-align: center;
-			// font-size: $font_member_staff;
+			font-size: $font_member_staff;
 		}
 	}
 }

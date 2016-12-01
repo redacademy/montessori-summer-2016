@@ -2190,21 +2190,20 @@ p {
       margin-top: 2rem;
       padding-left: 1rem; } }
 
-@media (min-width: 768px) {
-  .montessori-schedule {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-    .montessori-schedule p {
-      display: inline-block;
-      padding: 5px; }
-    .montessori-schedule .morning {
-      -ms-flex: 50%;
-          flex: 50%; }
-    .montessori-schedule .afternoon {
-      -ms-flex: 50%;
-          flex: 50%; } }
+.montessori-schedule {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .montessori-schedule p {
+    display: inline-block;
+    padding: 5px; }
+  .montessori-schedule .morning {
+    -ms-flex: 50%;
+        flex: 50%; }
+  .montessori-schedule .afternoon {
+    -ms-flex: 50%;
+        flex: 50%; }
 
 .funding {
   display: -ms-flexbox;
@@ -2290,10 +2289,8 @@ p {
     -ms-flex-pack: center;
         justify-content: center; }
     .school-list .school-img img {
-      width: 80%;
-      height: 80%; }
-    .school-list .school-img .address .phone {
-      font-weight: bolder; }
+      width: 55%;
+      height: 70%; }
 
 .preschools-list {
   padding: 1px; }
@@ -2445,7 +2442,8 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .teacher-list .teacher-grid .teacher_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .red-border-container {
   width: 90%;
