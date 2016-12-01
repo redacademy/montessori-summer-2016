@@ -2001,6 +2001,12 @@ body {
       flex-direction: column;
   padding-bottom: 3.4375rem;
   border-bottom: solid 3px #4FC8A1; }
+  .meeting-minutes .meeting-img {
+    -ms-flex: 100%;
+        flex: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }

@@ -102,9 +102,11 @@ output_image('meeting_menutes_img'); ?></div>
 	  	  </div>
         <div class="arch-block">
 	        <h1>Archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
+					  <div id="target" class="the-archive">
           <a href="#" class="target"><?php get_sidebar(); ?></a>
+			 </div>
        </div>
-	     </div>
+       </div>
 			<!-- **********///////////////////////////////////////////////////********** -->
 <?php get_footer(); ?>
 		  </div>
