@@ -18,12 +18,12 @@
 		@content;
 	}
 }
-//Tablet Screen size
-// @mixin tablet {
-// 	@media (min-width: #{$Tablet-width}) {
-// 		@content;
-// 	}
-// }
+////Tablet Screen size
+@mixin desktop2{
+	@media (min-width: #{$desktop_mid_width}) {
+		@content;
+	}
+}
 ///flex mixin
 @mixin flex($align,$justify) {
 	display: flex;

@@ -10,7 +10,8 @@
 }
 
 .home .site-content {
-	padding-top: 0;
+
+	padding-top: 80px;
 	@include desktop {
 		padding-top: 150px;
 	};
@@ -108,7 +109,7 @@ div .menu-primary-menu-container {
 		}
 	}
 }
-///////The Hamburger Menu Section//////
+///////The Hamburger Menu Section for Mobile size//////
 
 .responsive-menu-button {
 	margin-top: 0.1rem !important;
@@ -181,7 +182,7 @@ button#responsive-menu-button {
 	}
 }
 
-
+////****** Main menu wrapper*****///
 
 .main-menu-wrapper {
 	border-bottom: 2px solid #E2E2E2;
@@ -232,7 +233,7 @@ div {
 		};
 	}
 }
-
+///*******Secondary Menu green bar section *******//
 div .secondary {
 	font-family: $font_header_footer;
 	@include desktop {
@@ -271,13 +272,14 @@ div .secondary {
 			@include desktop {
 				font-size: 1.4rem;
 			}
+			
 			text-decoration: none;
 			color: white;
 		}
 	}
 }
 
-
+//// menu pop-up  mobile size on scroll///
  div .transparent-menu{
 	position: fixed;
 	 @include desktop{
