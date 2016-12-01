@@ -58,42 +58,43 @@ get_header(); ?>
 
 
 <!-- this is for the features news  -->
+<h1 class="the-title"> <?php echo CFS()->get('features_title'); ?></h1>
+
   <section class="all-features ">
-      <h2> <?php echo CFS()->get('featured_title'); ?></h2>
       <section class="features-wrapper ">
         <div class="features-flipper">
 
-          <p class="front"><?php echo CFS()->get('features_front'); ?></p>
+          <div class="front"><?php echo CFS()->get('features_front'); ?></div>
 
-          <p class="features-back"> <?php echo CFS()->get('features_back'); ?>
+          <div class="features-back"> <?php echo CFS()->get('features_back'); ?>
             <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
-          </p>
+          </div>
 
         </div>
       </section>
 <!-- second flipper -->
         <section class="features-wrapper ">
             <div class="features-flipper">
-              <p class="front">
+              <div class="front">
                 <?php echo CFS()->get('second_features_front'); ?>
-              </p>
-              <p class="features-back">
+              </div>
+              <div class="features-back">
                 <?php echo CFS()->get('second_features_back'); ?>
                 <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
-              </p>
+              </div>
             </div>
         </section>
 <!-- third flipper -->
             <section class="features-wrapper ">
                 <div class="features-flipper">
-                  <p class="front">
+                  <div class="front">
                     <?php echo CFS()->get('third_features_front'); ?>
-                  </p>
+                  </div>
 
-                  <p class="features-back">
+                  <div class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
                     <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
-                  </p>
+                  </div>
                 </div>
               </section>
       </section> <!-- all-features -->

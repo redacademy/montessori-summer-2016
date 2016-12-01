@@ -1,5 +1,4 @@
 //-------------------front page—————————————//scss
-// media screen for mobile (max-width: 480px)
 .site-main {
     .home {
         width: 100%;
@@ -19,21 +18,14 @@
                 position: relative;
             }
             .home-img {
-              margin: 0 auto;
-              height: auto;
+                margin: 0 auto;
+                height: auto;
                 @include desktop {
                     background-color: rgba(0,0,0,0.74);
                     width: 1264px;
                     height: 555px;
                     z-index: -1;
                     position: absolute;
-                }
-
-                .welcome-wraapper{
-                  @include desktop{
-                    margin: 40px;
-
-                  }
                 }
             }
             h2 {
@@ -50,8 +42,9 @@
                 border-bottom: 4px solid #fff;
                 @include desktop {
                     font-size: 46px;
-                    // padding-top: 70px;
-                    // line-height: 0;
+                    height: 120px;
+                    padding-top: 33px;
+                    margin: 30px 50px;
                 }
             }
             p {
@@ -67,6 +60,7 @@
                     font-family: "Noto Sans";
                     font-size: 24px;
                     line-height: 46px;
+                    margin: 30px 50px;
                 }
             }
             .red-btn {
@@ -81,12 +75,13 @@
                 text-shadow: none;
                 letter-spacing: 0.8px;
                 @include desktop {
-                    padding: 10px;
+                    padding: 17px;
                     font-size: 24px;
                     display: block;
                     max-width: 320px;
-                    margin: 90px 100px;
                     text-align: center;
+                    height: 75px;
+                    margin: 70px 45px;
                 }
             }
             // }//welcome-wrapper
@@ -219,15 +214,13 @@
                     font-family: "Asap";
                     font-size: 48px;
                     line-height: 55px;
-                    margin: 45px 0px;
+                    margin: 45px 0;
                     box-sizing: border-box;
                     width: 100%;
-                    padding: 45px 0px;
-
+                    padding: 45px 0;
                 }
             }
             .support-img-wrapper {
-                // height: auto;
                 @include desktop {
                     height: 0;
                 }
@@ -238,16 +231,13 @@
                     @include desktop {
                         height: auto;
                         display: flex;
-                        // top: 100px;
                         position: absolute;
-                        right: 0px;
+                        right: 0;
                         margin: -200px 100px;
-
                     }
                 }
                 p {
                     text-align: center;
-                    // height: auto;
                     @include desktop {
                         display: flex;
                         top: 18rem;
@@ -269,7 +259,7 @@
                     margin: 27px 119px;
                     width: 70%;
                     height: auto;
-                    padding: 0px;
+                    padding: 0;
                     p {
                         font-size: 24px;
                     }
@@ -288,26 +278,21 @@
                     line-height: 47px;
                     letter-spacing: 0.9px;
                     margin: 20px 40px;
-
-                    // margin: 30px 40px;
                 }
                 .info {
                     width: 470px;
-                    // height: 294px;
                     font-family: "Noto Sans";
                     font-size: 26px;
                     font-weight: bold;
                     line-height: 42px;
                     color: #000;
                 }
-            }
-            //p
+            }//p
             .btn {
                 display: flex;
                 justify-content: space-around;
                 width: 65%;
-                margin: 65px 0px;
-
+                margin: 65px 0;
                 .red-btn {
                     width: 185px;
                     height: 47px;
@@ -369,36 +354,44 @@
                     height: 55px;
                 }
             }
+        }//information
+    }//support-wrapper
+
+// this is for the features fliper
+    .the-title {
+        box-sizing: border-box;
+        width: 440px;
+        border-top: 2px solid #2EB688;
+        padding-top: 50px;
+        height: 42px;
+        font-family: 'Asap';
+        font-size: 36px;
+        line-height: 0;
+        color: #000;
+        margin-left: 30px;
+        @include desktop {
+            width: 100%;
+            font-size: 40px;
+            padding-top: 100px;
         }
-        //information
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 480px;
+        }
     }
-    //support-wrapper
-    // this is for the features fliper
     .all-features {
         margin-bottom: 30px;
-        h2 {
-            box-sizing: border-box;
-            width: 440px;
-            border-top: 2px solid #2EB688;
-            padding-top: 50px;
-            height: 42px;
-            font-family: 'Asap';
-            font-size: 36px;
-            line-height: 0;
-            color: #000;
-            margin-left: 30px;
-            .container {
-                margin-left: auto;
-                margin-right: auto;
-                width: 480px;
-            }
+        width: 100%;
+        height: 100%;
+        @include desktop {
+            display: flex;
+            height: 480px;
+            width: 400px;
         }
         .features-wrapper {
-            /* 	box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45); */
-            // background: #aff1d3;
             width: 30%;
             box-sizing: border-box;
-            // height: 139.76px;
             width: 480.27px;
             position: relative;
             border-radius: 10px;
@@ -406,41 +399,47 @@
             font-size: 15px;
             color: #000;
             text-decoration: none;
-            .features-flipper {
-              flex: 0 0 auto;
-              width: 200px;
-              height: 200px;
-              background-color: #AFF1D3;
-              margin-top: 20px;
-              @include flex(center,space-between);
-              flex-wrap: wrap;
-              position: relative;
-              @include desktop {
+            @include desktop {
                 display: flex;
-                  width: 100%;
-                  height: auto;
-                  background-color: #AFF1D3;
-                  -webkit-transition: 3s;
-                  -webkit-transform-style: preserve-3d;
-                  -moz-transition: 2s;
-                  -moz-transform-style: preserve-3d;
-                  -o-transition: 3s;
-                  -o-transform-style: preserve-3d;
-                  transition: 3s;
-                  transform-style: preserve-3d;
-                  @include border-radius(10px);
-
-                  &:hover {
-                    @include visibility(hidden);
-                      @include rotate(180deg);
-                  }
-              }
-
-                .front {
+                height: 380px;
+                width: 380px;
+                margin: 10px 30px;
+                line-height: 3rem;
+            }
+            .features-flipper {
+                flex: 0 0 auto;
+                background-color: #AFF1D3;
+                margin: 20px;
+                height: 180px;
+                @include flex(center,space-between);
+                flex-wrap: wrap;
+                position: relative;
+                @include desktop {
+                    height: 300px;
+                    width: 300px;
+                    display: flex;
+                    width: 100%;
                     height: auto;
+                    background-color: #AFF1D3;
+                    -webkit-transition: 3s;
+                    -webkit-transform-style: preserve-3d;
+                    -moz-transition: 2s;
+                    -moz-transform-style: preserve-3d;
+                    -o-transition: 3s;
+                    -o-transform-style: preserve-3d;
+                    transition: 3s;
+                    transform-style: preserve-3d;
+                    @include border-radius(10px);
+                    &:hover {
+                        @include visibility(hidden);
+                        @include rotate(180deg);
+                    }
+                }
+                .front {
+                    height: 145px;
                     text-align: center;
                     overflow: hidden;
-                    padding: 20px;
+                    padding: 36px;
                     width: 450px;
                     font-family: 'Asap';
                     font-size: 24px;
@@ -450,13 +449,16 @@
                     -moz-backface-visibility: hidden;
                     -o-backface-visibility: hidden;
                     backface-visibility: hidden;
-                    @include desktop{
-                      display: flex;
+                    @include desktop {
+                        display: flex;
+                        font-size: 36px;
+                        line-height: 3rem;
+                        text-align: start;
+                        padding: 40px;
+                        height: 380px;
                     }
                 }
                 .features-back {
-                    // width: 480px;
-                    // height: 170px;
                     border: 1px solid #248E6A;
                     margin: 0;
                     text-align: center;
@@ -473,15 +475,27 @@
                     -moz-transform: rotateY(180deg);
                     -o-transform: rotateY(180deg);
                     transform: rotateY(180deg);
-                    @include desktop{
-                      display: flex;
+                    @include desktop {
+                        display: inline-block;
+                        text-align: start;
+                        padding: 8px;
+                        height: 370px;
+                        p {
+                            visibility: visible;
+                            @include visibility(hidden);
+                            font-family: 'Asap';
+                            font-size: 22px;
+                        }
+                    }
+                    .btn {
+                        text-align: center;
+                        display: inline-block;
+                        text-align: center;
+                        color: #248E6A;
+                        text-decoration: none;
                     }
                 }
             }
-        }
-        .green-btn {
-            color: #248E6A;
-            text-decoration: none;
         }
     }
 }
