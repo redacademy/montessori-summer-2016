@@ -28,7 +28,7 @@
     padding: 0 30px;
 
 	ul {
-		display: flex;
+		@include flex(center,space-between) ;
 		flex-direction: row;
 		justify-content: space-between;
 		position: relative;
@@ -104,7 +104,7 @@ div .menu-primary-menu-container {
 					text-decoration: none;
 					color: #000;
 					color: #231f20;
-					font-size: 1.2rem;
+					font-size: 1.5rem;
 					border-top: 6px solid transparent;
 					list-style: none;
 					padding: 15px 5px;

@@ -53,3 +53,33 @@
 	-o-transform: rotateY($rotate);
 	transform: rotateY($rotate);
 }
+/***blockquote properties****/
+@mixin quote(){
+	@content;
+	blockquote{
+		width: 90%;
+	top: 10px;
+	margin: 0 0 0 15%;
+	padding-left: 25px;
+	display: inline-block;
+	position: relative;
+	p {
+			margin: 0;
+			font-size: 2rem;
+	}}
+	blockquote::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			top: 5PX;
+			left: 0PX;
+			height: 100%;
+			border-left: solid 12px $border_left_red;
+			font-size: 1.5rem;
+	}
+
+	p {
+			display: inline-block;
+			text-align: left;
+	}
+}

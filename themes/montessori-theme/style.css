@@ -48,6 +48,7 @@ TABLE OF CONTENTS:
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
+/***blockquote properties****/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -257,25 +258,7 @@ em,
 i {
   font-style: italic; }
 
-code,
-kbd,
-tt,
-var {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-
-abbr,
-acronym {
-  cursor: help; }
-
-ins,
-mark {
-  text-decoration: none; }
-
-big {
-  font-size: 125%; }
-
+/*Elements*/
 .content-wrapper {
   max-width: 90%;
   margin: 0 auto; }
@@ -287,11 +270,6 @@ a:hover {
 a {
   text-decoration: none; }
 
-li,
-p {
-  font-size: 1.5rem;
-  font-family: "Asap", sans-serif; }
-
 h1,
 h2,
 h3 {
@@ -301,32 +279,35 @@ h3 {
 
 h1 {
   font-size: 2.6rem; }
+  @media (min-width: 768px) {
+    h1 h1 {
+      font-family: "Asap", sans-serif;
+      font-weight: lighter;
+      font-size: 3.3rem; } }
 
 h2 {
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
+  @media (min-width: 768px) {
+    h2 h2 {
+      font-size: 2.6rem; } }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: "Asap", sans-serif; }
+  @media (min-width: 768px) {
+    h3 h3 {
+      font-size: 2rem; } }
 
-@media (min-width: 768px) {
-  li,
-  p {
-    font-size: 1.7rem; }
-  h1 {
-    font-family: "Asap", sans-serif;
-    font-weight: lighter;
-    font-size: 3rem; }
-  h2 {
-    font-size: 2rem; }
-  h3 {
-    font-size: 1.7rem; } }
-
-html {
-  box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
-  font-size: 1rem; }
+li,
+p {
+  font-size: 1.5rem;
+  font-family: "Asap", sans-serif; }
+  @media (min-width: 768px) {
+    li li,
+    li p,
+    p li,
+    p p {
+      font-size: 2.8rem; } }
 
 *,
 *:after,
@@ -338,13 +319,6 @@ body {
   font-family: "Noto Sans", sans-serif;
   box-sizing: border-box;
   margin: 0 auto; }
-  body li,
-  body p {
-    line-height: 2.6rem; }
-    @media (min-width: 768px) {
-      body li,
-      body p {
-        line-height: 2.3rem; } }
 
 hr {
   background-color: #ffffff;
@@ -352,30 +326,9 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ol,
-ul {
-  margin: 0; }
-
-ul {
-  list-style: none; }
-
-ol {
-  list-style: decimal; }
-
-li > ol,
-li > ul {
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-bottom: 0;
-  list-style-type: none; }
-
 img {
   height: auto;
   max-width: 100%; }
-
-table {
-  margin: 0;
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -492,66 +445,6 @@ textarea {
   content: "";
   display: table; }
 
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.comment-content .wp-smiley,
-.entry-content .wp-smiley,
-.page-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1rem;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/* Galleries*/
-.gallery {
-  margin-bottom: 1rem; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
-
 .masthead {
   position: absolute; }
 
@@ -573,12 +466,15 @@ object {
   height: 45px;
   padding: 0 30px; }
   .the-page-title ul {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    justify-content: space-between;
     position: relative; }
     .the-page-title ul li {
       display: inline-block; }
@@ -637,7 +533,7 @@ div .menu-primary-menu-container {
         text-decoration: none;
         color: #000;
         color: #231f20;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         border-top: 6px solid transparent;
         list-style: none;
         padding: 15px 5px; } }
@@ -925,7 +821,8 @@ div .transparent-menu {
   cursor: pointer;
   color: #248E6A; }
 
-.footer-block-item2 a:hover {
+.footer-block-item2
+a:hover {
   cursor: pointer;
   color: #248E6A; }
 
@@ -1497,11 +1394,11 @@ body {
     width: 100%; }
   @media (min-width: 768px) {
     .history-content blockquote {
-      width: 75%;
-      min-width: 70%;
+      width: 90%;
       top: 10px;
       margin: 0 0 0 15%;
       padding-left: 25px;
+      display: inline-block;
       position: relative; }
       .history-content blockquote p {
         margin: 0;
@@ -1524,7 +1421,6 @@ body {
 
 .main-philosophy {
   margin: 100px auto;
-  width: 400px;
   min-width: 75%;
   height: auto;
   display: flex;
@@ -1538,9 +1434,9 @@ body {
   position: relative; }
   @media (min-width: 768px) {
     .main-philosophy {
-      width: 1000px;
-      min-width: 950px;
-      height: 640px; } }
+      width: 1200px;
+      min-width: 1200px;
+      height: 800px; } }
   .main-philosophy div {
     width: 100%; }
   .main-philosophy .philosophy-grid {
@@ -1549,7 +1445,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: #AFF1D3;
-    margin-top: 20px;
+    margin: 35px 10px;
     display: flex;
     display: -ms-flexbox;
     -ms-flex-align: center;
@@ -1561,8 +1457,8 @@ body {
     position: relative; }
     @media (min-width: 768px) {
       .main-philosophy .philosophy-grid {
-        width: 300px;
-        height: 300px;
+        width: 330px;
+        height: 330px;
         background-color: #AFF1D3;
         -webkit-transition: 0.8s;
         -webkit-transform-style: preserve-3d;
@@ -1597,7 +1493,7 @@ body {
           .main-philosophy .philosophy-grid .philosophy-img img {
             left: 48px;
             top: -19px;
-            width: 210px;
+            width: 225px;
             height: 186px;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden; } }
@@ -1635,23 +1531,22 @@ body {
       display: inline-block;
       font-family: "Noto Sans", sans-serif;
       position: absolute;
-      top: -17px;
-      overflow-y: scroll;
+      top: -55px;
       font-size: 1.3rem;
-      left: 0;
+      left: -65px;
       z-index: 1000;
-      height: 300px;
-      width: 300px;
+      height: 400px;
+      width: 460px;
       border-radius: 10px;
       border: 1px solid #248E6A;
       text-align: left;
-      overflow: hidden;
       padding: 5px;
-      visibility: hidden; }
+      display: none; }
       @media (min-width: 768px) {
         .main-philosophy .philosophy-grid p {
           overflow: scroll;
           font-size: 1.2rem;
+          display: inline;
           visibility: visible;
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -1673,8 +1568,8 @@ body {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
   -ms-flex-align: center;
       align-items: center; }
   @media (min-width: 768px) {
@@ -1707,7 +1602,7 @@ body {
       width: 60%;
       min-width: 50%; }
       .materials-contents blockquote {
-        width: 75%;
+        width: 90%;
         top: 10px;
         margin: 0 0 0 15%;
         padding-left: 25px;
@@ -1718,13 +1613,16 @@ body {
           font-size: 2rem; }
       .materials-contents blockquote::before {
         content: "";
-        display: block;
+        display: inline-block;
         position: absolute;
         top: 5PX;
         left: 0PX;
         height: 100%;
         border-left: solid 12px #D93B57;
         font-size: 1.5rem; }
+      .materials-contents p {
+        display: inline-block;
+        text-align: left; }
       .materials-contents p {
         display: inline;
         padding-top: 4px;
@@ -1768,7 +1666,7 @@ body {
   width: 100%; }
   @media (min-width: 768px) {
     .benefits-content blockquote {
-      width: 70%;
+      width: 90%;
       top: 10px;
       margin: 0 0 0 15%;
       padding-left: 25px;
@@ -1779,7 +1677,7 @@ body {
         font-size: 2rem; }
     .benefits-content blockquote::before {
       content: "";
-      display: block;
+      display: inline-block;
       position: absolute;
       top: 5PX;
       left: 0PX;
@@ -1787,7 +1685,7 @@ body {
       border-left: solid 12px #D93B57;
       font-size: 1.5rem; }
     .benefits-content p {
-      padding-top: 4px;
+      display: inline-block;
       text-align: left; } }
 
 .benefits-title p {
@@ -1799,13 +1697,13 @@ body {
 
 .the-archive ul {
   width: 500px;
-  line-height: 2.5rem;
-  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-size: 2rem;
   font-family: "Asap", sans-serif; }
   .the-archive ul li {
     padding-left: 30px;
     line-height: inherit;
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
     .the-archive ul li a {
       color: #248E6A; }
 
@@ -1822,7 +1720,7 @@ body {
   @media (min-width: 768px) {
     .the-archive ul {
       line-height: 2.5rem;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       width: 600px; } }
   .the-archive ul li {
     padding-left: 30px;
@@ -1911,11 +1809,11 @@ h1 {
   line-height: 2.625rem; }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.125rem; }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.6875rem; }
 
 p {

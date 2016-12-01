@@ -66,34 +66,8 @@
         width: 100%;
     }
     @include desktop {
-        blockquote {
-            width: 75%;
-            min-width: 70%;
-            top: 10px;
-            margin: 0 0 0 15%;
-            padding-left: 25px;
-            position: relative;
+      @include quote{
 
-            p {
-                margin: 0;
-                font-size: 2rem;
-            }
-        }
-
-        blockquote::before {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            top: 5PX;
-            left: 0PX;
-            height: 100%;
-            border-left: solid 12px $border_left_red;
-            font-size: 1.5rem;
-        }
-
-        p {
-            display: inline-block;
-            text-align: left;
         }
     }
 }
@@ -105,16 +79,16 @@
 
 .main-philosophy {
     margin: 100px auto;
-    width: 400px;
+
     min-width: 75%;
     height: auto;
     @include flex(center,space-around);
     flex-wrap: wrap;
     position: relative;
     @include desktop {
-        width: 1000px;
-        min-width: 950px;
-        height: 640px;
+        width: 1200px;
+        min-width: 1200px;
+        height: 800px;
     }
 
     div {
@@ -126,13 +100,13 @@
         width: 200px;
         height: 200px;
         background-color: #AFF1D3;
-        margin-top: 20px;
+        margin: 35px 10px;
         @include flex(center,space-between);
         flex-wrap: wrap;
         position: relative;
         @include desktop {
-            width: 300px;
-            height: 300px;
+            width: 330px;
+            height: 330px;
             background-color: #AFF1D3;
             -webkit-transition: 0.8s;
             -webkit-transform-style: preserve-3d;
@@ -170,7 +144,7 @@
                 @include desktop {
                     left: 48px;
                     top: -19px;
-                    width: 210px;
+                    width: 225px;
                     height: 186px;
                     @include visibility(hidden);
                 }
@@ -214,27 +188,27 @@
             position: absolute;
         }
 
-        p {
+
+      p {
             text-align: left;
             display: inline-block;
             font-family: $font_body;
             position: absolute;
-            top: -17px;
-            overflow-y: scroll;
+            top: -55px;
             font-size: 1.3rem;
-            left: 0;
+            left: -65px;
             z-index: 1000;
-            height: 300px;
-            width: 300px;
+            height: 400px;
+            width: 460px;
             @include border-radius (10px);
             border: 1px solid #248E6A;
             text-align: left;
-            overflow: hidden;
             padding: 5px;
-            visibility: hidden;
+            display: none;
             @include desktop {
                 overflow: scroll;
                 font-size: 1.2rem;
+                display: inline;
                 visibility: visible;
                 @include visibility(hidden);
                 background-color: #fff;
@@ -265,7 +239,7 @@
 .materials {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     @include desktop {
          @include flex(center,space-between);
@@ -295,29 +269,8 @@
         width: 60%;
         min-width: 50%;
 
-        blockquote {
-            width: 75%;
-            top: 10px;
-            margin: 0 0 0 15%;
-            padding-left: 25px;
-            display: inline-block;
-            position: relative;
+        @include quote{
 
-            p {
-                margin: 0;
-                font-size: 2rem;
-            }
-        }
-
-        blockquote::before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 5PX;
-            left: 0PX;
-            height: 100%;
-            border-left: solid 12px $border_left_red;
-            font-size: 1.5rem;
         }
 
         p {
@@ -364,34 +317,8 @@
 .benefits-content {
     width: 100%;
     @include desktop {
-        blockquote {
-            width: 70%;
-            top: 10px;
-            margin: 0 0 0 15%;
-            padding-left: 25px;
-            display: inline-block;
-            position: relative;
+        @include quote{
 
-            p {
-                margin: 0;
-                font-size: 2rem;
-            }
-        }
-
-        blockquote::before {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 5PX;
-            left: 0PX;
-            height: 100%;
-            border-left: solid 12px $border_left_red;
-            font-size: 1.5rem;
-        }
-
-        p {
-            padding-top: 4px;
-            text-align: left;
         }
     }
 }
@@ -409,14 +336,14 @@
 
 .the-archive ul {
     width: 500px;
-    line-height: 2.5rem;
-    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-size: 2rem;
     font-family: $font_title;
 
     li {
         padding-left: 30px;
         line-height: inherit;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
 
         a {
             color: $color_btn_hover_green;
@@ -437,7 +364,7 @@
     font-family: $font_title;
     @include desktop {
         line-height: 2.5rem;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         width: 600px;
     };
 
