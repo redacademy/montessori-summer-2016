@@ -1,4 +1,5 @@
 
+
 <?php
 /**
  * The header for our theme.
@@ -186,4 +187,4 @@ foreach($fields as $field)
 
 </section>
 <?php
-get_footer(); ?>
+get_footer(); ?> 

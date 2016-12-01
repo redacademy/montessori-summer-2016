@@ -27,14 +27,16 @@
     .history-img1 {
        display: block;
 
-       img {
-           padding-top: 40px;
-           float: left;
-       }
-       @include desktop {
-           display: none;
-       };
-   }
+        img {
+          height:100%;
+          width:100%;
+            padding-top: 40px;
+            float: left;
+        }
+        @include desktop {
+            display: none;
+        };
+    }
 
     .history-img {
         display: none;
