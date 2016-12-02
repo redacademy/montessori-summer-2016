@@ -121,7 +121,7 @@ get_header();
 
           <!-- Hidden div for button groups -->
           <div class="involved-options-donations">
-            <h1>Donations</h1>
+            <h1>Make a Donations</h1>
             <article class="contact-container">
               <div class="contact-person">
                 <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a>
