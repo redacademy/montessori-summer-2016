@@ -51,8 +51,8 @@ get_header(); ?>
         </div>
        <?php echo CFS()->get('second_support_paragraph'); ?>
        <div class="btn">
-            <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
-          <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
+            <a href="#support-now" class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
+            <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
         </div>
       </div>
     </section>
@@ -68,7 +68,7 @@ get_header(); ?>
           <div class="front"><?php echo CFS()->get('features_front'); ?></div>
 
           <div class="features-back"> <?php echo CFS()->get('features_back'); ?>
-            <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
+            <a class="btn" href="<?php the_permalink(17); ?>/127" >Read More</a>
           </div>
 
         </div>
@@ -81,7 +81,7 @@ get_header(); ?>
               </div>
               <div class="features-back">
                 <?php echo CFS()->get('second_features_back'); ?>
-                <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
+                <a class="btn" href="<?php echo the_permalink(17);?>/124" >Read More</a>
               </div>
             </div>
         </section>
@@ -94,7 +94,7 @@ get_header(); ?>
 
                   <div class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
-                    <a class="btn" href="<?php the_permalink(17); ?>?postid=<?php echo get_the_id();?>" >Read More</a>
+                    <a class="btn" href="<?php the_permalink(17); ?>/122" >Read More</a>
                   </div>
                 </div>
               </section>
