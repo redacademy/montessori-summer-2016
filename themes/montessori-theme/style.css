@@ -2070,6 +2070,8 @@ label input {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
 
+.main-title {
+  padding-left: 2em; }
 .past-event-wrapper {
   margin: 0 auto; }
   .past-event-wrapper .past-event {
