@@ -24,7 +24,7 @@ get_header();
               <!-- Check for titles and loop -->
               <!-- JQUERY in main js file -->
             <?php while ($query-> have_posts() ) : $query->the_post(); ?>
-              <div id="<?php echo get_the_ID(); ?>" class="involved-title-box">
+              <div data-related="<?php echo get_the_ID(); ?>" class="involved-title-box">
 
               <!-- Link tag -->
                 <a class="title-link" href="#"><?php the_title(); ?></a>
@@ -35,7 +35,7 @@ get_header();
 
         <div id="allPosts">
           <?php while ($query-> have_posts() ) : $query->the_post(); ?>
-          <div id="post-<?php echo $id; ?>">
+          <div id="<?php echo $id; ?>" data-id="<?php echo $id; ?>" class="post-content">
               <div class="involved-content">
                 <?php the_content('involved_content');?>
               </div>
@@ -49,11 +49,14 @@ get_header();
       <button class="interest">
         <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Express your interest</a>
       </button>
+      <button id="involved-interview" class="interest">
+        <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Express your interest</a>
+      </button>
     </section>
 
     <section id="involved-support-now">
       <div class="text-shadow">
-        <h3>Support Now</h2>
+        <h3>Support Now</h3>
       </div>
       <div class="banner_post">
         <h3> Did you Know.... </h2>
@@ -145,5 +148,5 @@ get_header();
 
 
 
-<?php  get_sidebar();?>
+<!-- <?php  get_sidebar();?> -->
 <?php get_footer(); ?>

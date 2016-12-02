@@ -51,6 +51,40 @@ var $screenWidth = $( document ).width()
               else {
                   $navWrapper.removeClass("transparent-menu");
               }};
-})
+});
 
+// --------------------------------------------------------------
+
+//  "Get Involved": Function for displaying post id
+
+// ----------------------------------------------------------------
+  // hide all content initially except first child
+  $(document).ready(function(){
+    var interviewButton = jQuery('#involved-interview');
+    jQuery('#124 p:last-child').append(interviewButton);
+
+    $("div.post-content").each(function(){
+       $(this).hide();
+          if($(this).is(':first-child')) {
+              $(this).show();
+          }
+    });
+
+    // Green buttons on the main involved file showing title.
+    $('div.involved-title-box').on( "click", function(e) {
+      e.preventDefault();
+      var id = $(this).attr('data-related');
+      $("div.post-content").each(function(){
+        if ($(this).attr('data-id') == id) {
+          // Display content under buttons
+          $(this).show();
+          // adjust css to match content of post
+          var divHeight = $(this).height();
+          $('#involved-titles-container').css('min-height', divHeight+'px');
+        } else {
+          $(this).hide();
+        }
+      });
+    });
+  });
 });
