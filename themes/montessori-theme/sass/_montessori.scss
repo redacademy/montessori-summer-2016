@@ -1,403 +1,341 @@
 /*--------------------------------------------------------------
-# Montessori
+# NW Program Page
 --------------------------------------------------------------*/
-/////*Start History Section**/////
-.history-content {
-    width: 100%;
-    flex-wrap: wrap;
-    margin-left: 30px;
+// General Setting
+* {
+    box-sizing: border-box;
 }
-.history-title {
-    margin-top: 70px;
-    @include desktop{
-        margin-top:30px;
-    }
-    margin-bottom: 0;
-    flex: 0 90%;
-}
-.main-history {
-    p:nth-child(4) {
-        margin-left: -40%;
-        overflow: visible;
-        @include desktop {
-            margin-left: 0;
-        }
-    }
-    @include flex(flex-end,space-between);
-    .history-img1 {
-        display: block;
-        img {
-            height: 100%;
-            width: 100%;
-            padding-top: 40px;
-            float: left;
-        }
-        @include desktop {
-            display: none;
-        };
-    }
-    .history-img {
-        display: none;
-        @include desktop {
-            display: block;
-            margin-top: 70px;
-            align-self: flex-end;
-            padding-bottom: 100px;
-            img{
-              width: 430px;
-              height: 500px;
-            }
-        }
-    }
-}
-.history-content {
-    blockquote {
-        text-align: left;
-    }
-    p {
-        width: 100%;
-        text-align: left;
-        display: inline;
-        overflow: hidden;
-    }
-    width: 100%;
-    blockquote {
-        width: 100%;
-    }
-    @include desktop {
-         @include quote{}
-    }
-}
-////************philosophy Section ************/////
-.active {
-    visibility: visible;
-}
-.main-philosophy {
-    margin: 100px auto;
-    min-width: 75%;
+.nw-program-wrapper {
     height: auto;
-    @include flex(center,space-around);
-    flex-wrap: wrap;
-    position: relative;
-    @include desktop {
-        width: 1200px;
-        min-width: 1200px;
-        height: 800px;
-    }
-    div {
-        width: 100%;
-    }
-    .philosophy-grid {
-        flex: 0 0 auto;
-        width: 200px;
-        height: 200px;
-        background-color: #AFF1D3;
-        margin: 35px 10px;
-        @include flex(center,space-between);
-        flex-wrap: wrap;
-        position: relative;
-        @include desktop {
-            width: 330px;
-            height: 330px;
-            background-color: #AFF1D3;
-            -webkit-transition: 0.8s;
-            -webkit-transform-style: preserve-3d;
-            -moz-transition: 0.8s;
-            -moz-transform-style: preserve-3d;
-            -o-transition: 0.8s;
-            -o-transform-style: preserve-3d;
-            transition: 0.8s;
-            transform-style: preserve-3d;
-            @include border-radius(10px);
-            &:hover {
-                @include rotate(180deg);
-            }
-        }
-        .philosophy-img {
-            z-index: 2;
-            height: auto;
-            text-align: center;
-            padding: 20px;
-            @include desktop {
-                 @include visibility(hidden);
-            }
-            position: relative;
-            width: 100%;
-            height: 200px;
-            img {
-                position: absolute;
-                top: 46px;
-                right: 63px;
-                width: 70px;
-                height: 70px;
-                @include desktop {
-                    left: 48px;
-                    top: -19px;
-                    width: 225px;
-                    height: 186px;
-                    @include visibility(hidden);
-                }
-            }
-        }
-        h2 {
-            z-index: 1;
-            margin: 0;
-            text-align: center;
-            display: inline-block;
-            width: 80%;
-            color: #248e6a;
-            height: auto;
-            padding: 0;
-            bottom: 44px;
-            line-height: 0.9rem;
-            right: 22px;
-            position: absolute;
-            a {
-                color: #248E6A;
-                font-size: 1.1rem;
-                font-weight: bold;
-            }
-            @include desktop {
-                a {
-                    font-size: 1.3rem;
-                }
-                .show {
-                    font-size: 1.4rem;
-                    @include visibility(hidden);
-                }
-                &:hover {
-                    @include visibility(hidden);
-                    @include rotate(180deg);
-                }
-            }
-            position: absolute;
-        }
-        p {
-            text-align: left;
-            display: inline-block;
-            font-family: $font_body;
-            position: absolute;
-            top: -55px;
-            font-size: 1.3rem;
-            left: -65px;
-            z-index: 1000;
-            height: 400px;
-            width: 460px;
-            @include border-radius (10px);
-            border: 1px solid #248E6A;
-            text-align: left;
-            padding: 5px;
-            display: none;
-            @include desktop {
-                overflow: scroll;
-                font-size: 1.2rem;
-                display: inline;
-                visibility: visible;
-                @include visibility(hidden);
-                background-color: #fff;
-                @include rotate(180deg);
-            }
-        }
-    }
-}
-////************End philosophy Section ************/////
-////////*******Start Materials Section******/////////
-.main-materials div:nth-of-type(3) {
-    @include desktop {
-        flex-direction: row-reverse;
-    }
-}
-.main-materials div:nth-of-type(1) {
-    img {
-        display: none;
-    }
-    .materials-contents {
-        width: 90%;
-    }
-}
-.materials {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding-left: $basic_pading * 2;
+    padding-right: $basic_pading * 1.5;
     align-items: center;
-    @include desktop {
-         @include flex(center,space-between);
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    img {
-        width: 400px;
-        height: 400px;
-        @include desktop {
-            margin-top: 50px;
-            width: 300px;
-            height: 300px;
+}
+fonts h1,
+h2,
+h3 {
+    font-family: $font_title;
+    font-weight: normal;
+}
+h1 {
+    font-size: $h1_size_mob;
+    line-height: 2.625rem;
+}
+h3 {
+    font-size: $h2_size_mob;
+    line-height: 1.6875rem;
+}
+p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    font-style: $font_body;
+}
+.spcil p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-style: $font_main;
+}
+.green-btn {
+    background-color: #4FC8A1;
+    color: $white;
+    font-family: "Noto Sans";
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+// Section Why NW Program Section
+.nw-program {
+    border-bottom: solid 3px $color_btn_green;
+    padding-bottom: $basic_margin *4.5;
+    .why-nw {
+        p {
+            display: block;
+            @include desktop {
+                text-align-last: right;
+            }
         }
+    }
+    .nw-img {
+        display: flex;
+        justify-content: center;
+        margin-top: $basic_margin*5.5;
+        margin-bottom: $basic_margin*3;
     }
 }
-.materials-contents {
-    blockquote {
-        p {
-            display: inline;
-        }
-    }
-    width: 90%;
-    @include desktop {
-        width: 60%;
-        min-width: 50%;
-        @include quote {}
-        p {
-            display: inline;
-            padding-top: 4px;
+@include desktop {
+    .nw-part1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .why-nw {
+            display: block;
+            flex-shrink: 4;
             text-align: left;
-            @include desktop {
-                display: inline-block;
-            };
+        }
+        .nw-img {
+            margin-top: 2rem;
+            padding-left: 1rem;
         }
     }
 }
-/////*Start Benefits Section**/////
-.benefits li {
-    list-style-type: disc;
-    @include desktop {};
+// Montessori Daily Schedule Section
+.row p {
+    display: inline-block;
+    padding: 5px;
 }
-.first-benefits-section {
-    width: 100%;
-    min-width: 80%;
-    height: 100%;
-    @include flex(center,space-between);
+.schedule-menu {
+    display: flex;
+    justify-content: space-between;
+    // @media screen and (min-width: 768px) {
+    //  .schedule-menu{
+    //      display: hide;
+    //  }
+    // }
+}
+.morning {
+    flex: 100%;
+}
+.afternoon {
+    flex: 100%;
+}
+// Funding Section
+.funding {
+    display: flex;
     flex-direction: column;
-    @include desktop {
-        flex-direction: row;
-    }
-    img {
-        width: 400px;
-        height: 400px;
-        margin-top: 30px;
-        @include desktop {
-            align-self: flex-start;
-            width: 330px;
-            height: 330px;
-            margin: 0 40px 20px 0;
-        }
-    }
-}
-.benefits-content {
-    width: 100%;
-    @include desktop {
-         @include quote{}
-    }
-}
-.benefits-title {
-    p {
-        padding-top: 4px;
+    margin-top: $basic_margin*3;
+    border-bottom: solid 3px $color_btn_green;
+    padding-bottom: $basic_margin *4.5;
+    .funding-det {
         display: block;
+    }
+    .funding-img,
+    .money-spend-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
         @include desktop {
-            font-size: 1.5rem;
+            margin-top: 0;
         }
     }
-}
-///Archive and rescourses sections////
-.the-archive ul {
-    width: 500px;
-    line-height: 2.4rem;
-    font-size: 2rem;
-    font-family: $font_title;
-    li {
-        padding-left: 30px;
-        line-height: inherit;
-        font-size: 1.6rem;
-        a {
-            color: $color_btn_hover_green;
+    .money-spend-img img {
+        @include desktop {
+            padding-right: 4rem;
+            padding-left: 0.4rem;
         }
     }
-}
-.fa-caret-right {
-    cursor: pointer;
-    color: $color_btn_hover_green;
-    padding-right: 5px;
-}
-.the-archive ul {
-    width: 450px;
-    line-height: 2rem;
-    font-size: 1.3rem;
-    font-family: $font_title;
+    h2 {
+        text-align: center;
+    }
+    .nw-part2 {
+        margin: 0 auto;
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .red-border-container {
+                padding-right: 3.4%;
+                width: 82%;
+                display: flex;
+            }
+        }
+    }
     @include desktop {
-        line-height: 2.5rem;
-        font-size: 1.8rem;
-        width: 600px;
-    };
-    li {
-        list-style-type: none;
-        padding-left: 30px;
-        line-height: inherit;
-        a {
-            color: $color_btn_hover_green;
-            font-size: 1.2rem;
+        .nw-part3 {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            .money-spend {
+                display: block;
+                flex-shrink: 6;
+            }
+        }
+    }
+    .funding-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: $basic_margin*3;
+        @include desktop {
+            justify-content: flex-end;
+        }
+        .green-btn {
+            padding: 10px;
+            width: 44.666%;
+            margin-right: 2px;
             @include desktop {
-                font-size: 1.4rem;
+                padding: 1.2rem;
+                width: 18%;
             }
         }
     }
 }
-.montessori-archive {
-    border-top: solid 3px $color_btn_green;
-    padding-top: 12px;
-    margin-top: 40px;
-    width: 65%;
-    h3 {
-        @include desktop {
-            width: 600px;
-            font-size: 1.8rem;
-        };
+//School List Section
+.school-list {
+    display: flex;
+    flex-direction: column;
+    .school-img {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 55%;
+            height: 70%;
+        }
     }
 }
-///rotate the arrow and toggle the contents
-.rotate {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+// @include desktop{
+// .school-list{
+//  flex-direction: row-reverse;
+//
+//   }
+//  }
+//Preschools List Section
+.preschools-list {
+    padding: 1px;
+    .target {
+        margin: 0 auto;
+    }
 }
-.toggle {
-    color: green;
-    padding-left: 10px;
+//Enrollment Section
+.enroll {
+    display: flex;
+    flex-direction: column;
+    .enrollment-wrap {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            .guids {
+                flex-shrink: 3.5;
+                padding-right: 1rem;
+            }
+        }
+    }
+    .enroll-block {
+        max-width: 70%;
+        display: flex;
+        margin: 40px auto;
+        flex-direction: column;
+        .enroll-img {
+            margin-bottom: 50px;
+            align-self: center;
+        }
+        .enroll-btn {
+            align-self: center;
+        }
+    }
 }
-.fa-angle-down {
-    color: green;
-    padding-left: 10px;
-}
-/******** Start Resources Section ********/
-
-.main-resources {
-    border-bottom: none;
-    height: 400px;
-    position: relative;
-}
-.green-bt {
-    background-color: $color_btn_green;
-    @include border-radius (6px);
-    letter-spacing: 0.8px;
-    display: block;
-    margin: 60px auto;
-    text-shadow: none;
-    width: 300px;
-    height: 60px;
-    a {
-        font-family:$font_body;
-        font-weight: 700;
-        text-align: center;
-        line-height: 28px;
-        color: #fff;
-        padding: 10px 25px;
-        font-size: 1rem;
+//teacher list Section
+.teacher-list {
+    padding: 2px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        width: 40%;
+        padding: 1.7rem;
+        border-top: solid 3px $color_btn_green;
     }
     @include desktop {
-        width: 400px;
-        height: 65px;
-        font-size: 20px;
-        a {
-            font-size: 1.1rem;
+        flex-direction: column;
+    }
+    .teacher-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include desktop {
+            flex-direction: row;
+        }
+        .teacher-block {
+            flex: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include desktop {
+                max-width: 990px;
+                flex: 1;
+            }
+        }
+        .flip-container {
+            display: block;
+            box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+            background: #aff1d3;
+            border-radius: 50%;
+            .flipper {
+                flex: 1 0 auto;
+                display: flex;
+                width: 50%;
+                position: relative;
+                -webkit-transition: 1.9s;
+                -webkit-transform-style: preserve-3d;
+                -moz-transition: 1.9s;
+                -moz-transform-style: preserve-3d;
+                transition: 1.9s;
+                transform-style: preserve-3d;
+                .teacher_det {
+                    display: block;
+                }
+                p {
+                    font-size: 1rem;
+                    font-style: italic;
+                    line-height: $basic_hline_height*2.4;
+                }
+            }
+            .front {
+                position: absolute;
+                background-size: cover;
+                border-radius: 50%;
+                flex: 2;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .back {
+                border-radius: 50%;
+                position: absolute;
+                width: 125px;
+                text-overflow: ellipsis;
+                height: 125px;
+                text-align: center;
+                right: 3px;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+                @include desktop {
+                    width: 200px;
+                    height: 200px;
+                    right: 4px;
+                    top: 55px;
+                }
+            }
+        }
+        .flip-container.hover .flipper,
+        .flip-container:hover .flipper {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+        .back,
+        .flip-container,
+        .front {
+            width: 125px;
+            height: 125px;
+            @media screen and (min-width: 768px) {
+                width: 190px;
+                height: 190px;
+            }
+            @include desktop {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .back,
+        .front {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .teacher_det {
+            text-align: center;
+            font-size: $font_member_staff;
         }
     }
 }
