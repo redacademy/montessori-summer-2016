@@ -84,7 +84,7 @@ get_header();
 
   <!-- Giant Horizontal Brace and  -->
     <div class="braces-container">
-      <img src="../wp-includes/images/brace.png" style="margin-right: auto; margin-left: auto; width: 1426;" />
+      <img src="../wp-includes/images/brace.png" style="margin-right: auto; margin-left: auto; width: 1420;" />
     </div>
 
     <!-- Circle Stamp -->
@@ -135,6 +135,7 @@ get_header();
           </div>
           <div class="contact-email">
               <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a>
+
           </div>
           <p><?php echo CFS()->get('get_text'); ?></p>
         </article>
@@ -144,5 +145,5 @@ get_header();
 
 
 
-
+<?php  get_sidebar();?>
 <?php get_footer(); ?>

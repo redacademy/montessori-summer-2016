@@ -66,7 +66,7 @@ echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'
 	  	</div>
 </section>
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
-<section id="meetings" class="meeting-minutes">
+<section id="meeting" class="meeting-minutes">
 		  	     <h1>Meeting Minutes</h1>
 	        <div class="meeting-img"> <?php
 output_image('meeting_menutes_img'); ?></div>
@@ -108,10 +108,10 @@ output_image('meeting_menutes_img'); ?></div>
        </div>
        </div>
 			<!-- **********///////////////////////////////////////////////////********** -->
-<?php get_footer(); ?>
 		  </div>
 		  <!-- #about-page -->
+		<?php get_footer(); ?>
 	 </main>
-	 <!-- #main -->
-</div>
+  <!-- #main -->
+ </div>
 <!-- #primary -->

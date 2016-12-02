@@ -23,7 +23,6 @@ get_header(); ?>
 <!-- **********///////////Montessori Daily Schedule/////////////********** -->
 <section class="">
 				<h1>Montessori Daily Schedule</h1>
-<div class="montessori-schedule">
 		<div class="morning">
 			  	<h2>Morning</h2>
 <?php
