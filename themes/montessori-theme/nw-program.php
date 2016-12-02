@@ -23,50 +23,36 @@ get_header(); ?>
 <!-- **********///////////Montessori Daily Schedule/////////////********** -->
 <section>
 				<h1>Montessori Daily Schedule</h1>
-				<div class="buttons">
-    <a  class="showSingle" data-target="1">Option 1</a>
-    <a  class="showSingle" data-target="2">Option 2</a>
+
+		<div class="schedule-menu">
+			<a  class="showSingle" data-target="1"><h2>Morning</h2></a>
+      <a  class="showSingle" data-target="2"><h2>Afternoon</h2></a>
 		</div>
 
-
-	<div id="div1" class="targetDiv">
+          <div class="morning">
+					<div id="div1" class="targetDiv">
 <?php
 $fields = CFS()->get( 'morning' );
-			<div class="schedule-menu">
-		  <a class="showSingle" data-target="1"><h2>Morning</h2></a>
-      <a class="showSingle" data-target="2"><h2>Afternoon</h2></a>
-			</div>
-			<div class="montessori-schedule">
-	       <div class="morning">
-				 <div id="div1" class="targetDiv">
-<?php $fields = CFS()->get( 'morning' );
 foreach ( $fields as $field ) {?>
-
+      	<div class="row">
 			  	<p><?php echo $field['morning-time'];?></p>
 			  	<p> <?php echo $field['morning-action']?> </p>
-
+				</div>
 <?php  } ?>
-  </div>
-
- <div id="div2" class="targetDiv">
-<?php
-$fields = CFS()->get( 'afternoon' );
     	</div>
 			</div>
-	  	  <div class="afternoon">
+	  	 <div class="afternoon">
 				 <div id="div2" class="targetDiv">
-<?php $fields = CFS()->get( 'afternoon' );
+<?php
+$fields = CFS()->get( 'afternoon' );
 foreach ( $fields as $field ) {?>
-
+	     <div class="row">
 				 <p><?php echo $field['afternoon-time'];?></p>
 				 <p> <?php echo $field['afternoon-action']?> </p>
-
+			 </div>
 <?php  } ?>
- </div>
       </div>
-		</div>
-
-			</div>
+		  </div>
 </section>
 
 <!-- **********////////////////////////Funding///////////////////////********** -->
