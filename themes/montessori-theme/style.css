@@ -1850,8 +1850,7 @@ body {
 .about-wrapper {
   margin: 0 auto;
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  max-width: 768px; }
+  padding-right: 1.25rem; }
 
 .about-school {
   border-bottom: solid 3px #4FC8A1;
