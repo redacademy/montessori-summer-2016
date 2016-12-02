@@ -2113,8 +2113,7 @@ label input {
   padding-left: 1.25rem;
   padding-right: 0.9375rem;
   -ms-flex-align: center;
-      align-items: center;
-  background-color: grey; }
+      align-items: center; }
 
 fonts h1,
 h2,
@@ -2272,23 +2271,20 @@ p {
         .funding .funding-btn .green-btn {
           padding: 1.2rem;
           width: 18%; } }
-  .funding .school-list {
+
+.school-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .school-list .school-img {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-    .funding .school-list .school-img {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      .funding .school-list .school-img img {
-        width: 55%;
-        height: 70%;
-        width: 80%;
-        height: 80%; }
-    .funding .school-list .address .phone {
-      font-weight: bolder; }
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .school-list .school-img img {
+      width: 55%;
+      height: 70%; }
 
 .preschools-list {
   padding: 1px; }
