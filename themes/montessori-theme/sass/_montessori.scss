@@ -9,15 +9,14 @@
     margin-left: 30px;
 
 }
-
 .history-title {
-    margin-top: 100px;@include desktop{
-        margin-top:0;
-    };
+    margin-top: 100px;
+    @include desktop{
+        margin-top:30px;
+    }
     margin-bottom: 0;
     flex: 0 90%;
 }
-
 .main-history {
     p:nth-child(4) {
         margin-left: -40%;
@@ -82,7 +81,6 @@
 .active {
     visibility: visible;
 }
-
 .main-philosophy {
     margin: 100px auto;
     min-width: 75%;
@@ -95,7 +93,6 @@
         min-width: 1200px;
         height: 800px;
     }
-
     div {
         width: 100%;
     }
@@ -127,7 +124,6 @@
                 @include rotate(180deg);
             }
         }
-
         .philosophy-img {
             z-index: 2;
             height: auto;
@@ -179,12 +175,10 @@
                 a {
                     font-size: 1.3rem;
                 }
-
                 .show {
                     font-size: 1.4rem;
                     @include visibility(hidden);
                 }
-
                 &:hover {
                     @include visibility(hidden);
                     @include rotate(180deg);
@@ -192,7 +186,6 @@
             }
             position: absolute;
         }
-
         p {
             text-align: left;
             display: inline-block;
@@ -337,7 +330,6 @@
     line-height: 2.4rem;
     font-size: 2rem;
     font-family: $font_title;
-
     li {
         padding-left: 30px;
         line-height: inherit;
@@ -348,13 +340,11 @@
         }
     }
 }
-
 .fa-caret-right {
     cursor: pointer;
     color: $color_btn_hover_green;
     padding-right: 5px;
 }
-
 .the-archive ul {
     width: 450px;
     line-height: 2rem;
@@ -367,6 +357,7 @@
     };
 
     li {
+        list-style-type: none;
         padding-left: 30px;
         line-height: inherit;
 
@@ -400,7 +391,6 @@
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
-
 .toggle {
     color: green;
     padding-left: 10px;
@@ -426,15 +416,14 @@
     text-shadow: none;
     width: 300px;
     height: 60px;
-
     a {
-        font-family: Noto Sans;
-        font-size: 0.8rem;
+        font-family:$font_body;
         font-weight: 700;
         text-align: center;
         line-height: 28px;
         color: #fff;
         padding: 10px 25px;
+        font-size: 1rem;
     }
     @include desktop {
         width: 400px;

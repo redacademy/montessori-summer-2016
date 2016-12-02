@@ -23,19 +23,23 @@ get_header(); ?>
 <!-- **********///////////Montessori Daily Schedule/////////////********** -->
 <section class="">
 				<h1>Montessori Daily Schedule</h1>
+
 		<div class="morning">
-			  	<h2>Morning</h2>
+			<a  class="showSingle" data-target="1"><h2>Morning</h2></a>
+<a  class="showSingle" data-target="2"><h2>Afternoon</h2></a>
+					<div id="div1" class="targetDiv">
 <?php
 $fields = CFS()->get( 'morning' );
 foreach ( $fields as $field ) {?>
-      	<div class="row">
+      	<div class="">
 			  	<p><?php echo $field['morning-time'];?></p>
 			  	<p> <?php echo $field['morning-action']?> </p>
 				</div>
 <?php  } ?>
     	</div>
+			</div>
 	  	 <div class="afternoon">
-         <h2>Afternoon</h2>
+				 <div id="div2" class="targetDiv">
 <?php
 $fields = CFS()->get( 'afternoon' );
 foreach ( $fields as $field ) {?>
@@ -45,8 +49,10 @@ foreach ( $fields as $field ) {?>
 			 </div>
 <?php  } ?>
       </div>
+		</div>
 			</div>
 </section>
+
 <!-- **********////////////////////////Funding///////////////////////********** -->
 	<section id="funding" class="funding">
 				<h1>Funding</h1>
