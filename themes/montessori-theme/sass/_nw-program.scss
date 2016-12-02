@@ -2,406 +2,340 @@
 # NW Program Page
 --------------------------------------------------------------*/
 // General Setting
-
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 .nw-program-wrapper {
-	height: auto;
-	margin: 0 auto;
-	padding-left: $basic_pading * 2;
-	padding-right: $basic_pading * 1.5;
-	align-items: center;
+    height: auto;
+    margin: 0 auto;
+    padding-left: $basic_pading * 2;
+    padding-right: $basic_pading * 1.5;
+    align-items: center;
 }
-
 fonts h1,
 h2,
 h3 {
-	font-family: $font_title;
-	font-weight: normal;
+    font-family: $font_title;
+    font-weight: normal;
 }
-
 h1 {
-	font-size: $h1_size_mob;
-	line-height: 2.625rem;
+    font-size: $h1_size_mob;
+    line-height: 2.625rem;
 }
-
 h3 {
-	font-size: $h2_size_mob;
-	line-height: 1.6875rem;
+    font-size: $h2_size_mob;
+    line-height: 1.6875rem;
 }
-
 p {
-	font-size: 1.625rem;
-	line-height: 2.5rem;
-	font-style: $font_body;
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    font-style: $font_body;
 }
-
 .spcil p {
-	font-size: 1.25rem;
-	line-height: 2.5rem;
-	font-style: $font_main;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-style: $font_main;
 }
-
 .green-btn {
-	background-color: #4FC8A1;
-	color: $white;
-	font-family: "Noto Sans";
-	font-size: 1.25rem;
-	font-weight: normal;
-	text-decoration: none;
+    background-color: #4FC8A1;
+    color: $white;
+    font-family: "Noto Sans";
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-decoration: none;
 }
 // Section Why NW Program Section
-
 .nw-program {
-	border-bottom: solid 3px $color_btn_green;
-	padding-bottom: $basic_margin *4.5;
-	.why-nw {
-		p {
-			display: block;
-			@include desktop {
-				text-align-last: right;
-			}
-		}
-	}
-
-	.nw-img {
-		display: flex;
-		justify-content: center;
-		margin-top: $basic_margin*5.5;
-		margin-bottom: $basic_margin*3;
-	}
+    border-bottom: solid 3px $color_btn_green;
+    padding-bottom: $basic_margin *4.5;
+    .why-nw {
+        p {
+            display: block;
+            @include desktop {
+                text-align-last: right;
+            }
+        }
+    }
+    .nw-img {
+        display: flex;
+        justify-content: center;
+        margin-top: $basic_margin*5.5;
+        margin-bottom: $basic_margin*3;
+    }
 }
 @include desktop {
-	.nw-part1 {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-
-		.why-nw {
-			display: block;
-			flex-shrink: 4;
-			text-align: left;
-		}
-
-		.nw-img {
-			margin-top: 2rem;
-			padding-left: 1rem;
-		}
-	}
+    .nw-part1 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .why-nw {
+            display: block;
+            flex-shrink: 4;
+            text-align: left;
+        }
+        .nw-img {
+            margin-top: 2rem;
+            padding-left: 1rem;
+        }
+    }
 }
-
 // Montessori Daily Schedule Section
-// Montessori Daily Schedule Section
-.row p{
-	display:inline-block;
-	padding:5px;
+.row p {
+    display: inline-block;
+    padding: 5px;
 }
-
-	.schedule-menu{
-		display: flex;
-		justify-content: space-between;
-		// @media screen and (min-width: 768px) {
-		// 	.schedule-menu{
-		// 		display: hide;
-		// 	}
-		// }
+.schedule-menu {
+    display: flex;
+    justify-content: space-between;
+    // @media screen and (min-width: 768px) {
+    //  .schedule-menu{
+    //      display: hide;
+    //  }
+    // }
 }
-	.morning{
-		flex: 100%;
-
-	}
-	.afternoon{
-		flex: 100%;
-	}
-
-
-
+.morning {
+    flex: 100%;
+}
+.afternoon {
+    flex: 100%;
+}
 // Funding Section
 .funding {
-	display: flex;
-	flex-direction: column;
-	margin-top: $basic_margin*3;
-	border-bottom: solid 3px $color_btn_green;
-	padding-bottom: $basic_margin *4.5;
-
-	.funding-det {
-		display: block;
-	}
-
-	.funding-img,
-	.money-spend-img {
-		display: flex;
-		justify-content: center;
-		margin-top: 2rem;
-		@include desktop {
-			margin-top: 0;
-		}
-	}
-
-	.money-spend-img img {
-		@include desktop {
-			padding-right: 4rem;
-			padding-left: 0.4rem;
-		}
-	}
-
-	h2 {
-		text-align: center;
-	}
-
-	.nw-part2 {
-		margin: 0 auto;
-		@include desktop {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-
-			.red-border-container {
-				padding-right: 3.4%;
-				width: 82%;
-				display: flex;
-			}
-		}
-	}
-	@include desktop {
-		.nw-part3 {
-			display: flex;
-			align-items: center;
-			flex-direction: row-reverse;
-			.money-spend {
-				display: block;
-				flex-shrink: 6;
-			}
-		}
-	}
-	.funding-btn {
-		display: flex;
-		justify-content: center;
-		margin-top: $basic_margin*3;
-		@include desktop {
-			justify-content: flex-end;
-		}
-
-		.green-btn {
-			padding: 10px;
-			width: 44.666%;
-			margin-right: 2px;
-			@include desktop {
-				padding: 1.2rem;
-				width: 18%;
-			}
-		}
-	}
+    display: flex;
+    flex-direction: column;
+    margin-top: $basic_margin*3;
+    border-bottom: solid 3px $color_btn_green;
+    padding-bottom: $basic_margin *4.5;
+    .funding-det {
+        display: block;
+    }
+    .funding-img,
+    .money-spend-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        @include desktop {
+            margin-top: 0;
+        }
+    }
+    .money-spend-img img {
+        @include desktop {
+            padding-right: 4rem;
+            padding-left: 0.4rem;
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    .nw-part2 {
+        margin: 0 auto;
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .red-border-container {
+                padding-right: 3.4%;
+                width: 82%;
+                display: flex;
+            }
+        }
+    }
+    @include desktop {
+        .nw-part3 {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            .money-spend {
+                display: block;
+                flex-shrink: 6;
+            }
+        }
+    }
+    .funding-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: $basic_margin*3;
+        @include desktop {
+            justify-content: flex-end;
+        }
+        .green-btn {
+            padding: 10px;
+            width: 44.666%;
+            margin-right: 2px;
+            @include desktop {
+                padding: 1.2rem;
+                width: 18%;
+            }
+        }
+    }
 }
 //School List Section
-
 .school-list {
-	display: flex;
-	flex-direction: column;
-	.school-img {
-		display: flex;
-		justify-content: center;
-		img {
-			width: 55%;
-			height: 70%;
-		}
-	}
+    display: flex;
+    flex-direction: column;
+    .school-img {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 55%;
+            height: 70%;
+        }
+    }
 }
 // @include desktop{
 // .school-list{
-// 	flex-direction: row-reverse;
+//  flex-direction: row-reverse;
 //
 //   }
 //  }
-
 //Preschools List Section
 .preschools-list {
-	padding: 1px;
-	.target {
-		margin: 0 auto;
-	 }
-  }
-
-
+    padding: 1px;
+    .target {
+        margin: 0 auto;
+    }
+}
 //Enrollment Section
-
 .enroll {
-	display: flex;
-	flex-direction: column;
-
-	.enrollment-wrap {
-		@include desktop {
-			display: flex;
-			flex-direction: row;
-
-			.guids {
-				flex-shrink: 3.5;
-				padding-right: 1rem;
-			}
-		}
-	}
-	// .enroll-info {
-	// 	margin-top: 27rem;
-	// 	@media screen and (min-width: 450px) {
-	// 		margin-top: 17rem;
-	// 	}
-	// 	@media screen and (min-width: 640px) {
-	// 		margin-top: 8rem;
-	// 	}
-	// 	@media screen and (min-width: 768px) {
-	// 		margin-top: 5rem;
-	// 	}
-	// 	@include desktop {
-	// 		margin-top: 2rem;
-	// 	}
-	// }
-	.enroll-block {
-		max-width: 70%;
-		display: flex;
-		margin: 40px auto;
-		flex-direction: column;
-
-		.enroll-img {
-			margin-bottom: 50px;
-			align-self: center;
-		}
-
-		.enroll-btn {
-			align-self: center;
-		}
-	}
+    display: flex;
+    flex-direction: column;
+    .enrollment-wrap {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            .guids {
+                flex-shrink: 3.5;
+                padding-right: 1rem;
+            }
+        }
+    }
+    .enroll-block {
+        max-width: 70%;
+        display: flex;
+        margin: 40px auto;
+        flex-direction: column;
+        .enroll-img {
+            margin-bottom: 50px;
+            align-self: center;
+        }
+        .enroll-btn {
+            align-self: center;
+        }
+    }
 }
 //teacher list Section
-
 .teacher-list {
-	padding: 2px;
-	flex-wrap: wrap;
-	display: flex;
-	flex-direction: column;
-
-
-	h1 {
-		width: 40%;
-		padding: 1.7rem;
-		border-top: solid 3px $color_btn_green;
-	}
-	@include desktop {
-		flex-direction: column;
-	}
-
-	.teacher-grid {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		@include desktop {
-			flex-direction: row;
-		}
-
-		.teacher-block {
-			flex: 33%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			@include desktop {
-				max-width: 990px;
-				flex: 1;
-			}
-		}
-
-		.flip-container {
-			display: block;
-			box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
-			background: #aff1d3;
-			border-radius: 50%;
-
-			.flipper {
-				flex: 1 0 auto;
-				display: flex;
-				width: 50%;
-				position: relative;
-				-webkit-transition: 1.9s;
-				-webkit-transform-style: preserve-3d;
-				-moz-transition: 1.9s;
-				-moz-transform-style: preserve-3d;
-				transition: 1.9s;
-				transform-style: preserve-3d;
-
-				.teacher_det {
-					display: block;
-				}
-
-				p {
-					font-size: 1rem;
-					font-style: italic;
-					line-height: $basic_hline_height*2.4;
-				}
-			}
-
-			.front {
-				position: absolute;
-				background-size: cover;
-				border-radius: 50%;
-				flex: 2;
-
-				img {
-					border-radius: 50%;
-				}
-			}
-
-			.back {
-				border-radius: 50%;
-				position: absolute;
-				width: 125px;
-				text-overflow: ellipsis;
-				height: 125px;
-				text-align: center;
-				right: 3px;
-				-webkit-transform: rotateY(180deg);
-				-moz-transform: rotateY(180deg);
-				transform: rotateY(180deg);
-				@include desktop {
-					width: 200px;
-					height: 200px;
-					right: 4px;
-					top: 55px;
-				}
-			}
-		}
-
-		.flip-container.hover .flipper,
-		.flip-container:hover .flipper {
-			-webkit-transform: rotateY(180deg);
-			-moz-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-		}
-
-		.back,
-		.flip-container,
-		.front {
-			width: 125px;
-			height: 125px;
-			@media screen and (min-width: 768px) {
-				width: 190px;
-				height: 190px;
-			}
-			@include desktop {
-				width: 200px;
-				height: 200px;
-			}
-		}
-
-		.back,
-		.front {
-			-webkit-backface-visibility: hidden;
-			-moz-backface-visibility: hidden;
-			backface-visibility: hidden;
-		}
-
-		.teacher_det {
-			text-align: center;
-			font-size: $font_member_staff;
-		}
-	}
+    padding: 2px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        width: 40%;
+        padding: 1.7rem;
+        border-top: solid 3px $color_btn_green;
+    }
+    @include desktop {
+        flex-direction: column;
+    }
+    .teacher-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include desktop {
+            flex-direction: row;
+        }
+        .teacher-block {
+            flex: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include desktop {
+                max-width: 990px;
+                flex: 1;
+            }
+        }
+        .flip-container {
+            display: block;
+            box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+            background: #aff1d3;
+            border-radius: 50%;
+            .flipper {
+                flex: 1 0 auto;
+                display: flex;
+                width: 50%;
+                position: relative;
+                -webkit-transition: 1.9s;
+                -webkit-transform-style: preserve-3d;
+                -moz-transition: 1.9s;
+                -moz-transform-style: preserve-3d;
+                transition: 1.9s;
+                transform-style: preserve-3d;
+                .teacher_det {
+                    display: block;
+                }
+                p {
+                    font-size: 1rem;
+                    font-style: italic;
+                    line-height: $basic_hline_height*2.4;
+                }
+            }
+            .front {
+                position: absolute;
+                background-size: cover;
+                border-radius: 50%;
+                flex: 2;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .back {
+                border-radius: 50%;
+                position: absolute;
+                width: 125px;
+                text-overflow: ellipsis;
+                height: 125px;
+                text-align: center;
+                right: 3px;
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+                @include desktop {
+                    width: 200px;
+                    height: 200px;
+                    right: 4px;
+                    top: 55px;
+                }
+            }
+        }
+        .flip-container.hover .flipper,
+        .flip-container:hover .flipper {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+        .back,
+        .flip-container,
+        .front {
+            width: 125px;
+            height: 125px;
+            @media screen and (min-width: 768px) {
+                width: 190px;
+                height: 190px;
+            }
+            @include desktop {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .back,
+        .front {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .teacher_det {
+            text-align: center;
+            font-size: $font_member_staff;
+        }
+    }
 }
