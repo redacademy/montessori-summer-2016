@@ -65,11 +65,11 @@ $('.showSingle').first().click();
 
 //contact comments
 
-$('.wpcf7-form-control-wrap').submit(function(event){
-         if ($('.wpcf7-form-control-wrap').valid()) {
-             alert('Your message has been sent, thank you!');
-         } else {
-             event.preventDefault();
-         }
-     });
-}(jQuery));
+// $('.wpcf7-form-control-wrap').submit(function(event){
+//          if ($('.wpcf7-form-control-wrap').valid()) {
+//              alert('Your message has been sent, thank you!');
+//          } else {
+//              event.preventDefault();
+//          }
+//      });
+// }(jQuery));

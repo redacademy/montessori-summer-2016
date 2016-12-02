@@ -740,7 +740,7 @@ div .transparent-menu {
       .footer-block-item1 .fa {
         display: inline-block;
         margin-left: 10px;
-        margin-top: -4px;
+        margin-top: 5px;
         padding: 6.2px 8.6px;
         width: 30.6px;
         height: 30.6px;
@@ -1390,26 +1390,26 @@ body {
       background-color: #fff;
       border-radius: 3px;
       padding: 10px 0; }
-      .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
-        width: 300px !important;
-        height: 40px; }
-        .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input input[type=submit] {
-          width: 164px;
-          height: 67px;
-          background-color: #4FC8A1 !important;
-          border-radius: 6px; }
-        @media (min-width: 768px) {
-          .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
-            width: 450px !important;
-            height: 50px; } }
-        .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
-          width: 300px !important;
-          height: 40px;
-          background-color: #FFFFFF;
-          border-radius: 3px; }
 
 b, strong {
   font-weight: normal; }
+
+input [type=submit] {
+  width: 300px !important;
+  height: 40px;
+  width: 164px;
+  height: 67px;
+  background-color: #4FC8A1 !important;
+  border-radius: 6px; }
+  @media (min-width: 768px) {
+    input [type=submit] {
+      width: 450px !important;
+      height: 50px; } }
+  input [type=submit] .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
+    width: 300px !important;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 3px; }
 
 /*--------------------------------------------------------------
 # Montessori
@@ -1445,9 +1445,9 @@ b, strong {
   .main-history .history-img1 {
     display: block; }
     .main-history .history-img1 img {
-      height: 280px;
-      width: 250px;
-      padding-top: 30px;
+      height: 100%;
+      width: 100%;
+      padding-top: 40px;
       float: left; }
     @media (min-width: 768px) {
       .main-history .history-img1 {
@@ -1879,6 +1879,42 @@ b, strong {
   padding-left: 1.25rem;
   padding-right: 1.25rem; }
 
+fonts h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.6875rem; }
+
+p {
+  font-size: 1.625rem;
+  line-height: 1.2rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.spcil p {
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.green-btn {
+  background-color: #4FC8A1;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none; }
+
 .about-school {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 4.875rem; }
@@ -1891,10 +1927,6 @@ b, strong {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  @media (min-width: 768px) {
-    .members-list {
-      -ms-flex-direction: column;
-          flex-direction: column; } }
   .members-list .members-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1992,7 +2024,8 @@ b, strong {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -2031,12 +2064,10 @@ b, strong {
       flex-direction: column;
   padding-bottom: 3.4375rem;
   border-bottom: solid 3px #4FC8A1; }
-  .meeting-minutes .meeting-img {
-    -ms-flex: 100%;
-        flex: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center; }
+  .meeting-minutes .news-img img {
+    width: 100%; }
+  .meeting-minutes form {
+    padding: 2rem; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
@@ -2069,230 +2100,6 @@ label input {
   .archive-sec .arch-block {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
-
-.past-event-wrapper {
-  margin: 0 auto; }
-  .past-event-wrapper .past-event {
-    border-top: 2px solid #248E6A;
-    margin: 0 60px; }
-    .past-event-wrapper .past-event .event-years {
-      font-size: 20px; }
-      .past-event-wrapper .past-event .event-years .year {
-        color: #248E6A; }
-        .past-event-wrapper .past-event .event-years .year ul {
-          color: #000;
-          line-height: 5rem; }
-  @media (min-width: 768px) {
-    .past-event-wrapper {
-      display: none; } }
-
-.support-section {
-  margin: 0 60px; }
-  .support-section .title {
-    border-top: 2px solid #248E6A; }
-  .support-section .image-wrapper {
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
-    .support-section .image-wrapper p {
-      width: 100%;
-      height: 80px;
-      position: absolute;
-      margin-top: 185px;
-      color: #fff;
-      font-size: 24px;
-      background-color: rgba(0, 0, 0, 0.74);
-      text-align: center;
-      padding: 20px; }
-    .support-section .image-wrapper .first-image {
-      margin: 30px;
-      position: relative;
-      display: -ms-flexbox;
-      display: flex;
-      z-index: -1;
-      height: auto; }
-    .support-section .image-wrapper .second-image {
-      margin: 30px;
-      position: relative;
-      display: -ms-flexbox;
-      display: flex;
-      z-index: -1;
-      height: auto; }
-    .support-section .image-wrapper .third-image {
-      margin: 30px;
-      position: relative;
-      display: -ms-flexbox;
-      display: flex;
-      z-index: -1;
-      height: auto; }
-  .support-section .bracket {
-    padding: 0;
-    margin: 10px 0 20px 30px;
-    height: 7rem; }
-    @media (min-width: 768px) {
-      .support-section .bracket {
-        margin: 0;
-        min-width: 16rem;
-        height: 8rem; } }
-    .support-section .bracket img {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      padding-top: 0; }
-      @media (min-width: 768px) {
-        .support-section .bracket img {
-          height: 50px;
-          width: 100%;
-          padding-top: 0;
-          margin-top: 0; } }
-.main-title {
-  padding-left: 2em; }
-
-#involved-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  height: 1200px;
-  border-bottom: 2px solid #4FC8A1;
-  margin-left: 5%;
-  margin-right: 5%; }
-  #involved-container #column-left {
-    -ms-flex: 3;
-        flex: 3;
-    height: 500px;
-    background-color: #FFF;
-    margin-left: 25px;
-    border-right: 3px solid #4FC8A1;
-    border-radius: 5px;
-    margin-bottom: 5em;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  #involved-container #column-right {
-    -ms-flex: 1;
-        flex: 1;
-    background-color: #FFF;
-    margin-right: 25px;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-
-#yearsArchives {
-  text-align: center;
-  padding-left: 40px; }
-
-.title-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1;
-      flex: 1;
-  width: 100%;
-  padding-left: 10%; }
-
-.title-link {
-  width: 270px;
-  height: 120px;
-  font-size: 1.4em;
-  padding-top: 24px;
-  color: #333; }
-
-.involved-title-box {
-  border-radius: 10px;
-  width: 270px;
-  height: 120px;
-  background-color: #AFF1D3;
-  margin-right: 4%;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  text-align: center;
-  padding-top: 20px; }
-  .involved-title-box:hover {
-    background-color: #4FC8A1; }
-
-.interest {
-  width: 280px;
-  height: 60px;
-  border-radius: 10px;
-  background-color: #4FC8A1; }
-
-.green-button {
-  color: #FFF;
-  font-size: 1.5em; }
-
-.full-width-section {
-  display: -ms-flexbox;
-  display: flex;
-  /* works with row or column */
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-  .full-width-section .full-width-section-item {
-    -ms-flex: 1;
-        flex: 1;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-
-#sliderImages {
-  width: 100%;
-  text-align: center; }
-
-.involved-slider {
-  height: 340px;
-  width: 100%;
-  background-color: #FFF; }
-
-#circle-text {
-  vertical-align: middle;
-  color: #FFF; }
-
-#circle-button {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  background-color: #4fc8a1;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  font-family: Asap;
-  line-height: 35px; }
-
-#Donation {
-  width: 100%; }
-
-.donation-button {
-  width: 320px;
-  height: 60px;
-  background-color: #f76072;
-  border-radius: 6px;
-  font-family: "Noto Sans";
-  font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-  line-height: 40px;
-  color: #fff;
-  padding: 10px;
-  box-shadow: none;
-  text-shadow: none;
-  letter-spacing: 0.8px;
-  text-decoration: none; }
-
-.donation-button-group {
-  height: 60px;
-  margin-bottom: 10px; }
-
-.re-btn {
-  margin-right: 60px;
-  float: right; }
-
-.pink-btn {
-  margin-left: 60px;
-  float: left; }
-
-.button-contact-placeholder {
-  width: 100%;
-  height: 250px;
-  text-align: center; }
 
 /*--------------------------------------------------------------
 # NW Program Page
@@ -2378,20 +2185,28 @@ p {
       margin-top: 2rem;
       padding-left: 1rem; } }
 
-.montessori-schedule {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.schedule-menu {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
-  .montessori-schedule p {
-    display: inline-block;
-    padding: 5px; }
-  .montessori-schedule .morning {
-    -ms-flex: 50%;
-        flex: 50%; }
-  .montessori-schedule .afternoon {
-    -ms-flex: 50%;
-        flex: 50%; }
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  @media screen and (min-width: 768px) {
+    .schedule-menu .schedule-menu {
+      display: hide; } }
+
+.row p {
+  display: inline-block;
+  padding: 5px; }
+
+.morning {
+  -ms-flex: 100%;
+      flex: 100%; }
+
+.afternoon {
+  -ms-flex: 100%;
+      flex: 100%; }
 
 .funding {
   display: -ms-flexbox;
@@ -2632,14 +2447,6 @@ p {
     .teacher-list .teacher-grid .teacher_det {
       text-align: center;
       font-size: 1.375rem; }
-
-#div1 {
-  width: 800px;
-  height: 400px; }
-
-#div2 {
-  width: 800px;
-  height: 400px; }
 
 .red-border-container {
   width: 90%;
