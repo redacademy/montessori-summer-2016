@@ -6,57 +6,15 @@
 * {
 	box-sizing: border-box;
 }
+// @media screen and (max-width: 480px) {
+
 .about-wrapper {
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 2;
-}
-
-
-fonts h1,
-h2,
-h3 {
-	font-family: $font_title;
-	font-weight: normal;
-}
-
-h1 {
-	font-size: $h1_size_mob;
-	line-height: 2.625rem;
-}
-
-h2 {
-	font-size: $h2_size_mob;
-	line-height: 2.125rem;
-}
-
-h3 {
-	font-size: $h3_size_mob;
-	line-height: 1.6875rem;
-}
-
-p {
-	font-size: 1.625rem;
-	line-height: $mobile_line_height;
-	font-style: $font_body;
-}
-
-.spcil p {
-	font-size: 1.25rem;
-	line-height: $mobile_line_height;
-	font-style: $font_main;
-}
-
-.green-btn {
-	background-color: #4FC8A1;
-	color: $white;
-	font-family: "Noto Sans";
-	font-size: 1.25rem;
-	font-weight: normal;
-	text-decoration: none;
+	max-width: $desktop_width;
 }
 // about NW School Sectio
-
 .about-school {
 	border-bottom: solid 3px $color_btn_green;
 	padding-bottom: $basic_margin*7.8;
@@ -68,9 +26,9 @@ p {
 	flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
-	// @include desktop {
-	// 	flex-direction: column;
-	// };
+	@include desktop {
+		flex-direction: column;
+	};
 
 	.members-grid {
 		display: flex;
@@ -119,6 +77,7 @@ p {
 					line-height: $basic_hline_height*2.4;
 				}
 			}
+
 			.front {
 				position: absolute;
 				background-size: cover;
@@ -162,10 +121,10 @@ p {
 		.front {
 			width: 125px;
 			height: 125px;
-			@media screen and (min-width: 768px) {
+			@media screen and (min-width: 650px) {
 				width: 190px;
 				height: 190px;
-			}
+			};
 			@include desktop {
 				width: 200px;
 				height: 200px;
@@ -181,7 +140,7 @@ p {
 
 		.members_det {
 			text-align: center;
-			font-size: $font_member_staff;
+			// font-size: $font_member_staff;
 		}
 	}
 }
@@ -201,6 +160,7 @@ p {
 		@include desktop {
 			flex-wrap: nowrap;
 		};
+
 		.members_at_large-name {
 			font-size: $font_member_staff;
 			justify-content: center;
@@ -219,18 +179,23 @@ p {
 	padding-bottom: $basic_margin*5.5;
 	border-bottom: solid 3px $color_btn_green;
 
-	.news-img img {
-		width: 100%;
-	}
-	form{
-    padding: 2rem;
-		input{
-		}
+	.meeting-img  {
+		flex: 100%;
+align-self: center;
 	}
 
 	.red-more {
 		align-self: flex-end;
 	}
+}
+label{
+input{
+	width: 27px;
+  height: 27px;
+  background-color: #fff;
+  border: 3px solid transparent;
+  transition: border-color .2s;
+ }
 }
 // newsLetter Section
 

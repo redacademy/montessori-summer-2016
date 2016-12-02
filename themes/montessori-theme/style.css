@@ -740,7 +740,7 @@ div .transparent-menu {
       .footer-block-item1 .fa {
         display: inline-block;
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: -4px;
         padding: 6.2px 8.6px;
         width: 30.6px;
         height: 30.6px;
@@ -1797,7 +1797,10 @@ body {
       width: 600px; } }
 
 .rotate {
-  transform: rotateY(180deg); }
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg); }
 
 .toggle {
   color: green;
@@ -1805,8 +1808,7 @@ body {
 
 .fa-angle-down {
   color: green;
-  padding-left: 10px;
-  cursor: pointer; }
+  padding-left: 10px; }
 
 /******** Start Resources Section ********/
 .main-resources {
@@ -1848,43 +1850,8 @@ body {
 .about-wrapper {
   margin: 0 auto;
   padding-left: 1.25rem;
-  padding-right: 1.25rem; }
-
-fonts h1,
-h2,
-h3 {
-  font-family: "Asap", sans-serif;
-  font-weight: normal; }
-
-h1 {
-  font-size: 2.6rem;
-  line-height: 2.625rem; }
-
-h2 {
-  font-size: 1.8rem;
-  line-height: 2.125rem; }
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.6875rem; }
-
-p {
-  font-size: 1.625rem;
-  line-height: 1.2rem;
-  font-style: "Noto Sans", sans-serif; }
-
-.spcil p {
-  font-size: 1.25rem;
-  line-height: 1.2rem;
-  font-style: "Noto Sans", sans-serif; }
-
-.green-btn {
-  background-color: #4FC8A1;
-  color: #fff;
-  font-family: "Noto Sans";
-  font-size: 1.25rem;
-  font-weight: normal;
-  text-decoration: none; }
+  padding-right: 1.25rem;
+  max-width: 768px; }
 
 .about-school {
   border-bottom: solid 3px #4FC8A1;
@@ -1898,6 +1865,10 @@ p {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  @media (min-width: 768px) {
+    .members-list {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .members-list .members-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1978,7 +1949,7 @@ p {
     .members-list .members-grid .front {
       width: 125px;
       height: 125px; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 650px) {
         .members-list .members-grid .back,
         .members-list .members-grid .flip-container,
         .members-list .members-grid .front {
@@ -1995,8 +1966,7 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center;
-      font-size: 1.375rem; }
+      text-align: center; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -2035,13 +2005,22 @@ p {
       flex-direction: column;
   padding-bottom: 3.4375rem;
   border-bottom: solid 3px #4FC8A1; }
-  .meeting-minutes .news-img img {
-    width: 100%; }
-  .meeting-minutes form {
-    padding: 2rem; }
+  .meeting-minutes .meeting-img {
+    -ms-flex: 100%;
+        flex: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
+
+label input {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  border: 3px solid transparent;
+  transition: border-color .2s; }
 
 .newsLetter {
   display: -ms-flexbox;
@@ -2127,17 +2106,6 @@ p {
   padding-top: 20px; }
   .involved-title-box:hover {
     background-color: #4FC8A1; }
-
-blockquote {
-  font-size: 1.1em;
-  border-left: 10px solid #D93B57;
-  padding-left: 20px;
-  height: 3em; }
-  blockquote blockquote p {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column;
-        flex-flow: column; }
 
 .interest {
   width: 280px;
@@ -2310,21 +2278,20 @@ p {
       margin-top: 2rem;
       padding-left: 1rem; } }
 
-@media (min-width: 768px) {
-  .montessori-schedule {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-    .montessori-schedule p {
-      display: inline-block;
-      padding: 5px; }
-    .montessori-schedule .morning {
-      -ms-flex: 50%;
-          flex: 50%; }
-    .montessori-schedule .afternoon {
-      -ms-flex: 50%;
-          flex: 50%; } }
+.montessori-schedule {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .montessori-schedule p {
+    display: inline-block;
+    padding: 5px; }
+  .montessori-schedule .morning {
+    -ms-flex: 50%;
+        flex: 50%; }
+  .montessori-schedule .afternoon {
+    -ms-flex: 50%;
+        flex: 50%; }
 
 .funding {
   display: -ms-flexbox;
@@ -2410,10 +2377,8 @@ p {
     -ms-flex-pack: center;
         justify-content: center; }
     .school-list .school-img img {
-      width: 80%;
-      height: 80%; }
-    .school-list .school-img .address .phone {
-      font-weight: bolder; }
+      width: 55%;
+      height: 70%; }
 
 .preschools-list {
   padding: 1px; }
@@ -2565,7 +2530,8 @@ p {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .teacher-list .teacher-grid .teacher_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .red-border-container {
   width: 90%;

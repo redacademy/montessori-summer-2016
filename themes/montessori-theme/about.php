@@ -68,9 +68,8 @@ echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'
 		<!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
 <section id="meetings" class="meeting-minutes">
 		  	     <h1>Meeting Minutes</h1>
-	        <div class="meeting-img"><?php
-	$src = wp_get_attachment_image_src($field['meeting_menutes_img'], 'small');
-  echo '<img src="' . $src[0] . '" />'; ?></div>
+	        <div class="meeting-img"> <?php
+output_image('meeting_menutes_img'); ?></div>
           <div class="event-date">
   <?php echo '<p>'.CFS()->get( 'date_event' ).'</p>'; ?>
          </div>
@@ -79,7 +78,7 @@ echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'
   <?php
   foreach($fields as $field)
   { ?>
-         <lable  class="meeting-checkbox" action="event-checkbox" method="get">
+         <lable   action="event-checkbox" method="get">
            <input type="checkbox" >
 	<?php
   echo $field['plans']; ?>
@@ -103,9 +102,11 @@ echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'
 	  	  </div>
         <div class="arch-block">
 	        <h1>Archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
+					  <div id="target" class="the-archive">
           <a href="#" class="target"><?php get_sidebar(); ?></a>
+			 </div>
        </div>
-	     </div>
+       </div>
 			<!-- **********///////////////////////////////////////////////////********** -->
 <?php get_footer(); ?>
 		  </div>
