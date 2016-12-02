@@ -6,7 +6,6 @@ jQuery(document).ready(function( $ ) {
 //  TO HOVER ACTIVE THE ACTIVE LINK :
 // --------------------------------------------------------------
 
-
   $('.secondary li a').click(function(){
       $(this).parent().addClass('active').siblings().removeClass('active');
   });
@@ -30,6 +29,7 @@ jQuery(document).ready(function( $ ) {
       });
     });
     });
+
   ///------ Toogle the Archive contents and flib the arrow-----///
   $('.toggle').click(function() {
   $('#target').slideToggle('1000');
@@ -37,6 +37,7 @@ jQuery(document).ready(function( $ ) {
       $(this).toggleClass("rotate");
   });
   });
+
   ///--------------///
   $(document).ready(function(){
       // On scroll pages on mobile size
@@ -51,11 +52,21 @@ var $screenWidth = $( document ).width()
               else {
                   $navWrapper.removeClass("transparent-menu");
               }};
+
 });
 
 // --------------------------------------------------------------
 
 //  "Get Involved": Function for displaying post id
+
+})
+// Montessori Schedule for mobile size
+$('.showSingle').on('click', function () {
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $('.targetDiv').hide();
+    $('#div' + $(this).data('target')).show();
+});
+$('.showSingle').first().click();
 
 // ----------------------------------------------------------------
   // hide all content initially except first child
@@ -88,3 +99,14 @@ var $screenWidth = $( document ).width()
     });
   });
 });
+
+contact comments
+
+$('.wpcf7-form-control-wrap').submit(function(event){
+         if ($('.wpcf7-form-control-wrap').valid()) {
+             alert('Your message has been sent, thank you!');
+         } else {
+             event.preventDefault();
+         }
+     });
+}(jQuery));

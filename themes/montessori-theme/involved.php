@@ -93,12 +93,20 @@ get_header();
     <!-- Circle Stamp -->
     <!-- <img src="" /> -->
 
+<section id="support-now" class="support-section container">
+      <div class="title">
+        <h1>Support Now</h1>
+        <h3>Did You Know ...</h3>
     <!-- conflicting scss - not matching with values in _involved.scss  using inline-->
     <div style="width: 100%;">
       <div id="circle-button" style="width: 300px;
       height: 300px; border-radius: 150px; background-color: #4FC8A1; padding-top: 60px;">
         <a id="circle-text" class="circle-link" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" style="color: FFF;">your<br />involvement<br />+<br />contribution</a>
         <p><?php echo CFS()->get('get_text'); ?></p>
+<section id="support-now" class="support-section container">
+      <div class="title">
+        <h1>Support Now</h1>
+        <h3>Did You Know ...</h3>
       </div>
     </div>
 

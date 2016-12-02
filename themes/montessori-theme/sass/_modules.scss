@@ -8,7 +8,6 @@
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-
 	&:focus {
 		background-color: $color_btn_hover_pink;
 		border-radius: 3px;
@@ -29,7 +28,6 @@
 		/* Above WP toolbar. */
 	}
 }
-
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -38,7 +36,6 @@
 	float: left;
 	margin-right: $base_spacing_normal;
 }
-
 .alignright {
 	display: inline;
 	float: right;

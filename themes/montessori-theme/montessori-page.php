@@ -1,5 +1,5 @@
 
-
+<!-- 'What Is Montessori' Page -->
 <?php
 /**
  * The header for our theme.
@@ -42,9 +42,7 @@ echo $histor;
   </div>
 </div>
     </section>
-
 <!-- Philosophy Section  -->
-
 <section id="philosophy" class="philosophys-section ">
  <div class="main-philosophy content-wrapper">
    <div><h1>Philosophy</h1></div>
@@ -70,9 +68,7 @@ foreach($fields as $field)
   } ?>
  </div>
    </section>
-
 <!-- Start our Benefits -->
-
 <section id="benefits-of-montessori" class="benefits-section ">
 <div class="main-benefits content-wrapper">
 <h1>Benefits of Montessori</h1>
@@ -113,7 +109,6 @@ foreach($fields as $field)
 <!-- End our Benefits -->
 
 <!-- Start Materials Section  -->
-
 <section id="materials" class="materials-section ">
   <div class="main-materials content-wrapper">
 <?php
@@ -140,7 +135,6 @@ foreach($fields as $field)
     <div id="#"><a href=""></a></div>
   </div>
   </div>
-
 </section>
 <!-- Resources Section  -->
 <section id= "resources" class="container ">
@@ -179,12 +173,10 @@ foreach($fields as $field)
   </div>
   </div>
 </div>
-
   <!--the button-->
 <div>
 <button class="green-bt"><a href="<?php the_permalink(15); ?>">NW Montessori Program</a></button>
 </div>
-
 </section>
 <?php
-get_footer(); ?> 
+get_footer(); ?>

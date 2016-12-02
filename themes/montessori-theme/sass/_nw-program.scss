@@ -6,14 +6,13 @@
 * {
 	box-sizing: border-box;
 }
-// @media screen and (max-width: 480px) {
-
 .nw-program-wrapper {
 	height: auto;
 	margin: 0 auto;
 	padding-left: $basic_pading * 2;
 	padding-right: $basic_pading * 1.5;
 	align-items: center;
+
 }
 
 fonts h1,
@@ -28,13 +27,8 @@ h1 {
 	line-height: 2.625rem;
 }
 
-h2 {
-	font-size: $h2_size_mob;
-	line-height: 2.125rem;
-}
-
 h3 {
-	font-size: $h3_size_mob;
+	font-size: $h2_size_mob;
 	line-height: 1.6875rem;
 }
 
@@ -100,20 +94,51 @@ p {
 
 // Montessori Daily Schedule Section
 .montessori-schedule{
-	display:inline-flex;
-	flex-direction: row;
-	p{
+
+	#div1 .targetDiv{
+  width:400px;
+  height:700px;
+	background-color: red;
+}
+#div2 .targetDiv{
+  width:400px;
+  height:700px;
+	background-color: green;
+}
+// 	display:inline-flex;
+// 	flex-direction: row;
+// 	p{
+// 		display:inline-block;
+// 		padding:5px;
+// }
+// 	.morning{
+// 		flex: 50%;
+// 	}
+// 	.afternoon{
+// 		flex: 50%;
+// 	}
+}
+	.schedule-menu{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		@media screen and (min-width: 768px) {
+			.schedule-menu{
+				display: hide;
+			}
+		}
+	}
+	.row p{
 		display:inline-block;
 		padding:5px;
-}
+	}
 	.morning{
-		flex: 50%;
+		flex: 100%;
+
 	}
 	.afternoon{
-		flex: 50%;
+		flex: 100%;
 	}
-}
-
 
 // Funding Section
 .funding {
@@ -203,6 +228,11 @@ p {
 		img {
 			width: 55%;
 			height: 70%;
+			width: 80%;
+			height: 80%;
+		}
+		.address .phone {
+			font-weight: bolder;
 		}
 	}
 }
@@ -247,9 +277,9 @@ p {
 	// 	@media screen and (min-width: 640px) {
 	// 		margin-top: 8rem;
 	// 	}
-	// 	@media screen and (min-width: 768px) {
-	// 		margin-top: 5rem;
-	// 	}
+		// @media screen and (min-width: 768px) {
+		// 	margin-top: 5rem;
+		// }
 	// 	@include desktop {
 	// 		margin-top: 2rem;
 	// 	}
@@ -264,7 +294,6 @@ p {
 			margin-bottom: 50px;
 			align-self: center;
 		}
-
 		.enroll-btn {
 			align-self: center;
 		}
@@ -388,14 +417,12 @@ p {
 				height: 200px;
 			}
 		}
-
 		.back,
 		.front {
 			-webkit-backface-visibility: hidden;
 			-moz-backface-visibility: hidden;
 			backface-visibility: hidden;
 		}
-
 		.teacher_det {
 			text-align: center;
 			font-size: $font_member_staff;
