@@ -1,4 +1,5 @@
 
+<!-- 'What Is Montessori' Page -->
 <?php
 /**
  * The header for our theme.
@@ -41,9 +42,7 @@ echo $histor;
   </div>
 </div>
     </section>
-
 <!-- Philosophy Section  -->
-
 <section id="philosophy" class="philosophys-section ">
  <div class="main-philosophy content-wrapper">
    <div><h1>Philosophy</h1></div>
@@ -69,9 +68,7 @@ foreach($fields as $field)
   } ?>
  </div>
    </section>
-
 <!-- Start our Benefits -->
-
 <section id="benefits-of-montessori" class="benefits-section ">
 <div class="main-benefits content-wrapper">
 <h1>Benefits of Montessori</h1>
@@ -112,7 +109,6 @@ foreach($fields as $field)
 <!-- End our Benefits -->
 
 <!-- Start Materials Section  -->
-
 <section id="materials" class="materials-section ">
   <div class="main-materials content-wrapper">
 <?php
@@ -139,7 +135,6 @@ foreach($fields as $field)
     <div id="#"><a href=""></a></div>
   </div>
   </div>
-
 </section>
 <!-- Resources Section  -->
 <section id= "resources" class="container ">
@@ -153,22 +148,17 @@ foreach($fields as $field)
     <ul>
       learn more about montessori history
       <div class="">
-    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
-echo get_page_link(get_page_by_title()->ID); ?>">Montessori FAQ</a></li>
-<li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
-echo get_page_link(get_page_by_title()->ID); ?>">Montessori education</a></li>
-<li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
-echo get_page_link(get_page_by_title()->ID); ?>">Maria Montessori A Brief Biography</a></li></div>
+    <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php the_permalink(); ?>">Montessori FAQ</a></li>
+<li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php the_permalink(); ?>">Montessori education</a></li>
+<li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php the_permalink(); ?>">Maria Montessori A Brief Biography</a></li></div>
 </ul>
 <ul>
   Learn more about Montessory Materials
-  <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
-echo get_page_link(get_page_by_title()->ID); ?>">A look at the binomial cube</a></li>
+  <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php the_permalink(); ?>">A look at the binomial cube</a></li>
 </ul>
 <ul>
   Learn more about Montessory Philosophy
-  <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php
-echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
+  <li><i class="fa fa-caret-right" aria-hidden="true"></i><a href="<?php the_permalink(); ?>">Montessori Philosophy</a></li>
 </ul>
 </div>
 <div class="montessori-archive">
@@ -183,13 +173,10 @@ echo get_page_link(get_page_by_title()->ID); ?>">Montessori Philosophy</a></li>
   </div>
   </div>
 </div>
-
   <!--the button-->
 <div>
-<button class="green-bt"><a href="<?php
-echo get_page_link(get_page_by_title(nw-program)->ID); ?>">NW Montessori Program</a></button>
+<button class="green-bt"><a href="<?php the_permalink(15); ?>">NW Montessori Program</a></button>
 </div>
-
 </section>
 <?php
 get_footer(); ?>

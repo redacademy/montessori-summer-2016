@@ -8,6 +8,10 @@
     margin-left: 30px;
 }
 .history-title {
+    margin-top: 100px;
+    @include desktop{
+        margin-top:30px;
+    }
     margin-bottom: 0;
     flex: 0 90%;
 }
@@ -38,9 +42,11 @@
             display: block;
             margin-top: 100px;
             align-self: flex-end;
-            width: 430px;
-            height: 500px;
             padding-bottom: 100px;
+            img{
+              width: 430px;
+              height: 500px;
+            }
         }
     }
 }
@@ -322,6 +328,7 @@
         width: 600px;
     };
     li {
+        list-style-type: none;
         padding-left: 30px;
         line-height: inherit;
         a {
@@ -346,7 +353,10 @@
 }
 ///rotate the arrow and toggle the contents
 .rotate {
-    @include rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 .toggle {
     color: green;
@@ -355,7 +365,6 @@
 .fa-angle-down {
     color: green;
     padding-left: 10px;
-    cursor: pointer;
 }
 /******** Start Resources Section ********/
 .main-resources {
@@ -373,13 +382,13 @@
     width: 300px;
     height: 60px;
     a {
-        font-family: Noto Sans;
-        font-size: 0.8rem;
+        font-family:$font_body;
         font-weight: 700;
         text-align: center;
         line-height: 28px;
         color: #fff;
         padding: 10px 25px;
+        font-size: 1rem;
     }
     @include desktop {
         width: 400px;

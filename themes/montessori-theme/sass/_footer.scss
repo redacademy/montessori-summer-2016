@@ -133,11 +133,12 @@
         padding: 33px 0 40px;
     }
     p {
+      color:#d3e0de;
         margin: 0;
         height: 40px;
         font-size: 1.1rem;
         @include desktop {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     }
 }
@@ -163,12 +164,15 @@
             margin: 0;
         }
         li {
-            line-height: 2rem;
-            font-size: 1.2rem;
-        }
+          color:#d3e0de;
+    list-style-type: none;
+    line-height: 2rem;
+
+}
         a {
+          font-size: 1.3rem;
+          color:#d3e0de;
             cursor: pointer;
-            color: $white;
         }
         a:hover {
             color: $color_btn_hover_green;

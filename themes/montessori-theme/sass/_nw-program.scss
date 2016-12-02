@@ -179,6 +179,7 @@ p {
 		display: flex;
 		justify-content: center;
 		img {
+<<<<<<< HEAD
 			width: 80%;
 			height: 80%;
 		}
@@ -192,8 +193,10 @@ p {
 	padding: 1px;
 	.target {
 		margin: 0 auto;
-	}
-}
+	 }
+  }
+
+
 //Enrollment Section
 .enroll {
 	display: flex;
@@ -349,7 +352,17 @@ p {
 		}
 		.teacher_det {
 			text-align: center;
-			// font-size: $font_member_staff;
+			font-size: $font_member_staff;
 		}
 	}
+}
+////schedule section ////
+
+#div1{
+  width:800px;
+  height:400px;
+}
+#div2{
+  width:800px;
+  height:400px;
 }
