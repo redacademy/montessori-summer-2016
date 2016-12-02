@@ -431,7 +431,7 @@
                     transform-style: preserve-3d;
                     @include border-radius(10px);
                     &:hover {
-                        @include visibility(hidden);
+                         visibility:hidden;
                         @include rotate(180deg);
                     }
                 }
@@ -488,7 +488,6 @@
                         }
                     }
                     .btn {
-                        text-align: center;
                         display: inline-block;
                         text-align: center;
                         color: #248E6A;

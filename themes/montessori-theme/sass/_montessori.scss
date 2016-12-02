@@ -7,9 +7,13 @@
     width: 100%;
     flex-wrap: wrap;
     margin-left: 30px;
+
 }
 
 .history-title {
+    margin-top: 100px;@include desktop{
+        margin-top:0;
+    };
     margin-bottom: 0;
     flex: 0 90%;
 }
@@ -28,9 +32,9 @@
        display: block;
 
         img {
-          height:100%;
-          width:100%;
-            padding-top: 40px;
+          height:280px;
+          width:250px;
+            padding-top: 30px;
             float: left;
         }
         @include desktop {

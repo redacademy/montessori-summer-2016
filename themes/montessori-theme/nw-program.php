@@ -180,3 +180,4 @@ foreach ( $fields as $field ) {?>
 <!-- #main -->
 </div>
 <!-- #primary -->
+  <?php get_footer(); ?>
