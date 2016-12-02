@@ -113,47 +113,44 @@ get_header();
 
     <!-- Two buttons on the bottom of the page -->
     <section id="Donation">
-        <div class="donation-button-group">
-          <a class="pink-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
-          <a class="re-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
-        </div>
-        <div class="contact-group">
 
-        <article class="contact-container">
-          <div class="contact-person" style="width: 100px; height: 100px;">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a>
+          <div class="donation-button-group">
+            <a class="pink-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
+            <a class="re-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
           </div>
-          <div class="contact-online">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a>
-          </div>
-          <div class="contact-email">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a>
-          </div>
-          <p><?php echo CFS()->get('get_text'); ?></p>
-        </article>
 
-        <!-- <div class="button-contact-placeholder"> -->
-          <!-- placeholder image -->
-          <!-- <img src="../wp-includes/images/buttons-placeholder.png" /> -->
-        <!-- </div> -->
-
-        <article class="contact-container">
-          <div class="contact-person">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a>
+          <!-- Hidden div for button groups -->
+          <div class="involved-options-donations">
+            <h1>Donations</h1>
+            <article class="contact-container">
+              <div class="contact-person">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a>
+              </div>
+              <div class="contact-online">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a>
+              </div>
+              <div class="contact-email">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a>
+              </div>
+              <p><?php echo CFS()->get('get_text'); ?></p>
+            </article>
           </div>
-          <div class="contact-online">
-             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a>
+
+          <div class="involved-options-volunteer">
+            <article class="contact-container">
+              <div class="contact-person">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a>
+              </div>
+              <div class="contact-online">
+                 <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a>
+              </div>
+              <div class="contact-email">
+                  <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a>
+              </div>
+              <p><?php echo CFS()->get('get_text'); ?></p>
+            </article>
           </div>
-          <div class="contact-email">
-              <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a>
-
-          </div>
-          <p><?php echo CFS()->get('get_text'); ?></p>
-        </article>
-      </div>
-    </section>
-
-
+      </section>
 
 
 <!-- <?php  get_sidebar();?> -->

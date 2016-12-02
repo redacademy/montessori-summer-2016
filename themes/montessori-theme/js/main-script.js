@@ -110,3 +110,32 @@ $('.wpcf7-form-control-wrap').submit(function(event){
          }
      });
 }(jQuery));
+
+ // last Green buttons on the main involved file showing three option.
+ (function(){
+     //show and hide functions for volunteer and donations
+     var donationBox = $('.involved-options-donations ');
+     var volunteerBox = $('.involved-options-volunteer ');
+     $('.pink-btn').on("click", function(e){
+       e.preventDefault();
+       if (donationBox.css('display') == 'none' && volunteerBox.css('display') == 'none') {
+         donationBox.show();
+       } else if (donationBox.css('display') == 'none' && volunteerBox.css('display') == 'block') {
+         volunteerBox.hide();
+         donationBox.show();
+       } else {
+         return;
+       }
+     });
+     $('.re-btn').on("click", function(e){
+       e.preventDefault();
+       if (donationBox.css('display') == 'none' && volunteerBox.css('display') == 'none') {
+         volunteerBox.show();
+       } else if (volunteerBox.css('display') == 'none' && donationBox.css('display') == 'block') {
+         donationBox.hide();
+         volunteerBox.show();
+       } else {
+         return;
+         }
+     });
+   })();
