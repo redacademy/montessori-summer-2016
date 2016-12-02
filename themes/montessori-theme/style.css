@@ -2101,6 +2101,233 @@ label input {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
 
+<<<<<<< HEAD
+=======
+.main-title {
+  padding-left: 2em; }
+.past-event-wrapper {
+  margin: 0 auto; }
+  .past-event-wrapper .past-event {
+    border-top: 2px solid #248E6A;
+    margin: 0 60px; }
+    .past-event-wrapper .past-event .event-years {
+      font-size: 20px; }
+      .past-event-wrapper .past-event .event-years .year {
+        color: #248E6A; }
+        .past-event-wrapper .past-event .event-years .year ul {
+          color: #000;
+          line-height: 5rem; }
+  @media (min-width: 768px) {
+    .past-event-wrapper {
+      display: none; } }
+
+.support-section {
+  margin: 0 60px; }
+  .support-section .title {
+    border-top: 2px solid #248E6A; }
+  .support-section .image-wrapper {
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .support-section .image-wrapper p {
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      margin-top: 185px;
+      color: #fff;
+      font-size: 24px;
+      background-color: rgba(0, 0, 0, 0.74);
+      text-align: center;
+      padding: 20px; }
+    .support-section .image-wrapper .first-image {
+      margin: 30px;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: -1;
+      height: auto; }
+    .support-section .image-wrapper .second-image {
+      margin: 30px;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: -1;
+      height: auto; }
+    .support-section .image-wrapper .third-image {
+      margin: 30px;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: -1;
+      height: auto; }
+  .support-section .bracket {
+    padding: 0;
+    margin: 10px 0 20px 30px;
+    height: 7rem; }
+    @media (min-width: 768px) {
+      .support-section .bracket {
+        margin: 0;
+        min-width: 16rem;
+        height: 8rem; } }
+    .support-section .bracket img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding-top: 0; }
+      @media (min-width: 768px) {
+        .support-section .bracket img {
+          height: 50px;
+          width: 100%;
+          padding-top: 0;
+          margin-top: 0; } }
+.main-title {
+  padding-left: 2em; }
+
+#involved-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: 1200px;
+  border-bottom: 2px solid #4FC8A1;
+  margin-left: 5%;
+  margin-right: 5%; }
+  #involved-container #column-left {
+    -ms-flex: 3;
+        flex: 3;
+    height: 500px;
+    background-color: #FFF;
+    margin-left: 25px;
+    border-right: 3px solid #4FC8A1;
+    border-radius: 5px;
+    margin-bottom: 5em;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  #involved-container #column-right {
+    -ms-flex: 1;
+        flex: 1;
+    background-color: #FFF;
+    margin-right: 25px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+#yearsArchives {
+  text-align: center;
+  padding-left: 40px; }
+
+.title-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  width: 100%;
+  padding-left: 10%; }
+
+.title-link {
+  width: 270px;
+  height: 120px;
+  font-size: 1.4em;
+  padding-top: 24px;
+  color: #333; }
+
+.involved-title-box {
+  border-radius: 10px;
+  width: 270px;
+  height: 120px;
+  background-color: #AFF1D3;
+  margin-right: 4%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  padding-top: 20px; }
+  .involved-title-box:hover {
+    background-color: #4FC8A1; }
+
+.interest {
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4FC8A1; }
+
+.green-button {
+  color: #FFF;
+  font-size: 1.5em; }
+
+.full-width-section {
+  display: -ms-flexbox;
+  display: flex;
+  /* works with row or column */
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .full-width-section .full-width-section-item {
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+#sliderImages {
+  width: 100%;
+  text-align: center; }
+
+.involved-slider {
+  height: 340px;
+  width: 100%;
+  background-color: #FFF; }
+
+#circle-text {
+  vertical-align: middle;
+  color: #FFF; }
+
+#circle-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #4fc8a1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: Asap;
+  line-height: 35px; }
+
+#Donation {
+  width: 100%; }
+
+.donation-button {
+  width: 320px;
+  height: 60px;
+  background-color: #f76072;
+  border-radius: 6px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  padding: 10px;
+  box-shadow: none;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+  text-decoration: none; }
+
+.donation-button-group {
+  height: 60px;
+  margin-bottom: 10px; }
+
+.re-btn {
+  margin-right: 60px;
+  float: right; }
+
+.pink-btn {
+  margin-left: 60px;
+  float: left; }
+
+.button-contact-placeholder {
+  width: 100%;
+  height: 250px;
+  text-align: center; }
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
