@@ -54,4 +54,4 @@ themes/montessori-theme/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/montessori-theme/build/*
+themes/montessori-theme/build/* 

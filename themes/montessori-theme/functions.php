@@ -92,7 +92,9 @@ function montessori_scripts() {
 	wp_enqueue_script( 'montessori-font-awesome','https://use.fontawesome.com/d45ec2d9ad.js', array(), false);
 	wp_enqueue_style( 'montessori-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'montessori-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+
+
+  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 
     }

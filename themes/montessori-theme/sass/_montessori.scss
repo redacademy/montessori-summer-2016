@@ -2,7 +2,6 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
-
 .history-content {
     width: 100%;
     flex-wrap: wrap;
@@ -26,12 +25,11 @@
     }
     @include flex(flex-end,space-between);
     .history-img1 {
-       display: block;
-
+        display: block;
         img {
-          height:280px;
-          width:250px;
-            padding-top: 30px;
+            height: 100%;
+            width: 100%;
+            padding-top: 40px;
             float: left;
         }
         @include desktop {
@@ -52,7 +50,6 @@
         }
     }
 }
-
 .history-content {
     blockquote {
         text-align: left;
@@ -72,7 +69,6 @@
     }
 }
 ////************philosophy Section ************/////
-
 .active {
     visibility: visible;
 }
@@ -206,7 +202,6 @@
 }
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
-
 .main-materials div:nth-of-type(3) {
     @include desktop {
         flex-direction: row-reverse;
@@ -262,7 +257,6 @@
     }
 }
 /////*Start Benefits Section**/////
-
 .benefits li {
     list-style-type: disc;
     @include desktop {};
@@ -304,7 +298,6 @@
     }
 }
 ///Archive and rescourses sections////
-
 .the-archive ul {
     width: 500px;
     line-height: 2.4rem;
@@ -360,7 +353,6 @@
     }
 }
 ///rotate the arrow and toggle the contents
-
 .rotate {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);

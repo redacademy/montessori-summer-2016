@@ -24,7 +24,7 @@ get_header();
               <!-- Check for titles and loop -->
               <!-- JQUERY in main js file -->
             <?php while ($query-> have_posts() ) : $query->the_post(); ?>
-              <div id="<?php echo get_the_ID(); ?>" class="involved-title-box">
+              <div data-related="<?php echo get_the_ID(); ?>" class="involved-title-box">
 
               <!-- Link tag -->
                 <a class="title-link" href="#"><?php the_title(); ?></a>
@@ -35,7 +35,7 @@ get_header();
 
         <div id="allPosts">
           <?php while ($query-> have_posts() ) : $query->the_post(); ?>
-          <div id="post-<?php echo $id; ?>">
+          <div id="<?php echo $id; ?>" data-id="<?php echo $id; ?>" class="post-content">
               <div class="involved-content">
                 <?php the_content('involved_content');?>
               </div>
@@ -49,11 +49,14 @@ get_header();
       <button class="interest">
         <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Express your interest</a>
       </button>
+      <button id="involved-interview" class="interest">
+        <a class="green-button" href="<?php echo esc_url(the_permalink()); ?>">Express your interest</a>
+      </button>
     </section>
 
     <section id="involved-support-now">
       <div class="text-shadow">
-        <h3>Support Now</h2>
+        <h3>Support Now</h3>
       </div>
       <div class="banner_post">
         <h3> Did you Know.... </h2>
@@ -90,60 +93,65 @@ get_header();
     <!-- Circle Stamp -->
     <!-- <img src="" /> -->
 
+<section id="support-now" class="support-section container">
+      <div class="title">
+        <h1>Support Now</h1>
+        <h3>Did You Know ...</h3>
     <!-- conflicting scss - not matching with values in _involved.scss  using inline-->
     <div style="width: 100%;">
       <div id="circle-button" style="width: 300px;
       height: 300px; border-radius: 150px; background-color: #4FC8A1; padding-top: 60px;">
         <a id="circle-text" class="circle-link" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" style="color: FFF;">your<br />involvement<br />+<br />contribution</a>
         <p><?php echo CFS()->get('get_text'); ?></p>
+<section id="support-now" class="support-section container">
+      <div class="title">
+        <h1>Support Now</h1>
+        <h3>Did You Know ...</h3>
       </div>
     </div>
 
 
     <!-- Two buttons on the bottom of the page -->
     <section id="Donation">
-        <div class="donation-button-group">
-          <a class="pink-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
-          <a class="re-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
-        </div>
-        <div class="contact-group">
 
-        <article class="contact-container">
-          <div class="contact-person" style="width: 100px; height: 100px;">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a>
+          <div class="donation-button-group">
+            <a class="pink-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Make a donation</a>
+            <a class="re-btn donation-button" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Become a Volunteer</a>
           </div>
-          <div class="contact-online">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a>
+
+          <!-- Hidden div for button groups -->
+          <div class="involved-options-donations">
+            <h1>Make a Donations</h1>
+            <article class="contact-container">
+              <div class="contact-person">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"in person ></a>
+              </div>
+              <div class="contact-online">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" online ></a>
+              </div>
+              <div class="contact-email">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a>
+              </div>
+              <p><?php echo CFS()->get('get_text'); ?></p>
+            </article>
           </div>
-          <div class="contact-email">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" email></a>
+
+          <div class="involved-options-volunteer">
+            <article class="contact-container">
+              <div class="contact-person">
+                <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a>
+              </div>
+              <div class="contact-online">
+                 <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a>
+              </div>
+              <div class="contact-email">
+                  <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a>
+              </div>
+              <p><?php echo CFS()->get('get_text'); ?></p>
+            </article>
           </div>
-          <p><?php echo CFS()->get('get_text'); ?></p>
-        </article>
-
-        <!-- <div class="button-contact-placeholder"> -->
-          <!-- placeholder image -->
-          <!-- <img src="../wp-includes/images/buttons-placeholder.png" /> -->
-        <!-- </div> -->
-
-        <article class="contact-container">
-          <div class="contact-person">
-            <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"pay pal ></a>
-          </div>
-          <div class="contact-online">
-             <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/" by cheqe></a>
-          </div>
-          <div class="contact-email">
-              <a class="gre-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/"United Why ></a>
-
-          </div>
-          <p><?php echo CFS()->get('get_text'); ?></p>
-        </article>
-      </div>
-    </section>
+      </section>
 
 
-
-
-<?php  get_sidebar();?>
+<!-- <?php  get_sidebar();?> -->
 <?php get_footer(); ?>

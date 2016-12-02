@@ -650,8 +650,8 @@ div .secondary {
   @media (min-width: 768px) {
     div .secondary {
       text-align: right;
-      padding: 0px 10px;
-      margin-bottom: 0px;
+      padding: 0 10px;
+      margin-bottom: 0;
       height: 69px;
       margin-top: 40px; } }
   div .secondary .active {
@@ -663,10 +663,10 @@ div .secondary {
         display: fixed; } }
   div .secondary li {
     display: inline-block;
-    padding: 8px 0px; }
+    padding: 8px 0; }
     @media (min-width: 768px) {
       div .secondary li {
-        padding: 16.4px 0px; } }
+        padding: 16.4px 0; } }
     div .secondary li a {
       color: white;
       padding: 0 20px;
@@ -743,7 +743,7 @@ div .transparent-menu {
       .footer-block-item1 .fa {
         display: inline-block;
         margin-left: 10px;
-        margin-top: -4px;
+        margin-top: 5px;
         padding: 6.2px 8.6px;
         width: 30.6px;
         height: 30.6px;
@@ -833,8 +833,7 @@ div .transparent-menu {
   cursor: pointer;
   color: #248E6A; }
 
-.footer-block-item2
-a:hover {
+.footer-block-item2 a:hover {
   cursor: pointer;
   color: #248E6A; }
 
@@ -1330,68 +1329,90 @@ body {
   background-color: #ffffff; }
 
 /***************************************************/
-.page .contact_info {
+.contact_info {
   width: 100%;
-  margin: 20px; }
+  margin: 0 auto; }
   @media (min-width: 768px) {
-    .page .contact_info {
+    .contact_info {
       margin-left: auto;
       margin-right: auto;
-      width: 1120px;
       padding-top: 50px; } }
-
-.page h2 {
-  width: 207px;
-  height: 24px;
-  font-family: ".SF NS Display";
-  font-size: 20px;
-  line-height: 23px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .page h2 {
-      width: 1295px;
-      height: 55px;
-      font-family: 'Asap';
-      font-size: 48px;
-      line-height: 55px; } }
-
-.wpcf7 .wpcf7-form p label {
-  width: 49px;
-  height: 19px;
-  font-family: ".AppleSystemUIFont";
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .wpcf7 .wpcf7-form p label {
-      width: 76px;
-      height: 40px;
-      font-family: "Noto Sans";
-      font-size: 22px;
-      line-height: 40px; } }
-  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
-    width: 300px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 10px 0; }
-    .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
-      width: 300px !important;
-      height: 40px; }
-      .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input input[type=submit] {
-        width: 164px;
-        height: 67px;
-        background-color: #4FC8A1 !important;
-        border-radius: 6px; }
-      @media (min-width: 768px) {
-        .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
-          width: 450px !important;
-          height: 50px; } }
-      .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
-        width: 300px !important;
+  .contact_info h2 {
+    font-family: ".SF NS Display";
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .contact_info h2 {
+        font-family: 'Asap';
+        font-size: 48px;
+        line-height: 55px; } }
+  .contact_info h3 {
+    font-family: ".AppleSystemUIFont";
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .contact_info h3 {
+        font-family: 'Asap';
+        font-size: 38px;
+        line-height: 55px; } }
+  .contact_info p {
+    font-size: 24px;
+    color: #000; }
+    .contact_info p a {
+      color: #000; }
+      .contact_info p a:hover {
+        color: #3B5998; }
+  .contact_info .facebook-btn a {
+    color: #000;
+    font-size: 24px; }
+    .contact_info .facebook-btn a:hover {
+      color: #3B5998; }
+  .contact_info .facebook-btn .fa {
+    color: #3B5998;
+    font-size: 40px;
+    margin: 10px; }
+  .contact_info .wpcf7 .wpcf7-form p label {
+    width: 49px;
+    height: 19px;
+    font-family: ".AppleSystemUIFont";
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .contact_info .wpcf7 .wpcf7-form p label {
+        width: 76px;
         height: 40px;
-        background-color: #FFFFFF;
-        border-radius: 3px; }
+        font-family: "Noto Sans";
+        font-size: 22px;
+        line-height: 40px; } }
+    .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
+      width: 300px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 10px 0; }
+
+b, strong {
+  font-weight: normal; }
+
+input [type=submit] {
+  width: 300px !important;
+  height: 40px;
+  width: 164px;
+  height: 67px;
+  background-color: #4FC8A1 !important;
+  border-radius: 6px; }
+  @media (min-width: 768px) {
+    input [type=submit] {
+      width: 450px !important;
+      height: 50px; } }
+  input [type=submit] .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
+    width: 300px !important;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 3px; }
 
 /*--------------------------------------------------------------
 # Montessori
@@ -1427,9 +1448,9 @@ body {
   .main-history .history-img1 {
     display: block; }
     .main-history .history-img1 img {
-      height: 280px;
-      width: 250px;
-      padding-top: 30px;
+      height: 100%;
+      width: 100%;
+      padding-top: 40px;
       float: left; }
     @media (min-width: 768px) {
       .main-history .history-img1 {
@@ -1862,6 +1883,42 @@ body {
   padding-left: 1.25rem;
   padding-right: 1.25rem; }
 
+fonts h1,
+h2,
+h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 2.6rem;
+  line-height: 2.625rem; }
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.125rem; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.6875rem; }
+
+p {
+  font-size: 1.625rem;
+  line-height: 1.2rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.spcil p {
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+  font-style: "Noto Sans", sans-serif; }
+
+.green-btn {
+  background-color: #4FC8A1;
+  color: #fff;
+  font-family: "Noto Sans";
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none; }
+
 .about-school {
   border-bottom: solid 3px #4FC8A1;
   padding-bottom: 4.875rem; }
@@ -1874,10 +1931,6 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  @media (min-width: 768px) {
-    .members-list {
-      -ms-flex-direction: column;
-          flex-direction: column; } }
   .members-list .members-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1975,7 +2028,8 @@ body {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
     .members-list .members-grid .members_det {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.375rem; }
 
 .members_at_large {
   padding-bottom: 3.4375rem;
@@ -2014,12 +2068,10 @@ body {
       flex-direction: column;
   padding-bottom: 3.4375rem;
   border-bottom: solid 3px #4FC8A1; }
-  .meeting-minutes .meeting-img {
-    -ms-flex: 100%;
-        flex: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center; }
+  .meeting-minutes .news-img img {
+    width: 100%; }
+  .meeting-minutes form {
+    padding: 2rem; }
   .meeting-minutes .red-more {
     -ms-flex-item-align: end;
         align-self: flex-end; }
@@ -2053,6 +2105,8 @@ label input {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
 
+<<<<<<< HEAD
+=======
 .main-title {
   padding-left: 2em; }
 
@@ -2061,10 +2115,9 @@ label input {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  height: 1200px;
-  border-bottom: 2px solid #4FC8A1;
   margin-left: 5%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  margin-bottom: 5%; }
   #involved-container #column-left {
     -ms-flex: 3;
         flex: 3;
@@ -2083,6 +2136,12 @@ label input {
     margin-right: 25px;
     -ms-flex-direction: column;
         flex-direction: column; }
+
+#involved-support-now {
+  width: 100%;
+  border-bottom: 3px solid #4FC8A1;
+  height: 200px;
+  float: left; }
 
 #yearsArchives {
   text-align: center;
@@ -2116,7 +2175,27 @@ label input {
   .involved-title-box:hover {
     background-color: #4FC8A1; }
 
+blockquote {
+  font-size: 1.1em;
+  border-left: 10px solid #D93B57;
+  padding-left: 20px;
+  height: 3em; }
+  blockquote blockquote p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column; }
+
+#involved-titles-container {
+  padding-bottom: 100px; }
+
 .interest {
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4FC8A1; }
+
+.involved-interview {
   width: 280px;
   height: 60px;
   border-radius: 10px;
@@ -2142,7 +2221,9 @@ label input {
 
 #sliderImages {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 1%;
+  position: relative; }
 
 .involved-slider {
   height: 340px;
@@ -2198,11 +2279,17 @@ label input {
   margin-left: 60px;
   float: left; }
 
-.button-contact-placeholder {
+.involved-options-donations {
   width: 100%;
-  height: 250px;
-  text-align: center; }
+  height: 350px;
+  display: none; }
 
+.involved-options-volunteer {
+  width: 100%;
+  height: 350px;
+  display: none; }
+
+>>>>>>> 38841014f681a0dd1c98c2760c4e1539b2767aa0
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
@@ -2227,12 +2314,8 @@ h1 {
   font-size: 2.6rem;
   line-height: 2.625rem; }
 
-h2 {
-  font-size: 1.8rem;
-  line-height: 2.125rem; }
-
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.6875rem; }
 
 p {
@@ -2287,20 +2370,35 @@ p {
       margin-top: 2rem;
       padding-left: 1rem; } }
 
-.montessori-schedule {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-  .montessori-schedule p {
-    display: inline-block;
-    padding: 5px; }
-  .montessori-schedule .morning {
-    -ms-flex: 50%;
-        flex: 50%; }
-  .montessori-schedule .afternoon {
-    -ms-flex: 50%;
-        flex: 50%; }
+<<<<<<< HEAD
+.row p {
+  display: inline-block;
+  padding: 5px; }
+=======
+.montessori-schedule #div1 .targetDiv {
+  width: 400px;
+  height: 700px;
+  background-color: red; }
+
+.montessori-schedule #div2 .targetDiv {
+  width: 400px;
+  height: 700px;
+  background-color: green; }
+>>>>>>> 38841014f681a0dd1c98c2760c4e1539b2767aa0
+
+.schedule-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.morning {
+  -ms-flex: 100%;
+      flex: 100%; }
+
+.afternoon {
+  -ms-flex: 100%;
+      flex: 100%; }
 
 .funding {
   display: -ms-flexbox;
@@ -2387,7 +2485,11 @@ p {
         justify-content: center; }
     .school-list .school-img img {
       width: 55%;
-      height: 70%; }
+      height: 70%;
+      width: 80%;
+      height: 80%; }
+    .school-list .school-img .address .phone {
+      font-weight: bolder; }
 
 .preschools-list {
   padding: 1px; }
@@ -2541,14 +2643,6 @@ p {
     .teacher-list .teacher-grid .teacher_det {
       text-align: center;
       font-size: 1.375rem; }
-
-#div1 {
-  width: 800px;
-  height: 400px; }
-
-#div2 {
-  width: 800px;
-  height: 400px; }
 
 .red-border-container {
   width: 90%;

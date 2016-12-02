@@ -6,7 +6,6 @@
 * {
 	box-sizing: border-box;
 }
-// @media screen and (max-width: 480px) {
 
 .nw-program-wrapper {
 	height: auto;
@@ -28,13 +27,8 @@ h1 {
 	line-height: 2.625rem;
 }
 
-h2 {
-	font-size: $h2_size_mob;
-	line-height: 2.125rem;
-}
-
 h3 {
-	font-size: $h3_size_mob;
+	font-size: $h2_size_mob;
 	line-height: 1.6875rem;
 }
 
@@ -99,20 +93,29 @@ p {
 }
 
 // Montessori Daily Schedule Section
-.montessori-schedule{
-	display:inline-flex;
-	flex-direction: row;
-	p{
-		display:inline-block;
-		padding:5px;
+// Montessori Daily Schedule Section
+.row p{
+	display:inline-block;
+	padding:5px;
+}
+
+	.schedule-menu{
+		display: flex;
+		justify-content: space-between;
+		// @media screen and (min-width: 768px) {
+		// 	.schedule-menu{
+		// 		display: hide;
+		// 	}
+		// }
 }
 	.morning{
-		flex: 50%;
+		flex: 100%;
+
 	}
 	.afternoon{
-		flex: 50%;
+		flex: 100%;
 	}
-}
+
 
 
 // Funding Section
@@ -401,14 +404,4 @@ p {
 			font-size: $font_member_staff;
 		}
 	}
-}
-////schedule section ////
-
-#div1{
-  width:800px;
-  height:400px;
-}
-#div2{
-  width:800px;
-  height:400px;
 }
