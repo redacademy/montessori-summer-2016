@@ -2,14 +2,12 @@
 # Montessori
 --------------------------------------------------------------*/
 /////*Start History Section**/////
-
 .history-content {
     width: 100%;
     flex-wrap: wrap;
     margin-left: 30px;
 
 }
-
 .history-title {
     margin-top: 100px;@include desktop{
         margin-top:0;
@@ -17,7 +15,6 @@
     margin-bottom: 0;
     flex: 0 90%;
 }
-
 .main-history {
     p:nth-child(4) {
         margin-left: -40%;
@@ -27,7 +24,6 @@
         }
     }
     @include flex(flex-end,space-between);
-
     .history-img1 {
        display: block;
 
@@ -41,7 +37,6 @@
             display: none;
         };
     }
-
     .history-img {
         display: none;
         @include desktop {
@@ -56,12 +51,10 @@
         }
     }
 }
-
 .history-content {
     blockquote {
         text-align: left;
     }
-
     p {
         width: 100%;
         text-align: left;
@@ -69,7 +62,6 @@
         overflow: hidden;
     }
     width: 100%;
-
     blockquote {
         width: 100%;
     }
@@ -78,11 +70,9 @@
     }
 }
 ////************philosophy Section ************/////
-
 .active {
     visibility: visible;
 }
-
 .main-philosophy {
     margin: 100px auto;
     min-width: 75%;
@@ -95,11 +85,9 @@
         min-width: 1200px;
         height: 800px;
     }
-
     div {
         width: 100%;
     }
-
     .philosophy-grid {
         flex: 0 0 auto;
         width: 200px;
@@ -122,12 +110,10 @@
             transition: 0.8s;
             transform-style: preserve-3d;
             @include border-radius(10px);
-
             &:hover {
                 @include rotate(180deg);
             }
         }
-
         .philosophy-img {
             z-index: 2;
             height: auto;
@@ -139,7 +125,6 @@
             position: relative;
             width: 100%;
             height: 200px;
-
             img {
                 position: absolute;
                 top: 46px;
@@ -155,7 +140,6 @@
                 }
             }
         }
-
         h2 {
             z-index: 1;
             margin: 0;
@@ -169,7 +153,6 @@
             line-height: 0.9rem;
             right: 22px;
             position: absolute;
-
             a {
                 color: #248E6A;
                 font-size: 1.1rem;
@@ -179,12 +162,10 @@
                 a {
                     font-size: 1.3rem;
                 }
-
                 .show {
                     font-size: 1.4rem;
                     @include visibility(hidden);
                 }
-
                 &:hover {
                     @include visibility(hidden);
                     @include rotate(180deg);
@@ -192,7 +173,6 @@
             }
             position: absolute;
         }
-
         p {
             text-align: left;
             display: inline-block;
@@ -223,23 +203,19 @@
 }
 ////************End philosophy Section ************/////
 ////////*******Start Materials Section******/////////
-
 .main-materials div:nth-of-type(3) {
     @include desktop {
         flex-direction: row-reverse;
     }
 }
-
 .main-materials div:nth-of-type(1) {
     img {
         display: none;
     }
-
     .materials-contents {
         width: 90%;
     }
 }
-
 .materials {
     width: 100%;
     display: flex;
@@ -250,7 +226,6 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     img {
         width: 400px;
         height: 400px;
@@ -261,7 +236,6 @@
         }
     }
 }
-
 .materials-contents {
     blockquote {
         p {
@@ -273,7 +247,6 @@
         width: 60%;
         min-width: 50%;
         @include quote {}
-
         p {
             display: inline;
             padding-top: 4px;
@@ -285,12 +258,10 @@
     }
 }
 /////*Start Benefits Section**/////
-
 .benefits li {
     list-style-type: disc;
     @include desktop {};
 }
-
 .first-benefits-section {
     width: 100%;
     min-width: 80%;
@@ -300,7 +271,6 @@
     @include desktop {
         flex-direction: row;
     }
-
     img {
         width: 400px;
         height: 400px;
@@ -313,14 +283,12 @@
         }
     }
 }
-
 .benefits-content {
     width: 100%;
     @include desktop {
          @include quote{}
     }
 }
-
 .benefits-title {
     p {
         padding-top: 4px;
@@ -331,30 +299,25 @@
     }
 }
 ///Archive and rescourses sections////
-
 .the-archive ul {
     width: 500px;
     line-height: 2.4rem;
     font-size: 2rem;
     font-family: $font_title;
-
     li {
         padding-left: 30px;
         line-height: inherit;
         font-size: 1.6rem;
-
         a {
             color: $color_btn_hover_green;
         }
     }
 }
-
 .fa-caret-right {
     cursor: pointer;
     color: $color_btn_hover_green;
     padding-right: 5px;
 }
-
 .the-archive ul {
     width: 450px;
     line-height: 2rem;
@@ -365,11 +328,9 @@
         font-size: 1.8rem;
         width: 600px;
     };
-
     li {
         padding-left: 30px;
         line-height: inherit;
-
         a {
             color: $color_btn_hover_green;
             font-size: 1.2rem;
@@ -379,13 +340,11 @@
         }
     }
 }
-
 .montessori-archive {
     border-top: solid 3px $color_btn_green;
     padding-top: 12px;
     margin-top: 40px;
     width: 65%;
-
     h3 {
         @include desktop {
             width: 600px;
@@ -393,19 +352,16 @@
     }
 }
 ///rotate the arrow and toggle the contents
-
 .rotate {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
 }
-
 .toggle {
     color: green;
     padding-left: 10px;
 }
-
 .fa-angle-down {
     color: green;
     padding-left: 10px;
@@ -416,7 +372,6 @@
     height: 400px;
     position: relative;
 }
-
 .green-bt {
     background-color: $color_btn_green;
     @include border-radius (6px);
@@ -426,7 +381,6 @@
     text-shadow: none;
     width: 300px;
     height: 60px;
-
     a {
         font-family: Noto Sans;
         font-size: 0.8rem;
@@ -440,7 +394,6 @@
         width: 400px;
         height: 65px;
         font-size: 20px;
-
         a {
             font-size: 1.1rem;
         }

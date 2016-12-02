@@ -287,7 +287,8 @@
                     line-height: 42px;
                     color: #000;
                 }
-            }//p
+            }
+            //p
             .btn {
                 display: flex;
                 justify-content: space-around;
@@ -354,10 +355,11 @@
                     height: 55px;
                 }
             }
-        }//information
-    }//support-wrapper
-
-// this is for the features fliper
+        }
+        //information
+    }
+    //support-wrapper
+    // this is for the features fliper
     .the-title {
         box-sizing: border-box;
         width: 440px;
@@ -431,7 +433,7 @@
                     transform-style: preserve-3d;
                     @include border-radius(10px);
                     &:hover {
-                         visibility:hidden;
+                        visibility: hidden;
                         @include rotate(180deg);
                     }
                 }
