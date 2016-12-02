@@ -8,8 +8,7 @@
             padding: 0 90px;
         }
         .home-wrapper {
-            width: 480px;
-            height: 585px;
+            height: 600px;
             background-color: rgba(0,0,0,0.74);
             @include desktop {
                 width: 541.64px;
@@ -26,6 +25,10 @@
                     height: 555px;
                     z-index: -1;
                     position: absolute;
+                }
+                img{
+                  height: auto;
+                  width: 100%;
                 }
             }
             h2 {
@@ -48,7 +51,7 @@
                 }
             }
             p {
-                height: 160px;
+                // height: 160px;
                 font-family: "Noto Sans";
                 font-size: 20px;
                 line-height: 40px;
@@ -84,9 +87,7 @@
                     margin: 70px 45px;
                 }
             }
-            // }//welcome-wrapper
-        }
-        //home
+        }//home
     }
     //this is for the quick links section
     .link-title {
@@ -253,7 +254,7 @@
                 border-left: 14px solid #D93B57;
                 font-size: 25px;
                 margin-bottom: 95px;
-                height: 125px;
+                height: 135px;
                 @include desktop {
                     border-left: 14px solid #D93B57;
                     margin: 27px 119px;
@@ -266,7 +267,7 @@
                 }
             }
             p {
-                width: 377px;
+                width: 350px;
                 font-family: "Noto Sans";
                 font-size: 20px;
                 line-height: 46px;
@@ -359,7 +360,7 @@
         //information
     }
     //support-wrapper
-    // this is for the features fliper
+// this is for the features fliper
     .the-title {
         box-sizing: border-box;
         width: 440px;
@@ -498,7 +499,7 @@
                 }
             }
         }
-    } 
+    }
 }
 a {
     text-decoration: none;
@@ -506,4 +507,3 @@ a {
 body {
     background-color: #ffffff;
 }
-/***************************************************/

@@ -8,7 +8,7 @@
 get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-      <div class="home container">
+      <div class="home container-wrapper">
       <section class="home-wrapper">
         <div class="home-img">
           <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
@@ -23,9 +23,7 @@ get_header(); ?>
 <!-- this is for the quick links -->
     <div class="link-title">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
-
     </div>
-
       <section class="links-wrapper ">
           <article class="benifits">
             <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
@@ -51,26 +49,20 @@ get_header(); ?>
         </div>
        <?php echo CFS()->get('second_support_paragraph'); ?>
        <div class="btn">
-            <a href="#support-now" class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
+            <a class="red-btn" href="<?php echo esc_url(the_permalink()); ?>/get-involved/">Support Now</a>
             <a class="green-btn" href="<?php echo esc_url(the_permalink()); ?>/nw-program/">How Money is Spent</a>
         </div>
       </div>
     </section>
-
-
 <!-- this is for the features news  -->
 <h1 class="the-title"> <?php echo CFS()->get('features_title'); ?></h1>
-
   <section class="all-features ">
       <section class="features-wrapper ">
         <div class="features-flipper">
-
           <div class="front"><?php echo CFS()->get('features_front'); ?></div>
-
           <div class="features-back"> <?php echo CFS()->get('features_back'); ?>
             <a class="btn" href="<?php the_permalink(17); ?>/127" >Read More</a>
           </div>
-
         </div>
       </section>
 <!-- second flipper -->
@@ -91,7 +83,6 @@ get_header(); ?>
                   <div class="front">
                     <?php echo CFS()->get('third_features_front'); ?>
                   </div>
-
                   <div class="features-back">
                     <?php echo CFS()->get('third_features_back'); ?>
                     <a class="btn" href="<?php the_permalink(17); ?>/122" >Read More</a>
@@ -99,8 +90,6 @@ get_header(); ?>
                 </div>
               </section>
       </section> <!-- all-features -->
-
-
         </main><!-- #main -->
     </div><!-- #primary -->
   <?php get_footer(); ?>

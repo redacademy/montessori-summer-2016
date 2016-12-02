@@ -867,8 +867,7 @@ a:hover {
     .site-main .home {
       padding: 0 90px; } }
   .site-main .home .home-wrapper {
-    width: 480px;
-    height: 585px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.74); }
     @media (min-width: 768px) {
       .site-main .home .home-wrapper {
@@ -886,6 +885,9 @@ a:hover {
           height: 555px;
           z-index: -1;
           position: absolute; } }
+      .site-main .home .home-wrapper .home-img img {
+        height: auto;
+        width: 100%; }
     .site-main .home .home-wrapper h2 {
       font-family: 'Asap';
       font-size: 36px;
@@ -905,7 +907,6 @@ a:hover {
           padding-top: 33px;
           margin: 30px 50px; } }
     .site-main .home .home-wrapper p {
-      height: 160px;
       font-family: "Noto Sans";
       font-size: 20px;
       line-height: 40px;
@@ -1089,7 +1090,7 @@ a:hover {
       border-left: 14px solid #D93B57;
       font-size: 25px;
       margin-bottom: 95px;
-      height: 125px; }
+      height: 135px; }
       @media (min-width: 768px) {
         .site-main .support-wrapper .information blockquote {
           border-left: 14px solid #D93B57;
@@ -1100,7 +1101,7 @@ a:hover {
           .site-main .support-wrapper .information blockquote p {
             font-size: 24px; } }
     .site-main .support-wrapper .information p {
-      width: 377px;
+      width: 350px;
       font-family: "Noto Sans";
       font-size: 20px;
       line-height: 46px;
@@ -1329,7 +1330,6 @@ a {
 body {
   background-color: #ffffff; }
 
-/***************************************************/
 .contact_info {
   width: 100%;
   margin: 0 auto; }
