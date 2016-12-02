@@ -52,5 +52,11 @@ var $screenWidth = $( document ).width()
                   $navWrapper.removeClass("transparent-menu");
               }};
 })
+$('.showSingle').on('click', function () {
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $('.targetDiv').hide();
+    $('#div' + $(this).data('target')).show();
+});
+$('.showSingle').first().click();
 
 });

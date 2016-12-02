@@ -2217,12 +2217,8 @@ h1 {
   font-size: 2.6rem;
   line-height: 2.625rem; }
 
-h2 {
-  font-size: 1.8rem;
-  line-height: 2.125rem; }
-
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.6875rem; }
 
 p {
@@ -2277,20 +2273,15 @@ p {
       margin-top: 2rem;
       padding-left: 1rem; } }
 
-.montessori-schedule {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-  .montessori-schedule p {
-    display: inline-block;
-    padding: 5px; }
-  .montessori-schedule .morning {
-    -ms-flex: 50%;
-        flex: 50%; }
-  .montessori-schedule .afternoon {
-    -ms-flex: 50%;
-        flex: 50%; }
+.montessori-schedule #div1 .targetDiv {
+  width: 400px;
+  height: 700px;
+  background-color: red; }
+
+.montessori-schedule #div2 .targetDiv {
+  width: 400px;
+  height: 700px;
+  background-color: green; }
 
 .funding {
   display: -ms-flexbox;

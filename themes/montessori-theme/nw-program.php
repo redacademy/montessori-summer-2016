@@ -23,29 +23,34 @@ get_header(); ?>
 <!-- **********///////////Montessori Daily Schedule/////////////********** -->
 <section class="">
 				<h1>Montessori Daily Schedule</h1>
-		<div class="morning">
-			  	<h2>Morning</h2>
+				<div class="buttons">
+    <a  class="showSingle" data-target="1">Option 1</a>
+    <a  class="showSingle" data-target="2">Option 2</a>
+		</div>
+
+
+	<div id="div1" class="targetDiv">
 <?php
 $fields = CFS()->get( 'morning' );
 foreach ( $fields as $field ) {?>
-      	<div class="row">
+
 			  	<p><?php echo $field['morning-time'];?></p>
 			  	<p> <?php echo $field['morning-action']?> </p>
-				</div>
+
 <?php  } ?>
-    	</div>
-	  	 <div class="afternoon">
-         <h2>Afternoon</h2>
+  </div>
+
+ <div id="div2" class="targetDiv">
 <?php
 $fields = CFS()->get( 'afternoon' );
 foreach ( $fields as $field ) {?>
-	     <div class="row">
+
 				 <p><?php echo $field['afternoon-time'];?></p>
 				 <p> <?php echo $field['afternoon-action']?> </p>
-			 </div>
+
 <?php  } ?>
-      </div>
-			</div>
+ </div>
+
 </section>
 <!-- **********////////////////////////Funding///////////////////////********** -->
 	<section id="funding" class="funding">
@@ -59,7 +64,7 @@ foreach ( $fields as $field ) {?>
 			  </div>
 				</div>
 				<p> <?php echo CFS()->get('extra-funding'); ?> </p>
-			<h2>How Is The Money Spent?</h2>
+			<h3>How Is The Money Spent?</h3>
 				<div class="nw-part3">
 				<div class="money-spend">
 				<p> <?php echo CFS()->get('money-spend'); ?> </p>
