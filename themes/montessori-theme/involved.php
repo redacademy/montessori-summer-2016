@@ -69,7 +69,7 @@ if ( $query-> have_posts() ) :
 
 <!-- Support now section -->
 
-<section class="support-section container">
+<section id="support-now" class="support-section container">
       <div class="title">
         <h1>Support Now</h1>
         <h3>Did You Know ...</h3>

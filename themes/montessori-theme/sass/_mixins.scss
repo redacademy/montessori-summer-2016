@@ -19,8 +19,8 @@
 	}
 }
 ////Tablet Screen size
-@mixin desktop2{
-	@media (min-width: #{$desktop_mid_width}) {
+@mixin desktop2 {
+	 @media (min-width: #{$desktop_mid_width}){
 		@content;
 	}
 }
@@ -54,32 +54,31 @@
 	transform: rotateY($rotate);
 }
 /***blockquote properties****/
-@mixin quote(){
-	@content;
-	blockquote{
+@mixin quote() {
+	 @content;
+	blockquote {
 		width: 90%;
-	top: 10px;
-	margin: 0 0 0 15%;
-	padding-left: 25px;
-	display: inline-block;
-	position: relative;
-	p {
+		top: 10px;
+		margin: 0 0 0 15%;
+		padding-left: 25px;
+		display: inline-block;
+		position: relative;
+		p {
 			margin: 0;
 			font-size: 1.8rem;
-	}}
-	blockquote::before {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 5PX;
-			left: 0PX;
-			height: 100%;
-			border-left: solid 12px $border_left_red;
-		
+		}
 	}
-
+	blockquote::before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 5PX;
+		left: 0PX;
+		height: 100%;
+		border-left: solid 12px $border_left_red;
+	}
 	p {
-			display: inline-block;
-			text-align: left;
+		display: inline-block;
+		text-align: left;
 	}
 }

@@ -654,8 +654,8 @@ div .secondary {
   @media (min-width: 768px) {
     div .secondary {
       text-align: right;
-      padding: 0px 10px;
-      margin-bottom: 0px;
+      padding: 0 10px;
+      margin-bottom: 0;
       height: 69px;
       margin-top: 40px; } }
   div .secondary .active {
@@ -667,10 +667,10 @@ div .secondary {
         display: fixed; } }
   div .secondary li {
     display: inline-block;
-    padding: 8px 0px; }
+    padding: 8px 0; }
     @media (min-width: 768px) {
       div .secondary li {
-        padding: 16.4px 0px; } }
+        padding: 16.4px 0; } }
     div .secondary li a {
       color: white;
       padding: 0 20px;
@@ -836,8 +836,7 @@ div .transparent-menu {
   cursor: pointer;
   color: #248E6A; }
 
-.footer-block-item2
-a:hover {
+.footer-block-item2 a:hover {
   cursor: pointer;
   color: #248E6A; }
 
@@ -1271,8 +1270,7 @@ a:hover {
           transform-style: preserve-3d;
           border-radius: 10px; }
           .site-main .all-features .features-wrapper .features-flipper:hover {
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+            visibility: hidden;
             transform: rotateY(180deg); } }
       .site-main .all-features .features-wrapper .features-flipper .front {
         height: 145px;
@@ -1320,7 +1318,6 @@ a:hover {
               font-family: 'Asap';
               font-size: 22px; } }
         .site-main .all-features .features-wrapper .features-flipper .features-back .btn {
-          text-align: center;
           display: inline-block;
           text-align: center;
           color: #248E6A;
@@ -1333,68 +1330,90 @@ body {
   background-color: #ffffff; }
 
 /***************************************************/
-.page .contact_info {
+.contact_info {
   width: 100%;
-  margin: 20px; }
+  margin: 0 auto; }
   @media (min-width: 768px) {
-    .page .contact_info {
+    .contact_info {
       margin-left: auto;
       margin-right: auto;
-      width: 1120px;
       padding-top: 50px; } }
-
-.page h2 {
-  width: 207px;
-  height: 24px;
-  font-family: ".SF NS Display";
-  font-size: 20px;
-  line-height: 23px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .page h2 {
-      width: 1295px;
-      height: 55px;
-      font-family: 'Asap';
-      font-size: 48px;
-      line-height: 55px; } }
-
-.wpcf7 .wpcf7-form p label {
-  width: 49px;
-  height: 19px;
-  font-family: ".AppleSystemUIFont";
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .wpcf7 .wpcf7-form p label {
-      width: 76px;
-      height: 40px;
-      font-family: "Noto Sans";
-      font-size: 22px;
-      line-height: 40px; } }
-  .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
-    width: 300px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 10px 0; }
-    .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
-      width: 300px !important;
-      height: 40px; }
-      .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input input[type=submit] {
-        width: 164px;
-        height: 67px;
-        background-color: #4FC8A1 !important;
-        border-radius: 6px; }
-      @media (min-width: 768px) {
-        .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
-          width: 450px !important;
-          height: 50px; } }
-      .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
-        width: 300px !important;
+  .contact_info h2 {
+    font-family: ".SF NS Display";
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .contact_info h2 {
+        font-family: 'Asap';
+        font-size: 48px;
+        line-height: 55px; } }
+  .contact_info h3 {
+    font-family: ".AppleSystemUIFont";
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .contact_info h3 {
+        font-family: 'Asap';
+        font-size: 38px;
+        line-height: 55px; } }
+  .contact_info p {
+    font-size: 24px;
+    color: #000; }
+    .contact_info p a {
+      color: #000; }
+      .contact_info p a:hover {
+        color: #3B5998; }
+  .contact_info .facebook-btn a {
+    color: #000;
+    font-size: 24px; }
+    .contact_info .facebook-btn a:hover {
+      color: #3B5998; }
+  .contact_info .facebook-btn .fa {
+    color: #3B5998;
+    font-size: 40px;
+    margin: 10px; }
+  .contact_info .wpcf7 .wpcf7-form p label {
+    width: 49px;
+    height: 19px;
+    font-family: ".AppleSystemUIFont";
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .contact_info .wpcf7 .wpcf7-form p label {
+        width: 76px;
         height: 40px;
-        background-color: #FFFFFF;
-        border-radius: 3px; }
+        font-family: "Noto Sans";
+        font-size: 22px;
+        line-height: 40px; } }
+    .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap {
+      width: 300px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 10px 0; }
+      .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
+        width: 300px !important;
+        height: 40px; }
+        .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input input[type=submit] {
+          width: 164px;
+          height: 67px;
+          background-color: #4FC8A1 !important;
+          border-radius: 6px; }
+        @media (min-width: 768px) {
+          .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input {
+            width: 450px !important;
+            height: 50px; } }
+        .contact_info .wpcf7 .wpcf7-form p label .wpcf7-form-control-wrap input .wpcf7-form-control wpcf7-number wpcf7-validates-as-number {
+          width: 300px !important;
+          height: 40px;
+          background-color: #FFFFFF;
+          border-radius: 3px; }
+
+b, strong {
+  font-weight: normal; }
 
 /*--------------------------------------------------------------
 # Montessori
@@ -2083,6 +2102,9 @@ p {
         .past-event-wrapper .past-event .event-years .year ul {
           color: #000;
           line-height: 5rem; }
+  @media (min-width: 768px) {
+    .past-event-wrapper {
+      display: none; } }
 
 .support-section {
   margin: 0 60px; }

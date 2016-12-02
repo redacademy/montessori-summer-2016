@@ -1,4 +1,3 @@
-
 // past envet section
 .past-event-wrapper {
     margin: 0 auto;
@@ -19,6 +18,9 @@
         //event-years
     }
     //past-event
+    @include desktop{
+      display: none;
+    }
 }
 //past-event-wrapper
 // suppoert now section
