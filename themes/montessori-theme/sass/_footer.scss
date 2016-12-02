@@ -42,7 +42,6 @@
     .fa {
         display: none;
         @include desktop {
-
           display: inline-block;
               margin-left: 10px;
               margin-top: -4px;
@@ -60,11 +59,9 @@
         display: inline-flex;
         padding-left: 0;
         padding-right: 0;
-
         li:nth-child(even) a {
             border-left: solid 1px $white;
         }
-
         li:nth-child(3) a {
             border-left: solid 1px $white;
         }
@@ -72,7 +69,6 @@
             li:first-child a {
                 padding-left: 0;
             }
-
             li:nth-child(4) a {
                 border-right: solid 1px $white;
             }
@@ -84,7 +80,6 @@
         font-size: 1.3rem;
         padding: 0;
         display: inline-block;
-
         a {
             padding: 0 22px;
             margin-right: 0;
@@ -176,7 +171,6 @@ a:hover {
           color:#d3e0de;
     list-style-type: none;
     line-height: 2rem;
-
 }
         a {
           font-size: 1.3rem;

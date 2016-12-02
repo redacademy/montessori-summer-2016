@@ -45,7 +45,7 @@ jQuery(document).ready(function( $ ) {
                 var  $mainNav = $(".sub-menu-wrapper "),
                   $navWrapper = $(".main-menu-wrapper")
                   that = this;
-var $screenWidth = $( document ).width()
+                  var $screenWidth = $( document ).width()
               if (window.pageYOffset > 230 && $screenWidth <768) {
                   $navWrapper.addClass("transparent-menu");
               }

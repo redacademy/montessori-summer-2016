@@ -44,7 +44,7 @@ TABLE OF CONTENTS:
 	## Front page
 --------------------------------------------------------------*/
 /********* Montessori Site Structure **********/
-/********* Colours **********/
+/********* Colors **********/
 /*--------------------------------------------------------------
 # Mixin
 --------------------------------------------------------------*/
@@ -455,10 +455,13 @@ textarea {
   display: none; }
 
 .the-page-title {
+  position: relative;
   background-color: #fff;
-  height: 45px;
-  padding: 0 30px; }
+  height: 21px;
+  padding: 0 32px;
+  margin: 0; }
   .the-page-title ul {
+    margin: 0;
     display: flex;
     display: -ms-flexbox;
     -ms-flex-align: center;
@@ -1400,7 +1403,7 @@ body {
   margin-left: 30px; }
 
 .history-title {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 0;
   -ms-flex: 0 90%;
       flex: 0 90%; }
@@ -1436,7 +1439,7 @@ body {
     @media (min-width: 768px) {
       .main-history .history-img {
         display: block;
-        margin-top: 100px;
+        margin-top: 70px;
         -ms-flex-item-align: end;
             align-self: flex-end;
         padding-bottom: 100px; }
@@ -1800,7 +1803,8 @@ body {
   width: 65%; }
   @media (min-width: 768px) {
     .montessori-archive h3 {
-      width: 600px; } }
+      width: 600px;
+      font-size: 1.8rem; } }
 
 .rotate {
   -moz-transform: rotate(180deg);

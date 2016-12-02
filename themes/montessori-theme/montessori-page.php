@@ -85,7 +85,7 @@ echo $benefit;
 </div>
         </div>
 
-<!--  here is the meta data of the benefits loop section -->
+<!--  here is  meta data of the benefits loop section -->
 <div>
         <ul>
         <?php
