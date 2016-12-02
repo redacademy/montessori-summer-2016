@@ -2101,6 +2101,191 @@ label input {
     width: 55%;
     border-top: solid 3px #4FC8A1; }
 
+<<<<<<< HEAD
+=======
+.main-title {
+  padding-left: 2em; }
+
+#involved-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%; }
+  #involved-container #column-left {
+    -ms-flex: 3;
+        flex: 3;
+    height: 500px;
+    background-color: #FFF;
+    margin-left: 25px;
+    border-right: 3px solid #4FC8A1;
+    border-radius: 5px;
+    margin-bottom: 5em;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  #involved-container #column-right {
+    -ms-flex: 1;
+        flex: 1;
+    background-color: #FFF;
+    margin-right: 25px;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+#involved-support-now {
+  width: 100%;
+  border-bottom: 3px solid #4FC8A1;
+  height: 200px;
+  float: left; }
+
+#yearsArchives {
+  text-align: center;
+  padding-left: 40px; }
+
+.title-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  width: 100%;
+  padding-left: 10%; }
+
+.title-link {
+  width: 270px;
+  height: 120px;
+  font-size: 1.4em;
+  padding-top: 24px;
+  color: #333; }
+
+.involved-title-box {
+  border-radius: 10px;
+  width: 270px;
+  height: 120px;
+  background-color: #AFF1D3;
+  margin-right: 4%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  padding-top: 20px; }
+  .involved-title-box:hover {
+    background-color: #4FC8A1; }
+
+blockquote {
+  font-size: 1.1em;
+  border-left: 10px solid #D93B57;
+  padding-left: 20px;
+  height: 3em; }
+  blockquote blockquote p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column; }
+
+#involved-titles-container {
+  padding-bottom: 100px; }
+
+.interest {
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4FC8A1; }
+
+.involved-interview {
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4FC8A1; }
+
+.green-button {
+  color: #FFF;
+  font-size: 1.5em; }
+
+.full-width-section {
+  display: -ms-flexbox;
+  display: flex;
+  /* works with row or column */
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .full-width-section .full-width-section-item {
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+
+#sliderImages {
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+  position: relative; }
+
+.involved-slider {
+  height: 340px;
+  width: 100%;
+  background-color: #FFF; }
+
+#circle-text {
+  vertical-align: middle;
+  color: #FFF; }
+
+#circle-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #4fc8a1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: Asap;
+  line-height: 35px; }
+
+#Donation {
+  width: 100%; }
+
+.donation-button {
+  width: 320px;
+  height: 60px;
+  background-color: #f76072;
+  border-radius: 6px;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  padding: 10px;
+  box-shadow: none;
+  text-shadow: none;
+  letter-spacing: 0.8px;
+  text-decoration: none; }
+
+.donation-button-group {
+  height: 60px;
+  margin-bottom: 10px; }
+
+.re-btn {
+  margin-right: 60px;
+  float: right; }
+
+.pink-btn {
+  margin-left: 60px;
+  float: left; }
+
+.involved-options-donations {
+  width: 100%;
+  height: 350px;
+  display: none; }
+
+.involved-options-volunteer {
+  width: 100%;
+  height: 350px;
+  display: none; }
+
+>>>>>>> 38841014f681a0dd1c98c2760c4e1539b2767aa0
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
@@ -2181,9 +2366,21 @@ p {
       margin-top: 2rem;
       padding-left: 1rem; } }
 
+<<<<<<< HEAD
 .row p {
   display: inline-block;
   padding: 5px; }
+=======
+.montessori-schedule #div1 .targetDiv {
+  width: 400px;
+  height: 700px;
+  background-color: red; }
+
+.montessori-schedule #div2 .targetDiv {
+  width: 400px;
+  height: 700px;
+  background-color: green; }
+>>>>>>> 38841014f681a0dd1c98c2760c4e1539b2767aa0
 
 .schedule-menu {
   display: -ms-flexbox;
@@ -2284,7 +2481,11 @@ p {
         justify-content: center; }
     .school-list .school-img img {
       width: 55%;
-      height: 70%; }
+      height: 70%;
+      width: 80%;
+      height: 80%; }
+    .school-list .school-img .address .phone {
+      font-weight: bolder; }
 
 .preschools-list {
   padding: 1px; }
