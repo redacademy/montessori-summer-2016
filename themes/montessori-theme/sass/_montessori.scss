@@ -9,9 +9,10 @@
 
 }
 .history-title {
-    margin-top: 100px;@include desktop{
-        margin-top:0;
-    };
+    margin-top: 100px;
+    @include desktop{
+        margin-top:30px;
+    }
     margin-bottom: 0;
     flex: 0 90%;
 }
@@ -329,6 +330,7 @@
         width: 600px;
     };
     li {
+        list-style-type: none;
         padding-left: 30px;
         line-height: inherit;
         a {
@@ -382,13 +384,13 @@
     width: 300px;
     height: 60px;
     a {
-        font-family: Noto Sans;
-        font-size: 0.8rem;
+        font-family:$font_body;
         font-weight: 700;
         text-align: center;
         line-height: 28px;
         color: #fff;
         padding: 10px 25px;
+        font-size: 1rem;
     }
     @include desktop {
         width: 400px;
