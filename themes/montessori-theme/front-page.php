@@ -8,7 +8,7 @@
 get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-      <div class="home container-wrapper">
+      <div class="home front-container">
       <section class="home-wrapper">
         <div class="home-img">
           <img src="<?php bloginfo('template_directory'); ?>/images/header-pic2.jpg" alt="img" />
@@ -24,7 +24,7 @@ get_header(); ?>
     <div class="link-title">
       <h2> <?php echo CFS()->get('links_title'); ?> </h2>
     </div>
-      <section class="links-wrapper ">
+      <section class="links-wrapper front-container">
           <article class="benifits">
             <a class="green-btn" href="<?php  echo esc_url(the_permalink()); ?>/what-is-montessori/">Benefits of Montessori</a>
             <p><?php echo CFS()->get('contents'); ?></p>
@@ -39,7 +39,7 @@ get_header(); ?>
           </article>
       </section>
 <!-- we need your support section -->
-    <section class="support-wrapper ">
+    <section class="support-wrapper">
       <div class="information">
         <h2> <?php echo CFS()->get('support_title'); ?> </h2>
         <p class="info"> <?php echo CFS()->get('first_support_paragraph'); ?> </p>
@@ -56,7 +56,7 @@ get_header(); ?>
     </section>
 <!-- this is for the features news  -->
 <h1 class="the-title"> <?php echo CFS()->get('features_title'); ?></h1>
-  <section class="all-features ">
+  <section class="all-features">
       <section class="features-wrapper ">
         <div class="features-flipper">
           <div class="front"><?php echo CFS()->get('features_front'); ?></div>
@@ -90,6 +90,8 @@ get_header(); ?>
                 </div>
               </section>
       </section> <!-- all-features -->
+    </div>
+    <!-- home -->
         </main><!-- #main -->
     </div><!-- #primary -->
   <?php get_footer(); ?>

@@ -20,12 +20,13 @@ get_header(); ?>
         <div class="red-border-container"><?php echo CFS()->get('extra-reason'); ?></div>
 </section>
 <!-- **********///////////Montessori Daily Schedule/////////////********** -->
-<section>
+<section class="montessori-schedual">
                 <h1>Montessori Daily Schedule</h1>
         <div class="schedule-menu">
-            <a  class="showSingle" data-target="1"><h2>Morning</h2></a>
-      <a  class="showSingle" data-target="2"><h2>Afternoon</h2></a>
+            <div class="morning-title"><a  class="showSingle" data-target="1"><h2>Morning</h2></a></div>
+      <div class="afternoon-title"><a  class="showSingle" data-target="2"><h2>Afternoon</h2></a></div>
         </div>
+              <div class="schedule-countener">
           <div class="morning">
                     <div id="div1" class="targetDiv">
 <?php
@@ -50,6 +51,7 @@ foreach ( $fields as $field ) {?>
 <?php  } ?>
       </div>
           </div>
+      </div>  <!-- schedule-container -->
 </section>
 <!-- **********////////////////////////Funding///////////////////////********** -->
 <section id="funding" class="funding">
@@ -83,6 +85,7 @@ foreach ( $fields as $field ) {?>
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                  <!-- Display the Title  -->
                     <h1><?php the_title(); ?></h1>
+                    <div class="part4-container">
                   <div class="school-img">
                         <?php the_post_thumbnail('post->id','small'); ?>
                     </div>
@@ -93,6 +96,7 @@ foreach ( $fields as $field ) {?>
                     <p ><span style="font-weight:bolder">Address: </span><?php echo CFS()->get('address'); ?></p>
                     <p ><span style="font-weight:bolder">Phone: </span><?php echo CFS()->get('phone'); ?></p>
                     </div>
+                    </div>
                  <?php endwhile; else: ?>
                     <h1>Sorry, no posts matched your criteria.</h1>
                  <?php endif; ?>
@@ -100,8 +104,7 @@ foreach ( $fields as $field ) {?>
 </section>
  <!-- **********///////////////// Teacher List Section ///////////////********** -->
 <section class="teacher-list">
-               <h1>Teachers<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
-                                     <!-- <div id="target"></div> -->
+               <h1>Teachers</h1>
                               <!-- Custom Post Loop To Call Teacher List  -->
    <?php
    query_posts(array( 'post_type' => 'staff','taxonomy' => 'staff_categories','staff_categories' =>'teachers' ));
@@ -136,7 +139,7 @@ foreach ( $fields as $field ) {?>
  <section class="preschools-list">
                      <!-- Custom Field Loop To Call Preschools List  -->
            <h1>List of Private Montessori Preschools<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
-           <div class="target">
+           <div id="target">
  <?php
  $fields = CFS()->get( 'list_of_preschools' );
  foreach ( $fields as $field ) {?>
@@ -170,7 +173,7 @@ foreach ( $fields as $field ) {?>
 <img src="<?php bloginfo('template_directory'); ?>/images/nw-program/school.jpg" alt="How is the money spent" />
             </div>
             <div class="enroll-btn">
-       <button class="green-btn" href="<?php echo esc_url(the_permalink()); ?>">Official School Board Website</button>
+       <button class="green-bt"><a href="<?php the_permalink(17); ?>">Official School Board Website</button>
             </div>
             </div>
             </div>

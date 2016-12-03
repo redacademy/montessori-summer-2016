@@ -21,10 +21,11 @@
 .the-page-title {
 	position: relative;
 	background-color: #fff;
-	height: 21px;
+	height: 25px;
 	padding: 0 32px;
 	margin: 0 ;
 	ul {
+		height: 35px;
 		margin: 0;
 		@include flex(center,space-between) ;
 		flex-direction: row;
@@ -81,9 +82,6 @@ div .menu-primary-menu-container {
 }
 .menu-primary-menu-container {
 	@include desktop{
-		font-size: 1.3rem;
-	};
-	@include desktop {
 		white-space: nowrap;
 		display: inline-block;
 		ul {
@@ -94,10 +92,14 @@ div .menu-primary-menu-container {
 					text-decoration: none;
 					color: #000;
 					color: #231f20;
-					font-size: 1.5rem;
+					font-size: 1.2rem;
 					border-top: 6px solid transparent;
 					list-style: none;
-					padding: 15px 5px;
+					padding: 15px 2px;
+@include desktop2{
+	font-size:1.5rem;
+	padding: 15px 15px;
+}
 				}
 			}
 		}
@@ -212,7 +214,7 @@ background-color: transparent!important;
 }
 div {
 	.secondary li a {
-		line-height: 2.3rem;
+		line-height: 2.1rem;
 		@include desktop {
 			line-height: 2.3rem;
 		};
@@ -225,8 +227,13 @@ div .secondary {
 		text-align: right;
 		padding: 0px 10px;
 		    margin-bottom: 0px;
-		height: 69px;
+		height: 56px;
 		margin-top: 40px;
+
+	 @include desktop2{
+
+		 height: 69px;
+}
 	}
 	text-align: center;
 	padding-right: 5px;
@@ -243,7 +250,11 @@ div .secondary {
 		display: inline-block;
 		padding: 8px 0px;
 		@include desktop {
-	 padding: 16.4px 0px;
+	 padding: 10px 0px;
+	 @include desktop2{
+padding: 16.4px 0px;
+
+	 };
 		};
 		a {
 			color: white;
@@ -251,8 +262,13 @@ div .secondary {
 			text-decoration: none;
 			font-weight: lighter;
 			font-size: 1.2rem;
+
 			@include desktop {
-				font-size: 1.4rem;
+				font-size: 1.2rem;
+				@include desktop2{
+font-size: 1.5rem;
+
+				};
 			}
 
 		}

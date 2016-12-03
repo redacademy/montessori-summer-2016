@@ -19,8 +19,8 @@ echo get_page_link(get_page_by_title(about)->ID); ?>">About</a>
 echo get_page_link(get_page_by_title(contact)->ID); ?>">Contact us</a>
                 </li>
                 <li>
-                <a href="<?php
-echo get_page_link(get_page_by_title(get-involved)->ID); ?>">Get involved</a>
+                <a href="
+<?php the_permalink(17); ?>">Get involved</a>
                 </li>
                 <li>
                   <a href="https://www.facebook.com/pages/Vancouver-Montessori-School/219470428069793?hc_ref=SEARCH">Follow us </a><i class="fa fa-facebook desktop-footer" aria-hidden="true"></i>

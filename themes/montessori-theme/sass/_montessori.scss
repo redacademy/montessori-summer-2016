@@ -58,11 +58,20 @@
         text-align: left;
     }
     p {
-        width: 100%;
-        text-align: left;
-        display: inline;
-        overflow: hidden;
-    }
+      width: 100%;
+      text-align: left;
+      display: inline;
+      overflow: hidden;
+      line-height: $mobile_line_height;
+      font-size: $font_body_size_mob;
+      @include desktop {
+
+        padding-top: 4px;
+        line-height:$font_line-height-desktop;
+          font-size: $font_body_size_desktop;
+          @include desktop2 {
+            font-size: $font_body_size_desktop2;
+          }}}
     width: 100%;
     blockquote {
         width: 100%;
@@ -71,6 +80,7 @@
          @include quote{}
     }
 }
+
 ////************philosophy Section ************/////
 
 .active {
@@ -84,9 +94,14 @@
     flex-wrap: wrap;
     position: relative;
     @include desktop {
-        width: 1200px;
-        min-width: 1200px;
-        height: 800px;
+        width: 950px;
+        min-width: 850px;
+        height: 1200px;
+        @include desktop2{
+          width: 1200px;
+          min-width: 1200px;
+          height: 800px;
+        }
     }
     div {
         width: 100%;
@@ -205,6 +220,57 @@
     }
 }
 ////************End philosophy Section ************/////
+/////*Start Benefits Section**/////
+
+
+.benefits li {
+  list-style-type: disc;
+  font-size: $font_body_size_mob;
+  @include desktop {
+      font-size: $font_body_size_desktop;
+      @include desktop2 {
+        font-size: $font_body_size_desktop;
+      }
+}
+}
+.first-benefits-section {
+    width: 100%;
+    min-width: 80%;
+    height: 100%;
+    @include flex(center,space-between);
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+        margin-top: 30px;
+        @include desktop {
+            align-self: flex-start;
+            width: 330px;
+            height: 330px;
+            margin: 0 40px 20px 0;
+        }
+    }
+}
+.benefits-content {
+    width: 100%;
+    p {
+      display: block;
+      line-height: $mobile_line_height;
+      font-size: $font_body_size_mob;
+      @include desktop {
+        line-height:$font_line-height-desktop;
+          font-size: $font_body_size_desktop;
+          @include desktop2 {
+            font-size: $font_body_size_desktop2;
+          }}}
+    @include desktop {
+         @include quote{}
+    }
+}
+
 ////////*******Start Materials Section******/////////
 
 .main-materials div:nth-of-type(3) {
@@ -241,6 +307,19 @@
     }
 }
 .materials-contents {
+  p {
+    text-align: left;
+    font-size: $font_body_size_mob;
+    line-height: $mobile_line_height;
+    @include desktop {
+      line-height:$font_line-height-desktop;
+      padding-top: 4px;
+        font-size: $font_body_size_desktop;
+        @include desktop2 {
+          font-size: $font_body_size_desktop2;
+        }
+          display: inline-block;
+      }}
     blockquote {
         p {
             display: inline;
@@ -261,48 +340,7 @@
         }
     }
 }
-/////*Start Benefits Section**/////
 
-.benefits li {
-    list-style-type: disc;
-    @include desktop {};
-}
-.first-benefits-section {
-    width: 100%;
-    min-width: 80%;
-    height: 100%;
-    @include flex(center,space-between);
-    flex-direction: column;
-    @include desktop {
-        flex-direction: row;
-    }
-    img {
-        width: 400px;
-        height: 400px;
-        margin-top: 30px;
-        @include desktop {
-            align-self: flex-start;
-            width: 330px;
-            height: 330px;
-            margin: 0 40px 20px 0;
-        }
-    }
-}
-.benefits-content {
-    width: 100%;
-    @include desktop {
-         @include quote{}
-    }
-}
-.benefits-title {
-    p {
-        padding-top: 4px;
-        display: block;
-        @include desktop {
-            font-size: 1.5rem;
-        }
-    }
-}
 ///Archive and rescourses sections////
 
 .the-archive ul {

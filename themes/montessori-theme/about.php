@@ -5,9 +5,9 @@
  * @package montessori_Theme
  */
 get_header(); ?>
-      <div id="primary" class="content-area">
+    <div id="primary" class="content-area">
         <main id="main back-to-top" class="site-main" role="main">
-        <div class="about-wrapper">
+            <div class="about-wrapper">
             <!-- **********///////////////// about NW School Section ///////////////********** -->
 <section id="our-history" class="about" >
 <?php
@@ -17,7 +17,7 @@ foreach ( $fields as $field ) {?>
 <?php    echo '<h1 >'.$field['content_group_title'].'</h1>';
       echo '<div class="about-content">'.$field['content_group_paragragh'].'</div>';
       echo '<div class="red-border-container">'.$field['content_group_description'].'</div>';?>
-      </div>
+     </div>
 <?php    }
             ?>
 </section>
@@ -34,20 +34,20 @@ foreach ( $fields as $field ) {?>
             <div class="flip-container">
             <div class="flip-wrap">
             <div class="flipper">
-            <div class="front">
+                      <div class="front">
                                     <?php if ( has_post_thumbnail() ) : ?>
                             <?php the_post_thumbnail( 'large' ); ?>
                                             <?php endif; ?>
-            </div>
-            <div class="back"><p ><?php echo CFS()->get('member_vision'); ?></p></div>
-            </div><!-- #flippre -->
-            </div><!-- #flippre -->
-            </div><!-- #flip-container -->
-            <div class="members_det">
+                            </div>
+                        <div class="back"><p ><?php echo CFS()->get('member_vision'); ?></p></div>
+                    </div><!-- #flippre -->
+                </div><!-- #flippre -->
+                    </div><!-- #flip-container -->
+                    <div class="members_det">
                   <p><?php echo CFS()->get('member_name'); ?></p>
                     <p class="bold"><?php echo CFS()->get('member_title'); ?></p>
-            </div><!-- #member_det -->
-            </div><!-- #members_block -->
+                    </div><!-- #member_det -->
+                </div><!-- #members_block -->
                         <?php endwhile; else: ?>
                             <p>Sorry, no posts matched your criteria.</p>
                             <?php endif; ?>
@@ -63,7 +63,7 @@ foreach ( $fields as $field ) {
 echo '<div class="members_at_large-name">'.'</p>'.$field['members_at_large_name'].'</p>'.'</div>';
 }
 ?>
-            </div>
+        </div>
 </section>
         <!-- **********///////////////// Meeting Minutes Section ///////////////********** -->
 <section id="meeting" class="meeting-minutes">
@@ -76,15 +76,16 @@ output_image('meeting_menutes_img'); ?></div>
   <?php
   $fields = CFS()->get('the_event'); ?>
   <?php
-  foreach($fields as $field)
-  { ?>
-          <lable   action="event-checkbox" method="get">
-           <input type="checkbox" >
+    $fields = CFS()->get('the_event'); ?>
     <?php
-  echo $field['plans']; ?>
-</lable>
-  <?php
-  } ?>
+    foreach($fields as $field)
+    { ?>
+            <lable   action="event-checkbox" method="get">
+             <p><input type="checkbox" >
+    <?php echo $field['plans']; ?> </p>
+    </lable>
+    <?php
+    } ?>
             <div class="red-more">
                 <button class="green-btn"href="<?php echo esc_url(the_permalink()); ?>/nw-program/">Read More</button>
                 </div>
@@ -96,13 +97,13 @@ output_image('meeting_menutes_img'); ?></div>
 <?php echo '<p style="font-size:1.68rem;margin-top:3rem">'.CFS()->get( 'date' ).'</p>'; ?>
 <?php echo '<p>'.CFS()->get( 'details' ).'</p>'; ?>
 </section>
-           <div class="archive-sec">
-             <div class="arch-btn">
+            <div class="archive-sec">
+              <div class="arch-btn">
              <button class="green-btn">Read More</button>
-         </div>
-       <div class="arch-block">
+          </div>
+        <div class="arch-block">
             <h1>Archives<span class="toggle"><i class="fa fa-angle-down arrow" aria-hidden="true"></i></span></h1>
-             <div id="target" class="the-archive">
+                      <div id="target" class="the-archive">
           <a href="#" class="target"><?php get_sidebar(); ?></a>
              </div>
        </div>
@@ -110,8 +111,8 @@ output_image('meeting_menutes_img'); ?></div>
             <!-- **********///////////////////////////////////////////////////********** -->
           </div>
           <!-- #about-page -->
-         <?php get_footer(); ?>
-        </main>
-      <!-- #main -->
-      </div>
-      <!-- #primary -->
+     </main>
+  <!-- #main -->
+ </div>
+<!-- #primary -->
+<?php get_footer(); ?>

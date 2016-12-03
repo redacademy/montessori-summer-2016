@@ -58,16 +58,13 @@ p {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    // @include desktop {
-    //  flex-direction: column;
-    // };
     .members-grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         @include desktop {
             flex-direction: row;
-        };
+        }
         .members-block {
             flex: 33%;
             display: flex;
@@ -115,9 +112,9 @@ p {
             .back {
                 border-radius: 50%;
                 position: absolute;
-                width: 125px;
+                width: 140px;
                 text-overflow: ellipsis;
-                height: 125px;
+                height: 140px;
                 text-align: center;
                 right: 3px;
                 -webkit-transform: rotateY(180deg);
@@ -140,8 +137,8 @@ p {
         .back,
         .flip-container,
         .front {
-            width: 125px;
-            height: 125px;
+            width: 140px;
+            height: 140px;
             @media screen and (min-width: 650px) {
                 width: 190px;
                 height: 190px;
@@ -193,24 +190,15 @@ p {
     flex-direction: column;
     padding-bottom: $basic_margin*5.5;
     border-bottom: solid 3px $color_btn_green;
-    .news-img img {
-        width: 100%;
+    .meeting-img {
+        display:flex;
+align-self: center;
     }
-    form {
-        padding: 2rem;
-        input {}
-    }
+label{
+    display: inline-block;
+}
     .red-more {
         align-self: flex-end;
-    }
-}
-label {
-    input {
-        width: 27px;
-        height: 27px;
-        background-color: #fff;
-        border: 3px solid transparent;
-        transition: border-color 0.2s;
     }
 }
 // newsLetter Section

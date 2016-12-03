@@ -141,8 +141,12 @@
         height: 40px;
         font-size: 1.1rem;
         @include desktop {
+            width: 550px;
+          font-size: 1.2rem;
+          @include desktop2{
+            width: 700px;
             font-size: 1.4rem;
-        }
+        }}
     }
 }
 /*the links in the footer */
@@ -160,7 +164,10 @@ a:hover {
 .desktop-add-block {
     display: none;
     @include desktop {
+      @include desktop2 {
         margin-top: -5px;
+      }
+      margin-top: 17px;
         display: inline-block;
         min-width: 30%;
         ul {
@@ -168,12 +175,20 @@ a:hover {
             margin: 0;
         }
         li {
+          @include desktop2 {
+font-size: 1.4rem;
+line-height: 2rem;
+          }
+          font-size: 1.1rem;
           color:#d3e0de;
     list-style-type: none;
-    line-height: 2rem;
+    line-height: 1.6rem;
 }
         a {
-          font-size: 1.3rem;
+          @include desktop2{
+            font-size: 1.3rem;
+          };
+          font-size: 1rem;
           color:#d3e0de;
             cursor: pointer;
         }

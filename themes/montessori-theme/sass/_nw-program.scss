@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------
 # NW Program Page
 --------------------------------------------------------------*/
@@ -80,25 +81,30 @@ p {
     }
 }
 // Montessori Daily Schedule Section
-.row p {
-    display: inline-block;
-    padding: 5px;
+.schedule-menu{
+.morning-title{
+    border-right: 2px solid #fff;
+    padding-right: 25%;
+ }
 }
-.schedule-menu {
+.row p{
+    display:inline-block;
+    padding:5px;
+}
+    .schedule-menu{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height:10%;
+        background-color: $color_btn_green;
+}
+.schedule-countener{
     display: flex;
-    justify-content: space-between;
-    // @media screen and (min-width: 768px) {
-    //  .schedule-menu{
-    //      display: hide;
-    //  }
-    // }
-}
-.morning {
-    flex: 100%;
-}
-.afternoon {
-    flex: 100%;
-}
+    justify-content: center;
+  text-align: center;
+    border-bottom: solid 3px $color_btn_green;
+    padding-bottom: $basic_margin *4.5;
+ }
 // Funding Section
 .funding {
     display: flex;
@@ -171,6 +177,8 @@ p {
 }
 //School List Section
 .school-list {
+    border-bottom: solid 3px $color_btn_green;
+    padding-bottom: $basic_margin *4.5;
     display: flex;
     flex-direction: column;
     .school-img {
@@ -179,22 +187,34 @@ p {
         img {
             width: 55%;
             height: 70%;
+            @include desktop{
+                 width:100%;
+                }
+                @media screen and (min-width: 768px) {
+                    width: 80%;
+                }
+          }
+     }
+}
+@include desktop{
+.part4-container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+    .nw-part4{
+        flex-shrink: 6;
+        .shool-content{
+            margin-bottom: 90px;
         }
     }
-}
-// @include desktop{
-// .school-list{
-//  flex-direction: row-reverse;
-//
-//   }
-//  }
+ }
 //Preschools List Section
 .preschools-list {
     padding: 1px;
     .target {
         margin: 0 auto;
-    }
-}
+     }
+  }
 //Enrollment Section
 .enroll {
     display: flex;
@@ -229,11 +249,7 @@ p {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    h1 {
-        width: 40%;
-        padding: 1.7rem;
-        border-top: solid 3px $color_btn_green;
-    }
+    border-bottom: solid 3px $color_btn_green;
     @include desktop {
         flex-direction: column;
     }
@@ -291,9 +307,9 @@ p {
             .back {
                 border-radius: 50%;
                 position: absolute;
-                width: 125px;
+                width: 140px;
                 text-overflow: ellipsis;
-                height: 125px;
+                height: 140px;
                 text-align: center;
                 right: 3px;
                 -webkit-transform: rotateY(180deg);
@@ -316,8 +332,8 @@ p {
         .back,
         .flip-container,
         .front {
-            width: 125px;
-            height: 125px;
+            width: 140px;
+            height: 140px;
             @media screen and (min-width: 768px) {
                 width: 190px;
                 height: 190px;

@@ -5,7 +5,7 @@
         height: auto;
         margin: 0 auto;
         @include desktop {
-            padding: 0 90px;
+            // padding: 0 90px;
         }
         .home-wrapper {
             height: 600px;
@@ -87,8 +87,8 @@
                     margin: 70px 45px;
                 }
             }
-        }//home
-    }
+        }
+      }//home
     //this is for the quick links section
     .link-title {
         h2 {
@@ -124,7 +124,7 @@
             margin: 40px;
             @include desktop {
                 padding: 40px;
-                margin: 15px 30px;
+                margin: 15px 25px;
             }
         }
         .benifits {
@@ -200,22 +200,24 @@
         height: auto;
         .information {
             height: auto;
+            display: flex;
+            flex-direction: column;
             h2 {
                 border-top: 2px solid #2EB688;
-                width: 377px;
-                height: 42px;
+                // width: 377px;
+                // height: 42px;
                 font-family: 'Asap';
                 font-size: 36px;
                 line-height: 42px;
                 color: #000;
                 margin: 35px;
                 @include desktop {
-                    width: 852px;
-                    height: 55px;
+                    // width: 852px;
+                    // height: 55px;
                     font-family: "Asap";
                     font-size: 48px;
                     line-height: 55px;
-                    margin: 45px 0;
+                    margin: 0px;
                     box-sizing: border-box;
                     width: 100%;
                     padding: 45px 0;
@@ -233,17 +235,18 @@
                         height: auto;
                         display: flex;
                         position: absolute;
-                        right: 0;
-                        margin: -200px 100px;
+                        left: 990px;
+                        top: 98rem;
+                        // margin: -200px 100px;
                     }
                 }
                 p {
                     text-align: center;
                     @include desktop {
-                        display: flex;
+                        display: inline-block;
                         top: 18rem;
                         position: relative;
-                        right: -885px;
+                        left: 910px;
                         width: 25%;
                         font-size: 18px;
                     }
@@ -254,7 +257,7 @@
                 border-left: 14px solid #D93B57;
                 font-size: 25px;
                 margin-bottom: 95px;
-                height: 135px;
+                height: 150px;
                 @include desktop {
                     border-left: 14px solid #D93B57;
                     margin: 27px 119px;
@@ -270,13 +273,13 @@
                 width: 350px;
                 font-family: "Noto Sans";
                 font-size: 20px;
-                line-height: 46px;
+                // line-height: 46px;
                 color: #000;
                 margin: 40px;
                 @include desktop {
-                    width: 65%;
+                    width: 70%;
                     font-family: 'Noto Sans';
-                    line-height: 47px;
+                    // line-height: 47px;
                     letter-spacing: 0.9px;
                     margin: 20px 40px;
                 }
@@ -356,14 +359,12 @@
                     height: 55px;
                 }
             }
-        }
-        //information
-    }
-    //support-wrapper
-// this is for the features fliper
+        }//information
+    }//support-wrapper
+    // features wrapper section
     .the-title {
         box-sizing: border-box;
-        width: 440px;
+        min-width: 480px;
         border-top: 2px solid #2EB688;
         padding-top: 50px;
         height: 42px;
@@ -389,13 +390,13 @@
         height: 100%;
         @include desktop {
             display: flex;
-            height: 480px;
-            width: 400px;
+            // height: 480px;
+            // width: 400px;
         }
         .features-wrapper {
-            width: 30%;
+            // width: 30%;
             box-sizing: border-box;
-            width: 480.27px;
+            // width: 480.27px;
             position: relative;
             border-radius: 10px;
             font-family: 'Noto Sans';
@@ -404,12 +405,14 @@
             text-decoration: none;
             @include desktop {
                 display: flex;
-                height: 380px;
-                width: 380px;
+                height: 400px;
+                width: 400px;
                 margin: 10px 30px;
                 line-height: 3rem;
             }
+///////// this is for the features fliper///////////
             .features-flipper {
+                // min-width: 480px;
                 flex: 0 0 auto;
                 background-color: #AFF1D3;
                 margin: 20px;
@@ -439,11 +442,11 @@
                     }
                 }
                 .front {
-                    height: 145px;
+                    // height: 145px;
                     text-align: center;
                     overflow: hidden;
                     padding: 36px;
-                    width: 450px;
+                    // width: 450px;
                     font-family: 'Asap';
                     font-size: 24px;
                     text-align: center;
@@ -454,11 +457,11 @@
                     backface-visibility: hidden;
                     @include desktop {
                         display: flex;
-                        font-size: 36px;
+                        font-size: 34px;
                         line-height: 3rem;
                         text-align: start;
                         padding: 40px;
-                        height: 380px;
+                        // height: 380px;
                     }
                 }
                 .features-back {
@@ -482,12 +485,12 @@
                         display: inline-block;
                         text-align: start;
                         padding: 8px;
-                        height: 370px;
+                        // height: 370px;
                         p {
                             visibility: visible;
                             @include visibility(hidden);
                             font-family: 'Asap';
-                            font-size: 22px;
+                            font-size: 20px;
                         }
                     }
                     .btn {
@@ -497,10 +500,10 @@
                         text-decoration: none;
                     }
                 }
-            }
-        }
-    }
-}
+            }//features-flipper
+        } //features-wrapper
+    } //all-features
+} //site-main
 a {
     text-decoration: none;
 }

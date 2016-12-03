@@ -5,9 +5,9 @@ $basic_margin: 0.625rem; /// ==>10px ////
 $basic_hline_height: 0.625rem; /// ==>10px ////
 ///Screen Size///
 $desktop_width: 768px; //768px
-$desktop_mid_width: 924px; //924px mid size fonts break point
+$desktop_mid_width: 1024px; //924px mid size fonts break point
 //Layout//
-$mobile_line_height: 1.2rem;
+$mobile_line_height: 1.7rem;
 $base_spacing_normal: 1rem;
 $base_spacing_large: 2.5rem;
 $base_spacing_large: 4rem;
@@ -40,12 +40,14 @@ $h1_size_mob: 2.6rem;
 $h2_size_mob: 1.8rem;
 $h3_size_mob: 1.5rem;
 $font_school_info: 1.5rem;
-$font_body_size_mob: 1.5rem;
+$font_body_size_mob: 1.3rem;
 $font_member_staff: 1.375rem;
 /// desktop sizes ////
 
 $h1_size_desktop: 3rem;
 $h2_size_desktop: 2rem;
 $h3_size_desktop: 1.7rem;
-$font_body_size_desktop: 1.7rem;
-$font_line-height-body: 1.8;
+$font_body_size_desktop: 1.5rem;
+$font_line-height-desktop: 2.5rem;
+////// desktop2 sizes ////
+$font_body_size_desktop2: 1.9rem;
